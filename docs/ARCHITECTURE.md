@@ -10,7 +10,7 @@ belief state.
 | Observation assimilation | `assimilate(h_pred, z, context) -> h_obs` | Convex blend with learned sensory-state projection |
 | Recurrent memory | `step(h, action, context) -> h_next` | Leaky tanh, additive/gated/low-rank context |
 | Readout | `decode(h) -> z_pred` | Trained linear map |
-| Fast writer | evidence → proposed parameter delta | Deferred |
+| Fast writer | evidence → proposed parameter delta | [Grounded bounded proposals, explicit commit, one-level rollback](../soam/plasticity/README.md); H2 unproven |
 | Scope translator | local statistics + proposed delta → constrained delta | Deferred |
 | Consolidator | weights + grounded evidence → validated provisional weights | Deferred |
 | Planner | state + candidate actions + goal → selected action | Deferred |

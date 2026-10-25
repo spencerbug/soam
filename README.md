@@ -12,11 +12,13 @@ provisionally frozen; learning mechanisms and connectivity are experimental.
 
 Stage 0 and the substrate sprint (WP-00/WP-01): synthetic action-conditioned 2D
 regimes, a fixed sensory projection, shared bounded recurrent baselines, independent
-predictors, switching without state reset, and perturbation diagnostics. Later
-plasticity, consolidation, JEPA, and planning components are intentionally unimplemented.
+predictors, shared-state switching, independent-model handoffs, and perturbation diagnostics.
+The bounded local-write contract is implemented; acquisition comparisons, learned
+scopes, consolidation, JEPA, and planning remain future work.
 
 See [experiment protocol](docs/EXPERIMENTS.md), [work packages](docs/ROADMAP.md),
-[architecture boundaries](docs/ARCHITECTURE.md), and [initial report](reports/BASELINE.md), and [current controls report](reports/SUBSTRATE_CONTROLS.md).
+[architecture boundaries](docs/ARCHITECTURE.md), [initial report](reports/BASELINE.md),
+[controls report](reports/SUBSTRATE_CONTROLS.md), and [current writer report](reports/LOCAL_WRITE_CONTRACT.md).
 The remaining work is organized in the [priority and milestone tracker](PRIORITIES.md)
 and [issue backlog](tickets/README.md), with GitHub-ready templates and ticket conventions.
 
@@ -25,8 +27,10 @@ The [stronger six-model controls](reports/SUBSTRATE_CONTROLS.md) are complete:
 irregular switches. GRU and fully independent controls pass all three seeds. All
 six seed-11 repeats match exactly. Long-horizon drift remains; these results do not
 establish self-organization. [Gate 1](reports/GATE_1_REVIEW.md) proceeds with the
-low-rank substrate and GRU reference. SOAM-003, the bounded local-write contract,
-is next; associative writing remains unimplemented.
+low-rank substrate and GRU reference. SOAM-003 now provides bounded grounded writes,
+read-only prediction snapshots, and exact rollback. All 48 tests pass. A three-seed
+contract demonstration reproduces exactly but includes multistep regressions; it does
+not establish H2. SOAM-004, the comparative online-writing benchmark, is next.
 The original four-model benchmark remains preserved as historical evidence.
 
 ## Run

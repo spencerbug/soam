@@ -1,0 +1,17 @@
+{
+  "exact_metrics_and_checkpoint_match": true,
+  "seeds": [
+    11,
+    23,
+    47
+  ],
+  "excluded_fields": [
+    "checkpoint_files",
+    "commit_seconds",
+    "proposal_id",
+    "proposal_seconds",
+    "receipt_id",
+    "rollback_seconds"
+  ],
+  "note": "Checkpoint contents compared separately; proposal IDs contain execution timings."
+}

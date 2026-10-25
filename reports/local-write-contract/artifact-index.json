@@ -1,0 +1,8 @@
+{
+  "full_results_local_path": "runs/local-write-contract-v1/results.json",
+  "omitted_curve_fields": [
+    "prefix_nmse"
+  ],
+  "full_results_sha256": "08b7b2c87550082bcb812cdc0f647f29c0bc037c4e4fce2647de5ceefa14e901",
+  "compact_results_sha256": "8751028c3c3b811c150a1b3f854d75182c57ce10206f1fd2379f6abdf83c558a"
+}

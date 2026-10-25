@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-004"
 title: "Benchmark online transition correction and changed dynamics"
 type: "experiment"
-status: "backlog"
+status: "ready"
 priority: "P1"
 recommended_thinking: "high"
 milestone: "M2"
@@ -31,6 +31,13 @@ A local update rule must learn new or changed dynamics without ordinary end-to-e
 Specification: [research plan §9, §16](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+Use the [SOAM-003 write contract](../soam/plasticity/README.md) and preserve the
+[reported multistep regressions](../reports/LOCAL_WRITE_CONTRACT.md). Its example
+limits are untuned engineering defaults, not the acquisition protocol. Keep the
+online-gradient comparison on the same low-rank substrate/plastic parameter family;
+retain GRU as an architectural reference. Use fresh confirmation streams distinct
+from substrate controls and the contract demonstration.
 
 - Implement no adaptation, Hebbian, delta, local least-squares/RLS, and online-gradient references through the write interface.
 - Evaluate unseen transitions and changes to angular speed or damping; include an explicit transition-table reference labeled as a baseline.

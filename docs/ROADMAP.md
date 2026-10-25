@@ -2,9 +2,9 @@
 
 | Package | Status / criterion |
 | --- | --- |
-| WP-00 | Initial implementation: deterministic generator, config runner, provenance, tests, logs, comparisons, plots. Original four-model seed-11 reruns match exactly; current suite has 27 passing tests. |
+| WP-00 | Initial implementation: deterministic generator, config runner, provenance, tests, logs, comparisons, plots. Original four-model seed-11 reruns match exactly; current suite has 48 passing tests. |
 | WP-01 | Strengthened six-model controls complete: 17/18 screen passes, additive seed-23 irregular-switch failure, six exact seed-11 repeats. [Current report](../reports/SUBSTRATE_CONTROLS.md). [Gate 1](../reports/GATE_1_REVIEW.md): bounded proceed with low-rank, GRU reference; full H1 reuse untested. |
-| WP-02 | Contract ready (SOAM-003); implementation pending: local writes outperform no-adaptation on held-out changes with retention and multistep checks. |
+| WP-02 | [Local-write contract complete](../reports/LOCAL_WRITE_CONTRACT.md) (SOAM-003); SOAM-004 ready. Acquisition versus no-adaptation and retention/multistep checks remain unproven. |
 | WP-03 | Pending: per-context before/after interference and forgetting metrics validated on controlled changes. |
 | WP-04 | Pending: fixed/random/sensitivity masks at matched adaptation and sparsity. |
 | WP-05 | Pending: learned scope improves retention at matched new-task accuracy while allowing transfer. |
