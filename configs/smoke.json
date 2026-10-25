@@ -1,0 +1,15 @@
+{
+  "name": "smoke",
+  "seeds": [11],
+  "models": ["additive", "gated", "low_rank", "separate"],
+  "hidden_dim": 16,
+  "steps": 4,
+  "batch_size": 6,
+  "train_horizon": 8,
+  "eval_horizon": 12,
+  "stability_horizon": 24,
+  "eval_sequences_per_context": 2,
+  "switch_every": 4,
+  "perturb_step": 4,
+  "log_every": 1
+}

@@ -1,0 +1,15 @@
+{
+  "name": "substrate-v0.1",
+  "seeds": [11, 23, 47],
+  "models": ["additive", "gated", "low_rank", "separate"],
+  "hidden_dim": 40,
+  "steps": 600,
+  "batch_size": 48,
+  "train_horizon": 24,
+  "eval_horizon": 48,
+  "stability_horizon": 192,
+  "eval_sequences_per_context": 32,
+  "switch_every": 8,
+  "perturb_step": 8,
+  "log_every": 50
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "soam-research"
+version = "0.1.0"
+description = "Falsifiable experiments on Self-Organizing Attractor Memory"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "torch>=2.4", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.8"]
+
+[project.scripts]
+soam-run = "soam.evaluation.runner:main"
+soam-compare = "soam.evaluation.compare:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["soam"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+
