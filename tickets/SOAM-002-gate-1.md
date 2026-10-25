@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-002"
 title: "Gate 1: review the substrate before online writing"
 type: "decision"
-status: "backlog"
+status: "ready"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -43,6 +43,9 @@ Specification: [research plan §8, §19, §22](../docs/RESEARCH_SPEC.md). Apply 
 - [ ] Update the priority table; if revision is needed, create linked follow-up tickets and keep dependent implementation unready.
 
 ## Metrics / evidence
+
+Review the [SOAM-001 report](../reports/SUBSTRATE_CONTROLS.md), including the additive
+seed-23 failure, independent handoff semantics, and GRU perturbation sensitivity.
 
 Decision record against the preregistered criteria, with uncertainty and unresolved reuse questions.
 

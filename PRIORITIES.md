@@ -2,10 +2,11 @@
 
 Updated: 2026-10-25. This is an evidence-driven sequence, not a calendar commitment.
 Dates and durations will be estimated when each milestone is scoped; dependencies
-and research outcomes can change the order. The baseline is the only completed
-implementation ticket. A passed readiness screen does not close every H1 claim.
+and research outcomes can change the order. The baseline and strengthened controls
+are complete; Gate 1 is next. A passed readiness screen does not close every H1 claim.
 
-Ticket frontmatter is authoritative for status, priority, recommended thinking, milestone, and dependencies.
+Ticket frontmatter is authoritative for status, priority, recommended thinking,
+milestone, and dependencies.
 This file owns the default execution order and milestone summaries; update both in
 the same change. See [ticket conventions](tickets/README.md) and [agent instructions](AGENTS.md).
 
@@ -20,8 +21,10 @@ the same change. See [ticket conventions](tickets/README.md) and [agent instruct
   **done:** acceptance/evidence complete, which can include a negative result;
   **cancelled:** retained with a reason or replacement.
 
-SOAM-001 is in progress; the bounded supporting study SOAM-030 is ready. Continue
-with SOAM-001 on the implementation path. A dependency on a decision ticket requires
+SOAM-002 and the bounded supporting study SOAM-030 are ready. Start
+with SOAM-002 on the primary path. SOAM-001 completed with 17/18 screen passes;
+its additive seed-23 failure and remaining limitations require Gate 1 review.
+A dependency on a decision ticket requires
 `done` plus `decision: "proceed"`, not merely closure. Extra conditions in ticket
 bodies (such as the flow prerequisite) still apply. Revise/stop decisions retain
 history and require an explicit plan/dependency update before downstream work.
@@ -31,7 +34,7 @@ history and require an explicit plan/dependency update before downstream work.
 | Milestone | Focus | Exit evidence / decision | State |
 | --- | --- | --- | --- |
 | M0 | Initial substrate infrastructure | Recorded baseline and exact reproduction (SOAM-000); full H1 remains open | Complete initial sprint |
-| M1 | Substrate controls | Matched controls and Gate 1 decision (SOAM-002) | In progress |
+| M1 | Substrate controls | Matched controls and Gate 1 decision (SOAM-002) | Controls complete; Gate 1 ready |
 | M2 | Local acquisition and interference | Online-write comparisons and Gate 2 (SOAM-006) | Planned |
 | M3 | Functional scopes | Matched acquisition/retention and shared transfer; Gate 3 (SOAM-010) | Planned |
 | M4 | Replay and learned consolidation | Grounded validation, compute/capacity comparisons; Gate 4 (SOAM-015) | Planned |
@@ -58,8 +61,8 @@ is waiting. Reordering this table never changes stable ticket IDs.
 | Order | Ticket | Priority | Status | Milestone | Thinking | Depends on |
 | --- | --- | --- | --- | --- | --- | --- |
 | 00 | [SOAM-000: Record the reproducible substrate baseline](tickets/SOAM-000-substrate-baseline.md) | P0 | done | M0 | medium | — |
-| 01 | [SOAM-001: Strengthen substrate controls and budget comparisons](tickets/SOAM-001-substrate-controls.md) | P0 | in_progress | M1 | high | [SOAM-000](tickets/SOAM-000-substrate-baseline.md) |
-| 02 | [SOAM-002: Gate 1: review the substrate before online writing](tickets/SOAM-002-gate-1.md) | P0 | backlog | M1 | high | [SOAM-001](tickets/SOAM-001-substrate-controls.md) |
+| 01 | [SOAM-001: Strengthen substrate controls and budget comparisons](tickets/SOAM-001-substrate-controls.md) | P0 | done | M1 | high | [SOAM-000](tickets/SOAM-000-substrate-baseline.md) |
+| 02 | [SOAM-002: Gate 1: review the substrate before online writing](tickets/SOAM-002-gate-1.md) | P0 | ready | M1 | high | [SOAM-001](tickets/SOAM-001-substrate-controls.md) |
 | 03 | [SOAM-003: Define the grounded local-write contract and plastic parameters](tickets/SOAM-003-plastic-write-contract.md) | P1 | backlog | M2 | high | [SOAM-002](tickets/SOAM-002-gate-1.md) |
 | 04 | [SOAM-004: Benchmark online transition correction and changed dynamics](tickets/SOAM-004-online-writer-baselines.md) | P1 | backlog | M2 | high | [SOAM-003](tickets/SOAM-003-plastic-write-contract.md) |
 | 05 | [SOAM-005: Measure interference and learning without resets](tickets/SOAM-005-interference-metrics.md) | P1 | backlog | M2 | high | [SOAM-004](tickets/SOAM-004-online-writer-baselines.md) |

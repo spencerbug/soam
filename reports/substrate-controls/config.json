@@ -1,0 +1,69 @@
+{
+  "alpha": 0.7,
+  "assimilation_gain": 0.5,
+  "batch_size": 48,
+  "control_horizons": [
+    48,
+    192,
+    384
+  ],
+  "controls_evaluation": true,
+  "environment": {
+    "angles": [
+      -0.18,
+      0.18,
+      0.14
+    ],
+    "angular_action_gain": 0.08,
+    "centers": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.2,
+        -0.15
+      ]
+    ],
+    "damping": 0.995,
+    "observation_dim": 12,
+    "projection_seed": 1729,
+    "translation_action_gain": 0.015
+  },
+  "eval_horizon": 48,
+  "eval_sequences_per_context": 32,
+  "grounded_loss_weight": 0.3,
+  "hidden_bound": 1.5,
+  "hidden_dim": 40,
+  "learning_rate": 0.003,
+  "log_every": 50,
+  "match_budgets": true,
+  "models": [
+    "additive",
+    "gated",
+    "low_rank",
+    "separate",
+    "gru",
+    "independent"
+  ],
+  "name": "substrate-controls-v1",
+  "parameter_tolerance": 0.05,
+  "perturb_std": 0.15,
+  "perturb_step": 8,
+  "rank": 4,
+  "seeds": [
+    11,
+    23,
+    47
+  ],
+  "stability_horizon": 192,
+  "steps": 600,
+  "stream_namespace": 1,
+  "switch_every": 8,
+  "threads": 1,
+  "train_horizon": 24
+}

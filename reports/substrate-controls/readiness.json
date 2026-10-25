@@ -1,0 +1,272 @@
+[
+  {
+    "model": "additive",
+    "seed": 11,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "additive",
+    "seed": 23,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": false,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": false
+  },
+  {
+    "model": "additive",
+    "seed": 47,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "gated",
+    "seed": 11,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "gated",
+    "seed": 23,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "gated",
+    "seed": 47,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "low_rank",
+    "seed": 11,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "low_rank",
+    "seed": 23,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "low_rank",
+    "seed": 47,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "separate",
+    "seed": 11,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "separate",
+    "seed": 23,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "separate",
+    "seed": 47,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "gru",
+    "seed": 11,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "gru",
+    "seed": 23,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "gru",
+    "seed": 47,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "independent",
+    "seed": 11,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "independent",
+    "seed": 23,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  },
+  {
+    "model": "independent",
+    "seed": 47,
+    "applicable": true,
+    "checks": {
+      "beats_persistence": true,
+      "irregular_accuracy": true,
+      "motion": true,
+      "perturbation": true,
+      "stability": true,
+      "steady_accuracy": true,
+      "steady_contexts": true
+    },
+    "passed": true
+  }
+]

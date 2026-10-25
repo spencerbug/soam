@@ -1,6 +1,7 @@
 """Summarize the fixed SOAM-001 grid without selecting seeds or changing thresholds."""
 
 import argparse
+import hashlib
 import json
 import shutil
 from pathlib import Path
@@ -11,6 +12,21 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
+CURVE_FIELDS = {
+    "prefix_nmse",
+    "cumulative_nmse",
+    "hidden_gap_ratio_by_step",
+    "feature_gap_nmse_by_step",
+}
+
+
+def compact_metrics(value):
+    if isinstance(value, dict):
+        return {k: compact_metrics(v) for k, v in value.items() if k not in CURVE_FIELDS}
+    if isinstance(value, list):
+        return [compact_metrics(v) for v in value]
+    return value
+
 
 def summarize(source, output):
     output.mkdir(parents=True, exist_ok=True)
@@ -20,8 +36,21 @@ def summarize(source, output):
     expected = {(m, s) for m in cfg["models"] for s in cfg["seeds"]}
     assert {(r["model"], r["seed"]) for r in rows} == expected
     assert len(rows) == len(expected)
-    for name in ("results.json", "config.json", "provenance.json", "trials.json", "status.json"):
+    for name in ("config.json", "provenance.json", "trials.json", "status.json"):
         shutil.copyfile(source / name, output / name)
+    (output / "results.json").write_text(json.dumps(compact_metrics(rows), indent=2) + "\n")
+    index = {
+        "full_results_local_path": str(source / "results.json"),
+        "full_results_sha256": hashlib.sha256((source / "results.json").read_bytes()).hexdigest(),
+        "compact_results_sha256": hashlib.sha256(
+            (output / "results.json").read_bytes()
+        ).hexdigest(),
+        "omitted_curve_fields": sorted(CURVE_FIELDS),
+        "report_script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "note": "Scalar metrics, switch-lag records, and all conditions/seeds retained; full curves "
+        "and trajectories remain in the immutable local run. Plots use full curves.",
+    }
+    (output / "artifact-index.json").write_text(json.dumps(index, indent=2) + "\n")
     readiness = [{"model": r["model"], "seed": r["seed"], **r["controls_readiness"]} for r in rows]
     (output / "readiness.json").write_text(json.dumps(readiness, indent=2) + "\n")
     lines = [

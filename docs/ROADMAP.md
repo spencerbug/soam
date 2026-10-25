@@ -2,8 +2,8 @@
 
 | Package | Status / criterion |
 | --- | --- |
-| WP-00 | Initial implementation: deterministic generator, config runner, provenance, tests, logs, comparisons, plots. Four full seed-11 model reruns match exactly; 15 tests pass. |
-| WP-01 | Initial implementation: additive/gated/low-rank/shared and independent baselines, switching and perturbations. All 12 runs pass the readiness screen; full H1 reuse remains untested. See report. |
+| WP-00 | Initial implementation: deterministic generator, config runner, provenance, tests, logs, comparisons, plots. Original four-model seed-11 reruns match exactly; current suite has 27 passing tests. |
+| WP-01 | Strengthened six-model controls complete: 17/18 screen passes, additive seed-23 irregular-switch failure, six exact seed-11 repeats. [Current report](../reports/SUBSTRATE_CONTROLS.md). Gate 1 pending; full H1 reuse untested. |
 | WP-02 | Pending: local writes outperform no-adaptation on held-out changes with retention and multistep checks. |
 | WP-03 | Pending: per-context before/after interference and forgetting metrics validated on controlled changes. |
 | WP-04 | Pending: fixed/random/sensitivity masks at matched adaptation and sparsity. |

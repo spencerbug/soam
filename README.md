@@ -16,14 +16,16 @@ predictors, switching without state reset, and perturbation diagnostics. Later
 plasticity, consolidation, JEPA, and planning components are intentionally unimplemented.
 
 See [experiment protocol](docs/EXPERIMENTS.md), [work packages](docs/ROADMAP.md),
-[architecture boundaries](docs/ARCHITECTURE.md), and [initial report](reports/BASELINE.md).
+[architecture boundaries](docs/ARCHITECTURE.md), and [initial report](reports/BASELINE.md), and [current controls report](reports/SUBSTRATE_CONTROLS.md).
 The remaining work is organized in the [priority and milestone tracker](PRIORITIES.md)
 and [issue backlog](tickets/README.md), with GitHub-ready templates and ticket conventions.
 
-The initial four-model, three-seed benchmark passes the predefined substrate
-readiness screen. Additive recurrence performs comparably to the more complex
-variants; long-horizon drift remains. These are conventional baseline results,
-not evidence of self-organization. All four seed-11 runs reproduce exactly.
+The [stronger six-model controls](reports/SUBSTRATE_CONTROLS.md) are complete:
+17 of 18 trials pass the preregistered screen, with an additive seed-23 failure on
+irregular switches. GRU and fully independent controls pass all three seeds. All
+six seed-11 repeats match exactly. Long-horizon drift remains; these results do not
+establish self-organization. Gate 1 review (SOAM-002) is next, before local writing.
+The original four-model benchmark remains preserved as historical evidence.
 
 ## Run
 

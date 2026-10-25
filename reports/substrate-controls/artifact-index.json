@@ -1,0 +1,13 @@
+{
+  "full_results_local_path": "runs/substrate-controls-v1/results.json",
+  "full_results_sha256": "5ecf3267b0135f55c9e96afac4c032d3072d5e374a71defff1b0b35d235a8a5a",
+  "compact_results_sha256": "162f5ac7fdb7525c8901eb243ca04f723f99a22ee351c55d65e5128b8bdb8986",
+  "omitted_curve_fields": [
+    "cumulative_nmse",
+    "feature_gap_nmse_by_step",
+    "hidden_gap_ratio_by_step",
+    "prefix_nmse"
+  ],
+  "report_script_sha256": "8c2dd1a8d9de005edf810b94bd49c6c93fa898ba296876187f3ae5a57ef31bbd",
+  "note": "Scalar metrics, switch-lag records, and all conditions/seeds retained; full curves and trajectories remain in the immutable local run. Plots use full curves."
+}

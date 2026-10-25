@@ -1,0 +1,44 @@
+[
+  {
+    "finished_at": "2026-10-25T21:58:31.766075+00:00",
+    "model": "additive",
+    "seed": 11,
+    "started_at": "2026-10-25T21:58:23.923848+00:00",
+    "status": "complete"
+  },
+  {
+    "finished_at": "2026-10-25T21:58:40.388752+00:00",
+    "model": "gated",
+    "seed": 11,
+    "started_at": "2026-10-25T21:58:31.766304+00:00",
+    "status": "complete"
+  },
+  {
+    "finished_at": "2026-10-25T21:58:49.118354+00:00",
+    "model": "low_rank",
+    "seed": 11,
+    "started_at": "2026-10-25T21:58:40.388983+00:00",
+    "status": "complete"
+  },
+  {
+    "finished_at": "2026-10-25T21:58:58.622980+00:00",
+    "model": "separate",
+    "seed": 11,
+    "started_at": "2026-10-25T21:58:49.118598+00:00",
+    "status": "complete"
+  },
+  {
+    "finished_at": "2026-10-25T21:59:06.060196+00:00",
+    "model": "gru",
+    "seed": 11,
+    "started_at": "2026-10-25T21:58:58.623246+00:00",
+    "status": "complete"
+  },
+  {
+    "finished_at": "2026-10-25T21:59:20.830274+00:00",
+    "model": "independent",
+    "seed": 11,
+    "started_at": "2026-10-25T21:59:06.060417+00:00",
+    "status": "complete"
+  }
+]
