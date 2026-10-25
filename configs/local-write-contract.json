@@ -1,0 +1,17 @@
+{
+  "name": "local-write-contract-v1",
+  "seeds": [11, 23, 47],
+  "adaptation_namespace": 2002,
+  "evaluation_namespace": 2003,
+  "history_length": 4,
+  "evaluation_horizons": [48, 192, 384],
+  "sequences_per_context": 2,
+  "writer": {
+    "learning_rate": 0.1,
+    "damping": 0.001,
+    "key_epsilon": 1e-8,
+    "max_update_norm": 0.01,
+    "max_total_norm": 0.1,
+    "max_rank": 1
+  }
+}

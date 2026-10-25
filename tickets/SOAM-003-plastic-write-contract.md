@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-003"
 title: "Define the grounded local-write contract and plastic parameters"
 type: "engineering"
-status: "ready"
+status: "in_progress"
 priority: "P1"
 recommended_thinking: "high"
 milestone: "M2"
