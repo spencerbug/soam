@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-001"
 title: "Strengthen substrate controls and budget comparisons"
 type: "experiment"
 status: "ready"
 priority: "P0"
+recommended_thinking: "high"
 milestone: "M1"
 work_packages: ["WP-01"]
 hypotheses: ["H1"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-001: Strengthen substrate controls and budget comparisons
+
+## Recommended thinking
+
+**high** — Design fair capacity controls and unseen-switch evaluations without leaking test evidence into tuning.
 
 ## Problem / hypothesis
 

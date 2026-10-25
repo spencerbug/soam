@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-026"
 title: "Gate 7: assess planning benefit and safe memory separation"
 type: "decision"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "high"
 milestone: "M7"
 work_packages: ["WP-11", "WP-12"]
 hypotheses: ["H7"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-026: Gate 7: assess planning benefit and safe memory separation
+
+## Recommended thinking
+
+**high** — Judge realized planning benefit and verify that imagined trajectories never write persistent memory.
 
 ## Problem / hypothesis
 

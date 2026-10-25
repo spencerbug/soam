@@ -41,15 +41,20 @@ directories are boundaries, not implementations.
 - Keep one bounded task/experiment/decision in `tickets/SOAM-###-short-slug.md`.
   Copy `tickets/TEMPLATE.md`; allocate the next unused ID. Never reuse or renumber IDs,
   and do not confuse them with GitHub issue numbers.
-- Frontmatter must begin/end with `---` and follow schema version 1 in
+- Frontmatter must begin/end with `---` and follow schema version 2 in
   `tickets/README.md`: required fields are `schema_version`, `id`, `title`, `type`,
-  `status`, `priority`, `milestone`, `work_packages`, `hypotheses`, `depends_on`,
+  `status`, `priority`, `recommended_thinking`, `milestone`, `work_packages`, `hypotheses`, `depends_on`,
   `labels`, `assignees`, `created`, `updated`, `github_issue`, and `decision`.
   Use one key per line with JSON-compatible YAML values: double-quoted strings/dates,
   inline arrays, integers, or `null`. No aliases, bare strings, duplicate keys, or multiline values.
 - Valid types: `engineering`, `experiment`, `decision`, `research`. Valid statuses:
   `backlog`, `ready`, `in_progress`, `blocked`, `done`, `cancelled`. Priorities are
   `P0`–`P3`; milestones are `M0`–`M8`/`MX`. Keep work-package and hypothesis IDs valid.
+- Set `recommended_thinking` to `low`, `medium`, `high`, or `xhigh` using the rubric
+  in tickets/README.md. Include a matching Recommended thinking body section with
+  a task-specific rationale and mirror the level in PRIORITIES.md. It is advisory
+  for main-task reasoning/review, not authorization or a model setting; keep worker
+  subtasks bounded and review the recommendation when scope changes.
 - Use the required issue-body sections from the template. Acceptance criteria must
   be checkable and must allow documented negative scientific results.
 - Ticket frontmatter owns metadata; PRIORITIES.md owns execution ordering/milestone

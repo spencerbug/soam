@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-014"
 title: "Measure consolidation error recovery, compute, and fixed-size capacity"
 type: "experiment"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M4"
 work_packages: ["WP-07"]
 hypotheses: ["H4"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-014: Measure consolidation error recovery, compute, and fixed-size capacity
+
+## Recommended thinking
+
+**high** — Disentangle capacity, recovery, and compute effects without changing data exposure or hiding regressions.
 
 ## Problem / hypothesis
 

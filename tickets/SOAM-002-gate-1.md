@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-002"
 title: "Gate 1: review the substrate before online writing"
 type: "decision"
 status: "backlog"
 priority: "P0"
+recommended_thinking: "high"
 milestone: "M1"
 work_packages: ["WP-01"]
 hypotheses: ["H1"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-002: Gate 1: review the substrate before online writing
+
+## Recommended thinking
+
+**high** — Weigh substrate evidence, residual H1 limitations, and the conditions for proceeding to plasticity.
 
 ## Problem / hypothesis
 

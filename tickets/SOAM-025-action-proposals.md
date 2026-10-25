@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-025"
 title: "Learn goal-conditioned action proposals after search is reliable"
 type: "experiment"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "high"
 milestone: "M7"
 work_packages: ["WP-12"]
 hypotheses: ["H7"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-025: Learn goal-conditioned action proposals after search is reliable
+
+## Recommended thinking
+
+**high** — Train action proposals against a reliable search reference without confounding policy and world-model quality.
 
 ## Problem / hypothesis
 

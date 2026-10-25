@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-012"
 title: "Validate consolidation candidates with shadow weights and rollback"
 type: "engineering"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M4"
 work_packages: ["WP-06", "WP-07"]
 hypotheses: ["H4"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-012: Validate consolidation candidates with shadow weights and rollback
+
+## Recommended thinking
+
+**high** — Design grounded acceptance and rollback rules that preserve evidence separation and parameter integrity.
 
 ## Problem / hypothesis
 

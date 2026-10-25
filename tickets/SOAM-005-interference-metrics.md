@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-005"
 title: "Measure interference and learning without resets"
 type: "experiment"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M2"
 work_packages: ["WP-03"]
 hypotheses: ["H2", "H8"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-005: Measure interference and learning without resets
+
+## Recommended thinking
+
+**high** — Separate adaptation, interference, and accumulated drift across changing contexts.
 
 ## Problem / hypothesis
 

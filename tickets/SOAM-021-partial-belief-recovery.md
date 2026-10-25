@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-021"
 title: "Evaluate partial observations, ambiguity, and context recovery"
 type: "experiment"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "xhigh"
 milestone: "M6"
 work_packages: ["WP-10"]
 hypotheses: ["H6"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-021: Evaluate partial observations, ambiguity, and context recovery
+
+## Recommended thinking
+
+**xhigh** — Design ambiguous observations and recovery tests that distinguish uncertainty maintenance from premature collapse.
 
 ## Problem / hypothesis
 

@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-008"
 title: "Build shared-scope and noisy-evidence task families"
 type: "experiment"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M3"
 work_packages: ["WP-04", "WP-05"]
 hypotheses: ["H3"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-008: Build shared-scope and noisy-evidence task families
+
+## Recommended thinking
+
+**high** — Construct task families that distinguish beneficial sharing, genuine changes, and misleading evidence.
 
 ## Problem / hypothesis
 

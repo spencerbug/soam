@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-003"
 title: "Define the grounded local-write contract and plastic parameters"
 type: "engineering"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M2"
 work_packages: ["WP-02"]
 hypotheses: ["H2"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-003: Define the grounded local-write contract and plastic parameters
+
+## Recommended thinking
+
+**high** — Define plastic parameter boundaries, grounded targets, and atomic updates without compromising no-write inference.
 
 ## Problem / hypothesis
 

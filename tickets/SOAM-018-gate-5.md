@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-018"
 title: "Gate 5: assess compositional reuse rather than memory maintenance"
 type: "decision"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "xhigh"
 milestone: "M5"
 work_packages: ["WP-08"]
 hypotheses: ["H5"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-018: Gate 5: assess compositional reuse rather than memory maintenance
+
+## Recommended thinking
+
+**xhigh** — Evaluate the strongest self-organization claim by separating composition and transfer from memory maintenance.
 
 ## Problem / hypothesis
 

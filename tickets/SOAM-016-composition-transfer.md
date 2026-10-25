@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-016"
 title: "Benchmark withheld compositions and transfer to related tasks"
 type: "experiment"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "xhigh"
 milestone: "M5"
 work_packages: ["WP-08"]
 hypotheses: ["H5"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-016: Benchmark withheld compositions and transfer to related tasks
+
+## Recommended thinking
+
+**xhigh** — Design withheld compositions that distinguish reusable transformations from interpolation and leakage.
 
 ## Problem / hypothesis
 

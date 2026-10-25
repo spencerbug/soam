@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-000"
 title: "Record the reproducible substrate baseline"
 type: "engineering"
 status: "done"
 priority: "P0"
+recommended_thinking: "medium"
 milestone: "M0"
 work_packages: ["WP-00", "WP-01"]
 hypotheses: ["H1"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-000: Record the reproducible substrate baseline
+
+## Recommended thinking
+
+**medium** — Document established baseline results and verify provenance; use high for any new scientific interpretation.
 
 ## Problem / hypothesis
 

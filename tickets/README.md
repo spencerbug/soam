@@ -33,12 +33,13 @@ keys. This keeps the schema checkable with Python's standard library.
 
 ```yaml
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-031"
 title: "A concrete, bounded research task"
 type: "experiment"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "high"
 milestone: "M5"
 work_packages: ["WP-08"]
 hypotheses: ["H5"]
@@ -56,12 +57,13 @@ The example is not an allocated ticket. Use the next unused ID and actual dates.
 
 | Field | Rule |
 | --- | --- |
-| `schema_version` | Integer `1` |
+| `schema_version` | Integer `2` |
 | `id` | Stable `SOAM-###`; must match filename prefix; never reuse/renumber |
 | `title` | Actionable issue title; publish as `[SOAM-###] title` |
 | `type` | `engineering`, `experiment`, `decision`, or `research` |
 | `status` | `backlog`, `ready`, `in_progress`, `blocked`, `done`, or `cancelled` |
 | `priority` | `P0` next critical path; `P1` foundational; `P2` later/support; `P3` optional |
+| `recommended_thinking` | `low`, `medium`, `high`, or `xhigh`; advisory main-task reasoning effort |
 | `milestone` | One of `M0`–`M8` or `MX`; definitions are in the priority table |
 | `work_packages` | Unique known `WP-00`–`WP-13` IDs; empty only for cross-cutting research |
 | `hypotheses` | Unique `H1`–`H8` IDs; use only relevant claims |
@@ -75,6 +77,30 @@ The example is not an allocated ticket. Use the next unused ID and actual dates.
 All fields are required. Put rationale, estimates, blockers, and evidence in the
 body rather than extending the schema casually. A schema change must update the
 template, validator, agent instructions, and all affected tickets together.
+
+## Recommended thinking levels
+
+Schema version 2 adds required `recommended_thinking` metadata and a matching
+**Recommended thinking** body section with a task-specific rationale. All existing
+tickets have been migrated; SOAM-000 is a retrospective recommendation, not a claim
+about the reasoning setting used for its completed work.
+
+- **low:** mechanical edits or extraction with explicit acceptance checks.
+- **medium:** established implementation patterns and straightforward verification.
+- **high:** experiment design, coupled invariants, statistical interpretation, or gate review.
+- **xhigh:** open-ended mechanism design, meta-learning, ambiguity, composition, or cross-stage synthesis.
+
+These are project recommendations, not model-specific API settings or guarantees.
+Choose an available equivalent when executing. Use the listed level for the main
+reasoning and review; routine subtasks can use less effort. Increase effort when
+unexpected failures or scientific ambiguity demand it. Keep local-worker tasks
+bounded and verify their output regardless of the ticket level. No whole current
+research ticket is assigned low solely because some subtasks are mechanical.
+
+When scope changes, review the level and rationale together and mirror the level
+in PRIORITIES.md. Recommendations do not change priority, readiness, dependencies,
+or authorize experiments. When publishing a GitHub Issue, retain the body section
+so the recommendation remains visible without repository frontmatter.
 
 ## Status and dependency rules
 
@@ -99,7 +125,7 @@ limitations; it is not a blanket declaration that a hypothesis is proven.
 
 ## Completion requirements
 
-Every ticket has **Problem / hypothesis**, **Scope**, **Acceptance criteria**,
+Every ticket has **Recommended thinking**, **Problem / hypothesis**, **Scope**, **Acceptance criteria**,
 **Metrics / evidence**, **Dependencies**, and **Completion record** sections.
 Checkboxes describe verifiable deliverables, not guaranteed positive findings.
 

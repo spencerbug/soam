@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-019"
 title: "Build rendered observations and frozen encoder comparisons"
 type: "engineering"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "medium"
 milestone: "M6"
 work_packages: ["WP-09"]
 hypotheses: ["H6"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-019: Build rendered observations and frozen encoder comparisons
+
+## Recommended thinking
+
+**medium** — Integrate controlled rendering and frozen encoder interfaces with explicit provenance and invariant checks.
 
 ## Problem / hypothesis
 

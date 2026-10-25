@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-XXX"
 title: "Replace with a bounded action"
 type: "experiment"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "high"
 milestone: "M1"
 work_packages: ["WP-01"]
 hypotheses: ["H1"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-XXX: Replace with a bounded action
+
+## Recommended thinking
+
+**high** — Replace with a task-specific rationale using the rubric in README.md.
 
 ## Problem / hypothesis
 

@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-029"
 title: "Conditionally investigate flow-based consolidation"
 type: "experiment"
 status: "backlog"
 priority: "P3"
+recommended_thinking: "xhigh"
 milestone: "MX"
 work_packages: ["WP-07"]
 hypotheses: ["H4"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-029: Conditionally investigate flow-based consolidation
+
+## Recommended thinking
+
+**xhigh** — Define useful flow endpoints and account for parameter symmetries before comparing weight-space refinement.
 
 ## Problem / hypothesis
 

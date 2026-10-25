@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-009"
 title: "Meta-train a constrained functional scope translator"
 type: "experiment"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "xhigh"
 milestone: "M3"
 work_packages: ["WP-05"]
 hypotheses: ["H3"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-009: Meta-train a constrained functional scope translator
+
+## Recommended thinking
+
+**xhigh** — Design and debug meta-learned plasticity with interacting acquisition, preservation, and sharing objectives.
 
 ## Problem / hypothesis
 

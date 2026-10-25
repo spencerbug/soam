@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-007"
 title: "Compare unfiltered, sparse, random, and sensitivity-based scopes"
 type: "experiment"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M3"
 work_packages: ["WP-04"]
 hypotheses: ["H3"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-007: Compare unfiltered, sparse, random, and sensitivity-based scopes
+
+## Recommended thinking
+
+**high** — Design comparable masks and sensitivity controls while separating localization from task isolation.
 
 ## Problem / hypothesis
 

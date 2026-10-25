@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-011"
 title: "Implement a bounded grounded evidence buffer and replay baseline"
 type: "engineering"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "medium"
 milestone: "M4"
 work_packages: ["WP-06"]
 hypotheses: ["H4"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-011: Implement a bounded grounded evidence buffer and replay baseline
+
+## Recommended thinking
+
+**medium** — Implement bounded evidence storage and conventional replay using the established writer contract.
 
 ## Problem / hypothesis
 

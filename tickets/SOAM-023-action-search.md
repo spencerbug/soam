@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-023"
 title: "Implement candidate action search and known goal costs"
 type: "engineering"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "medium"
 milestone: "M7"
 work_packages: ["WP-11"]
 hypotheses: ["H7"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-023: Implement candidate action search and known goal costs
+
+## Recommended thinking
+
+**medium** — Implement bounded candidate search and known goal costs against established model interfaces.
 
 ## Problem / hypothesis
 

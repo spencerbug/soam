@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-006"
 title: "Gate 2: decide whether local acquisition is viable"
 type: "decision"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M2"
 work_packages: ["WP-02", "WP-03"]
 hypotheses: ["H2"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-006: Gate 2: decide whether local acquisition is viable
+
+## Recommended thinking
+
+**high** — Judge local acquisition against retention and stability evidence before opening scope learning.
 
 ## Problem / hypothesis
 

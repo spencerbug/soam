@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-013"
 title: "Train a learned iterative low-rank consolidator"
 type: "experiment"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "xhigh"
 milestone: "M4"
 work_packages: ["WP-07"]
 hypotheses: ["H4"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-013: Train a learned iterative low-rank consolidator
+
+## Recommended thinking
+
+**xhigh** — Develop unrolled learned weight refinement with stable optimization and a fair replay comparison.
 
 ## Problem / hypothesis
 

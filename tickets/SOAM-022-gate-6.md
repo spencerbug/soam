@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-022"
 title: "Gate 6: review sensory grounding and belief recovery"
 type: "decision"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "high"
 milestone: "M6"
 work_packages: ["WP-10"]
 hypotheses: ["H6"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-022: Gate 6: review sensory grounding and belief recovery
+
+## Recommended thinking
+
+**high** — Assess grounded recovery against appropriate memory ablations and remaining observability limitations.
 
 ## Problem / hypothesis
 

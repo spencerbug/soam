@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-017"
 title: "Test identity preservation and reusable temporal structure"
 type: "experiment"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "high"
 milestone: "M5"
 work_packages: ["WP-08"]
 hypotheses: ["H5"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-017: Test identity preservation and reusable temporal structure
+
+## Recommended thinking
+
+**high** — Isolate identity preservation and temporal reuse from memorization and simple dynamical persistence.
 
 ## Problem / hypothesis
 

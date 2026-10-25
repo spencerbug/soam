@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-004"
 title: "Benchmark online transition correction and changed dynamics"
 type: "experiment"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M2"
 work_packages: ["WP-02"]
 hypotheses: ["H2"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-004: Benchmark online transition correction and changed dynamics
+
+## Recommended thinking
+
+**high** — Compare distinct online learning rules fairly and diagnose their effects on multistep dynamics.
 
 ## Problem / hypothesis
 

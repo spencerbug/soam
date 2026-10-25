@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-030"
 title: "Maintain a focused theory and literature evidence map"
 type: "research"
 status: "ready"
 priority: "P2"
+recommended_thinking: "high"
 milestone: "MX"
 work_packages: []
 hypotheses: ["H1", "H2", "H3", "H4", "H5", "H6", "H7", "H8"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-030: Maintain a focused theory and literature evidence map
+
+## Recommended thinking
+
+**high** — Critically map primary literature to falsifiable SOAM claims, assumptions, and unresolved theoretical questions.
 
 ## Problem / hypothesis
 

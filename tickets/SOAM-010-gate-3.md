@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-010"
 title: "Gate 3: evaluate functional scoping and beneficial sharing"
 type: "decision"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M3"
 work_packages: ["WP-05"]
 hypotheses: ["H3"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-010: Gate 3: evaluate functional scoping and beneficial sharing
+
+## Recommended thinking
+
+**high** — Assess the central scope hypothesis at matched acquisition accuracy and distinguish sharing from isolation.
 
 ## Problem / hypothesis
 

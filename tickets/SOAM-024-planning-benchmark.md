@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-024"
 title: "Benchmark navigation, changed dynamics, and planning horizons"
 type: "experiment"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "high"
 milestone: "M7"
 work_packages: ["WP-11"]
 hypotheses: ["H7"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-024: Benchmark navigation, changed dynamics, and planning horizons
+
+## Recommended thinking
+
+**high** — Separate planning gains from model accuracy, reactive control strength, and computational budget.
 
 ## Problem / hypothesis
 

@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-020"
 title: "Train recurrent prediction and assimilation on rendered observations"
 type: "experiment"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "high"
 milestone: "M6"
 work_packages: ["WP-10"]
 hypotheses: ["H6"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-020: Train recurrent prediction and assimilation on rendered observations
+
+## Recommended thinking
+
+**high** — Calibrate recurrent prediction and assimilation while preventing access to hidden simulator state.
 
 ## Problem / hypothesis
 

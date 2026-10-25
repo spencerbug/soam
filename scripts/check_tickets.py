@@ -18,6 +18,7 @@ FIELDS = {
     "type",
     "status",
     "priority",
+    "recommended_thinking",
     "milestone",
     "work_packages",
     "hypotheses",
@@ -32,7 +33,9 @@ FIELDS = {
 TYPES = {"engineering", "experiment", "decision", "research"}
 STATUSES = {"backlog", "ready", "in_progress", "blocked", "done", "cancelled"}
 DECISIONS = {"proceed", "revise", "stop"}
+THINKING_LEVELS = {"low", "medium", "high", "xhigh"}
 SECTIONS = (
+    "Recommended thinking",
     "Problem / hypothesis",
     "Scope",
     "Acceptance criteria",
@@ -86,7 +89,7 @@ def validate(root=ROOT):
         require(path.name.startswith(ident + "-"), f"{path}: filename/ID mismatch")
         require(ident not in tickets, f"Duplicate ticket ID {ident}")
         require(
-            type(metadata["schema_version"]) is int and metadata["schema_version"] == 1,
+            type(metadata["schema_version"]) is int and metadata["schema_version"] == 2,
             f"{ident}: unsupported schema",
         )
         require(
@@ -146,8 +149,16 @@ def validate(root=ROOT):
             require(decision in DECISIONS, f"{ident}: completed decision lacks an outcome")
         else:
             require(decision is None, f"{ident}: only completed decision tickets have an outcome")
+        thinking = metadata["recommended_thinking"]
+        require(thinking in THINKING_LEVELS, f"{ident}: invalid recommended thinking")
         for section in SECTIONS:
             require(f"## {section}\n" in body, f"{ident}: missing {section} section")
+        rationale = body.split("## Recommended thinking\n", 1)[1].split("\n## ", 1)[0].strip()
+        prefix = f"**{thinking}** — "
+        require(
+            rationale.startswith(prefix) and rationale[len(prefix):].strip(),
+            f"{ident}: missing rationale or thinking level disagrees with frontmatter",
+        )
         acceptance = body.split("## Acceptance criteria\n", 1)[1].split("\n## ", 1)[0]
         require(
             re.search(r"^- \[[ x]\] .+", acceptance, re.MULTILINE), f"{ident}: missing checkboxes"
@@ -207,7 +218,7 @@ def validate(root=ROOT):
     found, orders = set(), set()
     for line in table.read_text().splitlines():
         cells = [cell.strip() for cell in line.strip("|").split("|")]
-        if len(cells) != 6 or not re.match(r"\[SOAM-\d{3}:", cells[1]):
+        if len(cells) != 7 or not re.match(r"\[SOAM-\d{3}:", cells[1]):
             continue
         ident = re.search(ID, cells[1]).group()
         require(
@@ -226,7 +237,11 @@ def validate(root=ROOT):
             f"{ident}: priority table metadata is stale",
         )
         require(
-            set(re.findall(ID, cells[5])) == set(ticket["depends_on"]),
+            cells[5] == ticket["recommended_thinking"],
+            f"{ident}: priority-table thinking level is stale",
+        )
+        require(
+            set(re.findall(ID, cells[6])) == set(ticket["depends_on"]),
             f"{ident}: priority-table dependencies differ",
         )
     require(found == tickets.keys(), f"Priority table missing tickets: {tickets.keys() - found}")

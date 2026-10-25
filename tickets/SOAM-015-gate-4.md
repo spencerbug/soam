@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-015"
 title: "Gate 4: decide whether learned consolidation adds value over replay"
 type: "decision"
 status: "backlog"
 priority: "P1"
+recommended_thinking: "high"
 milestone: "M4"
 work_packages: ["WP-07"]
 hypotheses: ["H4"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-015: Gate 4: decide whether learned consolidation adds value over replay
+
+## Recommended thinking
+
+**high** — Determine whether learned refinement adds value over replay and constrain downstream conclusions.
 
 ## Problem / hypothesis
 

@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-028"
 title: "Review cumulative learning evidence and the next research cycle"
 type: "decision"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "xhigh"
 milestone: "M8"
 work_packages: ["WP-13"]
 hypotheses: ["H8"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-028: Review cumulative learning evidence and the next research cycle
+
+## Recommended thinking
+
+**xhigh** — Synthesize cross-stage evidence and distinguish cumulative learning from growing memorization before revising the program.
 
 ## Problem / hypothesis
 

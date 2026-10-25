@@ -1,10 +1,11 @@
 ---
-schema_version: 1
+schema_version: 2
 id: "SOAM-027"
 title: "Integrate an extended continual embodied-learning benchmark"
 type: "experiment"
 status: "backlog"
 priority: "P2"
+recommended_thinking: "xhigh"
 milestone: "M8"
 work_packages: ["WP-13"]
 hypotheses: ["H8"]
@@ -18,6 +19,10 @@ decision: null
 ---
 
 # SOAM-027: Integrate an extended continual embodied-learning benchmark
+
+## Recommended thinking
+
+**xhigh** — Integrate continual acquisition, retention, transfer, grounding, and planning into a controlled long-duration benchmark.
 
 ## Problem / hypothesis
 
