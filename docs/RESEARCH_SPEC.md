@@ -2,8 +2,8 @@
 
 Architecture, theory, hypotheses, and experimental research plan
 
-**Version:** 0.1  
-**Date:** October 25, 2026  
+**Version:** 0.1
+**Date:** October 25, 2026
 **Status:** Research specification — architecture provisionally frozen, mechanisms under investigation
 
 Source: the project owner's specification supplied at repository creation. This is a

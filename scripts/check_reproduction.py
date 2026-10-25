@@ -7,7 +7,6 @@ from pathlib import Path
 import numpy as np
 import torch
 
-
 TIMING_KEYS = {"training_seconds", "rollout_seconds", "seconds_per_transition"}
 
 

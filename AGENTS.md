@@ -32,4 +32,3 @@ decision gate is reviewed. Empty future module directories are boundaries, not i
 - Keep baseline results and failure analysis. Advance one work package at a time.
 - Tests must cover scientific invariants, data separation, no-write inference, and reproducibility.
 - Review and verify local-worker output. Never let a worker control its own approval or trials.
-
