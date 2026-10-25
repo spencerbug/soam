@@ -1,0 +1,12 @@
+{
+  "note": "Figures re-rendered from original saved trajectories after a layout-only correction; numerical results unchanged.",
+  "benchmark_commit": "e861742bd3c2393d7870461771e55bb5f9cd3199",
+  "renderer": "soam/evaluation/plots.py",
+  "renderer_sha256": "d867967ae64f386a20317fd26fe8ce59062e6eeafd88a941b7f8d11e68c8e1cc",
+  "figures": {
+    "additive-seed11.png": "8513f5587d5b28e0d0e23a02933e20b4c5210a15da4c3e27c6665057dc89e885",
+    "gated-seed11.png": "8ff53a72ee203579fd095b0c486764daa5cfd26b9ad9e9abb3a4e09d26201599",
+    "low_rank-seed11.png": "0e90bdcaa3c357cbf4b4c806f4287ed2f61b5104857f0c57555fab2113e10795",
+    "separate-seed11.png": "8510a8d04a41183d0b12b3be5f573c339845bea00cecafa3bbf76db6a9635cf2"
+  }
+}

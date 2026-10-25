@@ -110,6 +110,10 @@ is confined to diagnostics.
 
 ![Additive model diagnostics](substrate/additive-seed11.png)
 
+The figures were re-rendered from saved trajectories after correcting clipped labels.
+[Figure provenance](substrate/figure-provenance.json) records the renderer and image hashes;
+the numerical records remain unchanged.
+
 Additional figures: [gated](substrate/gated-seed11.png),
 [low-rank](substrate/low_rank-seed11.png), [separate cores](substrate/separate-seed11.png).
 

@@ -8,7 +8,9 @@ import numpy as np
 
 
 def plot_run(path, history, steady, switching, metrics, projection):
-    fig, axes = plt.subplots(2, 3, figsize=(14, 8), constrained_layout=True)
+    fig, axes = plt.subplots(2, 3, figsize=(15, 8.5))
+    # Fixed margins avoid data-dependent equal-aspect layout clipping text.
+    fig.subplots_adjust(left=0.07, right=0.98, bottom=0.09, top=0.90, wspace=0.30, hspace=0.40)
     steps = [row["step"] for row in history]
     axes[0, 0].plot(steps, [row["loss"] for row in history], color="#2463a6")
     axes[0, 0].set(title="Training objective", xlabel="Optimizer step", ylabel="Loss", yscale="log")
@@ -58,5 +60,5 @@ def plot_run(path, history, steady, switching, metrics, projection):
     for ax in axes.flat:
         ax.grid(alpha=0.15)
     fig.suptitle(path.parent.name + " · recurrent baseline diagnostics", fontsize=14)
-    fig.savefig(path, dpi=140)
+    fig.savefig(path, dpi=140, bbox_inches="tight", pad_inches=0.15)
     plt.close(fig)
