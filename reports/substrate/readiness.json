@@ -1,0 +1,158 @@
+[
+  {
+    "model": "additive",
+    "seed": 11,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "additive",
+    "seed": 23,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "additive",
+    "seed": 47,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "gated",
+    "seed": 11,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "gated",
+    "seed": 23,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "gated",
+    "seed": 47,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "low_rank",
+    "seed": 11,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "low_rank",
+    "seed": 23,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "low_rank",
+    "seed": 47,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "separate",
+    "seed": 11,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "separate",
+    "seed": 23,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  },
+  {
+    "model": "separate",
+    "seed": 47,
+    "checks": {
+      "steady_nmse_le_0_15": true,
+      "switching_nmse_le_0_25": true,
+      "every_steady_context_nmse_le_0_25": true,
+      "at_most_quarter_persistence_error": true,
+      "no_long_trajectory_invalid_or_bound_violations": true,
+      "perturbation_mean_final_gap_ratio_le_1_both_conditions": true
+    },
+    "screen_passed": true
+  }
+]

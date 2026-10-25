@@ -81,7 +81,7 @@ against these test results.
 - Grounded evaluation observes each actual current feature before predicting its
   successor; free evaluation only receives the first observation. No state resets
   at context switches. Report error by transitions since each switch.
-- Perturb hidden state at step 8 with zero-mean Gaussian noise, RMS 0.15 per unit;
+- Perturb hidden state at step 8 with zero-mean Gaussian noise, standard deviation 0.15 per unit;
   compare to the same unperturbed model trajectory. Record gap decay, sustained
   halving over the last four steps, excess error against reality, and bound violations.
   The injected state is not clipped; bound metrics cover returned predicted states.

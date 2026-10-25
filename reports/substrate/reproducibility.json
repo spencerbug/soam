@@ -1,0 +1,26 @@
+{
+  "exact_numerical_match": true,
+  "checked": [
+    {
+      "model": "additive",
+      "seed": 11
+    },
+    {
+      "model": "gated",
+      "seed": 11
+    },
+    {
+      "model": "low_rank",
+      "seed": 11
+    },
+    {
+      "model": "separate",
+      "seed": 11
+    }
+  ],
+  "excluded_fields": [
+    "rollout_seconds",
+    "seconds_per_transition",
+    "training_seconds"
+  ]
+}

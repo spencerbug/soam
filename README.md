@@ -18,6 +18,11 @@ plasticity, consolidation, JEPA, and planning components are intentionally unimp
 See [experiment protocol](docs/EXPERIMENTS.md), [work packages](docs/ROADMAP.md),
 [architecture boundaries](docs/ARCHITECTURE.md), and [initial report](reports/BASELINE.md).
 
+The initial four-model, three-seed benchmark passes the predefined substrate
+readiness screen. Additive recurrence performs comparably to the more complex
+variants; long-horizon drift remains. These are conventional baseline results,
+not evidence of self-organization. All four seed-11 runs reproduce exactly.
+
 ## Run
 
 ```sh
@@ -34,6 +39,13 @@ per-seed metrics, training traces, and diagnostic PNGs. Numerical results should
 repeat on the same software/hardware; wall times are expected to vary. `uv.lock`
 pins dependencies. The smoke configuration exercises the pipeline; it is not
 evidence for H1. Tracked compact results are in `reports/`; larger artifacts are in `runs/`.
+
+To check a full-length repeat of seed 11 (choose unused output paths):
+
+```sh
+uv run soam-run --config configs/substrate.json --seeds 11 --output runs/my-repeat
+uv run python scripts/check_reproduction.py runs/substrate runs/my-repeat
+```
 
 ## Research discipline
 

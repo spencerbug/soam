@@ -1,0 +1,56 @@
+{
+  "alpha": 0.7,
+  "assimilation_gain": 0.5,
+  "batch_size": 48,
+  "environment": {
+    "angles": [
+      -0.18,
+      0.18,
+      0.14
+    ],
+    "angular_action_gain": 0.08,
+    "centers": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.2,
+        -0.15
+      ]
+    ],
+    "damping": 0.995,
+    "observation_dim": 12,
+    "projection_seed": 1729,
+    "translation_action_gain": 0.015
+  },
+  "eval_horizon": 48,
+  "eval_sequences_per_context": 32,
+  "grounded_loss_weight": 0.3,
+  "hidden_bound": 1.5,
+  "hidden_dim": 40,
+  "learning_rate": 0.003,
+  "log_every": 50,
+  "models": [
+    "additive",
+    "gated",
+    "low_rank",
+    "separate"
+  ],
+  "name": "substrate-v0.1",
+  "perturb_std": 0.15,
+  "perturb_step": 8,
+  "rank": 4,
+  "seeds": [
+    11
+  ],
+  "stability_horizon": 192,
+  "steps": 600,
+  "switch_every": 8,
+  "threads": 1,
+  "train_horizon": 24
+}
