@@ -24,6 +24,8 @@ def capture(repo, config):
             *repo.glob("soam/**/*.py"),
             *repo.glob("tests/**/*.py"),
             *repo.glob("configs/*.json"),
+            *repo.glob("scripts/*.py"),
+            repo / "docs/SUBSTRATE_CONTROLS.md",
             repo / "pyproject.toml",
             repo / "uv.lock",
         ]

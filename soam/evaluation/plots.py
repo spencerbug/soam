@@ -41,7 +41,13 @@ def plot_run(path, history, steady, switching, metrics, projection):
     for t in np.flatnonzero(contexts[1:] != contexts[:-1]) + 1:
         axes[1, 0].axvline(t, color="gray", alpha=0.35)
     axes[1, 0].set(
-        title="Context switches; activity is carried", xlabel="Time", ylabel="Diagnostic x"
+        title=(
+            "Switches; predicted-feature handoff"
+            if metrics["model"] == "independent"
+            else "Context switches; activity is carried"
+        ),
+        xlabel="Time",
+        ylabel="Diagnostic x",
     )
     axes[1, 0].legend(fontsize=8)
     for label, case in (("Steady", metrics["steady"]), ("Switching", metrics["switching"])):

@@ -22,6 +22,11 @@ class Config:
     name: str = "substrate"
     seeds: tuple[int, ...] = (11, 23, 47)
     models: tuple[str, ...] = ("additive", "gated", "low_rank", "separate")
+    match_budgets: bool = False
+    parameter_tolerance: float = 0.05
+    stream_namespace: int = 0
+    controls_evaluation: bool = False
+    control_horizons: tuple[int, ...] = (48, 192, 384)
     hidden_dim: int = 40
     rank: int = 4
     alpha: float = 0.7
@@ -49,8 +54,22 @@ class Config:
             raise ValueError("seeds must be nonnegative integers")
         if not self.models or len(set(self.models)) != len(self.models):
             raise ValueError("models must be nonempty and unique")
-        if set(self.models) - {"additive", "gated", "low_rank", "separate"}:
+        if set(self.models) - {"additive", "gated", "low_rank", "separate", "gru", "independent"}:
             raise ValueError("unknown recurrent model")
+        if type(self.match_budgets) is not bool or type(self.controls_evaluation) is not bool:
+            raise ValueError("experiment flags must be booleans")
+        if type(self.stream_namespace) is not int or self.stream_namespace < 0:
+            raise ValueError("stream_namespace must be a nonnegative integer")
+        if not 0 < self.parameter_tolerance <= 0.1:
+            raise ValueError("parameter_tolerance must be in (0,0.1]")
+        if (
+            not self.control_horizons
+            or len(set(self.control_horizons)) != len(self.control_horizons)
+            or any(
+                type(h) is not int or h <= max(1, self.perturb_step) for h in self.control_horizons
+            )
+        ):
+            raise ValueError("control horizons must be unique integers beyond perturbation")
         for key in (
             "hidden_dim",
             "rank",
@@ -116,7 +135,7 @@ class Config:
         for key in ("angles", "centers"):
             if key in env:
                 env[key] = tuple(tuple(x) if isinstance(x, list) else x for x in env[key])
-        for key in ("seeds", "models"):
+        for key in ("seeds", "models", "control_horizons"):
             if key in data:
                 data[key] = tuple(data[key])
         return cls(environment=EnvironmentConfig(**env), **data).validate()

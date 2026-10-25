@@ -20,7 +20,7 @@ the same change. See [ticket conventions](tickets/README.md) and [agent instruct
   **done:** acceptance/evidence complete, which can include a negative result;
   **cancelled:** retained with a reason or replacement.
 
-Only SOAM-001 and the bounded supporting study SOAM-030 are initially ready. Start
+SOAM-001 is in progress; the bounded supporting study SOAM-030 is ready. Continue
 with SOAM-001 on the implementation path. A dependency on a decision ticket requires
 `done` plus `decision: "proceed"`, not merely closure. Extra conditions in ticket
 bodies (such as the flow prerequisite) still apply. Revise/stop decisions retain
@@ -31,7 +31,7 @@ history and require an explicit plan/dependency update before downstream work.
 | Milestone | Focus | Exit evidence / decision | State |
 | --- | --- | --- | --- |
 | M0 | Initial substrate infrastructure | Recorded baseline and exact reproduction (SOAM-000); full H1 remains open | Complete initial sprint |
-| M1 | Substrate controls | Matched controls and Gate 1 decision (SOAM-002) | Next |
+| M1 | Substrate controls | Matched controls and Gate 1 decision (SOAM-002) | In progress |
 | M2 | Local acquisition and interference | Online-write comparisons and Gate 2 (SOAM-006) | Planned |
 | M3 | Functional scopes | Matched acquisition/retention and shared transfer; Gate 3 (SOAM-010) | Planned |
 | M4 | Replay and learned consolidation | Grounded validation, compute/capacity comparisons; Gate 4 (SOAM-015) | Planned |
@@ -58,7 +58,7 @@ is waiting. Reordering this table never changes stable ticket IDs.
 | Order | Ticket | Priority | Status | Milestone | Thinking | Depends on |
 | --- | --- | --- | --- | --- | --- | --- |
 | 00 | [SOAM-000: Record the reproducible substrate baseline](tickets/SOAM-000-substrate-baseline.md) | P0 | done | M0 | medium | — |
-| 01 | [SOAM-001: Strengthen substrate controls and budget comparisons](tickets/SOAM-001-substrate-controls.md) | P0 | ready | M1 | high | [SOAM-000](tickets/SOAM-000-substrate-baseline.md) |
+| 01 | [SOAM-001: Strengthen substrate controls and budget comparisons](tickets/SOAM-001-substrate-controls.md) | P0 | in_progress | M1 | high | [SOAM-000](tickets/SOAM-000-substrate-baseline.md) |
 | 02 | [SOAM-002: Gate 1: review the substrate before online writing](tickets/SOAM-002-gate-1.md) | P0 | backlog | M1 | high | [SOAM-001](tickets/SOAM-001-substrate-controls.md) |
 | 03 | [SOAM-003: Define the grounded local-write contract and plastic parameters](tickets/SOAM-003-plastic-write-contract.md) | P1 | backlog | M2 | high | [SOAM-002](tickets/SOAM-002-gate-1.md) |
 | 04 | [SOAM-004: Benchmark online transition correction and changed dynamics](tickets/SOAM-004-online-writer-baselines.md) | P1 | backlog | M2 | high | [SOAM-003](tickets/SOAM-003-plastic-write-contract.md) |

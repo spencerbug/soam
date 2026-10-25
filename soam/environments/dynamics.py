@@ -23,9 +23,10 @@ class SequenceBatch:
 
 
 class Dynamics:
-    def __init__(self, config: EnvironmentConfig, seed: int, split: str):
+    def __init__(self, config: EnvironmentConfig, seed: int, split: str, namespace: int = 0):
         self.config = config
-        self.rng = np.random.default_rng(np.random.SeedSequence([seed, SPLIT_IDS[split]]))
+        entropy = [seed, SPLIT_IDS[split]] + ([namespace] if namespace else [])
+        self.rng = np.random.default_rng(np.random.SeedSequence(entropy))
         self.encoder = FixedProjection(config.observation_dim, config.projection_seed)
         self.n_contexts = len(config.angles)
 
@@ -43,15 +44,30 @@ class Dynamics:
         )
         return centers + cfg.damping * rotated + cfg.translation_action_gain * actions[..., 1:]
 
-    def sample(self, batch_size, horizon, switch_every=None, balanced=False):
+    def sample(
+        self,
+        batch_size,
+        horizon,
+        switch_every=None,
+        balanced=False,
+        *,
+        irregular=False,
+        action_hold=1,
+    ):
         if batch_size < 1 or horizon < 1 or (switch_every is not None and switch_every < 1):
             raise ValueError("batch_size, horizon and switch_every must be positive")
+        if irregular and switch_every is not None:
+            raise ValueError("choose regular or irregular switching")
+        if type(action_hold) is not int or action_hold < 1:
+            raise ValueError("action_hold must be a positive integer")
         rng = self.rng
         phase = rng.uniform(-np.pi, np.pi, batch_size)
         radius = rng.uniform(0.25, 0.8, batch_size)
         states = np.empty((batch_size, horizon + 1, 2), np.float32)
         states[:, 0] = radius[:, None] * np.stack((np.cos(phase), np.sin(phase)), -1)
         actions = rng.uniform(-1, 1, (batch_size, horizon, 3)).astype(np.float32)
+        if action_hold > 1:
+            actions = np.repeat(actions[:, ::action_hold], action_hold, axis=1)[:, :horizon]
         start = (
             np.arange(batch_size) % self.n_contexts
             if balanced
@@ -59,6 +75,17 @@ class Dynamics:
         )
         offsets = np.arange(horizon) // switch_every if switch_every else np.zeros(horizon, int)
         contexts = (start[:, None] + offsets) % self.n_contexts
+        if irregular:
+            # Unseen dwell times and non-cyclic context order; separate schedule per example.
+            durations = np.asarray([3, 4, 5, 6, 7, 9, 10, 11, 12, 13])
+            contexts = np.empty((batch_size, horizon), dtype=np.int64)
+            for row in range(batch_size):
+                t, context = 0, int(start[row])
+                while t < horizon:
+                    end = min(horizon, t + int(rng.choice(durations)))
+                    contexts[row, t:end] = context
+                    t = end
+                    context = (context + int(rng.integers(1, self.n_contexts))) % self.n_contexts
         for t in range(horizon):
             states[:, t + 1] = self.transition(states[:, t], actions[:, t], contexts[:, t])
         state_tensor = torch.from_numpy(states)

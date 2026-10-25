@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-001"
 title: "Strengthen substrate controls and budget comparisons"
 type: "experiment"
-status: "ready"
+status: "in_progress"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -37,7 +37,7 @@ Specification: [research plan §8, §16](../docs/RESEARCH_SPEC.md). Apply the [c
 
 ## Acceptance criteria
 
-- [ ] Freeze development/test streams, parameter tolerances, compute accounting, and readiness criteria before running the new comparison.
+- [x] Freeze development/test streams, parameter tolerances, compute accounting, and readiness criteria before running the new comparison.
 - [ ] Report total parameters, exposure, runtime, and the switching semantics of each baseline; disclose any required sensory reset for independent predictors.
 - [ ] Run multiple fixed seeds and report per-context, per-horizon, switching, motion-collapse, and perturbation metrics.
 - [ ] Publish negative results and identify which claims about shared structure remain untested; do not tune on the original test set.
@@ -52,5 +52,8 @@ One-step/free NMSE, switch recovery, long-horizon drift, invalid rates, paired p
 
 ## Completion record
 
-Not started. Add implementation/report links, exact validation commands and outcomes,
-configuration/seed/source identities, and limitations when work is completed.
+Started 2026-10-25. Baseline before modification: `uv run pytest` (with a writable
+UV_CACHE_DIR) — 15 passed. Protocol: [substrate controls](../docs/SUBSTRATE_CONTROLS.md).
+Pre-run validation: 27 tests passed, Ruff passed, ticket validation passed, and all
+six variants completed the two-step smoke run in `runs/substrate-controls-smoke-v1`.
+Measured results and final validation pending.

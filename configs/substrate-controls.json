@@ -1,0 +1,35 @@
+{
+  "name": "substrate-controls-v1",
+  "seeds": [
+    11,
+    23,
+    47
+  ],
+  "models": [
+    "additive",
+    "gated",
+    "low_rank",
+    "separate",
+    "gru",
+    "independent"
+  ],
+  "hidden_dim": 40,
+  "steps": 600,
+  "batch_size": 48,
+  "train_horizon": 24,
+  "eval_horizon": 48,
+  "stability_horizon": 192,
+  "eval_sequences_per_context": 32,
+  "switch_every": 8,
+  "perturb_step": 8,
+  "log_every": 50,
+  "match_budgets": true,
+  "parameter_tolerance": 0.05,
+  "stream_namespace": 1,
+  "controls_evaluation": true,
+  "control_horizons": [
+    48,
+    192,
+    384
+  ]
+}

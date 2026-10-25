@@ -33,8 +33,10 @@ def seed_everything(seed, threads):
 
 def linear_macs_per_step(model):
     """Linear-layer multiply-accumulates; excludes activation/gating/dispatch costs."""
-    h, d = model.hidden_dim, model.readout.out_features
+    h, d = model.hidden_dim, model.observation_dim
     count = h * h + 3 * h + h * d
+    if model.variant == "gru":
+        count = 3 * h * (h + 3 + model.contexts) + h * d
     if model.variant == "low_rank":
         count += 2 * h * model.rank
     return count
@@ -43,7 +45,7 @@ def linear_macs_per_step(model):
 def train_one(cfg, variant, seed, output):
     seed_everything(seed, cfg.threads)
     model = build_model(cfg, variant)
-    training = Dynamics(cfg.environment, seed, "train")
+    training = Dynamics(cfg.environment, seed, "train", cfg.stream_namespace)
     optimizer = torch.optim.Adam(model.parameters(), lr=cfg.learning_rate)
     history = []
     start = time.perf_counter()
@@ -114,13 +116,13 @@ def train_one(cfg, variant, seed, output):
         "are differentiated per training batch. Timings include those costs.",
     }
     n = cfg.eval_sequences_per_context * len(cfg.environment.angles)
-    dev = Dynamics(cfg.environment, seed, "dev")
+    dev = Dynamics(cfg.environment, seed, "dev", cfg.stream_namespace)
     dev_batch = dev.sample(n, cfg.eval_horizon, balanced=True)
     model.eval()
     with torch.no_grad():
         pred, _ = model.rollout(dev_batch.observations[:, 0], dev_batch.actions, dev_batch.contexts)
     metrics["development"] = prediction_metrics(pred, dev_batch.observations[:, 1:])
-    evaluation = Dynamics(cfg.environment, seed, "test")
+    evaluation = Dynamics(cfg.environment, seed, "test", cfg.stream_namespace)
     steady = evaluation.sample(n, cfg.eval_horizon, balanced=True)
     switching = evaluation.sample(n, cfg.eval_horizon, switch_every=cfg.switch_every, balanced=True)
     metrics["steady"], steady_artifact = evaluate(
@@ -129,7 +131,7 @@ def train_one(cfg, variant, seed, output):
     metrics["switching"], switch_artifact = evaluate(
         model, switching, cfg, evaluation.encoder, seed + 991
     )
-    stability = Dynamics(cfg.environment, seed, "stability").sample(
+    stability = Dynamics(cfg.environment, seed, "stability", cfg.stream_namespace).sample(
         n, cfg.stability_horizon, switch_every=cfg.switch_every, balanced=True
     )
     with torch.no_grad():
@@ -145,6 +147,20 @@ def train_one(cfg, variant, seed, output):
         for artifact in (steady_artifact, switch_artifact)
         for t in artifact.values()
     )
+    control_artifacts = {}
+    if cfg.controls_evaluation:
+        from soam.evaluation.controls import evaluate_controls, readiness
+
+        metrics["controls"], control_artifacts = evaluate_controls(model, cfg, seed)
+        metrics["controls_readiness"] = readiness(metrics["controls"])
+        metrics["switch_semantics"] = (
+            "predicted-feature handoff with hidden reinitialization; no real sensory reset"
+            if variant == "independent"
+            else "carry hidden activity without reset"
+        )
+        metrics["stored_evaluation_tensor_bytes"] += sum(
+            t.numel() * t.element_size() for t in control_artifacts.values()
+        )
     write_json(output / "metrics.json", metrics)
     plot_run(
         output / "diagnostics.png",
@@ -156,6 +172,7 @@ def train_one(cfg, variant, seed, output):
     )
     np.savez_compressed(
         output / "trajectories.npz",
+        **{key: tensor.numpy() for key, tensor in control_artifacts.items()},
         **{
             f"{label}_{key}": tensor.numpy()
             for label, artifact in (("steady", steady_artifact), ("switching", switch_artifact))
@@ -175,11 +192,31 @@ def run(cfg, output, repo=None):
     write_json(output / "provenance.json", capture(repo, cfg))
     status = {"status": "running", "started_at": datetime.now(UTC).isoformat()}
     write_json(output / "status.json", status)
-    rows = []
+    rows, trials = [], []
+    started = time.monotonic()
     try:
         for variant in cfg.models:
             for seed in cfg.seeds:
-                rows.append(train_one(cfg, variant, seed, output / f"{variant}-seed{seed}"))
+                if cfg.controls_evaluation and time.monotonic() - started > 1200:
+                    raise TimeoutError("20-minute controls execution limit exceeded")
+                trial = {
+                    "model": variant,
+                    "seed": seed,
+                    "status": "running",
+                    "started_at": datetime.now(UTC).isoformat(),
+                }
+                trials.append(trial)
+                write_json(output / "trials.json", trials)
+                try:
+                    rows.append(train_one(cfg, variant, seed, output / f"{variant}-seed{seed}"))
+                except Exception as error:
+                    trial.update(status="failed", error=f"{type(error).__name__}: {error}")
+                    raise
+                else:
+                    trial["status"] = "complete"
+                finally:
+                    trial["finished_at"] = datetime.now(UTC).isoformat()
+                    write_json(output / "trials.json", trials)
         write_json(output / "results.json", rows)
         status["status"] = "complete"
     except Exception as error:
