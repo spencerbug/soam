@@ -17,6 +17,8 @@ plasticity, consolidation, JEPA, and planning components are intentionally unimp
 
 See [experiment protocol](docs/EXPERIMENTS.md), [work packages](docs/ROADMAP.md),
 [architecture boundaries](docs/ARCHITECTURE.md), and [initial report](reports/BASELINE.md).
+The remaining work is organized in the [priority and milestone tracker](PRIORITIES.md)
+and [issue backlog](tickets/README.md), with GitHub-ready templates and ticket conventions.
 
 The initial four-model, three-seed benchmark passes the predefined substrate
 readiness screen. Additive recurrence performs comparably to the more complex

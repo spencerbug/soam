@@ -1,0 +1,153 @@
+# SOAM issue backlog
+
+Start with the [priority and milestone table](../PRIORITIES.md). The backlog covers
+WP-00 through WP-13, the seven research gates, the final H8 review, and bounded
+supporting/optional research. SOAM-000 records the completed initial sprint;
+SOAM-001 through SOAM-030 describe remaining work, not completed implementations.
+
+These are GitHub-flavored Markdown issue bodies with YAML frontmatter. They are
+readable as repository files after pushing. They are **not live GitHub Issues**:
+pushing commits does not publish issue records. Stable `SOAM-###` IDs are independent
+of future GitHub issue numbers.
+
+## Files and ownership
+
+- `SOAM-###-short-slug.md`: one bounded task, experiment, or decision.
+- [TEMPLATE.md](TEMPLATE.md): copy for a new repository ticket.
+- [PRIORITIES.md](../PRIORITIES.md): default ordering, milestone exit criteria, and mirrored metadata.
+- [AGENTS.md](../AGENTS.md): mandatory agent housekeeping instructions.
+- Native GitHub templates: [research task](../.github/ISSUE_TEMPLATE/research-task.md)
+  and [decision gate](../.github/ISSUE_TEMPLATE/decision-gate.md).
+
+Ticket frontmatter is authoritative for each ticket's metadata. The priority table
+owns ordering and milestone summaries. The research specification remains the
+source of scientific intent; tickets operationalize it rather than silently revising it.
+
+## Frontmatter format
+
+Use `---` delimiters at the start of the file. This project uses a deliberately
+small, valid YAML subset: **one key per line; JSON double-quoted strings, inline
+arrays, integers, or `null` as values**. Quote dates and statuses. Do not use YAML
+aliases, multiline values, bare strings, comments within the header, or duplicate
+keys. This keeps the schema checkable with Python's standard library.
+
+```yaml
+---
+schema_version: 1
+id: "SOAM-031"
+title: "A concrete, bounded research task"
+type: "experiment"
+status: "backlog"
+priority: "P2"
+milestone: "M5"
+work_packages: ["WP-08"]
+hypotheses: ["H5"]
+depends_on: ["SOAM-018"]
+labels: ["type:experiment", "priority:P2", "milestone:M5"]
+assignees: []
+created: "2026-10-25"
+updated: "2026-10-25"
+github_issue: null
+decision: null
+---
+```
+
+The example is not an allocated ticket. Use the next unused ID and actual dates.
+
+| Field | Rule |
+| --- | --- |
+| `schema_version` | Integer `1` |
+| `id` | Stable `SOAM-###`; must match filename prefix; never reuse/renumber |
+| `title` | Actionable issue title; publish as `[SOAM-###] title` |
+| `type` | `engineering`, `experiment`, `decision`, or `research` |
+| `status` | `backlog`, `ready`, `in_progress`, `blocked`, `done`, or `cancelled` |
+| `priority` | `P0` next critical path; `P1` foundational; `P2` later/support; `P3` optional |
+| `milestone` | One of `M0`–`M8` or `MX`; definitions are in the priority table |
+| `work_packages` | Unique known `WP-00`–`WP-13` IDs; empty only for cross-cutting research |
+| `hypotheses` | Unique `H1`–`H8` IDs; use only relevant claims |
+| `depends_on` | Unique existing ticket IDs, no self-dependency or cycles |
+| `labels` | Unique proposed GitHub labels; include `type:<type>`, `priority:<priority>`, and `milestone:<milestone>` |
+| `assignees` | Known GitHub handles only; leave empty rather than inventing owners |
+| `created`, `updated` | Quoted ISO dates `YYYY-MM-DD`; preserve creation date and update on material changes |
+| `github_issue` | `null` until published, then the actual `https://github.com/OWNER/REPO/issues/NUMBER` URL |
+| `decision` | `null` for ordinary/open tickets; completed decision tickets use `proceed`, `revise`, or `stop` |
+
+All fields are required. Put rationale, estimates, blockers, and evidence in the
+body rather than extending the schema casually. A schema change must update the
+template, validator, agent instructions, and all affected tickets together.
+
+## Status and dependency rules
+
+1. New future work starts in `backlog`. Ordinary unsatisfied dependencies are not
+   themselves an exceptional `blocked` state.
+2. Promote to `ready` only when dependencies are `done`, prerequisite decision
+   tickets say `proceed`, and body-specific preconditions are satisfied.
+3. Set `in_progress` when work actually begins; add a known assignee when available.
+4. Use `blocked` for an explicit impediment. Add a `## Blockers` section with the
+   reason, required resolution, and relevant link. Do not fabricate a human approval
+   requirement for routine authorized work.
+5. Set `done` only with checked acceptance criteria and a completion record. A well-run
+   experiment can be done with a negative result. A gate can be done with `revise`
+   or `stop`; it does not thereby unblock its children.
+6. Retain cancelled/superseded tickets with a reason and replacement link. Do not
+   delete evidence or silently remove dependencies to make a task ready.
+
+A gate review is an evidence/documentation task, not automatically an additional
+human permission step. The existing user authorization governs who may carry out
+work and record decisions. A `proceed` decision must state its scope and residual
+limitations; it is not a blanket declaration that a hypothesis is proven.
+
+## Completion requirements
+
+Every ticket has **Problem / hypothesis**, **Scope**, **Acceptance criteria**,
+**Metrics / evidence**, **Dependencies**, and **Completion record** sections.
+Checkboxes describe verifiable deliverables, not guaranteed positive findings.
+
+For implementation/experiment work, record:
+
+- Relevant tests and exact validation commands/outcomes; never claim an unrun check passed.
+- Configuration, source commit/fingerprint, data splits, fixed seeds, checkpoints,
+  and durable report/artifact paths. Mark missing/unavailable artifacts explicitly.
+- Baselines and ablations, data exposure, parameters, time/operations/memory, uncertainty,
+  and negative results appropriate to the task. Choose success criteria before testing.
+- The effect on the research gate and on downstream readiness. Scientific conclusions
+  require evidence beyond passing a software test or completing implementation.
+
+For decisions/research-only work, cite the actual reviewed reports or primary sources
+and record rationale/limitations. Do not invent numerical validation for a document.
+Update the ticket, priority-table row, and milestone summary in the same change.
+Keep README/ROADMAP links current when scope or milestone status changes.
+
+## GitHub display and later publication
+
+The native templates use GitHub's own `name`, `about`, `title`, `labels`, and
+`assignees` frontmatter; they are separate from this repository's richer ticket
+schema. They become available in the new-issue chooser after reaching the default
+branch with Issues enabled. See [GitHub's template documentation](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository).
+
+When publication is explicitly requested:
+
+1. Check `github_issue` and search for the stable ID to avoid creating duplicates.
+2. Use `[SOAM-###] title` as the GitHub title and the Markdown body below the YAML
+   as the issue body. Preserve checkboxes and dependency IDs.
+3. Translate repository-relative links to actual repository file/issue URLs for the
+   published issue. Set labels, milestone, and known assignees using GitHub metadata;
+   local frontmatter does not synchronize them automatically. Create/verify labels
+   and milestone names as part of that authorized publication.
+4. Record the returned issue URL in `github_issue`, update `updated`, and keep future
+   status/decision changes synchronized explicitly. Never guess issue numbers.
+
+Actual issue creation is a separate GitHub action, as described in
+[GitHub's issue-creation documentation](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue).
+No publishing automation or remote action is part of this backlog change.
+
+## Validation
+
+```sh
+uv run python scripts/check_tickets.py
+```
+
+The validator checks metadata, dates, links, required sections, dependency cycles,
+ready/active/done eligibility, decision outcomes, priority-table consistency, and
+native template headers. It cannot judge the scientific adequacy of evidence or
+body-specific prerequisites; those still need review.
