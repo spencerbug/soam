@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-003"
 title: "Define the grounded local-write contract and plastic parameters"
 type: "engineering"
-status: "backlog"
+status: "ready"
 priority: "P1"
 recommended_thinking: "high"
 milestone: "M2"
@@ -31,6 +31,14 @@ Online writing needs an explicit, testable distinction between transient state, 
 Specification: [research plan §5, §9, §17](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+Gate 1 [decision](../reports/GATE_1_REVIEW.md) selects the width-37 low-rank model;
+use the [verified checkpoint manifest](../reports/gate-1/checkpoints.json).
+Only `recurrent.weight` (37×37) may be plastic; freeze all other parameters and
+settings. Define grounded cue/target construction, norm caps, and rollback before
+measured writer work. Retain GRU as a predictive reference; writer-isolating online
+gradient controls must use the same low-rank plastic family. Use fresh evaluation
+streams and review the gate's failure conditions.
 
 - Implement one justified plastic weight or fast-adapter formulation behind a common writer interface.
 - Define cue/target construction, bounded update proposals, commit/rollback, and grounded-evidence provenance.

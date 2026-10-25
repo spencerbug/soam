@@ -3,7 +3,7 @@
 Updated: 2026-10-25. This is an evidence-driven sequence, not a calendar commitment.
 Dates and durations will be estimated when each milestone is scoped; dependencies
 and research outcomes can change the order. The baseline and strengthened controls
-are complete; Gate 1 is next. A passed readiness screen does not close every H1 claim.
+are complete; Gate 1 proceeds to bounded low-rank local-acquisition research. A passed readiness screen does not close every H1 claim.
 
 Ticket frontmatter is authoritative for status, priority, recommended thinking,
 milestone, and dependencies.
@@ -21,9 +21,9 @@ the same change. See [ticket conventions](tickets/README.md) and [agent instruct
   **done:** acceptance/evidence complete, which can include a negative result;
   **cancelled:** retained with a reason or replacement.
 
-SOAM-002 and the bounded supporting study SOAM-030 are ready. Start
-with SOAM-002 on the primary path. SOAM-001 completed with 17/18 screen passes;
-its additive seed-23 failure and remaining limitations require Gate 1 review.
+SOAM-003, SOAM-019, and SOAM-030 are ready. Start with SOAM-003 on the primary path.
+[Gate 1](reports/GATE_1_REVIEW.md) proceeds with low-rank and retains GRU as a reference;
+SOAM-001's additive failure and unresolved H1 claims remain recorded.
 A dependency on a decision ticket requires
 `done` plus `decision: "proceed"`, not merely closure. Extra conditions in ticket
 bodies (such as the flow prerequisite) still apply. Revise/stop decisions retain
@@ -34,8 +34,8 @@ history and require an explicit plan/dependency update before downstream work.
 | Milestone | Focus | Exit evidence / decision | State |
 | --- | --- | --- | --- |
 | M0 | Initial substrate infrastructure | Recorded baseline and exact reproduction (SOAM-000); full H1 remains open | Complete initial sprint |
-| M1 | Substrate controls | Matched controls and Gate 1 decision (SOAM-002) | Controls complete; Gate 1 ready |
-| M2 | Local acquisition and interference | Online-write comparisons and Gate 2 (SOAM-006) | Planned |
+| M1 | Substrate controls | Matched controls and Gate 1 decision (SOAM-002) | Complete; bounded proceed |
+| M2 | Local acquisition and interference | Online-write comparisons and Gate 2 (SOAM-006) | Next; contract ready |
 | M3 | Functional scopes | Matched acquisition/retention and shared transfer; Gate 3 (SOAM-010) | Planned |
 | M4 | Replay and learned consolidation | Grounded validation, compute/capacity comparisons; Gate 4 (SOAM-015) | Planned |
 | M5 | Compositional reuse | Withheld composition, identity/timescales, and transfer; Gate 5 (SOAM-018) | Planned |
@@ -62,8 +62,8 @@ is waiting. Reordering this table never changes stable ticket IDs.
 | --- | --- | --- | --- | --- | --- | --- |
 | 00 | [SOAM-000: Record the reproducible substrate baseline](tickets/SOAM-000-substrate-baseline.md) | P0 | done | M0 | medium | — |
 | 01 | [SOAM-001: Strengthen substrate controls and budget comparisons](tickets/SOAM-001-substrate-controls.md) | P0 | done | M1 | high | [SOAM-000](tickets/SOAM-000-substrate-baseline.md) |
-| 02 | [SOAM-002: Gate 1: review the substrate before online writing](tickets/SOAM-002-gate-1.md) | P0 | ready | M1 | high | [SOAM-001](tickets/SOAM-001-substrate-controls.md) |
-| 03 | [SOAM-003: Define the grounded local-write contract and plastic parameters](tickets/SOAM-003-plastic-write-contract.md) | P1 | backlog | M2 | high | [SOAM-002](tickets/SOAM-002-gate-1.md) |
+| 02 | [SOAM-002: Gate 1: review the substrate before online writing](tickets/SOAM-002-gate-1.md) | P0 | done | M1 | high | [SOAM-001](tickets/SOAM-001-substrate-controls.md) |
+| 03 | [SOAM-003: Define the grounded local-write contract and plastic parameters](tickets/SOAM-003-plastic-write-contract.md) | P1 | ready | M2 | high | [SOAM-002](tickets/SOAM-002-gate-1.md) |
 | 04 | [SOAM-004: Benchmark online transition correction and changed dynamics](tickets/SOAM-004-online-writer-baselines.md) | P1 | backlog | M2 | high | [SOAM-003](tickets/SOAM-003-plastic-write-contract.md) |
 | 05 | [SOAM-005: Measure interference and learning without resets](tickets/SOAM-005-interference-metrics.md) | P1 | backlog | M2 | high | [SOAM-004](tickets/SOAM-004-online-writer-baselines.md) |
 | 06 | [SOAM-006: Gate 2: decide whether local acquisition is viable](tickets/SOAM-006-gate-2.md) | P1 | backlog | M2 | high | [SOAM-004](tickets/SOAM-004-online-writer-baselines.md), [SOAM-005](tickets/SOAM-005-interference-metrics.md) |
@@ -79,7 +79,7 @@ is waiting. Reordering this table never changes stable ticket IDs.
 | 16 | [SOAM-016: Benchmark withheld compositions and transfer to related tasks](tickets/SOAM-016-composition-transfer.md) | P2 | backlog | M5 | xhigh | [SOAM-015](tickets/SOAM-015-gate-4.md) |
 | 17 | [SOAM-017: Test identity preservation and reusable temporal structure](tickets/SOAM-017-identity-timescales.md) | P2 | backlog | M5 | high | [SOAM-016](tickets/SOAM-016-composition-transfer.md) |
 | 18 | [SOAM-018: Gate 5: assess compositional reuse rather than memory maintenance](tickets/SOAM-018-gate-5.md) | P2 | backlog | M5 | xhigh | [SOAM-017](tickets/SOAM-017-identity-timescales.md) |
-| 19 | [SOAM-019: Build rendered observations and frozen encoder comparisons](tickets/SOAM-019-frozen-encoders.md) | P2 | backlog | M6 | medium | [SOAM-002](tickets/SOAM-002-gate-1.md) |
+| 19 | [SOAM-019: Build rendered observations and frozen encoder comparisons](tickets/SOAM-019-frozen-encoders.md) | P2 | ready | M6 | medium | [SOAM-002](tickets/SOAM-002-gate-1.md) |
 | 20 | [SOAM-020: Train recurrent prediction and assimilation on rendered observations](tickets/SOAM-020-grounded-prediction.md) | P2 | backlog | M6 | high | [SOAM-019](tickets/SOAM-019-frozen-encoders.md) |
 | 21 | [SOAM-021: Evaluate partial observations, ambiguity, and context recovery](tickets/SOAM-021-partial-belief-recovery.md) | P2 | backlog | M6 | xhigh | [SOAM-020](tickets/SOAM-020-grounded-prediction.md), [SOAM-015](tickets/SOAM-015-gate-4.md) |
 | 22 | [SOAM-022: Gate 6: review sensory grounding and belief recovery](tickets/SOAM-022-gate-6.md) | P2 | backlog | M6 | high | [SOAM-021](tickets/SOAM-021-partial-belief-recovery.md) |

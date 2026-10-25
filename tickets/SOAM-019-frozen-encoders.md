@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-019"
 title: "Build rendered observations and frozen encoder comparisons"
 type: "engineering"
-status: "backlog"
+status: "ready"
 priority: "P2"
 recommended_thinking: "medium"
 milestone: "M6"

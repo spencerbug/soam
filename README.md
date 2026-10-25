@@ -24,7 +24,9 @@ The [stronger six-model controls](reports/SUBSTRATE_CONTROLS.md) are complete:
 17 of 18 trials pass the preregistered screen, with an additive seed-23 failure on
 irregular switches. GRU and fully independent controls pass all three seeds. All
 six seed-11 repeats match exactly. Long-horizon drift remains; these results do not
-establish self-organization. Gate 1 review (SOAM-002) is next, before local writing.
+establish self-organization. [Gate 1](reports/GATE_1_REVIEW.md) proceeds with the
+low-rank substrate and GRU reference. SOAM-003, the bounded local-write contract,
+is next; associative writing remains unimplemented.
 The original four-model benchmark remains preserved as historical evidence.
 
 ## Run

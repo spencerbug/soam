@@ -1,0 +1,67 @@
+{
+  "status": "accepted",
+  "source_commit": "7238e6ce69ce5a4e561960b290a2222e5e16aeb5",
+  "models": {
+    "low_rank": [
+      {
+        "seed": 11,
+        "path": "runs/substrate-controls-v1/low_rank-seed11/checkpoint.pt",
+        "sha256": "991c2c913f85ac062e8f7eec4122212f813fa4a016f020c9f1f9e3203a0ff128",
+        "hidden_dim": 37
+      },
+      {
+        "seed": 23,
+        "path": "runs/substrate-controls-v1/low_rank-seed23/checkpoint.pt",
+        "sha256": "ed695475a95b73096c4e89ccc6789a1267cbc43ca2b604328ec2cef60838f124",
+        "hidden_dim": 37
+      },
+      {
+        "seed": 47,
+        "path": "runs/substrate-controls-v1/low_rank-seed47/checkpoint.pt",
+        "sha256": "7aee93d3d415abe206d94cb485b74127a67f9f330d708a803f7097fe4874395c",
+        "hidden_dim": 37
+      }
+    ],
+    "gru": [
+      {
+        "seed": 11,
+        "path": "runs/substrate-controls-v1/gru-seed11/checkpoint.pt",
+        "sha256": "b0aae770e9d9574a630c747024074b9ff630e8fb8cace18e11b6a5649b621c0e",
+        "hidden_dim": 24
+      },
+      {
+        "seed": 23,
+        "path": "runs/substrate-controls-v1/gru-seed23/checkpoint.pt",
+        "sha256": "3846177ed47efb8604b7de5b9b93ee89240d8368417ed074b44fb6d8085375f1",
+        "hidden_dim": 24
+      },
+      {
+        "seed": 47,
+        "path": "runs/substrate-controls-v1/gru-seed47/checkpoint.pt",
+        "sha256": "a48430f8ffc78e0265dd88215fb1a109babc21163a0c66a8d5732c7898cc4f95",
+        "hidden_dim": 24
+      }
+    ]
+  },
+  "decision": "proceed",
+  "primary_model": "low_rank",
+  "comparison_model": "gru",
+  "source_sha256": "6c0ae5c4344472957ab472298751be9348de55863012ae9f8ce2045df20af269",
+  "config_sha256": "5cfc14212b0c5ccfcc7568cc3c99ba473b7891e0a8cc1dd92611da7c5da1783c",
+  "plastic_parameters": {
+    "recurrent.weight": {
+      "shape": [
+        37,
+        37
+      ],
+      "elements": 1369
+    }
+  },
+  "representative_seed": 11,
+  "required_evaluation_seeds": [
+    11,
+    23,
+    47
+  ],
+  "note": "Seed 11 is the implementation fixture, not the best-performing seed. All three primary checkpoints are required for measured writer comparisons. Checkpoints remain local, Git-ignored; verify hashes before use."
+}
