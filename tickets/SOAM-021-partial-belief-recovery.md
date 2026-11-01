@@ -9,11 +9,11 @@ recommended_thinking: "xhigh"
 milestone: "M6"
 work_packages: ["WP-10"]
 hypotheses: ["H6"]
-depends_on: ["SOAM-020", "SOAM-015"]
+depends_on: ["SOAM-020", "SOAM-036"]
 labels: ["type:experiment", "priority:P2", "milestone:M6"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -32,6 +32,12 @@ Specification: [research plan §13, §16](../docs/RESEARCH_SPEC.md). Apply the [
 
 ## Scope
 
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) removes learned consolidation as a prerequisite and adds the empirical handover gate. SOAM-037 tests basic belief/instance behavior earlier with synthetic observations; this ticket tests richer rendered/noisy/ambiguous sensing. Compare only validated available memory mechanisms.
+
+### Bounded work
+
 - Introduce noise, missing frames, occlusion, and observations compatible with multiple latent states.
 - Compare the available SOAM memory mechanisms with matched ordinary recurrence, including unknown/ambiguous context cases.
 
@@ -40,7 +46,7 @@ Specification: [research plan §13, §16](../docs/RESEARCH_SPEC.md). Apply the [
 - [ ] Define observation/model uncertainty metrics and a competing-hypothesis or other justified belief representation before evaluation.
 - [ ] Measure recovery after informative observations return, including false commitment and re-localization/context errors.
 - [ ] Ablate encoder, assimilation, writer/scope, replay, and consolidation where present.
-- [ ] Use held-out sensory/task conditions and disclose which upstream mechanism Gate 4 selected.
+- [ ] Use held-out sensory/task conditions and disclose the selected handover/belief mechanisms and any validated learning mechanisms. Learned consolidation is not required.
 
 ## Metrics / evidence
 
@@ -48,8 +54,8 @@ Belief/context recovery, ambiguity calibration, false commitment, prediction thr
 
 ## Dependencies
 
-- [SOAM-020](SOAM-020-grounded-prediction.md) — Train recurrent prediction and assimilation on rendered observations
-- [SOAM-015](SOAM-015-gate-4.md) — Gate 4: decide whether learned consolidation adds value over replay
+- [SOAM-020](SOAM-020-grounded-prediction.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-036](SOAM-036-handover-gate.md) — required completed prerequisite; decision prerequisites require proceed.
 
 ## Completion record
 

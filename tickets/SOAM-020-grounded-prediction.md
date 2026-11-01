@@ -13,7 +13,7 @@ depends_on: ["SOAM-019"]
 labels: ["type:experiment", "priority:P2", "milestone:M6"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ A successor hidden state is not the observed sensory embedding. The recurrent pr
 Specification: [research plan §5, §13](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), retain this rendered-observation branch while using the selected circuit organization when available. It extends the simple fixed-sensing experiments rather than delaying them. Record whether prediction gains arise from encoding/readout or recurrent dynamics.
+
+### Bounded work
 
 - Train the readout and observation-assimilation mechanism with the encoder frozen.
 - Compare free prediction, grounded correction, and a comparable ordinary recurrent baseline.

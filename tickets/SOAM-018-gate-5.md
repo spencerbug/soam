@@ -13,7 +13,7 @@ depends_on: ["SOAM-017"]
 labels: ["type:decision", "priority:P2", "milestone:M5"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -26,11 +26,17 @@ decision: null
 
 ## Problem / hypothesis
 
-H5 is the decisive self-organization test. Better retention alone cannot support that claim.
+H5 tests composition and transfer. Better retention alone cannot support reuse, and composition supplied through explicit bindings does not by itself establish self-organization.
 
 Specification: [research plan §12, §19](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) separates reusable computation from learned organization. A proceed may establish bounded composition with explicit scaffolding while leaving self-organization unsupported. Require causal ablations and the scaffold ledger; SOAM-043 separately reviews learned organization before integration.
+
+### Bounded work
 
 - Review withheld composition, new-task transfer, identity, and timescale experiments.
 - Separate supported forms of generalization from failures and leakage concerns.

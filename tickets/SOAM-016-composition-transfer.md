@@ -9,11 +9,11 @@ recommended_thinking: "xhigh"
 milestone: "M5"
 work_packages: ["WP-08"]
 hypotheses: ["H5"]
-depends_on: ["SOAM-015"]
+depends_on: ["SOAM-031", "SOAM-037"]
 labels: ["type:experiment", "priority:P2", "milestone:M5"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -32,6 +32,12 @@ Specification: [research plan §12, §16](../docs/RESEARCH_SPEC.md). Apply the [
 
 ## Scope
 
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) replaces the learned-consolidation dependency with composition-mechanism planning and a concurrent-instance benchmark. Test the available fixed/scaffolded circuit system first; learned scopes or consolidation are ablations only if implemented and independently validated. Supplied bindings, domains, and primitives cannot establish learned self-organization.
+
+### Bounded work
+
 - Create composable rotation, translation, scale, reflection where valid, and nonlinear transformations.
 - Run withheld-composition and sequential shared-primitive transfer experiments against matched recurrent/associative references.
 
@@ -39,7 +45,7 @@ Specification: [research plan §12, §16](../docs/RESEARCH_SPEC.md). Apply the [
 
 - [ ] Freeze split construction and leakage checks before tuning; distinguish interpolation, memorization, composition, and transfer.
 - [ ] Compare learning a new related task after prior tasks with an otherwise matched independent-learning control.
-- [ ] Ablate consolidation and scope separately while accounting for parameters, evidence, and compute.
+- [ ] Ablate cue coupling, instance binding, and concurrent tracking; ablate scope/consolidation separately only when present. Account for parameters, active state, evidence, and compute.
 - [ ] Publish per-family/seed results with an explicit uncertainty/effect-size plan and all negative transfer.
 
 ## Metrics / evidence
@@ -48,7 +54,8 @@ Withheld-composition NMSE, observations-to-target on new tasks, positive/negativ
 
 ## Dependencies
 
-- [SOAM-015](SOAM-015-gate-4.md) — Gate 4: decide whether learned consolidation adds value over replay
+- [SOAM-031](SOAM-031-compositional-dynamics-planning.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-037](SOAM-037-attention-belief-instances.md) — required completed prerequisite; decision prerequisites require proceed.
 
 ## Completion record
 

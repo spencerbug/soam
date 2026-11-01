@@ -4,7 +4,7 @@ Architecture, theory, hypotheses, and experimental research plan
 
 **Version:** 0.1
 **Date:** October 25, 2026
-**Status:** Research specification — architecture provisionally frozen, mechanisms under investigation
+**Status:** Historical v0.1 research specification — original interface freeze and execution order superseded by [v0.2](RESEARCH_SPEC_V0_2.md) on 2026-11-01. Original claims, experiment provenance, and gate decisions remain preserved below.
 
 Source: the project owner's specification supplied at repository creation. This is a
 Markdown transcription with normalized mathematical notation and compact prose;

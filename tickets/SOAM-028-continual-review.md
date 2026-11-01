@@ -13,7 +13,7 @@ depends_on: ["SOAM-027"]
 labels: ["type:decision", "priority:P2", "milestone:M8"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ Integration alone does not establish cumulative intelligence. The final review m
 Specification: [research plan §15, §23](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) expands this review to concurrent circuits, sensory/memory attention, motor skills, instance memory, and learned organization. Preserve distinct conclusions for mechanism feasibility, attraction, acquisition, reuse, and self-organization. Supplied roles/basins/graphs/skills must remain visible in the final claim audit.
+
+### Bounded work
 
 - Review the full evidence trail for H1–H8 and the long-duration benchmark.
 - Record supported claims, failed hypotheses, unresolved mechanisms, and the next bounded research cycle.

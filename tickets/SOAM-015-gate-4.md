@@ -4,16 +4,16 @@ id: "SOAM-015"
 title: "Gate 4: decide whether learned consolidation adds value over replay"
 type: "decision"
 status: "backlog"
-priority: "P1"
+priority: "P3"
 recommended_thinking: "high"
 milestone: "M4"
 work_packages: ["WP-07"]
 hypotheses: ["H4"]
 depends_on: ["SOAM-014"]
-labels: ["type:decision", "priority:P1", "milestone:M4"]
+labels: ["type:decision", "priority:P3", "milestone:M4"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ Consolidation is supported only if useful gains survive a fair comparison with r
 Specification: [research plan §11, §19](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) retains this conditional learned-consolidation branch and its negative outcomes. It evaluates the mechanism selected for SOAM-013; completion is not required for early belief, composition, or control tests. Simple replay and fixed organization remain legitimate controls; the separate organization gate determines the v0.2 integration configuration.
+
+### Bounded work
 
 - Review retention, prediction, capacity, and compute scaling evidence.
 - Choose the consolidation reference and state what a negative learned-refinement result means.

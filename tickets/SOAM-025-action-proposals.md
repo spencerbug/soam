@@ -13,7 +13,7 @@ depends_on: ["SOAM-024"]
 labels: ["type:experiment", "priority:P2", "milestone:M7"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ A learned action head is justified only after the predictor/search baseline can 
 Specification: [research plan §14, §16](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), learned proposal heads remain an optional efficiency study once search is reliable. They are not a prerequisite for the control gate. SOAM-038 addresses content-addressable reusable action dynamics, a distinct claim from learning a proposal distribution.
+
+### Bounded work
 
 - Start with imitation of successful search or a documented bounded policy-learning method.
 - Compare learned proposals with uniform/enumerated candidates and preserve known goal costs before considering a learned critic.

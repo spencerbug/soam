@@ -4,16 +4,16 @@ id: "SOAM-013"
 title: "Train a learned iterative low-rank consolidator"
 type: "experiment"
 status: "backlog"
-priority: "P1"
+priority: "P3"
 recommended_thinking: "xhigh"
 milestone: "M4"
 work_packages: ["WP-07"]
 hypotheses: ["H4"]
-depends_on: ["SOAM-010", "SOAM-012"]
-labels: ["type:experiment", "priority:P1", "milestone:M4"]
+depends_on: ["SOAM-010", "SOAM-012", "SOAM-041"]
+labels: ["type:experiment", "priority:P3", "milestone:M4"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -32,6 +32,12 @@ Specification: [research plan §11, §16](../docs/RESEARCH_SPEC.md). Apply the [
 
 ## Scope
 
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) makes learned refinement conditional. Before starting, cite a measured replay/retention limitation from the multi-circuit acquisition evidence, name the metric to improve, and document why the selected representation supports a low-rank proposal. If no such need is established, remain deferred even when metadata dependencies are complete. This branch is not a prerequisite for early composition, grounding, control, or the simple fixed-capacity organization study.
+
+### Bounded work
+
 - Use compressed weight/error/scope/interference statistics to propose low-rank corrections.
 - Train with a bounded meta-learning/unrolled procedure and commit only through shadow validation.
 
@@ -48,8 +54,9 @@ Retention/prediction gain versus replay, update rank, meta-training cost, online
 
 ## Dependencies
 
-- [SOAM-010](SOAM-010-gate-3.md) — Gate 3: evaluate functional scoping and beneficial sharing
-- [SOAM-012](SOAM-012-shadow-validation.md) — Validate consolidation candidates with shadow weights and rollback
+- [SOAM-010](SOAM-010-gate-3.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-012](SOAM-012-shadow-validation.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-041](SOAM-041-multicircuit-acquisition-gate.md) — required completed prerequisite; decision prerequisites require proceed.
 
 ## Completion record
 

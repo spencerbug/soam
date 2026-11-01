@@ -1,6 +1,76 @@
 # Interface boundaries
 
-The implementation begins with conventional recurrent baselines. All functions have
+## Adopted v0.2 research boundaries
+
+The [v0.2 specification](RESEARCH_SPEC_V0_2.md) prioritizes cue-driven attractor
+switching and sensorimotor handover. The interfaces below describe proposed research
+boundaries, not implemented modules. Freeze concrete signatures and topology choices
+in [SOAM-033](../tickets/SOAM-033-handover-protocol.md) before implementation.
+
+| Boundary | State and responsibility |
+| --- | --- |
+| Sensory interface | Fixed projection of declared observations; actions are executed commands, not hidden world state |
+| Circuit parameters | Persistent dynamics, readout, and cue couplings; initially hand-set or offline fitted and frozen during evaluation |
+| Circuit instance | Independent transient state, instance binding, calibration history, and evidence support; parameters may be shared |
+| Associative coupling | Content/context-dependent graded excitation; explicit target IDs or edge tables are labeled scaffolds/controls |
+| Attention and belief coordination | Separate sensory focus, memory focus, hypothesis compatibility, and resource scheduling |
+| Handover | Promote a calibrated candidate while preserving source/context as required; log reset, state copy, and role changes |
+| Motor execution | Separate execution authority, phase, current estimate, desired outcome, and termination/interrupt conditions |
+| Evidence and persistent learning | Grounded write proposals, validation, commit/rollback; introduced after switching is tested |
+
+Primed, tracking, and attended are functional roles, not a requirement for three
+permanent neural populations. A primed cue may be latent; a tracking instance must
+actually process available sensorimotor evidence. The attended instance must not
+overwrite another candidate's activity merely because both reuse the same weights.
+Whether one shared population can represent those concurrent states is unproven.
+
+### Population organization and resource ownership
+
+Compare a bounded selection of one shared population, separate parallel circuits,
+shared-weight/separate-state clones, alternating (flip-flop) banks, and columns/stacks.
+Two separate live states are an initial scaffold, not a selected final architecture.
+Columns/stacks need a precise definition of coupling and scheduling before trials;
+no biological equivalence is assumed. Physical neural-population separation does
+not require separate processors.
+
+For each candidate, record which parameters are tied/copied, which states are
+independent/copied, cue pathways, sensory routing, update schedule, peak concurrency,
+and total parameter/state/buffer/compute cost. A bank swap is an attention operation;
+it establishes attractor switching only if cue-dependent dynamical recruitment and
+recovery are demonstrated independently. Repeated handovers must reveal stale or
+overwritten state. Do not introduce a mandatory discrete object graph.
+
+### Initial interaction and evidence contract
+
+1. Receive the current permitted observation and the last executed action.
+2. Propagate attended/tracking states and apply sensory correction where available.
+3. Emit graded cues; recruit or update candidates within the declared resource budget.
+4. Compare explanatory support and compatibility without double-counting internal
+   predictions as new observations. Keep contradictory hypotheses distinct.
+5. Transfer attentional influence according to the declared scaffold or cue dynamics;
+   log which mechanism actually caused the switch.
+6. Decode a simple prediction to check retained state and continuity. Later, select
+   an action using separate execution authority and observe its real consequence.
+
+All of these initially leave persistent parameters unchanged. Prediction snapshots
+also isolate every candidate state and any evidence buffers from live interaction.
+Desired successor states cannot initialize an estimated actual state as if observed.
+Oracle labels, known correspondence, and explicit switch schedules belong in a
+scaffold ledger and labeled comparison, never silently in the evaluated learner.
+
+### Deferred learning and action design
+
+Keep generic circuit parameters, instance-specific persistent facts, and live state
+separate. One reusable model may serve several instances. A proposed future skill
+memory maps current state plus desired transformation/context to feedback-driven
+motor dynamics; it need not allocate a separate skill for every state pair.
+Actions may persist across attentional handovers. Unsupervised circuit discovery,
+dynamic recruitment, split/merge rules, learned attention, and full motor learning
+are deferred until controlled mechanisms can be measured.
+
+## Existing v0.1 implementation (preserved)
+
+The implementation currently contains conventional recurrent baselines. All functions have
 explicit state inputs and outputs; model modules hold parameters, never the active
 belief state.
 

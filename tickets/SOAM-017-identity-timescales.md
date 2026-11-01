@@ -13,7 +13,7 @@ depends_on: ["SOAM-016"]
 labels: ["type:experiment", "priority:P2", "milestone:M5"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ Reusable transformations should coexist with object identity and distinct tempor
 Specification: [research plan §12](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), include repeated instances using shared circuit parameters with independent states, and distinguish supplied bindings from learned identity preservation. Test continuity across cue-driven handover and temporal skill phases without requiring a fixed world graph or hierarchy.
+
+### Bounded work
 
 - Build multiple objects sharing dynamics but carrying stable identity features.
 - Introduce fast oscillations inside slower trajectories and changing activity contexts without hard-coding a hierarchy.

@@ -4,16 +4,16 @@ id: "SOAM-005"
 title: "Measure interference and learning without resets"
 type: "experiment"
 status: "backlog"
-priority: "P1"
+priority: "P2"
 recommended_thinking: "high"
 milestone: "M2"
 work_packages: ["WP-03"]
 hypotheses: ["H2", "H8"]
 depends_on: ["SOAM-004"]
-labels: ["type:experiment", "priority:P1", "milestone:M2"]
+labels: ["type:experiment", "priority:P2", "milestone:M2"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ Improving a new transition may damage old behavior. The project needs functional
 Specification: [research plan §9, §10, §16](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), this remains a bounded historical low-rank acquisition branch, not the next primary task or a prerequisite for cue-driven handover. Preserve Gate 1 checkpoints, plastic-tensor limits, and the existing rule comparisons. Its results do not establish multi-circuit learning; SOAM-039–041 cover that later contract and empirical gate.
+
+### Bounded work
 
 - Add task-by-training-stage error matrices, signed old-task error changes, and forgetting relative to each task’s historical best.
 - Run prolonged no-reset sequences with revisits, context switches, and successive grounded updates.

@@ -1,16 +1,26 @@
 # SOAM — Self-Organizing Attractor Memory
 
-Research repository for investigating whether a shared recurrent substrate can
-acquire, preserve, reorganize, and reuse dynamical knowledge through fast associative
-learning and slow consolidation. This is a hypothesis, not an established result.
+Research repository for investigating cue-driven attractor dynamics: concurrent
+predictive circuits, sensorimotor calibration, attentional handover, and eventually
+reusable embodied skills and continual memory. This is a hypothesis, not an
+established result.
 
-The [research specification](docs/RESEARCH_SPEC.md) records the user-supplied v0.1
-architecture and experimental program dated October 25, 2026. Interfaces are
-provisionally frozen; learning mechanisms and connectivity are experimental.
+The adopted [v0.2 research specification](docs/RESEARCH_SPEC_V0_2.md), dated November 1,
+2026, revises the architecture and execution order. The [v0.1 specification](docs/RESEARCH_SPEC.md)
+and its reports remain preserved. No new attractor mechanism has been implemented
+or empirically validated by the scope revision.
 
 ## Current milestone
 
-Stage 0 and the substrate sprint (WP-00/WP-01): synthetic action-conditioned 2D
+**Next: [SOAM-033](tickets/SOAM-033-handover-protocol.md), the cue-driven handover
+protocol and bounded circuit-layout comparison.** Switching among attended,
+tracking, and primed roles takes priority over sophisticated prediction. Use an
+explicit attractor candidate, recurrent controls, fixed sensing, and declared
+scaffolding. Shared populations, separate circuits, clones, alternating banks, and
+columns/stacks are experimental alternatives. An explicit discrete world graph is
+not required. Unsupervised organization and associative writing follow later.
+
+The delivered Stage 0/substrate work (WP-00/WP-01) covers synthetic action-conditioned 2D
 regimes, a fixed sensory projection, shared bounded recurrent baselines, independent
 predictors, shared-state switching, independent-model handoffs, and perturbation diagnostics.
 The bounded local-write contract is implemented; acquisition comparisons, learned
@@ -30,7 +40,9 @@ establish self-organization. [Gate 1](reports/GATE_1_REVIEW.md) proceeds with th
 low-rank substrate and GRU reference. SOAM-003 now provides bounded grounded writes,
 read-only prediction snapshots, and exact rollback. All 48 tests pass. A three-seed
 contract demonstration reproduces exactly but includes multistep regressions; it does
-not establish H2. SOAM-004, the comparative online-writing benchmark, is next.
+not establish H2. SOAM-004 remains ready on a separate writer comparison branch;
+it is no longer the next primary task. The reported 48-test result belongs to that
+implementation; documentation changes do not constitute a new experiment.
 The original four-model benchmark remains preserved as historical evidence.
 
 ## Run

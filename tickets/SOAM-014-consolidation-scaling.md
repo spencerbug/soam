@@ -4,16 +4,16 @@ id: "SOAM-014"
 title: "Measure consolidation error recovery, compute, and fixed-size capacity"
 type: "experiment"
 status: "backlog"
-priority: "P1"
+priority: "P3"
 recommended_thinking: "high"
 milestone: "M4"
 work_packages: ["WP-07"]
 hypotheses: ["H4"]
 depends_on: ["SOAM-013"]
-labels: ["type:experiment", "priority:P1", "milestone:M4"]
+labels: ["type:experiment", "priority:P3", "milestone:M4"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ A single successful correction does not establish a useful consolidation mechani
 Specification: [research plan §11, §17](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) retains this conditional learned-consolidation branch and its negative outcomes. It evaluates the mechanism selected for SOAM-013; completion is not required for early belief, composition, or control tests. Simple replay and fixed organization remain legitimate controls; the separate organization gate determines the v0.2 integration configuration.
+
+### Bounded work
 
 - Run sequential-context retention and deliberately disruptive-write recovery experiments.
 - Sweep a bounded, preregistered iteration budget and number/complexity of regimes with fixed parameter capacity.

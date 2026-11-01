@@ -4,16 +4,16 @@ id: "SOAM-009"
 title: "Meta-train a constrained functional scope translator"
 type: "experiment"
 status: "backlog"
-priority: "P1"
+priority: "P2"
 recommended_thinking: "xhigh"
 milestone: "M3"
 work_packages: ["WP-05"]
 hypotheses: ["H3"]
 depends_on: ["SOAM-008"]
-labels: ["type:experiment", "priority:P1", "milestone:M3"]
+labels: ["type:experiment", "priority:P2", "milestone:M3"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ Test whether a learned update filter improves the adaptation-retention trade-off
 Specification: [research plan §5, §10, §16](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), this is a conditional scoping branch attached to the historical acquisition study. It does not gate early handover, belief tracking, or control. Relate interference/sharing results to evidence responsibility and generic-versus-instance credit, but do not assume that a context mask solves multi-circuit credit assignment. Application to a different plastic representation requires a separately specified comparison. Learned scopes are candidates, not a mandatory architecture component.
+
+### Bounded work
 
 - Start from tractable local state/action/error/sensitivity statistics and a constrained mask or low-rank output.
 - Meta-train using new-task prediction, evidence-aware preservation, and update-size objectives.

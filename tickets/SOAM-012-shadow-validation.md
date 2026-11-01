@@ -13,7 +13,7 @@ depends_on: ["SOAM-011"]
 labels: ["type:engineering", "priority:P1", "milestone:M4"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ A locally useful consolidation update can damage protected behavior. Candidate p
 Specification: [research plan §5, §11, §17](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) extends candidate validation to the persistent tensors, associations, and instance facts selected by SOAM-039. Include every changed persistent object in atomic rejection/rollback checks; the original single-tensor contract remains unchanged for its historical branch. Shadow validation is reusable infrastructure, not evidence for learned consolidation.
+
+### Bounded work
 
 - Create a shadow-weight transaction with grounded, retention, rollout, context-switch, and stability checks.
 - Define evidence-aware trust limits and atomic commit/reject/rollback.

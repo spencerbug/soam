@@ -1,5 +1,11 @@
 # Substrate experiment protocol v0.1
 
+Historical protocol for the existing baseline, preserved without changing its
+experimental contract. The adopted [v0.2 scope](RESEARCH_SPEC_V0_2.md) prioritizes
+cue-driven concurrent attractor handover. Its numerical protocol is the next
+deliverable in [SOAM-033](../tickets/SOAM-033-handover-protocol.md); this v0.1 protocol
+does not authorize or specify those new trials.
+
 This protocol was written before the first measured benchmark. It implements
 Stage 0 / the immediate substrate sprint, not fast plasticity or self-organization.
 

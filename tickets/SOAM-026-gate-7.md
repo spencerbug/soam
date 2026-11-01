@@ -4,16 +4,16 @@ id: "SOAM-026"
 title: "Gate 7: assess planning benefit and safe memory separation"
 type: "decision"
 status: "backlog"
-priority: "P2"
+priority: "P1"
 recommended_thinking: "high"
 milestone: "M7"
 work_packages: ["WP-11", "WP-12"]
 hypotheses: ["H7"]
-depends_on: ["SOAM-024", "SOAM-025"]
-labels: ["type:decision", "priority:P2", "milestone:M7"]
+depends_on: ["SOAM-024", "SOAM-038"]
+labels: ["type:decision", "priority:P1", "milestone:M7"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -32,7 +32,13 @@ Specification: [research plan §14, §19](../docs/RESEARCH_SPEC.md). Apply the [
 
 ## Scope
 
-- Review reactive/search/learned-proposal comparisons and changed-dynamics recovery.
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) replaces mandatory learned-proposal training with the associative skill comparison. Review simple search and skill reuse; include learned proposals only if available. Negative skill-transfer results must remain explicit and constrain any proceed to the validated control behavior.
+
+### Bounded work
+
+- Review reactive/search/associative-skill comparisons, available learned proposals, and changed-dynamics recovery.
 - Audit persistent-weight and evidence-buffer separation during planning.
 
 ## Acceptance criteria
@@ -48,8 +54,8 @@ Gate 7 success, replanning, resource, and no-write-inference evidence.
 
 ## Dependencies
 
-- [SOAM-024](SOAM-024-planning-benchmark.md) — Benchmark navigation, changed dynamics, and planning horizons
-- [SOAM-025](SOAM-025-action-proposals.md) — Learn goal-conditioned action proposals after search is reliable
+- [SOAM-024](SOAM-024-planning-benchmark.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-038](SOAM-038-associative-skill-transfer.md) — required completed prerequisite; decision prerequisites require proceed.
 
 ## Completion record
 

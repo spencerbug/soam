@@ -1,9 +1,18 @@
 # SOAM issue backlog
 
-Start with the [priority and milestone table](../PRIORITIES.md). The backlog covers
-WP-00 through WP-13, the seven research gates, the final H8 review, and bounded
-supporting/optional research. SOAM-000 records the completed initial sprint;
-SOAM-001 through SOAM-030 describe remaining work, not completed implementations.
+Start with the [priority and milestone table](../PRIORITIES.md) and adopted
+[v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md). The backlog retains WP-00 through
+WP-13, H1–H8, the historical seven gates, and the H8 review. SOAM-000–003 preserve
+completed work; SOAM-004–031 retain the revised legacy branches. SOAM-032 records
+scope adoption; SOAM-033–044 add switching, attention/instances, associative skills,
+and later multi-circuit learning/organization. SOAM-031 remains unfinished composition
+planning, scheduled after the new handover gate. No legacy ticket is closed by scope
+adoption, and no new empirical gate has passed.
+
+Milestone and work-package IDs remain thematic provenance categories, not a numeric
+execution schedule. New empirical decisions are named handover, multi-circuit
+acquisition, and organization gates; they do not renumber or overwrite the historical
+gates. The learning-design decision authorizes an experiment, not empirical integration.
 
 These are GitHub-flavored Markdown issue bodies with YAML frontmatter. They are
 readable as repository files after pushing. They are **not live GitHub Issues**:
@@ -20,8 +29,10 @@ of future GitHub issue numbers.
   and [decision gate](../.github/ISSUE_TEMPLATE/decision-gate.md).
 
 Ticket frontmatter is authoritative for each ticket's metadata. The priority table
-owns ordering and milestone summaries. The research specification remains the
-source of scientific intent; tickets operationalize it rather than silently revising it.
+owns ordering and milestone summaries. The adopted v0.2 specification is the source
+of current scientific intent; the v0.1 specification and completed contracts retain
+their historical meanings. Tickets operationalize these rather than silently
+revising evidence or gate outcomes.
 
 ## Frontmatter format
 
@@ -34,7 +45,7 @@ keys. This keeps the schema checkable with Python's standard library.
 ```yaml
 ---
 schema_version: 2
-id: "SOAM-031"
+id: "SOAM-XXX"
 title: "A concrete, bounded research task"
 type: "experiment"
 status: "backlog"
@@ -53,7 +64,7 @@ decision: null
 ---
 ```
 
-The example is not an allocated ticket. Use the next unused ID and actual dates.
+The example uses a placeholder ID. Replace it with the next unused numeric ID and actual dates.
 
 | Field | Rule |
 | --- | --- |

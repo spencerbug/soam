@@ -13,7 +13,7 @@ depends_on: ["SOAM-021"]
 labels: ["type:decision", "priority:P2", "milestone:M6"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -32,15 +32,21 @@ Specification: [research plan §13, §19](../docs/RESEARCH_SPEC.md). Apply the [
 
 ## Scope
 
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) makes this the gate for richer sensing and integrated grounding, not a universal prerequisite for synthetic action search. Early search uses the narrower observation conditions validated by SOAM-036/037. Integration still requires this gate.
+
+### Bounded work
+
 - Review full, missing, noisy, and ambiguous sensory conditions.
-- Choose the observation/belief model suitable for action-search experiments.
+- Choose the richer observation/belief model suitable for continual integration and any subsequent richer-sensing control experiments.
 
 ## Acceptance criteria
 
 - [ ] Compare grounded recovery with a matched recurrent model lacking the proposed memory mechanisms.
 - [ ] Record failure cases where uncertainty collapses or grounding is insufficient for control.
 - [ ] Record proceed/revise/stop and define supported observation/action conditions.
-- [ ] Keep privileged simulator state confined to evaluator/known goal cost interfaces explicitly documented for planning.
+- [ ] Keep privileged simulator state confined to evaluation and explicitly labeled oracle controls. Live candidate scoring uses declared observations/predicted state and goal inputs, not hidden ground truth.
 
 ## Metrics / evidence
 

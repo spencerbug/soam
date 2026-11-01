@@ -4,16 +4,16 @@ id: "SOAM-004"
 title: "Benchmark online transition correction and changed dynamics"
 type: "experiment"
 status: "ready"
-priority: "P1"
+priority: "P2"
 recommended_thinking: "high"
 milestone: "M2"
 work_packages: ["WP-02"]
 hypotheses: ["H2"]
 depends_on: ["SOAM-003"]
-labels: ["type:experiment", "priority:P1", "milestone:M2"]
+labels: ["type:experiment", "priority:P2", "milestone:M2"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ A local update rule must learn new or changed dynamics without ordinary end-to-e
 Specification: [research plan §9, §16](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), this remains a bounded historical low-rank acquisition branch, not the next primary task or a prerequisite for cue-driven handover. Preserve Gate 1 checkpoints, plastic-tensor limits, and the existing rule comparisons. Its results do not establish multi-circuit learning; SOAM-039–041 cover that later contract and empirical gate.
+
+### Bounded work
 
 Use the [SOAM-003 write contract](../soam/plasticity/README.md) and preserve the
 [reported multistep regressions](../reports/LOCAL_WRITE_CONTRACT.md). Its example

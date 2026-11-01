@@ -4,16 +4,16 @@ id: "SOAM-007"
 title: "Compare unfiltered, sparse, random, and sensitivity-based scopes"
 type: "experiment"
 status: "backlog"
-priority: "P1"
+priority: "P2"
 recommended_thinking: "high"
 milestone: "M3"
 work_packages: ["WP-04"]
 hypotheses: ["H3"]
 depends_on: ["SOAM-006"]
-labels: ["type:experiment", "priority:P1", "milestone:M3"]
+labels: ["type:experiment", "priority:P2", "milestone:M3"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ Before learning a translator, establish whether simple scope filters reduce inte
 Specification: [research plan §10, §16](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), this is a conditional scoping branch attached to the historical acquisition study. It does not gate early handover, belief tracking, or control. Relate interference/sharing results to evidence responsibility and generic-versus-instance credit, but do not assume that a context mask solves multi-circuit credit assignment. Application to a different plastic representation requires a separately specified comparison. Learned scopes are candidates, not a mandatory architecture component.
+
+### Bounded work
 
 - Apply unfiltered, fixed sparse, random sparse, and sensitivity-based masks to the same reference writer.
 - Introduce isolated context-specific corrections and evaluate every protected context.

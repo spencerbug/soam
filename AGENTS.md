@@ -4,14 +4,27 @@ Read README.md, docs/RESEARCH_SPEC.md, docs/EXPERIMENTS.md, and the current repo
 For planned work, also read PRIORITIES.md, tickets/README.md, and the relevant ticket/dependencies.
 Run `uv run pytest` before modifying existing code. An empty bootstrap suite is not a pass.
 
-The user supplied SOAM v0.1 on 2026-10-25. The architecture is frozen at the interface
-level; mechanisms remain experimental. Preserve negative results and do not claim
+The user supplied SOAM v0.1 on 2026-10-25 and adopted the switching-first v0.2 scope
+on 2026-11-01. Read docs/RESEARCH_SPEC_V0_2.md alongside the historical v0.1 spec.
+The old global interface freeze is superseded; concrete new interfaces must be
+defined in the relevant protocol before implementation. Preserve existing experiment
+contracts and negative results; do not claim
 attractors, compositionality, self-organization, or neuroscientific validation from
 bounded trajectories or ordinary RNN prediction alone.
 
 ## Current scope
 
 The initial WP-00/WP-01 substrate sprint is delivered; its full H1 claims remain open.
+The primary path now tests cue-driven concurrent attractor handover with attended,
+tracking, and primed roles and sensorimotor feedback. Switching has priority over
+rich prediction; an explicit attractor candidate and recurrent controls are required.
+Heavy declared scaffolding is permitted. Investigate shared populations, separate
+parallel circuits, shared-weight/separate-state clones, alternating banks, and
+columns/stacks as alternatives; no single-population concurrency assumption or
+mandatory discrete world graph is adopted. Choose a bounded subset per protocol.
+The historical writer remains a separate comparison branch. Learned organization
+and unsupervised memory discovery are later work, not prerequisites for the first
+handover study. Completed Gate 1 does not pass the new handover gate.
 The remaining timeline is tracked in PRIORITIES.md and tickets/. Start from the next
 eligible ticket rather than treating the full backlog as authorization to implement
 every stage. Prerequisite decision tickets must be complete with `decision: "proceed"`
@@ -32,6 +45,12 @@ directories are boundaries, not implementations.
   state differences and report compute rather than claiming perfect matching.
 - Compare grounded one-step error with free multistep error, switching, and perturbation responses.
 - A tanh bound is not evidence of recovery toward a trajectory or useful attractors.
+- A scripted bank swap or state copy is not evidence of cue-driven attraction.
+  Record the supplied/learned status of cues, basins, correspondence, role labels,
+  schedules, and controllers. Count every active state, cloned weight, and coupling.
+- Keep estimated actual state, desired successor state, sensory/memory attention,
+  and motor execution authority distinct. Shared parameters do not imply shared
+  instance state; sensory evidence must not be double-counted through associative cues.
 - Keep baseline results and failure analysis. Advance one work package at a time.
 - Tests must cover scientific invariants, data separation, no-write inference, and reproducibility.
 - Review and verify local-worker output. Never let a worker control its own approval or trials.

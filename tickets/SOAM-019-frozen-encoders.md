@@ -13,7 +13,7 @@ depends_on: ["SOAM-002"]
 labels: ["type:engineering", "priority:P2", "milestone:M6"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ The initial projection operates on fully observable 2D state. Grounding needs an
 Specification: [research plan §13](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+This remains an eligible supporting branch under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md). It is not a prerequisite for the first switching experiment, which uses fixed simple sensing. Better encoders/readouts may improve prediction later but do not substitute for cue-driven switching evidence.
+
+### Bounded work
 
 - Generate controlled shape scenes with known latent dynamics and a fixed encoder interface.
 - Compare hand-designed features, random projection, simple pretrained self-supervision, and an appropriate frozen JEPA-style encoder.
@@ -55,4 +61,4 @@ Feature/control sufficiency, grounded prediction, frozen-weight integrity, encod
 Not started. Add implementation/report links, exact validation commands and outcomes,
 configuration/seed/source identities, and limitations when work is completed.
 
-This branch can start after Gate 1 while plasticity/consolidation work proceeds; its placement in the priority table is a default order, not an extra dependency on composition.
+This branch remains eligible after historical Gate 1; the switching protocol is the default next task. Rich sensing does not block that synthetic experiment.

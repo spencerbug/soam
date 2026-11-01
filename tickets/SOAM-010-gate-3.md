@@ -4,16 +4,16 @@ id: "SOAM-010"
 title: "Gate 3: evaluate functional scoping and beneficial sharing"
 type: "decision"
 status: "backlog"
-priority: "P1"
+priority: "P2"
 recommended_thinking: "high"
 milestone: "M3"
 work_packages: ["WP-05"]
 hypotheses: ["H3"]
 depends_on: ["SOAM-009"]
-labels: ["type:decision", "priority:P1", "milestone:M3"]
+labels: ["type:decision", "priority:P2", "milestone:M3"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -26,11 +26,17 @@ decision: null
 
 ## Problem / hypothesis
 
-Functional scope learning is central to SOAM’s novelty. Reduced interference achieved only by task isolation is insufficient.
+Functional scope learning is a candidate mechanism for limiting interference. Reduced interference achieved only by task isolation is insufficient; failure of this branch does not reject unrelated v0.2 handover mechanisms.
 
 Specification: [research plan §10, §19](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), this is a conditional scoping branch attached to the historical acquisition study. It does not gate early handover, belief tracking, or control. Relate interference/sharing results to evidence responsibility and generic-versus-instance credit, but do not assume that a context mask solves multi-circuit credit assignment. Application to a different plastic representation requires a separately specified comparison. Learned scopes are candidates, not a mandatory architecture component.
+
+### Bounded work
 
 - Review learned versus heuristic scopes across isolated, shared, and noisy task families.
 - Decide whether the measured benefit justifies using learned scopes downstream.

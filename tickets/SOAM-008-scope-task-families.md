@@ -4,16 +4,16 @@ id: "SOAM-008"
 title: "Build shared-scope and noisy-evidence task families"
 type: "experiment"
 status: "backlog"
-priority: "P1"
+priority: "P2"
 recommended_thinking: "high"
 milestone: "M3"
 work_packages: ["WP-04", "WP-05"]
 hypotheses: ["H3"]
 depends_on: ["SOAM-007"]
-labels: ["type:experiment", "priority:P1", "milestone:M3"]
+labels: ["type:experiment", "priority:P2", "milestone:M3"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ A translator that isolates every context can retain old tasks while preventing u
 Specification: [research plan §10](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), this is a conditional scoping branch attached to the historical acquisition study. It does not gate early handover, belief tracking, or control. Relate interference/sharing results to evidence responsibility and generic-versus-instance credit, but do not assume that a context mask solves multi-circuit credit assignment. Application to a different plastic representation requires a separately specified comparison. Learned scopes are candidates, not a mandatory architecture component.
+
+### Bounded work
 
 - Create contexts with shared rotation primitives and different translations.
 - Generate familiar/correct, changed, and noisy/misleading transition streams with separated task-family splits.

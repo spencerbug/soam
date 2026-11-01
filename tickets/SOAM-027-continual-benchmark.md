@@ -9,11 +9,11 @@ recommended_thinking: "xhigh"
 milestone: "M8"
 work_packages: ["WP-13"]
 hypotheses: ["H8"]
-depends_on: ["SOAM-018", "SOAM-026"]
+depends_on: ["SOAM-018", "SOAM-022", "SOAM-026", "SOAM-041", "SOAM-043"]
 labels: ["type:experiment", "priority:P2", "milestone:M8"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -32,6 +32,12 @@ Specification: [research plan §15, §17](../docs/RESEARCH_SPEC.md). Apply the [
 
 ## Scope
 
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) adds empirical multi-circuit acquisition and organization decisions and explicitly retains the richer-grounding gate. The design decision SOAM-039 is not sufficient evidence. Integrate only configurations and scaffold limits selected by those gates, including any explicitly selected fixed-organization control; do not imply unsupervised learning or self-organization when unsupported.
+
+### Bounded work
+
 - Combine multiple objects, re-identification, changed dynamics, shared motor primitives, novel compositions, and interrupted/resumed tasks.
 - Progress from small 2D tasks to a justified richer simulation only after the fixed-size system is characterized.
 
@@ -48,8 +54,11 @@ Continual learning curves, old/new-task errors, forward/backward transfer, plann
 
 ## Dependencies
 
-- [SOAM-018](SOAM-018-gate-5.md) — Gate 5: assess compositional reuse rather than memory maintenance
-- [SOAM-026](SOAM-026-gate-7.md) — Gate 7: assess planning benefit and safe memory separation
+- [SOAM-018](SOAM-018-gate-5.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-022](SOAM-022-gate-6.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-026](SOAM-026-gate-7.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-041](SOAM-041-multicircuit-acquisition-gate.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-043](SOAM-043-organization-gate.md) — required completed prerequisite; decision prerequisites require proceed.
 
 ## Completion record
 

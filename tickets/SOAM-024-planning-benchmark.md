@@ -4,16 +4,16 @@ id: "SOAM-024"
 title: "Benchmark navigation, changed dynamics, and planning horizons"
 type: "experiment"
 status: "backlog"
-priority: "P2"
+priority: "P1"
 recommended_thinking: "high"
 milestone: "M7"
 work_packages: ["WP-11"]
 hypotheses: ["H7"]
 depends_on: ["SOAM-023"]
-labels: ["type:experiment", "priority:P2", "milestone:M7"]
+labels: ["type:experiment", "priority:P1", "milestone:M7"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -32,8 +32,14 @@ Specification: [research plan §14](../docs/RESEARCH_SPEC.md). Apply the [common
 
 ## Scope
 
+### v0.2 scope revision — 2026-11-01
+
+Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), first test closed-loop synthetic control with frozen persistent memory and sensory recalibration. Compare source-only selection with current-plus-successor information and separate motor authority from attention. Grounded persistent adaptation is an optional later comparison only after SOAM-041 proceeds; lack of a writer must not block this initial control benchmark.
+
+### Bounded work
+
 - Run navigation, changed motion/obstacles, and context switching with shared activity primitives.
-- Sweep a bounded horizon/candidate budget and compare no adaptation with grounded fast updates.
+- Sweep a bounded horizon/candidate budget and compare reactive, source-only, and successor-aware search. Add grounded fast-update comparisons only under the validated later learning contract.
 
 ## Acceptance criteria
 

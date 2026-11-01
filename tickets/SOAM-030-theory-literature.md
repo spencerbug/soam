@@ -13,7 +13,7 @@ depends_on: ["SOAM-000"]
 labels: ["type:research", "priority:P2", "milestone:MX"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-01"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,12 @@ The supplied starting bibliography has not been independently reviewed. Theoreti
 Specification: [research plan §20, §21](../docs/RESEARCH_SPEC.md). Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.2 scope revision — 2026-11-01
+
+The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) adds a bounded early focus on cue-driven switching, simultaneous versus separated attractor populations, shared-parameter independent states, and sensorimotor correction. Review primary sources for selected mechanisms and controls; columns/stacks are hypotheses without an adopted neuroscience equivalence. The protocol ticket may perform the narrower literature review needed for its own design without waiting for this whole map.
+
+### Bounded work
 
 - Verify the six starting references against primary sources and record exact claims, assumptions, and limitations.
 - Create a bounded first-pass map of regime capacity, local sensitivity/scope, interference, consolidation symmetries, composition, and planning uncertainty.
