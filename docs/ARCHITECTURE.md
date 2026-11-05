@@ -28,9 +28,10 @@ allocation, causal interventions, and cross-function interference. Separated net
 remain controls; partial overlap and negative findings are legitimate outcomes.
 No arbitrary asymmetric rule inherits a symmetric Hopfield convergence argument.
 
-[SOAM-047](../tickets/SOAM-047-platform-contract.md) defines concrete platform
-interfaces before implementation: dynamics backends, observed-data task adapters,
-learning policies, perturbations, metrics, and reproducible artifacts. A backend's
+[SOAM-047](../tickets/SOAM-047-platform-contract.md) adopted the
+[minimal platform contract](RECURRENT_PLATFORM_CONTRACT.md): explicit-state dynamics,
+observed-data task adapters, frozen prediction, interventions, metrics and artifacts.
+Offline fitting is separate; online learning plugins are deferred. A backend's
 state/energy/update assumptions must be explicit. The runner supports independent
 shared-mechanism, localization, and learning-module studies without requiring each
 to implement the entire embodied SOAM architecture. No new implementation is claimed.

@@ -19,9 +19,11 @@ Only E1 is the immediate experiment; subsequent work requires result-based selec
 ## Current work and readiness
 
 [SOAM-046](tickets/SOAM-046-shared-platform-scope.md) records initial v0.3 adoption;
-[SOAM-060](tickets/SOAM-060-scientific-roadmap-review.md) records this scientific review. **Next primary task: [SOAM-047](tickets/SOAM-047-platform-contract.md),
-the platform contract decision.** Define concrete shared-state/parameter/task/learning
-interfaces and a bounded first delivery before implementing the runner or candidates.
+[SOAM-060](tickets/SOAM-060-scientific-roadmap-review.md) records this scientific review.
+SOAM-047 is done with `decision: "proceed"` for the [minimal platform contract](docs/RECURRENT_PLATFORM_CONTRACT.md).
+**Next primary task: [SOAM-049](tickets/SOAM-049-shared-population-protocol.md),
+the E1 protocol decision.** SOAM-048 is also ready for contract-bound engineering
+fixtures; both remain unstarted. SOAM-050 still requires both deliveries.
 No new protocol, backend, application adapter, or measured study is implemented by
 updating these tickets.
 
@@ -34,7 +36,7 @@ No measured handover study or shared-population empirical gate has passed.
 SOAM-004, SOAM-019, and SOAM-030 remain ready supporting branches. Historical
 [Gate 1](reports/GATE_1_REVIEW.md) authorizes only its recorded writer study and leaves
 its negative results and unresolved H1 claims intact. Readiness does not select a
-supporting task ahead of the primary contract work.
+supporting task ahead of the primary E1 work.
 
 ## Priority and status legend
 
@@ -57,7 +59,7 @@ IDs are thematic provenance groups, not sequential dates or compulsory stages fo
 
 | Milestone | Focus | Exit evidence / decision | State |
 | --- | --- | --- | --- |
-| M0 | Reusable recurrent experiment infrastructure | Historical harnesses plus the minimal SOAM-047 contract and SOAM-048 E1 runner/invariant fixtures | Historical infrastructure complete; platform contract next |
+| M0 | Reusable recurrent experiment infrastructure | Historical harnesses plus the minimal SOAM-047 contract and SOAM-048 E1 runner/invariant fixtures | Platform contract adopted; runner ready, unimplemented |
 | M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails; SOAM-059 selects the next fork; concurrency deferred | New protocol/implementation/study/gate planned; v1 measured comparison ready at P2 |
 | M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Historical contract complete; shared acquisition open |
 | M3 | Conditional functional scopes | SOAM-007–010; limited interference with beneficial sharing | Deferred comparison branch |
@@ -124,9 +126,9 @@ Order is a preference within the selected path. It never schedules all alternati
 | 06 | [SOAM-034: Implement the bounded concurrent-attractor handover harness](tickets/SOAM-034-handover-harness.md) | P0 | done | M1 | high | [SOAM-033](tickets/SOAM-033-handover-protocol.md) |
 | 07 | [SOAM-046: Adopt shared-population recurrent experimentation scope](tickets/SOAM-046-shared-platform-scope.md) | P0 | done | MX | high | — |
 | 08 | [SOAM-060: Review scientific direction and refine evidence-driven milestones](tickets/SOAM-060-scientific-roadmap-review.md) | P0 | done | MX | xhigh | — |
-| 09 | [SOAM-047: Define the shared-population experiment platform contract](tickets/SOAM-047-platform-contract.md) | P0 | ready | M0 | xhigh | [SOAM-046](tickets/SOAM-046-shared-platform-scope.md) |
-| 10 | [SOAM-049: Specify a minimal test of the benefit of shared recurrence](tickets/SOAM-049-shared-population-protocol.md) | P0 | backlog | M1 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md) |
-| 11 | [SOAM-048: Implement the reusable recurrent-dynamics experiment runner](tickets/SOAM-048-platform-runner.md) | P0 | backlog | M0 | high | [SOAM-047](tickets/SOAM-047-platform-contract.md) |
+| 09 | [SOAM-047: Define the shared-population experiment platform contract](tickets/SOAM-047-platform-contract.md) | P0 | done | M0 | xhigh | [SOAM-046](tickets/SOAM-046-shared-platform-scope.md) |
+| 10 | [SOAM-049: Specify a minimal test of the benefit of shared recurrence](tickets/SOAM-049-shared-population-protocol.md) | P0 | ready | M1 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md) |
+| 11 | [SOAM-048: Implement the reusable recurrent-dynamics experiment runner](tickets/SOAM-048-platform-runner.md) | P0 | ready | M0 | high | [SOAM-047](tickets/SOAM-047-platform-contract.md) |
 | 12 | [SOAM-050: Implement the bounded shared-population comparison](tickets/SOAM-050-shared-population-candidates.md) | P0 | backlog | M1 | high | [SOAM-048](tickets/SOAM-048-platform-runner.md), [SOAM-049](tickets/SOAM-049-shared-population-protocol.md) |
 | 13 | [SOAM-051: Measure the benefit and interference of shared recurrence](tickets/SOAM-051-shared-population-study.md) | P0 | backlog | M1 | xhigh | [SOAM-050](tickets/SOAM-050-shared-population-candidates.md) |
 | 14 | [SOAM-052: Review evidence for useful shared recurrence](tickets/SOAM-052-shared-population-gate.md) | P0 | backlog | M1 | xhigh | [SOAM-051](tickets/SOAM-051-shared-population-study.md) |

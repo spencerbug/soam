@@ -20,7 +20,9 @@ multi-circuit to shared-population learning. No ticket is closed by implication.
 
 Milestone/work-package and H1–H8 IDs remain thematic provenance categories. New
 application metrics do not invent new hypothesis IDs or renumber historical gates.
-The next eligible primary task is the platform contract decision, SOAM-047.
+SOAM-047 adopted the [minimal platform contract](../docs/RECURRENT_PLATFORM_CONTRACT.md).
+The next primary task is SOAM-049's E1 protocol decision; SOAM-048 is also ready
+for the specified engineering fixtures. Neither implementation nor trials have begun.
 
 These are GitHub-flavored Markdown issue bodies with YAML frontmatter. They are
 readable as repository files after pushing. They are **not live GitHub Issues**:

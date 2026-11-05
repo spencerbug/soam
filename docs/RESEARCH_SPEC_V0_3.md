@@ -1,7 +1,8 @@
 # SOAM v0.3 — shared populations and recurrent experiment platform
 
 **Adopted:** 2026-11-05, at the owner's request. **Status:** research direction and
-ticket plan; new interfaces, implementations, and scientific results remain open.
+ticket plan. SOAM-047 subsequently adopted the [minimal platform contract](RECURRENT_PLATFORM_CONTRACT.md);
+implementations and scientific results remain open.
 
 See the adopted [conditional research paths](RESEARCH_PATHS.md) for the November 5
 refinement: one minimal benefit pilot, then one result-selected experimental fork.
@@ -154,5 +155,6 @@ may complete an experiment and produce revise/stop at its gate.
 
 Current ordering and metadata live in [PRIORITIES.md](../PRIORITIES.md).
 [SOAM-046](../tickets/SOAM-046-shared-platform-scope.md) records this documentation
-change only. The next task is the platform contract decision, not implementation of
-the entire catalogue or execution of all application studies.
+change only. SOAM-047 now records the platform contract decision; SOAM-049 is next
+and SOAM-048's engineering fixtures are ready. This does not activate the entire
+catalogue or all application studies.

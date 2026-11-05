@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-049"
 title: "Specify a minimal test of the benefit of shared recurrence"
 type: "decision"
-status: "backlog"
+status: "ready"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M1"
@@ -32,6 +32,7 @@ Specification: [v0.3](../docs/RESEARCH_SPEC_V0_3.md), refined by the [conditiona
 
 ## Scope
 
+- Bind the adopted [platform contract](../docs/RECURRENT_PLATFORM_CONTRACT.md) to the E1 manifest, including its measurement defaults, finite study ceilings, equal-tuning rules, and fixture-only feasibility check before any fitting. Record exact inventory and endpoint/precision definitions; no fitting is authorized by the platform contract alone.
 - Specify one small fixed-sensing action-conditioned transform task. Separate held-out states/actions within known transformations from later compositional generalization. Use supplied structure or declared offline fitting; freeze confirmation parameters.
 - Compare one shared asymmetric candidate, its constrained disjoint form, a competent small GRU, and a cheap action-conditioned linear/local sanity reference. Separate same-width mask ablations from matched-budget comparisons; shared parameters, topology, capacity, and readout power are confounds to report.
 - Include symmetric-only/action-shuffled controls, one causal overlap intervention with equal-size random/disjoint lesions, and a small perturbation/cue-removal probe. Activity overlap in an arbitrary coordinate basis is not a basis-invariant proof of semantic sharing.

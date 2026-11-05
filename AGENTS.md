@@ -82,6 +82,14 @@ directories are boundaries, not implementations.
   before activating conditional work; the ticket validator cannot check them.
   Supporting research does not activate additional experiments. A later fork needs
   a fresh routing decision, not silent reuse of a completed selection.
+- When a finding (including an informative negative result), research direction or
+  scope change, or concept appears significant enough for the owner's blog,
+  proactively inform the owner. Briefly explain why it merits publication and link
+  the relevant evidence, report, or decision tickets; distinguish measured findings
+  from hypotheses and conceptual proposals. Flag substantive developments rather
+  than routine engineering progress. We will prepare a blog post and an accompanying
+  report for publication together; this notification does not itself authorize
+  publishing. Continue the authorized research work while awaiting the owner's response.
 
 ## Experimental rules
 

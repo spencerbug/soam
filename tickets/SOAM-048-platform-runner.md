@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-048"
 title: "Implement the reusable recurrent-dynamics experiment runner"
 type: "engineering"
-status: "backlog"
+status: "ready"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M0"
@@ -33,9 +33,14 @@ Specification: [SOAM v0.3](../docs/RESEARCH_SPEC_V0_3.md). Apply the
 
 ## Scope
 
-- Implement only the core interfaces and minimal backends/fixtures selected by the platform contract, with configuration-driven task/backend/learning-policy selection.
+- Implement the [v1 platform contract](../docs/RECURRENT_PLATFORM_CONTRACT.md): configuration-driven task/backend selection, supplied-only leaky and linear fixtures, and rejection of fitting/online-write requests. No general learning-policy plugin layer.
 - Provide deterministic fixtures for recall/transition and one distinct sensorimotor task; reuse existing provenance, snapshot, metrics, and artifact utilities where compatible.
 - Implement finite sweep execution, structured failed-run records, resume/overwrite rules, state/parameter/storage/compute accounting, and capability checks. Preserve historical CLIs, protocols, and results.
+
+Use the contract's eight-cell fixture matrix, failure case and repeat under its
+combined 60-CPU-second/120-wall-second, 1-GiB-RSS and 256-MiB-artifact ceilings.
+No partial-cell resume or automatic retries in v1. SOAM-050 owns scientific backends
+and offline fitting after SOAM-049; this runner ticket remains engineering-only.
 
 ## Acceptance criteria
 
