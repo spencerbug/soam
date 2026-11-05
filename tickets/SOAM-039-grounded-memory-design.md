@@ -1,58 +1,64 @@
 ---
 schema_version: 2
 id: "SOAM-039"
-title: "Select a grounded multi-circuit learning contract"
+title: "Specify minimal grounded acquisition and retention"
 type: "decision"
 status: "backlog"
 priority: "P1"
 recommended_thinking: "xhigh"
 milestone: "M2"
 work_packages: ["WP-02", "WP-03"]
-hypotheses: ["H2", "H3", "H4"]
-depends_on: ["SOAM-036", "SOAM-037", "SOAM-038"]
+hypotheses: ["H2", "H3"]
+depends_on: ["SOAM-047", "SOAM-059"]
 labels: ["type:decision", "priority:P1", "milestone:M2"]
 assignees: []
 created: "2026-11-01"
-updated: "2026-11-01"
+updated: "2026-11-05"
 github_issue: null
 decision: null
 ---
 
-# SOAM-039: Select a grounded multi-circuit learning contract
+# SOAM-039: Specify minimal grounded acquisition and retention
 
 ## Recommended thinking
 
-**xhigh** — Choose writable representations and credit assignment from observed circuit failures while preserving generic and instance memory.
+**xhigh** — Isolate persistent rapid learning from state calibration, memorization, and extra exposure before adding skills or consolidation.
 
 ## Problem / hypothesis
 
-The historical single-matrix writer is one comparison, not a validated writer for the expanded architecture. A bounded design decision must precede persistent multi-circuit learning.
-
-Specification: [SOAM v0.2](../docs/RESEARCH_SPEC_V0_2.md).
-Apply the [common completion requirements](README.md#completion-requirements).
+A small number of grounded observations should improve held-out action-conditioned behavior while retaining prior competence. Existing local-write regressions make this an early risk to test. The historical single-matrix rule remains a comparison, not the selected solution. See E2 in the scientific review.
 
 ## Scope
 
-- Define evidence responsibility, writable parameters/associations/instance facts, frozen generic knowledge, and state calibration boundaries.
-- Compare reusing the old transaction/rule with bounded associative alternatives and same-representation online-gradient references; do not require a successful historical writer gate to consider another representation.
-- Specify simple replay and shadow-validation contracts and a preregistered acquisition experiment; identify observed needs for scope filters without presuming a learned translator.
+- Select one usable candidate from the evidence and one identifiable low-dimensional changed-dynamics task with fixed sensing. Supply necessary structural priors explicitly; one observation cannot identify an arbitrary unknown transition function.
+- Define writable objects, grounded targets, no-write evaluation, bounded proposals, exact rollback, and a state-reset recall test. Reuse SOAM-003 transaction invariants only where the representation fits.
+- Compare the selected rule with no-write, delta/RLS, ordinary online-gradient, and bounded retrieval references at equal new observations and reported compute. Count all offline pretraining and history/replay exposures.
+- Freeze budgets 0/1/2/4/8/16 distinct new transitions, held-out states/actions, retained tasks, acquisition-area and one-shot endpoints, and confirmation streams. Do not require concurrency, skills, generic instance-exception machinery, or the full replay/shadow-consolidation stack.
 
 ## Acceptance criteria
 
-- [ ] Record proceed/revise/stop for one bounded contract with cue/target construction, norm/storage limits, evidence provenance, and no-write prediction invariants.
-- [ ] Define how a one-instance exception is written and later recalled without corrupting generic dynamics or another instance.
-- [ ] Specify fresh acquisition/retention streams, simple baselines, validation/test separation, and repeatable failure handling before implementation.
-- [ ] Explain departures from the old plastic-tensor contract and retain its results; planning proceeds only to empirical acquisition, not directly to integration.
+- [ ] Publish the short RFC and finite E2 protocol/manifest, adopting the proposed review margins or justifying changes before fitting.
+- [ ] Make one-shot mean one distinct new observation and one declared update, without hidden replay or repeated target optimization; distinguish exact-example recall from parameter adaptation and generalization.
+- [ ] Specify reset-transient-state/preserve-memory tests, no-write rollouts, target exclusion, rollback and finite storage; acquisition and retention must both be measured.
+- [ ] Define fair adaptive and retrieval baselines, exposure/compute accounting, uncertainty, stop rules, and negative-result interpretations.
+- [ ] Record proceed/revise/stop for a minimal experiment; a positive learning design does not pass H2/H3.
 
 ## Metrics / evidence
 
-Expected design/protocol: docs/MULTICIRCUIT_LEARNING_PROTOCOL.md. Cite handover, belief, and skill evidence; this is a design decision and does not establish H2/H3/H4.
+Expected protocol: docs/SHARED_POPULATION_LEARNING_PROTOCOL.md (stable planned path). Review the local-write report and selected pilot evidence. E2 acquisition area, one-exposure held-out error, old-task retention, reset persistence, multistep regressions, and update cost are required.
 
 ## Dependencies
 
-- [SOAM-036](SOAM-036-handover-gate.md) — required completed prerequisite; decision prerequisites must record proceed.
-- [SOAM-037](SOAM-037-attention-belief-instances.md) — required completed prerequisite; decision prerequisites must record proceed.
-- [SOAM-038](SOAM-038-associative-skill-transfer.md) — required completed prerequisite; decision prerequisites must record proceed.
+- [SOAM-047](SOAM-047-platform-contract.md) — required completed prerequisite; decision prerequisites require proceed and applicable body conditions.
+- [SOAM-059](SOAM-059-research-fork-selection.md) — required completed prerequisite; decision prerequisites require proceed and applicable body conditions.
+
+## Branch conditions
+
+Require named E2 selection in SOAM-059, or an explicitly revised edge to a fresh routing decision. A negative sharing result may select a labeled alternative learner. Earlier skills/concurrency requirements are removed only for this minimal acquisition experiment; no integration gate is bypassed.
+
+## Scientific review disposition — 2026-11-05
+
+**Future capability** (R4) in the [scientific review](../docs/SCIENTIFIC_REVIEW_2026_11_05.md). Use the operational hypothesis ledger and the proposed quantitative criteria; protocol decisions must adopt or justify them before fitting/confirmation. No new empirical result is implied.
 
 ## Completion record
 

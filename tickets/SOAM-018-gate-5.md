@@ -13,7 +13,7 @@ depends_on: ["SOAM-017"]
 labels: ["type:decision", "priority:P2", "milestone:M5"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-11-01"
+updated: "2026-11-05"
 github_issue: null
 decision: null
 ---
@@ -55,6 +55,10 @@ Gate 5 evidence for composition/transfer, with effect sizes, uncertainty, and fa
 ## Dependencies
 
 - [SOAM-017](SOAM-017-identity-timescales.md) — Test identity preservation and reusable temporal structure
+
+## Scientific review disposition — 2026-11-05
+
+**Future capability** (R9) in the [scientific review](../docs/SCIENTIFIC_REVIEW_2026_11_05.md). Future D4 composition/identity evidence. Distinguish withheld recombination, interpolation, memorized episodes, and faster acquisition; causal recurrent motifs do not themselves prove composition. Preserve existing prerequisites and use the review quantitative targets only after a dedicated protocol decision.
 
 ## Completion record
 

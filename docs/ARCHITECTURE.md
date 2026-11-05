@@ -1,11 +1,53 @@
 # Interface boundaries
 
-## Adopted v0.2 research boundaries
+The [conditional research paths](RESEARCH_PATHS.md) govern follow-ups: first
+measure one benefit of sharing, then select one experimental fork from the results.
+Concurrency/handover and the two application studies are conditional extensions.
+
+The [scientific review](SCIENTIFIC_REVIEW_2026_11_05.md) separates task utility,
+mechanism attribution, learning, and active perception. Shared units remain a
+candidate choice; conventional, separated, fast-memory/core and structured hybrids
+remain legitimate alternatives. Use [lightweight RFCs](rfcs/README.md) inside existing
+decision tickets, and expose actual memory lifetimes rather than naming every
+functional responsibility a separate neural module.
+
+## Current v0.3 shared-population direction
+
+The [v0.3 scope](RESEARCH_SPEC_V0_3.md) makes overlapping recurrent neurons and
+connections the preferred candidate for feature, relationship, and action-relation
+functions. These are representational responsibilities, not mandatory separate
+neural modules. Separate sensory adapters, readouts, evaluators, and write interfaces
+remain useful software boundaries. Actual versus desired state, instance binding,
+evidence provenance, and motor authority must remain identifiable even when encoded
+in shared activity.
+
+A shared tensor containing disjoint blocks, tied weights with cloned state, or an
+external relation graph does not demonstrate neuronal sharing. The new protocol must
+specify overlap/connectivity, directional/asymmetric updates, timescales, activity
+allocation, causal interventions, and cross-function interference. Separated networks
+remain controls; partial overlap and negative findings are legitimate outcomes.
+No arbitrary asymmetric rule inherits a symmetric Hopfield convergence argument.
+
+[SOAM-047](../tickets/SOAM-047-platform-contract.md) defines concrete platform
+interfaces before implementation: dynamics backends, observed-data task adapters,
+learning policies, perturbations, metrics, and reproducible artifacts. A backend's
+state/energy/update assumptions must be explicit. The runner supports independent
+shared-mechanism, localization, and learning-module studies without requiring each
+to implement the entire embodied SOAM architecture. No new implementation is claimed.
+
+## Historical v0.2 research boundaries
+
+The following records the v0.2 design and initial two-state scaffold. It is retained
+for the implemented handover contract; current architecture preference and future
+integration dependencies follow v0.3 and the priority tracker.
 
 The [v0.2 specification](RESEARCH_SPEC_V0_2.md) prioritizes cue-driven attractor
-switching and sensorimotor handover. The interfaces below describe proposed research
-boundaries, not implemented modules. Freeze concrete signatures and topology choices
-in [SOAM-033](../tickets/SOAM-033-handover-protocol.md) before implementation.
+switching and sensorimotor handover. The interfaces below describe broader research
+boundaries. [SOAM-033](../tickets/SOAM-033-handover-protocol.md)
+now freezes the first bounded signatures, candidate layouts, and controls in the
+[handover protocol](HANDOVER_PROTOCOL.md). SOAM-034 implemented that bounded
+contract in the [handover harness](HANDOVER_HARNESS.md), verified with fixtures;
+the broader alternatives below remain experimental and empirical claims remain open.
 
 | Boundary | State and responsibility |
 | --- | --- |

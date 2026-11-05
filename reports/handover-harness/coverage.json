@@ -1,0 +1,3880 @@
+{
+  "cells": [
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell00-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell01-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 2,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 4,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        }
+      ],
+      "id": "cell02-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "cf100b917608b086134e80de80bc30eef12adbf217ac6374f0818f7c5d35eda3",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 3,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 99,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 146,
+          "kind": "commit",
+          "source": 1
+        }
+      ],
+      "id": "cell03-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "bbc9b1a0f37153d0212051b0f12d0c1263a45ffcada1687abffc9e50c87c0776",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 4,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 20,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell04-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "2798f12b6a3f928b29274fbf8cee7b981074f40f3c1204280fd0a388c336747c",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 5,
+      "data_exposure": {
+        "available_valid_feature_observations": 260,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 260,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 260
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 56,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 104,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 152,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell05-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 260,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "8e19f5153e9ca0fe71d3431b6f91e86ab15c14710a070a654667e7ed2d42ca75",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 6,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell06-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5554030ba8f0831394e7ced65b89f03e4c9fb15ef0639edb233d69096157e141",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 7,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell07-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "11c2d20ae8c5581e0bc16d7a9f6bd83c9b23f63c6a2f621f3421d1b5698ab702",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 169
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell08-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 192,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 169,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1056156,
+        "pose_calls": 311,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 311,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A1",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 169
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell09-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 192,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 169,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1056156,
+        "pose_calls": 311,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 311,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A1",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 2,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 4,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 180
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        }
+      ],
+      "id": "cell10-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 192,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 180,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "cf100b917608b086134e80de80bc30eef12adbf217ac6374f0818f7c5d35eda3",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1056156,
+        "pose_calls": 311,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 311,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A1",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 3,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 183
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 99,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 146,
+          "kind": "commit",
+          "source": 1
+        }
+      ],
+      "id": "cell11-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 192,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 183,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "bbc9b1a0f37153d0212051b0f12d0c1263a45ffcada1687abffc9e50c87c0776",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1056156,
+        "pose_calls": 311,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 311,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A1",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 4,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 20,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 169
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell12-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 192,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 169,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "2798f12b6a3f928b29274fbf8cee7b981074f40f3c1204280fd0a388c336747c",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1056156,
+        "pose_calls": 311,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 311,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A1",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 5,
+      "data_exposure": {
+        "available_valid_feature_observations": 260,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 260,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 133
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 56,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 104,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 152,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell13-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 192,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 133,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "8e19f5153e9ca0fe71d3431b6f91e86ab15c14710a070a654667e7ed2d42ca75",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1056156,
+        "pose_calls": 311,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 311,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A1",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 6,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 169
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell14-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 192,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 169,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5554030ba8f0831394e7ced65b89f03e4c9fb15ef0639edb233d69096157e141",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1056156,
+        "pose_calls": 311,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 311,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A1",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 7,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 169
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell15-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 192,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 169,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "11c2d20ae8c5581e0bc16d7a9f6bd83c9b23f63c6a2f621f3421d1b5698ab702",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1056156,
+        "pose_calls": 311,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 311,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A1",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell16-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell17-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 2,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 4,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell18-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "cf100b917608b086134e80de80bc30eef12adbf217ac6374f0818f7c5d35eda3",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 3,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell19-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "bbc9b1a0f37153d0212051b0f12d0c1263a45ffcada1687abffc9e50c87c0776",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 4,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 20,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell20-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "2798f12b6a3f928b29274fbf8cee7b981074f40f3c1204280fd0a388c336747c",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 5,
+      "data_exposure": {
+        "available_valid_feature_observations": 260,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 260,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 260
+      },
+      "events": [],
+      "id": "cell21-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 260,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "8e19f5153e9ca0fe71d3431b6f91e86ab15c14710a070a654667e7ed2d42ca75",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 6,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell22-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5554030ba8f0831394e7ced65b89f03e4c9fb15ef0639edb233d69096157e141",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 7,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell23-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "11c2d20ae8c5581e0bc16d7a9f6bd83c9b23f63c6a2f621f3421d1b5698ab702",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell24-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1316736,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 2130039,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS24",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell25-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1316736,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 2130039,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS24",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 2,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 4,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell26-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1316736,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "cf100b917608b086134e80de80bc30eef12adbf217ac6374f0818f7c5d35eda3",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 2130039,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS24",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 3,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell27-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1316736,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "bbc9b1a0f37153d0212051b0f12d0c1263a45ffcada1687abffc9e50c87c0776",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 2130039,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS24",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 4,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 20,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell28-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1316736,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "2798f12b6a3f928b29274fbf8cee7b981074f40f3c1204280fd0a388c336747c",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 2130039,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS24",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 5,
+      "data_exposure": {
+        "available_valid_feature_observations": 260,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 260,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 260
+      },
+      "events": [],
+      "id": "cell29-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1316736,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 260,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "8e19f5153e9ca0fe71d3431b6f91e86ab15c14710a070a654667e7ed2d42ca75",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 2130039,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS24",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 6,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell30-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1316736,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5554030ba8f0831394e7ced65b89f03e4c9fb15ef0639edb233d69096157e141",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 2130039,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS24",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 7,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell31-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1316736,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "11c2d20ae8c5581e0bc16d7a9f6bd83c9b23f63c6a2f621f3421d1b5698ab702",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 2130039,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS24",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell32-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 711936,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1150389,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS9",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell33-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 711936,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1150389,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS9",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 2,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 4,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell34-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 711936,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "cf100b917608b086134e80de80bc30eef12adbf217ac6374f0818f7c5d35eda3",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1150389,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS9",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 3,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell35-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 711936,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "bbc9b1a0f37153d0212051b0f12d0c1263a45ffcada1687abffc9e50c87c0776",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1150389,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS9",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 4,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 20,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell36-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 711936,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "2798f12b6a3f928b29274fbf8cee7b981074f40f3c1204280fd0a388c336747c",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1150389,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS9",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 5,
+      "data_exposure": {
+        "available_valid_feature_observations": 260,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 260,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 260
+      },
+      "events": [],
+      "id": "cell37-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 711936,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 260,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "8e19f5153e9ca0fe71d3431b6f91e86ab15c14710a070a654667e7ed2d42ca75",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1150389,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS9",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 6,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell38-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 711936,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5554030ba8f0831394e7ced65b89f03e4c9fb15ef0639edb233d69096157e141",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1150389,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS9",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 7,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell39-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 711936,
+        "pose_calls": 192,
+        "readout_calls": 384,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "11c2d20ae8c5581e0bc16d7a9f6bd83c9b23f63c6a2f621f3421d1b5698ab702",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1150389,
+        "pose_calls": 311,
+        "readout_calls": 622,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "GS9",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 178
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "cold_reset"
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "cold_reset"
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "cold_reset"
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell40-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 195,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 178,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 3,
+        "transition_state_clones": 192
+      },
+      "mode": "cold",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 178
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "cold_reset"
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "cold_reset"
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "cold_reset"
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell41-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 653472,
+        "pose_calls": 195,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 178,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 3,
+        "transition_state_clones": 192
+      },
+      "mode": "cold",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 298,
+        "sensory_corrections_including_replay": 410
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "replay",
+          "packets": 51
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "replay",
+          "packets": 100
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "replay",
+          "packets": 147
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell42-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 192,
+        "key_substeps": 3840,
+        "linear_macs": 738432,
+        "pose_calls": 490,
+        "readout_calls": 0,
+        "replay_packets": 298,
+        "ring_propagations": 486,
+        "selector_calls": 0,
+        "sensory_corrections": 410,
+        "snapshot_clones": 0,
+        "state_copies": 3,
+        "state_resets": 3,
+        "transition_state_clones": 192
+      },
+      "mode": "equal_history_replay",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 298,
+        "sensory_corrections_including_replay": 410
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "replay",
+          "packets": 51
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "replay",
+          "packets": 100
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "replay",
+          "packets": 147
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell43-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 192,
+        "key_substeps": 3840,
+        "linear_macs": 738432,
+        "pose_calls": 490,
+        "readout_calls": 0,
+        "replay_packets": 298,
+        "ring_propagations": 486,
+        "selector_calls": 0,
+        "sensory_corrections": 410,
+        "snapshot_clones": 0,
+        "state_copies": 3,
+        "state_resets": 3,
+        "transition_state_clones": 192
+      },
+      "mode": "equal_history_replay",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 178
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "source_transport",
+          "source": 0
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "source_transport",
+          "source": 1
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "source_transport",
+          "source": 0
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell44-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 654336,
+        "pose_calls": 195,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 178,
+        "snapshot_clones": 0,
+        "state_copies": 3,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "source_transport",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 178
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "source_transport",
+          "source": 0
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "source_transport",
+          "source": 1
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "source_transport",
+          "source": 0
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell45-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 654336,
+        "pose_calls": 195,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 191,
+        "selector_calls": 0,
+        "sensory_corrections": 178,
+        "snapshot_clones": 0,
+        "state_copies": 3,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "source_transport",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 153
+      },
+      "events": [],
+      "id": "cell46-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 715392,
+        "pose_calls": 192,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 153,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "cold",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 153
+      },
+      "events": [],
+      "id": "cell47-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 715392,
+        "pose_calls": 192,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 153,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "cold",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 153
+      },
+      "events": [],
+      "id": "cell48-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 192,
+        "key_substeps": 0,
+        "linear_macs": 715392,
+        "pose_calls": 192,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 153,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "equal_history_replay",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 1,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 153
+      },
+      "events": [],
+      "id": "cell49-e0",
+      "intervention": "none",
+      "live_work": {
+        "history_packet_copies": 192,
+        "key_substeps": 0,
+        "linear_macs": 715392,
+        "pose_calls": 192,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 153,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "equal_history_replay",
+      "packet_fingerprint": "f03f0762419838542e10a428ad357ffa8908e4a828a525fe41593a288f4fa206",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell50-e0",
+      "intervention": "no_priming",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 51,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 147,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell51-e0",
+      "intervention": "shuffled_priming",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 16,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 16
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        }
+      ],
+      "id": "cell52-e0",
+      "intervention": "no_sensing_after_15",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 16,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 98,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell53-e0",
+      "intervention": "oracle_full_cue",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "0e0d37ab047c0d484637e14f62c28a05d77cd96bac5a73bc93e0235ff8dc1aef",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 0,
+          "frame": 40,
+          "kind": "diagnostic_perturbation"
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell54-e0",
+      "intervention": "perturb_A_at_40",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 2,
+          "kind": "commit",
+          "source": -1
+        },
+        {
+          "bank": 1,
+          "frame": 40,
+          "kind": "diagnostic_perturbation"
+        },
+        {
+          "bank": 1,
+          "frame": 50,
+          "kind": "commit",
+          "source": 0
+        },
+        {
+          "bank": 0,
+          "frame": 99,
+          "kind": "commit",
+          "source": 1
+        },
+        {
+          "bank": 1,
+          "frame": 146,
+          "kind": "commit",
+          "source": 0
+        }
+      ],
+      "id": "cell55-e0",
+      "intervention": "perturb_B_at_40",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 3840,
+        "linear_macs": 708480,
+        "pose_calls": 384,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 382,
+        "selector_calls": 0,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 6220,
+        "linear_macs": 1145724,
+        "pose_calls": 622,
+        "readout_calls": 0,
+        "replay_packets": 0,
+        "ring_propagations": 622,
+        "selector_calls": 0,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "A2",
+      "weights_status": "analytic_supplied"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell56-e0",
+      "intervention": "no_priming",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell57-e0",
+      "intervention": "shuffled_priming",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 16,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 16
+      },
+      "events": [],
+      "id": "cell58-e0",
+      "intervention": "no_sensing_after_15",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 16,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [],
+      "id": "cell59-e0",
+      "intervention": "oracle_full_cue",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902016,
+        "pose_calls": 384,
+        "readout_calls": 576,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "0e0d37ab047c0d484637e14f62c28a05d77cd96bac5a73bc93e0235ff8dc1aef",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 0,
+          "frame": 40,
+          "kind": "diagnostic_perturbation"
+        }
+      ],
+      "id": "cell60-e0",
+      "intervention": "perturb_A_at_40",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902304,
+        "pose_calls": 384,
+        "readout_calls": 578,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    },
+    {
+      "condition": 0,
+      "data_exposure": {
+        "available_valid_feature_observations": 332,
+        "cue_presentations": 16,
+        "effective_valid_feature_observations": 332,
+        "observation_packets": 192,
+        "replayed_packets": 0,
+        "sensory_corrections_including_replay": 332
+      },
+      "events": [
+        {
+          "bank": 1,
+          "frame": 40,
+          "kind": "diagnostic_perturbation"
+        }
+      ],
+      "id": "cell61-e0",
+      "intervention": "perturb_B_at_40",
+      "live_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 902304,
+        "pose_calls": 384,
+        "readout_calls": 578,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 192,
+        "sensory_corrections": 332,
+        "snapshot_clones": 0,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 192
+      },
+      "mode": "pretracking",
+      "packet_fingerprint": "5156cdf51ef3fb9ffd7f2a432c344e167b0c895f527e523d018526f42cd040b9",
+      "persistent_unchanged": true,
+      "prediction_work": {
+        "history_packet_copies": 0,
+        "key_substeps": 0,
+        "linear_macs": 1458279,
+        "pose_calls": 622,
+        "readout_calls": 933,
+        "replay_packets": 0,
+        "ring_propagations": 0,
+        "selector_calls": 311,
+        "sensory_corrections": 0,
+        "snapshot_clones": 197,
+        "state_copies": 0,
+        "state_resets": 0,
+        "transition_state_clones": 311
+      },
+      "variant": "G2",
+      "weights_status": "unfitted_fixture"
+    }
+  ],
+  "models": {
+    "A1": {
+      "compute_note": "Leading linear MACs only; nonlinear/vector arithmetic, Python, and diagnostics excluded. Actual wall/CPU time and RSS are recorded separately.",
+      "fixed_buffer_bytes": 1532,
+      "fixed_buffer_floats": 383,
+      "independent_pose_instances": 1,
+      "live_interaction_states": 1,
+      "parameter_bytes": 0,
+      "pose_banks": 1,
+      "prediction_snapshots": 1,
+      "recurrent_floats": 28,
+      "state_tensor_bytes": 166,
+      "temporary_transition_clones": "counted in work; peak allocation represented by RSS",
+      "trainable_parameters": 0,
+      "weight_copies": 1
+    },
+    "A2": {
+      "compute_note": "Leading linear MACs only; nonlinear/vector arithmetic, Python, and diagnostics excluded. Actual wall/CPU time and RSS are recorded separately.",
+      "fixed_buffer_bytes": 1532,
+      "fixed_buffer_floats": 383,
+      "independent_pose_instances": 2,
+      "live_interaction_states": 1,
+      "parameter_bytes": 0,
+      "pose_banks": 2,
+      "prediction_snapshots": 1,
+      "recurrent_floats": 40,
+      "state_tensor_bytes": 214,
+      "temporary_transition_clones": "counted in work; peak allocation represented by RSS",
+      "trainable_parameters": 0,
+      "weight_copies": 1
+    },
+    "G2": {
+      "compute_note": "Leading linear MACs only; nonlinear/vector arithmetic, Python, and diagnostics excluded. Actual wall/CPU time and RSS are recorded separately.",
+      "fixed_buffer_bytes": 332,
+      "fixed_buffer_floats": 83,
+      "independent_pose_instances": 2,
+      "live_interaction_states": 1,
+      "parameter_bytes": 14796,
+      "pose_banks": 2,
+      "prediction_snapshots": 1,
+      "recurrent_floats": 40,
+      "state_tensor_bytes": 214,
+      "temporary_transition_clones": "counted in work; peak allocation represented by RSS",
+      "trainable_parameters": 3699,
+      "weight_copies": 1
+    },
+    "GS24": {
+      "compute_note": "Leading linear MACs only; nonlinear/vector arithmetic, Python, and diagnostics excluded. Actual wall/CPU time and RSS are recorded separately.",
+      "fixed_buffer_bytes": 332,
+      "fixed_buffer_floats": 83,
+      "independent_pose_instances": 1,
+      "live_interaction_states": 1,
+      "parameter_bytes": 28236,
+      "pose_banks": 1,
+      "prediction_snapshots": 1,
+      "recurrent_floats": 40,
+      "state_tensor_bytes": 214,
+      "temporary_transition_clones": "counted in work; peak allocation represented by RSS",
+      "trainable_parameters": 7059,
+      "weight_copies": 1
+    },
+    "GS9": {
+      "compute_note": "Leading linear MACs only; nonlinear/vector arithmetic, Python, and diagnostics excluded. Actual wall/CPU time and RSS are recorded separately.",
+      "fixed_buffer_bytes": 332,
+      "fixed_buffer_floats": 83,
+      "independent_pose_instances": 1,
+      "live_interaction_states": 1,
+      "parameter_bytes": 15276,
+      "pose_banks": 1,
+      "prediction_snapshots": 1,
+      "recurrent_floats": 25,
+      "state_tensor_bytes": 154,
+      "temporary_transition_clones": "counted in work; peak allocation represented by RSS",
+      "trainable_parameters": 3819,
+      "weight_copies": 1
+    }
+  },
+  "purpose": "engineering fixture coverage only; no empirical gate",
+  "repeat_run": "runs/handover-fixture-v3-repeat",
+  "source_run": "runs/handover-fixture-v3"
+}

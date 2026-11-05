@@ -13,7 +13,7 @@ depends_on: ["SOAM-044"]
 labels: ["type:engineering", "priority:P1", "milestone:M4"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-11-01"
+updated: "2026-11-05"
 github_issue: null
 decision: null
 ---
@@ -32,7 +32,14 @@ Specification: [research plan §4, §11, §16](../docs/RESEARCH_SPEC.md). Apply 
 
 ## Scope
 
-### v0.2 scope revision — 2026-11-01
+### v0.3 shared-population revision — 2026-11-05
+
+Use the shared-population write contract from SOAM-039/044. Evidence/replay remains an auditable buffer, not a substitute relation, feature, or action-memory network. Reuse platform provenance and learning-policy hooks.
+
+The [v0.3 scope](../docs/RESEARCH_SPEC_V0_3.md) governs current topology and
+platform use; earlier scope notes below retain dependency history only.
+
+### Historical v0.2 scope revision — 2026-11-01
 
 The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) replaces the dependency on the historical writer gate with SOAM-044, which implements the multi-circuit contract selected by SOAM-039. This ticket supplies a simple replay reference before complex consolidation; it does not require a learned consolidator.
 
@@ -42,6 +49,8 @@ The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) replaces the dependency 
 - Implement recent/representative replay using the contract selected in SOAM-039; reuse existing writer transactions only where their assumptions hold.
 
 ## Acceptance criteria
+
+- [ ] Measure replay retention across feature recall, relation inference, and action transitions in overlapping units, counting every buffer and replay exposure.
 
 - [ ] Exclude imagined transitions from grounded evidence unless separately labeled and never treated as truth.
 - [ ] Document sampling/eviction and evidence reliability; keep final evaluation records separate.
@@ -54,7 +63,11 @@ Buffer bytes, coverage, replay iterations/time, acquisition retention, and free-
 
 ## Dependencies
 
-- [SOAM-044](SOAM-044-multicircuit-write-contract.md) — implemented and tested multi-circuit writer; the upstream design decision must proceed.
+- [SOAM-044](SOAM-044-multicircuit-write-contract.md) — required completed prerequisite; decision prerequisites require proceed for this scope.
+
+## Scientific review disposition — 2026-11-05
+
+**Future capability** (R4/R10) in the [scientific review](../docs/SCIENTIFIC_REVIEW_2026_11_05.md). Retain as later reusable replay/shadow-validation infrastructure, not a prerequisite for the first E2 acquisition measurement. Select it only when the measured failure requires replay or repeated candidate validation. E2 still needs its own minimal no-write/rollback tests.
 
 ## Completion record
 

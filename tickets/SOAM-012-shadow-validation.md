@@ -13,7 +13,7 @@ depends_on: ["SOAM-011"]
 labels: ["type:engineering", "priority:P1", "milestone:M4"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-11-01"
+updated: "2026-11-05"
 github_issue: null
 decision: null
 ---
@@ -32,7 +32,14 @@ Specification: [research plan §5, §11, §17](../docs/RESEARCH_SPEC.md). Apply 
 
 ## Scope
 
-### v0.2 scope revision — 2026-11-01
+### v0.3 shared-population revision — 2026-11-05
+
+Validate shared recurrent updates across all affected functions and instance bindings, including asymmetric transition and recovery behavior. Atomicity covers every persistent object even when several functions use the same parameters.
+
+The [v0.3 scope](../docs/RESEARCH_SPEC_V0_3.md) governs current topology and
+platform use; earlier scope notes below retain dependency history only.
+
+### Historical v0.2 scope revision — 2026-11-01
 
 The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) extends candidate validation to the persistent tensors, associations, and instance facts selected by SOAM-039. Include every changed persistent object in atomic rejection/rollback checks; the original single-tensor contract remains unchanged for its historical branch. Shadow validation is reusable infrastructure, not evidence for learned consolidation.
 
@@ -42,6 +49,8 @@ The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) extends candidate valida
 - Define evidence-aware trust limits and atomic commit/reject/rollback.
 
 ## Acceptance criteria
+
+- [ ] Reject or report updates that improve one function while violating preregistered protection limits for another; test complete rollback and asymmetric-dynamics regressions.
 
 - [ ] A rejected candidate leaves persistent parameters bit-identical; accepted changes have reproducible evidence and provenance.
 - [ ] Repeated proposal selection uses a validation subset, while final reporting uses untouched tests.
@@ -54,7 +63,11 @@ Acceptance/rejection rate, old/new error changes, rollback integrity, validation
 
 ## Dependencies
 
-- [SOAM-011](SOAM-011-evidence-and-replay.md) — Implement a bounded grounded evidence buffer and replay baseline
+- [SOAM-011](SOAM-011-evidence-and-replay.md) — required completed prerequisite; decision prerequisites require proceed for this scope.
+
+## Scientific review disposition — 2026-11-05
+
+**Future capability** (R4/R10) in the [scientific review](../docs/SCIENTIFIC_REVIEW_2026_11_05.md). Retain as later reusable replay/shadow-validation infrastructure, not a prerequisite for the first E2 acquisition measurement. Select it only when the measured failure requires replay or repeated candidate validation. E2 still needs its own minimal no-write/rollback tests.
 
 ## Completion record
 

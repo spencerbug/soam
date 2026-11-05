@@ -1,23 +1,55 @@
 # SOAM issue backlog
 
 Start with the [priority and milestone table](../PRIORITIES.md) and adopted
-[v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md). The backlog retains WP-00 through
-WP-13, H1–H8, the historical seven gates, and the H8 review. SOAM-000–003 preserve
-completed work; SOAM-004–031 retain the revised legacy branches. SOAM-032 records
-scope adoption; SOAM-033–044 add switching, attention/instances, associative skills,
-and later multi-circuit learning/organization. SOAM-031 remains unfinished composition
-planning, scheduled after the new handover gate. No legacy ticket is closed by scope
-adoption, and no new empirical gate has passed.
+[v0.3 specification](../docs/RESEARCH_SPEC_V0_3.md). SOAM is now planned as a reusable
+Hopfield/recurrent-dynamics experiment platform, with shared neurons across feature,
+relationship, and action-relation functions as its preferred architecture hypothesis.
 
-Milestone and work-package IDs remain thematic provenance categories, not a numeric
-execution schedule. New empirical decisions are named handover, multi-circuit
-acquisition, and organization gates; they do not renumber or overwrite the historical
-gates. The learning-design decision authorizes an experiment, not empirical integration.
+SOAM-046 records the November 5 scope adoption. SOAM-047/048 define and build the
+platform; SOAM-049–052 specify, implement, measure, and review a minimal shared-population
+benefit pilot; SOAM-059 selects the next experimental fork. SOAM-053–055 cover active disambiguation inspired by localization;
+SOAM-056–058 cover a Monty-style recurrent learning module. Application tracks have
+independent protocol decisions and share infrastructure, without waiting for the
+full SOAM integration chain. Protocol completion never passes an empirical gate.
+
+Completed tickets and original results retain their meanings. SOAM-035/036 remain
+the frozen v1 handover comparison branch. Revised belief/control/composition/learning
+tickets use the new shared-population gate; SOAM-045 studies an optional recurrent
+attention backend. Historical filenames remain stable even where titles change from
+multi-circuit to shared-population learning. No ticket is closed by implication.
+
+Milestone/work-package and H1–H8 IDs remain thematic provenance categories. New
+application metrics do not invent new hypothesis IDs or renumber historical gates.
+The next eligible primary task is the platform contract decision, SOAM-047.
 
 These are GitHub-flavored Markdown issue bodies with YAML frontmatter. They are
 readable as repository files after pushing. They are **not live GitHub Issues**:
 pushing commits does not publish issue records. Stable `SOAM-###` IDs are independent
 of future GitHub issue numbers.
+
+## Conditional research paths
+
+Follow the [result-dependent paths](../docs/RESEARCH_PATHS.md). SOAM-049–051 now
+cover one minimal benefit/interference pilot. SOAM-052 reviews its claim; SOAM-059
+selects at most one continuation, even after a negative result. Application and
+concurrency tickets require named selection as well as completed prerequisites.
+Frontmatter dependencies are AND conditions, not automatic branch activation.
+Check body conditions and cite the selection record before setting ready; the
+validator cannot assess these scientific predicates. Unselected work stays backlog.
+
+## Scientific review and lightweight RFCs
+
+[SOAM-060](SOAM-060-scientific-roadmap-review.md) records the skeptical review.
+The [hypothesis ledger](../docs/HYPOTHESES.md), [proposed measurable demonstrations](../docs/SCIENTIFIC_REVIEW_2026_11_05.md),
+and [ticket disposition map](../docs/TICKET_REVIEW_2026_11_05.md) separate claims,
+experiments, and implementation. Every recommendation is essential next, parallel
+research, or future capability. These are body classifications, not new schema fields.
+
+Use [RFC guidance](../docs/rfcs/README.md) for consequential decisions inside the
+existing protocol ticket/document; do not duplicate a protocol or add approvals.
+SOAM-039/044/040/041 now form an early minimal acquisition branch. SOAM-053–055
+cover frozen-memory active disambiguation. SOAM-056–058 are a later module extension.
+A review target is not a frozen trial criterion until the owning protocol adopts it.
 
 ## Files and ownership
 
@@ -29,8 +61,8 @@ of future GitHub issue numbers.
   and [decision gate](../.github/ISSUE_TEMPLATE/decision-gate.md).
 
 Ticket frontmatter is authoritative for each ticket's metadata. The priority table
-owns ordering and milestone summaries. The adopted v0.2 specification is the source
-of current scientific intent; the v0.1 specification and completed contracts retain
+owns ordering and milestone summaries. The adopted v0.3 specification is the source
+of current scientific intent; earlier specifications and completed contracts retain
 their historical meanings. Tickets operationalize these rather than silently
 revising evidence or gate outcomes.
 

@@ -1,0 +1,12 @@
+{
+  "arrays": 1239,
+  "exact_numeric_match": true,
+  "excluded": [
+    "timing",
+    "RSS",
+    "PID",
+    "timestamps",
+    "archive container bytes"
+  ],
+  "npz_files": 72
+}

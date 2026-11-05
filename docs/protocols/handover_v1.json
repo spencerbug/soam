@@ -1,0 +1,795 @@
+{
+  "protocol_id": "soam-handover-v1",
+  "date": "2026-11-01",
+  "status": "design_only_no_trials",
+  "document": "docs/HANDOVER_PROTOCOL.md",
+  "ticket": "SOAM-033",
+  "variants": [
+    "A2",
+    "A1",
+    "G2",
+    "GS24",
+    "GS9"
+  ],
+  "environment": {
+    "observations": 192,
+    "transitions": 191,
+    "action_range": [
+      -0.12,
+      0.12
+    ],
+    "action_hold": 4,
+    "gains": [
+      1.0,
+      0.7
+    ],
+    "initial_offset_radians": "pi/3",
+    "process_noise_sd": 0.02,
+    "observation_noise_sd": 0.03,
+    "projection_dim": 12,
+    "projection_seed": 1729,
+    "visibility": [
+      [
+        0,
+        15,
+        [
+          "A"
+        ]
+      ],
+      [
+        16,
+        43,
+        [
+          "A",
+          "B"
+        ]
+      ],
+      [
+        44,
+        55,
+        [
+          "A"
+        ]
+      ],
+      [
+        56,
+        91,
+        [
+          "A",
+          "B"
+        ]
+      ],
+      [
+        92,
+        103,
+        [
+          "B"
+        ]
+      ],
+      [
+        104,
+        139,
+        [
+          "A",
+          "B"
+        ]
+      ],
+      [
+        140,
+        151,
+        [
+          "A"
+        ]
+      ],
+      [
+        152,
+        191,
+        [
+          "A",
+          "B"
+        ]
+      ]
+    ],
+    "requests": [
+      [
+        0,
+        "A"
+      ],
+      [
+        48,
+        "B"
+      ],
+      [
+        96,
+        "A"
+      ],
+      [
+        144,
+        "B"
+      ]
+    ],
+    "cue_frames": 4
+  },
+  "cue": {
+    "dimension": 16,
+    "hadamard_columns_zero_based": [
+      1,
+      2,
+      3
+    ],
+    "coordinates_retained": 8,
+    "noise_sd": 0.02,
+    "template_norm": 1.0
+  },
+  "attractor": {
+    "beta": 12.0,
+    "euler_alpha": 0.1,
+    "substeps_per_observation": 20,
+    "cue_gain": 1.5,
+    "coupling_gain": 0.1,
+    "coupling_off_diagonal": 0.5,
+    "lambda_radial": 0.5,
+    "lambda_orthogonal": 1.0,
+    "sensory_gain": 0.25,
+    "pose_prior_radius": 0.1,
+    "shuffled_priming_output_rows": [
+      2,
+      0,
+      1
+    ]
+  },
+  "roles": {
+    "priming_threshold": 0.1,
+    "selection_weight_threshold": 0.9,
+    "selection_consecutive_frames": 3,
+    "max_evidence_age": 16,
+    "decoded_norm_range": [
+      0.5,
+      1.5
+    ],
+    "initial_attended": null
+  },
+  "models": {
+    "A2": {
+      "recurrent_floats": 40,
+      "trainable_parameters": 0
+    },
+    "A1": {
+      "recurrent_floats": 28,
+      "trainable_parameters": 0
+    },
+    "G2": {
+      "recurrent_floats": 40,
+      "trainable_parameters": 3699
+    },
+    "GS24": {
+      "recurrent_floats": 40,
+      "trainable_parameters": 7059
+    },
+    "GS9": {
+      "recurrent_floats": 25,
+      "trainable_parameters": 3819
+    }
+  },
+  "rng": {
+    "namespace": 3300,
+    "seeds": [
+      11,
+      23,
+      47,
+      71,
+      101
+    ],
+    "split_ids": {
+      "train": 0,
+      "development": 1,
+      "confirmation": 2,
+      "fixture": 3
+    },
+    "component_ids": {
+      "initial_phase": 0,
+      "actions": 1,
+      "process_noise": 2,
+      "observation_noise": 3,
+      "cue_masks": 4,
+      "cue_noise": 5,
+      "perturbations": 6,
+      "training_order": 7,
+      "initialization": 8
+    },
+    "derivation": [
+      "namespace",
+      "seed",
+      "split",
+      "condition",
+      "episode",
+      "component"
+    ],
+    "paired_ablations": "reuse_base_packets",
+    "key_probe_condition": "100 + 2*target + corruption",
+    "ring_probe_condition": "200 + 2*perturbation + action_mode",
+    "torch_seed": "first uint64 from initialization SeedSequence modulo (2^63-1)",
+    "main_condition_rng_id": 0,
+    "packet_generation": "pre_sample_full_base_innovations_then_transform_conditions"
+  },
+  "training": {
+    "episodes_generated_per_seed": 4096,
+    "balanced_condition_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "fits_per_seed": [
+      "selector",
+      "G2_pose",
+      "GS24_pose",
+      "GS9_pose"
+    ],
+    "steps_per_fit": 500,
+    "batch_episodes": 8,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "gradient_norm_cap": 1.0,
+    "checkpoint": "final",
+    "search_budget": 0,
+    "selector_targets": "most_recent_presented_full_cue_not_unobserved_ideal_request",
+    "pose_loss": "valid_current_MSE + valid_next_prediction_MSE",
+    "max_seconds_per_fit": 600,
+    "base_innovation_streams_per_seed": 512
+  },
+  "conditions": [
+    {
+      "id": 0,
+      "name": "independent_slip"
+    },
+    {
+      "id": 1,
+      "name": "coordinate_only",
+      "true_and_supplied_g_B": 1.0,
+      "process_noise_relation": "epsilon_B=epsilon_A"
+    },
+    {
+      "id": 2,
+      "name": "no_transition_cue",
+      "remove_cue_onsets": [
+        48,
+        96,
+        144
+      ]
+    },
+    {
+      "id": 3,
+      "name": "shuffled_transition_cue",
+      "swap_templates": [
+        "A",
+        "B"
+      ],
+      "onsets": [
+        48,
+        96,
+        144
+      ]
+    },
+    {
+      "id": 4,
+      "name": "unsupported_cue",
+      "extra_pulse": [
+        120,
+        123,
+        "C"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "missing_overlap",
+      "mask_both_intervals": [
+        [
+          32,
+          43
+        ],
+        [
+          80,
+          91
+        ],
+        [
+          128,
+          139
+        ]
+      ]
+    },
+    {
+      "id": 6,
+      "name": "noisy_observation",
+      "observation_noise_sd": 0.1
+    },
+    {
+      "id": 7,
+      "name": "motor_mismatch",
+      "true_g_B": 0.9,
+      "supplied_g_B": 0.7
+    }
+  ],
+  "episode_cells": [
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 1,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 2,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 3,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 4,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 5,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 6,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 7,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A1",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A1",
+      "condition": 1,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A1",
+      "condition": 2,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A1",
+      "condition": 3,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A1",
+      "condition": 4,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A1",
+      "condition": 5,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A1",
+      "condition": 6,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A1",
+      "condition": 7,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 1,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 2,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 3,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 4,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 5,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 6,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 7,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS24",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS24",
+      "condition": 1,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS24",
+      "condition": 2,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS24",
+      "condition": 3,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS24",
+      "condition": 4,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS24",
+      "condition": 5,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS24",
+      "condition": 6,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS24",
+      "condition": 7,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS9",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS9",
+      "condition": 1,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS9",
+      "condition": 2,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS9",
+      "condition": 3,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS9",
+      "condition": 4,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS9",
+      "condition": 5,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS9",
+      "condition": 6,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "GS9",
+      "condition": 7,
+      "mode": "pretracking",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "cold",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 1,
+      "mode": "cold",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "equal_history_replay",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 1,
+      "mode": "equal_history_replay",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "source_transport",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 1,
+      "mode": "source_transport",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 0,
+      "mode": "cold",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 1,
+      "mode": "cold",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 0,
+      "mode": "equal_history_replay",
+      "intervention": "none"
+    },
+    {
+      "variant": "G2",
+      "condition": 1,
+      "mode": "equal_history_replay",
+      "intervention": "none"
+    },
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "no_priming"
+    },
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "shuffled_priming"
+    },
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "no_sensing_after_15"
+    },
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "oracle_full_cue"
+    },
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "perturb_A_at_40"
+    },
+    {
+      "variant": "A2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "perturb_B_at_40"
+    },
+    {
+      "variant": "G2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "no_priming"
+    },
+    {
+      "variant": "G2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "shuffled_priming"
+    },
+    {
+      "variant": "G2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "no_sensing_after_15"
+    },
+    {
+      "variant": "G2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "oracle_full_cue"
+    },
+    {
+      "variant": "G2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "perturb_A_at_40"
+    },
+    {
+      "variant": "G2",
+      "condition": 0,
+      "mode": "pretracking",
+      "intervention": "perturb_B_at_40"
+    }
+  ],
+  "evaluation": {
+    "development_episodes_per_cell_seed": 8,
+    "confirmation_episodes_per_cell_seed": 32,
+    "fixture_episodes_per_condition_max": 2,
+    "fixture_seed": 11,
+    "repeat_seed": 11,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 330033,
+    "prediction_anchors": [
+      40,
+      88,
+      136
+    ],
+    "free_horizons": [
+      8,
+      32
+    ],
+    "max_total_cpu_seconds": 14400,
+    "max_process_rss_gib": 8,
+    "device": "cpu",
+    "dtype": "float32",
+    "diagnostic_dtype": "float64",
+    "torch_threads": 1,
+    "deterministic_algorithms": true,
+    "timing_warmup_passes": 20,
+    "timing_measured_passes": 200,
+    "episode_cells_per_seed": 62,
+    "confirmation_episode_count": 9920,
+    "confirmation_transition_count": 1894720,
+    "development_episode_count": 2480,
+    "development_transition_count": 473680,
+    "timing_episode_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "timing_variants": [
+      "A2",
+      "G2"
+    ]
+  },
+  "probes": {
+    "key_targets": 3,
+    "key_corruptions": [
+      "erase_8",
+      "flip_2"
+    ],
+    "cases_per_group": 16,
+    "key_steps": 80,
+    "ring_perturbations": [
+      "radius_0.5",
+      "radius_1.5_plus_orthogonal_0.2",
+      "phase_0.3"
+    ],
+    "ring_actions": [
+      0.0,
+      0.08
+    ],
+    "ring_frames": 16,
+    "restoring_ablations": [
+      "key_passive_leak",
+      "ring_lambda_zero"
+    ],
+    "unique_cases_per_seed": 192,
+    "primary_model_evaluations_per_seed": 288,
+    "total_model_evaluations_per_seed": 480
+  },
+  "thresholds": {
+    "key_recovery_fraction_min": 0.95,
+    "key_final_weight_min": 0.99,
+    "key_final_update_norm_max": 0.0001,
+    "key_energy_increase_max": 2e-06,
+    "radial_error_max": 0.01,
+    "orthogonal_error_max": 0.01,
+    "phase_drift_from_own_trajectory_max": 0.01,
+    "state_norm_invalid_above": 10,
+    "main_event_success_min": 0.9,
+    "main_median_delay_max": 8,
+    "main_continuity_nmse_max": 0.08,
+    "main_continuity_angular_rmse_max": 0.25,
+    "source_retention_nmse_max": 0.1,
+    "unsupported_commits_max": 0,
+    "main_false_occupancy_max": 0.01,
+    "role_concurrency_fraction_min": 0.8,
+    "cue_capture_advantage_percentage_points_min": 30,
+    "median_pretracking_relative_gain_min": 0.2,
+    "positive_gain_seeds_min": 4,
+    "cold_error_relative_gain_floor": 1e-08,
+    "replay_atol": 1e-06,
+    "replay_rtol": 1e-06,
+    "event_window_frames": 8,
+    "commit_retention_frames": 8,
+    "event_censor_frames": 16
+  },
+  "artifact_paths": {
+    "protocol": "docs/HANDOVER_PROTOCOL.md",
+    "manifest": "docs/protocols/handover_v1.json",
+    "planned_runs": "runs/handover-v1",
+    "planned_repeat": "runs/handover-v1-repeat",
+    "planned_compact": "reports/handover-v1",
+    "planned_report": "reports/ATTRACTOR_HANDOVER.md"
+  }
+}

@@ -1,24 +1,47 @@
 # SOAM — Self-Organizing Attractor Memory
 
-Research repository for investigating cue-driven attractor dynamics: concurrent
-predictive circuits, sensorimotor calibration, attentional handover, and eventually
-reusable embodied skills and continual memory. This is a hypothesis, not an
-established result.
+Research repository and planned experiment platform for Hopfield networks and
+related recurrent dynamical systems. The preferred hypothesis uses overlapping
+neurons for features, relationships, and action relations, with separated networks
+as controls. Useful sharing, attraction, and learned organization remain unproven.
 
-The adopted [v0.2 research specification](docs/RESEARCH_SPEC_V0_2.md), dated November 1,
-2026, revises the architecture and execution order. The [v0.1 specification](docs/RESEARCH_SPEC.md)
-and its reports remain preserved. No new attractor mechanism has been implemented
-or empirically validated by the scope revision.
+The adopted [v0.3 research specification](docs/RESEARCH_SPEC_V0_3.md), dated November 5,
+2026, broadens the program to reusable experiments, including NeuroSLAM-inspired
+localization and Monty-style sensorimotor learning modules with recurrent memory.
+The [v0.2 scope](docs/RESEARCH_SPEC_V0_2.md), [v0.1 specification](docs/RESEARCH_SPEC.md),
+and completed contracts/results retain their historical meanings. The v1 handover
+harness is implemented; the general platform and new studies are planned work.
+
+The [conditional research paths](docs/RESEARCH_PATHS.md) govern follow-ups: first
+measure one benefit of sharing, then select one experimental fork from the results.
+Concurrency/handover and the two application studies are conditional extensions.
+
+The [scientific assessment](docs/SCIENTIFIC_REVIEW_2026_11_05.md) treats SOAM as a
+plausible mechanism research programme, with human-like sensorimotor intelligence
+as a long-term goal rather than a supported claim. The next three questions are
+useful shared dynamics, rapid retained acquisition, and active disambiguation.
+See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TICKET_REVIEW_2026_11_05.md).
 
 ## Current milestone
 
-**Next: [SOAM-033](tickets/SOAM-033-handover-protocol.md), the cue-driven handover
-protocol and bounded circuit-layout comparison.** Switching among attended,
-tracking, and primed roles takes priority over sophisticated prediction. Use an
-explicit attractor candidate, recurrent controls, fixed sensing, and declared
-scaffolding. Shared populations, separate circuits, clones, alternating banks, and
-columns/stacks are experimental alternatives. An explicit discrete world graph is
-not required. Unsupervised organization and associative writing follow later.
+**Next: [SOAM-047](tickets/SOAM-047-platform-contract.md), the shared-population
+experiment platform contract decision.** Define interchangeable dynamics, task,
+learning, intervention, and reporting interfaces before implementation. Then build
+the common runner and a bounded shared-population comparison. SOAM-039/044/040/041 now test minimal acquisition without waiting for skills or
+concurrency. SOAM-053–055 test active disambiguation with frozen memory. The larger
+Monty-style module (SOAM-056–058) follows supported acquisition and explicit selection.
+
+Sharing refers to recurrent neurons and connections, not just tied parameters or
+three independent networks stored in one tensor. Test overlap, binding, interference,
+and directional dynamics while keeping evidence, goals, motor authority, transient
+state, and persistent memory distinguishable. Preserve separated-state controls and
+accept negative results. See the [ordered ticket queue](PRIORITIES.md).
+
+SOAM-033/034 delivered the frozen [handover protocol](docs/HANDOVER_PROTOCOL.md),
+[numerical manifest](docs/protocols/handover_v1.json), and [harness](docs/HANDOVER_HARNESS.md).
+The [engineering report](reports/HANDOVER_HARNESS.md) records fixture-only verification.
+SOAM-035 remains ready as a P2 comparison branch; no measured v0.2 study or new
+shared-population study has run, and no handover/shared-population gate has passed.
 
 The delivered Stage 0/substrate work (WP-00/WP-01) covers synthetic action-conditioned 2D
 regimes, a fixed sensory projection, shared bounded recurrent baselines, independent
@@ -53,6 +76,7 @@ uv run pytest
 uv run soam-run --config configs/smoke.json --output runs/smoke
 uv run soam-run --config configs/substrate.json --output runs/substrate
 uv run soam-compare runs/substrate --output reports/substrate-comparison.md
+uv run soam-handover-smoke --output runs/my-handover-fixture
 ```
 
 CPU and one Torch thread are the reproducible reference. Run directories refuse

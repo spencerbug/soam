@@ -1,0 +1,18 @@
+{
+  "active_cell": null,
+  "artifact_schema_version": 1,
+  "cpu_seconds": 8.556914,
+  "empirical_gate_passed": false,
+  "episode_cells": 62,
+  "finished_at": "2026-11-01T16:25:51.383167+00:00",
+  "packet_variants": 9,
+  "peak_rss_bytes": 298958848,
+  "probe_evaluations": 30,
+  "probe_wall_seconds": 0.031836333917453885,
+  "purpose": "engineering fixture coverage; no empirical gate decision",
+  "started_at": "2026-11-01T16:25:42.800648+00:00",
+  "status": "complete",
+  "trained_models": 0,
+  "unique_base_episode_indices": 1,
+  "wall_seconds": 8.582422999897972
+}

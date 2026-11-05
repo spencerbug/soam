@@ -1,11 +1,15 @@
 # SOAM research instructions
 
-Read README.md, docs/RESEARCH_SPEC.md, docs/EXPERIMENTS.md, and the current report first.
+Read README.md, docs/RESEARCH_SPEC.md, docs/EXPERIMENTS.md, and the reports relevant
+to the selected ticket first; README.md indexes the reports. A newer engineering
+report does not replace an earlier empirical result or gate decision.
 For planned work, also read PRIORITIES.md, tickets/README.md, and the relevant ticket/dependencies.
 Run `uv run pytest` before modifying existing code. An empty bootstrap suite is not a pass.
 
 The user supplied SOAM v0.1 on 2026-10-25 and adopted the switching-first v0.2 scope
-on 2026-11-01. Read docs/RESEARCH_SPEC_V0_2.md alongside the historical v0.1 spec.
+on 2026-11-01. On 2026-11-05 the owner adopted the shared-population experiment
+platform scope. Read docs/RESEARCH_SPEC_V0_3.md for current intent alongside
+historical v0.1/v0.2 and preserve their experimental contracts.
 The old global interface freeze is superseded; concrete new interfaces must be
 defined in the relevant protocol before implementation. Preserve existing experiment
 contracts and negative results; do not claim
@@ -14,23 +18,70 @@ bounded trajectories or ordinary RNN prediction alone.
 
 ## Current scope
 
-The initial WP-00/WP-01 substrate sprint is delivered; its full H1 claims remain open.
-The primary path now tests cue-driven concurrent attractor handover with attended,
-tracking, and primed roles and sensorimotor feedback. Switching has priority over
-rich prediction; an explicit attractor candidate and recurrent controls are required.
-Heavy declared scaffolding is permitted. Investigate shared populations, separate
-parallel circuits, shared-weight/separate-state clones, alternating banks, and
-columns/stacks as alternatives; no single-population concurrency assumption or
-mandatory discrete world graph is adopted. Choose a bounded subset per protocol.
+The initial WP-00/WP-01 substrate sprint and v1 handover harness are delivered;
+full H1 and measured handover claims remain open. The primary path now defines a
+reusable Hopfield/recurrent-dynamics experiment platform and tests overlapping
+neurons for feature, relationship, and action-relation functions. Shared weights,
+cloned states, or concatenated disjoint networks do not establish shared neurons.
+Keep separated populations, symmetric-only dynamics, and ordinary recurrence as
+controls; test overlap, binding, interference, and asymmetric transition behavior.
+Functional evidence/goal/motor/write boundaries do not mandate separate neural stores.
+SOAM-035/036 retain the frozen v1 handover study as a P2 comparison branch. The new
+shared-population gate controls later integrated SOAM work. NeuroSLAM-inspired
+localization and Monty-style recurrent learning-module tracks have independent
+protocols on common infrastructure, not dependencies on the full integration chain.
+Heavy declared scaffolding is permitted. Keep graph/point-cloud memory as labeled
+controls for recurrent-memory candidates; simulator geometry remains task/evaluator
+data. No universal one-population concurrency or symmetric-energy guarantee is assumed.
 The historical writer remains a separate comparison branch. Learned organization
-and unsupervised memory discovery are later work, not prerequisites for the first
-handover study. Completed Gate 1 does not pass the new handover gate.
+and unsupervised memory discovery remain later work. Completed Gate 1 and engineering
+fixtures do not pass the new shared-population or historical handover gates.
+Read docs/SCIENTIFIC_REVIEW_2026_11_05.md and docs/HYPOTHESES.md for current
+operational claims and proposed quantitative criteria. Minimal acquisition now
+precedes skills/concurrency; active disambiguation uses a small supplied policy.
+Use lightweight RFCs within existing decision tickets, not a new approval layer.
+Classify review recommendations as essential next, parallel research, or future
+capability and preserve ticket-ID traceability.
+Follow docs/RESEARCH_PATHS.md for result-dependent forks. The first shared pilot
+tests one declared benefit with interference guardrails; concurrency and applications
+are later selected branches. Dependencies alone do not activate a conditional ticket.
+Preserve failed gates and create fresh corrective protocols/reviews rather than
+changing a negative outcome or running all branches.
 The remaining timeline is tracked in PRIORITIES.md and tickets/. Start from the next
 eligible ticket rather than treating the full backlog as authorization to implement
 every stage. Prerequisite decision tickets must be complete with `decision: "proceed"`
 before dependent implementation starts; also honor conditions in the ticket body.
 Planning tickets do not by themselves pass a research gate. Empty future module
 directories are boundaries, not implementations.
+
+## Research decision discipline
+
+- Treat shared recurrence as a candidate mechanism, not a required conclusion.
+  Simpler separated, conventional recurrent, structured-memory, or hybrid models
+  are valid outcomes. Identify the smallest experiment that could change the next
+  architectural decision; do not build a general framework or a future mechanism
+  merely because it appears in the roadmap.
+- Keep ownership clear: docs/HYPOTHESES.md owns operational claims; the selected
+  protocol/manifest owns frozen experimental criteria; reports own measured evidence;
+  decision tickets interpret that evidence; PRIORITIES.md selects eligible work.
+  Follow docs/rfcs/README.md for consequential choices. Routine reversible details
+  need no RFC, duplicate protocol, additional ticket, or approval ceremony.
+- Review thresholds are proposals until the owning protocol adopts or justifies
+  changes to them. Before fitting/confirmation, freeze the primary endpoint,
+  guardrails, mandatory baselines, splits/seeds, uncertainty and precision rules,
+  tuning/compute limits, and stopping rule. Fixture timings may inform the budget.
+  Do not tune on confirmation results, silently extend a budget, or present reused
+  confirmation data as unseen. Material changes require a versioned protocol and
+  fresh confirmation streams as applicable; preserve the earlier outcome.
+- Distinguish supported benefit, adequately precise negative evidence, inconclusive
+  evidence, and invalid execution. A wide interval is not equivalence; a software
+  failure is not a scientific falsification. Scope conclusions to the tested task,
+  mechanism, and resources. Passing a protocol review accepts a test, not its hypothesis.
+- Select at most one next experimental fork using information gained relative to
+  implementation effort. Cite the named branch decision and check body conditions
+  before activating conditional work; the ticket validator cannot check them.
+  Supporting research does not activate additional experiments. A later fork needs
+  a fresh routing decision, not silent reuse of a completed selection.
 
 ## Experimental rules
 
@@ -41,13 +92,22 @@ directories are boundaries, not implementations.
 - Give every result its configuration, seed, source commit, source fingerprint, software versions,
   numerical settings, data exposure, parameter/storage counts, timing, and compute estimates.
 - Separate train, development, and test random streams. Tune on development only.
-- Use multiple fixed seeds and equivalent total parameter budgets where practical;
-  state differences and report compute rather than claiming perfect matching.
+- Use competent mandatory baselines with comparable observations, tuning opportunity,
+  and declared total resources. Report all required comparisons, including stronger
+  simpler alternatives. Count readouts, external memory, replay, supplied patterns,
+  active states, and offline fitting; state mismatches rather than claiming perfect matching.
+- Use multiple fixed seeds. Match uncertainty estimates to independent experimental
+  units; correlated timesteps are not independent replicates. Report guardrail
+  uncertainty as well as the primary endpoint, including failed runs and exclusions.
 - Compare grounded one-step error with free multistep error, switching, and perturbation responses.
 - A tanh bound is not evidence of recovery toward a trajectory or useful attractors.
 - A scripted bank swap or state copy is not evidence of cue-driven attraction.
   Record the supplied/learned status of cues, basins, correspondence, role labels,
   schedules, and controllers. Count every active state, cloned weight, and coupling.
+- Support sharing claims with the protocol's causal controls, not activation overlap
+  alone. Separate persistent acquisition from transient adaptation by testing after
+  a declared state reset; count distinct grounded observations separately from replay
+  and updates. Better prediction alone does not establish control or compositionality.
 - Keep estimated actual state, desired successor state, sensory/memory attention,
   and motor execution authority distinct. Shared parameters do not imply shared
   instance state; sensory evidence must not be double-counted through associative cues.

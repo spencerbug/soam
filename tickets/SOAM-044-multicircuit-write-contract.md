@@ -1,7 +1,7 @@
 ---
 schema_version: 2
 id: "SOAM-044"
-title: "Implement the selected multi-circuit write contract"
+title: "Implement bounded acquisition candidates and write invariants"
 type: "engineering"
 status: "backlog"
 priority: "P1"
@@ -13,12 +13,12 @@ depends_on: ["SOAM-039"]
 labels: ["type:engineering", "priority:P1", "milestone:M2"]
 assignees: []
 created: "2026-11-01"
-updated: "2026-11-01"
+updated: "2026-11-05"
 github_issue: null
 decision: null
 ---
 
-# SOAM-044: Implement the selected multi-circuit write contract
+# SOAM-044: Implement bounded acquisition candidates and write invariants
 
 ## Recommended thinking
 
@@ -28,31 +28,35 @@ decision: null
 
 The learning-design decision specifies a contract but does not implement it.
 Evidence/replay infrastructure and empirical acquisition need a tested writer first.
-Specification: [SOAM v0.2](../docs/RESEARCH_SPEC_V0_2.md).
+Specification: [SOAM v0.3](../docs/RESEARCH_SPEC_V0_3.md).
 Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
 
-- Implement only the write representation and simple comparison rules selected in the learning protocol, preserving the old single-matrix writer for its historical branch.
-- Separate generic parameters, associations, instance facts, and transient state; expose inspectable grounded proposals, bounded commit/discard, and exact rollback.
-- Provide deterministic small fixtures for later replay/shadow-validation work. This ticket implements transactions, not performance-based shadow selection or empirical acquisition claims.
+- Implement only the E2 representation/rules and comparison learners selected in SOAM-039, reusing existing transaction code where compatible and preserving the historical writer branch.
+- Expose auditable grounded updates, memory snapshots, finite budgets and exact rollback; distinguish persistent learned objects, evidence history, and transient activity.
+- Provide deterministic fixtures for new-transition exposure, reset-and-recall, retention, and update timing. No general learned-scope, skill, multi-instance, or consolidation subsystem.
 
 ## Acceptance criteria
 
-- [ ] Run the existing test suite before code changes and verify evidence provenance, target exclusion, permitted tensors/records, budgets, and deterministic proposal behavior.
-- [ ] Test instance isolation, unchanged frozen knowledge, snapshot isolation, stale/tampered rejection, no-write inference, and exact rollback across every persistent object.
-- [ ] Exercise each selected rule through the same transaction interface without tuning it on final evaluation data.
-- [ ] Record exact tests, smoke configuration/source fingerprints, storage accounting, and limitations; contract correctness does not establish acquisition.
+- [ ] Run the baseline suite before code changes; verify grounded targets, stream separation, permitted writes, update/exposure counts, and finite memory.
+- [ ] Test no-write inference, target exclusion, reset persistence, unchanged frozen parameters, stale/tampered rejection where transactions are used, and exact rollback.
+- [ ] Exercise every selected adaptive/retrieval baseline under the same observation schedule; instrument repeated reads, offline fitting and compute.
+- [ ] Reproduce fixtures and archive source/config/seeds/versions/protocol hashes; this establishes engineering correctness only.
 
 ## Metrics / evidence
 
-Expected engineering report: reports/MULTICIRCUIT_WRITE_CONTRACT.md. Include source,
+Expected engineering report: reports/SHARED_POPULATION_WRITE_CONTRACT.md. Include source,
 software, configuration, fixture seeds, actual changed objects, and reproducibility.
 Measured acquisition belongs to the subsequent experiment.
 
 ## Dependencies
 
-- [SOAM-039](SOAM-039-grounded-memory-design.md) — completed design decision with proceed for the selected contract.
+- [SOAM-039](SOAM-039-grounded-memory-design.md) — required completed prerequisite; decision prerequisites require proceed for this scope.
+
+## Scientific review disposition — 2026-11-05
+
+**Future capability** (R4) in the [scientific review](../docs/SCIENTIFIC_REVIEW_2026_11_05.md). Use the operational hypothesis ledger and the proposed quantitative criteria; protocol decisions must adopt or justify them before fitting/confirmation. No new empirical result is implied.
 
 ## Completion record
 

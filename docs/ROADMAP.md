@@ -1,44 +1,63 @@
 # Work packages and completion criteria
 
-The [v0.2 specification](RESEARCH_SPEC_V0_2.md) was adopted on 2026-11-01.
-The [priority tracker](../PRIORITIES.md) owns execution order and mirrored ticket
-metadata. Work-package and milestone numbers are thematic categories, not a required
-sequence. Existing results and Gate 1 remain historical evidence with their original
-limits; no new experiment has been run by this documentation revision.
+The [v0.3 shared-population experiment scope](RESEARCH_SPEC_V0_3.md) was adopted
+on 2026-11-05. The [priority tracker](../PRIORITIES.md) owns execution order and
+mirrored metadata. Work-package and milestone numbers remain thematic provenance
+categories, not a compulsory linear pipeline for every experiment.
+
+The [conditional research paths](RESEARCH_PATHS.md) govern follow-ups: first
+measure one benefit of sharing, then select one experimental fork from the results.
+Concurrency/handover and the two application studies are conditional extensions.
+
+The [scientific review demonstration sequence](SCIENTIFIC_REVIEW_2026_11_05.md#proposed-measurable-demonstration-sequence)
+overlays the thematic work packages: trustworthy measurement → useful dynamics →
+rapid retained acquisition → active disambiguation → later composition/integration.
+Each demonstrated capability has a proposed numerical criterion and a separate
+scientific decision; implemented components alone do not complete a research milestone.
+See the [complete ticket dispositions](TICKET_REVIEW_2026_11_05.md).
 
 ## Immediate work
 
-[SOAM-033](../tickets/SOAM-033-handover-protocol.md) defines the first cue-driven
-handover protocol. Follow with a bounded harness (SOAM-034), measured trials
-(SOAM-035), and a new empirical decision (SOAM-036). Test attended, tracking, and
-primed roles with sensorimotor feedback. Switching is primary; simple prediction
-checks guard against collapse and loss of state.
+Next: [SOAM-047](../tickets/SOAM-047-platform-contract.md), a decision specifying
+interchangeable dynamics, tasks, learning policies, interventions, metrics, and
+reproducible artifacts. [SOAM-048](../tickets/SOAM-048-platform-runner.md) then builds
+the common runner with distinct small fixtures. Shared feature/relation/action
+neurons are the preferred candidate; separated populations are controls. Genuine
+overlap, binding, interference, and directional dynamics require measured evidence.
 
-Choose a small explicit-attractor/recurrent comparison and a population-separation
-comparison. Shared populations, parallel circuits, shared-weight clones, alternating
-banks, and columns/stacks remain alternatives. No mandatory discrete world graph,
-single-population concurrency, or unsupervised discovery is assumed. Record supplied
-cues, basins, routing, bindings, and schedules, and separate them from observed
-attractor dynamics. See [architecture boundaries](ARCHITECTURE.md).
+The shared-mechanism track is SOAM-049 protocol → SOAM-050 candidates → SOAM-051
+minimal pilot → SOAM-052 claim review and SOAM-059 fork selection. The active-disambiguation track SOAM-053–055 and
+recurrent learning-module track SOAM-056–058 require explicit fork selection before their own protocol
+decisions and reuse the platform. The preferred next follow-up is minimal acquisition through SOAM-039/044/040/041,
+without the old skill/concurrency/replay prerequisites. The module track now requires
+SOAM-041 proceed. These tracks do not require the full SOAM integration chain. Each selects a bounded candidate set.
+
+SOAM-033/034 and the [frozen handover protocol](HANDOVER_PROTOCOL.md),
+[numerical manifest](protocols/handover_v1.json), and [fixture report](../reports/HANDOVER_HARNESS.md)
+remain intact. SOAM-035 stays ready as a P2 comparison, with SOAM-036 its historical
+empirical gate. New shared-population integration uses SOAM-052 instead.
+[SOAM-045](../tickets/SOAM-045-recurrent-attention-memories.md) remains an optional
+recurrent-attention backend design study. No new implementation or experiment is
+completed by this planning revision. See [architecture boundaries](ARCHITECTURE.md).
 
 ## Package status and ticket map
 
 | Package | Current scope and criterion | Tickets / decisions |
 | --- | --- | --- |
-| WP-00 | Preserve deterministic harness/provenance and historical reproduction; extend state/cue instrumentation for the chosen experiment | SOAM-000 done; [SOAM-034](../tickets/SOAM-034-handover-harness.md) planned |
-| WP-01 | Historical six-model controls and limited Gate 1 complete; new cue-driven recruitment, concurrent calibration, and handover untested | SOAM-001/002 done; [SOAM-033](../tickets/SOAM-033-handover-protocol.md), [SOAM-035](../tickets/SOAM-035-cue-driven-handover.md), [SOAM-036](../tickets/SOAM-036-handover-gate.md) |
-| WP-02 | Historical bounded writer implemented; acquisition unproven. Later design, implement, and test a multi-circuit write contract | [SOAM-003](../tickets/SOAM-003-plastic-write-contract.md) done; SOAM-004/006 comparison branch; [SOAM-039](../tickets/SOAM-039-grounded-memory-design.md), [SOAM-044](../tickets/SOAM-044-multicircuit-write-contract.md), [SOAM-040](../tickets/SOAM-040-multicircuit-acquisition.md), [SOAM-041](../tickets/SOAM-041-multicircuit-acquisition-gate.md) |
-| WP-03 | Retention/interference across contexts and later generic/instance memory, including multistep and handover effects | [SOAM-005](../tickets/SOAM-005-interference-metrics.md), SOAM-039–041 |
-| WP-04 | Conditional fixed/random/sensitivity scope comparison; task isolation is not useful sharing | [SOAM-007](../tickets/SOAM-007-heuristic-scopes.md), [SOAM-008](../tickets/SOAM-008-scope-task-families.md) |
-| WP-05 | Conditional learned scope compared with simple masks at matched acquisition; not required for early switching/control | [SOAM-009](../tickets/SOAM-009-learned-scope.md), [SOAM-010](../tickets/SOAM-010-gate-3.md) |
-| WP-06 | Grounded bounded evidence/replay and shadow validation after the multi-circuit write contract is implemented | [SOAM-011](../tickets/SOAM-011-evidence-and-replay.md), [SOAM-012](../tickets/SOAM-012-shadow-validation.md) |
-| WP-07 | Fixed-capacity organization compared with replay/frozen organization; learned iterative refinement only for a documented unmet need | [SOAM-042](../tickets/SOAM-042-fixed-capacity-organization.md), [SOAM-043](../tickets/SOAM-043-organization-gate.md); optional SOAM-013–015 |
-| WP-08 | Composition planning and held-out reuse/identity tests distinguish supplied bindings from learned reusable structure | [SOAM-031](../tickets/SOAM-031-compositional-dynamics-planning.md), [SOAM-016](../tickets/SOAM-016-composition-transfer.md), [SOAM-017](../tickets/SOAM-017-identity-timescales.md), [SOAM-018](../tickets/SOAM-018-gate-5.md) |
-| WP-09 | Fixed sensing first; rendered/frozen-encoder comparisons are a separate eligible supporting branch | [SOAM-019](../tickets/SOAM-019-frozen-encoders.md) |
-| WP-10 | Early synthetic attention/instances after handover; richer prediction/ambiguity afterwards, without mandatory learned consolidation | [SOAM-037](../tickets/SOAM-037-attention-belief-instances.md); [SOAM-020](../tickets/SOAM-020-grounded-prediction.md), [SOAM-021](../tickets/SOAM-021-partial-belief-recovery.md), [SOAM-022](../tickets/SOAM-022-gate-6.md) |
-| WP-11 | Simple synthetic search/control before complex learning; current/successor states, motor authority, and no-write imagination | [SOAM-023](../tickets/SOAM-023-action-search.md), [SOAM-024](../tickets/SOAM-024-planning-benchmark.md), [SOAM-026](../tickets/SOAM-026-gate-7.md) |
-| WP-12 | Content-addressable skill retrieval and feedback dynamics; learned proposal heads are optional efficiency work | [SOAM-038](../tickets/SOAM-038-associative-skill-transfer.md); [SOAM-025](../tickets/SOAM-025-action-proposals.md) |
-| WP-13 | Integrate only after composition, richer grounding, control, empirical acquisition, and organization decisions | [SOAM-027](../tickets/SOAM-027-continual-benchmark.md), [SOAM-028](../tickets/SOAM-028-continual-review.md) |
+| WP-00 | Historical provenance/handover fixtures preserved; reusable multi-task/backend runner with explicit capabilities and invariant checks | SOAM-000/034 done; [SOAM-047](../tickets/SOAM-047-platform-contract.md), [SOAM-048](../tickets/SOAM-048-platform-runner.md); task harnesses SOAM-050/054/057 |
+| WP-01 | Minimal shared-unit benefit/interference pilot; concurrent handover only on the selected SOAM-037 fork; symmetric/disjoint/ordinary recurrence controls | SOAM-001/002/033/034 done; [SOAM-049–052](../tickets/SOAM-049-shared-population-protocol.md); SOAM-059 selects follow-up; SOAM-035/036 retained comparison; conditional active disambiguation SOAM-053–055 |
+| WP-02 | Early bounded acquisition/retention with state-reset and one-exposure tests; later module-learning extension | SOAM-003 done; SOAM-004/006 historical branch; SOAM-039/044/040/041; learning-module SOAM-056–058 |
+| WP-03 | Cross-function and instance retention/interference, useful transfer, and write/handover effects | SOAM-005; SOAM-039–041 |
+| WP-04 | Conditional heuristic scope comparison, with beneficial sharing rather than isolated allocation alone | SOAM-007/008 |
+| WP-05 | Conditional learned scope at matched acquisition; no prerequisite for initial platform/application studies | SOAM-009/010 |
+| WP-06 | Later grounded replay and shadow validation when a measured failure calls for them; not a prerequisite for minimal E2 | SOAM-011/012 after SOAM-044; SOAM-042/043 |
+| WP-07 | Fixed-capacity overlapping assembly organization versus fixed sharing/replay | SOAM-042/043; optional SOAM-013–015 |
+| WP-08 | Shared feature/relation/action composition with causal overlap tests, held-out reuse, and instance identity | SOAM-031/016–018; bounded mechanism SOAM-049–051 and learning-module SOAM-056–058 |
+| WP-09 | Fixed sensing first; rendered/frozen encoder branch remains independently eligible | [SOAM-019](../tickets/SOAM-019-frozen-encoders.md) |
+| WP-10 | Active disambiguation and uncertainty with supplied probe actions; richer shared-instance and learning-module studies deferred | SOAM-037/020–022; SOAM-053–058 |
+| WP-11 | Supported shared dynamics for simple search/control; isolated planning snapshots and motor authority | SOAM-023/024/026/038 |
+| WP-12 | Reusable action-relation dynamics in shared populations; optional output proposal heads | SOAM-038; optional SOAM-025 |
+| WP-13 | Continual integration only after empirical composition, grounding, control, acquisition, organization outcomes | SOAM-027/028; application results alone do not unblock these |
 
 ## Historical evidence and supporting work
 
@@ -48,10 +67,11 @@ claims. The [writer report](../reports/LOCAL_WRITE_CONTRACT.md) records 48 passi
 tests for that implementation and multistep regressions despite immediate error
 reduction. Preserve both; neither establishes concurrent attractor dynamics.
 
-[SOAM-032](../tickets/SOAM-032-embodied-scope-revision.md) records scope adoption only.
+[SOAM-032](../tickets/SOAM-032-embodied-scope-revision.md) records historical v0.2 scope adoption;
+[SOAM-046](../tickets/SOAM-046-shared-platform-scope.md) records the v0.3 ticket revision only.
 [SOAM-030](../tickets/SOAM-030-theory-literature.md) retains a bounded literature map;
 [SOAM-029](../tickets/SOAM-029-optional-flow.md) remains conditional. No unfinished
-legacy research ticket is closed by v0.2. Planning decisions do not pass empirical
+legacy research ticket is closed by scope adoption. Planning decisions do not pass empirical
 gates, and completing implementation does not establish a scientific hypothesis.
 
 Dynamic growth, structural split/merge, unrestricted cloning, learned attention,

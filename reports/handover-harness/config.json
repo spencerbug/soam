@@ -1,0 +1,9 @@
+{
+  "episodes_per_condition": 1,
+  "max_cpu_seconds": 300,
+  "max_rss_gib": 8,
+  "name": "handover-fixture-v1",
+  "seed": 11,
+  "split": "fixture",
+  "threads": 1
+}

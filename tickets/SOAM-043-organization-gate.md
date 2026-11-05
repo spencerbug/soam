@@ -13,7 +13,7 @@ depends_on: ["SOAM-042"]
 labels: ["type:decision", "priority:P2", "milestone:M4"]
 assignees: []
 created: "2026-11-01"
-updated: "2026-11-01"
+updated: "2026-11-05"
 github_issue: null
 decision: null
 ---
@@ -28,15 +28,24 @@ decision: null
 
 The program must decide what organization mechanism, if any, is justified before calling the integrated architecture self-organizing.
 
-Specification: [SOAM v0.2](../docs/RESEARCH_SPEC_V0_2.md).
+Specification: [SOAM v0.3](../docs/RESEARCH_SPEC_V0_3.md).
 Apply the [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+### v0.3 shared-population revision — 2026-11-05
+
+Review whether learned overlap/organization improves feature, relation, and action computation beyond fixed sharing and replay. Keep a supported fixed shared organization as a possible integration control; separated-only results require an explicit architecture revision.
+
+The [v0.3 scope](../docs/RESEARCH_SPEC_V0_3.md) governs current topology and
+platform use; earlier scope notes below retain dependency history only.
 
 - Review organization, replay, retention, cue/handover, and causal-ablation evidence against the frozen criteria.
 - Choose an integration configuration and explicit claim limits; consider simple replay/fixed organization when learned organization has no advantage.
 
 ## Acceptance criteria
+
+- [ ] Separate useful sharing, learned specialization, and self-organization in the gate outcome, with cross-function negative results and total resource costs preserved.
 
 - [ ] Record proceed/revise/stop and the selected configuration with all failures and budget differences.
 - [ ] A proceed with fixed organization must explicitly retain the negative learning result and leave self-organization unsupported.
@@ -49,7 +58,11 @@ Expected report: reports/ORGANIZATION_GATE.md, linking measured organization and
 
 ## Dependencies
 
-- [SOAM-042](SOAM-042-fixed-capacity-organization.md) — required completed prerequisite; decision prerequisites must record proceed.
+- [SOAM-042](SOAM-042-fixed-capacity-organization.md) — required completed prerequisite; decision prerequisites require proceed for this scope.
+
+## Branch conditions
+
+If organization beats fixed sharing/replay under frozen criteria, select it. If fixed organization is adequate and learning adds no benefit, a scoped proceed may select that control while retaining the negative self-organization result. If both fail retention/usefulness, revise/stop and keep continual integration unready.
 
 ## Completion record
 

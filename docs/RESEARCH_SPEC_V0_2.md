@@ -3,6 +3,12 @@
 **Adopted:** 2026-11-01. **Status:** research scope and experimental interfaces;
 mechanisms and scientific claims remain unproven.
 
+**Revision notice — 2026-11-05:** [v0.3](RESEARCH_SPEC_V0_3.md) supersedes this
+scope's default execution order and topology preference with shared-population
+experiments on reusable infrastructure. This document preserves the November 1
+scope and its provenance; the frozen v1 handover contract/results are unchanged.
+Use [PRIORITIES.md](../PRIORITIES.md) for current readiness.
+
 ## 1. Authority, provenance, and revision boundary
 
 This amendment records the owner's October 31 architecture conversation
@@ -93,9 +99,11 @@ of associative recall, learned transfer, or an emergent handover mechanism.
 
 ## 4. First milestone: cue-driven switching with grounded continuity
 
-The next task is [SOAM-033](../tickets/SOAM-033-handover-protocol.md): select a small
-candidate set and preregister a switching protocol. Engineering and trials follow
-in SOAM-034/035; the new handover decision is SOAM-036. No research gate is passed
+The first task, [SOAM-033](../tickets/SOAM-033-handover-protocol.md), selected a small
+candidate set and completed the [switching protocol](HANDOVER_PROTOCOL.md) on
+2026-11-01; no measured trial was run. SOAM-034 delivered the
+[fixture-verified harness](HANDOVER_HARNESS.md); measured trials follow in
+SOAM-035 and the new handover decision is SOAM-036. No research gate is passed
 by this amendment.
 
 Use a small simulated sensorimotor task with overlapping local observation domains,
@@ -217,7 +225,9 @@ The [priority tracker](../PRIORITIES.md) owns execution order and the
 not a sequential calendar. M1 now includes a new, unfinished handover study alongside
 the completed historical substrate controls. Existing decision outcomes are unchanged.
 
-SOAM-032 records adoption of this scope only. SOAM-033 is the next bounded task.
+SOAM-032 records adoption of this scope only. SOAM-033 completed protocol design;
+SOAM-034 completed the bounded harness; SOAM-035 is the next measured task. Current readiness lives in the
+priority tracker; no empirical gate is passed by protocol completion.
 SOAM-044 was allocated later to separate the future write-contract implementation
 from replay and acquisition; its ID does not place it after integration.
 SOAM-031 remains unfinished composition research; this amendment does not satisfy

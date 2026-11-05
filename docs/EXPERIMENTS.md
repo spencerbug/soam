@@ -2,9 +2,15 @@
 
 Historical protocol for the existing baseline, preserved without changing its
 experimental contract. The adopted [v0.2 scope](RESEARCH_SPEC_V0_2.md) prioritizes
-cue-driven concurrent attractor handover. Its numerical protocol is the next
-deliverable in [SOAM-033](../tickets/SOAM-033-handover-protocol.md); this v0.1 protocol
-does not authorize or specify those new trials.
+cue-driven concurrent attractor handover. [SOAM-033](../tickets/SOAM-033-handover-protocol.md)
+has specified the [new handover protocol](HANDOVER_PROTOCOL.md). SOAM-034 implemented
+the [fixture-verified harness](HANDOVER_HARNESS.md); measured trials remain future
+work. This v0.1 protocol does not specify them.
+
+The adopted [v0.3 scope](RESEARCH_SPEC_V0_3.md) now prioritizes a shared-population
+experiment platform. New shared-dynamics, localization, and learning-module studies
+require their own versioned protocols and manifests; neither this historical protocol
+nor handover v1 is silently extended to cover them. See the [current queue](../PRIORITIES.md).
 
 This protocol was written before the first measured benchmark. It implements
 Stage 0 / the immediate substrate sprint, not fast plasticity or self-organization.

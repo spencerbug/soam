@@ -13,7 +13,7 @@ depends_on: ["SOAM-024"]
 labels: ["type:experiment", "priority:P2", "milestone:M7"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-11-01"
+updated: "2026-11-05"
 github_issue: null
 decision: null
 ---
@@ -32,7 +32,14 @@ Specification: [research plan §14, §16](../docs/RESEARCH_SPEC.md). Apply the [
 
 ## Scope
 
-### v0.2 scope revision — 2026-11-01
+### v0.3 shared-population revision — 2026-11-05
+
+An action proposal head is an output interface over shared dynamics, not a required separate action-memory network. Compare a simple readout with any proposed dedicated module and count its complete recurrent/persistent state.
+
+The [v0.3 scope](../docs/RESEARCH_SPEC_V0_3.md) governs current topology and
+platform use; earlier scope notes below retain dependency history only.
+
+### Historical v0.2 scope revision — 2026-11-01
 
 Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), learned proposal heads remain an optional efficiency study once search is reliable. They are not a prerequisite for the control gate. SOAM-038 addresses content-addressable reusable action dynamics, a distinct claim from learning a proposal distribution.
 
@@ -42,6 +49,8 @@ Under the [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md), learned proposal 
 - Compare learned proposals with uniform/enumerated candidates and preserve known goal costs before considering a learned critic.
 
 ## Acceptance criteria
+
+- [ ] Attribute proposal efficiency separately from shared action-relation memory; disclose all auxiliary parameters, states, training exposure, and memory writes.
 
 - [ ] Specify search reliability criteria before starting policy training; defer if the preceding benchmark does not meet them.
 - [ ] Separate planner-generated training targets from held-out evaluation goals.
@@ -54,7 +63,7 @@ Success per candidate/model call, sample efficiency, inference latency, policy c
 
 ## Dependencies
 
-- [SOAM-024](SOAM-024-planning-benchmark.md) — Benchmark navigation, changed dynamics, and planning horizons
+- [SOAM-024](SOAM-024-planning-benchmark.md) — required completed prerequisite; decision prerequisites require proceed for this scope.
 
 ## Completion record
 

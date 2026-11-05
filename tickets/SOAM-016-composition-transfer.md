@@ -13,7 +13,7 @@ depends_on: ["SOAM-031", "SOAM-037"]
 labels: ["type:experiment", "priority:P2", "milestone:M5"]
 assignees: []
 created: "2026-10-25"
-updated: "2026-11-01"
+updated: "2026-11-05"
 github_issue: null
 decision: null
 ---
@@ -32,7 +32,14 @@ Specification: [research plan §12, §16](../docs/RESEARCH_SPEC.md). Apply the [
 
 ## Scope
 
-### v0.2 scope revision — 2026-11-01
+### v0.3 shared-population revision — 2026-11-05
+
+Test held-out feature/relation/action combinations in the supported shared population using common platform artifacts. Separate task performance from causal reuse of overlapping neurons; structured memories and separated populations remain controls.
+
+The [v0.3 scope](../docs/RESEARCH_SPEC_V0_3.md) governs current topology and
+platform use; earlier scope notes below retain dependency history only.
+
+### Historical v0.2 scope revision — 2026-11-01
 
 The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) replaces the learned-consolidation dependency with composition-mechanism planning and a concurrent-instance benchmark. Test the available fixed/scaffolded circuit system first; learned scopes or consolidation are ablations only if implemented and independently validated. Supplied bindings, domains, and primitives cannot establish learned self-organization.
 
@@ -42,6 +49,8 @@ The [v0.2 specification](../docs/RESEARCH_SPEC_V0_2.md) replaces the learned-con
 - Run withheld-composition and sequential shared-primitive transfer experiments against matched recurrent/associative references.
 
 ## Acceptance criteria
+
+- [ ] Ablate overlapping units/connections and compare separated-function controls; quantify positive transfer and cross-function interference at reported capacity.
 
 - [ ] Freeze split construction and leakage checks before tuning; distinguish interpolation, memorization, composition, and transfer.
 - [ ] Compare learning a new related task after prior tasks with an otherwise matched independent-learning control.
@@ -54,8 +63,12 @@ Withheld-composition NMSE, observations-to-target on new tasks, positive/negativ
 
 ## Dependencies
 
-- [SOAM-031](SOAM-031-compositional-dynamics-planning.md) — required completed prerequisite; decision prerequisites require proceed.
-- [SOAM-037](SOAM-037-attention-belief-instances.md) — required completed prerequisite; decision prerequisites require proceed.
+- [SOAM-031](SOAM-031-compositional-dynamics-planning.md) — required completed prerequisite; decision prerequisites require proceed for this scope.
+- [SOAM-037](SOAM-037-attention-belief-instances.md) — required completed prerequisite; decision prerequisites require proceed for this scope.
+
+## Scientific review disposition — 2026-11-05
+
+**Future capability** (R9) in the [scientific review](../docs/SCIENTIFIC_REVIEW_2026_11_05.md). Future D4 composition/identity evidence. Distinguish withheld recombination, interpolation, memorized episodes, and faster acquisition; causal recurrent motifs do not themselves prove composition. Preserve existing prerequisites and use the review quantitative targets only after a dedicated protocol decision.
 
 ## Completion record
 
