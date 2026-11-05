@@ -2,7 +2,8 @@
 
 **Adopted:** 2026-11-05, at the owner's request. **Status:** research direction and
 ticket plan. SOAM-047 subsequently adopted the [minimal platform contract](RECURRENT_PLATFORM_CONTRACT.md);
-implementations and scientific results remain open.
+SOAM-048 subsequently delivered the [minimal fixture runner](RECURRENT_PLATFORM_RUNNER.md).
+Scientific candidate implementations and results remain open.
 
 See the adopted [conditional research paths](RESEARCH_PATHS.md) for the November 5
 refinement: one minimal benefit pilot, then one result-selected experimental fork.
@@ -156,6 +157,7 @@ may complete an experiment and produce revise/stop at its gate.
 Current ordering and metadata live in [PRIORITIES.md](../PRIORITIES.md).
 [SOAM-046](../tickets/SOAM-046-shared-platform-scope.md) records this documentation
 change only. SOAM-047 records the platform contract decision; SOAM-049 now freezes
-[E1 v1](SHARED_POPULATION_PROTOCOL.md). SOAM-048's engineering fixtures are next.
+[E1 v1](SHARED_POPULATION_PROTOCOL.md). SOAM-048's engineering fixtures are delivered;
+SOAM-050's scientific candidate implementation is next.
 This does not activate the entire
 catalogue or all application studies.

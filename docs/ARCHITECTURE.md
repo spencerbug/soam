@@ -34,7 +34,9 @@ observed-data task adapters, frozen prediction, interventions, metrics and artif
 Offline fitting is separate; online learning plugins are deferred. A backend's
 state/energy/update assumptions must be explicit. The runner supports independent
 shared-mechanism, localization, and learning-module studies without requiring each
-to implement the entire embodied SOAM architecture. No new implementation is claimed.
+to implement the entire embodied SOAM architecture. SOAM-048 now implements the
+[minimal fixture runner](RECURRENT_PLATFORM_RUNNER.md); scientific candidates and
+application backends remain future work, with no empirical gate passed.
 
 ## Historical v0.2 research boundaries
 

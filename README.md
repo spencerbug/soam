@@ -10,7 +10,8 @@ The adopted [v0.3 research specification](docs/RESEARCH_SPEC_V0_3.md), dated Nov
 localization and Monty-style sensorimotor learning modules with recurrent memory.
 The [v0.2 scope](docs/RESEARCH_SPEC_V0_2.md), [v0.1 specification](docs/RESEARCH_SPEC.md),
 and completed contracts/results retain their historical meanings. The v1 handover
-harness is implemented; the general platform and new studies are planned work.
+harness and minimal platform fixture runner are implemented; scientific E1 candidates
+and new studies remain planned work.
 
 The [conditional research paths](docs/RESEARCH_PATHS.md) govern follow-ups: first
 measure one benefit of sharing, then select one experimental fork from the results.
@@ -24,11 +25,11 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 
 ## Current milestone
 
-**Next: [SOAM-048](tickets/SOAM-048-platform-runner.md), the minimal engineering
-runner and fixtures.** SOAM-047 adopted the [platform contract](docs/RECURRENT_PLATFORM_CONTRACT.md)
+**Next: [SOAM-050](tickets/SOAM-050-shared-population-candidates.md), the frozen E1
+candidates and engineering checks.** SOAM-048 delivered the
+[minimal fixture runner](reports/RECURRENT_PLATFORM.md). SOAM-047 adopted the [platform contract](docs/RECURRENT_PLATFORM_CONTRACT.md)
 and SOAM-049 froze the [E1 protocol](docs/SHARED_POPULATION_PROTOCOL.md) and
-[manifest](docs/protocols/shared_population_v1.json). SOAM-050's scientific candidates
-still await the runner; no E1 fitting or measurements have run.
+[manifest](docs/protocols/shared_population_v1.json). No E1 fitting or measurements have run.
 SOAM-039/044/040/041 plan minimal acquisition without waiting for skills or
 concurrency. SOAM-053–055 test active disambiguation with frozen memory. The larger
 Monty-style module (SOAM-056–058) follows supported acquisition and explicit selection.
@@ -79,6 +80,7 @@ uv run soam-run --config configs/smoke.json --output runs/smoke
 uv run soam-run --config configs/substrate.json --output runs/substrate
 uv run soam-compare runs/substrate --output reports/substrate-comparison.md
 uv run soam-handover-smoke --output runs/my-handover-fixture
+uv run soam-platform-fixture --output runs/my-platform-fixture
 ```
 
 CPU and one Torch thread are the reproducible reference. Run directories refuse

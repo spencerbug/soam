@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-050"
 title: "Implement the bounded shared-population comparison"
 type: "engineering"
-status: "backlog"
+status: "ready"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"

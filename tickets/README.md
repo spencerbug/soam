@@ -22,9 +22,9 @@ Milestone/work-package and H1–H8 IDs remain thematic provenance categories. Ne
 application metrics do not invent new hypothesis IDs or renumber historical gates.
 SOAM-047 adopted the [minimal platform contract](../docs/RECURRENT_PLATFORM_CONTRACT.md).
 SOAM-049 froze the [E1 protocol](../docs/SHARED_POPULATION_PROTOCOL.md) and
-[manifest](../docs/protocols/shared_population_v1.json). The next primary task is
-SOAM-048's engineering runner/fixtures; SOAM-050 still awaits that prerequisite.
-Neither E1 implementation nor trials have begun.
+[manifest](../docs/protocols/shared_population_v1.json). SOAM-048 delivered the
+[fixture runner](../reports/RECURRENT_PLATFORM.md). The next primary task is
+SOAM-050's scientific candidates and engineering checks; fitting/trials remain unstarted.
 
 These are GitHub-flavored Markdown issue bodies with YAML frontmatter. They are
 readable as repository files after pushing. They are **not live GitHub Issues**:

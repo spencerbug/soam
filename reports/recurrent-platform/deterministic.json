@@ -1,0 +1,1231 @@
+{
+  "cells": [
+    {
+      "backend": "leaky",
+      "energy": null,
+      "energy_reason": "backend has no declared energy function",
+      "episode": 0,
+      "exposure": {
+        "distinct_observations": 4,
+        "executed_transitions": 3,
+        "fitting_updates": 0,
+        "free_future_observation_reads": 0,
+        "grounded_assimilations": 4,
+        "target_uses_for_scoring": 6
+      },
+      "id": "rotation-leaky-0",
+      "initialization_seed": 11823927583423949160,
+      "metrics": {
+        "free": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.01902792859719049
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.010875159055630112
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.007601521738936919
+          }
+        ],
+        "grounded": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.01902792859719049
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.011572905230885359
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.008276345170600838
+          }
+        ]
+      },
+      "model_fingerprint": "6edeea1f0f73706a8cf85326f698d58a4416bae1b74534ad67622968e1a6925c",
+      "model_spec": {
+        "actions": 3,
+        "features": 12,
+        "kind": "leaky",
+        "width": 8
+      },
+      "resources": {
+        "evaluator_targets": {
+          "logical_bytes": 224,
+          "unique_storage_bytes": 224
+        },
+        "fixed_encoder": {
+          "logical_bytes": 96,
+          "unique_storage_bytes": 96
+        },
+        "live_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "observations": {
+          "logical_bytes": 276,
+          "unique_storage_bytes": 276
+        },
+        "peak_coexisting_model_copies": 3,
+        "persistent": {
+          "logical_bytes": 1152,
+          "unique_storage_bytes": 1152
+        },
+        "prediction_initial_state_bytes": 32,
+        "prediction_model_bytes": 1152,
+        "returned_arrays": {
+          "logical_bytes": 544,
+          "unique_storage_bytes": 544
+        },
+        "snapshot_model": {
+          "logical_bytes": 1152,
+          "unique_storage_bytes": 1152
+        },
+        "snapshot_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "supplied_buffer_scalars": 288,
+        "trained_parameters": 0,
+        "workspace_policy": "temporary matmul/stack/hash copies included in process peak RSS; logical inventories are not process peak"
+      },
+      "seed": 9001,
+      "split": "fixture",
+      "stream_seeds": {
+        "actions": 1020413217211152432,
+        "initial": 15380991496673866063
+      },
+      "task": "rotation",
+      "work": {
+        "anchor_state_copies": 1,
+        "live_advance_calls": 3,
+        "live_assimilation_calls": 4,
+        "live_command_copies": 3,
+        "live_linear_macs": 936,
+        "live_readout_calls": 3,
+        "live_state_input_copies": 7,
+        "live_tanh_elements": 56,
+        "live_trajectory_feature_copies": 3,
+        "live_trajectory_state_copies": 4,
+        "observation_packet_copies": 4,
+        "prediction": {
+          "advance_calls": 3,
+          "assimilation_calls": 0,
+          "command_copies": 3,
+          "linear_macs": 552,
+          "prediction_initial_state_copies": 1,
+          "prediction_model_copies": 1,
+          "readout_calls": 3,
+          "state_input_copies": 3,
+          "tanh_elements": 24,
+          "trajectory_feature_copies": 3,
+          "trajectory_state_copies": 3
+        },
+        "snapshot_model_copies": 1,
+        "snapshot_state_copies": 1
+      }
+    },
+    {
+      "backend": "leaky",
+      "energy": null,
+      "energy_reason": "backend has no declared energy function",
+      "episode": 1,
+      "exposure": {
+        "distinct_observations": 4,
+        "executed_transitions": 3,
+        "fitting_updates": 0,
+        "free_future_observation_reads": 0,
+        "grounded_assimilations": 4,
+        "target_uses_for_scoring": 6
+      },
+      "id": "rotation-leaky-1",
+      "initialization_seed": 79271876004406901,
+      "metrics": {
+        "free": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03403050290984994
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03417525588611998
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03509263447738897
+          }
+        ],
+        "grounded": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03403050290984994
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.0393129183257332
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.04256661253906513
+          }
+        ]
+      },
+      "model_fingerprint": "6c4b8ea366521432eb16b2f13871ac4bd60bd8a259bb63f15a383886120851d9",
+      "model_spec": {
+        "actions": 3,
+        "features": 12,
+        "kind": "leaky",
+        "width": 8
+      },
+      "resources": {
+        "evaluator_targets": {
+          "logical_bytes": 224,
+          "unique_storage_bytes": 224
+        },
+        "fixed_encoder": {
+          "logical_bytes": 96,
+          "unique_storage_bytes": 96
+        },
+        "live_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "observations": {
+          "logical_bytes": 276,
+          "unique_storage_bytes": 276
+        },
+        "peak_coexisting_model_copies": 3,
+        "persistent": {
+          "logical_bytes": 1152,
+          "unique_storage_bytes": 1152
+        },
+        "prediction_initial_state_bytes": 32,
+        "prediction_model_bytes": 1152,
+        "returned_arrays": {
+          "logical_bytes": 544,
+          "unique_storage_bytes": 544
+        },
+        "snapshot_model": {
+          "logical_bytes": 1152,
+          "unique_storage_bytes": 1152
+        },
+        "snapshot_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "supplied_buffer_scalars": 288,
+        "trained_parameters": 0,
+        "workspace_policy": "temporary matmul/stack/hash copies included in process peak RSS; logical inventories are not process peak"
+      },
+      "seed": 9001,
+      "split": "fixture",
+      "stream_seeds": {
+        "actions": 4743201719140846888,
+        "initial": 17158574434463252266
+      },
+      "task": "rotation",
+      "work": {
+        "anchor_state_copies": 1,
+        "live_advance_calls": 3,
+        "live_assimilation_calls": 4,
+        "live_command_copies": 3,
+        "live_linear_macs": 936,
+        "live_readout_calls": 3,
+        "live_state_input_copies": 7,
+        "live_tanh_elements": 56,
+        "live_trajectory_feature_copies": 3,
+        "live_trajectory_state_copies": 4,
+        "observation_packet_copies": 4,
+        "prediction": {
+          "advance_calls": 3,
+          "assimilation_calls": 0,
+          "command_copies": 3,
+          "linear_macs": 552,
+          "prediction_initial_state_copies": 1,
+          "prediction_model_copies": 1,
+          "readout_calls": 3,
+          "state_input_copies": 3,
+          "tanh_elements": 24,
+          "trajectory_feature_copies": 3,
+          "trajectory_state_copies": 3
+        },
+        "snapshot_model_copies": 1,
+        "snapshot_state_copies": 1
+      }
+    },
+    {
+      "backend": "linear",
+      "energy": null,
+      "energy_reason": "backend has no declared energy function",
+      "episode": 0,
+      "exposure": {
+        "distinct_observations": 4,
+        "executed_transitions": 3,
+        "fitting_updates": 0,
+        "free_future_observation_reads": 0,
+        "grounded_assimilations": 4,
+        "target_uses_for_scoring": 6
+      },
+      "id": "rotation-linear-0",
+      "initialization_seed": 15259105291103224128,
+      "metrics": {
+        "free": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.016655652462973927
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.009948197697400412
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.0071307151250528805
+          }
+        ],
+        "grounded": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.016655652462973927
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.008859884498393816
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.006410231133489823
+          }
+        ]
+      },
+      "model_fingerprint": "24d69bd51f688569454141d9813e317b4a1d73cf3b728f83f14e26cb011b8e07",
+      "model_spec": {
+        "actions": 3,
+        "features": 12,
+        "kind": "linear",
+        "width": 8
+      },
+      "resources": {
+        "evaluator_targets": {
+          "logical_bytes": 224,
+          "unique_storage_bytes": 224
+        },
+        "fixed_encoder": {
+          "logical_bytes": 96,
+          "unique_storage_bytes": 96
+        },
+        "live_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "observations": {
+          "logical_bytes": 276,
+          "unique_storage_bytes": 276
+        },
+        "peak_coexisting_model_copies": 3,
+        "persistent": {
+          "logical_bytes": 1152,
+          "unique_storage_bytes": 1152
+        },
+        "prediction_initial_state_bytes": 32,
+        "prediction_model_bytes": 1152,
+        "returned_arrays": {
+          "logical_bytes": 544,
+          "unique_storage_bytes": 544
+        },
+        "snapshot_model": {
+          "logical_bytes": 1152,
+          "unique_storage_bytes": 1152
+        },
+        "snapshot_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "supplied_buffer_scalars": 288,
+        "trained_parameters": 0,
+        "workspace_policy": "temporary matmul/stack/hash copies included in process peak RSS; logical inventories are not process peak"
+      },
+      "seed": 9001,
+      "split": "fixture",
+      "stream_seeds": {
+        "actions": 1020413217211152432,
+        "initial": 15380991496673866063
+      },
+      "task": "rotation",
+      "work": {
+        "anchor_state_copies": 1,
+        "live_advance_calls": 3,
+        "live_assimilation_calls": 4,
+        "live_command_copies": 3,
+        "live_linear_macs": 936,
+        "live_readout_calls": 3,
+        "live_state_input_copies": 7,
+        "live_tanh_elements": 32,
+        "live_trajectory_feature_copies": 3,
+        "live_trajectory_state_copies": 4,
+        "observation_packet_copies": 4,
+        "prediction": {
+          "advance_calls": 3,
+          "assimilation_calls": 0,
+          "command_copies": 3,
+          "linear_macs": 552,
+          "prediction_initial_state_copies": 1,
+          "prediction_model_copies": 1,
+          "readout_calls": 3,
+          "state_input_copies": 3,
+          "tanh_elements": 0,
+          "trajectory_feature_copies": 3,
+          "trajectory_state_copies": 3
+        },
+        "snapshot_model_copies": 1,
+        "snapshot_state_copies": 1
+      }
+    },
+    {
+      "backend": "linear",
+      "energy": null,
+      "energy_reason": "backend has no declared energy function",
+      "episode": 1,
+      "exposure": {
+        "distinct_observations": 4,
+        "executed_transitions": 3,
+        "fitting_updates": 0,
+        "free_future_observation_reads": 0,
+        "grounded_assimilations": 4,
+        "target_uses_for_scoring": 6
+      },
+      "id": "rotation-linear-1",
+      "initialization_seed": 1366335771962855714,
+      "metrics": {
+        "free": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03038800510366112
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.032345896981057824
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.035005553515027675
+          }
+        ],
+        "grounded": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03038800510366112
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.0343168088422704
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03680327608131778
+          }
+        ]
+      },
+      "model_fingerprint": "667212253075cf226ce5d0932b0c85cac334c6f0e51704bd223e9f264d520ade",
+      "model_spec": {
+        "actions": 3,
+        "features": 12,
+        "kind": "linear",
+        "width": 8
+      },
+      "resources": {
+        "evaluator_targets": {
+          "logical_bytes": 224,
+          "unique_storage_bytes": 224
+        },
+        "fixed_encoder": {
+          "logical_bytes": 96,
+          "unique_storage_bytes": 96
+        },
+        "live_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "observations": {
+          "logical_bytes": 276,
+          "unique_storage_bytes": 276
+        },
+        "peak_coexisting_model_copies": 3,
+        "persistent": {
+          "logical_bytes": 1152,
+          "unique_storage_bytes": 1152
+        },
+        "prediction_initial_state_bytes": 32,
+        "prediction_model_bytes": 1152,
+        "returned_arrays": {
+          "logical_bytes": 544,
+          "unique_storage_bytes": 544
+        },
+        "snapshot_model": {
+          "logical_bytes": 1152,
+          "unique_storage_bytes": 1152
+        },
+        "snapshot_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "supplied_buffer_scalars": 288,
+        "trained_parameters": 0,
+        "workspace_policy": "temporary matmul/stack/hash copies included in process peak RSS; logical inventories are not process peak"
+      },
+      "seed": 9001,
+      "split": "fixture",
+      "stream_seeds": {
+        "actions": 4743201719140846888,
+        "initial": 17158574434463252266
+      },
+      "task": "rotation",
+      "work": {
+        "anchor_state_copies": 1,
+        "live_advance_calls": 3,
+        "live_assimilation_calls": 4,
+        "live_command_copies": 3,
+        "live_linear_macs": 936,
+        "live_readout_calls": 3,
+        "live_state_input_copies": 7,
+        "live_tanh_elements": 32,
+        "live_trajectory_feature_copies": 3,
+        "live_trajectory_state_copies": 4,
+        "observation_packet_copies": 4,
+        "prediction": {
+          "advance_calls": 3,
+          "assimilation_calls": 0,
+          "command_copies": 3,
+          "linear_macs": 552,
+          "prediction_initial_state_copies": 1,
+          "prediction_model_copies": 1,
+          "readout_calls": 3,
+          "state_input_copies": 3,
+          "tanh_elements": 0,
+          "trajectory_feature_copies": 3,
+          "trajectory_state_copies": 3
+        },
+        "snapshot_model_copies": 1,
+        "snapshot_state_copies": 1
+      }
+    },
+    {
+      "backend": "leaky",
+      "energy": null,
+      "energy_reason": "backend has no declared energy function",
+      "episode": 0,
+      "exposure": {
+        "distinct_observations": 4,
+        "executed_transitions": 3,
+        "fitting_updates": 0,
+        "free_future_observation_reads": 0,
+        "grounded_assimilations": 4,
+        "target_uses_for_scoring": 6
+      },
+      "id": "translation-leaky-0",
+      "initialization_seed": 6365071523182275247,
+      "metrics": {
+        "free": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.02967088231580909
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.028153698490516237
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03045376554653375
+          }
+        ],
+        "grounded": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.02967088231580909
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03200590313969469
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03608999960143358
+          }
+        ]
+      },
+      "model_fingerprint": "77c9b53c2a8996aab0dc3fa3482bca361692f03d4387d1f6e0f4c9717f2ab9b1",
+      "model_spec": {
+        "actions": 1,
+        "features": 8,
+        "kind": "leaky",
+        "width": 8
+      },
+      "resources": {
+        "evaluator_targets": {
+          "logical_bytes": 160,
+          "unique_storage_bytes": 160
+        },
+        "fixed_encoder": {
+          "logical_bytes": 64,
+          "unique_storage_bytes": 64
+        },
+        "live_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "observations": {
+          "logical_bytes": 172,
+          "unique_storage_bytes": 172
+        },
+        "peak_coexisting_model_copies": 3,
+        "persistent": {
+          "logical_bytes": 832,
+          "unique_storage_bytes": 832
+        },
+        "prediction_initial_state_bytes": 32,
+        "prediction_model_bytes": 832,
+        "returned_arrays": {
+          "logical_bytes": 448,
+          "unique_storage_bytes": 448
+        },
+        "snapshot_model": {
+          "logical_bytes": 832,
+          "unique_storage_bytes": 832
+        },
+        "snapshot_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "supplied_buffer_scalars": 208,
+        "trained_parameters": 0,
+        "workspace_policy": "temporary matmul/stack/hash copies included in process peak RSS; logical inventories are not process peak"
+      },
+      "seed": 9001,
+      "split": "fixture",
+      "stream_seeds": {
+        "actions": 9290849094606005073,
+        "initial": 9918701455801992306
+      },
+      "task": "translation",
+      "work": {
+        "anchor_state_copies": 1,
+        "live_advance_calls": 3,
+        "live_assimilation_calls": 4,
+        "live_command_copies": 3,
+        "live_linear_macs": 664,
+        "live_readout_calls": 3,
+        "live_state_input_copies": 7,
+        "live_tanh_elements": 56,
+        "live_trajectory_feature_copies": 3,
+        "live_trajectory_state_copies": 4,
+        "observation_packet_copies": 4,
+        "prediction": {
+          "advance_calls": 3,
+          "assimilation_calls": 0,
+          "command_copies": 3,
+          "linear_macs": 408,
+          "prediction_initial_state_copies": 1,
+          "prediction_model_copies": 1,
+          "readout_calls": 3,
+          "state_input_copies": 3,
+          "tanh_elements": 24,
+          "trajectory_feature_copies": 3,
+          "trajectory_state_copies": 3
+        },
+        "snapshot_model_copies": 1,
+        "snapshot_state_copies": 1
+      }
+    },
+    {
+      "backend": "leaky",
+      "energy": null,
+      "energy_reason": "backend has no declared energy function",
+      "episode": 1,
+      "exposure": {
+        "distinct_observations": 4,
+        "executed_transitions": 3,
+        "fitting_updates": 0,
+        "free_future_observation_reads": 0,
+        "grounded_assimilations": 4,
+        "target_uses_for_scoring": 6
+      },
+      "id": "translation-leaky-1",
+      "initialization_seed": 8455330192942008098,
+      "metrics": {
+        "free": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.04196136977702502
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.038887153146717535
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.036805347477099806
+          }
+        ],
+        "grounded": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.04196136977702502
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.04367288052289864
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.04329231599306756
+          }
+        ]
+      },
+      "model_fingerprint": "736950544e0655607a4819e547902154bb3ba2f5c00b168bb30dea443f07ac16",
+      "model_spec": {
+        "actions": 1,
+        "features": 8,
+        "kind": "leaky",
+        "width": 8
+      },
+      "resources": {
+        "evaluator_targets": {
+          "logical_bytes": 160,
+          "unique_storage_bytes": 160
+        },
+        "fixed_encoder": {
+          "logical_bytes": 64,
+          "unique_storage_bytes": 64
+        },
+        "live_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "observations": {
+          "logical_bytes": 172,
+          "unique_storage_bytes": 172
+        },
+        "peak_coexisting_model_copies": 3,
+        "persistent": {
+          "logical_bytes": 832,
+          "unique_storage_bytes": 832
+        },
+        "prediction_initial_state_bytes": 32,
+        "prediction_model_bytes": 832,
+        "returned_arrays": {
+          "logical_bytes": 448,
+          "unique_storage_bytes": 448
+        },
+        "snapshot_model": {
+          "logical_bytes": 832,
+          "unique_storage_bytes": 832
+        },
+        "snapshot_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "supplied_buffer_scalars": 208,
+        "trained_parameters": 0,
+        "workspace_policy": "temporary matmul/stack/hash copies included in process peak RSS; logical inventories are not process peak"
+      },
+      "seed": 9001,
+      "split": "fixture",
+      "stream_seeds": {
+        "actions": 10734343148242739199,
+        "initial": 17177148465506803093
+      },
+      "task": "translation",
+      "work": {
+        "anchor_state_copies": 1,
+        "live_advance_calls": 3,
+        "live_assimilation_calls": 4,
+        "live_command_copies": 3,
+        "live_linear_macs": 664,
+        "live_readout_calls": 3,
+        "live_state_input_copies": 7,
+        "live_tanh_elements": 56,
+        "live_trajectory_feature_copies": 3,
+        "live_trajectory_state_copies": 4,
+        "observation_packet_copies": 4,
+        "prediction": {
+          "advance_calls": 3,
+          "assimilation_calls": 0,
+          "command_copies": 3,
+          "linear_macs": 408,
+          "prediction_initial_state_copies": 1,
+          "prediction_model_copies": 1,
+          "readout_calls": 3,
+          "state_input_copies": 3,
+          "tanh_elements": 24,
+          "trajectory_feature_copies": 3,
+          "trajectory_state_copies": 3
+        },
+        "snapshot_model_copies": 1,
+        "snapshot_state_copies": 1
+      }
+    },
+    {
+      "backend": "linear",
+      "energy": null,
+      "energy_reason": "backend has no declared energy function",
+      "episode": 0,
+      "exposure": {
+        "distinct_observations": 4,
+        "executed_transitions": 3,
+        "fitting_updates": 0,
+        "free_future_observation_reads": 0,
+        "grounded_assimilations": 4,
+        "target_uses_for_scoring": 6
+      },
+      "id": "translation-linear-0",
+      "initialization_seed": 7926667841604767672,
+      "metrics": {
+        "free": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03025239645559684
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.025312918557801257
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.029555461994691175
+          }
+        ],
+        "grounded": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03025239645559684
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.030079881889590057
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03330589161700921
+          }
+        ]
+      },
+      "model_fingerprint": "438956b930abf4aafc62fc76ce869b5b9a2463e82ed35c5ed6eabcaed37b174b",
+      "model_spec": {
+        "actions": 1,
+        "features": 8,
+        "kind": "linear",
+        "width": 8
+      },
+      "resources": {
+        "evaluator_targets": {
+          "logical_bytes": 160,
+          "unique_storage_bytes": 160
+        },
+        "fixed_encoder": {
+          "logical_bytes": 64,
+          "unique_storage_bytes": 64
+        },
+        "live_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "observations": {
+          "logical_bytes": 172,
+          "unique_storage_bytes": 172
+        },
+        "peak_coexisting_model_copies": 3,
+        "persistent": {
+          "logical_bytes": 832,
+          "unique_storage_bytes": 832
+        },
+        "prediction_initial_state_bytes": 32,
+        "prediction_model_bytes": 832,
+        "returned_arrays": {
+          "logical_bytes": 448,
+          "unique_storage_bytes": 448
+        },
+        "snapshot_model": {
+          "logical_bytes": 832,
+          "unique_storage_bytes": 832
+        },
+        "snapshot_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "supplied_buffer_scalars": 208,
+        "trained_parameters": 0,
+        "workspace_policy": "temporary matmul/stack/hash copies included in process peak RSS; logical inventories are not process peak"
+      },
+      "seed": 9001,
+      "split": "fixture",
+      "stream_seeds": {
+        "actions": 9290849094606005073,
+        "initial": 9918701455801992306
+      },
+      "task": "translation",
+      "work": {
+        "anchor_state_copies": 1,
+        "live_advance_calls": 3,
+        "live_assimilation_calls": 4,
+        "live_command_copies": 3,
+        "live_linear_macs": 664,
+        "live_readout_calls": 3,
+        "live_state_input_copies": 7,
+        "live_tanh_elements": 32,
+        "live_trajectory_feature_copies": 3,
+        "live_trajectory_state_copies": 4,
+        "observation_packet_copies": 4,
+        "prediction": {
+          "advance_calls": 3,
+          "assimilation_calls": 0,
+          "command_copies": 3,
+          "linear_macs": 408,
+          "prediction_initial_state_copies": 1,
+          "prediction_model_copies": 1,
+          "readout_calls": 3,
+          "state_input_copies": 3,
+          "tanh_elements": 0,
+          "trajectory_feature_copies": 3,
+          "trajectory_state_copies": 3
+        },
+        "snapshot_model_copies": 1,
+        "snapshot_state_copies": 1
+      }
+    },
+    {
+      "backend": "linear",
+      "energy": null,
+      "energy_reason": "backend has no declared energy function",
+      "episode": 1,
+      "exposure": {
+        "distinct_observations": 4,
+        "executed_transitions": 3,
+        "fitting_updates": 0,
+        "free_future_observation_reads": 0,
+        "grounded_assimilations": 4,
+        "target_uses_for_scoring": 6
+      },
+      "id": "translation-linear-1",
+      "initialization_seed": 16808621484126856138,
+      "metrics": {
+        "free": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.037445540952311535
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03927542920082917
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.03630212649846217
+          }
+        ],
+        "grounded": [
+          {
+            "horizon": 1,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.037445540952311535
+          },
+          {
+            "horizon": 2,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.04023043939610951
+          },
+          {
+            "horizon": 3,
+            "metric": "feature_mse",
+            "sample_count": 1,
+            "status": "valid",
+            "units": "squared_feature",
+            "value": 0.037556537136815255
+          }
+        ]
+      },
+      "model_fingerprint": "1dd6e303fa4b6a6386d12380fb39cbc58f713f84c76d7a32e52c88b2e4da047a",
+      "model_spec": {
+        "actions": 1,
+        "features": 8,
+        "kind": "linear",
+        "width": 8
+      },
+      "resources": {
+        "evaluator_targets": {
+          "logical_bytes": 160,
+          "unique_storage_bytes": 160
+        },
+        "fixed_encoder": {
+          "logical_bytes": 64,
+          "unique_storage_bytes": 64
+        },
+        "live_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "observations": {
+          "logical_bytes": 172,
+          "unique_storage_bytes": 172
+        },
+        "peak_coexisting_model_copies": 3,
+        "persistent": {
+          "logical_bytes": 832,
+          "unique_storage_bytes": 832
+        },
+        "prediction_initial_state_bytes": 32,
+        "prediction_model_bytes": 832,
+        "returned_arrays": {
+          "logical_bytes": 448,
+          "unique_storage_bytes": 448
+        },
+        "snapshot_model": {
+          "logical_bytes": 832,
+          "unique_storage_bytes": 832
+        },
+        "snapshot_state": {
+          "logical_bytes": 32,
+          "unique_storage_bytes": 32
+        },
+        "supplied_buffer_scalars": 208,
+        "trained_parameters": 0,
+        "workspace_policy": "temporary matmul/stack/hash copies included in process peak RSS; logical inventories are not process peak"
+      },
+      "seed": 9001,
+      "split": "fixture",
+      "stream_seeds": {
+        "actions": 10734343148242739199,
+        "initial": 17177148465506803093
+      },
+      "task": "translation",
+      "work": {
+        "anchor_state_copies": 1,
+        "live_advance_calls": 3,
+        "live_assimilation_calls": 4,
+        "live_command_copies": 3,
+        "live_linear_macs": 664,
+        "live_readout_calls": 3,
+        "live_state_input_copies": 7,
+        "live_tanh_elements": 32,
+        "live_trajectory_feature_copies": 3,
+        "live_trajectory_state_copies": 4,
+        "observation_packet_copies": 4,
+        "prediction": {
+          "advance_calls": 3,
+          "assimilation_calls": 0,
+          "command_copies": 3,
+          "linear_macs": 408,
+          "prediction_initial_state_copies": 1,
+          "prediction_model_copies": 1,
+          "readout_calls": 3,
+          "state_input_copies": 3,
+          "tanh_elements": 0,
+          "trajectory_feature_copies": 3,
+          "trajectory_state_copies": 3
+        },
+        "snapshot_model_copies": 1,
+        "snapshot_state_copies": 1
+      }
+    }
+  ],
+  "expected_failure": {
+    "advance_calls": 2,
+    "exception": "FloatingPointError",
+    "expected": true,
+    "live_state_unchanged": true,
+    "model_unchanged": true,
+    "readout_attempts": 1,
+    "reason": "nonfinite tensor",
+    "scientific_result": false,
+    "status": "invalid"
+  }
+}

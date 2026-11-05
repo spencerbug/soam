@@ -1,0 +1,12 @@
+{
+  "tasks": ["rotation", "translation"],
+  "backends": ["leaky", "linear"],
+  "seed": 9001,
+  "split": "fixture",
+  "learning": "supplied",
+  "threads": 1,
+  "max_cpu_seconds": 60,
+  "max_wall_seconds": 120,
+  "max_rss_bytes": 1073741824,
+  "max_artifact_bytes": 268435456
+}

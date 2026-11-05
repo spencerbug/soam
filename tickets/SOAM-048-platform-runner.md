@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-048"
 title: "Implement the reusable recurrent-dynamics experiment runner"
 type: "engineering"
-status: "ready"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M0"
@@ -44,14 +44,17 @@ and offline fitting after SOAM-049; this runner ticket remains engineering-only.
 
 ## Acceptance criteria
 
-- [ ] Run uv run pytest before existing code changes; pass relevant invariant tests and the full suite after implementation.
-- [ ] Execute both fixture tasks through the same runner with at least two compatible backend configurations; demonstrate a small new task/backend registration without editing runner control flow.
-- [ ] Verify separate random streams, no target leakage, no persistent or live-state writes during prediction, snapshot isolation, and exact same-environment reproduction excluding timing.
-- [ ] Archive fixture configs, seeds, source/version fingerprints, resource counts, actual commands, failure-path checks, and extension documentation; fixtures do not count as research evidence.
+- [x] Run uv run pytest before existing code changes; pass relevant invariant tests and the full suite after implementation.
+- [x] Execute both fixture tasks through the same runner with at least two compatible backend configurations; demonstrate a small new task/backend registration without editing runner control flow.
+- [x] Verify separate random streams, no target leakage, no persistent or live-state writes during prediction, snapshot isolation, and exact same-environment reproduction excluding timing.
+- [x] Archive fixture configs, seeds, source/version fingerprints, resource counts, actual commands, failure-path checks, and extension documentation; fixtures do not count as research evidence.
 
 ## Metrics / evidence
 
-Planned engineering report: reports/RECURRENT_PLATFORM.md. Use a small fixed fixture matrix, record active-state bytes and persistent storage separately, and regression-check the existing handover contract.
+Delivered [engineering report](../reports/RECURRENT_PLATFORM.md),
+[implementation/extension guide](../docs/RECURRENT_PLATFORM_RUNNER.md),
+[configuration](../configs/platform-fixture.json) and
+[reproduction record](../reports/recurrent-platform/reproduction.json).
 
 ## Dependencies
 
@@ -67,6 +70,40 @@ The first delivery serves only the minimal SOAM-049 recall/transition pilot. Spe
 
 ## Completion record
 
-Not started. Record actual sources, tests/commands, artifacts, limitations, and
-source/configuration/seed provenance appropriate to the work. Preserve negative
-outcomes; this ticket does not authorize other backlog work.
+Completed 2026-11-05 after committing SOAM-049 as `ce29de0`. Verified SOAM-047
+done/proceed and the fixture-only branch conditions; set in_progress before changes.
+No assignee handle is known.
+
+Implemented `soam.platform` with observed-only packets, task-owned truth/scoring,
+supplied leaky/linear models, explicit transient state, private frozen prediction,
+initial perturbation/full-rollout clamp capabilities, and strict failure rejection.
+Added the `soam-platform-fixture` entry point and bounded original/repeat orchestration.
+Registered-task/backend extension is tested without changing runner control flow.
+The historical harness and frozen contracts remain unchanged.
+
+Actual validation:
+
+- `UV_CACHE_DIR=/tmp/soam-uv-cache uv run pytest`: baseline **86 passed in 16.21s**;
+  final **110 passed in 14.92s**, including 24 new platform cases.
+- `UV_CACHE_DIR=/tmp/soam-uv-cache uv run ruff check soam/platform tests/test_platform.py`
+  and corresponding `ruff format --check`: passed.
+- `UV_CACHE_DIR=/tmp/soam-uv-cache uv run soam-platform-fixture --output runs/platform-fixture-v1`:
+  eight cells plus one expected-invalid case per pass; exact repeat of 137 arrays
+  in 33 NPZ files. Combined CPU 0.532955s, wall 0.639720s, peak RSS 282,181,632 bytes,
+  artifacts 249,062 bytes, within every declared combined ceiling.
+- Artifact audit verified 109 hashes, exact physical artifact-byte total and all
+  52 captured source hashes. Compact evidence is linked in the report; full archives
+  remain under `runs/platform-fixture-v1/`.
+- `UV_CACHE_DIR=/tmp/soam-uv-cache uv run python scripts/check_tickets.py` and
+  `git diff --check`: passed. Historical preservation and local-link audits passed.
+
+Source base `ce29de0deb59a1804d4f9c883bb79029792c65cd`, dirty implementation fingerprint
+`d0ce56276aaa715aa217106cec320519660b154a4e5e1680d1076bdf44e213b9`.
+Fixture root 9001, indices 0/1, projection 1729; CPU float32/float64 metrics,
+Python 3.12.13, Torch 2.14.1, NumPy 2.5.4, one thread and deterministic operations.
+The worker was busy; direct implementation/testing was used without worker changes.
+The editable entry point was refreshed with authorized `uv sync --extra dev --locked`.
+
+SOAM-050 is now ready because both required decisions/engineering dependencies and
+body conditions are satisfied. It has not started. No fitting, study split, H1
+claim, application fork, publication or remote issue update occurred in SOAM-048.

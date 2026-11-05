@@ -1,0 +1,16 @@
+{
+  "artifact_bytes": 249062,
+  "cells_per_pass": 8,
+  "cpu_seconds": 0.5329550000000001,
+  "empirical_gate_passed": false,
+  "exact_repeat": true,
+  "expected_invalid_cases_per_pass": 1,
+  "fitted_models": 0,
+  "fixture_only": true,
+  "model_episode_executions": 16,
+  "peak_rss_bytes": 282181632,
+  "phase": null,
+  "status": "complete",
+  "unique_task_episodes": 4,
+  "wall_seconds": 0.6397195000026841
+}

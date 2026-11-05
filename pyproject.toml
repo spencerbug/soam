@@ -17,6 +17,7 @@ dev = ["pytest>=8", "ruff>=0.8"]
 soam-run = "soam.evaluation.runner:main"
 soam-compare = "soam.evaluation.compare:main"
 soam-handover-smoke = "soam.handover.runner:main"
+soam-platform-fixture = "soam.platform.runner:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["soam"]

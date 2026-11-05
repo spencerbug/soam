@@ -1,0 +1,23 @@
+{
+  "backends": [
+    "leaky",
+    "linear"
+  ],
+  "contract": "4a30165d4399198cc42ca5d2cc82a295718109d511fb77e86bf5ede6116e9f61",
+  "episode_indices": [
+    0,
+    1
+  ],
+  "expected_invalid_cases": 1,
+  "fitted_models": 0,
+  "projection_seed": 1729,
+  "purpose": "engineering fixtures only",
+  "seed": 9001,
+  "tasks": [
+    "rotation",
+    "translation"
+  ],
+  "transitions": 3,
+  "version": 1,
+  "width": 8
+}

@@ -1,0 +1,13 @@
+{
+  "array_files": 33,
+  "arrays": 137,
+  "exact_numeric_match": true,
+  "excluded": [
+    "timing",
+    "RSS",
+    "PID",
+    "timestamps",
+    "NPZ container bytes"
+  ],
+  "independent_statistical_sample": false
+}
