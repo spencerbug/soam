@@ -33,6 +33,7 @@ Specification: [SOAM v0.3](../docs/RESEARCH_SPEC_V0_3.md). Apply the
 
 ## Scope
 
+- Follow [E1 v1](../docs/SHARED_POPULATION_PROTOCOL.md) and its [manifest](../docs/protocols/shared_population_v1.json): 119 fit instances and 27,820 scoring cells including diagnostics/reproduction, subject to the pre-fit feasibility gate and development competence/floor screens. Publish T32 equivalence alongside primary comparisons; it is an identifiability limit, not a failed superiority test to hide.
 - Run only the frozen minimal recall/transition pilot and finite tuning/confirmation budget.
 - Evaluate the single primary benefit endpoint, feature-retention/interference guardrails, causal overlap, and action/symmetry ablations against separated and ordinary recurrent controls.
 - Classify results using the prespecified outcome rules, keeping all seeds and budget mismatches. No online acquisition or concurrent handover extension in this ticket.

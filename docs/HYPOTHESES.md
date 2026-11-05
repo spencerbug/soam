@@ -6,6 +6,13 @@ schema IDs or retroactive changes to those statements. Scientific criteria and
 proposed numerical defaults live in the [review](SCIENTIFIC_REVIEW_2026_11_05.md);
 frozen experiment criteria belong to the corresponding protocol/manifest.
 
+SOAM-049 now freezes [E1 v1](SHARED_POPULATION_PROTOCOL.md) and its
+[manifest](protocols/shared_population_v1.json). Its T32 control exposes an
+identifiability limit: separate-role episodes cannot establish a performance
+advantage of physical neuron overlap over tied weights. The test concerns a useful
+shared implementation and unit-basis causal participation, with that limitation.
+No E1 measurements have run; the broader historical H1 claim remains open.
+
 | Historical claim / operational question | Prediction and importance | Convincing experiment / baselines | Success or failure evidence | Negative-result interpretation / class / tickets |
 | --- | --- | --- | --- | --- |
 | H1: multiple regimes; useful sharing | Shared recurrence should improve an explicit behavior/resource trade-off, not merely activate the same units | E1 action-conditioned transitions and causal overlap/action lesions; disjoint matched-information recurrence, GRU, linear reference | Proposed 10% error benefit with positive paired interval, recall guardrail 0.005 NMSE and finite rollouts; separate recovery evidence | No gain challenges useful sharing in this task, not all recurrence; poor precision is inconclusive. E, 049–052 |

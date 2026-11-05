@@ -33,9 +33,13 @@ Specification: [SOAM v0.3](../docs/RESEARCH_SPEC_V0_3.md). Apply the
 
 ## Scope
 
+- Implement [E1 v1](../docs/SHARED_POPULATION_PROTOCOL.md) and its [frozen manifest](../docs/protocols/shared_population_v1.json), including seven fitted families and the no-fit T32 tied-state diagnostic. Verify exact intact equivalence and independent-bank lesion behavior; E1 does not isolate a performance benefit of neuron overlap from parameter tying.
 - Implement only the minimal recall/transition candidates, controls, overlap intervention, and diagnostics frozen in SOAM-049 through the small common runner.
 - Verify genuine recurrent unit overlap and no hidden role-specific memories; implement supplied structure/offline fitting exactly as declared.
 - Provide finite fixtures for recall, directional transitions, cross-function interference, perturbations, and resource accounting. Concurrent binding, handover, application adapters, and online learning are deferred.
+
+Record the full-inventory, 2×-margin timing/storage feasibility check before SOAM-051
+fitting. Failure requires a new protocol decision/version, not silent trial reduction.
 
 ## Acceptance criteria
 

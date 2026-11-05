@@ -155,6 +155,7 @@ may complete an experiment and produce revise/stop at its gate.
 
 Current ordering and metadata live in [PRIORITIES.md](../PRIORITIES.md).
 [SOAM-046](../tickets/SOAM-046-shared-platform-scope.md) records this documentation
-change only. SOAM-047 now records the platform contract decision; SOAM-049 is next
-and SOAM-048's engineering fixtures are ready. This does not activate the entire
+change only. SOAM-047 records the platform contract decision; SOAM-049 now freezes
+[E1 v1](SHARED_POPULATION_PROTOCOL.md). SOAM-048's engineering fixtures are next.
+This does not activate the entire
 catalogue or all application studies.

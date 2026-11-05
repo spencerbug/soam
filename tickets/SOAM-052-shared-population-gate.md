@@ -33,6 +33,7 @@ Specification: [SOAM v0.3](../docs/RESEARCH_SPEC_V0_3.md). Apply the
 
 ## Scope
 
+- Apply the outcome precedence and claim limits in [E1 v1](../docs/SHARED_POPULATION_PROTOCOL.md). T32 can reproduce the shared candidate on separate-role episodes; even a positive pilot supports a useful shared implementation, not a uniquely causal performance advantage of physical neuron sharing over tied parameters.
 - Review the complete minimal pilot against its frozen benefit, retention, causal-overlap, validity, and resource criteria.
 - Record the supported mechanism and operating limits separately from the next-experiment selection in SOAM-059.
 

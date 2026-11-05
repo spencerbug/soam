@@ -32,6 +32,11 @@ complete pilot evidence. Both depend on SOAM-051; SOAM-059 deliberately does not
 depend on a positive SOAM-052 decision. A negative finding can motivate further
 research without becoming a successful gate.
 
+[E1 v1](SHARED_POPULATION_PROTOCOL.md) now fixes the first pilot. Its T32 diagnostic
+is behaviorally equivalent to the shared candidate on separate-role episodes;
+positive utility/lesion results cannot establish that physical neuron overlap
+uniquely caused the performance benefit. Keep that limit in SOAM-052/059 decisions.
+
 | Observed result under frozen criteria | Sharing-gate interpretation | Candidate next fork | What stays deferred |
 | --- | --- | --- | --- |
 | Meaningful primary benefit, retention guardrails, and causal shared-unit evidence | Proceed for useful sharing in this task only | Prefer minimal acquisition SOAM-039; alternatively active disambiguation SOAM-053 or a specifically justified concurrency fork | All unselected experiments; acquisition and integration claims |

@@ -19,9 +19,10 @@ See the [complete ticket dispositions](TICKET_REVIEW_2026_11_05.md).
 ## Immediate work
 
 SOAM-047 adopted the [minimal platform contract](RECURRENT_PLATFORM_CONTRACT.md).
-Next: [SOAM-049](../tickets/SOAM-049-shared-population-protocol.md), the E1 protocol
-decision. [SOAM-048](../tickets/SOAM-048-platform-runner.md) is also ready to build
-the common runner with two small supplied-model fixtures. Shared feature/relation/action
+SOAM-049 froze [E1 v1](SHARED_POPULATION_PROTOCOL.md) and its
+[manifest](protocols/shared_population_v1.json), including the tied-state identifiability control.
+Next: [SOAM-048](../tickets/SOAM-048-platform-runner.md), the common runner with two
+small supplied-model fixtures. Shared feature/relation/action
 neurons are the preferred candidate; separated populations are controls. Genuine
 overlap, binding, interference, and directional dynamics require measured evidence.
 

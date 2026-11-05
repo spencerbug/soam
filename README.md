@@ -24,11 +24,12 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 
 ## Current milestone
 
-**Next: [SOAM-049](tickets/SOAM-049-shared-population-protocol.md), the minimal
-shared-recurrence experiment protocol.** SOAM-047 adopted the
-[platform contract](docs/RECURRENT_PLATFORM_CONTRACT.md); SOAM-048 is also ready
-to implement its small engineering runner and fixtures. Scientific candidates
-follow both deliveries. SOAM-039/044/040/041 plan minimal acquisition without waiting for skills or
+**Next: [SOAM-048](tickets/SOAM-048-platform-runner.md), the minimal engineering
+runner and fixtures.** SOAM-047 adopted the [platform contract](docs/RECURRENT_PLATFORM_CONTRACT.md)
+and SOAM-049 froze the [E1 protocol](docs/SHARED_POPULATION_PROTOCOL.md) and
+[manifest](docs/protocols/shared_population_v1.json). SOAM-050's scientific candidates
+still await the runner; no E1 fitting or measurements have run.
+SOAM-039/044/040/041 plan minimal acquisition without waiting for skills or
 concurrency. SOAM-053–055 test active disambiguation with frozen memory. The larger
 Monty-style module (SOAM-056–058) follows supported acquisition and explicit selection.
 
