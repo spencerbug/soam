@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-051"
 title: "Measure the benefit and interference of shared recurrence"
 type: "experiment"
-status: "ready"
+status: "in_progress"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M1"
@@ -67,6 +67,13 @@ Planned report: reports/SHARED_POPULATION_STUDY.md. Use only frozen protocol see
 
 ## Completion record
 
-Not started. Record actual sources, tests/commands, artifacts, limitations, and
-source/configuration/seed provenance appropriate to the work. Preserve negative
-outcomes; this ticket does not authorize other backlog work.
+Started 2026-11-06 after verifying SOAM-050 done and SOAM-061 done/proceed.
+Committed prerequisite implementation as `a0e4e3f`. The bounded
+[development procedure](../docs/E1_DEVELOPMENT_EXECUTION.md) enumerates 42 fits and
+2,520 cells, with confirmation inaccessible at this stage. Full suite: 176 passed
+in 15.15s; the focused entry-point tests also passed after final budget/error handling
+changes. A [fresh A1 calibration](../reports/shared-population-study/calibration/cost-ledger.json)
+passes all ceilings for source fingerprint
+`e0585121bcd98d1bf1b49e6d21858a20279cd97f17849a91e4d1291c25f652bb`.
+Scientific execution and development-screen results will be recorded separately;
+no confirmation or empirical sharing claim is implied by setup completion.
