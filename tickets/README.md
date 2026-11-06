@@ -23,8 +23,10 @@ application metrics do not invent new hypothesis IDs or renumber historical gate
 SOAM-047 adopted the [minimal platform contract](../docs/RECURRENT_PLATFORM_CONTRACT.md).
 SOAM-049 froze the [E1 protocol](../docs/SHARED_POPULATION_PROTOCOL.md) and
 [manifest](../docs/protocols/shared_population_v1.json). SOAM-048 delivered the
-[fixture runner](../reports/RECURRENT_PLATFORM.md). The next primary task is
-SOAM-050's scientific candidates and engineering checks; fitting/trials remain unstarted.
+[fixture runner](../reports/RECURRENT_PLATFORM.md). SOAM-050 delivered the
+[E1 harness](../reports/SHARED_POPULATION_HARNESS.md) with a failed artifact feasibility
+projection. SOAM-061 subsequently proceeded with [A1](../docs/E1_ARCHIVE_A1.md) and a
+[passing replacement calibration](../reports/E1_ARCHIVE_A1.md); SOAM-051 is now ready. Scientific fitting/trials remain unstarted.
 
 These are GitHub-flavored Markdown issue bodies with YAML frontmatter. They are
 readable as repository files after pushing. They are **not live GitHub Issues**:

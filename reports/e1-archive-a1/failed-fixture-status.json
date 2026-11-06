@@ -1,0 +1,11 @@
+{
+  "artifact_bytes": 2456928,
+  "cpu_seconds": 3.288802,
+  "exception": "FileNotFoundError",
+  "message": "[Errno 2] No such file or directory: 'runs/shared-a1-fixture/original/fits/S32/data/0-recall/observations.npz'",
+  "mode": "fixture",
+  "peak_rss_bytes": 304054272,
+  "status": "failed",
+  "subsequent_work_stopped": true,
+  "wall_seconds": 3.364649416995235
+}

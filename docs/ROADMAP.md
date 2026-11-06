@@ -22,12 +22,15 @@ SOAM-047 adopted the [minimal platform contract](RECURRENT_PLATFORM_CONTRACT.md)
 SOAM-049 froze [E1 v1](SHARED_POPULATION_PROTOCOL.md) and its
 [manifest](protocols/shared_population_v1.json), including the tied-state identifiability control.
 SOAM-048 delivered the [fixture-verified runner](../reports/RECURRENT_PLATFORM.md).
-Next: [SOAM-050](../tickets/SOAM-050-shared-population-candidates.md), the scientific
-candidates and their engineering checks. Shared feature/relation/action
+SOAM-050 delivered the [E1 engineering harness](../reports/SHARED_POPULATION_HARNESS.md),
+with exact fixture replay and a failed artifact-storage preflight. SOAM-061 subsequently proceeded with
+[archive addendum A1](E1_ARCHIVE_A1.md) and a [passing calibration](../reports/E1_ARCHIVE_A1.md).
+SOAM-051 is now ready for scientific fitting under v1+A1. Shared feature/relation/action
 neurons are the preferred candidate; separated populations are controls. Genuine
 overlap, binding, interference, and directional dynamics require measured evidence.
 
-The shared-mechanism track is SOAM-049 protocol → SOAM-050 candidates → SOAM-051
+The shared-mechanism track is SOAM-049 protocol → SOAM-050 candidates → SOAM-061
+corrective feasibility decision → SOAM-051
 minimal pilot → SOAM-052 claim review and SOAM-059 fork selection. The active-disambiguation track SOAM-053–055 and
 recurrent learning-module track SOAM-056–058 require explicit fork selection before their own protocol
 decisions and reuse the platform. The preferred next follow-up is minimal acquisition through SOAM-039/044/040/041,
@@ -46,7 +49,7 @@ completed by this planning revision. See [architecture boundaries](ARCHITECTURE.
 
 | Package | Current scope and criterion | Tickets / decisions |
 | --- | --- | --- |
-| WP-00 | Historical provenance/handover fixtures preserved; minimal platform runner/invariant fixtures verified | SOAM-000/034/047/048 done; [SOAM-050](../tickets/SOAM-050-shared-population-candidates.md) ready; application harnesses SOAM-054/057 deferred |
+| WP-00 | Historical provenance/handover fixtures preserved; platform and E1 engineering fixtures verified | SOAM-000/034/047/048/050 done; [SOAM-061](../tickets/SOAM-061-e1-artifact-feasibility.md) done/proceed with A1 storage correction; application harnesses SOAM-054/057 deferred |
 | WP-01 | Minimal shared-unit benefit/interference pilot; concurrent handover only on the selected SOAM-037 fork; symmetric/disjoint/ordinary recurrence controls | SOAM-001/002/033/034 done; [SOAM-049–052](../tickets/SOAM-049-shared-population-protocol.md); SOAM-059 selects follow-up; SOAM-035/036 retained comparison; conditional active disambiguation SOAM-053–055 |
 | WP-02 | Early bounded acquisition/retention with state-reset and one-exposure tests; later module-learning extension | SOAM-003 done; SOAM-004/006 historical branch; SOAM-039/044/040/041; learning-module SOAM-056–058 |
 | WP-03 | Cross-function and instance retention/interference, useful transfer, and write/handover effects | SOAM-005; SOAM-039–041 |

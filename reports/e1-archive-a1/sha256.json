@@ -1,0 +1,13 @@
+{
+  "failed-fixture-provenance.json": "74a4d6f2124805c5cf729ad3d51c0fb4c556dc112272e47b1cd8b921dfa01420",
+  "failed-fixture-status.json": "0a24e46b3b502d32655ec0ab21c367aa387cba778a14a229ebb937c06d7bdc94",
+  "fixture-config.json": "56ae3d9487e420e838fb9d4d592d9de0b41d57fcf3ed8c7734d2eb7bcdaca284",
+  "fixture-provenance.json": "52f26268d9e6127e5eecbe00a043619caaf36cb82e5d0143adb017aa1834357c",
+  "fixture-result.json": "2ab48d9c93686ceacff3067970cdccce7ab35f864298517c67ad0124b500191d",
+  "fixture-status.json": "32b2713bf799876d824441a77d4af31ac6bcd98bbd783e4c010a79f3f5dfe380",
+  "preflight-config.json": "968cf96c179e468a55c8f92ada44b7f3b9f021b73c0ad99f4a3eed695a254e5d",
+  "preflight-cost-ledger.json": "caca90d491124801d2020686dbdbf98d6c0861dc02291a1997a4bd23989e4ed9",
+  "preflight-provenance.json": "692e0871c68a0d5808518aa90a3e455dce696bbc0c0d911c666506258a38896a",
+  "preflight-result.json": "9d6829dcbb83a66bdf925d79b899a0a3a3186bb89c82fd13cbbd39e704238487",
+  "preflight-status.json": "737d35a71a04fc8da159fe0991bde4d3118221f8817844752d8b21016b7f7db2"
+}

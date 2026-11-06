@@ -3,17 +3,17 @@ schema_version: 2
 id: "SOAM-051"
 title: "Measure the benefit and interference of shared recurrence"
 type: "experiment"
-status: "backlog"
+status: "ready"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M1"
 work_packages: ["WP-01", "WP-08"]
 hypotheses: ["H1", "H5", "H6"]
-depends_on: ["SOAM-050"]
+depends_on: ["SOAM-050", "SOAM-061"]
 labels: ["type:experiment", "priority:P0", "milestone:M1"]
 assignees: []
 created: "2026-11-05"
-updated: "2026-11-05"
+updated: "2026-11-06"
 github_issue: null
 decision: null
 ---
@@ -32,6 +32,13 @@ Specification: [SOAM v0.3](../docs/RESEARCH_SPEC_V0_3.md). Apply the
 [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+**Readiness condition satisfied:** SOAM-061 proceeded with scientific E1 v1 plus
+[archive addendum A1](../docs/E1_ARCHIVE_A1.md) and a
+[passing complete calibration](../reports/e1-archive-a1/preflight-cost-ledger.json).
+Use the verified shared-input object store and explicit references for scientific
+execution. Preserve the failed original v1 archive ledger. Commit reviewed source
+before fitting and verify source/addendum fingerprints against accepted calibration.
 
 - Follow [E1 v1](../docs/SHARED_POPULATION_PROTOCOL.md) and its [manifest](../docs/protocols/shared_population_v1.json): 119 fit instances and 27,820 scoring cells including diagnostics/reproduction, subject to the pre-fit feasibility gate and development competence/floor screens. Publish T32 equivalence alongside primary comparisons; it is an identifiability limit, not a failed superiority test to hide.
 - Run only the frozen minimal recall/transition pilot and finite tuning/confirmation budget.
@@ -52,6 +59,7 @@ Planned report: reports/SHARED_POPULATION_STUDY.md. Use only frozen protocol see
 ## Dependencies
 
 - [SOAM-050](SOAM-050-shared-population-candidates.md) — required completed prerequisite; decision prerequisites require proceed for this scope.
+- [SOAM-061](SOAM-061-e1-artifact-feasibility.md) — corrective protocol/storage decision and passing calibration required before fitting.
 
 ## Scientific review disposition — 2026-11-05
 

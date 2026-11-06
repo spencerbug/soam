@@ -1,0 +1,13 @@
+{
+  "expected-failure.json": "63331bcc7f09c3b1dd668488113fdda98fd46754501b136d3261f47ebd583d5d",
+  "fixture-config.json": "8136bfdb64bc1ae2e1fd456428ce1680cf23b9205b7aa9627b25248112ba6ddf",
+  "fixture-provenance.json": "1413c7600535fe8b9c91c730b16e4ec7786d4cc0bb377f8d233611eeb7d9d066",
+  "fixture-result.json": "a4bf61faeba325fbe01dd3313c1acaf86587c17a43a0c2e14289cf3206410cf9",
+  "fixture-status.json": "1112c5cd49cb8e27a56b8385d0e93175b93760c629f6bafedcbad32823a2a34e",
+  "normalization.json": "d2cc9d7a58814ecdb14f5e0b66028f5e410559cc9f9e7432e4bad8937fd4b805",
+  "preflight-config.json": "11e51c43d980faf197e36370e40b632b19f734b8969f9ff4620ed2c888e218a4",
+  "preflight-cost-ledger.json": "e54327991526bbe62ff2db47592731f7eb042b2af334d0044af6e11f69676f2b",
+  "preflight-provenance.json": "0a6c17ee0eb306c7acea83426ad2cf10487cc9f10d4ced23ec8bb98dff971966",
+  "preflight-result.json": "222410250dcdc45ec7b5cc471b3f2ae12afd71823c8b67886356188663f5d511",
+  "preflight-status.json": "b8727f68394c7c90ec7640c8bb7b512044ad901d1cab95697543096d912a49ff"
+}

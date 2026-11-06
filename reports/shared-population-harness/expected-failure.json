@@ -1,0 +1,11 @@
+{
+  "condition": "nonfinite sensory weights",
+  "exception": "FloatingPointError",
+  "expected": true,
+  "family": "S32",
+  "fixture_only": true,
+  "message": "nonfinite tensor",
+  "seed": 9001,
+  "status": "numerical_failure",
+  "successful_score": null
+}

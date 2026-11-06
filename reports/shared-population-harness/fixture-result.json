@@ -1,0 +1,12 @@
+{
+  "batch_size": 2,
+  "cells_per_execution": 181,
+  "confirmation_exposure": 0,
+  "exact_repeat": true,
+  "expected_numerical_failures": 2,
+  "fit_instances": 14,
+  "fixture_only": true,
+  "numerical_arrays_compared": 1560,
+  "study_fits": 0,
+  "updates_per_fit": 2
+}

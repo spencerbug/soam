@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-050"
 title: "Implement the bounded shared-population comparison"
 type: "engineering"
-status: "ready"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -43,14 +43,16 @@ fitting. Failure requires a new protocol decision/version, not silent trial redu
 
 ## Acceptance criteria
 
-- [ ] Run the baseline suite before code changes and verify selected equations with small independent numerical cases.
-- [ ] Test shared-unit participation, action indexing, target exclusion, no-write inference, state ownership, and reproducibility.
-- [ ] Exercise all pilot conditions and failure paths with archived config/source/seeds/software/protocol hashes and resource counts.
-- [ ] Preserve historical handover paths; passing fixtures does not select a research fork or establish useful sharing.
+- [x] Run the baseline suite before code changes and verify selected equations with small independent numerical cases.
+- [x] Test shared-unit participation, action indexing, target exclusion, no-write inference, state ownership, and reproducibility.
+- [x] Exercise all pilot conditions and failure paths with archived config/source/seeds/software/protocol hashes and resource counts.
+- [x] Preserve historical handover paths; passing fixtures does not select a research fork or establish useful sharing.
 
 ## Metrics / evidence
 
-Planned engineering report: reports/SHARED_POPULATION_HARNESS.md. Record precise parameter, neuron, state, buffer, readout, and compute counts. Fixture values are not confirmation results.
+Engineering report: [SHARED_POPULATION_HARNESS.md](../reports/SHARED_POPULATION_HARNESS.md).
+The full-inventory storage projection failed; other resource projections passed.
+Fixture values are not confirmation results. SOAM-061 owns the corrective decision.
 
 ## Dependencies
 
@@ -63,6 +65,25 @@ Planned engineering report: reports/SHARED_POPULATION_HARNESS.md. Record precise
 
 ## Completion record
 
-Not started. Record actual sources, tests/commands, artifacts, limitations, and
-source/configuration/seed provenance appropriate to the work. Preserve negative
-outcomes; this ticket does not authorize other backlog work.
+Started 2026-11-05. Verified SOAM-048 done and SOAM-049 done/proceed; E1 v1 governs
+implementation. Baseline: 110 tests passed in 14.55s before code changes. No assignee
+handle is known. Scientific fitting and measured trials remain SOAM-051.
+
+Completed 2026-11-05. Follow-on baseline: 144 tests passed in 14.67s before further
+code changes. Delivered task streams, packed candidates/T32, observed-only Adam/ridge
+mechanics, interventions, paired-root inference rules, artifact replay and preflight.
+Final `UV_CACHE_DIR=/tmp/soam-uv-cache uv run pytest`: **171 passed in 16.24s**;
+targeted Ruff check/format passed. The engineering command
+`uv run python -m soam.shared.runner --output runs/shared-harness-v1-final` exercised
+181 cells per execution, exactly replayed 1,560 arrays, and recorded two expected
+nonfinite failures. Fourteen tiny fixture fits use isolated streams, two stages of
+one update each and batch two; they are not the SOAM-051 fitting schedule.
+
+`uv run python -m soam.shared.runner --mode preflight --output runs/shared-preflight-v1`
+performed no optimizer updates. The 119-fit/27,820-cell projection failed the artifact
+ceiling: 12,680,048,016 projected bytes with 2× margin versus 8,589,934,592 allowed.
+Other checks passed. The [report and compact evidence](../reports/SHARED_POPULATION_HARNESS.md)
+record source/config/seeds/software, exact timings, resource counts and limitations.
+This completes the engineering ticket with a negative feasibility result, not study
+readiness. [SOAM-061](SOAM-061-e1-artifact-feasibility.md) must resolve it under a fresh
+versioned decision; SOAM-051 remains backlog. No scientific fits or confirmation data ran.
