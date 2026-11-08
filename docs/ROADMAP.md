@@ -30,8 +30,11 @@ contains 119 fits and 27,820 cells, absolute recall failure for S32, passing rel
 retention guards and exact reproduction. Both GRUs have lower primary error; causal
 precision criteria remain unresolved and T32 equality limits identifiability.
 [Execution](E1_CONFIRMATION_EXECUTION.md) is complete with preserved source/selections
-and cumulative allocation. SOAM-052 review is next eligible but unstarted; no gate
-or experimental fork has been selected from this completion.
+and cumulative allocation. [SOAM-052 review](../reports/SHARED_POPULATION_GATE.md)
+is now complete with **stop** for the tested useful-sharing claim. Absolute recall
+failure governs; passing relative guards and unresolved causal precision remain
+separate. Sharing-dependent integration stays unready. SOAM-059 is next eligible
+for routing, unstarted; no experimental fork or replacement candidate is selected.
 
 The shared-mechanism track is SOAM-049 protocol → SOAM-050 candidates → SOAM-061
 corrective feasibility decision → SOAM-051

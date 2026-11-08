@@ -1,5 +1,10 @@
 # Shared-population study — E1 v1 + A1
 
+Review update, 2026-11-08: [SOAM-052](SHARED_POPULATION_GATE.md) is complete with
+**stop for the tested S32 useful-sharing claim**. The measurements and phase-boundary
+history below remain unchanged. SOAM-059 routing is next eligible and unstarted;
+no follow-up experiment has been selected.
+
 2026-11-07. **SOAM-051 is complete with a negative candidate result, not a positive
 sharing gate.** All 70 prescribed confirmation fits, seven seed-11 reproduction
 fits and 25,300 remaining cells completed. Together with preserved development,

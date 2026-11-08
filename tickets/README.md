@@ -30,8 +30,11 @@ projection. SOAM-061 subsequently proceeded with [A1](../docs/E1_ARCHIVE_A1.md) 
 [119 fits and 27,820 cells](../reports/SHARED_POPULATION_STUDY.md), absolute recall
 failure for S32, passing relative recall guards and exact seed-11 reproduction.
 Selections, source and cumulative allocation were preserved. The
-[execution receipt](../docs/E1_CONFIRMATION_EXECUTION.md) is consumed. SOAM-052 review
-is next eligible and unstarted; SOAM-059 has not selected a fork.
+[execution receipt](../docs/E1_CONFIRMATION_EXECUTION.md) is consumed. SOAM-052 is done
+with [stop for E1 v1 S32 useful sharing](../reports/SHARED_POPULATION_GATE.md), retaining
+passing relative guards, causal uncertainty, T32 limits and telemetry caveats.
+No sharing-dependent child is unblocked. SOAM-059 routing is next eligible and
+unstarted; no experimental fork has been selected.
 
 These are GitHub-flavored Markdown issue bodies with YAML frontmatter. They are
 readable as repository files after pushing. They are **not live GitHub Issues**:

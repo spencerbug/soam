@@ -9,6 +9,13 @@ criteria and changes the default information-gain order to E1 useful dynamics,
 E2 rapid retained acquisition, then E3 active disambiguation. These are conditional
 experiments, not three automatically authorized implementation stages.
 
+Current evidence update, 2026-11-08: [SOAM-052](../reports/SHARED_POPULATION_GATE.md)
+records **stop** for the frozen E1 v1 S32 useful-sharing claim after complete SOAM-051
+evidence. Absolute recall failure governs despite passing relative retention guards;
+causal precision is unresolved and T32 attribution limits remain. SOAM-059 routing
+is next eligible but unstarted. The original routing rules below are unchanged;
+no branch or new experiment is selected and the failed gate remains preserved.
+
 ## Small common starting point
 
 SOAM-047 defines the minimum contract; SOAM-049 freezes one recall/transition pilot;

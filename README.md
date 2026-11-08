@@ -26,15 +26,17 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 
 ## Current milestone
 
-**Next eligible: [SOAM-052](tickets/SOAM-052-shared-population-gate.md), review the
-completed [E1 v1 + A1 study](reports/SHARED_POPULATION_STUDY.md).** SOAM-051 completed
-119 fits and 27,820 cells with preserved selections, no scientific retries and exact
-seed-11 reproduction. S32 misses the absolute recall target; both relative recall
-guardrails pass, GRUs have lower primary error, and causal precision criteria remain
-unresolved. T32 equality and recovery limits are reported alongside all comparisons.
-The scientific runner stayed within frozen budgets; source and development results
-are preserved. All 190 tests pass. Gate review and fork selection remain unstarted;
-no new experiment is activated. See the [consumed execution procedure](docs/E1_CONFIRMATION_EXECUTION.md).
+**Next eligible: [SOAM-059](tickets/SOAM-059-research-fork-selection.md), a bounded
+routing decision; no follow-up is selected.** [SOAM-052](tickets/SOAM-052-shared-population-gate.md)
+is complete with **stop** for E1 v1 S32's tested useful-sharing claim. The
+[gate review](reports/SHARED_POPULATION_GATE.md) audits validity, information parity,
+resources and uncertainty before applying absolute recall failure. Both relative
+retention guards pass; GRUs have lower primary error, causal precision is unresolved,
+and T32 prevents a uniquely physical-overlap performance claim. Recovery usefulness
+criteria also fail, separately. This does not reject shared recurrence generally.
+The [full study](reports/SHARED_POPULATION_STUDY.md) preserves 119 fits/27,820 cells,
+exact reproduction and all source/selections/resources. All 190 tests pass.
+Sharing-dependent integration remains unready; SOAM-059 has not started.
 SOAM-039/044/040/041 plan minimal acquisition without waiting for skills or
 concurrency. SOAM-053–055 test active disambiguation with frozen memory. The larger
 Monty-style module (SOAM-056–058) follows supported acquisition and explicit selection.

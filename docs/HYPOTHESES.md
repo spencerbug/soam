@@ -1,6 +1,6 @@
 # Hypotheses and operational evidence ledger
 
-Updated 2026-11-07. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
+Updated 2026-11-08. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
 their wording and provenance. The rows below are operational questions, not new
 schema IDs or retroactive changes to those statements. Scientific criteria and
 proposed numerical defaults live in the [review](SCIENTIFIC_REVIEW_2026_11_05.md);
@@ -16,8 +16,13 @@ absolute recall failure for S32 while both relative retention guards pass. Both 
 have lower primary error; all six causal precision criteria remain unresolved.
 T32 is exactly equivalent and recovery accuracy fails despite distance contraction.
 No useful E1 sharing benefit is established; this scoped result does not reject
-shared neurons generally. Broader historical H1 remains open. SOAM-052 review and
-SOAM-059 routing have not started; these evidence updates are not gate decisions.
+shared neurons generally. [SOAM-052](../reports/SHARED_POPULATION_GATE.md) now records
+**stop for the tested S32 useful-sharing claim**, applying absolute recall failure
+before benefit; the scientific comparison is valid with disclosed reporting telemetry
+limits. Positive interventions do not override unresolved precision or T32's limit,
+and contraction does not establish useful recovery. Broader historical H1/H5/H6
+remain open; this narrow failed gate is preserved. SOAM-059 routing is next eligible
+and unstarted, with no candidate or follow-up experiment selected.
 
 | Historical claim / operational question | Prediction and importance | Convincing experiment / baselines | Success or failure evidence | Negative-result interpretation / class / tickets |
 | --- | --- | --- | --- | --- |
@@ -31,7 +36,8 @@ SOAM-059 routing have not started; these evidence updates are not gate decisions
 | H7: recurrent planning benefits control | Model-dependent action selection should improve realized goal achievement or information efficiency | E3 supplied information-seeking policy crossed with models; later search versus reactive/equal-budget controls | Proposed 20% action-efficiency gain, 90% success, <=5% false confident commitments; no privileged future targets | Separate policy, model, and state-estimation failures. Better prediction alone does not establish control benefit. F, 053–055/023–026/038 |
 | H8: cumulative learning | Related experience should reduce subsequent acquisition cost while retaining earlier competence | D5 fixed-capacity task sequences, prior-experience ablation, continual gradients/replay/task-specific references | Proposed 20% fewer observations to criterion, <=5 percentage-point old-task success loss; all storage and transfer failures disclosed | More stored episodes is not improved learning ability; fixed-capacity failure may justify a later budgeted structural study. F, 027/028 |
 
-Status: all strong scientific claims remain open. Historical Gate 1 and writer
+Status: the E1 v1 S32 useful-sharing claim is stopped; broader strong scientific
+claims remain open. Historical Gate 1 and writer
 contract readiness retain their limited recorded scope; handover fixtures are not
 empirical evidence. E = essential next; P = parallel investigation; F = future
 capability relative to E1. Primary-source precedents establish particular models or
