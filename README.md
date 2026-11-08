@@ -11,7 +11,8 @@ localization and Monty-style sensorimotor learning modules with recurrent memory
 The [v0.2 scope](docs/RESEARCH_SPEC_V0_2.md), [v0.1 specification](docs/RESEARCH_SPEC.md),
 and completed contracts/results retain their historical meanings. The v1 handover
 harness, platform fixture runner and E1 engineering harness are implemented.
-The initial E1 storage check failed; the A1 correction now passes. The E1 development phase is complete; confirmation remains pending.
+The initial E1 storage check failed; the A1 correction passed. The completed E1 study
+records absolute recall failure for S32, with both relative retention guardrails passing.
 
 The [conditional research paths](docs/RESEARCH_PATHS.md) govern follow-ups: first
 measure one benefit of sharing, then select one experimental fork from the results.
@@ -25,15 +26,15 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 
 ## Current milestone
 
-**Next: [SOAM-051](tickets/SOAM-051-shared-population-study.md), the scientific E1 pilot
-under v1 plus [archive addendum A1](docs/E1_ARCHIVE_A1.md).** SOAM-050 delivered the
-[E1 engineering harness](reports/SHARED_POPULATION_HARNESS.md). SOAM-061 resolved
-its initial storage projection failure with verified shared input archives;
-[all replacement checks pass](reports/E1_ARCHIVE_A1.md), including 5.27 GiB projected
-artifacts with 2× margin. All 190 tests pass. The [development study](reports/SHARED_POPULATION_STUDY.md)
-completed 42 fits and passed its baseline-competence screen.
-[Confirmation/reproduction orchestration](docs/E1_CONFIRMATION_EXECUTION.md) is verified,
-calibrated and source-frozen; confirmation remains unopened.
+**Next eligible: [SOAM-052](tickets/SOAM-052-shared-population-gate.md), review the
+completed [E1 v1 + A1 study](reports/SHARED_POPULATION_STUDY.md).** SOAM-051 completed
+119 fits and 27,820 cells with preserved selections, no scientific retries and exact
+seed-11 reproduction. S32 misses the absolute recall target; both relative recall
+guardrails pass, GRUs have lower primary error, and causal precision criteria remain
+unresolved. T32 equality and recovery limits are reported alongside all comparisons.
+The scientific runner stayed within frozen budgets; source and development results
+are preserved. All 190 tests pass. Gate review and fork selection remain unstarted;
+no new experiment is activated. See the [consumed execution procedure](docs/E1_CONFIRMATION_EXECUTION.md).
 SOAM-039/044/040/041 plan minimal acquisition without waiting for skills or
 concurrency. SOAM-053–055 test active disambiguation with frozen memory. The larger
 Monty-style module (SOAM-056–058) follows supported acquisition and explicit selection.
@@ -47,8 +48,8 @@ accept negative results. See the [ordered ticket queue](PRIORITIES.md).
 SOAM-033/034 delivered the frozen [handover protocol](docs/HANDOVER_PROTOCOL.md),
 [numerical manifest](docs/protocols/handover_v1.json), and [harness](docs/HANDOVER_HARNESS.md).
 The [engineering report](reports/HANDOVER_HARNESS.md) records fixture-only verification.
-SOAM-035 remains ready as a P2 comparison branch; no measured v0.2 study or completed E1 confirmation
-study has run, and no handover/shared-population gate has passed.
+SOAM-035 remains ready as a P2 comparison branch; no measured v0.2 study has run.
+E1 confirmation is complete, but no handover/shared-population gate has passed.
 
 The delivered Stage 0/substrate work (WP-00/WP-01) covers synthetic action-conditioned 2D
 regimes, a fixed sensory projection, shared bounded recurrent baselines, independent

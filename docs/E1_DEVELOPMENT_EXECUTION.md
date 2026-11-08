@@ -48,3 +48,11 @@ on the development screen; it is not silently included in this entry point.
 Continuation update, 2026-11-07: the separate [confirmation/reproduction entry point](E1_CONFIRMATION_EXECUTION.md)
 is now fixture-verified, calibrated and source-frozen. The original development
 entry point and its archived results are unchanged; confirmation remains unopened.
+
+Scientific completion update, 2026-11-07: the separately authorized confirmation and
+archived-input repeat have now completed. See the [full report](../reports/SHARED_POPULATION_STUDY.md)
+for all 119 fits/27,820 cells, negative candidate outcome, exact repeat and uncertainty.
+The preceding unopened statement describes the earlier readiness boundary. Original
+development artifacts/selections remain unchanged; the confirmation receipt is consumed.
+SOAM-052 review is next eligible, not started; no fork or extra experiment is authorized
+by this completion record.

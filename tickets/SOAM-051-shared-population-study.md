@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-051"
 title: "Measure the benefit and interference of shared recurrence"
 type: "experiment"
-status: "in_progress"
+status: "done"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M1"
@@ -47,14 +47,14 @@ before fitting and verify source/addendum fingerprints against accepted calibrat
 
 ## Acceptance criteria
 
-- [ ] Publish the primary effect and uncertainty, guardrail outcomes, seed-level failures, all controls, and causal-overlap evidence.
-- [ ] Distinguish no meaningful advantage from inadequate precision, and directional failure from recall failure or numerical invalidity.
-- [ ] Archive complete source/config/seeds/software/numerical settings, exposure, scaffolds, timing/storage/compute, checkpoints and confirmation reproduction.
-- [ ] Preserve negative outcomes without adapting the experiment to them; send complete evidence to the sharing gate and fork-selection decision. No experimental fork is automatically launched.
+- [x] Publish the primary effect and uncertainty, guardrail outcomes, seed-level failures, all controls, and causal-overlap evidence.
+- [x] Distinguish no meaningful advantage from inadequate precision, and directional failure from recall failure or numerical invalidity.
+- [x] Archive complete source/config/seeds/software/numerical settings, exposure, scaffolds, timing/storage/compute, checkpoints and confirmation reproduction.
+- [x] Preserve negative outcomes without adapting the experiment to them; send complete evidence to the sharing gate and fork-selection decision. No experimental fork is automatically launched.
 
 ## Metrics / evidence
 
-Planned report: reports/SHARED_POPULATION_STUDY.md. Use only frozen protocol seeds, splits, thresholds, and budgets. Report fixed-point/cycle recovery separately from forced tracking and ordinary prediction.
+Completed report: [SHARED_POPULATION_STUDY.md](../reports/SHARED_POPULATION_STUDY.md). Use only frozen protocol seeds, splits, thresholds, and budgets. Report fixed-point/cycle recovery separately from forced tracking and ordinary prediction.
 
 ## Dependencies
 
@@ -66,6 +66,9 @@ Planned report: reports/SHARED_POPULATION_STUDY.md. Use only frozen protocol see
 **Essential for the next experiment** (R1/R2/R3) in the [scientific review](../docs/SCIENTIFIC_REVIEW_2026_11_05.md). Implement, measure, or review E1 against the frozen protocol and review defaults. Report performance utility separately from attraction and from biological/semantic claims. Require matched random/disjoint lesions and a competent GRU; no capacity or information advantage may be relabeled a sharing effect.
 
 ## Completion record
+
+The earlier entries below are preserved phase-boundary history. The final scientific
+completion record at the end supersedes their pending-execution status.
 
 Started 2026-11-06 after verifying SOAM-050 done and SOAM-061 done/proceed.
 Committed prerequisite implementation as `a0e4e3f`. The bounded
@@ -129,3 +132,56 @@ Development-only GRU advantage/S32 recall weakness and the T32 identifiability l
 remain publication-worthy context for a joint blog post and report after confirmation;
 no publication is authorized or performed. Fixture success is not scientific evidence
 for useful sharing, attraction or biological validation.
+
+### Scientific execution complete — 2026-11-07
+
+All acceptance items are satisfied by the [complete report](../reports/SHARED_POPULATION_STUDY.md)
+and [checksummed confirmation evidence](../reports/shared-population-study/confirmation/sha256.json).
+Status is `done`; `decision` remains null because this is an experiment, not SOAM-052's
+gate review. Recommended thinking remains **xhigh** for the consequential distinctions
+between absolute recall failure, passing relative retention guards and unresolved
+causal precision. SOAM-050 done, SOAM-061 done/proceed and all ticket-body conditions
+were checked before the once-only execution.
+
+- `uv run pytest` before execution: **190 passed in 14.45s**.
+- Executed `uv run python -m soam.shared.continuation --mode execute --readiness runs/e1-confirmation-readiness-v1 --output runs/e1-confirmation-v1-a1` once; exit 0.
+- Completed 70/70 confirmation fits, 7/7 archived-input reproduction fits and
+  25,300/25,300 new cells. Preserved 42 development fits/2,520 cells yield the exact
+  frozen total **119 fits / 27,820 cells**. No scientific failures, exclusions,
+  replacements, retries, retuning or allocation extensions.
+- Frozen outcome: **`recall_interference_or_failure`**, specifically absolute recall
+  failure (S32 0.077657 >0.02). Both relative recall guards pass; free-8 absolute
+  threshold passes (0.086825 ≤0.10), but required comparative utility does not.
+  Both GRUs have lower primary error; all six causal width criteria remain unresolved.
+  Recovery is `diagnostic_criteria_not_met`. All required comparisons, ordinary and
+  adjusted intervals, controls, failures and root-level results are reported.
+- Scientific repeat is exact: **11,764 arrays, 7,280 input references, 9,603 records**.
+  T32 intact identity and T32/D16 opposite-bank isolation each pass 440 episode-pair /
+  660 prediction-array checks at exactly zero difference. No extra independent root.
+- Read-only audit verified 7,440 A1 objects, 80,080 references, 129,404 finite arrays,
+  stream derivation/separation, selection ordering, metric reductions and bootstrap
+  bounds. Two incomplete reporting attempts are preserved and conservatively charged;
+  the regrouped-mean tolerance correction affects only extraction, not scientific
+  source, results, inference thresholds or exact reproduction.
+- Development selections remain neural config 1 / L12 config 0, primary reference
+  G32. Confirmation roots 11,23,47,71,101,131,173,211,257,307; repeat root 11.
+  Reviewed source `fe9925f796af0a835a509cbef3bded4be3783fa3`, execution HEAD
+  `7b3dea667cd65626af259a6ccbf0e17e0d8e96f6`, source digest
+  `b52329efaa0a4927337691e60a5b610ed08984b884aef8dd5b7b12801f2408c9`.
+  Software/numerics/config and exposure details, including the capture-wrapper hash
+  distinction and L12 ridge accounting, are archived and explained in the report.
+- Confirmation CPU 1,736.235285s, repeat 316.280692s; maximum fit 36.121810s <90s.
+  [Final cumulative ledger](../reports/shared-population-study/confirmation/final-ledger.json)
+  retains the original carry, reporting attempts and audit. Scientific runtime
+  ceilings pass; reporting-attempt RSS telemetry limitations are disclosed.
+- Final `uv run python scripts/check_tickets.py`, targeted source Ruff check/format,
+  `git diff --check`, unchanged-source/calibration verification and preserved
+  development/evidence checksums pass; exact outputs are in
+  [verification.json](../reports/shared-population-study/confirmation/verification.json).
+
+The consumed receipt and all scientific/engineering artifacts are retained. Nothing
+was published or pushed. The confirmed baseline/retention/identifiability/recovery
+findings merit a joint blog post and report after review; that flag is not publication
+authorization. **Next eligible action: SOAM-052 evidence review**, unstarted. SOAM-059
+remains a separate unstarted routing decision; no gate outcome or new experiment is
+included in this completion.

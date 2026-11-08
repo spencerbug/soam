@@ -1,0 +1,90 @@
+[
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 11,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 23,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 47,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 71,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 101,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 131,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 173,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 211,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 257,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "confirmation",
+    "root": 307,
+    "status": "complete"
+  },
+  {
+    "cells": 2300,
+    "completed_cells": 2300,
+    "fits": 7,
+    "phase": "repeat",
+    "root": 11,
+    "status": "complete"
+  }
+]

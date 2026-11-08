@@ -1,0 +1,17 @@
+[
+  {
+    "attempt": 1,
+    "cpu_seconds_upper_charge": 177,
+    "outcome": "report extraction incomplete; terminal diagnosis not retained",
+    "peak_rss": "not separately captured; reporting-only attempt",
+    "wall_seconds_upper_charge": 177
+  },
+  {
+    "attempt": 2,
+    "cpu_seconds_upper_charge": 44,
+    "outcome": "AssertionError at exact regrouped floating-point mean comparison",
+    "peak_rss": "not separately captured; reporting-only attempt",
+    "traceback": "Traceback (most recent call last):\n  File \"/tmp/soam051_analyze_confirmation.py\", line 171, in <module>\n    assert actual==summary['condition_means'][condition][key]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "wall_seconds_upper_charge": 44
+  }
+]

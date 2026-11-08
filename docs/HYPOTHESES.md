@@ -11,9 +11,13 @@ SOAM-049 now freezes [E1 v1](SHARED_POPULATION_PROTOCOL.md) and its
 identifiability limit: separate-role episodes cannot establish a performance
 advantage of physical neuron overlap over tied weights. The test concerns a useful
 shared implementation and unit-basis causal participation, with that limitation.
-The [E1 development measurements](../reports/SHARED_POPULATION_STUDY.md) are complete;
-confirmation remains unopened. No confirmed E1 benefit is established, and the
-broader historical H1 claim remains open.
+The [completed E1 v1+A1 measurements](../reports/SHARED_POPULATION_STUDY.md) record
+absolute recall failure for S32 while both relative retention guards pass. Both GRUs
+have lower primary error; all six causal precision criteria remain unresolved.
+T32 is exactly equivalent and recovery accuracy fails despite distance contraction.
+No useful E1 sharing benefit is established; this scoped result does not reject
+shared neurons generally. Broader historical H1 remains open. SOAM-052 review and
+SOAM-059 routing have not started; these evidence updates are not gate decisions.
 
 | Historical claim / operational question | Prediction and importance | Convincing experiment / baselines | Success or failure evidence | Negative-result interpretation / class / tickets |
 | --- | --- | --- | --- | --- |

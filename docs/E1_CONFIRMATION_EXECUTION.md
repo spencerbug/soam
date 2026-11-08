@@ -2,15 +2,22 @@
 
 Revision 1, 2026-11-07. This completes execution support for scientific E1 v1 plus
 [A1](E1_ARCHIVE_A1.md). It changes no scientific mechanism, stream, configuration,
-comparison, endpoint, threshold, inventory or resource ceiling. Confirmation data
-remain unopened. The [readiness evidence](../reports/SHARED_POPULATION_STUDY.md#confirmation-execution-readiness--2026-11-07)
-is an engineering result, not a scientific gate.
+comparison, endpoint, threshold, inventory or resource ceiling.
+
+**Execution completed once on 2026-11-07:** 70 confirmation fits, seven archived-input
+repeat fits and 25,300 cells; exact reproduction and complete diagnostics. The
+[scientific report](../reports/SHARED_POPULATION_STUDY.md) records absolute recall
+failure, passing relative recall guards and the full uncertainty/resource audit.
+SOAM-051 is done. `execution-claim.json` is consumed and must remain; do not rerun
+these commands or create a replacement receipt. SOAM-052/059 remain unstarted.
+The [earlier readiness evidence](../reports/SHARED_POPULATION_STUDY.md#confirmation-execution-readiness--2026-11-07)
+remains an engineering result, separate from the completed scientific measurements.
 
 ## Reviewed starting state
 
-SOAM-050 is done; SOAM-061 is done/proceed. SOAM-051 remains in progress. Its body
-conditions are satisfied by the passing development competence/floor screen and
-current complete A1 calibration. SOAM-052/059 remain backlog; no fork is selected.
+At the execution boundary SOAM-050 was done, SOAM-061 done/proceed, and SOAM-051
+in progress. Its body conditions were satisfied by the passing development
+competence/floor screen and complete A1 calibration. SOAM-052/059 remain backlog; no fork is selected.
 
 Preserve `runs/e1-development-v1-a1` and its compact report unchanged. It contains
 42 fits, 2,520 cells, 31,920 references, 2,220 verified objects and 48,382 files.
@@ -50,9 +57,10 @@ the carried resources and remaining projections. Full archives remain in `runs/`
 [compact evidence and checksums](../reports/shared-population-study/continuation/sha256.json)
 are tracked. Retain both: compact metadata cannot reproduce input trajectories.
 
-## Next scientific execution — not run in this continuation
+## Completed scientific execution — do not repeat
 
-When SOAM-051 confirmation execution is requested, use the reviewed receipt once:
+The owner requested execution after readiness. This command completed successfully
+with the reviewed receipt, preserving the ordering and stopping rules below:
 
 ```sh
 uv run python -m soam.shared.continuation --mode execute --readiness runs/e1-confirmation-readiness-v1 --output runs/e1-confirmation-v1-a1
@@ -109,4 +117,5 @@ At full completion, the preserved development plus this continuation totals exac
 `result.json`, status/resource ledgers and provenance before interpreting evidence.
 Finish SOAM-051's scientific report and acceptance criteria only from actual results.
 Then SOAM-052 reviews the claim and SOAM-059 selects at most one subsequent fork;
-neither is activated by this readiness assessment.
+neither is activated by completion of this experiment. The full counts and audit
+are now recorded in the report; no downstream review has been performed here.

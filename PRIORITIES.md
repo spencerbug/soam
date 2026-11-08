@@ -1,6 +1,6 @@
 # Priority and milestone tracker
 
-Updated: 2026-11-06. The owner adopted the [v0.3 shared-population experiment
+Updated: 2026-11-07. The owner adopted the [v0.3 shared-population experiment
 platform scope](docs/RESEARCH_SPEC_V0_3.md). Overlapping neurons for features,
 relationships, and action relations are the preferred architecture hypothesis.
 Separated networks remain controls. The program also supports independent Hopfield
@@ -31,13 +31,14 @@ versus 8 GiB), while compute and RSS checks passed. That engineering phase inclu
 SOAM-061 completed with `decision: "proceed"` for [archive addendum A1](docs/E1_ARCHIVE_A1.md).
 The [replacement calibration](reports/E1_ARCHIVE_A1.md) passes all limits, including
 5.27 GiB projected artifacts with 2× margin. All 190 tests pass.
-**Next primary task: [SOAM-051](tickets/SOAM-051-shared-population-study.md),
-continue the frozen scientific pilot under v1+A1.** Its [development phase](reports/SHARED_POPULATION_STUDY.md)
-completed all 42 fits and 2,520 cells without failures; the competence/floor screen
-passes. G32 is the preselected primary reference. [Continuation execution support](docs/E1_CONFIRMATION_EXECUTION.md)
-is verified and calibrated at committed source `fe9925f`; the cumulative readiness
-receipt passes. Next eligible action is the frozen confirmation/repeat execution.
-Confirmation remains unopened; SOAM-051 stays in progress and no fork is activated.
+**Next primary task: [SOAM-052](tickets/SOAM-052-shared-population-gate.md),
+review the completed E1 evidence.** [SOAM-051](tickets/SOAM-051-shared-population-study.md)
+is done: [119 fits / 27,820 cells](reports/SHARED_POPULATION_STUDY.md), exact seed-11
+reproduction, preserved development selections and cumulative budget. The frozen
+outcome is absolute recall failure for S32; relative recall guardrails pass, both
+GRUs have lower primary error, and causal width criteria remain unresolved.
+[Execution](docs/E1_CONFIRMATION_EXECUTION.md) is complete and its receipt consumed.
+SOAM-052 and SOAM-059 remain unstarted/backlog; this completion activates no fork.
 
 SOAM-033/034 completed the frozen [handover protocol](docs/HANDOVER_PROTOCOL.md),
 [numerical manifest](docs/protocols/handover_v1.json), and [fixture-verified harness](reports/HANDOVER_HARNESS.md).
@@ -72,7 +73,7 @@ IDs are thematic provenance groups, not sequential dates or compulsory stages fo
 | Milestone | Focus | Exit evidence / decision | State |
 | --- | --- | --- | --- |
 | M0 | Reusable recurrent experiment infrastructure | Historical harnesses plus the minimal SOAM-047 contract and SOAM-048 runner/invariant fixtures | Minimal runner delivered; exact fixture repeat and 110 passing tests; no scientific gate |
-| M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; development complete; continuation source frozen and ready; confirmation unopened; empirical gate open |
+| M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; 119 fits/27,820 cells complete; absolute recall failure, exact repeat; SOAM-052 review next, empirical gate open |
 | M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Historical contract complete; shared acquisition open |
 | M3 | Conditional functional scopes | SOAM-007–010; limited interference with beneficial sharing | Deferred comparison branch |
 | M4 | Replay and overlapping organization | SOAM-011/012, SOAM-042/043 at fixed capacity; optional SOAM-013–015 | Planned; learned refinement conditional |
@@ -143,7 +144,7 @@ Order is a preference within the selected path. It never schedules all alternati
 | 11 | [SOAM-048: Implement the reusable recurrent-dynamics experiment runner](tickets/SOAM-048-platform-runner.md) | P0 | done | M0 | high | [SOAM-047](tickets/SOAM-047-platform-contract.md) |
 | 12 | [SOAM-050: Implement the bounded shared-population comparison](tickets/SOAM-050-shared-population-candidates.md) | P0 | done | M1 | high | [SOAM-048](tickets/SOAM-048-platform-runner.md), [SOAM-049](tickets/SOAM-049-shared-population-protocol.md) |
 | 13 | [SOAM-061: Resolve E1 artifact feasibility before scientific fitting](tickets/SOAM-061-e1-artifact-feasibility.md) | P0 | done | M1 | high | [SOAM-049](tickets/SOAM-049-shared-population-protocol.md), [SOAM-050](tickets/SOAM-050-shared-population-candidates.md) |
-| 14 | [SOAM-051: Measure the benefit and interference of shared recurrence](tickets/SOAM-051-shared-population-study.md) | P0 | in_progress | M1 | xhigh | [SOAM-050](tickets/SOAM-050-shared-population-candidates.md), [SOAM-061](tickets/SOAM-061-e1-artifact-feasibility.md) |
+| 14 | [SOAM-051: Measure the benefit and interference of shared recurrence](tickets/SOAM-051-shared-population-study.md) | P0 | done | M1 | xhigh | [SOAM-050](tickets/SOAM-050-shared-population-candidates.md), [SOAM-061](tickets/SOAM-061-e1-artifact-feasibility.md) |
 | 15 | [SOAM-052: Review evidence for useful shared recurrence](tickets/SOAM-052-shared-population-gate.md) | P0 | backlog | M1 | xhigh | [SOAM-051](tickets/SOAM-051-shared-population-study.md) |
 | 16 | [SOAM-059: Select one bounded research fork from the pilot evidence](tickets/SOAM-059-research-fork-selection.md) | P0 | backlog | MX | xhigh | [SOAM-051](tickets/SOAM-051-shared-population-study.md) |
 | 17 | [SOAM-039: Specify minimal grounded acquisition and retention](tickets/SOAM-039-grounded-memory-design.md) | P1 | backlog | M2 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-059](tickets/SOAM-059-research-fork-selection.md) |

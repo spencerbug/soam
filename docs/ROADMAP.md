@@ -25,11 +25,13 @@ SOAM-048 delivered the [fixture-verified runner](../reports/RECURRENT_PLATFORM.m
 SOAM-050 delivered the [E1 engineering harness](../reports/SHARED_POPULATION_HARNESS.md),
 with exact fixture replay and a failed artifact-storage preflight. SOAM-061 subsequently proceeded with
 [archive addendum A1](E1_ARCHIVE_A1.md) and a [passing calibration](../reports/E1_ARCHIVE_A1.md).
-SOAM-051 is in progress under v1+A1: its [development phase](../reports/SHARED_POPULATION_STUDY.md)
-completed 42 fits and passed the baseline screen. [Confirmation/reproduction support](E1_CONFIRMATION_EXECUTION.md)
-is verified, calibrated and source-frozen; confirmation remains unopened. Shared feature/relation/action
-neurons are the preferred candidate; separated populations are controls. Genuine
-overlap, binding, interference, and directional dynamics require measured evidence.
+SOAM-051 is complete under v1+A1: the [study](../reports/SHARED_POPULATION_STUDY.md)
+contains 119 fits and 27,820 cells, absolute recall failure for S32, passing relative
+retention guards and exact reproduction. Both GRUs have lower primary error; causal
+precision criteria remain unresolved and T32 equality limits identifiability.
+[Execution](E1_CONFIRMATION_EXECUTION.md) is complete with preserved source/selections
+and cumulative allocation. SOAM-052 review is next eligible but unstarted; no gate
+or experimental fork has been selected from this completion.
 
 The shared-mechanism track is SOAM-049 protocol → SOAM-050 candidates → SOAM-061
 corrective feasibility decision → SOAM-051
