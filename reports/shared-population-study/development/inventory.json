@@ -1,0 +1,686 @@
+{
+  "development": [
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 8.503212,
+      "family": "S32",
+      "id": "development-S32-c0-s401",
+      "means": {
+        "recall_final": 0.07877194578613474,
+        "recall_pre": 0.13716657028368415,
+        "transition": 0.07026089601989674
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.107315,
+      "family": "S32",
+      "id": "development-S32-c0-s409",
+      "means": {
+        "recall_final": 0.08796099466307314,
+        "recall_pre": 0.20537475347675654,
+        "transition": 0.11530000845501158
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.819748999999998,
+      "family": "S32",
+      "id": "development-S32-c0-s419",
+      "means": {
+        "recall_final": 0.09630144114445724,
+        "recall_pre": 0.22483228793808885,
+        "transition": 0.07745336528217464
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.571188999999997,
+      "family": "S32",
+      "id": "development-S32-c1-s401",
+      "means": {
+        "recall_final": 0.05524247232240061,
+        "recall_pre": 0.06663283047020466,
+        "transition": 0.06476469128648911
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.683717000000001,
+      "family": "S32",
+      "id": "development-S32-c1-s409",
+      "means": {
+        "recall_final": 0.055693317928978504,
+        "recall_pre": 0.08892084982490375,
+        "transition": 0.0910426554143309
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.61862,
+      "family": "S32",
+      "id": "development-S32-c1-s419",
+      "means": {
+        "recall_final": 0.07907506072182433,
+        "recall_pre": 0.1205961241606012,
+        "transition": 0.05300841845483005
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 10.603076999999999,
+      "family": "D25",
+      "id": "development-D25-c0-s401",
+      "means": {
+        "recall_final": 0.08071956379044296,
+        "recall_pre": 0.38452621435472667,
+        "transition": 0.1073022262627575
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 10.582259000000008,
+      "family": "D25",
+      "id": "development-D25-c0-s409",
+      "means": {
+        "recall_final": 0.08644385460542404,
+        "recall_pre": 0.17865105430027933,
+        "transition": 0.12600518677990666
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 10.630099999999999,
+      "family": "D25",
+      "id": "development-D25-c0-s419",
+      "means": {
+        "recall_final": 0.09106147368335211,
+        "recall_pre": 0.3578997897845543,
+        "transition": 0.09255301546621712
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 10.634657000000004,
+      "family": "D25",
+      "id": "development-D25-c1-s401",
+      "means": {
+        "recall_final": 0.07610135836411872,
+        "recall_pre": 0.08294637777641836,
+        "transition": 0.08209281458055383
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 10.772517999999991,
+      "family": "D25",
+      "id": "development-D25-c1-s409",
+      "means": {
+        "recall_final": 0.06978199877919891,
+        "recall_pre": 0.08038940599038571,
+        "transition": 0.11122446650827951
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 10.765687,
+      "family": "D25",
+      "id": "development-D25-c1-s419",
+      "means": {
+        "recall_final": 0.08354603263583016,
+        "recall_pre": 0.13509291067272028,
+        "transition": 0.07591687309972298
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 10.591256000000001,
+      "family": "D16",
+      "id": "development-D16-c0-s401",
+      "means": {
+        "recall_final": 0.07374688352938578,
+        "recall_pre": 0.30665488099462956,
+        "transition": 0.10820684849202403
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 10.610226000000011,
+      "family": "D16",
+      "id": "development-D16-c0-s409",
+      "means": {
+        "recall_final": 0.0871925750227798,
+        "recall_pre": 0.44114120149920355,
+        "transition": 0.13015313372391948
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 10.677897000000002,
+      "family": "D16",
+      "id": "development-D16-c0-s419",
+      "means": {
+        "recall_final": 0.08878506913244663,
+        "recall_pre": 0.4488405002928273,
+        "transition": 0.10161853576307896
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 10.730920999999995,
+      "family": "D16",
+      "id": "development-D16-c1-s401",
+      "means": {
+        "recall_final": 0.07166160817632598,
+        "recall_pre": 0.08516314145719107,
+        "transition": 0.06952053184137344
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 10.793302000000011,
+      "family": "D16",
+      "id": "development-D16-c1-s409",
+      "means": {
+        "recall_final": 0.07804523237169504,
+        "recall_pre": 0.11361785983748951,
+        "transition": 0.0987912226015196
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 10.772674999999992,
+      "family": "D16",
+      "id": "development-D16-c1-s419",
+      "means": {
+        "recall_final": 0.08452053652645418,
+        "recall_pre": 0.12355561903656678,
+        "transition": 0.066767349206205
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.006180999999998,
+      "family": "G28",
+      "id": "development-G28-c0-s401",
+      "means": {
+        "recall_final": 0.07278190090764383,
+        "recall_pre": 0.9875520983744911,
+        "transition": 0.14575685402467528
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.087985000000003,
+      "family": "G28",
+      "id": "development-G28-c0-s409",
+      "means": {
+        "recall_final": 0.06493263887440251,
+        "recall_pre": 0.836966841443954,
+        "transition": 0.15759934879512955
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.080174,
+      "family": "G28",
+      "id": "development-G28-c0-s419",
+      "means": {
+        "recall_final": 0.07050321502092857,
+        "recall_pre": 1.010871702202363,
+        "transition": 0.1707035078909907
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.099604999999997,
+      "family": "G28",
+      "id": "development-G28-c1-s401",
+      "means": {
+        "recall_final": 0.0227412326893536,
+        "recall_pre": 0.0781595273339607,
+        "transition": 0.03702651997210867
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.212781999999976,
+      "family": "G28",
+      "id": "development-G28-c1-s409",
+      "means": {
+        "recall_final": 0.012533344464326024,
+        "recall_pre": 0.07747566401923178,
+        "transition": 0.038784022173309445
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.151129999999995,
+      "family": "G28",
+      "id": "development-G28-c1-s419",
+      "means": {
+        "recall_final": 0.02021738118381337,
+        "recall_pre": 0.1295010612711467,
+        "transition": 0.03382426114868543
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.175282999999979,
+      "family": "G32",
+      "id": "development-G32-c0-s401",
+      "means": {
+        "recall_final": 0.05172470075736617,
+        "recall_pre": 0.964232715453656,
+        "transition": 0.12356064523601581
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.246652000000012,
+      "family": "G32",
+      "id": "development-G32-c0-s409",
+      "means": {
+        "recall_final": 0.06290190842772785,
+        "recall_pre": 0.8250787892910942,
+        "transition": 0.16067156052278603
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.277522000000033,
+      "family": "G32",
+      "id": "development-G32-c0-s419",
+      "means": {
+        "recall_final": 0.07756321189498808,
+        "recall_pre": 0.9612483770989325,
+        "transition": 0.1559315521975991
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.302076999999997,
+      "family": "G32",
+      "id": "development-G32-c1-s401",
+      "means": {
+        "recall_final": 0.012734181498524474,
+        "recall_pre": 0.07596455790149356,
+        "transition": 0.021142999952141913
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.372875999999962,
+      "family": "G32",
+      "id": "development-G32-c1-s409",
+      "means": {
+        "recall_final": 0.015403141449389068,
+        "recall_pre": 0.08015153580977692,
+        "transition": 0.040220639403262926
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.373509000000013,
+      "family": "G32",
+      "id": "development-G32-c1-s419",
+      "means": {
+        "recall_final": 0.018157317383708793,
+        "recall_pre": 0.11110347555801589,
+        "transition": 0.03328070385437432
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 6.5872380000000135,
+      "family": "L12",
+      "id": "development-L12-c0-s401",
+      "means": {
+        "recall_final": 0.07426721268927684,
+        "recall_pre": 0.07580652569396619,
+        "transition": 0.06174507652467787
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 6.679101000000003,
+      "family": "L12",
+      "id": "development-L12-c0-s409",
+      "means": {
+        "recall_final": 0.06372462589016663,
+        "recall_pre": 0.05979140568628867,
+        "transition": 0.09810493516475169
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 6.693449000000044,
+      "family": "L12",
+      "id": "development-L12-c0-s419",
+      "means": {
+        "recall_final": 0.08303680358025108,
+        "recall_pre": 0.08213382227973454,
+        "transition": 0.06770450616069804
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 6.713408000000015,
+      "family": "L12",
+      "id": "development-L12-c1-s401",
+      "means": {
+        "recall_final": 0.15138923681287847,
+        "recall_pre": 0.14809482091877682,
+        "transition": 0.19947388912890754
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 6.737349999999992,
+      "family": "L12",
+      "id": "development-L12-c1-s409",
+      "means": {
+        "recall_final": 0.11789468095847218,
+        "recall_pre": 0.11680623086430139,
+        "transition": 0.2278298230574643
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 6.750784999999951,
+      "family": "L12",
+      "id": "development-L12-c1-s419",
+      "means": {
+        "recall_final": 0.12776205479287628,
+        "recall_pre": 0.12902872706121482,
+        "transition": 0.16351420418537524
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.482854000000032,
+      "family": "SYM32",
+      "id": "development-SYM32-c0-s401",
+      "means": {
+        "recall_final": 0.08161469100981295,
+        "recall_pre": 0.16670074391005907,
+        "transition": 0.16933628571379147
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.542546999999956,
+      "family": "SYM32",
+      "id": "development-SYM32-c0-s409",
+      "means": {
+        "recall_final": 0.0977346882234219,
+        "recall_pre": 0.16275980724064032,
+        "transition": 0.1867992005503153
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 0,
+      "cpu_seconds": 9.504836000000012,
+      "family": "SYM32",
+      "id": "development-SYM32-c0-s419",
+      "means": {
+        "recall_final": 0.10037458412647167,
+        "recall_pre": 0.2593547072802192,
+        "transition": 0.1757191133709964
+      },
+      "root": 419,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.530327999999997,
+      "family": "SYM32",
+      "id": "development-SYM32-c1-s401",
+      "means": {
+        "recall_final": 0.06178963507255334,
+        "recall_pre": 0.0680313347680617,
+        "transition": 0.13630932387742395
+      },
+      "root": 401,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.604041999999993,
+      "family": "SYM32",
+      "id": "development-SYM32-c1-s409",
+      "means": {
+        "recall_final": 0.05231878719434256,
+        "recall_pre": 0.08825360261135491,
+        "transition": 0.18661866581166997
+      },
+      "root": 409,
+      "status": "complete"
+    },
+    {
+      "archived_batches": 700,
+      "base_cells": 60,
+      "completed_cells": 60,
+      "config": 1,
+      "cpu_seconds": 9.624349999999993,
+      "family": "SYM32",
+      "id": "development-SYM32-c1-s419",
+      "means": {
+        "recall_final": 0.10374450797628357,
+        "recall_pre": 0.12706028778767275,
+        "transition": 0.20103076767150713
+      },
+      "root": 419,
+      "status": "complete"
+    }
+  ],
+  "later_phases": {
+    "base_cells": 4620,
+    "confirmation_fits": 70,
+    "diagnostic_cells": 20680,
+    "reason": "development_passed_confirmation_pending",
+    "repeat_fits": 7,
+    "status": "not_started"
+  },
+  "planned_full_cells": 27820,
+  "planned_full_fit_instances": 119
+}

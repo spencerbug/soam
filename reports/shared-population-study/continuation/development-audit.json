@@ -1,0 +1,118 @@
+{
+  "archive_file_count": 48382,
+  "archive_sha256": "3780bbb310ee7bc7d9b9ebf70afe58d0b39e0565a7234c704ea361f288d7c4fd",
+  "bytes_on_disk": 95228443,
+  "cells": 2520,
+  "compact_fit_results_match": true,
+  "confirmation_data_read": false,
+  "development_status": {
+    "artifact_bytes": 97048731,
+    "best_selected_gru": "G32",
+    "confirmation_allowed": true,
+    "cpu_seconds": 406.20842100000004,
+    "floor_limited": false,
+    "gru_competent": true,
+    "outcome": "development_passed_confirmation_pending",
+    "peak_rss_bytes": 320487424,
+    "phase_cpu_seconds": 392.37282000000005,
+    "primary_reference": "G32",
+    "selected_configs": {
+      "D16": 1,
+      "D25": 1,
+      "G28": 1,
+      "G32": 1,
+      "L12": 0,
+      "S32": 1,
+      "SYM32": 1
+    },
+    "selected_means": {
+      "D16": [
+        0.07835970121636601,
+        0.07807579235815841
+      ],
+      "D25": [
+        0.08974471806285211,
+        0.07647646325971592
+      ],
+      "G28": [
+        0.03654493443136785,
+        0.018497319445831
+      ],
+      "G32": [
+        0.03154811440325972,
+        0.015431546777207447
+      ],
+      "L12": [
+        0.07585150595004253,
+        0.0736762140532315
+      ],
+      "S32": [
+        0.06960525505188336,
+        0.06333695032440115
+      ],
+      "SYM32": [
+        0.17465291912020034,
+        0.07261764341439315
+      ]
+    },
+    "status": "development_complete",
+    "wall_seconds": 407.710123457975
+  },
+  "fit_cpu_max": 9.749873999999977,
+  "fit_cpu_sum": 355.56926000000016,
+  "fits": 42,
+  "input_references": 31920,
+  "normalization_samples": 2048,
+  "normalization_statistics_verified": true,
+  "normalization_variance": 0.03096017249093924,
+  "screen": {
+    "best_selected_gru": "G32",
+    "confirmation_allowed": true,
+    "floor_limited": false,
+    "gru_competent": true,
+    "primary_reference": "G32",
+    "selected_configs": {
+      "D16": 1,
+      "D25": 1,
+      "G28": 1,
+      "G32": 1,
+      "L12": 0,
+      "S32": 1,
+      "SYM32": 1
+    },
+    "selected_means": {
+      "D16": [
+        0.07835970121636601,
+        0.07807579235815841
+      ],
+      "D25": [
+        0.08974471806285211,
+        0.07647646325971592
+      ],
+      "G28": [
+        0.03654493443136785,
+        0.018497319445831
+      ],
+      "G32": [
+        0.03154811440325972,
+        0.015431546777207447
+      ],
+      "L12": [
+        0.07585150595004253,
+        0.0736762140532315
+      ],
+      "S32": [
+        0.06960525505188336,
+        0.06333695032440115
+      ],
+      "SYM32": [
+        0.17465291912020034,
+        0.07261764341439315
+      ]
+    }
+  },
+  "source_commit": "e2bf0ca9b9a6d24ff2197dee76a00590a60b8d3d",
+  "source_sha256": "e0585121bcd98d1bf1b49e6d21858a20279cd97f17849a91e4d1291c25f652bb",
+  "source_unchanged": true,
+  "unique_objects": 2220
+}

@@ -27,12 +27,17 @@ SOAM-048 delivered the [fixture-verified platform runner](reports/RECURRENT_PLAT
 SOAM-050 delivered the [E1 engineering harness](reports/SHARED_POPULATION_HARNESS.md):
 171 passing tests, 181 fixture cells per execution and exact replay of 1,560 arrays.
 Its full-inventory preflight failed the artifact projection (11.81 GiB with 2× margin
-versus 8 GiB), while compute and RSS checks passed. No scientific study has run.
+versus 8 GiB), while compute and RSS checks passed. That engineering phase included no scientific fits.
 SOAM-061 completed with `decision: "proceed"` for [archive addendum A1](docs/E1_ARCHIVE_A1.md).
 The [replacement calibration](reports/E1_ARCHIVE_A1.md) passes all limits, including
-5.27 GiB projected artifacts with 2× margin. All 173 tests pass.
+5.27 GiB projected artifacts with 2× margin. All 190 tests pass.
 **Next primary task: [SOAM-051](tickets/SOAM-051-shared-population-study.md),
-execute the frozen scientific pilot under v1+A1.** No scientific fits have run.
+continue the frozen scientific pilot under v1+A1.** Its [development phase](reports/SHARED_POPULATION_STUDY.md)
+completed all 42 fits and 2,520 cells without failures; the competence/floor screen
+passes. G32 is the preselected primary reference. [Continuation execution support](docs/E1_CONFIRMATION_EXECUTION.md)
+is verified and calibrated at committed source `fe9925f`; the cumulative readiness
+receipt passes. Next eligible action is the frozen confirmation/repeat execution.
+Confirmation remains unopened; SOAM-051 stays in progress and no fork is activated.
 
 SOAM-033/034 completed the frozen [handover protocol](docs/HANDOVER_PROTOCOL.md),
 [numerical manifest](docs/protocols/handover_v1.json), and [fixture-verified harness](reports/HANDOVER_HARNESS.md).
@@ -67,7 +72,7 @@ IDs are thematic provenance groups, not sequential dates or compulsory stages fo
 | Milestone | Focus | Exit evidence / decision | State |
 | --- | --- | --- | --- |
 | M0 | Reusable recurrent experiment infrastructure | Historical harnesses plus the minimal SOAM-047 contract and SOAM-048 runner/invariant fixtures | Minimal runner delivered; exact fixture repeat and 110 passing tests; no scientific gate |
-| M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; study ready and empirical gate open |
+| M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; development complete; continuation source frozen and ready; confirmation unopened; empirical gate open |
 | M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Historical contract complete; shared acquisition open |
 | M3 | Conditional functional scopes | SOAM-007–010; limited interference with beneficial sharing | Deferred comparison branch |
 | M4 | Replay and overlapping organization | SOAM-011/012, SOAM-042/043 at fixed capacity; optional SOAM-013–015 | Planned; learned refinement conditional |

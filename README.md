@@ -11,7 +11,7 @@ localization and Monty-style sensorimotor learning modules with recurrent memory
 The [v0.2 scope](docs/RESEARCH_SPEC_V0_2.md), [v0.1 specification](docs/RESEARCH_SPEC.md),
 and completed contracts/results retain their historical meanings. The v1 handover
 harness, platform fixture runner and E1 engineering harness are implemented.
-The initial E1 storage check failed; the A1 correction now passes. Scientific studies remain unstarted.
+The initial E1 storage check failed; the A1 correction now passes. The E1 development phase is complete; confirmation remains pending.
 
 The [conditional research paths](docs/RESEARCH_PATHS.md) govern follow-ups: first
 measure one benefit of sharing, then select one experimental fork from the results.
@@ -30,7 +30,10 @@ under v1 plus [archive addendum A1](docs/E1_ARCHIVE_A1.md).** SOAM-050 delivered
 [E1 engineering harness](reports/SHARED_POPULATION_HARNESS.md). SOAM-061 resolved
 its initial storage projection failure with verified shared input archives;
 [all replacement checks pass](reports/E1_ARCHIVE_A1.md), including 5.27 GiB projected
-artifacts with 2× margin. All 173 tests pass. No scientific fitting has run.
+artifacts with 2× margin. All 190 tests pass. The [development study](reports/SHARED_POPULATION_STUDY.md)
+completed 42 fits and passed its baseline-competence screen.
+[Confirmation/reproduction orchestration](docs/E1_CONFIRMATION_EXECUTION.md) is verified,
+calibrated and source-frozen; confirmation remains unopened.
 SOAM-039/044/040/041 plan minimal acquisition without waiting for skills or
 concurrency. SOAM-053–055 test active disambiguation with frozen memory. The larger
 Monty-style module (SOAM-056–058) follows supported acquisition and explicit selection.
@@ -44,8 +47,8 @@ accept negative results. See the [ordered ticket queue](PRIORITIES.md).
 SOAM-033/034 delivered the frozen [handover protocol](docs/HANDOVER_PROTOCOL.md),
 [numerical manifest](docs/protocols/handover_v1.json), and [harness](docs/HANDOVER_HARNESS.md).
 The [engineering report](reports/HANDOVER_HARNESS.md) records fixture-only verification.
-SOAM-035 remains ready as a P2 comparison branch; no measured v0.2 study or new
-shared-population study has run, and no handover/shared-population gate has passed.
+SOAM-035 remains ready as a P2 comparison branch; no measured v0.2 study or completed E1 confirmation
+study has run, and no handover/shared-population gate has passed.
 
 The delivered Stage 0/substrate work (WP-00/WP-01) covers synthetic action-conditioned 2D
 regimes, a fixed sensory projection, shared bounded recurrent baselines, independent

@@ -25,7 +25,9 @@ SOAM-048 delivered the [fixture-verified runner](../reports/RECURRENT_PLATFORM.m
 SOAM-050 delivered the [E1 engineering harness](../reports/SHARED_POPULATION_HARNESS.md),
 with exact fixture replay and a failed artifact-storage preflight. SOAM-061 subsequently proceeded with
 [archive addendum A1](E1_ARCHIVE_A1.md) and a [passing calibration](../reports/E1_ARCHIVE_A1.md).
-SOAM-051 is now ready for scientific fitting under v1+A1. Shared feature/relation/action
+SOAM-051 is in progress under v1+A1: its [development phase](../reports/SHARED_POPULATION_STUDY.md)
+completed 42 fits and passed the baseline screen. [Confirmation/reproduction support](E1_CONFIRMATION_EXECUTION.md)
+is verified, calibrated and source-frozen; confirmation remains unopened. Shared feature/relation/action
 neurons are the preferred candidate; separated populations are controls. Genuine
 overlap, binding, interference, and directional dynamics require measured evidence.
 

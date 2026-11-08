@@ -1,0 +1,12 @@
+{
+  "cells_per_root": 230,
+  "confirmation_exposure": 0,
+  "exact_repeat": true,
+  "fixture_fits": 14,
+  "fixture_only": true,
+  "independent_confirmation_roots_added": 0,
+  "input_references_compared": 259,
+  "numerical_arrays_compared": 1576,
+  "records_compared": 512,
+  "study_fits": 0
+}

@@ -1,0 +1,54 @@
+import json, hashlib, subprocess, time
+from pathlib import Path
+import numpy as np
+from soam.shared.archive import InputStore, digest, identity
+from soam.shared.runner import restore_episodes
+from soam.shared.inference import choose_configs
+from soam.shared.fitting import exposure_counts, FitPlan
+from soam.shared.study import development_inventory
+from soam.shared.models import ROOT
+p=ROOT/'runs/e1-development-v1-a1'; evidence=ROOT/'reports/shared-population-study/development'
+read=lambda p:json.loads(p.read_text())
+for name,h in read(evidence/'sha256.json').items():
+    assert digest(evidence/name)==h, name
+    if name!='fit-results.json': assert digest(p/name)==h, name
+prov=read(p/'provenance.json'); differences=[]
+for name,h in prov['source_files'].items():
+    assert hashlib.sha256(subprocess.check_output(['git','show',prov['commit']+':'+name],cwd=ROOT)).hexdigest()==h,name
+    if digest(ROOT/name)!=h: differences.append(name)
+assert not differences,differences
+assert hashlib.sha256(json.dumps(prov['source_files'],sort_keys=True).encode()).hexdigest()==prov['source_sha256']
+store=InputStore(p/'input-objects'); objects={}
+for obj in sorted(store.root.iterdir()):
+    store.verify(obj.name); assert identity(restore_episodes(obj))==obj.name
+    objects[obj.name]=digest(obj/'manifest.json')
+refs=list(p.rglob('input-ref.json'))
+for ref in refs:
+    r=read(ref); assert objects[r['object']]==r['manifest_sha256']
+rows=read(p/'inventory.json')['development']; expected=development_inventory()
+assert [r['id'] for r in rows]==[r['id'] for r in expected]
+values={r['family']:np.zeros((2,3,2)) for r in rows}; fitcpu=[]; cells=0
+for row in rows:
+    assert row['status']=='complete' and row['completed_cells']==60 and row['archived_batches']==700
+    f=p/'fits'/row['id']; fitrec=read(f/'fit.json'); assert fitrec['exposure']==exposure_counts(FitPlan())
+    assert len(fitrec['trace'])==400 and not fitrec['fixture_only']
+    fitcpu.append(fitrec['cpu_seconds']); records=read(f/'cells.json'); assert len(records)==60
+    for c in records:
+        assert c['status']=='complete'
+        assert c['metrics']==read(f/'cells'/f"{c['condition']}-{c['index']}"/'record.json')['metrics']
+        with np.load(f/'cells'/f"{c['condition']}-{c['index']}"/'arrays.npz') as a:
+            assert all(np.isfinite(a[k]).all() for k in a.files)
+    for stage in ('recall','final'):
+        with np.load(f/f'{stage}.npz') as a: assert all(np.isfinite(a[k]).all() for k in a.files)
+    means={c:float(np.mean([x['metrics'][m] for x in records if x['condition']==c])) for c,m in [('recall_pre','recall_nmse'),('recall_final','recall_nmse'),('transition','free8_nmse')]}
+    assert means==row['means']
+    values[row['family']][row['config'],[401,409,419].index(row['root'])]=[means['transition'],means['recall_final']]
+    cells+=len(records)
+screen=choose_configs(values)
+assert all(v==read(p/'development-screen.json')[k] for k,v in screen.items())
+files={str(f.relative_to(p)):digest(f) for f in sorted(p.rglob('*')) if f.is_file()}
+status=read(p/'status.json')
+summary={'source_commit':prov['commit'],'source_sha256':prov['source_sha256'],'source_unchanged':True,'fits':len(rows),'cells':cells,'unique_objects':len(objects),'input_references':len(refs),'bytes_on_disk':sum(f.stat().st_size for f in p.rglob('*') if f.is_file()),'archive_file_count':len(files),'archive_sha256':hashlib.sha256(json.dumps(files,sort_keys=True).encode()).hexdigest(),'screen':screen,'development_status':status,'fit_cpu_sum':sum(fitcpu),'fit_cpu_max':max(fitcpu),'confirmation_data_read':False}
+Path('/tmp/soam051-development-index.json').write_text(json.dumps(files,sort_keys=True,indent=2)+'\n')
+Path('/tmp/soam051-development-audit.json').write_text(json.dumps(summary,sort_keys=True,indent=2)+'\n')
+print(json.dumps(summary,indent=2))

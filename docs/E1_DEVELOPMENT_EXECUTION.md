@@ -44,3 +44,7 @@ approve actions or change stopping rules. The primary agent invokes deterministi
 code, validates evidence and owns interpretation. Confirmation/repeat orchestration
 is subsequent work under the same frozen science and cumulative budget, conditional
 on the development screen; it is not silently included in this entry point.
+
+Continuation update, 2026-11-07: the separate [confirmation/reproduction entry point](E1_CONFIRMATION_EXECUTION.md)
+is now fixture-verified, calibrated and source-frozen. The original development
+entry point and its archived results are unchanged; confirmation remains unopened.

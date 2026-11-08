@@ -1,0 +1,10 @@
+{
+  "archive_revision": "a1",
+  "max_artifact_bytes": 268435456,
+  "max_cpu_seconds": 120,
+  "max_rss_bytes": 2147483648,
+  "max_wall_seconds": 240,
+  "mode": "preflight",
+  "seed": 9001,
+  "threads": 1
+}

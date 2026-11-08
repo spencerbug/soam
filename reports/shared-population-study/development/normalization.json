@@ -1,0 +1,11 @@
+{
+  "sha256": "5f1040d79f87b6f0cc41d2519c805676bb8d06262065a8cd27a2d80edd112b03",
+  "stream_key_template": [
+    "soam-e1-shared",
+    1,
+    "train",
+    1801,
+    "index=0..2047",
+    "normalization/{radius,phase,action,mask,noise}"
+  ]
+}

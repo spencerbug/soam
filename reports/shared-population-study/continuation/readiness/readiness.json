@@ -1,0 +1,231 @@
+{
+  "calibration": "runs/e1-continuation-calibration-v1",
+  "calibration_source": "b52329efaa0a4927337691e60a5b610ed08984b884aef8dd5b7b12801f2408c9",
+  "carried": {
+    "artifact_bytes": 129092588,
+    "cpu_seconds": 454.07594700000004,
+    "development_cpu_seconds": 392.37282000000005,
+    "peak_rss_bytes": 320487424,
+    "wall_seconds": 460.0899708319339
+  },
+  "components": [
+    {
+      "archive": {
+        "bytes": 4876024,
+        "files": 1042,
+        "sha256": "774b7ad16220360f1b4df03c6c530b5be8ebade9b9fb012678f01d5da1b8e0b2"
+      },
+      "artifact_bytes": 4941560,
+      "cpu_seconds": 6.048601,
+      "label": "shared-harness-v1",
+      "path": "runs/shared-harness-v1",
+      "peak_rss_bytes": 305299456,
+      "status": "complete",
+      "wall_seconds": 6.085646291990997
+    },
+    {
+      "archive": {
+        "bytes": 4876687,
+        "files": 1044,
+        "sha256": "bd3443b6de716473d797f86ca02555ec823bba9bd0a450bb0d7d1d3a5e2fb485"
+      },
+      "artifact_bytes": 4942223,
+      "cpu_seconds": 6.149916,
+      "label": "shared-harness-v1-final",
+      "path": "runs/shared-harness-v1-final",
+      "peak_rss_bytes": 304955392,
+      "status": "complete",
+      "wall_seconds": 6.187391999992542
+    },
+    {
+      "archive": {
+        "bytes": 2457249,
+        "files": 492,
+        "sha256": "b122fda2c37b6f30c7a11e5f5ea9c860fc274b18bc7610d67f550c2cf534efa2"
+      },
+      "artifact_bytes": 2522785,
+      "cpu_seconds": 3.288802,
+      "label": "shared-a1-fixture",
+      "path": "runs/shared-a1-fixture",
+      "peak_rss_bytes": 304054272,
+      "status": "failed",
+      "wall_seconds": 3.364649416995235
+    },
+    {
+      "archive": {
+        "bytes": 4668418,
+        "files": 927,
+        "sha256": "587d6862c85f73e296502a1d04860f9b0ad6c9f19ff268ca8ac0787c95dd93e8"
+      },
+      "artifact_bytes": 4733954,
+      "cpu_seconds": 6.245156,
+      "label": "shared-a1-fixture-fixed",
+      "path": "runs/shared-a1-fixture-fixed",
+      "peak_rss_bytes": 305201152,
+      "status": "complete",
+      "wall_seconds": 6.280602790997364
+    },
+    {
+      "archive": {
+        "bytes": 6932650,
+        "files": 1597,
+        "sha256": "6b4bfad4a953a8c2af78e8ecbd4e842dd373542212203c926a0ded4f9b14bf44"
+      },
+      "artifact_bytes": 6998186,
+      "cpu_seconds": 8.513755,
+      "label": "continuation-fixture",
+      "path": "runs/e1-continuation-fixture-v1",
+      "peak_rss_bytes": 309084160,
+      "status": "complete",
+      "wall_seconds": 8.63166250003269
+    },
+    {
+      "archive": {
+        "bytes": 7024125,
+        "files": 1598,
+        "sha256": "1fb89c2db1216a60a19a07553dc93a82dcbbd2e89d5e21b92813fdd37da4123f"
+      },
+      "artifact_bytes": 7089661,
+      "cpu_seconds": 8.373325,
+      "label": "continuation-fixture",
+      "path": "runs/e1-continuation-fixture-v2",
+      "peak_rss_bytes": 307249152,
+      "status": "complete",
+      "wall_seconds": 8.491413249983452
+    },
+    {
+      "archive": {
+        "bytes": 749952,
+        "files": 139,
+        "sha256": "7284ae02cb0d7b047fa7702f8237f6c8c718124ecb5a757a9ee25bb51492682e"
+      },
+      "artifact_bytes": 815488,
+      "cpu_seconds": 4.29703,
+      "label": "continuation-calibration",
+      "path": "runs/e1-continuation-calibration-v1",
+      "peak_rss_bytes": 297795584,
+      "status": "complete",
+      "wall_seconds": 4.418140415975358
+    }
+  ],
+  "confirmation_exposure": 0,
+  "development": {
+    "archive": {
+      "bytes": 95228443,
+      "files": 48382,
+      "sha256": "3780bbb310ee7bc7d9b9ebf70afe58d0b39e0565a7234c704ea361f288d7c4fd"
+    },
+    "screen": {
+      "best_selected_gru": "G32",
+      "confirmation_allowed": true,
+      "floor_limited": false,
+      "gru_competent": true,
+      "outcome": "development_passed_confirmation_pending",
+      "primary_reference": "G32",
+      "selected_configs": {
+        "D16": 1,
+        "D25": 1,
+        "G28": 1,
+        "G32": 1,
+        "L12": 0,
+        "S32": 1,
+        "SYM32": 1
+      },
+      "selected_means": {
+        "D16": [
+          0.07835970121636601,
+          0.07807579235815841
+        ],
+        "D25": [
+          0.08974471806285211,
+          0.07647646325971592
+        ],
+        "G28": [
+          0.03654493443136785,
+          0.018497319445831
+        ],
+        "G32": [
+          0.03154811440325972,
+          0.015431546777207447
+        ],
+        "L12": [
+          0.07585150595004253,
+          0.0736762140532315
+        ],
+        "S32": [
+          0.06960525505188336,
+          0.06333695032440115
+        ],
+        "SYM32": [
+          0.17465291912020034,
+          0.07261764341439315
+        ]
+      }
+    },
+    "source_commit": "e2bf0ca9b9a6d24ff2197dee76a00590a60b8d3d",
+    "source_sha256": "e0585121bcd98d1bf1b49e6d21858a20279cd97f17849a91e4d1291c25f652bb",
+    "status": {
+      "artifact_bytes": 97048731,
+      "best_selected_gru": "G32",
+      "confirmation_allowed": true,
+      "cpu_seconds": 406.20842100000004,
+      "floor_limited": false,
+      "gru_competent": true,
+      "outcome": "development_passed_confirmation_pending",
+      "peak_rss_bytes": 320487424,
+      "phase_cpu_seconds": 392.37282000000005,
+      "primary_reference": "G32",
+      "selected_configs": {
+        "D16": 1,
+        "D25": 1,
+        "G28": 1,
+        "G32": 1,
+        "L12": 0,
+        "S32": 1,
+        "SYM32": 1
+      },
+      "selected_means": {
+        "D16": [
+          0.07835970121636601,
+          0.07807579235815841
+        ],
+        "D25": [
+          0.08974471806285211,
+          0.07647646325971592
+        ],
+        "G28": [
+          0.03654493443136785,
+          0.018497319445831
+        ],
+        "G32": [
+          0.03154811440325972,
+          0.015431546777207447
+        ],
+        "L12": [
+          0.07585150595004253,
+          0.0736762140532315
+        ],
+        "S32": [
+          0.06960525505188336,
+          0.06333695032440115
+        ],
+        "SYM32": [
+          0.17465291912020034,
+          0.07261764341439315
+        ]
+      },
+      "status": "development_complete",
+      "wall_seconds": 407.710123457975
+    }
+  },
+  "planned_confirmation_fits": 70,
+  "planned_remaining_cells": 25300,
+  "planned_repeat_fits": 7,
+  "ready": true,
+  "remaining_projection_with_margin": {
+    "artifact_bytes": 5790445404,
+    "cpu_seconds": 4764.3963470000335,
+    "wall_seconds": 4777.155038759287
+  },
+  "version": "e1-v1-a1-continuation-1"
+}

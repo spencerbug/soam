@@ -1,0 +1,26 @@
+{
+  "baseline_tests": {
+    "command": "uv run pytest",
+    "passed": 176,
+    "seconds": 6.53
+  },
+  "confirmation_exposure": 0,
+  "date": "2026-11-07",
+  "final_tests": {
+    "command": "uv run pytest",
+    "passed": 190,
+    "seconds": 14.03
+  },
+  "local_worker": {
+    "extraction": "incomplete findings; direct audit used",
+    "extraction_job": "cfd3a6a01bde4bcd85fc037fa1d6c77d",
+    "harness": "aborted without review; unnecessary pending command rejected; direct review used",
+    "harness_job": "84123062014e401e8787b3e8b7b88ab7"
+  },
+  "ruff_check": "passed",
+  "ruff_format": "passed",
+  "scientific_fits_this_continuation": 0,
+  "source_freeze_commit": "fe9925f796af0a835a509cbef3bded4be3783fa3",
+  "source_sha256": "b52329efaa0a4927337691e60a5b610ed08984b884aef8dd5b7b12801f2408c9",
+  "ticket_check": "62 tickets and 2 templates valid"
+}

@@ -1,0 +1,6 @@
+{
+  "max_artifact_bytes": 8589934592,
+  "max_cpu_seconds": 14400,
+  "max_rss_bytes": 2147483648,
+  "max_wall_seconds": 28800
+}

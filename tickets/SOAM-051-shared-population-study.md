@@ -13,7 +13,7 @@ depends_on: ["SOAM-050", "SOAM-061"]
 labels: ["type:experiment", "priority:P0", "milestone:M1"]
 assignees: []
 created: "2026-11-05"
-updated: "2026-11-06"
+updated: "2026-11-07"
 github_issue: null
 decision: null
 ---
@@ -75,5 +75,57 @@ in 15.15s; the focused entry-point tests also passed after final budget/error ha
 changes. A [fresh A1 calibration](../reports/shared-population-study/calibration/cost-ledger.json)
 passes all ceilings for source fingerprint
 `e0585121bcd98d1bf1b49e6d21858a20279cd97f17849a91e4d1291c25f652bb`.
-Scientific execution and development-screen results will be recorded separately;
-no confirmation or empirical sharing claim is implied by setup completion.
+Development phase completed from commit `e2bf0ca9b9a6d24ff2197dee76a00590a60b8d3d`:
+42/42 fits and 2,520/2,520 base cells, no numerical failures or retries, 392.372820
+phase CPU seconds. The fixed baseline-competence/floor screen passes. Selected G32
+is the primary reference; neural config index 1 and L12 index 0 are frozen for
+confirmation. See the [development report](../reports/SHARED_POPULATION_STUDY.md)
+and [screen record](../reports/shared-population-study/development/development-screen.json).
+
+The ticket remains in progress: 70 confirmation fits, seven repeat fits and all
+confirmation diagnostics/uncertainty remain unexecuted. Candidate S32's preliminary
+recall weakness is reported, not used to change settings or cancel planned controls.
+No confirmation or useful-sharing gate has passed. Continue from the recorded
+selections and cumulative resource allocation; do not refit development to improve scores.
+
+
+### Execution-readiness continuation — 2026-11-07
+
+Completed only the requested confirmation/reproduction orchestration scope; the
+scientific acceptance criteria above remain open and status remains `in_progress`.
+SOAM-050 done and SOAM-061 done/proceed were rechecked, along with the body condition
+requiring A1, a passing calibration, preserved selections and committed source.
+Recommended thinking remains **xhigh**: this continuation must protect source,
+selection timing, resource allocation and interpretation across scientific phases.
+
+- [x] Audited preserved development artifacts, compact metrics, 42 fits, 2,520 cells,
+  31,920 references, 2,220 verified objects, normalization and source provenance.
+- [x] Implemented only remaining execution/summary wiring; all pre-existing scientific
+  modules, protocol/manifest/A1, configurations, streams and thresholds are unchanged.
+- [x] Verified 230-cell continuation fixtures and exact archived-input repeat
+  (1,576 arrays, 259 references, 512 records); tested frozen root/config routing,
+  selection-before-confirmation, failure/no retry and cumulative budget stops.
+- [x] Completed a full fresh A1 calibration, committed reviewed source, recorded a
+  cumulative readiness receipt and [concrete execution procedure](../docs/E1_CONFIRMATION_EXECUTION.md).
+- [x] Left scientific confirmation and reproduction unstarted; no downstream fork
+  or empirical gate is activated.
+
+Baseline `uv run pytest`: 176 passed in 6.53s before edits. Final suite: 190 passed
+in 14.03s. Targeted Ruff check/format, `git diff --check` and
+`uv run python scripts/check_tickets.py` pass (62 tickets, two GitHub templates).
+The [report continuation](../reports/SHARED_POPULATION_STUDY.md#confirmation-execution-readiness--2026-11-07)
+and [checksummed evidence](../reports/shared-population-study/continuation/sha256.json)
+record exact commands, calibration, fixture/config/software/source and ledger data.
+Reviewed source commit: `fe9925f796af0a835a509cbef3bded4be3783fa3`;
+SHA-256: `b52329efaa0a4927337691e60a5b610ed08984b884aef8dd5b7b12801f2408c9`.
+The new full projection passes all ceilings, including 5.27 GiB artifacts with 2×
+margin. The carried allocation is 454.075947 CPU seconds and 129,092,588 artifact
+bytes; earlier failed/complete engineering attempts remain preserved and charged.
+No numerical equation or scientific budget was changed to achieve readiness.
+
+Next eligible action is the 70 confirmation fits, seven archived-input repeat fits
+and remaining 25,300 cells under that procedure, when execution is requested.
+Development-only GRU advantage/S32 recall weakness and the T32 identifiability limit
+remain publication-worthy context for a joint blog post and report after confirmation;
+no publication is authorized or performed. Fixture success is not scientific evidence
+for useful sharing, attraction or biological validation.

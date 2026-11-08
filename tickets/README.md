@@ -26,7 +26,11 @@ SOAM-049 froze the [E1 protocol](../docs/SHARED_POPULATION_PROTOCOL.md) and
 [fixture runner](../reports/RECURRENT_PLATFORM.md). SOAM-050 delivered the
 [E1 harness](../reports/SHARED_POPULATION_HARNESS.md) with a failed artifact feasibility
 projection. SOAM-061 subsequently proceeded with [A1](../docs/E1_ARCHIVE_A1.md) and a
-[passing replacement calibration](../reports/E1_ARCHIVE_A1.md); SOAM-051 is now ready. Scientific fitting/trials remain unstarted.
+[passing replacement calibration](../reports/E1_ARCHIVE_A1.md); SOAM-051 is in progress. Its
+[development phase](../reports/SHARED_POPULATION_STUDY.md) completed 42 fits and passed
+the competence/floor screen. [Confirmation/reproduction support](../docs/E1_CONFIRMATION_EXECUTION.md)
+is verified and source-frozen with passing calibration and cumulative readiness checks;
+confirmation and repeat remain unstarted. SOAM-051 remains in progress.
 
 These are GitHub-flavored Markdown issue bodies with YAML frontmatter. They are
 readable as repository files after pushing. They are **not live GitHub Issues**:

@@ -1,0 +1,157 @@
+{
+  "archive_revision": "a1",
+  "batch_bytes_uncompressed": {
+    "recall": 51385,
+    "transition": 45698
+  },
+  "cell_bytes_upper_estimate": 76212,
+  "checks": {
+    "artifact_bytes": true,
+    "confirmation": true,
+    "development": true,
+    "peak_rss_with_margin": true,
+    "per_fit": true,
+    "repeat": true,
+    "total_cpu": true,
+    "total_wall": true
+  },
+  "engineering_only": true,
+  "failure_action": "new protocol decision/version before fitting; no silent reduction",
+  "feasible": true,
+  "inventory": {
+    "base_scoring_cells": 7140,
+    "cell_definition": "one checkpoint/condition/episode; transition cell contains free32 and grounded32 and their free8 prefix metric",
+    "confirmation_fits": 70,
+    "development_fits": 42,
+    "diagnostic_cells": 20680,
+    "diagnostic_cells_per_confirmation_or_repeat_root": 1880,
+    "diagnostic_groups": [
+      {
+        "cells_per_root": 40,
+        "episodes": 20,
+        "id": "selection_intact",
+        "model": "S32",
+        "modes": 1,
+        "roles": 2,
+        "split": "development_diagnostic"
+      },
+      {
+        "cells_per_root": 1280,
+        "episodes": 20,
+        "id": "selection_singletons",
+        "model": "S32",
+        "modes": 32,
+        "roles": 2,
+        "split": "development_diagnostic"
+      },
+      {
+        "cells_per_root": 240,
+        "episodes": 20,
+        "id": "overlap_full_readout_random",
+        "model": "S32",
+        "modes": 6,
+        "roles": 2,
+        "split": "confirmation"
+      },
+      {
+        "cells_per_root": 80,
+        "episodes": 20,
+        "id": "disjoint_bank_masks",
+        "model": "D16",
+        "modes": 2,
+        "roles": 2,
+        "split": "confirmation"
+      },
+      {
+        "cells_per_root": 40,
+        "episodes": 20,
+        "id": "action_shift_zero_A",
+        "model": "S32",
+        "modes": 2,
+        "roles": 1,
+        "split": "confirmation"
+      },
+      {
+        "cells_per_root": 20,
+        "episodes": 20,
+        "id": "zero_cue",
+        "model": "S32",
+        "modes": 1,
+        "roles": 1,
+        "split": "confirmation"
+      },
+      {
+        "cells_per_root": 60,
+        "episodes": 20,
+        "id": "recovery_additional_paths",
+        "model": "S32",
+        "modes": 3,
+        "roles": 1,
+        "split": "confirmation"
+      },
+      {
+        "cells_per_root": 120,
+        "episodes": 20,
+        "id": "tied_state_intact_and_two_bank_masks",
+        "model": "T32",
+        "modes": 3,
+        "roles": 2,
+        "split": "confirmation"
+      }
+    ],
+    "diagnostic_roots_including_repeat": 11,
+    "neural_fits": 102,
+    "repeat_fits": 7,
+    "ridge_fits": 17,
+    "total_fit_instances": 119,
+    "total_scoring_cells": 27820
+  },
+  "observed_peak_rss_bytes": 297746432,
+  "optimizer_updates": 0,
+  "peak_rss_projection_safety_factor": 2,
+  "projected_artifact_bytes_with_margin": 5661352816,
+  "projections": {
+    "cpu": {
+      "evaluation_cell_max_plus_archive": 0.03246400000000049,
+      "per_fit_with_margin": {
+        "D16": 21.343400000000052,
+        "D25": 21.741400000000173,
+        "G28": 18.684800000000184,
+        "G32": 18.69120000000028,
+        "L12": 13.915599999999866,
+        "S32": 20.61880000000013,
+        "SYM32": 18.426800000000092
+      },
+      "phases_with_margin": {
+        "confirmation": 2827.5640000000303,
+        "development": 964.1505600000071,
+        "overhead": 1200.0,
+        "repeat": 282.75640000000305
+      },
+      "total_with_margin": 5274.470960000041
+    },
+    "wall": {
+      "evaluation_cell_max_plus_archive": 0.032467707933392376,
+      "per_fit_with_margin": {
+        "D16": 21.42786582140252,
+        "D25": 21.827949240338057,
+        "G28": 18.769299431238323,
+        "G32": 18.775191012769938,
+        "L12": 13.999916421249509,
+        "S32": 20.70479079289362,
+        "SYM32": 18.513082416262478
+      },
+      "phases_with_margin": {
+        "confirmation": 2833.6955162975937,
+        "development": 967.7458188012242,
+        "overhead": 1200.0,
+        "repeat": 283.36955162975937
+      },
+      "total_with_margin": 5284.810886728577
+    }
+  },
+  "safety_factor": 2,
+  "scope": "shape-equivalent calibration; full-study runtime must still enforce all ceilings",
+  "study_fits": 0,
+  "timing_statistic": "maximum of ten after one warmup"
+}
