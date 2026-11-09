@@ -1,6 +1,6 @@
 # Hypotheses and operational evidence ledger
 
-Updated 2026-11-08. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
+Updated 2026-11-09. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
 their wording and provenance. The rows below are operational questions, not new
 schema IDs or retroactive changes to those statements. Scientific criteria and
 proposed numerical defaults live in the [review](SCIENTIFIC_REVIEW_2026_11_05.md);
@@ -21,8 +21,10 @@ shared neurons generally. [SOAM-052](../reports/SHARED_POPULATION_GATE.md) now r
 before benefit; the scientific comparison is valid with disclosed reporting telemetry
 limits. Positive interventions do not override unresolved precision or T32's limit,
 and contraction does not establish useful recovery. Broader historical H1/H5/H6
-remain open; this narrow failed gate is preserved. SOAM-059 routing is next eligible
-and unstarted, with no candidate or follow-up experiment selected.
+remain open; this narrow failed gate is preserved. [SOAM-059](../reports/RESEARCH_FORK_SELECTION.md)
+now selects one E2 protocol design: ordinary G32 with a bounded recurrent writer
+versus simple learning controls. SOAM-039 is ready; acquisition and retention remain
+unmeasured. This routing choice does not change any hypothesis criterion or E1 result.
 
 | Historical claim / operational question | Prediction and importance | Convincing experiment / baselines | Success or failure evidence | Negative-result interpretation / class / tickets |
 | --- | --- | --- | --- | --- |

@@ -33,8 +33,12 @@ Selections, source and cumulative allocation were preserved. The
 [execution receipt](../docs/E1_CONFIRMATION_EXECUTION.md) is consumed. SOAM-052 is done
 with [stop for E1 v1 S32 useful sharing](../reports/SHARED_POPULATION_GATE.md), retaining
 passing relative guards, causal uncertainty, T32 limits and telemetry caveats.
-No sharing-dependent child is unblocked. SOAM-059 routing is next eligible and
-unstarted; no experimental fork has been selected.
+No sharing-dependent child is unblocked. [SOAM-059](../reports/RESEARCH_FORK_SELECTION.md)
+is done/proceed for E2 protocol design using a conventional G32 learner with a
+bounded recurrent writer and simple controls. SOAM-039 alone becomes P0/ready;
+SOAM-044/040/041 remain backlog. E3/attention lack named selection even though
+ordinary dependencies may now pass. No E2 protocol, implementation or experiment
+is completed; later branching requires a fresh routing decision.
 
 These are GitHub-flavored Markdown issue bodies with YAML frontmatter. They are
 readable as repository files after pushing. They are **not live GitHub Issues**:

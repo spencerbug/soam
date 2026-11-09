@@ -26,8 +26,8 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 
 ## Current milestone
 
-**Next eligible: [SOAM-059](tickets/SOAM-059-research-fork-selection.md), a bounded
-routing decision; no follow-up is selected.** [SOAM-052](tickets/SOAM-052-shared-population-gate.md)
+**Next eligible: [SOAM-039](tickets/SOAM-039-grounded-memory-design.md), design the
+minimal acquisition protocol selected by [SOAM-059](reports/RESEARCH_FORK_SELECTION.md).** [SOAM-052](tickets/SOAM-052-shared-population-gate.md)
 is complete with **stop** for E1 v1 S32's tested useful-sharing claim. The
 [gate review](reports/SHARED_POPULATION_GATE.md) audits validity, information parity,
 resources and uncertainty before applying absolute recall failure. Both relative
@@ -36,10 +36,13 @@ and T32 prevents a uniquely physical-overlap performance claim. Recovery usefuln
 criteria also fail, separately. This does not reject shared recurrence generally.
 The [full study](reports/SHARED_POPULATION_STUDY.md) preserves 119 fits/27,820 cells,
 exact reproduction and all source/selections/resources. All 190 tests pass.
-Sharing-dependent integration remains unready; SOAM-059 has not started.
-SOAM-039/044/040/041 plan minimal acquisition without waiting for skills or
-concurrency. SOAM-053–055 test active disambiguation with frozen memory. The larger
-Monty-style module (SOAM-056–058) follows supported acquisition and explicit selection.
+Sharing-dependent integration remains unready. SOAM-059 is done/proceed for one
+E2 design: G32 with a bounded recurrent writer versus simple learning controls on
+a changed action gain. SOAM-039 is P0/ready; SOAM-044/040/041 remain backlog. The
+branch ceiling is 3,600 CPU / 7,200 wall seconds, 2 GiB RSS / 2 GiB artifacts and
+16 base fits, with fresh streams. No E2 protocol is approved or implementation
+started. Active disambiguation, attention and the larger learning module remain
+unselected; any later branch needs a fresh routing decision.
 
 Sharing refers to recurrent neurons and connections, not just tied parameters or
 three independent networks stored in one tensor. Test overlap, binding, interference,

@@ -2,19 +2,25 @@
 
 Adopted refinement: 2026-11-05, following the owner's request to replace an apparent
 linear implementation programme with result-dependent experimental forks. This
-refines [v0.3](RESEARCH_SPEC_V0_3.md); no experimental result or branch is selected yet.
+refines [v0.3](RESEARCH_SPEC_V0_3.md). No experimental result or branch was selected
+at adoption; the dated current-status record below tracks later decisions.
 
 The [scientific review](SCIENTIFIC_REVIEW_2026_11_05.md) adds proposed quantitative
 criteria and changes the default information-gain order to E1 useful dynamics,
 E2 rapid retained acquisition, then E3 active disambiguation. These are conditional
 experiments, not three automatically authorized implementation stages.
 
-Current evidence update, 2026-11-08: [SOAM-052](../reports/SHARED_POPULATION_GATE.md)
+Current evidence update, 2026-11-09: [SOAM-052](../reports/SHARED_POPULATION_GATE.md)
 records **stop** for the frozen E1 v1 S32 useful-sharing claim after complete SOAM-051
 evidence. Absolute recall failure governs despite passing relative retention guards;
-causal precision is unresolved and T32 attribution limits remain. SOAM-059 routing
-is next eligible but unstarted. The original routing rules below are unchanged;
-no branch or new experiment is selected and the failed gate remains preserved.
+causal precision is unresolved and T32 attribution limits remain.
+[SOAM-059](../reports/RESEARCH_FORK_SELECTION.md) is done/proceed, selecting only
+SOAM-039 E2 protocol design with G32 and one bounded recurrent writer on a changed
+action gain. Its report fixes the finite allocation, fresh-data requirements and
+stop/defer boundaries. SOAM-039 is P0/ready; no implementation or experiment starts
+from this status update. All unselected forks stay backlog and SOAM-052 remains
+stop. The original conditional routing rules below are unchanged; this completed
+selection cannot authorize E3, attention or a later experiment.
 
 ## Small common starting point
 
