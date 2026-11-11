@@ -1,0 +1,141 @@
+{
+  "protocol": "soam-study-a",
+  "version": 1,
+  "variants": {
+    "G32": [
+      "gru",
+      32
+    ],
+    "FU32": [
+      "fixed_update",
+      32
+    ],
+    "FU38": [
+      "fixed_update",
+      38
+    ],
+    "FR32": [
+      "fixed_reset",
+      32
+    ],
+    "FB32": [
+      "fixed_both",
+      32
+    ],
+    "S32": [
+      "s32",
+      32
+    ],
+    "GS32": [
+      "gated_s32",
+      32
+    ],
+    "R32": [
+      "rnn",
+      32
+    ],
+    "R52": [
+      "rnn",
+      52
+    ],
+    "R55": [
+      "rnn",
+      55
+    ],
+    "L12": [
+      "ridge",
+      12
+    ],
+    "L2": [
+      "pca_ridge",
+      2
+    ]
+  },
+  "development_roots": [
+    8401,
+    8409
+  ],
+  "confirmation_roots": [
+    9101,
+    9109,
+    9127,
+    9133,
+    9151,
+    9161,
+    9173,
+    9181,
+    9199,
+    9203
+  ],
+  "repeat_root": 9101,
+  "normalization_root": 8801,
+  "normalization_samples": 2048,
+  "configs": [
+    {
+      "lr": 0.003,
+      "ridge": 0.0001
+    },
+    {
+      "lr": 0.01,
+      "ridge": 0.01
+    }
+  ],
+  "fit": {
+    "recall_updates": 100,
+    "joint_updates": 700,
+    "batch": 16,
+    "horizon": 8,
+    "checkpoints": [
+      100,
+      400,
+      600,
+      800
+    ]
+  },
+  "evaluation_episodes": 20,
+  "diagnostic_episodes": 20,
+  "diagnostic_horizon": 128,
+  "probe_episodes": 64,
+  "bootstrap": {
+    "resamples": 20000,
+    "seed": 8675311,
+    "family_size": 15
+  },
+  "criteria": {
+    "gain": 0.1,
+    "gain_width": 0.4,
+    "recall_margin": 0.005,
+    "free8_margin": 0.005,
+    "grounded32_margin": 0.005,
+    "free32_margin": 0.01,
+    "absolute_recall": 0.03,
+    "absolute_free8": 0.1,
+    "development_control_j": 0.15,
+    "late_improvement_limit": 0.2,
+    "parameter_ratio": 1.1,
+    "mac_ratio": 1.1,
+    "fit_cpu_ratio": 1.5
+  },
+  "limits": {
+    "cpu_seconds": 3600,
+    "wall_seconds": 7200,
+    "rss_bytes": 2147483648,
+    "artifact_bytes": 2147483648,
+    "fit_attempts": 192,
+    "reserve_cpu_seconds": 360
+  },
+  "fixture": {
+    "root": 8301,
+    "recall_updates": 2,
+    "joint_updates": 4,
+    "batch": 4
+  },
+  "numerics": {
+    "device": "cpu",
+    "threads": 1,
+    "dtype": "float32",
+    "simulator_dtype": "float64",
+    "metric_dtype": "float64",
+    "deterministic": true
+  }
+}

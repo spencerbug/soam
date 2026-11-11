@@ -18,6 +18,9 @@ See the [complete ticket dispositions](TICKET_REVIEW_2026_11_05.md).
 
 ## Immediate work
 
+**2026-11-11 current selection:** the owner selected [Study A](STUDY_A_PROTOCOL.md), SOAM-062–065, to isolate adaptive gating. SOAM-039 is now backlog pending fresh routing; previous E2 readiness descriptions below are historical. Only Study A is active; Study B and acquisition are excluded. Historical E1 gates/results remain unchanged.
+
+
 SOAM-047 adopted the [minimal platform contract](RECURRENT_PLATFORM_CONTRACT.md).
 SOAM-049 froze [E1 v1](SHARED_POPULATION_PROTOCOL.md) and its
 [manifest](protocols/shared_population_v1.json), including the tied-state identifiability control.

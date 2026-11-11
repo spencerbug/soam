@@ -47,6 +47,9 @@ of future GitHub issue numbers.
 
 ## Conditional research paths
 
+**2026-11-11 current selection:** the owner selected [Study A](../docs/STUDY_A_PROTOCOL.md), SOAM-062–065, to isolate adaptive gating. SOAM-039 is now backlog pending fresh routing; previous E2 readiness descriptions below are historical. Only Study A is active; Study B and acquisition are excluded. Historical E1 gates/results remain unchanged.
+
+
 Follow the [result-dependent paths](../docs/RESEARCH_PATHS.md). SOAM-049–051 now
 cover one minimal benefit/interference pilot. SOAM-052 reviews its claim; SOAM-059
 selects at most one continuation, even after a negative result. Application and

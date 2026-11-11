@@ -48,3 +48,7 @@ empirical findings, not this conjunction of capabilities.
 A report updates evidence links and supported conditions, not historical wording.
 A failed decision stays failed. The fork record may authorize a new question with a
 fresh protocol and confirmation set, never retroactively revise the prior outcome.
+
+## Study A mechanism questions — 2026-11-11
+
+[Study A](STUDY_A_PROTOCOL.md), SOAM-062–065, is owner-selected before acquisition. A-H1 adaptive retention; A-H2 adaptive reset; A-H3 capacity/optimization; A-H4 low-dimensional system identification are subquestions of historical H1. The protocol owns thresholds; no new evidence exists yet. Historical H2–H4 meanings remain unchanged, and SOAM-052 remains stop.

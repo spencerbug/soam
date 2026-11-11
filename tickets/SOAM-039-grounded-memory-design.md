@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-039"
 title: "Specify minimal grounded acquisition and retention"
 type: "decision"
-status: "ready"
+status: "backlog"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M2"
@@ -13,7 +13,7 @@ depends_on: ["SOAM-047", "SOAM-059"]
 labels: ["type:decision", "priority:P0", "milestone:M2"]
 assignees: []
 created: "2026-11-01"
-updated: "2026-11-09"
+updated: "2026-11-11"
 github_issue: null
 decision: null
 ---
@@ -107,3 +107,7 @@ Protocol not started. Readiness only was established by SOAM-059 on 2026-11-09;
 its report and verification record document prerequisite/body-condition checks.
 Record actual RFC/manifest, sources, review and validation here when this ticket is
 performed. Keep `decision: null` until that separate design review is complete.
+
+## Selection superseded — 2026-11-11
+
+The owner selected Study A via [SOAM-062](SOAM-062-study-a-protocol.md). The historical SOAM-059 selection remains evidence; this unstarted acquisition design returns to backlog until a fresh routing decision. No acquisition protocol or Study B is implemented.

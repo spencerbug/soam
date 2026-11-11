@@ -1,6 +1,6 @@
 # Priority and milestone tracker
 
-Updated: 2026-11-09. The owner adopted the [v0.3 shared-population experiment
+Updated: 2026-11-11. The owner adopted the [v0.3 shared-population experiment
 platform scope](docs/RESEARCH_SPEC_V0_3.md). Overlapping neurons for features,
 relationships, and action relations are the preferred architecture hypothesis.
 Separated networks remain controls. The program also supports independent Hopfield
@@ -18,6 +18,9 @@ E1 is complete with a negative sharing gate. SOAM-059 selects only E2 protocol
 design; subsequent implementation and experiments require their own prerequisites.
 
 ## Current work and readiness
+
+**November 11 owner override: only Study A is selected.** SOAM-062 is done/proceed for the [gating protocol](docs/STUDY_A_PROTOCOL.md); SOAM-063 is in_progress; SOAM-064/065 await prerequisites. SOAM-039 returns to backlog pending fresh routing. Earlier November 9 status below is historical and superseded for selection/readiness. E1 evidence and SOAM-052 stop remain unchanged.
+
 
 [SOAM-046](tickets/SOAM-046-shared-platform-scope.md) records initial v0.3 adoption;
 [SOAM-060](tickets/SOAM-060-scientific-roadmap-review.md) records this scientific review.
@@ -160,7 +163,7 @@ Order is a preference within the selected path. It never schedules all alternati
 | 14 | [SOAM-051: Measure the benefit and interference of shared recurrence](tickets/SOAM-051-shared-population-study.md) | P0 | done | M1 | xhigh | [SOAM-050](tickets/SOAM-050-shared-population-candidates.md), [SOAM-061](tickets/SOAM-061-e1-artifact-feasibility.md) |
 | 15 | [SOAM-052: Review evidence for useful shared recurrence](tickets/SOAM-052-shared-population-gate.md) | P0 | done | M1 | xhigh | [SOAM-051](tickets/SOAM-051-shared-population-study.md) |
 | 16 | [SOAM-059: Select one bounded research fork from the pilot evidence](tickets/SOAM-059-research-fork-selection.md) | P0 | done | MX | xhigh | [SOAM-051](tickets/SOAM-051-shared-population-study.md) |
-| 17 | [SOAM-039: Specify minimal grounded acquisition and retention](tickets/SOAM-039-grounded-memory-design.md) | P0 | ready | M2 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-059](tickets/SOAM-059-research-fork-selection.md) |
+| 17 | [SOAM-039: Specify minimal grounded acquisition and retention](tickets/SOAM-039-grounded-memory-design.md) | P0 | backlog | M2 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-059](tickets/SOAM-059-research-fork-selection.md) |
 | 18 | [SOAM-044: Implement bounded acquisition candidates and write invariants](tickets/SOAM-044-multicircuit-write-contract.md) | P1 | backlog | M2 | high | [SOAM-039](tickets/SOAM-039-grounded-memory-design.md) |
 | 19 | [SOAM-040: Measure one-shot and few-observation acquisition with retention](tickets/SOAM-040-multicircuit-acquisition.md) | P1 | backlog | M2 | xhigh | [SOAM-039](tickets/SOAM-039-grounded-memory-design.md), [SOAM-044](tickets/SOAM-044-multicircuit-write-contract.md) |
 | 20 | [SOAM-041: Review rapid acquisition and retained generalization](tickets/SOAM-041-multicircuit-acquisition-gate.md) | P1 | backlog | M2 | high | [SOAM-040](tickets/SOAM-040-multicircuit-acquisition.md) |
@@ -205,6 +208,11 @@ Order is a preference within the selected path. It never schedules all alternati
 | 59 | [SOAM-029: Conditionally investigate flow-based consolidation](tickets/SOAM-029-optional-flow.md) | P3 | backlog | MX | xhigh | [SOAM-015](tickets/SOAM-015-gate-4.md) |
 | 60 | [SOAM-030: Maintain a focused theory and literature evidence map](tickets/SOAM-030-theory-literature.md) | P2 | ready | MX | high | [SOAM-000](tickets/SOAM-000-substrate-baseline.md) |
 | 61 | [SOAM-045: Explore recurrent attention within shared populations](tickets/SOAM-045-recurrent-attention-memories.md) | P2 | backlog | MX | xhigh | [SOAM-033](tickets/SOAM-033-handover-protocol.md), [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-059](tickets/SOAM-059-research-fork-selection.md) |
+
+| 62 | [SOAM-062: Specify and select the Study A gating protocol](tickets/SOAM-062-study-a-protocol.md) | P0 | done | M1 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-051](tickets/SOAM-051-shared-population-study.md) |
+| 63 | [SOAM-063: Implement and verify Study A recurrences and diagnostics](tickets/SOAM-063-study-a-harness.md) | P0 | in_progress | M1 | high | [SOAM-062](tickets/SOAM-062-study-a-protocol.md) |
+| 64 | [SOAM-064: Measure adaptive gating under the frozen Study A protocol](tickets/SOAM-064-study-a-experiment.md) | P0 | backlog | M1 | high | [SOAM-062](tickets/SOAM-062-study-a-protocol.md), [SOAM-063](tickets/SOAM-063-study-a-harness.md) |
+| 65 | [SOAM-065: Review Study A mechanisms and the smallest retained core](tickets/SOAM-065-study-a-decision.md) | P0 | backlog | M1 | xhigh | [SOAM-064](tickets/SOAM-064-study-a-experiment.md) |
 
 ## Housekeeping check
 

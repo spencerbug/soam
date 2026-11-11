@@ -26,6 +26,9 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 
 ## Current milestone
 
+**2026-11-11 current selection:** the owner selected [Study A](docs/STUDY_A_PROTOCOL.md), SOAM-062–065, to isolate adaptive gating. SOAM-039 is now backlog pending fresh routing; previous E2 readiness descriptions below are historical. Only Study A is active; Study B and acquisition are excluded. Historical E1 gates/results remain unchanged.
+
+
 **Next eligible: [SOAM-039](tickets/SOAM-039-grounded-memory-design.md), design the
 minimal acquisition protocol selected by [SOAM-059](reports/RESEARCH_FORK_SELECTION.md).** [SOAM-052](tickets/SOAM-052-shared-population-gate.md)
 is complete with **stop** for E1 v1 S32's tested useful-sharing claim. The

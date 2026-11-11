@@ -24,6 +24,9 @@ selection cannot authorize E3, attention or a later experiment.
 
 ## Small common starting point
 
+**2026-11-11 current selection:** the owner selected [Study A](STUDY_A_PROTOCOL.md), SOAM-062–065, to isolate adaptive gating. SOAM-039 is now backlog pending fresh routing; previous E2 readiness descriptions below are historical. Only Study A is active; Study B and acquisition are excluded. Historical E1 gates/results remain unchanged.
+
+
 SOAM-047 defines the minimum contract; SOAM-049 freezes one recall/transition pilot;
 SOAM-048 implements only the runner support needed for that pilot and a tiny second
 fixture demonstrating reuse. SOAM-050 implements the selected candidates and
