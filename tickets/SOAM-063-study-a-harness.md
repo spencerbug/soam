@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-063"
 title: "Implement and verify Study A recurrences and diagnostics"
 type: "engineering"
-status: "in_progress"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -56,3 +56,16 @@ Completed 2026-11-11 at source f897515. Implemented isolated soam/gating package
 ## V2 implementation amendment
 
 Implementing the reviewed common decay schedule, new stream version and cumulative cross-version ledger before v2 execution. Original v1 fixture evidence above remains unchanged.
+
+V2 verified at source 7ed78f9: all 24 Study A tests pass (1.62s), including common decay endpoint. Ruff and 66-ticket validation pass. All 12 v2 fixtures complete; see runs/study-a-v2/fixture/calibration.json. Cumulative ledger imports all v1 CPU, wall, attempts and artifact usage. V2 fixture projection is below remaining allocation. Proceed to finite development.
+
+## Final engineering acceptance
+
+The pre-confirmation receipt-serialization repair is recorded in
+[implementation history](../reports/STUDY_A_IMPLEMENTATION.md) and the exact
+[source amendment](../reports/study-a/source-amendment.json), commit 44824b7.
+It changed orchestration/test files only. Final full suite: **215 passed in 24.83s**,
+including 25 Study A tests. [Independent audit](../reports/study-a/audit.json) verifies
+archived/current source, paired inputs, all numerical hashes and 600 headline
+metrics; the 12-model repeat is exact. [Completion checks](../reports/study-a/verification.json)
+record validator, lint and evidence-link verification. No historical source changed.

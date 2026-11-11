@@ -1,0 +1,114 @@
+{
+  "artifact_bytes": 1515041079,
+  "cpu_seconds": 1067.703175,
+  "fit_attempts": 252,
+  "peak_rss_bytes": 1288273920,
+  "phases": [
+    {
+      "cpu_seconds": 1.280906,
+      "fit_attempts": 12,
+      "phase": "fixture",
+      "status": "complete",
+      "wall_seconds": 0.3128651659935713
+    },
+    {
+      "cpu_seconds": 121.750967,
+      "fit_attempts": 48,
+      "phase": "development",
+      "status": "complete",
+      "wall_seconds": 121.05961595801637
+    },
+    {
+      "cpu_seconds": 1.201473,
+      "fit_attempts": 12,
+      "phase": "fixture",
+      "status": "complete",
+      "wall_seconds": 0.33058720803819597
+    },
+    {
+      "cpu_seconds": 245.756607,
+      "fit_attempts": 48,
+      "phase": "development",
+      "status": "complete",
+      "wall_seconds": 244.9319315419998
+    },
+    {
+      "cpu_seconds": 1.030256,
+      "fit_attempts": 0,
+      "phase": "freeze",
+      "status": "failed",
+      "wall_seconds": 0.1464168339734897
+    },
+    {
+      "cpu_seconds": 1.111988,
+      "fit_attempts": 0,
+      "phase": "freeze",
+      "status": "complete",
+      "wall_seconds": 0.15996545797679573
+    },
+    {
+      "cpu_seconds": 624.997861,
+      "fit_attempts": 120,
+      "phase": "confirmation",
+      "status": "complete",
+      "wall_seconds": 624.5378984169802
+    },
+    {
+      "cpu_seconds": 61.145502,
+      "fit_attempts": 12,
+      "phase": "repeat",
+      "status": "complete",
+      "wall_seconds": 60.29848200001288
+    },
+    {
+      "cpu_seconds": 4.170775,
+      "fit_attempts": 0,
+      "phase": "report",
+      "status": "complete",
+      "wall_seconds": 13.125461166957393
+    },
+    {
+      "cpu_seconds": 1.299336,
+      "fit_attempts": 0,
+      "phase": "independent-audit",
+      "status": "complete",
+      "wall_seconds": 0.8214839999563992
+    },
+    {
+      "cpu_seconds": 1.280344,
+      "fit_attempts": 0,
+      "phase": "historical-archive-drift-analysis",
+      "status": "complete",
+      "wall_seconds": 0.5902357919840142
+    },
+    {
+      "cpu_seconds": 1.248156,
+      "fit_attempts": 0,
+      "phase": "supplemental-figures-and-gate-description",
+      "status": "complete",
+      "wall_seconds": 0.6271099169971421
+    },
+    {
+      "cpu_seconds": 0.498308,
+      "fit_attempts": 0,
+      "phase": "final-evidence-packaging",
+      "status": "complete",
+      "wall_seconds": 0.03418508300092071
+    },
+    {
+      "cpu_seconds": 0.468964,
+      "fit_attempts": 0,
+      "phase": "final-evidence-packaging",
+      "status": "complete",
+      "wall_seconds": 0.03469504101667553
+    },
+    {
+      "cpu_seconds": 0.461732,
+      "fit_attempts": 0,
+      "phase": "final-evidence-packaging",
+      "status": "complete",
+      "wall_seconds": 0.032141834031790495
+    }
+  ],
+  "wall_seconds": 1067.0430754169356
+}

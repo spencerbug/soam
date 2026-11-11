@@ -1,0 +1,1526 @@
+{
+  "completed_fit_executions": [
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:29.309083+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-FB32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:31.584783+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-FB32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:24.342847+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-FR32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:27.075526+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-FR32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:13.220011+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-FU32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:15.917286+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-FU32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:18.729254+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-FU38-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:21.628449+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-FU38-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:07.354877+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-G32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:10.512856+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-G32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:47.485535+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-GS32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:53.230291+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-GS32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:03.448628+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-L12-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:03.579000+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-L12-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:03.708951+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-L2-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:03.838842+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-L2-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:54.802351+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-R32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:56.392397+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-R32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:58.071356+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-R52-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:59.731410+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-R52-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:01.621640+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-R55-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:03.308709+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-R55-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:36.681753+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-S32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:59:41.653200+00:00",
+      "trial_directory": "runs/study-a-v1/development/8401-S32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:30.455487+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-FB32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:32.857328+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-FB32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:25.160683+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-FR32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:27.969314+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-FR32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:13.968522+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-FU32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:16.722414+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-FU32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:19.545977+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-FU38-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:22.388289+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-FU38-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:07.699345+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-G32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:11.092545+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-G32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:48.800578+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-GS32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:54.336875+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-GS32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:01:04.203615+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-L12-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:01:04.330412+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-L12-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:01:04.451783+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-L2-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:01:04.574515+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-L2-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:55.879327+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-R32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:57.452699+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-R32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:59.095459+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-R52-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:01:00.739066+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-R52-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:01:02.412426+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-R55-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:01:04.060421+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-R55-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:38.155514+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-S32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:00:43.242627+00:00",
+      "trial_directory": "runs/study-a-v1/development/8409-S32-c1"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:17.869749+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-FB32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:17.846975+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-FR32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:17.791985+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-FU32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:17.820019+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-FU38-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:17.764804+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-G32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:17.958222+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-GS32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:18.020905+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-L12-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:18.028180+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-L2-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:17.975592+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-R32-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:17.995267+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-R52-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:18.014333+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-R55-c0"
+    },
+    {
+      "execution": "study-a-v1",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T06:58:17.910583+00:00",
+      "trial_directory": "runs/study-a-v1/fixture/8301-S32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:14:57.801390+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:14:53.103784+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:14:41.643002+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:14:47.486900+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:14:36.081511+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:19.840065+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:30.226980+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:30.446471+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:23.109894+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:26.563736+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:29.989468+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:08.140688+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9301-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:59.783978+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:55.136601+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:43.602604+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:49.475825+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:15:37.963619+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:21.824251+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:32.201163+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:32.423595+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:25.062775+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:28.512136+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:31.960537+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:10.112459+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9311-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:01.824865+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:57.196984+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:45.598176+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:51.495455+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:16:39.950190+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:23.733391+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:34.129972+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:34.350801+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:26.976937+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:30.436301+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:33.890668+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:12.111913+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9319-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:04.262414+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:59.521474+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:47.538525+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:53.448382+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:17:41.871288+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:26.229948+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:36.673858+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:36.905294+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:29.496561+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:32.954739+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:36.424081+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:14.628682+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9323-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:06.634801+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:01.997590+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:50.406652+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:56.293328+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:18:44.469086+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:28.770328+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:39.126651+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:39.375927+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:32.029830+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:35.422874+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:38.884665+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:17.170646+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9337-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:08.887468+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:04.287614+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:52.603522+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:58.491841+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:19:46.919829+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:31.470060+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:41.884115+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:42.123595+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:34.740146+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:38.150467+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:41.634405+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:19.438599+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9341-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:11.650078+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:07.004401+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:55.368025+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:01.277330+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:20:49.685653+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:34.191170+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:44.597165+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:44.837663+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:37.441702+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:40.866266+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:44.355014+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:22.630033+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9343-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:14.411608+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:09.775454+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:58.199652+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:04.048140+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:21:52.390708+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:36.305710+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:46.717757+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:46.943861+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:39.545458+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:42.976816+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:46.473265+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:24.721275+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9349-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:16.626163+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:11.855468+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:00.178818+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:06.045511+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:22:54.478099+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:38.832640+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:49.271995+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:49.506275+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:42.107062+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:45.527499+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:49.030954+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:27.250320+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9371-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:19.124398+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:14.450491+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:02.770270+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:08.701095+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:23:57.087480+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:41.289402+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:51.902155+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:52.126126+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:44.531042+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:48.094599+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:51.606392+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:24:29.515033+00:00",
+      "trial_directory": "runs/study-a-v2/confirmation/9377-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:50.687521+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-FB32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:55.282977+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:40.439407+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-FR32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:46.087178+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:17.693663+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-FU32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:23.289781+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:29.060567+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-FU38-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:34.879574+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:05.614626+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-G32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:05:12.117534+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:27.283479+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-GS32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:38.761187+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:59.166500+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:59.440289+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-L12-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:59.721027+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:59.995730+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-L2-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:41.944849+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-R32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:45.165935+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:48.609802+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-R52-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:51.990813+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:55.408042+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-R55-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:58.855151+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:05.502641+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-S32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:06:15.751258+00:00",
+      "trial_directory": "runs/study-a-v2/development/8419-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:53.406796+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-FB32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:57.964872+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:43.119111+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-FR32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:48.796066+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:20.127282+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-FU32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:25.845996+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:31.637929+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-FU38-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:37.477989+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:07.560667+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-G32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:07:14.306472+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:08:29.881786+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-GS32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:08:41.427006+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:09:01.891584+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:09:02.169517+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-L12-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:09:02.444804+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:09:02.720803+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-L2-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:08:44.615375+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-R32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:08:47.880697+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:08:51.315995+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-R52-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:08:54.700612+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:08:58.115711+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-R55-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:09:01.577921+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:08:08.161577+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-S32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:08:18.383098+00:00",
+      "trial_directory": "runs/study-a-v2/development/8423-S32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:37.930248+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-FB32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:37.907215+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-FR32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:37.850842+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-FU32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:37.879103+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-FU38-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:37.820632+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-G32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:38.023174+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-GS32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:38.085056+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:38.090873+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:38.041184+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-R32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:38.059875+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-R52-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:38.078406+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-R55-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:04:37.973542+00:00",
+      "trial_directory": "runs/study-a-v2/fixture/8301-S32-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:27.974524+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-FB32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:23.504050+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-FR32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:11.700654+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-FU32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:17.915480+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-FU38-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:06.061079+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-G32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:48.913648+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-GS32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:59.019638+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-L12-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:59.239268+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-L2-c0"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:52.070526+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-R32-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:55.391875+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-R52-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:58.777173+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-R55-c1"
+    },
+    {
+      "execution": "study-a-v2",
+      "status": "complete",
+      "status_file_modified_utc": "2026-11-11T07:25:37.831483+00:00",
+      "trial_directory": "runs/study-a-v2/repeat/9301-S32-c1"
+    }
+  ],
+  "inventory_summary": {
+    "study-a-v1": {
+      "complete": 60,
+      "unexecuted": 132
+    },
+    "study-a-v2": {
+      "complete": 192
+    }
+  },
+  "timestamp_semantics": "Filesystem status-file modification timestamps captured after completion; the runner did not record separate absolute start/end clock fields. These are artifact timestamps, not reconstructed execution start times. CPU and phase wall durations are in the ledger."
+}

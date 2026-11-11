@@ -1,0 +1,54 @@
+{
+  "FR32": {
+    "gate_only_retention_half_life_quantiles": [
+      1.0181596583328014,
+      1.6027992517260063,
+      3.0575848067238485
+    ],
+    "unit_mean_update_rate_quantiles_10_50_90": [
+      0.20283908247947693,
+      0.3510894924402237,
+      0.49378843307495135
+    ],
+    "warning": "Gate-only half-life ignores the candidate-state feedback Jacobian; it is not an observed dynamical memory time constant."
+  },
+  "FU38": {
+    "gate_only_retention_half_life_quantiles": [
+      0.8849892132428119,
+      1.1197530077471822,
+      1.4521148645824646
+    ],
+    "unit_mean_update_rate_quantiles_10_50_90": [
+      0.37956622838973997,
+      0.46152709424495697,
+      0.5430707931518555
+    ],
+    "warning": "Gate-only half-life ignores the candidate-state feedback Jacobian; it is not an observed dynamical memory time constant."
+  },
+  "G32": {
+    "gate_only_retention_half_life_quantiles": [
+      0.957252636240837,
+      1.4946166311832294,
+      2.9539302288704716
+    ],
+    "unit_mean_update_rate_quantiles_10_50_90": [
+      0.20915646255016326,
+      0.37108808755874634,
+      0.5152396142482758
+    ],
+    "warning": "Gate-only half-life ignores the candidate-state feedback Jacobian; it is not an observed dynamical memory time constant."
+  },
+  "GS32": {
+    "gate_only_retention_half_life_quantiles": [
+      1.1566929931134402,
+      1.7625239790696912,
+      3.0605925550054685
+    ],
+    "unit_mean_update_rate_quantiles_10_50_90": [
+      0.2026606649160385,
+      0.3251539021730423,
+      0.4507763266563416
+    ],
+    "warning": "Gate-only half-life ignores the candidate-state feedback Jacobian; it is not an observed dynamical memory time constant."
+  }
+}

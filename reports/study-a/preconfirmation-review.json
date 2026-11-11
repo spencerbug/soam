@@ -1,0 +1,20 @@
+{
+  "artifact_ceiling_bytes": 2147483648,
+  "artifact_projection_bytes": 1920434664,
+  "artifact_tensor_safety_factor": 1.5,
+  "competence_pass": true,
+  "confirmation_not_yet_generated": true,
+  "cpu_available_after_reserve": 2867.9063579999997,
+  "cpu_projection_with_margin": 1263.8757397500005,
+  "json_checkpoint_extra_allowance_bytes": 160000000,
+  "optimization_unresolved": false,
+  "paired_training_archive_bytes_per_root": 40164157,
+  "pass": true,
+  "receipt_sha256": "e51ce6c25e0f4dd56864672ac8fe64f1d488bba7ee726d9ee0706d7ec1acefc8",
+  "rss_ceiling_bytes": 2147483648,
+  "rss_observed": 1288273920,
+  "rss_observed_times_1_25": 1610342400,
+  "selection_rule": "minimum mean final J over the two fixed development configurations, unchanged for every model",
+  "source_amendment": "study-a-v2-receipt-repair-1; receipt serialization/display changes only; failed freeze preserved and charged",
+  "threshold_review": "Keep 10% relative J advantage: at selected control development J=0.004616 this is approximately 0.000462 NMSE, far above the 1e-6 numerical floor. Two development roots cannot establish power; ten independent confirmation roots and the fixed 0.40 CI-width limit decide precision. Keep absolute 0.005 recall/free8/grounded and 0.01 free32 tolerances as declared engineering non-regression limits, not estimated noise or equivalence margins. Report every endpoint even when a tolerance permits a tradeoff. Late slopes for G32/FU38/R52/R55 are 2.17%,5.81%,5.59%,13.78%, below 20%; this establishes the finite screen, not global optimizer convergence."
+}

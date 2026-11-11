@@ -35,8 +35,9 @@ with [stop for E1 v1 S32 useful sharing](../reports/SHARED_POPULATION_GATE.md), 
 passing relative guards, causal uncertainty, T32 limits and telemetry caveats.
 No sharing-dependent child is unblocked. [SOAM-059](../reports/RESEARCH_FORK_SELECTION.md)
 is done/proceed for E2 protocol design using a conventional G32 learner with a
-bounded recurrent writer and simple controls. SOAM-039 alone becomes P0/ready;
-SOAM-044/040/041 remain backlog. E3/attention lack named selection even though
+bounded recurrent writer and simple controls. SOAM-039 became P0/ready in that
+November 9 selection, then returned to backlog under the November 11 Study A
+override. SOAM-044/040/041 remain backlog. E3/attention lack named selection even though
 ordinary dependencies may now pass. No E2 protocol, implementation or experiment
 is completed; later branching requires a fresh routing decision.
 
@@ -47,7 +48,7 @@ of future GitHub issue numbers.
 
 ## Conditional research paths
 
-**2026-11-11 current selection:** the owner selected [Study A](../docs/STUDY_A_PROTOCOL.md), SOAM-062–065, to isolate adaptive gating. SOAM-039 is now backlog pending fresh routing; previous E2 readiness descriptions below are historical. Only Study A is active; Study B and acquisition are excluded. Historical E1 gates/results remain unchanged.
+**2026-11-11: Study A complete (SOAM-062–065).** The [mechanism study](../reports/STUDY_A.md) finds the preregistered adaptive-update practical benefit inconclusive. The [decision](../reports/STUDY_A_DECISION.md) recommends ordinary R32 as the smallest tested competent neural starting core, with an explicit accuracy tradeoff. Study B is unimplemented and no next experiment is selected. SOAM-039 remains backlog pending fresh routing; historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
 Follow the [result-dependent paths](../docs/RESEARCH_PATHS.md). SOAM-049–051 now

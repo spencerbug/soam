@@ -10,21 +10,21 @@ criteria and changes the default information-gain order to E1 useful dynamics,
 E2 rapid retained acquisition, then E3 active disambiguation. These are conditional
 experiments, not three automatically authorized implementation stages.
 
-Current evidence update, 2026-11-09: [SOAM-052](../reports/SHARED_POPULATION_GATE.md)
+Historical evidence/selection update, 2026-11-09 (selection superseded below): [SOAM-052](../reports/SHARED_POPULATION_GATE.md)
 records **stop** for the frozen E1 v1 S32 useful-sharing claim after complete SOAM-051
 evidence. Absolute recall failure governs despite passing relative retention guards;
 causal precision is unresolved and T32 attribution limits remain.
 [SOAM-059](../reports/RESEARCH_FORK_SELECTION.md) is done/proceed, selecting only
 SOAM-039 E2 protocol design with G32 and one bounded recurrent writer on a changed
 action gain. Its report fixes the finite allocation, fresh-data requirements and
-stop/defer boundaries. SOAM-039 is P0/ready; no implementation or experiment starts
+stop/defer boundaries. SOAM-039 became P0/ready then; no implementation or experiment started
 from this status update. All unselected forks stay backlog and SOAM-052 remains
 stop. The original conditional routing rules below are unchanged; this completed
 selection cannot authorize E3, attention or a later experiment.
 
 ## Small common starting point
 
-**2026-11-11 current selection:** the owner selected [Study A](STUDY_A_PROTOCOL.md), SOAM-062–065, to isolate adaptive gating. SOAM-039 is now backlog pending fresh routing; previous E2 readiness descriptions below are historical. Only Study A is active; Study B and acquisition are excluded. Historical E1 gates/results remain unchanged.
+**2026-11-11: Study A complete (SOAM-062–065).** The [mechanism study](../reports/STUDY_A.md) finds the preregistered adaptive-update practical benefit inconclusive. The [decision](../reports/STUDY_A_DECISION.md) recommends ordinary R32 as the smallest tested competent neural starting core, with an explicit accuracy tradeoff. Study B is unimplemented and no next experiment is selected. SOAM-039 remains backlog pending fresh routing; historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
 SOAM-047 defines the minimum contract; SOAM-049 freezes one recall/transition pilot;

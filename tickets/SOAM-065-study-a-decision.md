@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-065"
 title: "Review Study A mechanisms and the smallest retained core"
 type: "decision"
-status: "backlog"
+status: "done"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M1"
@@ -15,7 +15,7 @@ assignees: []
 created: "2026-11-11"
 updated: "2026-11-11"
 github_issue: null
-decision: null
+decision: "proceed"
 ---
 
 # SOAM-065: Review Study A mechanisms and the smallest retained core
@@ -30,12 +30,13 @@ The [owner-selected Study A](../docs/requests/study_a_2026_11_11.md) asks why th
 
 ## Scope
 
-Review Study A mechanisms and the smallest retained core. Follow the [Study A protocol](../docs/STUDY_A_PROTOCOL.md); Study B and acquisition implementation are excluded.
+Review Study A mechanisms and the smallest retained core. Follow the [Study A v2 protocol](../docs/STUDY_A_PROTOCOL_V2.md); Study B and acquisition implementation are excluded.
 
 ## Acceptance criteria
 
-- [ ] Complete the bounded deliverables for this phase, with reproducible evidence and limitations.
-- [ ] Preserve the E1 source/results and report negative or inconclusive findings without changing thresholds after confirmation.
+- [x] Review all frozen primary/guardrail/resource/precision checks and preserve the inconclusive scientific result.
+- [x] Identify the smallest tested competent core, distinguish accuracy from competence, and record retention/defer decisions for each mechanism.
+- [x] Preserve historical E1 outcomes; do not activate or implement Study B or acquisition.
 
 ## Metrics / evidence
 
@@ -51,4 +52,8 @@ The owner's November 11 request selects only Study A. This is a fresh corrective
 
 ## Completion record
 
-In progress for protocol design only; subsequent phases remain unstarted.
+Completed 2026-11-11 after SOAM-064's complete inventory, exact repeat and independent audit. **Proceed is scoped to accepting the [decision record](../reports/STUDY_A_DECISION.md) and R32 starting-reference recommendation**, not support for the frozen adaptive-update hypothesis. That scientific result remains **inconclusive**; G32 improves short-horizon accuracy, but 9.92% primary gain misses the 10% minimum and free-32 protection is unresolved.
+
+R32 (32 units, fixed leak 0.5, 2,412 parameters) is the smallest tested competent neural core; selection is an explicit post-study simplicity/accuracy judgment, not a preregistered minimal-width proof. Preserve G32/FU38 and L2/L12 references; reset adaptation remains an optional mechanism comparison; do not require adaptive update or S32 constraints. No next experiment is selected. SOAM-039 remains backlog and SOAM-052 remains stop.
+
+Evidence: [report](../reports/STUDY_A.md), [tables](../reports/study-a/tables.md), [audit](../reports/study-a/audit.json), [repeat](../reports/study-a/reproduction.json), [resource accounting](../reports/study-a/resource-final.json) and [completion checks](../reports/study-a/verification.json). Final full suite: 215 passed in 24.83s; ticket validation/Ruff/link checks are recorded there. Experiment source commit 44824b7884965bb4ad49166143427bdd43e87452 and all roots/configurations remain fixed in the receipt. Owner notified of blog relevance; no publication performed.

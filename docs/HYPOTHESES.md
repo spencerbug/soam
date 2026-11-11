@@ -1,6 +1,6 @@
 # Hypotheses and operational evidence ledger
 
-Updated 2026-11-09. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
+Updated 2026-11-11. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
 their wording and provenance. The rows below are operational questions, not new
 schema IDs or retroactive changes to those statements. Scientific criteria and
 proposed numerical defaults live in the [review](SCIENTIFIC_REVIEW_2026_11_05.md);
@@ -22,9 +22,10 @@ before benefit; the scientific comparison is valid with disclosed reporting tele
 limits. Positive interventions do not override unresolved precision or T32's limit,
 and contraction does not establish useful recovery. Broader historical H1/H5/H6
 remain open; this narrow failed gate is preserved. [SOAM-059](../reports/RESEARCH_FORK_SELECTION.md)
-now selects one E2 protocol design: ordinary G32 with a bounded recurrent writer
-versus simple learning controls. SOAM-039 is ready; acquisition and retention remain
-unmeasured. This routing choice does not change any hypothesis criterion or E1 result.
+historically selected one E2 protocol design: ordinary G32 with a bounded recurrent
+writer versus simple learning controls. The November 11 owner-selected Study A
+superseded that current selection; SOAM-039 is backlog and acquisition/retention
+remain unmeasured. Neither routing choice changes an E1 result or gate criterion.
 
 | Historical claim / operational question | Prediction and importance | Convincing experiment / baselines | Success or failure evidence | Negative-result interpretation / class / tickets |
 | --- | --- | --- | --- | --- |
@@ -51,4 +52,16 @@ fresh protocol and confirmation set, never retroactively revise the prior outcom
 
 ## Study A mechanism questions — 2026-11-11
 
-[Study A](STUDY_A_PROTOCOL.md), SOAM-062–065, is owner-selected before acquisition. A-H1 adaptive retention; A-H2 adaptive reset; A-H3 capacity/optimization; A-H4 low-dimensional system identification are subquestions of historical H1. The protocol owns thresholds; no new evidence exists yet. Historical H2–H4 meanings remain unchanged, and SOAM-052 remains stop.
+[Study A v2](STUDY_A_PROTOCOL_V2.md), SOAM-062–065, is complete after the owner
+selected it before acquisition. A-H1 adaptive retention; A-H2 adaptive reset;
+A-H3 capacity/optimization; A-H4 low-dimensional system identification remain
+subquestions of historical H1. The [report](../reports/STUDY_A.md) finds the frozen
+adaptive-update practical benefit **inconclusive**: paired-root gain 9.92% versus
+a 10% minimum and unresolved free-32 protection. Ordinary R32 is competent; the
+GRU family improves short-horizon accuracy at higher training CPU, while learned
+constant updates and low-order dynamics have favorable long-horizon results.
+These findings do not establish necessity, useful attractors, associative-memory
+complexity, compositionality or biological validity. The [decision](../reports/STUDY_A_DECISION.md)
+recommends R32 as the smallest tested competent neural starting core, an explicit
+post-study simplicity/accuracy judgment. Study B is unimplemented and unselected.
+Historical H2–H4 meanings and SOAM-052 stop are unchanged.

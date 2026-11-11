@@ -14,12 +14,13 @@ See [ticket conventions](tickets/README.md), [agent instructions](AGENTS.md), an
 The [scientific review](docs/SCIENTIFIC_REVIEW_2026_11_05.md), [hypothesis ledger](docs/HYPOTHESES.md),
 and [ticket dispositions](docs/TICKET_REVIEW_2026_11_05.md) sharpen the next questions
 to E1 useful dynamics, E2 rapid retained acquisition, and E3 active disambiguation.
-E1 is complete with a negative sharing gate. SOAM-059 selects only E2 protocol
-design; subsequent implementation and experiments require their own prerequisites.
+E1 is complete with a negative sharing gate. SOAM-059 historically selected E2
+protocol design; the owner superseded that current selection with Study A. Study A
+is complete, and no next experiment is selected.
 
 ## Current work and readiness
 
-**November 11 owner override: only Study A is selected.** SOAM-062 is done/proceed for the [gating protocol](docs/STUDY_A_PROTOCOL.md); SOAM-063 v2 amendment is in_progress; SOAM-064 awaits verified v2 engineering after preserved v1 development; SOAM-065 awaits evidence. SOAM-039 returns to backlog pending fresh routing. Earlier November 9 status below is historical and superseded for selection/readiness. E1 evidence and SOAM-052 stop remain unchanged.
+**November 11: Study A complete.** SOAM-062 done/proceed, SOAM-063/064 done, and SOAM-065 done/proceed for the [R32 core recommendation](reports/STUDY_A_DECISION.md) only. The [scientific result](reports/STUDY_A.md) is inconclusive for the frozen practical adaptive-update claim. All 120 confirmation fits and 12 prescribed repeats completed within the cumulative ceiling; 215 tests pass. No next experiment is selected, Study B is unimplemented, and SOAM-039 remains backlog pending fresh routing. Historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
 [SOAM-046](tickets/SOAM-046-shared-platform-scope.md) records initial v0.3 adoption;
@@ -35,8 +36,7 @@ versus 8 GiB), while compute and RSS checks passed. That engineering phase inclu
 SOAM-061 completed with `decision: "proceed"` for [archive addendum A1](docs/E1_ARCHIVE_A1.md).
 The [replacement calibration](reports/E1_ARCHIVE_A1.md) passes all limits, including
 5.27 GiB projected artifacts with 2× margin. All 190 tests pass.
-**Next primary task: [SOAM-039](tickets/SOAM-039-grounded-memory-design.md),
-specify the selected minimal acquisition protocol.** [SOAM-052](tickets/SOAM-052-shared-population-gate.md)
+Historical [SOAM-052](tickets/SOAM-052-shared-population-gate.md)
 is done with **decision: stop** for the tested S32 useful-sharing claim. The
 [gate report](reports/SHARED_POPULATION_GATE.md) accepts the complete scientific
 comparison with disclosed reporting telemetry limitations and applies the frozen
@@ -47,8 +47,9 @@ complete with 119 fits/27,820 cells and exact reproduction; source, selections,
 negative results and allocation are preserved. No sharing-dependent child is unblocked.
 [SOAM-059](reports/RESEARCH_FORK_SELECTION.md) is done/proceed for one E2 protocol:
 G32 with a bounded recurrent writer, versus no-write/RLS/online-gradient/retrieval
-controls, on an identifiable changed action gain. SOAM-039 is P0/ready; all downstream
-implementation/trial tickets remain backlog. The separate ceiling is 3,600 CPU /
+controls, on an identifiable changed action gain. That selection is superseded by
+the November 11 owner override; SOAM-039 and downstream implementation/trial tickets
+remain backlog. Its historical separate ceiling is 3,600 CPU /
 7,200 wall seconds, 2 GiB RSS / 2 GiB artifacts and 16 base fits maximum; no E2
 protocol is yet approved and no branch implementation or trial has begun.
 
@@ -61,7 +62,7 @@ No measured handover study or shared-population empirical gate has passed.
 SOAM-004, SOAM-019, and SOAM-030 remain ready supporting branches. Historical
 [Gate 1](reports/GATE_1_REVIEW.md) authorizes only its recorded writer study and leaves
 its negative results and unresolved H1 claims intact. Readiness does not select a
-supporting task ahead of the selected E2 protocol design.
+supporting task automatically; a new primary experiment requires fresh routing.
 
 ## Priority and status legend
 
@@ -85,29 +86,30 @@ IDs are thematic provenance groups, not sequential dates or compulsory stages fo
 | Milestone | Focus | Exit evidence / decision | State |
 | --- | --- | --- | --- |
 | M0 | Reusable recurrent experiment infrastructure | Historical harnesses plus the minimal SOAM-047 contract and SOAM-048 runner/invariant fixtures | Minimal runner delivered; exact fixture repeat and 110 passing tests; no scientific gate |
-| M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; 119 fits/27,820 cells complete; absolute recall failure, exact repeat; SOAM-052 done/stop for tested useful sharing; dependent integration unready; SOAM-059 done/proceed for E2 protocol design only |
-| M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Historical contract complete; G32 alternative selected by SOAM-059; SOAM-039 P0/ready; acquisition unmeasured |
+| M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; 119 fits/27,820 cells complete; absolute recall failure, exact repeat; SOAM-052 done/stop for tested useful sharing; dependent integration unready; Study A complete/inconclusive practical update benefit; SOAM-065 proceeds with R32 reference recommendation only |
+| M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Historical contract complete; SOAM-059 selection superseded by Study A; SOAM-039 backlog pending fresh routing; acquisition unmeasured |
 | M3 | Conditional functional scopes | SOAM-007–010; limited interference with beneficial sharing | Deferred comparison branch |
 | M4 | Replay and overlapping organization | SOAM-011/012, SOAM-042/043 at fixed capacity; optional SOAM-013–015 | Planned; learned refinement conditional |
 | M5 | Compositional reuse | SOAM-031, SOAM-016–018; held-out feature/relation/action reuse and identity | Planned after shared-population evidence |
 | M6 | Grounding and independent applications | E3 active disambiguation SOAM-053–055; later SOAM-037/019–022 and module SOAM-056–058 after acquisition | Conditional alternatives awaiting named fork selection, contract/runner, and own decisions |
 | M7 | Control and shared action relations | SOAM-023/024/038/026; optional SOAM-025 | Planned after supported shared beliefs/handover |
 | M8 | Continual embodied integration | SOAM-027/028 require composition, grounding, control, acquisition, organization outcomes | Planned; application success alone does not pass integration gates |
-| MX | Scope and supporting research | SOAM-046 adoption and SOAM-060 review; SOAM-030 evidence map; SOAM-045 optional recurrent attention; SOAM-029 optional flow | SOAM-059 routing complete; one E2 protocol selected; empirical mechanisms unproven |
+| MX | Scope and supporting research | SOAM-046 adoption and SOAM-060 review; SOAM-030 evidence map; SOAM-045 optional recurrent attention; SOAM-029 optional flow | SOAM-059 routing preserved; Study A delivered under owner override; no next experiment selected |
 
 ## Execution paths and dependency changes
 
 Primary path: SOAM-047 minimum contract → SOAM-049 minimal benefit protocol;
 SOAM-048 runner + SOAM-049 → SOAM-050 → SOAM-061 corrective feasibility decision → SOAM-051. The pilot measures one primary
 benefit of sharing with recall/interference guardrails and is now complete with a
-negative gate. Only the minimal E2 protocol is selected; implementation, concurrent
+negative gate. The subsequent Study A diagnostic is complete; acquisition, concurrent
 handover and broad backend work remain deferred.
 
 SOAM-052 completed the scientific review with stop; its failed gate remains intact.
-SOAM-059 is done/proceed, selecting **only E2 via SOAM-039** using the ordinary G32
-learner under the [bounded branch record](reports/RESEARCH_FORK_SELECTION.md).
-SOAM-039 is ready after SOAM-047 and SOAM-059 proceed; SOAM-044/040/041 remain
-backlog until their own prerequisites pass. E3 and attention remain backlog despite
+SOAM-059 is historically done/proceed for **E2 via SOAM-039** using ordinary G32
+under the [bounded branch record](reports/RESEARCH_FORK_SELECTION.md). The owner
+selected Study A instead; its completed SOAM-065 decision recommends R32 without
+activating Study B or acquisition. SOAM-039/044/040/041 remain backlog pending fresh
+routing and their own prerequisites. E3 and attention remain backlog despite
 completed ordinary dependencies because their named-selection conditions are false.
 No sharing-dependent edge changes. Later experiments need fresh routing, not reuse
 of SOAM-059. See [conditional paths and outcome table](docs/RESEARCH_PATHS.md).
@@ -210,9 +212,9 @@ Order is a preference within the selected path. It never schedules all alternati
 | 61 | [SOAM-045: Explore recurrent attention within shared populations](tickets/SOAM-045-recurrent-attention-memories.md) | P2 | backlog | MX | xhigh | [SOAM-033](tickets/SOAM-033-handover-protocol.md), [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-059](tickets/SOAM-059-research-fork-selection.md) |
 
 | 62 | [SOAM-062: Specify and select the Study A gating protocol](tickets/SOAM-062-study-a-protocol.md) | P0 | done | M1 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-051](tickets/SOAM-051-shared-population-study.md) |
-| 63 | [SOAM-063: Implement and verify Study A recurrences and diagnostics](tickets/SOAM-063-study-a-harness.md) | P0 | in_progress | M1 | high | [SOAM-062](tickets/SOAM-062-study-a-protocol.md) |
-| 64 | [SOAM-064: Measure adaptive gating under the frozen Study A protocol](tickets/SOAM-064-study-a-experiment.md) | P0 | backlog | M1 | high | [SOAM-062](tickets/SOAM-062-study-a-protocol.md), [SOAM-063](tickets/SOAM-063-study-a-harness.md) |
-| 65 | [SOAM-065: Review Study A mechanisms and the smallest retained core](tickets/SOAM-065-study-a-decision.md) | P0 | backlog | M1 | xhigh | [SOAM-064](tickets/SOAM-064-study-a-experiment.md) |
+| 63 | [SOAM-063: Implement and verify Study A recurrences and diagnostics](tickets/SOAM-063-study-a-harness.md) | P0 | done | M1 | high | [SOAM-062](tickets/SOAM-062-study-a-protocol.md) |
+| 64 | [SOAM-064: Measure adaptive gating under the frozen Study A protocol](tickets/SOAM-064-study-a-experiment.md) | P0 | done | M1 | high | [SOAM-062](tickets/SOAM-062-study-a-protocol.md), [SOAM-063](tickets/SOAM-063-study-a-harness.md) |
+| 65 | [SOAM-065: Review Study A mechanisms and the smallest retained core](tickets/SOAM-065-study-a-decision.md) | P0 | done | M1 | xhigh | [SOAM-064](tickets/SOAM-064-study-a-experiment.md) |
 
 ## Housekeeping check
 

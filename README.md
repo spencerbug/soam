@@ -26,11 +26,10 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 
 ## Current milestone
 
-**2026-11-11 current selection:** the owner selected [Study A](docs/STUDY_A_PROTOCOL.md), SOAM-062–065, to isolate adaptive gating. SOAM-039 is now backlog pending fresh routing; previous E2 readiness descriptions below are historical. Only Study A is active; Study B and acquisition are excluded. Historical E1 gates/results remain unchanged.
+**2026-11-11: Study A complete (SOAM-062–065).** The [mechanism study](reports/STUDY_A.md) finds the preregistered adaptive-update practical benefit inconclusive. The [decision](reports/STUDY_A_DECISION.md) recommends ordinary R32 as the smallest tested competent neural starting core, with an explicit accuracy tradeoff. Study B is unimplemented and no next experiment is selected. SOAM-039 remains backlog pending fresh routing; historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
-**Next eligible: [SOAM-039](tickets/SOAM-039-grounded-memory-design.md), design the
-minimal acquisition protocol selected by [SOAM-059](reports/RESEARCH_FORK_SELECTION.md).** [SOAM-052](tickets/SOAM-052-shared-population-gate.md)
+Historical [SOAM-052](tickets/SOAM-052-shared-population-gate.md)
 is complete with **stop** for E1 v1 S32's tested useful-sharing claim. The
 [gate review](reports/SHARED_POPULATION_GATE.md) audits validity, information parity,
 resources and uncertainty before applying absolute recall failure. Both relative
@@ -39,13 +38,18 @@ and T32 prevents a uniquely physical-overlap performance claim. Recovery usefuln
 criteria also fail, separately. This does not reject shared recurrence generally.
 The [full study](reports/SHARED_POPULATION_STUDY.md) preserves 119 fits/27,820 cells,
 exact reproduction and all source/selections/resources. All 190 tests pass.
-Sharing-dependent integration remains unready. SOAM-059 is done/proceed for one
-E2 design: G32 with a bounded recurrent writer versus simple learning controls on
-a changed action gain. SOAM-039 is P0/ready; SOAM-044/040/041 remain backlog. The
-branch ceiling is 3,600 CPU / 7,200 wall seconds, 2 GiB RSS / 2 GiB artifacts and
-16 base fits, with fresh streams. No E2 protocol is approved or implementation
-started. Active disambiguation, attention and the larger learning module remain
-unselected; any later branch needs a fresh routing decision.
+Sharing-dependent integration remains unready. [SOAM-059](reports/RESEARCH_FORK_SELECTION.md)
+historically selected E2 protocol design with G32 and a bounded writer. The owner
+superseded that current selection with Study A, preserving SOAM-059's decision
+and allocation history. SOAM-039/044/040/041 remain backlog; no E2 protocol or
+implementation has been approved. Any later branch needs fresh routing.
+
+Study A adds [tested recurrence variants and execution history](reports/STUDY_A_IMPLEMENTATION.md),
+a [versioned frozen protocol](docs/STUDY_A_PROTOCOL_V2.md), [root tables and intervals](reports/study-a/tables.md),
+gate/state/recovery plots and historical phase-drift analysis. All 120 new
+confirmation fits and the 12-model prescribed repeat completed, within the owner
+ceiling; the current full suite has 215 passing tests. Its inconclusive mechanism
+claim does not alter the historical negative sharing gate.
 
 Sharing refers to recurrent neurons and connections, not just tied parameters or
 three independent networks stored in one tensor. Test overlap, binding, interference,

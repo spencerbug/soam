@@ -1,0 +1,7 @@
+{
+  "corrected_remaining_cpu_limit": 3115.767651,
+  "note": "Original v2 fixture display omitted spent v1 CPU; runtime budget enforcement and subsequent freeze preflight already used cumulative allocation. Original calibration preserved.",
+  "original_displayed_remaining": 3238.799524,
+  "projection": 1509.0237825000013,
+  "still_passes": true
+}

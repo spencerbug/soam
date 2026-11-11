@@ -18,7 +18,7 @@ See the [complete ticket dispositions](TICKET_REVIEW_2026_11_05.md).
 
 ## Immediate work
 
-**2026-11-11 current selection:** the owner selected [Study A](STUDY_A_PROTOCOL.md), SOAM-062–065, to isolate adaptive gating. SOAM-039 is now backlog pending fresh routing; previous E2 readiness descriptions below are historical. Only Study A is active; Study B and acquisition are excluded. Historical E1 gates/results remain unchanged.
+**2026-11-11: Study A complete (SOAM-062–065).** The [mechanism study](../reports/STUDY_A.md) finds the preregistered adaptive-update practical benefit inconclusive. The [decision](../reports/STUDY_A_DECISION.md) recommends ordinary R32 as the smallest tested competent neural starting core, with an explicit accuracy tradeoff. Study B is unimplemented and no next experiment is selected. SOAM-039 remains backlog pending fresh routing; historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
 SOAM-047 adopted the [minimal platform contract](RECURRENT_PLATFORM_CONTRACT.md).
@@ -39,15 +39,17 @@ failure governs; passing relative guards and unresolved causal precision remain
 separate. Sharing-dependent integration stays unready.
 [SOAM-059](../reports/RESEARCH_FORK_SELECTION.md) is done/proceed for one E2 protocol:
 G32 with a bounded recurrent writer and simple learning controls on a changed
-action gain. SOAM-039 is P0/ready, while SOAM-044/040/041 remain backlog. No E2
-protocol, implementation or trial is completed; all unselected forks stay deferred.
+action gain. That selection is historical after the November 11 owner override;
+SOAM-039/044/040/041 remain backlog. No E2 protocol, implementation or trial is
+completed; all unselected forks stay deferred.
 
 The shared-mechanism track is SOAM-049 protocol → SOAM-050 candidates → SOAM-061
 corrective feasibility decision → SOAM-051
 minimal pilot → SOAM-052 claim review and SOAM-059 fork selection. The active-disambiguation track SOAM-053–055 and
 recurrent learning-module track SOAM-056–058 require explicit fork selection before their own protocol
-decisions and reuse the platform. The selected next protocol is minimal acquisition through SOAM-039/044/040/041,
-without the old skill/concurrency/replay prerequisites. The module track now requires
+decisions and reuse the platform. Minimal acquisition through SOAM-039/044/040/041
+remains an unselected future path without the old skill/concurrency/replay prerequisites.
+Study A SOAM-062–065 is delivered; its core recommendation activates no next experiment. The module track now requires
 SOAM-041 proceed. These tracks do not require the full SOAM integration chain. Each selects a bounded candidate set.
 
 SOAM-033/034 and the [frozen handover protocol](HANDOVER_PROTOCOL.md),
@@ -63,8 +65,8 @@ completed by this planning revision. See [architecture boundaries](ARCHITECTURE.
 | Package | Current scope and criterion | Tickets / decisions |
 | --- | --- | --- |
 | WP-00 | Historical provenance/handover fixtures preserved; platform and E1 engineering fixtures verified | SOAM-000/034/047/048/050 done; [SOAM-061](../tickets/SOAM-061-e1-artifact-feasibility.md) done/proceed with A1 storage correction; application harnesses SOAM-054/057 deferred |
-| WP-01 | Minimal shared-unit benefit/interference pilot; concurrent handover only on the selected SOAM-037 fork; symmetric/disjoint/ordinary recurrence controls | SOAM-001/002/033/034 done; [SOAM-049–052](../tickets/SOAM-049-shared-population-protocol.md); SOAM-059 done/proceed selects E2 design only; SOAM-035/036 retained comparison; conditional active disambiguation SOAM-053–055 |
-| WP-02 | Early bounded acquisition/retention with state-reset and one-exposure tests; later module-learning extension | SOAM-003 done; SOAM-004/006 historical branch; SOAM-039 P0/ready for G32 alternative, 044/040/041 backlog; learning-module SOAM-056–058 deferred |
+| WP-01 | Minimal shared-unit benefit/interference pilot; concurrent handover only on the selected SOAM-037 fork; symmetric/disjoint/ordinary recurrence controls | SOAM-001/002/033/034 done; [SOAM-049–052](../tickets/SOAM-049-shared-population-protocol.md) complete with sharing stop; Study A SOAM-062–065 complete, practical update benefit inconclusive and R32 reference recommended; SOAM-035/036 retained comparison; conditional active disambiguation SOAM-053–055 |
+| WP-02 | Early bounded acquisition/retention with state-reset and one-exposure tests; later module-learning extension | SOAM-003 done; SOAM-004/006 historical branch; SOAM-039/044/040/041 backlog pending fresh routing; learning-module SOAM-056–058 deferred |
 | WP-03 | Cross-function and instance retention/interference, useful transfer, and write/handover effects | SOAM-005; SOAM-039–041 |
 | WP-04 | Conditional heuristic scope comparison, with beneficial sharing rather than isolated allocation alone | SOAM-007/008 |
 | WP-05 | Conditional learned scope at matched acquisition; no prerequisite for initial platform/application studies | SOAM-009/010 |
