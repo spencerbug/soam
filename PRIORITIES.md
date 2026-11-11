@@ -19,7 +19,7 @@ design; subsequent implementation and experiments require their own prerequisite
 
 ## Current work and readiness
 
-**November 11 owner override: only Study A is selected.** SOAM-062 is done/proceed for the [gating protocol](docs/STUDY_A_PROTOCOL.md); SOAM-063 is in_progress; SOAM-064/065 await prerequisites. SOAM-039 returns to backlog pending fresh routing. Earlier November 9 status below is historical and superseded for selection/readiness. E1 evidence and SOAM-052 stop remain unchanged.
+**November 11 owner override: only Study A is selected.** SOAM-062 is done/proceed for the [gating protocol](docs/STUDY_A_PROTOCOL.md); SOAM-063 v2 amendment is in_progress; SOAM-064 awaits verified v2 engineering after preserved v1 development; SOAM-065 awaits evidence. SOAM-039 returns to backlog pending fresh routing. Earlier November 9 status below is historical and superseded for selection/readiness. E1 evidence and SOAM-052 stop remain unchanged.
 
 
 [SOAM-046](tickets/SOAM-046-shared-platform-scope.md) records initial v0.3 adoption;

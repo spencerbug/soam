@@ -1,5 +1,6 @@
 """Training from observed records; isolated no-write rollout and metric reduction."""
 
+import math
 import time
 
 import torch
@@ -152,6 +153,15 @@ def fit(
     else:
         for i, recall in enumerate(data["recall"]):
             check()
+            if "decay_start" in config and i >= config["decay_start"]:
+                progress = (i - config["decay_start"]) / max(
+                    1, config["decay_end"] - config["decay_start"] - 1
+                )
+                ratio = config["final_lr_ratio"] + (1 - config["final_lr_ratio"]) * 0.5 * (
+                    1 + math.cos(math.pi * min(progress, 1.0))
+                )
+                for group in optimizer.param_groups:
+                    group["lr"] = config["lr"] * ratio
             optimizer.zero_grad(set_to_none=True)
             transition = None if i < nrecall else data["transition"][i - nrecall]
             terms = objective(model, recall, transition)
@@ -166,6 +176,7 @@ def fit(
                     "update": i + 1,
                     "total": loss.item(),
                     "gradient_norm": grad.item(),
+                    "learning_rate": optimizer.param_groups[0]["lr"],
                     **{k: v.item() for k, v in terms.items()},
                 }
             )

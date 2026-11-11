@@ -34,8 +34,8 @@ Implement and verify Study A recurrences and diagnostics. Follow the [Study A pr
 
 ## Acceptance criteria
 
-- [ ] Complete the bounded deliverables for this phase, with reproducible evidence and limitations.
-- [ ] Preserve the E1 source/results and report negative or inconclusive findings without changing thresholds after confirmation.
+- [x] Complete the bounded deliverables for this phase, with reproducible evidence and limitations.
+- [x] Preserve the E1 source/results and report negative or inconclusive findings without changing thresholds after confirmation.
 
 ## Metrics / evidence
 
@@ -51,4 +51,8 @@ The owner's November 11 request selects only Study A. This is a fresh corrective
 
 ## Completion record
 
-In progress for protocol design only; subsequent phases remain unstarted.
+Completed 2026-11-11 at source f897515. Implemented isolated soam/gating package, all requested recurrences (GL via tested exact FR folding), fresh paired E1 data, bounded phases, source snapshots, immutable receipt, root inference, diagnostic-only probes, intervention/recovery/long-horizon plots and exact reproduction checks. Baseline 190 tests passed; full suite with 22 added tests: 212 passed in 27.15s; final additional statistical-classification test: all 23 Study A tests passed in 1.71s. Ruff check/format and 66-ticket validator pass. All 12 short fixture fits completed; [calibration](../runs/study-a-v1/fixture/calibration.json) projects 970.43 CPU seconds with margin versus 3,238.72 available. Peak RSS 300,662,784 bytes, archived fixture/source 14,039,128 bytes. Fixture execution consumed 1.280906 CPU seconds; no confirmation data generated. Equations, stream separation, no-write inference, probe isolation, gate folding, resource matching, paired-root statistics, budget stopping and deterministic mini-fits tested. Local worker review was unsuccessful; its out-of-scope command was rejected and no worker action executed. Direct review used. Fixture success is engineering evidence only.
+
+## V2 implementation amendment
+
+Implementing the reviewed common decay schedule, new stream version and cumulative cross-version ledger before v2 execution. Original v1 fixture evidence above remains unchanged.

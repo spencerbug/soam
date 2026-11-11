@@ -285,3 +285,13 @@ def test_statistics_use_roots_and_frozen_guardrails():
     )
     with pytest.raises(ValueError):
         summarize(records[:-1], spec, receipt)
+
+
+def test_common_decay_schedule_reaches_frozen_terminal_rate():
+    data = training_data(8301, fixture=True, recall_updates=2, joint_updates=4, batch=2)
+    config = {"lr": 0.01, "ridge": 0.0001, "decay_start": 2, "decay_end": 6, "final_lr_ratio": 0.01}
+    result = fit(Core("gru", 32, 1), data, config, lambda: None)
+    rates = [r["learning_rate"] for r in result["trace"]]
+    assert rates[:3] == [0.01] * 3
+    assert rates[-1] == pytest.approx(0.0001)
+    assert rates == sorted(rates, reverse=True)

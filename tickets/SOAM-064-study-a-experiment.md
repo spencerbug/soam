@@ -52,4 +52,8 @@ The owner's November 11 request selects only Study A. This is a fresh corrective
 
 ## Completion record
 
-In progress for protocol design only; subsequent phases remain unstarted.
+Development started after SOAM-062 proceed and SOAM-063 complete. Source f897515, isolated namespace soam-study-a v1; calibration fits complete. Confirmation remains ungenerated until the development receipt freezes.
+
+## V1 development preserved
+
+All 48 development fits completed, but the non-gated controls did not plateau. V1 is closed before confirmation. Await v2 engineering checks; SOAM-062 records the reviewed bounded schedule amendment.

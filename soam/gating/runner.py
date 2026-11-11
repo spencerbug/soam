@@ -22,7 +22,7 @@ from soam.gating.models import Core
 from soam.gating.statistics import summarize
 
 ROOT = Path(__file__).resolve().parents[2]
-MANIFEST = ROOT / "docs/protocols/study_a_v1.json"
+MANIFEST = ROOT / "docs/protocols/study_a_v2.json"
 
 
 def dump(path, value):
@@ -59,7 +59,7 @@ def digest(value):
 def source():
     files = list((ROOT / "soam").rglob("*.py")) + [
         MANIFEST,
-        ROOT / "docs/STUDY_A_PROTOCOL.md",
+        ROOT / "docs/STUDY_A_PROTOCOL_V2.md",
         ROOT / "docs/protocols/shared_population_v1.json",
         ROOT / "docs/SHARED_POPULATION_PROTOCOL.md",
         ROOT / "pyproject.toml",
@@ -101,6 +101,19 @@ class Budget:
             if (output / "ledger.json").exists()
             else {"cpu_seconds": 0.0, "wall_seconds": 0.0, "fit_attempts": 0, "phases": []}
         )
+        self.other_output = (
+            ROOT / manifest["prior_execution"] if manifest.get("prior_execution") else None
+        )
+        if self.other_output is not None and not (output / "ledger.json").exists():
+            prior_path = self.other_output / "ledger.json"
+            if (
+                hashlib.sha256(prior_path.read_bytes()).hexdigest()
+                != manifest["prior_ledger_sha256"]
+            ):
+                raise ValueError("prior execution allocation changed")
+            if not (self.other_output / "closed.json").exists():
+                raise ValueError("prior execution must be closed")
+            self.prior = json.loads(prior_path.read_text())
         self.attempts = 0
 
     def check(self, *, reserve=True):
@@ -110,7 +123,13 @@ class Budget:
             1 if sys.platform == "darwin" else 1024
         )
         if time.process_time() - self.last_scan > 10:
-            self.size = sum(p.stat().st_size for p in self.output.rglob("*") if p.is_file())
+            self.size = sum(
+                p.stat().st_size
+                for base in (self.output, self.other_output)
+                if base is not None
+                for p in base.rglob("*")
+                if p.is_file()
+            )
             self.last_scan = time.process_time()
         limit = self.limits["cpu_seconds"] - (self.limits["reserve_cpu_seconds"] if reserve else 0)
         if (
@@ -138,7 +157,13 @@ class Budget:
             "cpu_seconds": self.prior["cpu_seconds"] + cpu,
             "wall_seconds": self.prior["wall_seconds"] + wall,
             "fit_attempts": self.prior["fit_attempts"] + self.attempts,
-            "artifact_bytes": sum(p.stat().st_size for p in self.output.rglob("*") if p.is_file()),
+            "artifact_bytes": sum(
+                p.stat().st_size
+                for base in (self.output, self.other_output)
+                if base is not None
+                for p in base.rglob("*")
+                if p.is_file()
+            ),
             "peak_rss_bytes": max(
                 self.prior.get("peak_rss_bytes", 0),
                 resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
@@ -365,8 +390,8 @@ def run_phase(output, phase, m, budget):
             selected[name] = cfg
             scores[name] = configs
             rows = [r for r in records if r["model"] == name and r["config"] == cfg]
-            before = np.mean([r["learning"]["600"]["J"] for r in rows])
-            after = np.mean([r["learning"]["800"]["J"] for r in rows])
+            before = np.mean([r["learning"][str(m["fit"]["checkpoints"][-2])]["J"] for r in rows])
+            after = np.mean([r["learning"][str(m["fit"]["checkpoints"][-1])]["J"] for r in rows])
             plateaus[name] = float((before - after) / max(before, 1e-6))
             gate_means[name] = np.mean([r["alpha_mean"] for r in rows], axis=0).tolist()
         # Frozen before confirmation data are generated; no automatic alternate ablation selection.
@@ -417,7 +442,7 @@ def run_phase(output, phase, m, budget):
                 (output / "development/results.json").read_bytes()
             ).hexdigest(),
             "criteria": m["criteria"],
-            "rationale": "The 10% gain and absolute 0.005/0.01 guardrails retain the prior task-scale engineering interpretation; all candidate development scores and 600-to-800 slopes are recorded for auditing. No criterion is selected from confirmation. Optimization unresolved remains an attribution limitation, not permission to extend training.",
+            "rationale": "The 10% gain and absolute 0.005/0.01 guardrails retain the prior task-scale engineering interpretation; all candidate development scores and 1400-to-1600 slopes are recorded for auditing. No criterion is selected from confirmation. Optimization unresolved remains an attribution limitation, not permission to extend training.",
             "status": "frozen",
         }
         receipt["sha256"] = digest(receipt)

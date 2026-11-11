@@ -9,7 +9,7 @@ from soam.encoders.projection import FixedProjection
 from soam.platform.core import derived_seed
 
 PROTOCOL = "soam-study-a"
-VERSION = 1
+VERSION = 2
 SPLITS = {
     "train",
     "development",
