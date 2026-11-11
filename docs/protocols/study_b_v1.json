@@ -1,0 +1,123 @@
+{
+  "namespace": "soam-study-b",
+  "version": 1,
+  "projection_seed": 1729,
+  "features": 12,
+  "development_roots": [
+    11003,
+    11027
+  ],
+  "confirmation_roots": [
+    12007,
+    12011,
+    12037,
+    12041,
+    12043,
+    12049,
+    12071,
+    12073,
+    12097,
+    12101
+  ],
+  "fixture_root": 10903,
+  "normalization_root": 10909,
+  "repeat_root": 12007,
+  "candidates": [
+    "MIX16",
+    "MIX32",
+    "PC16",
+    "PC32",
+    "SET32",
+    "REP32",
+    "MIXC32",
+    "GM32",
+    "GR32",
+    "GS32",
+    "GA32",
+    "GMETA32",
+    "AM32",
+    "L2",
+    "FILTER2",
+    "RESET2"
+  ],
+  "learning_rates": [
+    0.003,
+    0.01
+  ],
+  "ridge_penalties": [
+    0.0001,
+    0.01
+  ],
+  "updates": 1200,
+  "batch": 8,
+  "train_horizon": 16,
+  "eval_horizon": 64,
+  "eval_batch": 20,
+  "checkpoints": [
+    300,
+    600,
+    900,
+    1050,
+    1200
+  ],
+  "decay_start": 600,
+  "final_lr_ratio": 0.01,
+  "settling_durations": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "max_settle": 4,
+  "event_threshold": 0.01,
+  "halting_threshold": 0.5,
+  "schedules": [
+    "every1",
+    "every2",
+    "every4",
+    "every8",
+    "irregular",
+    "initial"
+  ],
+  "conditions": [
+    "clean",
+    "partial",
+    "missing",
+    "noise",
+    "corrupt",
+    "contradict",
+    "change",
+    "motion",
+    "gap"
+  ],
+  "primary_schedules": [
+    "every2",
+    "every4",
+    "every8",
+    "irregular"
+  ],
+  "primary_conditions": [
+    "partial",
+    "missing",
+    "noise"
+  ],
+  "primary_candidate": "GA32",
+  "primary_controls": [
+    "PC32",
+    "MIX32"
+  ],
+  "benefit": 0.1,
+  "precision_width": 0.4,
+  "guard_margin": 0.01,
+  "competence": 0.15,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 12203,
+  "cpu_seconds": 7200,
+  "wall_seconds": 14400,
+  "rss_bytes": 2147483648,
+  "artifact_bytes": 2147483648,
+  "finish_reserve": 0.1,
+  "max_fit_attempts": 272,
+  "threads": 1,
+  "device": "cpu"
+}

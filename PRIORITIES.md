@@ -20,6 +20,8 @@ is complete, and no next experiment is selected.
 
 ## Current work and readiness
 
+**Study B selected by the owner, November 11.** SOAM-066 is in progress for the temporal assimilation protocol and bounded architecture search informed by Study A. SOAM-067–069 follow sequentially. The accepted ceiling is 7200 CPU / 14400 execution wall seconds and 2 GiB RSS/artifacts. Acquisition and all other forks remain unselected.
+
 **November 11: Study A complete.** SOAM-062 done/proceed, SOAM-063/064 done, and SOAM-065 done/proceed for the [R32 core recommendation](reports/STUDY_A_DECISION.md) only. The [scientific result](reports/STUDY_A.md) is inconclusive for the frozen practical adaptive-update claim. All 120 confirmation fits and 12 prescribed repeats completed within the cumulative ceiling; 215 tests pass. No next experiment is selected, Study B is unimplemented, and SOAM-039 remains backlog pending fresh routing. Historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
@@ -215,6 +217,10 @@ Order is a preference within the selected path. It never schedules all alternati
 | 63 | [SOAM-063: Implement and verify Study A recurrences and diagnostics](tickets/SOAM-063-study-a-harness.md) | P0 | done | M1 | high | [SOAM-062](tickets/SOAM-062-study-a-protocol.md) |
 | 64 | [SOAM-064: Measure adaptive gating under the frozen Study A protocol](tickets/SOAM-064-study-a-experiment.md) | P0 | done | M1 | high | [SOAM-062](tickets/SOAM-062-study-a-protocol.md), [SOAM-063](tickets/SOAM-063-study-a-harness.md) |
 | 65 | [SOAM-065: Review Study A mechanisms and the smallest retained core](tickets/SOAM-065-study-a-decision.md) | P0 | done | M1 | xhigh | [SOAM-064](tickets/SOAM-064-study-a-experiment.md) |
+| 66 | [SOAM-066: Specify and select temporal sensory assimilation](tickets/SOAM-066-study-b-protocol.md) | P0 | done | M1 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-064](tickets/SOAM-064-study-a-experiment.md), [SOAM-065](tickets/SOAM-065-study-a-decision.md) |
+| 67 | [SOAM-067: Implement and verify temporal assimilation comparisons](tickets/SOAM-067-study-b-harness.md) | P0 | in_progress | M1 | high | [SOAM-066](tickets/SOAM-066-study-b-protocol.md) |
+| 68 | [SOAM-068: Measure temporal assimilation and settling under matched evidence](tickets/SOAM-068-study-b-experiment.md) | P0 | backlog | M1 | high | [SOAM-066](tickets/SOAM-066-study-b-protocol.md), [SOAM-067](tickets/SOAM-067-study-b-harness.md) |
+| 69 | [SOAM-069: Review temporal assimilation and recommend the sensory motion interface](tickets/SOAM-069-study-b-decision.md) | P0 | backlog | M1 | xhigh | [SOAM-068](tickets/SOAM-068-study-b-experiment.md) |
 
 ## Housekeeping check
 
