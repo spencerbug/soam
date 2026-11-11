@@ -295,3 +295,31 @@ def test_common_decay_schedule_reaches_frozen_terminal_rate():
     assert rates[:3] == [0.01] * 3
     assert rates[-1] == pytest.approx(0.0001)
     assert rates == sorted(rates, reverse=True)
+
+
+def test_exact_source_amendment_and_serializable_preflight_boolean():
+    import json
+
+    import numpy as np
+
+    from soam.gating.runner import digest, verify_source
+
+    old = {"sha256": "old", "files": {"engine.py": "same", "runner.py": "before"}}
+    new = {"sha256": "new", "files": {"engine.py": "same", "runner.py": "after"}}
+    amendment = {
+        "execution_identity": "serialization-fix-1",
+        "previous_source_sha256": "old",
+        "new_source_sha256": "new",
+        "changed_files": ["runner.py"],
+    }
+    verify_source(old, old)
+    verify_source(old, new, amendment)
+    with pytest.raises(ValueError):
+        verify_source(old, new)
+    with pytest.raises(ValueError):
+        verify_source(old, {**new, "sha256": "different"}, amendment)
+    with pytest.raises(ValueError):
+        verify_source(old, new, {**amendment, "changed_files": ["engine.py"]})
+    receipt = {"resource_pass": bool(np.float64(1) < 2.0)}
+    assert json.loads(json.dumps(receipt))["resource_pass"] is True
+    assert digest(receipt) == digest({"resource_pass": True})

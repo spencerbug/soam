@@ -338,6 +338,7 @@ def run_phase(output, phase, m, budget):
                 "fit_cpu_projection_with_margin": projection,
                 "remaining_cpu_limit": m["limits"]["cpu_seconds"]
                 - m["limits"]["reserve_cpu_seconds"]
+                - budget.prior["cpu_seconds"]
                 - time.process_time(),
                 "reference_batch": f["batch"],
                 "scientific_batch": m["fit"]["batch"],
@@ -434,7 +435,7 @@ def run_phase(output, phase, m, budget):
             "optimization_unresolved": unresolved,
             "projected_confirmation_repeat_cpu_with_margin": estimate,
             "remaining_fit_cpu": remaining,
-            "resource_pass": estimate < remaining,
+            "resource_pass": bool(estimate < remaining),
             "source": source(),
             "manifest_sha256": hashlib.sha256(MANIFEST.read_bytes()).hexdigest(),
             "normalization_sha256": digest(norm),
@@ -538,6 +539,28 @@ def run_phase(output, phase, m, budget):
     raise ValueError("unknown phase")
 
 
+def verify_source(previous, current, amendment=None):
+    if previous["sha256"] == current["sha256"]:
+        return
+    changed = sorted(
+        k
+        for k in previous["files"].keys() | current["files"].keys()
+        if previous["files"].get(k) != current["files"].get(k)
+    )
+    if (
+        not amendment
+        or not amendment.get("execution_identity")
+        or (
+            amendment.get("previous_source_sha256") != previous["sha256"]
+            or amendment.get("new_source_sha256") != current["sha256"]
+            or amendment.get("changed_files") != changed
+        )
+    ):
+        raise ValueError(
+            "source changed: an exact reviewed amendment and fresh execution identity are required"
+        )
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -557,10 +580,9 @@ def main():
     current = source()
     if (output / "source.json").exists():
         previous = json.loads((output / "source.json").read_text())
-        if previous["sha256"] != current["sha256"]:
-            raise ValueError(
-                "source changed: preserve attempt and use a fresh reviewed execution identity"
-            )
+        amendment_path = output / "source-amendment.json"
+        amendment = json.loads(amendment_path.read_text()) if amendment_path.exists() else None
+        verify_source(previous, current, amendment)
     else:
         dump(output / "source.json", current)
         dump(output / "manifest.json", m)
