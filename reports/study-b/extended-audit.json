@@ -1,0 +1,10 @@
+{
+  "all_headlines_match": true,
+  "all_training_hashes_match": true,
+  "audit_script_sha256": "ef5f02d7e56b3cae3b78e2763b86cc0cd882b7f7cdd858a8384b78ac2e310bf3",
+  "data_provenance_sha256": "64a7b8c9362a29163f6a8883a3f5819d53ae08dbb723c9feeeac7e7ff17f18f2",
+  "independently_reduced_metrics": 1920,
+  "receipt": "ea64dceeda1dd283e8fda8af11e434e0a63159561822f762cf40a395429b701d",
+  "roots": 10,
+  "source": "ae6754ce8e177d17ad5ee4590814e5176190bb3e301907a81603c996acb06602"
+}

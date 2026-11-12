@@ -15,10 +15,18 @@ of the evidence below validates SOAM's neurons, time constants or architecture.
 Primary sources:
 
 1. Siegle JH, Wilson MA (2014), [Enhancement of encoding and retrieval functions through theta phase-specific manipulation of hippocampus](https://elifesciences.org/articles/03061), eLife 3:e03061, DOI 10.7554/eLife.03061. The indexed publisher abstract and [author PDF](https://open-ephys.org/s/Siegle-2014-eLife.pdf) supported this narrow summary; the live article page presented an access challenge.
-2. Seelig JD, Jayaraman V (2015), [Neural dynamics for landmark orientation and angular path integration](https://pubmed.ncbi.nlm.nih.gov/25971509/), Nature 521:186–191, DOI 10.1038/nature14446.
+2. Seelig JD, Jayaraman V (2015), [Neural dynamics for landmark orientation and angular path integration](https://pubmed.ncbi.nlm.nih.gov/25971509/), Nature 521:186–191, DOI 10.1038/nature14446. The [authors' institutional abstract](https://www.janelia.org/publication/neural-dynamics-landmark-orientation-and-angular-path-integration) was inspected and explicitly describes landmark tracking, self-motion in darkness and persistent activity.
 3. Sommer MA, Wurtz RH (2006), [Influence of the thalamus on spatial visual processing in frontal cortex](https://www.nature.com/articles/nature05279), Nature 444:374–377, DOI 10.1038/nature05279. Publisher indexed text and the [author institutional record](https://scholars.duke.edu/publication/742380) were available; the direct publisher fetch was restricted.
 4. Keller GB, Bonhoeffer T, Hübener M (2012), [Sensorimotor mismatch signals in primary visual cortex of the behaving mouse](https://pubmed.ncbi.nlm.nih.gov/22681686/), Neuron 74:809–815, DOI 10.1016/j.neuron.2012.03.040. Summary is limited to indexed primary-source information, not an independent reanalysis.
 5. Muzzu T, Saleem AB (2021), [Feature selectivity can explain mismatch signals in mouse visual cortex](https://pmc.ncbi.nlm.nih.gov/articles/PMC8655498/), Cell Reports 37:109772, DOI 10.1016/j.celrep.2021.109772. Full primary report inspected.
+
+Wolpert, Ghahramani and Jordan's (1995) human experiment asked participants to
+estimate hand location after movements in darkness under imposed forces. Their
+analysis of errors within an optimal-estimation framework supported an internal
+model account. This is behavioral support for state estimation, not direct evidence
+for a neural Kalman implementation or a specific sensory gate. See the [primary
+paper](https://project-ccap.github.io/1995WolpertGhahramaniJordan_Internal_Model_for_Sensorimotor_Integration.pdf),
+Science 269:1880–1882, DOI 10.1126/science.7569931.
 
 State estimation supplies the engineering decomposition: propagate a prior using
 actions, then update it using permitted measurements and an explicit reliability

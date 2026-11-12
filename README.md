@@ -26,7 +26,7 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 
 ## Current milestone
 
-**2026-11-11: Study A complete (SOAM-062–065).** The [mechanism study](reports/STUDY_A.md) finds the preregistered adaptive-update practical benefit inconclusive. The [decision](reports/STUDY_A_DECISION.md) recommends ordinary R32 as the smallest tested competent neural starting core, with an explicit accuracy tradeoff. Study B is unimplemented and no next experiment is selected. SOAM-039 remains backlog pending fresh routing; historical E1 evidence and SOAM-052 stop remain unchanged.
+**2026-11-11: Study A complete (SOAM-062–065).** The [mechanism study](reports/STUDY_A.md) finds the preregistered adaptive-update practical benefit inconclusive. The [decision](reports/STUDY_A_DECISION.md) recommends ordinary R32 as the smallest tested competent neural starting core, with an explicit accuracy tradeoff. The owner has now selected [Study B](docs/STUDY_B_PROTOCOL.md), SOAM-066–069: temporal assimilation and a bounded architecture search. Its protocol and harness are complete (233 tests); the frozen ten-root confirmation is running. SOAM-039 remains backlog pending fresh routing; historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
 Historical [SOAM-052](tickets/SOAM-052-shared-population-gate.md)
@@ -48,7 +48,7 @@ Study A adds [tested recurrence variants and execution history](reports/STUDY_A_
 a [versioned frozen protocol](docs/STUDY_A_PROTOCOL_V2.md), [root tables and intervals](reports/study-a/tables.md),
 gate/state/recovery plots and historical phase-drift analysis. All 120 new
 confirmation fits and the 12-model prescribed repeat completed, within the owner
-ceiling; the current full suite has 215 passing tests. Its inconclusive mechanism
+ceiling; its completed suite had 215 passing tests. Its inconclusive mechanism
 claim does not alter the historical negative sharing gate.
 
 Sharing refers to recurrent neurons and connections, not just tied parameters or

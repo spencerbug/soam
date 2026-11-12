@@ -1,0 +1,115 @@
+{
+  "namespace": "soam-study-b-magnitude",
+  "version": 1,
+  "projection_seed": 1729,
+  "features": 12,
+  "development_roots": [
+    13103,
+    13109
+  ],
+  "confirmation_roots": [
+    14207,
+    14221,
+    14243,
+    14249,
+    14251,
+    14281,
+    14293,
+    14303,
+    14321,
+    14323
+  ],
+  "fixture_root": 13003,
+  "normalization_root": 10909,
+  "repeat_root": 14207,
+  "candidates": [
+    "PC16",
+    "PC32",
+    "GA32",
+    "GN32",
+    "GMN32",
+    "AMN32",
+    "FILTER2"
+  ],
+  "learning_rates": [
+    0.003,
+    0.01
+  ],
+  "ridge_penalties": [
+    0.0001,
+    0.01
+  ],
+  "updates": 1200,
+  "batch": 8,
+  "train_horizon": 16,
+  "eval_horizon": 64,
+  "eval_batch": 20,
+  "checkpoints": [
+    300,
+    600,
+    900,
+    1050,
+    1200
+  ],
+  "decay_start": 600,
+  "final_lr_ratio": 0.01,
+  "settling_durations": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "max_settle": 4,
+  "event_threshold": 0.01,
+  "halting_threshold": 0.5,
+  "schedules": [
+    "every1",
+    "every2",
+    "every4",
+    "every8",
+    "irregular",
+    "initial"
+  ],
+  "conditions": [
+    "clean",
+    "partial",
+    "missing",
+    "noise",
+    "corrupt",
+    "contradict",
+    "change",
+    "motion",
+    "gap"
+  ],
+  "primary_schedules": [
+    "every2",
+    "every4",
+    "every8",
+    "irregular"
+  ],
+  "primary_conditions": [
+    "partial",
+    "missing",
+    "noise"
+  ],
+  "primary_candidate": "GN32",
+  "primary_controls": [
+    "PC32",
+    "GA32"
+  ],
+  "benefit": 0.1,
+  "precision_width": 0.4,
+  "guard_margin": 0.01,
+  "competence": 0.15,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 15307,
+  "cpu_seconds": 7200,
+  "wall_seconds": 14400,
+  "rss_bytes": 2147483648,
+  "artifact_bytes": 2147483648,
+  "finish_reserve": 0.1,
+  "max_fit_attempts": 112,
+  "threads": 1,
+  "device": "cpu",
+  "carry_allocation": "runs/study-b-v1/ledger.json"
+}

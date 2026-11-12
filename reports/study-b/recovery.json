@@ -1,0 +1,1058 @@
+{
+  "AM32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 7.6049999999999995,
+        "lo": 6.365,
+        "mean": 7.015000000000001,
+        "n": 10,
+        "width": 1.2399999999999993
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.805,
+        "lo": 0.36,
+        "mean": 0.56,
+        "n": 10,
+        "width": 0.44500000000000006
+      }
+    }
+  },
+  "FILTER2": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.5599999999999999,
+        "lo": 0.2,
+        "mean": 0.38000000000000006,
+        "n": 10,
+        "width": 0.35999999999999993
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    }
+  },
+  "GA32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 8.74012499999999,
+        "lo": 7.6,
+        "mean": 8.129999999999999,
+        "n": 10,
+        "width": 1.1401249999999905
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.54,
+        "lo": 0.185,
+        "mean": 0.34500000000000003,
+        "n": 10,
+        "width": 0.35500000000000004
+      }
+    }
+  },
+  "GM32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 9.20512499999999,
+        "lo": 7.924874999999999,
+        "mean": 8.504999999999999,
+        "n": 10,
+        "width": 1.2802499999999908
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.56,
+        "lo": 0.165,
+        "mean": 0.35000000000000003,
+        "n": 10,
+        "width": 0.395
+      }
+    }
+  },
+  "GMETA32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 8.74012499999999,
+        "lo": 7.6,
+        "mean": 8.129999999999999,
+        "n": 10,
+        "width": 1.1401249999999905
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.54,
+        "lo": 0.185,
+        "mean": 0.34500000000000003,
+        "n": 10,
+        "width": 0.35500000000000004
+      }
+    }
+  },
+  "GR32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 9.215,
+        "lo": 7.905000000000001,
+        "mean": 8.5,
+        "n": 10,
+        "width": 1.3099999999999987
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.55,
+        "lo": 0.155,
+        "mean": 0.3350000000000001,
+        "n": 10,
+        "width": 0.395
+      }
+    }
+  },
+  "GS32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 8.695124999999988,
+        "lo": 7.605000000000001,
+        "mean": 8.115,
+        "n": 10,
+        "width": 1.0901249999999871
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.5549999999999999,
+        "lo": 0.195,
+        "mean": 0.36,
+        "n": 10,
+        "width": 0.35999999999999993
+      }
+    }
+  },
+  "L2": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.03,
+        "lo": 0.0,
+        "mean": 0.015000000000000003,
+        "n": 10,
+        "width": 0.03
+      },
+      "recovery_steps": {
+        "hi": 12.294999999999998,
+        "lo": 10.465,
+        "mean": 11.345,
+        "n": 10,
+        "width": 1.8299999999999983
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.06000000000000001,
+        "lo": 0.0,
+        "mean": 0.02,
+        "n": 10,
+        "width": 0.06000000000000001
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    }
+  },
+  "MIX16": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.06500000000000002,
+        "lo": 0.01,
+        "mean": 0.034999999999999996,
+        "n": 10,
+        "width": 0.055000000000000014
+      },
+      "recovery_steps": {
+        "hi": 13.094999999999999,
+        "lo": 10.260000000000002,
+        "mean": 11.7,
+        "n": 10,
+        "width": 2.8349999999999973
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.015000000000000003,
+        "lo": 0.0,
+        "mean": 0.005,
+        "n": 10,
+        "width": 0.015000000000000003
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.045,
+        "lo": 0.0,
+        "mean": 0.015,
+        "n": 10,
+        "width": 0.045
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.22999999999999998,
+        "lo": 0.06,
+        "mean": 0.13999999999999999,
+        "n": 10,
+        "width": 0.16999999999999998
+      }
+    }
+  },
+  "MIX32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.065,
+        "lo": 0.01,
+        "mean": 0.034999999999999996,
+        "n": 10,
+        "width": 0.055
+      },
+      "recovery_steps": {
+        "hi": 12.599999999999998,
+        "lo": 9.315000000000001,
+        "mean": 10.924999999999999,
+        "n": 10,
+        "width": 3.2849999999999966
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.13,
+        "lo": 0.02,
+        "mean": 0.06999999999999999,
+        "n": 10,
+        "width": 0.11
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.030000000000000006,
+        "lo": 0.0,
+        "mean": 0.01,
+        "n": 10,
+        "width": 0.030000000000000006
+      },
+      "recovery_steps": {
+        "hi": 0.6699999999999999,
+        "lo": 0.06,
+        "mean": 0.29500000000000004,
+        "n": 10,
+        "width": 0.6099999999999999
+      }
+    }
+  },
+  "MIXC32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.125,
+        "lo": 0.01,
+        "mean": 0.06,
+        "n": 10,
+        "width": 0.115
+      },
+      "recovery_steps": {
+        "hi": 10.135000000000002,
+        "lo": 6.235,
+        "mean": 7.965000000000001,
+        "n": 10,
+        "width": 3.9000000000000012
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.015000000000000003,
+        "lo": 0.0,
+        "mean": 0.005,
+        "n": 10,
+        "width": 0.015000000000000003
+      },
+      "recovery_steps": {
+        "hi": 0.515,
+        "lo": 0.0,
+        "mean": 0.185,
+        "n": 10,
+        "width": 0.515
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.025,
+        "lo": 0.0,
+        "mean": 0.01,
+        "n": 10,
+        "width": 0.025
+      },
+      "recovery_steps": {
+        "hi": 0.49000000000000005,
+        "lo": 0.05500000000000001,
+        "mean": 0.255,
+        "n": 10,
+        "width": 0.43500000000000005
+      }
+    }
+  },
+  "PC16": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.015000000000000003,
+        "lo": 0.0,
+        "mean": 0.005,
+        "n": 10,
+        "width": 0.015000000000000003
+      },
+      "recovery_steps": {
+        "hi": 8.515,
+        "lo": 7.794874999999999,
+        "mean": 8.16,
+        "n": 10,
+        "width": 0.7201250000000012
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.40499999999999997,
+        "lo": 0.15,
+        "mean": 0.275,
+        "n": 10,
+        "width": 0.255
+      }
+    }
+  },
+  "PC32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.015000000000000003,
+        "lo": 0.0,
+        "mean": 0.005,
+        "n": 10,
+        "width": 0.015000000000000003
+      },
+      "recovery_steps": {
+        "hi": 8.035,
+        "lo": 7.204874999999999,
+        "mean": 7.615,
+        "n": 10,
+        "width": 0.8301250000000016
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.655,
+        "lo": 0.225,
+        "mean": 0.43,
+        "n": 10,
+        "width": 0.43000000000000005
+      }
+    }
+  },
+  "REP32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.025,
+        "lo": 0.0,
+        "mean": 0.01,
+        "n": 10,
+        "width": 0.025
+      },
+      "recovery_steps": {
+        "hi": 7.595000000000001,
+        "lo": 6.515000000000001,
+        "mean": 7.015000000000001,
+        "n": 10,
+        "width": 1.08
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.035,
+        "lo": 0.0,
+        "mean": 0.015000000000000003,
+        "n": 10,
+        "width": 0.035
+      },
+      "recovery_steps": {
+        "hi": 0.9450000000000001,
+        "lo": 0.255,
+        "mean": 0.575,
+        "n": 10,
+        "width": 0.6900000000000001
+      }
+    }
+  },
+  "RESET2": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.14,
+        "lo": 0.0,
+        "mean": 0.06000000000000001,
+        "n": 10,
+        "width": 0.14
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    }
+  },
+  "SET32": {
+    "change": {
+      "recovery_censored_fraction": {
+        "hi": 0.015000000000000003,
+        "lo": 0.0,
+        "mean": 0.005,
+        "n": 10,
+        "width": 0.015000000000000003
+      },
+      "recovery_steps": {
+        "hi": 8.879999999999999,
+        "lo": 7.4799999999999995,
+        "mean": 8.165000000000001,
+        "n": 10,
+        "width": 1.3999999999999995
+      }
+    },
+    "contradict": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "corrupt": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      }
+    },
+    "gap": {
+      "recovery_censored_fraction": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "mean": 0.0,
+        "n": 10,
+        "width": 0.0
+      },
+      "recovery_steps": {
+        "hi": 0.6900000000000001,
+        "lo": 0.25,
+        "mean": 0.45999999999999996,
+        "n": 10,
+        "width": 0.44000000000000006
+      }
+    }
+  }
+}

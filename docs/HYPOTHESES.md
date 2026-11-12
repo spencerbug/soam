@@ -63,5 +63,16 @@ constant updates and low-order dynamics have favorable long-horizon results.
 These findings do not establish necessity, useful attractors, associative-memory
 complexity, compositionality or biological validity. The [decision](../reports/STUDY_A_DECISION.md)
 recommends R32 as the smallest tested competent neural starting core, an explicit
-post-study simplicity/accuracy judgment. Study B is unimplemented and unselected.
+post-study simplicity/accuracy judgment. The subsequent owner request now selects Study B through SOAM-066–069.
 Historical H2–H4 meanings and SOAM-052 stop are unchanged.
+
+## Study B temporal inference questions — 2026-11-11
+
+[Study B v1](STUDY_B_PROTOCOL.md) operationalizes B-H1 deliberate sensory correction,
+B-H2 useful zero-time settling, B-H3 adaptive sensory gain, and B-H4 conventional
+recurrence sufficiency under historical H1/H6. SOAM-066 proceeds with this test;
+SOAM-067 supplies verified engineering; SOAM-068 is in progress. No scientific
+benefit is established by protocol or fixture completion. Fixed physical evidence,
+pre-correction scoring, independent-root intervals, corrupted-versus-genuine-change
+guardrails and explicit computation costs govern interpretation. Persistent
+learning, attention and multi-hypothesis inference remain outside scope.

@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-068"
 title: "Measure temporal assimilation and settling under matched evidence"
 type: "experiment"
-status: "backlog"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -34,9 +34,9 @@ Measure temporal assimilation and settling under matched evidence. Only this bou
 
 ## Acceptance criteria
 
-- [ ] Complete this phase with checkable source, protocol, tests or measured evidence.
-- [ ] Preserve information parity and historical negative results; report supported, negative, inconclusive, or invalid outcomes without post-confirmation changes.
-- [ ] Record resources, limitations, and implications for the next interface.
+- [x] Complete this phase with checkable source, protocol, tests or measured evidence.
+- [x] Preserve information parity and historical negative results; report supported, negative, inconclusive, or invalid outcomes without post-confirmation changes.
+- [x] Record resources, limitations, and implications for the next interface.
 
 ## Metrics / evidence
 
@@ -53,4 +53,4 @@ The November 11 owner request is the fresh named selection. SOAM-066 owns the pr
 
 ## Completion record
 
-Not completed.
+V1 complete: 16 fixture, 64 development, 160 confirmation and 16 repeat fits (256 total), no failures. All 80 prescribed reproduction checks match exactly. Independent audit regenerates input hashes and recomputes 1920 metrics from saved arrays. Frozen outcome is tradeoff, with precise exclusion of a 10 percent GA32 gain over PC32 and a failed corruption guard. See reports/STUDY_B.md and reports/study-b/. Source 0e03e0d / ae6754ce8e177d17ad5ee4590814e5176190bb3e301907a81603c996acb06602; receipt ea64dceeda1dd283e8fda8af11e434e0a63159561822f762cf40a395429b701d. All results are preserved; a separately routed magnitude-input supplement addresses a request-coverage limitation.

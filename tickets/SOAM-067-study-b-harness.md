@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-067"
 title: "Implement and verify temporal assimilation comparisons"
 type: "engineering"
-status: "in_progress"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -34,9 +34,9 @@ Implement and verify temporal assimilation comparisons. Only this bounded study 
 
 ## Acceptance criteria
 
-- [ ] Complete this phase with checkable source, protocol, tests or measured evidence.
-- [ ] Preserve information parity and historical negative results; report supported, negative, inconclusive, or invalid outcomes without post-confirmation changes.
-- [ ] Record resources, limitations, and implications for the next interface.
+- [x] Complete this phase with checkable source, protocol, tests or measured evidence.
+- [x] Preserve information parity and historical negative results; report supported, negative, inconclusive, or invalid outcomes without post-confirmation changes.
+- [x] Record resources, limitations, and implications for the next interface.
 
 ## Metrics / evidence
 
@@ -52,4 +52,4 @@ The November 11 owner request is the fresh named selection. SOAM-066 owns the pr
 
 ## Completion record
 
-Not completed.
+Delivered the evidence-only temporal harness and all 16 candidates. Full suite: 233 passed in 15.61s; 18 new invariant tests, Ruff and ticket checks pass. The complete 16-fit fixture passes calibrated CPU, RSS and artifact projections. See reports/STUDY_B_IMPLEMENTATION.md and runs/study-b-v1/fixture-projection.json. Source commit 0e03e0d and full snapshot recorded. This is engineering verification, not a scientific gate.

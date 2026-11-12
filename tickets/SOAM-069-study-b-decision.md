@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-069"
 title: "Review temporal assimilation and recommend the sensory motion interface"
 type: "decision"
-status: "backlog"
+status: "done"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M1"
@@ -15,7 +15,7 @@ assignees: []
 created: "2026-11-11"
 updated: "2026-11-11"
 github_issue: null
-decision: null
+decision: "revise"
 ---
 
 # SOAM-069: Review temporal assimilation and recommend the sensory motion interface
@@ -34,9 +34,9 @@ Review temporal assimilation and recommend the sensory motion interface. Only th
 
 ## Acceptance criteria
 
-- [ ] Complete this phase with checkable source, protocol, tests or measured evidence.
-- [ ] Preserve information parity and historical negative results; report supported, negative, inconclusive, or invalid outcomes without post-confirmation changes.
-- [ ] Record resources, limitations, and implications for the next interface.
+- [x] Complete this phase with checkable source, protocol, tests or measured evidence.
+- [x] Preserve information parity and historical negative results; report supported, negative, inconclusive, or invalid outcomes without post-confirmation changes.
+- [x] Record resources, limitations, and implications for the next interface.
 
 ## Metrics / evidence
 
@@ -52,4 +52,4 @@ The November 11 owner request is the fresh named selection. SOAM-066 owns the pr
 
 ## Completion record
 
-Not completed.
+Reviewed valid v1 evidence and retained its tradeoff outcome. See reports/STUDY_B_V1_DECISION.md. The requested magnitude-dependent gain comparison is incomplete because the v1 gate uses signed affine inputs. Revise scope coverage through one fresh SOAM-070 supplement based on completed SOAM-068 evidence; preserve v1, use fresh streams and the same cumulative budget. This revise decision does not unblock an implementation child.

@@ -16,13 +16,13 @@ and [ticket dispositions](docs/TICKET_REVIEW_2026_11_05.md) sharpen the next que
 to E1 useful dynamics, E2 rapid retained acquisition, and E3 active disambiguation.
 E1 is complete with a negative sharing gate. SOAM-059 historically selected E2
 protocol design; the owner superseded that current selection with Study A. Study A
-is complete, and no next experiment is selected.
+is complete; the owner now selects Study B through SOAM-066–069.
 
 ## Current work and readiness
 
-**Study B selected by the owner, November 11.** SOAM-066 is in progress for the temporal assimilation protocol and bounded architecture search informed by Study A. SOAM-067–069 follow sequentially. The accepted ceiling is 7200 CPU / 14400 execution wall seconds and 2 GiB RSS/artifacts. Acquisition and all other forks remain unselected.
+**Study B selected by the owner, November 11.** SOAM-066 is done/proceed for the temporal assimilation protocol and bounded architecture search informed by Study A. SOAM-067 is done after 233 tests and a passing fixture; SOAM-068 is complete with a tradeoff result and exact repeat; SOAM-069 is done/revise for one missing magnitude-input comparison. SOAM-070–073 own the fresh bounded supplement under the same cumulative ceiling. The accepted ceiling is 7200 CPU / 14400 execution wall seconds and 2 GiB RSS/artifacts. Acquisition and all other forks remain unselected.
 
-**November 11: Study A complete.** SOAM-062 done/proceed, SOAM-063/064 done, and SOAM-065 done/proceed for the [R32 core recommendation](reports/STUDY_A_DECISION.md) only. The [scientific result](reports/STUDY_A.md) is inconclusive for the frozen practical adaptive-update claim. All 120 confirmation fits and 12 prescribed repeats completed within the cumulative ceiling; 215 tests pass. No next experiment is selected, Study B is unimplemented, and SOAM-039 remains backlog pending fresh routing. Historical E1 evidence and SOAM-052 stop remain unchanged.
+**November 11: Study A complete.** SOAM-062 done/proceed, SOAM-063/064 done, and SOAM-065 done/proceed for the [R32 core recommendation](reports/STUDY_A_DECISION.md) only. The [scientific result](reports/STUDY_A.md) is inconclusive for the frozen practical adaptive-update claim. All 120 confirmation fits and 12 prescribed repeats completed within the cumulative ceiling; 215 tests pass. Study B is selected separately below; SOAM-039 remains backlog pending fresh routing. Historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
 [SOAM-046](tickets/SOAM-046-shared-platform-scope.md) records initial v0.3 adoption;
@@ -88,7 +88,7 @@ IDs are thematic provenance groups, not sequential dates or compulsory stages fo
 | Milestone | Focus | Exit evidence / decision | State |
 | --- | --- | --- | --- |
 | M0 | Reusable recurrent experiment infrastructure | Historical harnesses plus the minimal SOAM-047 contract and SOAM-048 runner/invariant fixtures | Minimal runner delivered; exact fixture repeat and 110 passing tests; no scientific gate |
-| M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; 119 fits/27,820 cells complete; absolute recall failure, exact repeat; SOAM-052 done/stop for tested useful sharing; dependent integration unready; Study A complete/inconclusive practical update benefit; SOAM-065 proceeds with R32 reference recommendation only |
+| M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; 119 fits/27,820 cells complete; absolute recall failure, exact repeat; SOAM-052 done/stop for tested useful sharing; dependent integration unready; Study A complete/inconclusive practical update benefit; SOAM-065 proceeds with R32 reference recommendation only; Study B protocol/harness delivered and experiment active |
 | M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Historical contract complete; SOAM-059 selection superseded by Study A; SOAM-039 backlog pending fresh routing; acquisition unmeasured |
 | M3 | Conditional functional scopes | SOAM-007–010; limited interference with beneficial sharing | Deferred comparison branch |
 | M4 | Replay and overlapping organization | SOAM-011/012, SOAM-042/043 at fixed capacity; optional SOAM-013–015 | Planned; learned refinement conditional |
@@ -96,7 +96,7 @@ IDs are thematic provenance groups, not sequential dates or compulsory stages fo
 | M6 | Grounding and independent applications | E3 active disambiguation SOAM-053–055; later SOAM-037/019–022 and module SOAM-056–058 after acquisition | Conditional alternatives awaiting named fork selection, contract/runner, and own decisions |
 | M7 | Control and shared action relations | SOAM-023/024/038/026; optional SOAM-025 | Planned after supported shared beliefs/handover |
 | M8 | Continual embodied integration | SOAM-027/028 require composition, grounding, control, acquisition, organization outcomes | Planned; application success alone does not pass integration gates |
-| MX | Scope and supporting research | SOAM-046 adoption and SOAM-060 review; SOAM-030 evidence map; SOAM-045 optional recurrent attention; SOAM-029 optional flow | SOAM-059 routing preserved; Study A delivered under owner override; no next experiment selected |
+| MX | Scope and supporting research | SOAM-046 adoption and SOAM-060 review; SOAM-030 evidence map; SOAM-045 optional recurrent attention; SOAM-029 optional flow | SOAM-059 routing preserved; Study A delivered under owner override; Study B selected under SOAM-066 |
 
 ## Execution paths and dependency changes
 
@@ -110,7 +110,7 @@ SOAM-052 completed the scientific review with stop; its failed gate remains inta
 SOAM-059 is historically done/proceed for **E2 via SOAM-039** using ordinary G32
 under the [bounded branch record](reports/RESEARCH_FORK_SELECTION.md). The owner
 selected Study A instead; its completed SOAM-065 decision recommends R32 without
-activating Study B or acquisition. SOAM-039/044/040/041 remain backlog pending fresh
+itself activating another experiment. The later owner request and SOAM-066 select Study B alone. SOAM-039/044/040/041 remain backlog pending fresh
 routing and their own prerequisites. E3 and attention remain backlog despite
 completed ordinary dependencies because their named-selection conditions are false.
 No sharing-dependent edge changes. Later experiments need fresh routing, not reuse
@@ -218,9 +218,13 @@ Order is a preference within the selected path. It never schedules all alternati
 | 64 | [SOAM-064: Measure adaptive gating under the frozen Study A protocol](tickets/SOAM-064-study-a-experiment.md) | P0 | done | M1 | high | [SOAM-062](tickets/SOAM-062-study-a-protocol.md), [SOAM-063](tickets/SOAM-063-study-a-harness.md) |
 | 65 | [SOAM-065: Review Study A mechanisms and the smallest retained core](tickets/SOAM-065-study-a-decision.md) | P0 | done | M1 | xhigh | [SOAM-064](tickets/SOAM-064-study-a-experiment.md) |
 | 66 | [SOAM-066: Specify and select temporal sensory assimilation](tickets/SOAM-066-study-b-protocol.md) | P0 | done | M1 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-064](tickets/SOAM-064-study-a-experiment.md), [SOAM-065](tickets/SOAM-065-study-a-decision.md) |
-| 67 | [SOAM-067: Implement and verify temporal assimilation comparisons](tickets/SOAM-067-study-b-harness.md) | P0 | in_progress | M1 | high | [SOAM-066](tickets/SOAM-066-study-b-protocol.md) |
-| 68 | [SOAM-068: Measure temporal assimilation and settling under matched evidence](tickets/SOAM-068-study-b-experiment.md) | P0 | backlog | M1 | high | [SOAM-066](tickets/SOAM-066-study-b-protocol.md), [SOAM-067](tickets/SOAM-067-study-b-harness.md) |
-| 69 | [SOAM-069: Review temporal assimilation and recommend the sensory motion interface](tickets/SOAM-069-study-b-decision.md) | P0 | backlog | M1 | xhigh | [SOAM-068](tickets/SOAM-068-study-b-experiment.md) |
+| 67 | [SOAM-067: Implement and verify temporal assimilation comparisons](tickets/SOAM-067-study-b-harness.md) | P0 | done | M1 | high | [SOAM-066](tickets/SOAM-066-study-b-protocol.md) |
+| 68 | [SOAM-068: Measure temporal assimilation and settling under matched evidence](tickets/SOAM-068-study-b-experiment.md) | P0 | done | M1 | high | [SOAM-066](tickets/SOAM-066-study-b-protocol.md), [SOAM-067](tickets/SOAM-067-study-b-harness.md) |
+| 69 | [SOAM-069: Review temporal assimilation and recommend the sensory motion interface](tickets/SOAM-069-study-b-decision.md) | P0 | done | M1 | xhigh | [SOAM-068](tickets/SOAM-068-study-b-experiment.md) |
+| 70 | [SOAM-070: Specify the magnitude-sensitive sensory gain supplement](tickets/SOAM-070-study-b-magnitude-protocol.md) | P0 | done | M1 | xhigh | [SOAM-068](tickets/SOAM-068-study-b-experiment.md) |
+| 71 | [SOAM-071: Implement magnitude inputs for sensory and motion gain](tickets/SOAM-071-study-b-magnitude-harness.md) | P0 | in_progress | M1 | high | [SOAM-070](tickets/SOAM-070-study-b-magnitude-protocol.md) |
+| 72 | [SOAM-072: Measure magnitude-sensitive correction on fresh streams](tickets/SOAM-072-study-b-magnitude-experiment.md) | P0 | backlog | M1 | high | [SOAM-070](tickets/SOAM-070-study-b-magnitude-protocol.md), [SOAM-071](tickets/SOAM-071-study-b-magnitude-harness.md) |
+| 73 | [SOAM-073: Review both Study B versions and select the inference interface](tickets/SOAM-073-study-b-interface-decision.md) | P0 | backlog | M1 | xhigh | [SOAM-068](tickets/SOAM-068-study-b-experiment.md), [SOAM-072](tickets/SOAM-072-study-b-magnitude-experiment.md) |
 
 ## Housekeeping check
 

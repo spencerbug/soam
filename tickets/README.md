@@ -48,7 +48,7 @@ of future GitHub issue numbers.
 
 ## Conditional research paths
 
-**2026-11-11: Study A complete (SOAM-062–065).** The [mechanism study](../reports/STUDY_A.md) finds the preregistered adaptive-update practical benefit inconclusive. The [decision](../reports/STUDY_A_DECISION.md) recommends ordinary R32 as the smallest tested competent neural starting core, with an explicit accuracy tradeoff. Study B is unimplemented and no next experiment is selected. SOAM-039 remains backlog pending fresh routing; historical E1 evidence and SOAM-052 stop remain unchanged.
+**2026-11-11: Study A complete (SOAM-062–065).** The [mechanism study](../reports/STUDY_A.md) finds the preregistered adaptive-update practical benefit inconclusive. The [decision](../reports/STUDY_A_DECISION.md) recommends ordinary R32 as the smallest tested competent neural starting core, with an explicit accuracy tradeoff. The owner has now selected [Study B](../docs/STUDY_B_PROTOCOL.md), SOAM-066–069: temporal assimilation and a bounded architecture search. Its protocol and harness are complete; the frozen ten-root confirmation is running. SOAM-039 remains backlog pending fresh routing; historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
 Follow the [result-dependent paths](../docs/RESEARCH_PATHS.md). SOAM-049–051 now
