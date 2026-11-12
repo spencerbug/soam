@@ -12,7 +12,7 @@ import torch
 
 from soam.temporal.data import CONDITIONS, SCHEDULES, generate, input_hash, training_data
 from soam.temporal.models import make
-from soam.temporal.runner import digest, dump, size, source_identity
+from soam.temporal.runner import digest, dump, size
 from soam.temporal.statistics import interval
 
 
@@ -97,7 +97,10 @@ def main():
     output = root / "runs/study-b-v1"
     dest = root / "reports/study-b"
     receipt = json.loads((output / "confirmation-receipt.json").read_text())
-    assert receipt["source"] == source_identity()["aggregate"]
+    # New, separately frozen studies may add files. Every original dependency must match.
+    recorded_source = json.loads((output / "source.json").read_text())
+    for relative, expected in recorded_source["hashes"].items():
+        assert hashlib.sha256((root / relative).read_bytes()).hexdigest() == expected
     manifest = json.loads((output / "manifest.json").read_text())
     provenance = {}
     reduction = []

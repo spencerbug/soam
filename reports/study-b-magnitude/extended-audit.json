@@ -1,0 +1,9 @@
+{
+  "all_primary_and_guard_values_match": true,
+  "original_source_dependencies_unchanged": true,
+  "repeat_checks": 28,
+  "repeat_exact": true,
+  "script_sha256": "6fcd26e1f475f6f7ea10c1b8196a53ea841d96f47aa90b2ca1d67852f005b784",
+  "supplement_recomputed_values": 840,
+  "training_and_evaluation_hashes_saved": true
+}

@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-071"
 title: "Implement magnitude inputs for sensory and motion gain"
 type: "engineering"
-status: "in_progress"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -34,9 +34,9 @@ Implement magnitude inputs for sensory and motion gain. Follow the [supplement p
 
 ## Acceptance criteria
 
-- [ ] Complete this phase with exact provenance, tests or measured evidence.
-- [ ] Keep v1 unchanged; use fresh data and freeze selections before confirmation.
-- [ ] Report all controls, resource costs and negative or inconclusive outcomes.
+- [x] Complete this phase with exact provenance, tests or measured evidence.
+- [x] Keep v1 unchanged; use fresh data and freeze selections before confirmation.
+- [x] Report all controls, resource costs and negative or inconclusive outcomes.
 
 ## Metrics / evidence
 
@@ -52,4 +52,4 @@ The fresh routing record is SOAM-070, based on SOAM-068 completed evidence, not 
 
 ## Completion record
 
-Not completed.
+Implemented GN32/GMN32/AMN32 with explicit residual RMS and action norm; unchanged PC16/PC32/GA32/FILTER2 controls. Five new channel/freshness/reproduction tests and 23 focused temporal tests pass. Full suite 238 tests passed; fixture passes with 546.25 projected additional CPU seconds and 300 MB projected artifacts, carrying v1 allocation. Source commit 2108447; no original v1 code or scientific result changed.

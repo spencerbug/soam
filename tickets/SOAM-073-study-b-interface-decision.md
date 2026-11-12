@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-073"
 title: "Review both Study B versions and select the inference interface"
 type: "decision"
-status: "backlog"
+status: "done"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M1"
@@ -15,7 +15,7 @@ assignees: []
 created: "2026-11-11"
 updated: "2026-11-11"
 github_issue: null
-decision: null
+decision: "proceed"
 ---
 
 # SOAM-073: Review both Study B versions and select the inference interface
@@ -34,9 +34,9 @@ Review both Study B versions and select the inference interface. Follow the [sup
 
 ## Acceptance criteria
 
-- [ ] Complete this phase with exact provenance, tests or measured evidence.
-- [ ] Keep v1 unchanged; use fresh data and freeze selections before confirmation.
-- [ ] Report all controls, resource costs and negative or inconclusive outcomes.
+- [x] Complete this phase with exact provenance, tests or measured evidence.
+- [x] Keep v1 unchanged; use fresh data and freeze selections before confirmation.
+- [x] Report all controls, resource costs and negative or inconclusive outcomes.
 
 ## Metrics / evidence
 
@@ -53,4 +53,4 @@ The fresh routing record is SOAM-070, based on SOAM-068 completed evidence, not 
 
 ## Completion record
 
-Not completed.
+Decision: proceed with the [separate-correction interface recommendation](../reports/STUDY_B_DECISION.md), not a pass for adaptive gating and not a new experimental fork. Reviewed both frozen versions and all mandatory controls: v1 tradeoff, fresh magnitude negative practical advantage, useful but costed settling, and the strong fitted filter with a corruption failure. PC16 is the small robust neural reference; FILTER2 remains the accuracy/resource reference under explicit observation assumptions. Preserve SOAM-069 revise, Study A outcomes, SOAM-052 stop and backlog branches. Complete evidence: [scientific report](../reports/STUDY_B.md), [biological note](../reports/STUDY_B_BIOLOGY.md), [implementation and reproduction](../reports/STUDY_B_IMPLEMENTATION.md), and [cumulative resources](../reports/study-b/resource-final.json). Total 368 fits, 108 exact repeat checks and 2760 independently reduced values; no failed fits or budget extension. Final verification: `uv run pytest` 238 passed in 15.13s; Ruff passed; ticket validator passed 74 tickets; `git diff --check` passed. Post hoc recovery-baseline repair is disclosed and changes no primary test. Owner informed of blog-worthy measured tradeoff; no publication performed.

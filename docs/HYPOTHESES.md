@@ -63,16 +63,27 @@ constant updates and low-order dynamics have favorable long-horizon results.
 These findings do not establish necessity, useful attractors, associative-memory
 complexity, compositionality or biological validity. The [decision](../reports/STUDY_A_DECISION.md)
 recommends R32 as the smallest tested competent neural starting core, an explicit
-post-study simplicity/accuracy judgment. The subsequent owner request now selects Study B through SOAM-066–069.
+post-study simplicity/accuracy judgment. The subsequent owner-selected Study B is complete through SOAM-066–073.
 Historical H2–H4 meanings and SOAM-052 stop are unchanged.
 
 ## Study B temporal inference questions — 2026-11-11
 
 [Study B v1](STUDY_B_PROTOCOL.md) operationalizes B-H1 deliberate sensory correction,
 B-H2 useful zero-time settling, B-H3 adaptive sensory gain, and B-H4 conventional
-recurrence sufficiency under historical H1/H6. SOAM-066 proceeds with this test;
-SOAM-067 supplies verified engineering; SOAM-068 is in progress. No scientific
-benefit is established by protocol or fixture completion. Fixed physical evidence,
-pre-correction scoring, independent-root intervals, corrupted-versus-genuine-change
-guardrails and explicit computation costs govern interpretation. Persistent
-learning, attention and multi-hypothesis inference remain outside scope.
+recurrence sufficiency under historical H1/H6. The [completed report](../reports/STUDY_B.md)
+finds better prediction from separate correction than the tested mixed-input
+controls. Bounded settling helps within SET32, but its cost and corruption tradeoff
+do not justify a mandatory default. V1's primary adaptive-gain result is a tradeoff;
+the separately frozen [magnitude supplement](STUDY_B_MAGNITUDE_PROTOCOL.md) precisely
+excludes the declared 10% practical gain. This does not imply zero effect or failure
+of all possible adaptive gates. Conventional recurrence remains a mandatory
+alternative; finite comparisons do not prove universal necessity of temporal structure.
+
+SOAM-069's revise is preserved; SOAM-070–072 complete the missing magnitude test on
+fresh streams. [SOAM-073](../reports/STUDY_B_DECISION.md) accepts separate correction,
+PC16 as the small robust neural reference and FILTER2 as the strong accuracy/resource
+reference with a corruption failure. It selects no next experiment. Fixed physical
+evidence, pre-correction scoring, independent-root intervals, corrupted-versus-genuine-
+change guardrails and explicit costs govern these scoped conclusions. The post hoc
+recovery-baseline repair changes no primary result. Persistent learning, attention,
+multi-hypothesis inference and biological validation remain outside scope.

@@ -62,3 +62,44 @@ The initial biological note covers theta-phase manipulations, fly heading dynami
 corollary discharge, conflicting accounts of mismatch responses and human state
 estimation. It is a focused primary-source synthesis, not a systematic review or
 biological validation of the benchmark.
+
+## Completed execution and magnitude supplement
+
+SOAM-068 completed v1's 256 fits and 80 exact repeat checks. SOAM-069 preserves its
+tradeoff result and identifies the signed-input limitation. SOAM-070–072 deliver
+one fresh bounded magnitude comparison in `soam/temporal/magnitude.py` under the
+original cumulative cap. `tests/test_temporal_magnitude.py` adds five invariant
+tests: norm inputs are permitted information, paired initial cores, independent
+motion gain, stream separation and the new frozen decision rules. The pre-change
+suite was 233 passed; the completed suite is **238 passed**.
+
+The supplement source commit is `21084476c334dd4d683dde056f0522ad3947b547` and its
+aggregate fingerprint is
+`7c2b3d21e32ea875f5ae9e7914fd4e099bb57ceaa8abe68163fc5ebc77d8833b`.
+All 112 additional fits complete without failure; all 28 repeat checks match.
+Run the same six-phase sequence with `soam.temporal.magnitude` in place of
+`soam.temporal.runner` and a separate output path. It imports the completed v1
+ledger; preserve the original run directory when reproducing this cumulative study.
+Source snapshots, data hashes and immutable receipts are retained for both versions.
+The report CLI phases refuse reentry as well as numerical phases.
+
+Independent postprocessing is separate from frozen fitting source:
+`scripts/audit_study_b.py` independently reduced 1920 v1 values and audited filter
+calibration; `scripts/finalize_study_b.py` reduced 840 supplement values and checked
+all original source dependencies. All reductions agree. The latter transparently
+repairs only recovery reporting, using the eight steps before disruption instead
+of the potentially impaired interval before resumption. A synthetic diagnostic
+case verified the three-step recovery and right-censoring rule. Original recovery
+records and primary results are unchanged. The scripts record their own fingerprints.
+They are one-shot audit scripts; rerunning finalization appends another charged
+audit entry, so do not invoke it merely to read its saved results.
+
+`scripts/plot_study_b.py` regenerates presentation figures from saved statistics;
+legends and 95% intervals make dense candidates readable. Resource, settling,
+condition, stress-response and supplement tradeoff PNGs were visually inspected.
+The completed [resource ledger](study-b/resource-final.json) records 1422.60 CPU
+seconds, 1422.72 execution wall seconds, 0.822 GiB peak RSS and 0.517 GiB artifacts,
+including raw and compact duplicates at audit close. This is one cumulative
+allocation with 368 fits, no exclusions and no numerical retries. Tests and
+language-model review are separately identified engineering costs. Final command
+outputs are captured in [verification](study-b/verification.json).

@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-072"
 title: "Measure magnitude-sensitive correction on fresh streams"
 type: "experiment"
-status: "backlog"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -34,9 +34,9 @@ Measure magnitude-sensitive correction on fresh streams. Follow the [supplement 
 
 ## Acceptance criteria
 
-- [ ] Complete this phase with exact provenance, tests or measured evidence.
-- [ ] Keep v1 unchanged; use fresh data and freeze selections before confirmation.
-- [ ] Report all controls, resource costs and negative or inconclusive outcomes.
+- [x] Complete this phase with exact provenance, tests or measured evidence.
+- [x] Keep v1 unchanged; use fresh data and freeze selections before confirmation.
+- [x] Report all controls, resource costs and negative or inconclusive outcomes.
 
 ## Metrics / evidence
 
@@ -53,4 +53,4 @@ The fresh routing record is SOAM-070, based on SOAM-068 completed evidence, not 
 
 ## Completion record
 
-Not completed.
+Completed 112 fits (7 fixture, 28 development, 70 confirmation, 7 repeat), no failures. Frozen receipt `4d6ee69672cb521b924a59d475c0282b451520503411f78964e3da76b96b2dfb`; source commit `21084476c334dd4d683dde056f0522ad3947b547`, fingerprint `7c2b3d21e32ea875f5ae9e7914fd4e099bb57ceaa8abe68163fc5ebc77d8833b`. All 28 repeat hash checks match, and independent reduction of 840 values matches. Fresh roots and selected settings are in the [report](../reports/STUDY_B.md) and [receipt](../reports/study-b-magnitude/confirmation-receipt.json). Outcome: negative practical advantage; GN32 gains 1.61% over PC32 and 0.035% over GA32, with both adjusted intervals excluding the declared 10% benefit. All eight guard margins pass. V1 remains unchanged. The [cumulative ledger](../reports/study-b/resource-final.json) totals 368 fits, 1422.60 CPU seconds, 0.822 GiB peak RSS and 0.517 GiB artifacts. Full suite: 238 tests passed; see [verification](../reports/STUDY_B_IMPLEMENTATION.md). Commands: all six phases of `uv run python -m soam.temporal.magnitude`, independent `scripts/finalize_study_b.py`, and the prescribed repeat. No exclusions, retries or new branch.

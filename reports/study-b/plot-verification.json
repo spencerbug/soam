@@ -1,0 +1,6 @@
+{
+  "cpu_seconds": 0.440245,
+  "wall_seconds": 0.4419814998982474,
+  "script_sha256": "afc2195833f6681de1422f55ec422e1cafbfddba33af5736d4248278a08ca1ed",
+  "note": "Replaces overlapping labels in presentation plots only; all plotted statistics unchanged."
+}
