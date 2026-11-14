@@ -1,0 +1,8 @@
+{
+  "matplotlib": "3.11.2",
+  "new_fits": 0,
+  "new_selection": false,
+  "receipt": "5ad04a769c8f62f4dceefa72043a7e5d98467546d2e4c16ccb4f037f5039d1a7",
+  "review": "Six PNGs visually inspected; corrected X marker to include PC16 genuine-change target failure. Numerical data unchanged.",
+  "script_sha256": "32410c02433a7d24bf7dc82c8a7815f20ece0997b025459f38b4e8598f8921dd"
+}

@@ -1,0 +1,16 @@
+{
+  "actual_batch": 20,
+  "compressed_bytes": {
+    "False": 4079497,
+    "True": 37638356
+  },
+  "measured_cpu": {
+    "False": 1.5576269999999999,
+    "True": 1.5155329999999996
+  },
+  "original_fixture_preserved": true,
+  "projected_artifact_bytes": 1428971508.0,
+  "projected_cpu_seconds": 558.8950499999999,
+  "projection_pass": false,
+  "supersedes_storage_projection_only": "fixture/projection.json omitted the eval_batch/fixture_batch factor; no scientific results used"
+}

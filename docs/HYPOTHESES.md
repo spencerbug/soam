@@ -87,3 +87,24 @@ evidence, pre-correction scoring, independent-root intervals, corrupted-versus-g
 change guardrails and explicit costs govern these scoped conclusions. The post hoc
 recovery-baseline repair changes no primary result. Persistent learning, attention,
 multi-hypothesis inference and biological validation remain outside scope.
+
+## Study B2 robust correction — 2026-11-11
+
+SOAM-074–077 operationalize H1/H6, preserving prior claims: B2-Q1 innovation reliability
+(raw versus covariance-normalized); Q2 hard versus continuous rejection; Q3 bounded
+measurement covariance adaptation; Q4 corruption versus genuine change with causal
+history; Q5 statistical versus conditionally learned reliability; Q6 smallest useful
+accuracy/robustness/resource tradeoff. [B2 v1](STUDY_B2_PROTOCOL.md) owns frozen tests.
+A plausible coherent sensor offset and real displacement can have identical evidence;
+no estimator can resolve that pair without additional information or assumptions.
+No result implies shared neurons, attractors, learned organization or neuroscience.
+
+B2 completed2026-11-12: [report](../reports/STUDY_B2.md) supports ADAPT1's52.69%
+balanced-corruption improvement and NISEMP's45.01%, both under frozen ordinary/change
+guards. Calibration and redundant measurement structure explain a useful scoped
+benefit; coherent identical evidence remains unidentifiable. Temporal/hybrid screens
+failed change protection. Heavy-tail and learned controllers were deferred, not
+falsified. Statistical root uncertainty and actual runtime/storage costs are explicit;
+this Torch implementation is slower than PC16 despite fewer MACs and fitted weights.
+[SOAM-077](../reports/STUDY_B2_DECISION.md) selects conventional references only.
+No operating-mode, hypothesis-management, attractor or shared-population claim passes.

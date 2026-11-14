@@ -24,9 +24,15 @@ as a long-term goal rather than a supported claim. The next three questions are
 useful shared dynamics, rapid retained acquisition, and active disambiguation.
 See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TICKET_REVIEW_2026_11_05.md).
 
+Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](reports/STUDY_B2_FILTER_AUDIT.md), [development](reports/STUDY_B2_DEVELOPMENT.md), [full tables](reports/study-b2/tables.md), [Pareto plot](reports/study-b2/pareto.png), [decision and C handoff](reports/STUDY_B2_DECISION.md).
+
 ## Current milestone
 
-**2026-11-11: Studies A and B complete (SOAM-062–073).** [Study A](reports/STUDY_A.md) retains its inconclusive practical adaptive-update result and [R32 recommendation](reports/STUDY_A_DECISION.md). [Study B](reports/STUDY_B.md) completes 368 fits and 108 exact repeat checks; 238 tests pass. V1 shows a gating tradeoff; the fresh magnitude supplement precisely excludes the declared 10% practical gain. The [final decision](reports/STUDY_B_DECISION.md) recommends separate correction with PC16 as the small robust neural reference and a fitted filter as the accuracy/resource reference with a corruption failure. Optional settling and independent gain channels are retained without requiring learned gates. No next experiment is selected. SOAM-039 remains backlog; historical E1 evidence and SOAM-052 stop remain unchanged.
+**2026-11-12: Study B2 complete (SOAM-074–077).** [Robust Kalman correction](reports/STUDY_B2.md) supports bounded channel-disagreement covariance adaptation and empirical NIS gating. ADAPT1 improves balanced corruption by 52.69% with all frozen accuracy guards passing, while coherent plausible corruption remains unresolved and measured Torch latency is slower than PC16. The [decision/C handoff](reports/STUDY_B2_DECISION.md) recommends conventional references only. Study C/D/E stay conditional; F stays a future planning track. Historical A/B and E1 decisions remain unchanged.
+
+
+
+**2026-11-11: Studies A and B complete (SOAM-062–073).** [Study A](reports/STUDY_A.md) retains its inconclusive practical adaptive-update result and [R32 recommendation](reports/STUDY_A_DECISION.md). [Study B](reports/STUDY_B.md) completes 368 fits and 108 exact repeat checks; 238 tests pass. V1 shows a gating tradeoff; the fresh magnitude supplement precisely excludes the declared 10% practical gain. The [final decision](reports/STUDY_B_DECISION.md) recommends separate correction with PC16 as the small robust neural reference and a fitted filter as the accuracy/resource reference with a corruption failure. Optional settling and independent gain channels are retained without requiring learned gates. The subsequent owner request selected [Study B2](docs/STUDY_B2_PROTOCOL.md) through SOAM-074–077 before conditional Study C. SOAM-039 remains backlog; historical E1 evidence and SOAM-052 stop remain unchanged.
 
 
 Historical [SOAM-052](tickets/SOAM-052-shared-population-gate.md)

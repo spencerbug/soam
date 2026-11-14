@@ -1,0 +1,42 @@
+{
+  "15307": {
+    "prior_covariance_condition_max": 1.5382247903661646,
+    "prior_covariance_eigen_min": 0.0039679945517202345
+  },
+  "15313": {
+    "prior_covariance_condition_max": 1.2545351056871714,
+    "prior_covariance_eigen_min": 0.004109897625753475
+  },
+  "15319": {
+    "prior_covariance_condition_max": 1.4489830330258695,
+    "prior_covariance_eigen_min": 0.0039034353915933587
+  },
+  "15329": {
+    "prior_covariance_condition_max": 1.2185384814499995,
+    "prior_covariance_eigen_min": 0.004224697985980323
+  },
+  "15331": {
+    "prior_covariance_condition_max": 1.3163984771163486,
+    "prior_covariance_eigen_min": 0.003931722754216257
+  },
+  "15349": {
+    "prior_covariance_condition_max": 1.2017444329478093,
+    "prior_covariance_eigen_min": 0.004285277769432577
+  },
+  "15359": {
+    "prior_covariance_condition_max": 1.5053327646848456,
+    "prior_covariance_eigen_min": 0.004124370153003338
+  },
+  "15361": {
+    "prior_covariance_condition_max": 1.2089438740134728,
+    "prior_covariance_eigen_min": 0.004173518835218454
+  },
+  "15373": {
+    "prior_covariance_condition_max": 1.4185925448609227,
+    "prior_covariance_eigen_min": 0.003995696003270277
+  },
+  "15377": {
+    "prior_covariance_condition_max": 1.2867962235964694,
+    "prior_covariance_eigen_min": 0.00391535780264643
+  }
+}

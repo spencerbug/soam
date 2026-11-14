@@ -1,0 +1,16 @@
+{
+  "actual_batch": 20,
+  "compressed_bytes": {
+    "False": 4079497,
+    "True": 5364292
+  },
+  "measured_cpu": {
+    "False": 1.572707,
+    "True": 1.5028079999999995
+  },
+  "original_fixture_preserved": true,
+  "projected_artifact_bytes": 919297830.0,
+  "projected_cpu_seconds": 563.41905,
+  "projection_pass": true,
+  "supersedes_storage_projection_only": "fixture-storage-correction failed; A1 bounds actual inventory at130+10reserve evaluations, detailed traces only every4 first4 episodes, all error arrays retained"
+}

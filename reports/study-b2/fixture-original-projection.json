@@ -1,0 +1,281 @@
+{
+  "note": "1.5x time/storage and1.25x memory; bounded maximum160 evals plus40screen equivalent; full detail retained only first confirmation root. Compressed storage expected smaller.",
+  "projected_artifact_bytes": 301839360.0,
+  "projected_cpu_seconds": 553.7869499999999,
+  "projected_peak_rss_bytes": 379494400.0,
+  "projection_pass": true,
+  "timings": {
+    "CHANNEL2": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.4588370000000026,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "CHANNEL4": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.4442560000000029,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "FILTER2": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.5406,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 65,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "bilinear products plus 2x2 solves/inverses; solves excluded from linear MAC proxy; use measured CPU",
+        "persistent_bytes": 460,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "GAIN25": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.1560500000000005,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "GAIN50": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.168673,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "HUBER99": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.377986,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "NIS99": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.1851509999999994,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "NISEMP": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.2323489999999993,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "PC16": {
+      "artifact_uncompressed_bytes": 355008,
+      "evaluation_cpu_seconds": 0.26777399999999973,
+      "resources": {
+        "correct_macs": 576,
+        "fitted_scalars": 1340,
+        "halting_macs": 0,
+        "initial_macs": 384,
+        "nonlinear_note": "tanh per recurrent/correction unit; sigmoid per gain/head; MAC estimate excludes elementwise ops",
+        "persistent_bytes": 5360,
+        "predict_macs": 528,
+        "prior_workspace_floats": 16,
+        "readout_macs": 192,
+        "settle_macs": 288,
+        "state_floats": 16
+      }
+    },
+    "Q01": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.1664019999999997,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "Q10": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.164232000000001,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "R10": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.161601,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "R100": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.167396,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "RAW05": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.3702750000000012,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "RAW10": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.3567789999999995,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    },
+    "STABLE": {
+      "artifact_uncompressed_bytes": 1257664,
+      "evaluation_cpu_seconds": 1.1956399999999996,
+      "resources": {
+        "correct_macs": 90,
+        "fitted_scalars": 64,
+        "halting_macs": 0,
+        "initial_macs": 72,
+        "nonlinear_note": "Joseph covariance and diagnostic NIS; 2x2 solves; robust modes add a second gain solve; MAC proxy inherited only, not equal-compute claim",
+        "persistent_bytes": 920,
+        "predict_macs": 80,
+        "prior_workspace_floats": 6,
+        "readout_macs": 24,
+        "settle_macs": 0,
+        "state_floats": 6
+      }
+    }
+  }
+}
