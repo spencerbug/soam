@@ -1,0 +1,42 @@
+# SOAM post-C research proposals (2026-11-16)
+
+**Status: proposed Codex prompts, not approved protocols or completed experiments.** This directory captures the next research directions after completed Studies A, B, B2, and C. Execute only the next explicitly selected bounded study. Do not edit or reinterpret historical gate decisions.
+
+## Evidence ledger
+
+Original result publications and frozen evidence:
+
+- [Studies A/B](https://spencerbug.github.io/research/soam-studies-a-b/): adaptive-update practical benefit inconclusive; ordinary fixed-leak recurrence competent; predict -> score -> correct is retained; fixed sensory correction is an adequate neural default.
+- [Study B2](https://spencerbug.github.io/research/soam-study-b2/): ADAPT1 reduced balanced corruption by 52.69% versus FILTER2 while passing guards; coherent and sustained plausible faults remain hard.
+- [Study C](https://spencerbug.github.io/research/soam-study-c/): TWO16 (two recurrent states, shared fitted core) improved Brier by 0.02048 versus PC16 and by 0.01819 versus capacity-controlled PC32; both exceed the frozen 0.01 practical margin. Conventional retained multiplicity ADAPT1-M over collapsed ADAPT1-C improved Brier by only 0.00157, below that margin. TWO16 over ADAPT1-M improved Brier by just 0.00029; the conventional model has cheaper fitting and better feature prediction, while TWO16 is faster in that measured implementation. In coherent-fault versus genuine-change evidence-identical worlds, confident predictions remained badly miscalibrated (~0.445-0.450 Brier versus 0.25 uncertainty optimum). Study C did NOT test selective updates, learned operating modes, coupled neural populations, persistent writes, or attractors.
+- [Study C decision](https://spencerbug.github.io/assets/research/soam-study-c/STUDY_C_DECISION.txt): accepted the bounded C-H1 result only; no downstream study automatically selected. Historical E1 sharing stop remains unchanged.
+
+**Repository synchronization caveat (checked 2026-11-16):** The public SOAM main branch and the visible historical codex branch do not contain the later A/B/B2/C implementation snapshots and completed local ticket series. The public study reports contain archival evidence. These proposals deliberately add no claims that the current GitHub checkout already implements those studies. Codex must first inspect the actual local working branch and provenance; do not recreate, overwrite, or silently mark missing research records complete.
+
+## Proposed studies and recommended sequence
+
+| Track | Prompt | Question | Default status |
+| --- | --- | --- | --- |
+| D | [Persistent associative acquisition](STUDY_D_PERSISTENT_MEMORY.md) | Can new object-specific information survive recurrent-state reset without interference? | Preferred next bounded study (requires explicit routing) |
+| E | [Object-centered sensorimotor navigation](STUDY_E_OBJECT_NAVIGATION.md) | Can a model reuse learned object-relative structure across viewpoints and actions, beyond sequence memorization? | Conditional independent capability study |
+| C2 optional | [Selective updating and modes](OPTIONAL_C2_SELECTIVE_PROCESSING.md) | Are primed/tracking/attended scheduling policies useful when two valid components coexist? | Deferred until a diagnosed compute/continuity bottleneck |
+| F planning | [Population topology search](STUDY_F_POPULATION_TOPOLOGY.md) | What favors monolithic, hierarchical, horizontal, or dynamically coupled organizations? | Planning only; no architecture sweep yet |
+| F-coupling pilot | [Gated population intermingling](STUDY_F_GATED_INTERMINGLING.md) | Can two independently meaningful populations temporarily couple, mutually settle, and gain compositional capability without overwriting private states? | Future narrow experimental fork after suitable task and controls |
+
+D and E need not require positive C2 results or each other. F's coupled-population pilot can be evaluated after an appropriate complementary-component task exists; do not treat C's *competing* regime hypotheses as *complementary* parts that should be merged. Stage F first as narrow mechanism ablations within family, later a multi-resource tournament.
+
+## Scientific interpretation and architecture principles
+
+- TWO16 demonstrated useful **factorized recurrent hypothesis state**, not simultaneous shared neurons and not a proven attractor. Shared parameters across separate state instances do not establish physical neuron overlap.
+- A two-state recurrent predictor and two-state conventional filter are roughly competitive on C's declared probability endpoint; decide among them using feature quality, runtime, fitting and retained-state cost, not only Brier.
+- Beliefs may be **competing** (one causal explanation) or **complementary** (several simultaneously valid objects/components). Use different probability/evidence semantics; do not normalize complementary existence probabilities to sum to one.
+- The coherent-cause failure is **missing modeled causes or information**, not evidence that two states are too few, that attention is needed, or that recurrent settling will resolve indistinguishable worlds.
+- Keep sensory correction, action prediction, internal settling, and persistent writing distinct. A physical action advances once per physical interval; settling never replays a physical action or invents observations.
+- Test direct gating, routed messages, temporary joint coupling, and full recurrent intermingling separately. Do not confuse concatenating vectors or independently running populations with demonstrated mutual settling.
+- Preserve private component state and identity when composing; test independent component changes, held-out combinations, interference, reversibility, and spurious convergence.
+- Report parameters, active and retained state, temporary branches, memory, projections, routing, recurrent iterations, throughput and **measured** latency; FLOP/MAC counts alone are not enough.
+- Obtain protocol, manifests, data splits, independent fit roots, controls, effect thresholds, uncertainty rules and finite compute ceilings *before* confirmation. Negative/invalid/inconclusive results remain first-class evidence.
+
+## Codex use
+
+Each linked document is a copy-ready bounded Codex assignment. Read the repository's current AGENTS.md and gate/ticket conventions before use. Write a versioned protocol and finite decision gate before any full run. Do not auto-execute later prompts, create remote issues, or publish a blog. These proposal documents are not amendments to PRIORITIES.md or proof of approval of any later branch.
