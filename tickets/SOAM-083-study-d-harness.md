@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-083"
 title: "Implement and verify bounded persistent memory controls"
 type: "engineering"
-status: "in_progress"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M2"
@@ -34,10 +34,10 @@ Follow the [owner selection](../docs/requests/study_d_2026_11_17.md) and [D v1 p
 
 ## Acceptance criteria
 
-- [ ] Complete this bounded phase with evidence or documented negative/inconclusive/invalid outcome.
-- [ ] Verify reset, no-write inference, evidence parity, source identity and resource limits.
-- [ ] Preserve every mandatory comparator, independent-root uncertainty and historical outcome.
-- [ ] Record actual checks, artifacts and implications for the next ticket.
+- [x] Complete this bounded phase with evidence or documented negative/inconclusive/invalid outcome.
+- [x] Verify reset, no-write inference, evidence parity, source identity and resource limits.
+- [x] Preserve every mandatory comparator, independent-root uncertainty and historical outcome.
+- [x] Record actual checks, artifacts and implications for the next ticket.
 
 ## Metrics / evidence
 
@@ -54,3 +54,5 @@ The November 17 owner request selects this fresh fork; the superseded SOAM-059 s
 ## Completion record
 
 SOAM-082 is done/proceed; implementation started after 285 baseline tests passed.
+
+Completed source `2270743`: observation-only interfaces, fixed learned recurrent core, NOWRITE/KV/REG/FAST, D1/D2 evaluator, finite phase runner, independent reduction, snapshots and report renderer. Baseline 285 tests passed before edits; full implementation suite 303 passed in 26.83s, including 18 D invariants. Ruff and 86-ticket validation passed. Full-inventory root-30011 fixture completed all four candidates in 2.25 CPU seconds; projected remaining allocation with 2x margin 106.44 CPU seconds and 385234896 bytes. RSS 293404672 bytes. See `runs/study-d-v1/fixture/projection.json`, source snapshot, individual result/fit records and ledger. Core probe error 2.51e-16; inputs identical across candidates, source frozen before fixture. FAST sequential interference is preserved as a fixture observation, not a confirmation claim or validity failure. Development may proceed without changing settings or guards.

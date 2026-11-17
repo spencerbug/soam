@@ -1,6 +1,6 @@
 # Hypotheses and operational evidence ledger
 
-Updated 2026-11-11. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
+Updated 2026-11-17. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
 their wording and provenance. The rows below are operational questions, not new
 schema IDs or retroactive changes to those statements. Scientific criteria and
 proposed numerical defaults live in the [review](SCIENTIFIC_REVIEW_2026_11_05.md);
@@ -143,3 +143,12 @@ scaffolding. The FAST block is algebraically a direct delta map / normalized onl
 gradient, so no uniquely recurrent advantage follows from renaming it. D-H2 whole-
 model refitting, D-H3 selective writes, D3/D4, attraction and organization remain
 untested. The versioned protocol owns the numerical hypotheses and stop rules.
+
+D0–D2 complete: the [report](../reports/STUDY_D.md) supports persistent acquisition
+and retention for KV under the frozen criteria. REG and FAST learn isolated objects
+but fail sequential protection, with adjusted retention lower bounds above .02.
+The FAST practical benefit is precisely negative against both controls. This is
+scoped conventional-memory support and a negative result for one linear delta
+operator, not a universal rejection of recurrent plasticity or a sharing/attractor
+gate pass. [SOAM-085](../reports/STUDY_D_DECISION.md) accepts the evidence and KV
+reference only; no later branch is activated.

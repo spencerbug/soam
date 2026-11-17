@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-085"
 title: "Review persistent memory benefit and cheapest reliable mechanism"
 type: "decision"
-status: "backlog"
+status: "done"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M2"
@@ -15,7 +15,7 @@ assignees: []
 created: "2026-11-17"
 updated: "2026-11-17"
 github_issue: null
-decision: null
+decision: "proceed"
 ---
 
 # SOAM-085: Review persistent memory benefit and cheapest reliable mechanism
@@ -34,10 +34,10 @@ Follow the [owner selection](../docs/requests/study_d_2026_11_17.md) and [D v1 p
 
 ## Acceptance criteria
 
-- [ ] Complete this bounded phase with evidence or documented negative/inconclusive/invalid outcome.
-- [ ] Verify reset, no-write inference, evidence parity, source identity and resource limits.
-- [ ] Preserve every mandatory comparator, independent-root uncertainty and historical outcome.
-- [ ] Record actual checks, artifacts and implications for the next ticket.
+- [x] Complete this bounded phase with evidence or documented negative/inconclusive/invalid outcome.
+- [x] Verify reset, no-write inference, evidence parity, source identity and resource limits.
+- [x] Preserve every mandatory comparator, independent-root uncertainty and historical outcome.
+- [x] Record actual checks, artifacts and implications for the next ticket.
 
 ## Metrics / evidence
 
@@ -53,4 +53,22 @@ The November 17 owner request selects this fresh fork; the superseded SOAM-059 s
 
 ## Completion record
 
-Not started.
+**Proceed with acceptance of D0–D2 and KV as the scoped reliable reference only.**
+The [decision](../reports/STUDY_D_DECISION.md) reviews observability, frozen criteria,
+all controls, allocation, uncertainty, failures and the SOAM-084 verification. The
+tested FAST practical-benefit claim is negative; REG/FAST retention failures are
+established, not hidden behind isolated-object acquisition success. KV's 100%
+sampled old-object accuracy is not a universal guarantee. Actual allocation and
+latency tradeoffs remain explicit. No shared-neuron, attractor, learned-scope or
+whole-model reuse claim follows.
+
+All 16 fits and 88 evaluations complete; 64 repeated arrays are exact; independent
+reduction and archive checks pass. Source/config/seed/resource identities and actual
+commands are in SOAM-084 and the linked report. The owner was notified that the
+acquisition/retention distinction merits a joint blog/report; nothing was published.
+
+Recommend only a fresh full-versus-partial-cue D2 diagnostic, without selecting
+or executing it. D3/D4 remain deferred. Historical SOAM-052 stop, SOAM-069 revise,
+and A/B/B2/C outcomes are preserved; SOAM-039 and all other forks stay unselected.
+
+Final checks: 86 tickets and two templates validated; `uv run ruff check soam tests scripts` and `git diff --check` passed; report/protocol/ticket links resolved; all 102 frozen D source hashes still match.

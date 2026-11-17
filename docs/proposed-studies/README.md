@@ -2,6 +2,10 @@
 
 **Status: proposed Codex prompts, not approved protocols or completed experiments.** This directory captures the next research directions after completed Studies A, B, B2, and C. Execute only the next explicitly selected bounded study. Do not edit or reinterpret historical gate decisions.
 
+## November 17 execution update
+
+The owner selected D0–D2 through SOAM-082–085; the [completed report](../../reports/STUDY_D.md) and [decision](../../reports/STUDY_D_DECISION.md) support explicit memory for the bounded task and preserve the tested fast-weight interference failure. D3/D4 remain deferred. The original proposed prompts below retain their historical scope and do not activate later work.
+
 ## Evidence ledger
 
 Original result publications and frozen evidence:

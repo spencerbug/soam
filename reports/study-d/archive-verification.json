@@ -1,0 +1,11 @@
+{
+  "audit_script_sha256": "edfd85f768333022ff4fbced3f3750a5ba4ebd07fbf0c3c01961bf6c4ef279f9",
+  "fits_complete": 16,
+  "frozen_files": 102,
+  "input_and_checkpoint_checks": 40,
+  "model_evaluations_complete": 88,
+  "raw_artifact_files": 1135,
+  "scope": "Saved-array/archive audit only; no new fits, streams or thresholds",
+  "source_fingerprint": "e3b352a3cc4257203baced7a5be720b0884309efa9f31680cd5b50b0146241d2",
+  "status": "pass"
+}

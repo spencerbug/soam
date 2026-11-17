@@ -54,6 +54,6 @@ The November 17 owner request selects this fresh fork; the superseded SOAM-059 s
 
 ## Completion record
 
-Preflight complete: historical reports read; all 95 Study C frozen source hashes verified. Baseline 285 tests passed, Ruff and 82-ticket validation passed before D implementation. Prior work committed as `bf15033`. Protocol and manifest drafted; scientific review pending; no D fits executed.
+Preflight complete: historical reports read; all 95 Study C frozen source hashes verified. Baseline 285 tests passed, Ruff and 82-ticket validation passed before D implementation. Prior work committed as `bf15033`. Protocol and manifest reviewed before fitting; no D fits had executed at that review.
 
 Protocol review: **proceed for D0–D2 only**. Analytic one-snapshot identifiability, independent appearance/relationship sampling, missing-cue ambiguity, mask-aware regression, exact FAST/direct-map equivalence, finite always-write inventory, root-level inference and the approved budget are explicit. The simpler memory may win; arbitrary recurrent plasticity and D-H2/D-H3 remain untested. The numerical manifest was frozen before any D fit. Ticket validator: 86 tickets passed. No positive scientific claim follows.

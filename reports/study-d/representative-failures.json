@@ -1,0 +1,66 @@
+{
+  "FAST": {
+    "representative_first_root": {
+      "final_free8": 0.5996869693163553,
+      "initial_free8": 0.0006089100973841752,
+      "object": 0,
+      "root": 32003,
+      "sequence": 0
+    },
+    "root": 32057,
+    "sequence_object_query": [
+      3,
+      4,
+      3
+    ],
+    "worst_free8": 13.926077473249963
+  },
+  "KV": {
+    "representative_first_root": {
+      "final_free8": 8.970277712368579e-05,
+      "initial_free8": 8.970277712368579e-05,
+      "object": 0,
+      "root": 32003,
+      "sequence": 0
+    },
+    "root": 32069,
+    "sequence_object_query": [
+      2,
+      1,
+      4
+    ],
+    "worst_free8": 0.0012357777070892396
+  },
+  "NOWRITE": {
+    "representative_first_root": {
+      "final_free8": 1.3314068786705109,
+      "initial_free8": 1.3314068786705109,
+      "object": 0,
+      "root": 32003,
+      "sequence": 0
+    },
+    "root": 32027,
+    "sequence_object_query": [
+      2,
+      1,
+      1
+    ],
+    "worst_free8": 3.0498211767729497
+  },
+  "REG": {
+    "representative_first_root": {
+      "final_free8": 0.10098370423612817,
+      "initial_free8": 0.00010954919642694003,
+      "object": 0,
+      "root": 32003,
+      "sequence": 0
+    },
+    "root": 32059,
+    "sequence_object_query": [
+      1,
+      4,
+      4
+    ],
+    "worst_free8": 2.1010925108046044
+  }
+}
