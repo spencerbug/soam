@@ -180,7 +180,11 @@ inspected. Before numerical work, 303 tests, Ruff and ticket validation passed.
 execution-wall seconds, 344047616 bytes peak RSS and about 165 MB of artifacts,
 within 7200/14400 seconds and 2 GiB ceilings. The font-cache setup is included in
 report wall time. The separate audit script is fingerprinted; it adds no scientific
-fits, streams, threshold changes or selected mechanism. Qwen did not return during
+fits, streams, threshold changes or selected mechanism. A final packaging check
+found that the compact phase-status export still said running because it was copied
+before report completion; the [receipt repair](study-d/reporting-status-repair.json)
+preserves that original value and copies the authoritative complete raw receipt.
+No scientific artifact or source changed. Qwen did not return during
 preflight; primary-agent review/execution was used.
 
 This informative negative result merits a joint report/blog: fast acquisition of

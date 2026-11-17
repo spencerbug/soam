@@ -1,0 +1,15 @@
+{
+  "reason": "Compact copy was exported before the reporting phase set its final status. Replaced only this reporting receipt with the completed authoritative raw receipt.",
+  "initial_export": {
+    "started_utc": "2026-11-17T18:53:26.798003+00:00",
+    "status": "running"
+  },
+  "corrected_export": {
+    "ended_utc": "2026-11-17T18:53:38.101072+00:00",
+    "status": "complete"
+  },
+  "raw_receipt_sha256": "39a9a07111f7e71de9e2ce4aed7e2f5d0a79d2cc3adc8c716810ef9568b98a69",
+  "scientific_source_changed": false,
+  "new_fits": 0,
+  "new_confirmation_streams": 0
+}
