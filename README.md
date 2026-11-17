@@ -28,6 +28,10 @@ Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](repor
 
 ## Current milestone
 
+**2026-11-14: Study C C-H1 complete (SOAM-078–081).** The [report](reports/STUDY_C.md) supports two recurrent candidate states over PC16 and the larger single-state PC32 control. Conventional retained multiplicity has a small benefit precisely below the declared practical margin. The [decision](reports/STUDY_C_DECISION.md) retains ADAPT1-C as the compact conventional reference and TWO16 as the faster recurrent alternative. All 67 fits and ten confirmation roots completed; 1,530 repeated arrays match exactly; 285 tests pass. Coherent-fault/genuine-change cause ambiguity remains overconfident. Scheduling, complementary objects and learned allocation remain conditional; no next experiment is selected and historical gates are preserved.
+
+Published November 14: [Study C visual article](https://spencerbug.github.io/blog/soam-study-c-hypothesis-preservation/) and [companion report with evidence downloads](https://spencerbug.github.io/research/soam-study-c/). The site publication is commit `fd5e0a7`; the frozen study snapshot and historical gate decisions remain unchanged.
+
 **2026-11-12: Study B2 complete (SOAM-074–077).** [Robust Kalman correction](reports/STUDY_B2.md) supports bounded channel-disagreement covariance adaptation and empirical NIS gating. ADAPT1 improves balanced corruption by 52.69% with all frozen accuracy guards passing, while coherent plausible corruption remains unresolved and measured Torch latency is slower than PC16. The [decision/C handoff](reports/STUDY_B2_DECISION.md) recommends conventional references only. Study C/D/E stay conditional; F stays a future planning track. Historical A/B and E1 decisions remain unchanged.
 
 

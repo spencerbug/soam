@@ -48,7 +48,7 @@ I’ll turn the research directions into sequential, copy-ready Codex assignment
 > I’m organizing the work into consecutive prompts so the agent can inspect the repository, preserve the completed baseline, select one justified fork, and run only the experiment currently authorized.
 > 
 > ```text
-> # Prompt 0 — repository preflight and fork selection
+> # Prompt 0 — repository preflight and fork selection (DONE)
 > 
 > You are working in the SOAM repository. Before changing code or running expensive jobs, inspect the actual checkout, repository guidance, current branch, working tree, open tickets, experiment registry, and existing reports. Do not assume that published results and the current checkout are identical.
 > 

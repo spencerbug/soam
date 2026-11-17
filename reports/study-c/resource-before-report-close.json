@@ -1,0 +1,63 @@
+{
+  "compact_bytes": 4092106,
+  "fits": 67,
+  "frozen_source": "18caccec2e5e72657d48559bff6782416b7ad373ccfc486e8932dc14aa0870b2",
+  "prior_phases": [
+    {
+      "cpu_seconds": 5.900456,
+      "cumulative_artifact_bytes": 9804200,
+      "error": null,
+      "peak_rss_bytes": 319619072,
+      "phase": "fixture",
+      "status": "complete",
+      "wall_seconds": 5.944201083038934
+    },
+    {
+      "cpu_seconds": 396.66583799999995,
+      "cumulative_artifact_bytes": 12990620,
+      "error": null,
+      "peak_rss_bytes": 941932544,
+      "phase": "development",
+      "status": "complete",
+      "wall_seconds": 396.65359975001775
+    },
+    {
+      "cpu_seconds": 13.897708,
+      "cumulative_artifact_bytes": 14075831,
+      "error": null,
+      "peak_rss_bytes": 296960000,
+      "phase": "calibrate",
+      "status": "complete",
+      "wall_seconds": 13.93219850002788
+    },
+    {
+      "cpu_seconds": 0.058338,
+      "cumulative_artifact_bytes": 15141905,
+      "error": null,
+      "peak_rss_bytes": 281346048,
+      "phase": "freeze",
+      "status": "complete",
+      "wall_seconds": 0.11483750003390014
+    },
+    {
+      "cpu_seconds": 788.4710839999999,
+      "cumulative_artifact_bytes": 608270898,
+      "error": null,
+      "peak_rss_bytes": 900628480,
+      "phase": "confirmation",
+      "status": "complete",
+      "wall_seconds": 788.695110749919
+    },
+    {
+      "cpu_seconds": 80.09263600000001,
+      "cumulative_artifact_bytes": 668548674,
+      "error": null,
+      "peak_rss_bytes": 883638272,
+      "phase": "repeat",
+      "status": "complete",
+      "wall_seconds": 80.09162995801307
+    }
+  ],
+  "raw_bytes": 669596809,
+  "report_cpu_so_far": 63.523827
+}

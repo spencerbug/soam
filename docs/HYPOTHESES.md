@@ -108,3 +108,24 @@ falsified. Statistical root uncertainty and actual runtime/storage costs are exp
 this Torch implementation is slower than PC16 despite fewer MACs and fitted weights.
 [SOAM-077](../reports/STUDY_B2_DECISION.md) selects conventional references only.
 No operating-mode, hypothesis-management, attractor or shared-population claim passes.
+
+## Study C hypothesis preservation — 2026-11-14
+
+[SOAM-078 / C v1](STUDY_C_PROTOCOL.md) selects C-H1: retained candidate states may
+improve proper uncertainty scores, delayed disambiguation and recovery beyond a
+competent single state. Capacity and conventional-mixture explanations remain
+mandatory alternatives. C-H2 selective computation and C-H3 learned allocation are
+conditional separate studies; no operating-mode claim follows from C-H1. These
+operationalize H1/H6 without changing historical definitions or the E1/A/B/B2 gates.
+
+C-H1 completed under the frozen protocol. [Measured evidence](../reports/STUDY_C.md)
+supports TWO16's probability-quality benefit over PC16 and PC32, including the
+capacity control and all guards. The retained conventional mixture's .00157 Brier
+gain is precisely below the .01 practical margin; TWO16 has no declared practical
+accuracy advantage over that mixture. This supports the supplied neural conditional
+factorization on this task, not a universal requirement for multiple retained states.
+The [decision](../reports/STUDY_C_DECISION.md) recommends ADAPT1-C and the faster
+TWO16 implementation for their respective tradeoffs. Nominal indistinguishable-world
+uncertainty is preserved, but coherent-fault/genuine-change cause pairs produce
+strong overconfidence. General ambiguity handling, C-H2 and C-H3 remain unsupported;
+no next experiment or historical gate change follows.

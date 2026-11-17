@@ -1,0 +1,9 @@
+{
+  "cpu_with_margin": 2790.8563200000003,
+  "fit_count_planned": 67,
+  "fixture_evaluation_cpu": 1.7460519999999997,
+  "neural_seconds_per_full_fit_max": 32.26944,
+  "passes": true,
+  "rss_with_margin": 399523840.0,
+  "storage_with_margin": 1534194316.5
+}
