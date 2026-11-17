@@ -129,3 +129,17 @@ TWO16 implementation for their respective tradeoffs. Nominal indistinguishable-w
 uncertainty is preserved, but coherent-fault/genuine-change cause pairs produce
 strong overconfidence. General ambiguity handling, C-H2 and C-H3 remain unsupported;
 no next experiment or historical gate change follows.
+
+## Study D persistent acquisition — 2026-11-17
+
+[SOAM-082 / D v1](STUDY_D_PROTOCOL.md) selects D0–D2 under the owner's new routing
+request. D-H1 operationalizes H2: new grounded object-specific information must
+survive complete transient reset. D-H4 compares one rank-one associative recurrent
+operator with bounded key-value storage and mask-aware online regression; H3 enters
+as a sequential-retention guard, not confirmation of learned functional scopes.
+Appearance and relationship are independent; the fixed sensor, reversible action
+family, stable appearance correspondence and proprioceptive reference are supplied
+scaffolding. The FAST block is algebraically a direct delta map / normalized online
+gradient, so no uniquely recurrent advantage follows from renaming it. D-H2 whole-
+model refitting, D-H3 selective writes, D3/D4, attraction and organization remain
+untested. The versioned protocol owns the numerical hypotheses and stop rules.

@@ -1,6 +1,6 @@
 # Priority and milestone tracker
 
-Updated: 2026-11-14. The owner adopted the [v0.3 shared-population experiment
+Updated: 2026-11-17. The owner adopted the [v0.3 shared-population experiment
 platform scope](docs/RESEARCH_SPEC_V0_3.md). Overlapping neurons for features,
 relationships, and action relations are the preferred architecture hypothesis.
 Separated networks remain controls. The program also supports independent Hopfield
@@ -19,6 +19,8 @@ protocol design; the owner superseded that current selection with Study A. Study
 and the subsequent owner-selected Study B are complete. The owner-selected B2 is complete. The first bounded Study C experiment selected by the owner on November 14 is complete through SOAM-078–081.
 
 ## Current work and readiness
+
+**November 17: Study D selected, D0–D2 only.** The owner selected post-reset acquisition and sequential retention under the accepted 7200 CPU / 14400 execution-wall seconds, 2 GiB RSS/artifact ceiling. SOAM-082 is done/proceed for the [protocol](docs/STUDY_D_PROTOCOL.md); SOAM-083 is in progress; trials await invariant and fixture review. D3/D4 and every other fork stay deferred. Historical E1/A/B/B2/C outcomes remain unchanged.
 
 **Study C complete, November 14.** SOAM-078 and SOAM-081 are done/proceed for the [C-H1 protocol](docs/STUDY_C_PROTOCOL.md) and [scoped result/reference decision](reports/STUDY_C_DECISION.md); SOAM-079/080 are done. The [report](reports/STUDY_C.md) supports TWO16 over both neural single-state controls, while conventional retained multiplicity falls precisely below the declared practical benefit. ADAPT1-C is the compact conventional reference; TWO16 is the faster recurrent alternative. All 67 fits, ten confirmation roots and 1,530 exact repeated arrays complete; 285 tests pass. Coherent-cause overconfidence remains unresolved. Scheduling, complementary objects and learned allocation stay conditional. No next experiment is selected; historical gates remain unchanged.
 
@@ -94,14 +96,14 @@ IDs are thematic provenance groups, not sequential dates or compulsory stages fo
 | --- | --- | --- | --- |
 | M0 | Reusable recurrent experiment infrastructure | Historical harnesses plus the minimal SOAM-047 contract and SOAM-048 runner/invariant fixtures | Minimal runner delivered; exact fixture repeat and 110 passing tests; no scientific gate |
 | M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; 119 fits/27,820 cells complete; absolute recall failure, exact repeat; SOAM-052 done/stop for tested useful sharing; dependent integration unready; Study A complete/inconclusive practical update benefit; SOAM-065 proceeds with R32 reference recommendation only; Study B complete: v1 tradeoff, magnitude negative practical advantage; SOAM-073 accepts separate-correction interface only; B2 complete with bounded robust-correction benefit and coherent/runtime limits; SOAM-077 recommends references only; Study C complete: supported neural factorization benefit, conventional practical multiplicity negative, unresolved coherent-cause overconfidence; SOAM-081 accepts scoped references only |
-| M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Historical contract complete; SOAM-059 selection superseded by Study A; SOAM-039 backlog pending fresh routing; acquisition unmeasured |
+| M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Historical writer/E2 preserved; owner-selected Study D SOAM-082–085 tests D0–D2; protocol proceed, harness in progress; acquisition unmeasured |
 | M3 | Conditional functional scopes | SOAM-007–010; limited interference with beneficial sharing | Deferred comparison branch |
 | M4 | Replay and overlapping organization | SOAM-011/012, SOAM-042/043 at fixed capacity; optional SOAM-013–015 | Planned; learned refinement conditional |
 | M5 | Compositional reuse | SOAM-031, SOAM-016–018; held-out feature/relation/action reuse and identity | Planned after shared-population evidence |
 | M6 | Grounding and independent applications | E3 active disambiguation SOAM-053–055; later SOAM-037/019–022 and module SOAM-056–058 after acquisition | Conditional alternatives awaiting named fork selection, contract/runner, and own decisions |
 | M7 | Control and shared action relations | SOAM-023/024/038/026; optional SOAM-025 | Planned after supported shared beliefs/handover |
 | M8 | Continual embodied integration | SOAM-027/028 require composition, grounding, control, acquisition, organization outcomes | Planned; application success alone does not pass integration gates |
-| MX | Scope and supporting research | SOAM-046 adoption and SOAM-060 review; SOAM-030 evidence map; SOAM-045 optional recurrent attention; SOAM-029 optional flow | SOAM-059 routing preserved; Study A delivered under owner override; Study B/B2/C complete under SOAM-066–081; no next fork selected |
+| MX | Scope and supporting research | SOAM-046 adoption and SOAM-060 review; SOAM-030 evidence map; SOAM-045 optional recurrent attention; SOAM-029 optional flow | SOAM-059 routing preserved; Study A delivered under owner override; Study B/B2/C complete under SOAM-066–081; owner selected Study D through SOAM-082–085 |
 
 ## Execution paths and dependency changes
 
@@ -243,6 +245,14 @@ Order is a preference within the selected path. It never schedules all alternati
 | 79 | [SOAM-079: Implement and verify the two-candidate inference comparison](tickets/SOAM-079-study-c-harness.md) | P0 | done | M1 | high | [SOAM-078](tickets/SOAM-078-study-c-protocol.md) |
 | 80 | [SOAM-080: Measure explicit candidate states on fresh ambiguity streams](tickets/SOAM-080-study-c-experiment.md) | P0 | done | M1 | high | [SOAM-078](tickets/SOAM-078-study-c-protocol.md), [SOAM-079](tickets/SOAM-079-study-c-harness.md) |
 | 81 | [SOAM-081: Review candidate-state benefit and conditional scheduling](tickets/SOAM-081-study-c-decision.md) | P0 | done | M1 | xhigh | [SOAM-080](tickets/SOAM-080-study-c-experiment.md) |
+
+| 82 | [SOAM-082: Specify and select post-reset persistent acquisition](tickets/SOAM-082-study-d-protocol.md) | P0 | done | M2 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-081](tickets/SOAM-081-study-c-decision.md) |
+
+| 83 | [SOAM-083: Implement and verify bounded persistent memory controls](tickets/SOAM-083-study-d-harness.md) | P0 | in_progress | M2 | high | [SOAM-082](tickets/SOAM-082-study-d-protocol.md) |
+
+| 84 | [SOAM-084: Measure post-reset acquisition and sequential retention](tickets/SOAM-084-study-d-experiment.md) | P0 | backlog | M2 | high | [SOAM-082](tickets/SOAM-082-study-d-protocol.md), [SOAM-083](tickets/SOAM-083-study-d-harness.md) |
+
+| 85 | [SOAM-085: Review persistent memory benefit and cheapest reliable mechanism](tickets/SOAM-085-study-d-decision.md) | P0 | backlog | M2 | xhigh | [SOAM-084](tickets/SOAM-084-study-d-experiment.md) |
 
 ## Housekeeping check
 

@@ -28,6 +28,8 @@ Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](repor
 
 ## Current milestone
 
+**2026-11-17: Study D D0–D2 selected.** The owner selected post-reset association acquisition and sequential retention under a 7200 CPU-second / 14400 execution-wall-second, 2 GiB RSS/artifact ceiling. SOAM-082 accepts the protocol; SOAM-083 implements the bounded controls. D3/D4 and all other experimental branches remain deferred. Historical gates and published A/B/B2/C results retain their meanings.
+
 **2026-11-14: Study C C-H1 complete (SOAM-078–081).** The [report](reports/STUDY_C.md) supports two recurrent candidate states over PC16 and the larger single-state PC32 control. Conventional retained multiplicity has a small benefit precisely below the declared practical margin. The [decision](reports/STUDY_C_DECISION.md) retains ADAPT1-C as the compact conventional reference and TWO16 as the faster recurrent alternative. All 67 fits and ten confirmation roots completed; 1,530 repeated arrays match exactly; 285 tests pass. Coherent-fault/genuine-change cause ambiguity remains overconfident. Scheduling, complementary objects and learned allocation remain conditional; no next experiment is selected and historical gates are preserved.
 
 Published November 14: [Study C visual article](https://spencerbug.github.io/blog/soam-study-c-hypothesis-preservation/) and [companion report with evidence downloads](https://spencerbug.github.io/research/soam-study-c/). The site publication is commit `fd5e0a7`; the frozen study snapshot and historical gate decisions remain unchanged.
