@@ -20,7 +20,7 @@ and the subsequent owner-selected Study B are complete. The owner-selected B2 is
 
 ## Current work and readiness
 
-**2026-11-18 prompt prepared:** [Study D-R1](docs/proposed-studies/STUDY_D_R1_RECURRENT_RETRIEVAL.md) names the selected recurrent-retrieval follow-up. SOAM-086 remains P0/ready, xhigh, for protocol design. The prompt proposes acquisition/retention tests and a causal settling comparison; no new numerical allocation or execution is recorded.
+**2026-11-18 D-R1 begun:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) is done/proceed for the [PH768 retrieval protocol](docs/STUDY_D_R1_PROTOCOL.md) and [v1 manifest](docs/protocols/study_d_r1_v1.json). [SOAM-087](tickets/SOAM-087-recurrent-retrieval-harness.md) is P0/in_progress, high, for the bounded implementation. The primary contrast isolates full settling versus one cycle; seven arms include an encoding-matched REG control. The owner explicitly accepted the fresh numerical allocation on November 18; implementation is underway before the bounded fixture.
 
 **2026-11-17 owner routing update:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.
 
@@ -100,14 +100,14 @@ IDs are thematic provenance groups, not sequential dates or compulsory stages fo
 | --- | --- | --- | --- |
 | M0 | Reusable recurrent experiment infrastructure | Historical harnesses plus the minimal SOAM-047 contract and SOAM-048 runner/invariant fixtures | Minimal runner delivered; exact fixture repeat and 110 passing tests; no scientific gate |
 | M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; 119 fits/27,820 cells complete; absolute recall failure, exact repeat; SOAM-052 done/stop for tested useful sharing; dependent integration unready; Study A complete/inconclusive practical update benefit; SOAM-065 proceeds with R32 reference recommendation only; Study B complete: v1 tradeoff, magnitude negative practical advantage; SOAM-073 accepts separate-correction interface only; B2 complete with bounded robust-correction benefit and coherent/runtime limits; SOAM-077 recommends references only; Study C complete: supported neural factorization benefit, conventional practical multiplicity negative, unresolved coherent-cause overconfidence; SOAM-081 accepts scoped references only |
-| M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Study D SOAM-082–085 complete: KV passes bounded acquisition/retention; REG/FAST interference, FAST precise negative practical advantage; historical writer/E2 preserved; D3/D4 deferred; SOAM-086 protocol ready |
+| M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Study D SOAM-082–085 complete: KV passes bounded acquisition/retention; REG/FAST interference, FAST precise negative practical advantage; historical writer/E2 preserved; D3/D4 deferred; SOAM-086 protocol done/proceed; SOAM-087 harness in progress; fresh numerical allocation accepted |
 | M3 | Conditional functional scopes | SOAM-007–010; limited interference with beneficial sharing | Deferred comparison branch |
 | M4 | Replay and overlapping organization | SOAM-011/012, SOAM-042/043 at fixed capacity; optional SOAM-013–015 | Planned; learned refinement conditional |
 | M5 | Compositional reuse | SOAM-031, SOAM-016–018; held-out feature/relation/action reuse and identity | Planned after shared-population evidence |
 | M6 | Grounding and independent applications | E3 active disambiguation SOAM-053–055; later SOAM-037/019–022 and module SOAM-056–058 after acquisition | Conditional alternatives awaiting named fork selection, contract/runner, and own decisions |
 | M7 | Control and shared action relations | SOAM-023/024/038/026; optional SOAM-025 | Planned after supported shared beliefs/handover |
 | M8 | Continual embodied integration | SOAM-027/028 require composition, grounding, control, acquisition, organization outcomes | Planned; application success alone does not pass integration gates |
-| MX | Scope and supporting research | SOAM-046 adoption and SOAM-060 review; SOAM-030 evidence map; SOAM-045 optional recurrent attention; SOAM-029 optional flow | SOAM-059 routing preserved; Study A delivered under owner override; Study B/B2/C complete under SOAM-066–081; Study D complete through SOAM-082–085; SOAM-086 recurrent retrieval protocol selected |
+| MX | Scope and supporting research | SOAM-046 adoption and SOAM-060 review; SOAM-030 evidence map; SOAM-045 optional recurrent attention; SOAM-029 optional flow | SOAM-059 routing preserved; Study A delivered under owner override; Study B/B2/C complete under SOAM-066–081; Study D complete through SOAM-082–085; SOAM-086 recurrent retrieval protocol done/proceed; SOAM-087 harness in progress |
 
 ## Execution paths and dependency changes
 
@@ -258,7 +258,8 @@ Order is a preference within the selected path. It never schedules all alternati
 
 | 85 | [SOAM-085: Review persistent memory benefit and cheapest reliable mechanism](tickets/SOAM-085-study-d-decision.md) | P0 | done | M2 | xhigh | [SOAM-084](tickets/SOAM-084-study-d-experiment.md) |
 
-| 86 | [SOAM-086: Specify a bounded recurrent associative retrieval pilot](tickets/SOAM-086-recurrent-retrieval-protocol.md) | P0 | ready | M2 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-085](tickets/SOAM-085-study-d-decision.md) |
+| 86 | [SOAM-086: Specify a bounded recurrent associative retrieval pilot](tickets/SOAM-086-recurrent-retrieval-protocol.md) | P0 | done | M2 | xhigh | [SOAM-047](tickets/SOAM-047-platform-contract.md), [SOAM-085](tickets/SOAM-085-study-d-decision.md) |
+| 87 | [SOAM-087: Implement and verify the bounded D-R1 retrieval harness](tickets/SOAM-087-recurrent-retrieval-harness.md) | P0 | in_progress | M2 | high | [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) |
 
 ## Housekeeping check
 

@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-086"
 title: "Specify a bounded recurrent associative retrieval pilot"
 type: "decision"
-status: "ready"
+status: "done"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M2"
@@ -15,7 +15,7 @@ assignees: []
 created: "2026-11-17"
 updated: "2026-11-18"
 github_issue: null
-decision: null
+decision: "proceed"
 ---
 
 # SOAM-086: Specify a bounded recurrent associative retrieval pilot
@@ -43,8 +43,8 @@ component capability, not that future organizational hypothesis.
 The November 18 [Study D-R1 handoff prompt](../docs/proposed-studies/STUDY_D_R1_RECURRENT_RETRIEVAL.md)
 names this first recurrent-retrieval follow-up and specifies the proposed execution
 assignment. Its candidate constraints, primary contrast, margins and budget are
-inputs to this protocol review, not frozen criteria or an allocation. The ticket
-remains ready; producing the prompt does not complete the protocol decision.
+inputs to this protocol review, not frozen criteria or an allocation. The owner instructed execution on November 18 ("Begin study D1-R1", interpreted
+as D-R1). The protocol is accepted for implementation; this does not renew the numerical allocation.
 
 - Design one bounded recurrent-retrieval comparison with a fixed action core.
 - Define the persistent write rule, transient settling law, cue treatment, stopping
@@ -59,15 +59,15 @@ remains ready; producing the prompt does not complete the protocol decision.
 
 ## Acceptance criteria
 
-- [ ] Define a competent recurrent associative candidate and acquisition mechanism,
+- [x] Define a competent recurrent associative candidate and acquisition mechanism,
   with observability, reset/no-write and data-separation contracts.
-- [ ] Freeze primary endpoint, acquisition/retention and false-recall guards,
+- [x] Freeze primary endpoint, acquisition/retention and false-recall guards,
   causal settling comparison, mandatory controls, uncertainty/precision and stop rules.
-- [ ] Declare finite tuning inventory, independent train/development/confirmation
+- [x] Declare finite tuning inventory, independent train/development/confirmation
   streams and total numerical CPU/wall/RSS/artifact ceilings before trials.
-- [ ] Distinguish reliable component retrieval, a causal settling contribution,
+- [x] Distinguish reliable component retrieval, a causal settling contribution,
   competitive resource cost and unsupported outcomes without requiring a KV win.
-- [ ] Record proceed/revise/stop with rationale and proposed implementation scope;
+- [x] Record proceed/revise/stop with rationale and proposed implementation scope;
   passing protocol review does not establish the scientific hypothesis.
 
 ## Metrics / evidence
@@ -93,5 +93,40 @@ confirmation is activated until this protocol decision is done with proceed.
 
 ## Completion record
 
-Ready for protocol design following the owner's selection. No protocol acceptance,
-new fit, confirmation run or numerical allocation is recorded.
+**November 18: proceed with the [D-R1 v1 contract](../docs/STUDY_D_R1_PROTOCOL.md)
+and [manifest](../docs/protocols/study_d_r1_v1.json), for implementation only.**
+The owner's “Begin study D1-R1” starts the selected D-R1 follow-up. SOAM-047 and
+SOAM-085 are done/proceed, and their scoped outcomes and SOAM-052 stop remain intact.
+
+Reviewed D's protocol, report, decision, manifest and actual acquisition source:
+FAST is a direct delta read; REG is a masked linear solve. Chose one symmetric
+projection-rule memory, with an explicit incremental projector derivation and a
+fixed real-valued threshold encoding. The accessible
+Personnaz et al. author paper (section 2, equation 3) verifies the projector form;
+the incremental residual update is explicitly derived, not confused with its
+orthogonal-pattern approximation. Publisher PRA full text was restricted.
+Implementation must independently verify the stated algebra/energy invariants. This is a competence-motivated design, not a
+claim of demonstrated competence. The frozen development screen can stop the study.
+
+The seven arms include a same-weights one-cycle intervention and REG-LIFT to expose
+encoding confounds. The protocol freezes acquisition/retention and independent
+false-recall/coverage guards, one primary contrast, all REG/KV comparisons, a
+12-quantity adjusted root-bootstrap family, finite settings/seeds, 16 core-fit
+attempts, stopping rules and an 8 MiB per-arm persistent ceiling. Ten-root precision
+and degenerate empirical intervals are explicit limitations. The fresh proposed
+7200 CPU / 14400 wall seconds and 2 GiB RSS/artifact allocation awaits owner acceptance;
+no numerical run is authorized by the old D ceiling.
+
+Baseline checkout `f325d26` was clean before documentation changes. `uv run pytest`
+passed **303 tests in 21.14s**; no existing source code was modified. Qwen's bounded
+bulk-document extraction timed out after 360 seconds; no worker findings or patches
+were accepted, and relevant evidence was checked directly. No fit, development,
+calibration or confirmation stream was generated. `uv run python scripts/check_tickets.py` validated **88 tickets and two templates**.
+`git diff --check` passed. A static manifest audit checked dimensions, independent
+roots, the 16-fit/12-writer inventory and persistent sizing; all **465** local links
+in changed/new Markdown resolved. Historical source and evidence are unchanged.
+Manifest SHA-256: `7376ceb643b50820d9b2d15fa4243aaa657b03cf183dba05d1949c756f60c8bb`.
+
+[SOAM-087](SOAM-087-recurrent-retrieval-harness.md) is the next eligible engineering
+package; its numerical fixture remains contingent on explicit allocation acceptance.
+No later branch or empirical gate is activated and no remote publication occurred.

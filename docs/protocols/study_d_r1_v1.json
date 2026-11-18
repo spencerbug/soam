@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "protocol": "docs/STUDY_D_R1_PROTOCOL.md",
+  "namespace": "soam-study-d-r1-v1",
+  "artifact_namespace": "study-d-r1-v1",
+  "fixture_root": 40011,
+  "development_roots": [
+    41001,
+    41013
+  ],
+  "confirmation_roots": [
+    42003,
+    42009,
+    42027,
+    42029,
+    42051,
+    42057,
+    42059,
+    42063,
+    42069,
+    42077
+  ],
+  "repeat_root": 42003,
+  "streams": [
+    "train",
+    "old-core",
+    "fixture",
+    "development-selection",
+    "development-calibration",
+    "confirmation",
+    "unknown",
+    "perturbation"
+  ],
+  "core_ridges": [
+    1e-06,
+    0.001
+  ],
+  "reg_ridges": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "reg_lift_ridges": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "fast_rates": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "arms": [
+    "NOWRITE",
+    "KV",
+    "REG",
+    "FAST",
+    "REG-LIFT",
+    "PH-FULL",
+    "PH-1"
+  ],
+  "candidate": {
+    "family": "incremental_orthogonal_projection_hopfield",
+    "key_dim": 16,
+    "value_dim": 8,
+    "bits_per_coordinate": 32,
+    "neurons": 768,
+    "key_bound": 4.0,
+    "value_bound": 1.5,
+    "threshold_rule": "uniform_midpoints",
+    "decoder": "bound_times_mean_bits",
+    "write_updates_per_snapshot": 1,
+    "residual_reorthogonalizations": 1,
+    "relative_novelty_tolerance": 1e-10,
+    "zero_recurrent_diagonal": true,
+    "clamp_observed": true,
+    "unobserved_initial_activity": 0.0,
+    "cycle_order": "ascending_free_coordinate",
+    "field_tie_tolerance": 1e-12,
+    "truncated_cycles": 1,
+    "max_cycles": 32,
+    "stop": "unchanged_complete_cycle",
+    "familiarity_score": "mean_square_projection_residual",
+    "energy_relative_tolerance": 1e-10,
+    "projector_invariant_atol": 1e-08
+  },
+  "task": {
+    "budgets": [
+      0,
+      1,
+      2,
+      4,
+      8
+    ],
+    "train_families": 8,
+    "train_objects": 8,
+    "train_pairs": 32,
+    "d1_objects": 24,
+    "d2_sequences": 4,
+    "d2_objects": 8,
+    "snapshots_per_object": 8,
+    "queries": 8,
+    "horizon": 8,
+    "partial_visible_key": 8,
+    "cue_conditions": [
+      "full",
+      "partial"
+    ],
+    "noise_sd": 0.02,
+    "projection_seed": 1729,
+    "acquisition_angle_range": [
+      -0.4,
+      0.4
+    ],
+    "action_range": [
+      -0.6,
+      0.6
+    ],
+    "unknown_objects_per_sequence": 8,
+    "old_core_probes": 64,
+    "normalization_floor": 1e-08,
+    "accurate_canonical_nmse": 0.1
+  },
+  "selection": {
+    "core": "mean_old_core_free8",
+    "writer": "mean_d1_J_d2_final_old_free8_equal_cue_weights",
+    "tie_atol": 1e-12,
+    "tie_break": "manifest_order",
+    "writer_configurations_per_development_root": 12
+  },
+  "calibration": {
+    "split": "development-calibration",
+    "sequences_per_root": 4,
+    "known_coverage_quantile": 0.95,
+    "quantile_method": "higher",
+    "separate_by": [
+      "arm",
+      "cue_condition"
+    ],
+    "unknown_used_for_selection": false
+  },
+  "competence": {
+    "noiseless_full_three_association_nmse_max": 0.1,
+    "each_development_root_full_accuracy8_min": 0.9,
+    "each_development_root_partial_accuracy8_min": 0.8
+  },
+  "inference": {
+    "independent_unit": "root",
+    "bootstrap_draws": 200000,
+    "bootstrap_seed": 43013,
+    "family_size": 12,
+    "family_alpha": 0.05,
+    "interval": "paired_root_percentile",
+    "primary": "PH-FULL_minus_PH-1_final_old_partial_raw_accuracy",
+    "practical_accuracy_margin": 0.05,
+    "accuracy_contrast_width_max": 0.1,
+    "acquisition_gain_min": 0.2,
+    "gain_width_max": 0.4,
+    "relative_gain_denominator_floor": 1e-06,
+    "guards": {
+      "accuracy8_lower_min": 0.8,
+      "error8_upper_max": 0.15,
+      "old_accuracy_lower_min": 0.8,
+      "retention_upper_max": 0.02,
+      "known_coverage_lower_min": 0.9,
+      "accepted_wrong_all_known_upper_max": 0.05,
+      "unknown_acceptance_upper_max": 0.1
+    },
+    "secondary_references": [
+      "REG",
+      "KV",
+      "REG-LIFT"
+    ]
+  },
+  "diagnostics": {
+    "perturbation_flip_fraction": 0.05,
+    "perturbation_after_cycle": 1,
+    "perturbation_scope": "final_d2_nonzero_free_coordinates",
+    "trace_cycles": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "old_core_nmse_max": 0.02,
+    "linear_solver_max_iterations": 64,
+    "linear_solver_relative_residual": 1e-08,
+    "linear_solver_output_atol": 1e-08,
+    "linear_solver_output_rtol": 1e-07
+  },
+  "numerics": {
+    "device": "cpu",
+    "dtype": "float64",
+    "intraop_threads": 1,
+    "interop_threads": 1,
+    "deterministic": true
+  },
+  "limits": {
+    "cpu_seconds": 7200,
+    "wall_seconds": 14400,
+    "rss_bytes": 2147483648,
+    "artifact_bytes": 2147483648,
+    "persistent_bytes_per_arm": 8388608,
+    "max_fit_attempts": 16,
+    "preflight_projection_multiplier": 2.0,
+    "stop_new_trials_fraction": 0.9
+  },
+  "phases": [
+    "fixture",
+    "development",
+    "calibration",
+    "freeze",
+    "confirmation",
+    "repeat",
+    "report"
+  ],
+  "allocation_requirement": "explicit_owner_acceptance_in_separate_receipt"
+}

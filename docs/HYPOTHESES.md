@@ -153,6 +153,23 @@ operator, not a universal rejection of recurrent plasticity or a sharing/attract
 gate pass. [SOAM-085](../reports/STUDY_D_DECISION.md) accepts the evidence and KV
 reference only; no later branch is activated.
 
+## Study D-R1 recurrent retrieval — 2026-11-18
+
+[SOAM-086 / D-R1 v1](STUDY_D_R1_PROTOCOL.md) selects a fresh component test of H2,
+with H3-style interference protection but no learned-scoping claim. The proposed
+PH768 candidate writes a symmetric connection matrix using an incremental projection
+rule. Test persistent post-reset acquisition/retention, the causal benefit of additional
+nonlinear settling over one complete cycle, and complete-system comparisons with
+REG, encoding-matched REG-LIFT and KV. Capability, additional-settling contribution
+and comparative cost are separate claims; none requires a KV loss to be meaningful.
+The protocol/manifest owns exact endpoints, guards, fresh streams and finite budgets.
+
+This is a design decision with numerical allocation pending, not a measured finding.
+Fixed encodings, clamped cues, hand-assigned memory/core roles and a supplied reversible
+action basis remain scaffolding. Stored-pattern algebra, convergence or low energy
+alone cannot establish useful recovery, learned organization, shared-neuron benefits,
+scaling or biological validity. Historical D's direct-map negative result is preserved.
+
 ## Population cooperation and retrieval scaling
 
 Owner hypothesis recorded 2026-11-17: specialized recurrent populations may improve

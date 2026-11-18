@@ -13,6 +13,8 @@ The [scientific review demonstration sequence](SCIENTIFIC_REVIEW_2026_11_05.md#p
 overlays the thematic work packages: trustworthy measurement → useful dynamics →
 rapid retained acquisition → active disambiguation → later composition/integration.
 
+**2026-11-18 D-R1 begun:** SOAM-086 is done/proceed for the [recurrent-retrieval protocol](STUDY_D_R1_PROTOCOL.md); [SOAM-087](../tickets/SOAM-087-recurrent-retrieval-harness.md) is ready for implementation. Fresh numerical allocation is pending, with no new fit or trial. Historical D and the SOAM-052 stop remain unchanged.
+
 **2026-11-17 owner routing update:** [SOAM-086](../tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.
 Each demonstrated capability has a proposed numerical criterion and a separate
 scientific decision; implemented components alone do not complete a research milestone.

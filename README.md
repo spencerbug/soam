@@ -28,6 +28,8 @@ Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](repor
 
 ## Current milestone
 
+**2026-11-18 D-R1 begun:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) accepts the [recurrent-retrieval protocol](docs/STUDY_D_R1_PROTOCOL.md) and [v1 manifest](docs/protocols/study_d_r1_v1.json) for implementation. PH768 stores associations in symmetric recurrent connections; a same-weights one-cycle control isolates added settling, and REG-LIFT controls for its fixed encoding. [SOAM-087](tickets/SOAM-087-recurrent-retrieval-harness.md) is the next engineering package. The fresh numerical allocation is pending; no new experiment result is claimed.
+
 **2026-11-18 handoff:** [Study D-R1: Recurrent associative retrieval](docs/proposed-studies/STUDY_D_R1_RECURRENT_RETRIEVAL.md) is the execution prompt for the selected follow-up under SOAM-086. It reuses D1/D2-style questions while testing actual nonlinear settling; protocol acceptance and a fresh numerical allocation remain pending.
 
 **2026-11-17 owner routing update:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.

@@ -1,0 +1,33 @@
+{
+  "study": "study-d-r1-v1",
+  "accepted_date": "2026-11-18",
+  "owner_response": "Yes approved",
+  "accepted_request": "2 CPU-hours, 4 execution wall-hours, 2 GiB RAM and 2 GiB artifacts",
+  "manifest_sha256": "7376ceb643b50820d9b2d15fa4243aaa657b03cf183dba05d1949c756f60c8bb",
+  "limits": {
+    "cpu_seconds": 7200,
+    "wall_seconds": 14400,
+    "rss_bytes": 2147483648,
+    "artifact_bytes": 2147483648,
+    "persistent_bytes_per_arm": 8388608,
+    "max_fit_attempts": 16,
+    "preflight_projection_multiplier": 2.0,
+    "stop_new_trials_fraction": 0.9
+  },
+  "includes": [
+    "numerical fixtures",
+    "development",
+    "calibration",
+    "confirmation",
+    "repeat",
+    "failures",
+    "diagnostics",
+    "profiling",
+    "reporting"
+  ],
+  "excludes": [
+    "engineering",
+    "hand-constructed unit tests"
+  ],
+  "renewable": false
+}
