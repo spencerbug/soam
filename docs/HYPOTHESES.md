@@ -152,3 +152,74 @@ scoped conventional-memory support and a negative result for one linear delta
 operator, not a universal rejection of recurrent plasticity or a sharing/attractor
 gate pass. [SOAM-085](../reports/STUDY_D_DECISION.md) accepts the evidence and KV
 reference only; no later branch is activated.
+
+## Population cooperation and retrieval scaling
+
+Owner hypothesis recorded 2026-11-17: specialized recurrent populations may improve
+prediction precision and memory recall through learned interpopulation connections
+and gating. The stronger hope is that useful capacity grows faster than total
+connection count over a declared resource range because populations reuse one
+another's representations. How to learn that organization remains unknown. This
+is a future-capability hypothesis, not a measured scaling result.
+
+The owner's [November 17 routing decision](requests/recurrent_retrieval_2026_11_17.md)
+selects a narrower recurrent-retrieval pilot for protocol design under
+[SOAM-086](../tickets/SOAM-086-recurrent-retrieval-protocol.md). Its purpose is to test
+whether retrieval can use a recurrent substrate compatible with tracking, opening
+the possibility that functional roles and interactions could later be learned or
+discovered as needed. A more homogeneous substrate may make adaptive organization
+easier to investigate; it does not itself demonstrate self-organization, scalability
+or an advantage over an explicit cache. Assigned roles and engineered gates remain
+supplied scaffolding until their acquisition and adaptation are tested.
+
+Study D motivates investigating retrieval assistance but does not establish that
+recurrent populations cannot retrieve on their own. KV reads an explicit nearest
+neighbor; FAST reads a linear delta map once before the shared dynamics rollout.
+Neither implements iterative associative settling. Their comparison does not test
+a Hopfield retrieval population, reciprocal cooperation, or population scaling.
+
+A candidate divides associative completion and action-conditioned tracking between
+populations. Learned projections or shared communication coordinates could translate
+between their representations; a separate central translation population is not
+assumed. A retrieved cue should support predictions of subsequent grounded evidence.
+State change, convergence, or mutual agreement alone cannot establish correct recall.
+Rejecting unfamiliar or incompatible cues and retaining private memories are part
+of the proposed capability.
+
+The conversation's population labels are overlapping functional motifs, not four
+required modules. A dynamic predictor describes a task; an integrator accumulates
+changes; a continuous attractor describes a family of maintainable states and
+recovery toward that family. A tracking population may implement all three.
+Recovery toward a manifold does not necessarily correct displacement along it to
+the true physical state; new sensory evidence may be needed. Symmetry alone does
+not determine retrieval capacity or prohibit action-conditioned queries. Restoring
+dynamics, action-driven movement, translation, and gating may coexist within a
+population or its connections. Their activity-update rules must be distinguished
+from persistent learning rules; a general recurrent predictor or coupled system
+need not descend one fixed energy function. Investigate which functions benefit
+from separation before assigning a separate population to each label. The
+[E0 proposal](proposed-studies/STUDY_E0_LEARNED_NAVIGABLE_ATTRACTOR_MANIFOLDS.md)
+addresses learned navigable geometry, a distinct question from persistent retrieval.
+
+To make the scaling hope testable in a future protocol:
+
+- Define prediction error, correct retrieval, and false acceptance separately;
+  distinguish retrieval precision from numerical/state precision and uncertainty
+  interval precision. Bounded accuracy rates cannot grow superlinearly indefinitely.
+- One candidate endpoint is the number of memories or held-out combinations usable
+  at fixed prediction-error, retrieval, false-acceptance, and retention thresholds.
+  Measure it across multiple connection budgets before claiming more-than-linear
+  growth over a specified range; one winning size is not a scaling law.
+- Count stored and active connections, weight precision, translation projections,
+  gates, readouts, external memory, retained states, training exposure, settling
+  updates, and latency. Compare competent single-population and simpler retrieval
+  controls under declared resources; extra neurons or hidden storage are not a
+  cooperation benefit.
+- Separate specialization, one-way retrieval, learned translation/gating, and
+  reciprocal recurrent influence with causal controls appropriate to the selected
+  question. Supplied roles or gates cannot establish learned organization.
+
+The [topology proposal](proposed-studies/STUDY_F_POPULATION_TOPOLOGY.md) and
+[coupling proposal](proposed-studies/STUDY_F_GATED_INTERMINGLING.md) retain this
+broader direction for later selection. The narrow retrieval pilot is selected for
+protocol design only; D3/D4 remain deferred and historical decisions stand.

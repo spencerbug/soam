@@ -28,9 +28,13 @@ Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](repor
 
 ## Current milestone
 
+**2026-11-17 owner routing update:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.
+
 **2026-11-17: Study D D0–D2 complete (SOAM-082–085).** Explicit key-value memory passes the post-reset acquisition and retention criteria. All writers learn isolated objects, but regression and the tested rank-one FAST memory exceed the sequential-interference guard; FAST has a precise negative practical-benefit result against both conventional controls. All 16 fits and 88 model evaluations complete, 64 repeat arrays match exactly, and 303 tests pass. The decision retains KV for this scaffolded task only. D3/D4 remain deferred; no next experiment or historical gate change is selected.
 
 Study D: [report](reports/STUDY_D.md), [decision](reports/STUDY_D_DECISION.md), [protocol](docs/STUDY_D_PROTOCOL.md), [paired results and resources](reports/study-d/tables.md).
+
+Published November 17: [Study D article](https://spencerbug.github.io/blog/soam-study-d-acquisition-and-retention/) and [companion report](https://spencerbug.github.io/research/soam-study-d/), site commits `5e8faf2` / `ed749bd`. They explain the measured retention failure and the separately selected recurrent-retrieval direction. Source/data downloads await separate publication authorization; the frozen study and historical decisions remain unchanged. See the [publication record](reports/STUDY_D_PUBLICATION.md).
 
 **2026-11-14: Study C C-H1 complete (SOAM-078–081).** The [report](reports/STUDY_C.md) supports two recurrent candidate states over PC16 and the larger single-state PC32 control. Conventional retained multiplicity has a small benefit precisely below the declared practical margin. The [decision](reports/STUDY_C_DECISION.md) retains ADAPT1-C as the compact conventional reference and TWO16 as the faster recurrent alternative. All 67 fits and ten confirmation roots completed; 1,530 repeated arrays match exactly; 285 tests pass. Coherent-fault/genuine-change cause ambiguity remains overconfident. Scheduling, complementary objects and learned allocation remain conditional; no next experiment is selected and historical gates are preserved.
 

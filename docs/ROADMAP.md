@@ -12,6 +12,8 @@ Concurrency/handover and the two application studies are conditional extensions.
 The [scientific review demonstration sequence](SCIENTIFIC_REVIEW_2026_11_05.md#proposed-measurable-demonstration-sequence)
 overlays the thematic work packages: trustworthy measurement → useful dynamics →
 rapid retained acquisition → active disambiguation → later composition/integration.
+
+**2026-11-17 owner routing update:** [SOAM-086](../tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.
 Each demonstrated capability has a proposed numerical criterion and a separate
 scientific decision; implemented components alone do not complete a research milestone.
 See the [complete ticket dispositions](TICKET_REVIEW_2026_11_05.md).

@@ -18,6 +18,8 @@ F-H3 (monolithic): A large densely connected gated recurrent population learns e
 
 F-H4 (temporary intermingling): Gated bidirectional cross-population recurrence can enable new compositional sensorimotor predictions and joint settling **while preserving private dynamics**, not merely passing a one-way cue. See STUDY_F_GATED_INTERMINGLING.md.
 
+F-H5 (cooperative scaling, owner hypothesis 2026-11-17): Learned interpopulation connections and gates may increase useful prediction/recall capacity faster than total connection count over a declared resource range. The [operational hypothesis ledger](../HYPOTHESES.md#population-cooperation-and-retrieval-scaling) owns the evidence boundary and proposed measurement: capacity at fixed quality/retention thresholds across multiple budgets, with translation, routing, storage and compute counted. A fixed-size gain alone does not establish this scaling claim. Study D's KV advantage over the tested direct delta map motivates this question but does not show that recurrent populations generally require retrieval assistance.
+
 F-H0: Simple conventional recurrent, factorized-state, or structured filtering models solve the tasks at lower total cost. A strong filter with multiple conditional branches is part of the controls, not a straw man.
 
 ## Candidate families
@@ -35,6 +37,7 @@ F-H0: Simple conventional recurrent, factorized-state, or structured filtering m
 - Disjoint maintained populations with no communication.
 - Full direct lateral projections.
 - Sparse learned cue messages / associative addresses.
+- Specialized associative-retrieval and tracking populations, with learned projections or shared communication coordinates as candidate translation mechanisms. A shared interface may reside in connections rather than a separate hub; do not assume one universal code. Compare one-way retrieval with actual reciprocal recurrence before crediting cooperation.
 - Central thalamus-inspired router, with router weights/state and dynamic routing decisions explicitly charged.
 - Cross-pop consensus as a separate candidate; sometimes hypotheses compete, sometimes distinct objects coexist. Do not normalize complementary states into one winner.
 - Allow supplied roles as labeled scaffold in early mechanism pilots, then test role selection without oracle identities. A routed hidden-state copy is not neuron-level intermingling.
@@ -70,6 +73,8 @@ Two **competing** trajectory hypotheses under a known two-regime task are *not* 
 ## Biological inspiration
 
 Compare cortical hierarchy, thalamocortical gating, distributed modularity, continuous attractors, predictive coding, deep equilibrium and mixture-of-experts literature as *possible computational analogies*. Any reciprocity/stability claim needs local Jacobian tests or a conditional derivation; symmetric weights with action-conditioned/asymmetric, gated, discrete updates do not automatically minimize a Hopfield energy.
+
+Layer 2/3 horizontal interactions and inter-area communication subspaces motivate selective exchange while preserving local dynamics ([Chisum et al., 2003](https://pmc.ncbi.nlm.nih.gov/articles/PMC6742080/); [Semedo et al., 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6449210/)). These findings concern particular visual circuits; they do not establish a universal layer 2/3 translation substrate, learned semantic alignment, or superlinear intelligence scaling.
 
 ## Deliverables and explicit boundary
 

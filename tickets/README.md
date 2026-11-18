@@ -81,6 +81,8 @@ SOAM-039/044/040/041 now form an early minimal acquisition branch. SOAM-053–05
 cover frozen-memory active disambiguation. SOAM-056–058 are a later module extension.
 A review target is not a frozen trial criterion until the owning protocol adopts it.
 
+**2026-11-17 owner follow-up:** [SOAM-086](SOAM-086-recurrent-retrieval-protocol.md) is ready for a fresh recurrent-retrieval protocol under the [new routing decision](../docs/requests/recurrent_retrieval_2026_11_17.md). This selects protocol design, not D3/D4, E0/F, learned role discovery or numerical execution. Earlier dated selections remain historical records.
+
 ## Files and ownership
 
 - `SOAM-###-short-slug.md`: one bounded task, experiment, or decision.

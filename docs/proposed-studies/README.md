@@ -6,6 +6,8 @@
 
 The owner selected D0–D2 through SOAM-082–085; the [completed report](../../reports/STUDY_D.md) and [decision](../../reports/STUDY_D_DECISION.md) support explicit memory for the bounded task and preserve the tested fast-weight interference failure. D3/D4 remain deferred. The original proposed prompts below retain their historical scope and do not activate later work.
 
+The later [November 17 owner routing decision](../requests/recurrent_retrieval_2026_11_17.md) selects a narrow recurrent-retrieval pilot for [SOAM-086 protocol design](../../tickets/SOAM-086-recurrent-retrieval-protocol.md). Its common-substrate motivation is distinct from the original D3 reliability and D4 capacity tests. E0/F and learned organization remain future questions.
+
 ## Evidence ledger
 
 Original result publications and frozen evidence:

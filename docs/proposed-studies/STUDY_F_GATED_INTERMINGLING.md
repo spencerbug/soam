@@ -55,6 +55,14 @@ W_AA and W_BB remain private intra-population operators. Enabling off-diagonal b
 
 Do not assume mutual settling is an energy minimization process. Test that convergence is toward the *correct compositional prediction*, not a fixed, wrong, or collapsed pattern.
 
+## Associative retrieval and tracking candidate (unselected)
+
+The owner's November 17 hypothesis pairs an associative-memory population, potentially symmetric/Hopfield, with an action-conditioned tracking population. The former completes partial cues through recurrent dynamics; the latter uses a translated completion to predict subsequent observations. Learned cross-population projections or shared communication coordinates are candidate interfaces. A reciprocal handshake must influence both populations' subsequent dynamics; one-way retrieval followed by an external acceptance check is a distinct control.
+
+Score predictions against new grounded evidence before correction. Settling to a new state is not proof of recall; returning to a designated no-match state requires an explicit, tested rejection mechanism. Include incompatible and unfamiliar cues, false agreement, and post-decoupling retention. The combined driven system inherits no automatic Hopfield energy guarantee.
+
+Study D did not test this mechanism: its KV lookup and FAST direct delta read precede the shared dynamics rollout without iterative associative retrieval. The broader [cooperative-scaling hypothesis](../HYPOTHESES.md#population-cooperation-and-retrieval-scaling) remains untested; this candidate is an optional task specialization requiring a fresh selection and protocol, not an added stage or automatic scaling sweep.
+
 ## Minimal complementary-component task
 
 Create two simultaneously existing processes with individually learnable sensorimotor structure and a relationship whose effect is testable.
