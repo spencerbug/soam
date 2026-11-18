@@ -1,5 +1,7 @@
 # Work packages and completion criteria
 
+**November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](../reports/STUDY_D_R1.md) and [decision](../reports/STUDY_D_R1_DECISION.md).
+
 The [v0.3 shared-population experiment scope](RESEARCH_SPEC_V0_3.md) was adopted
 on 2026-11-05. The [priority tracker](../PRIORITIES.md) owns execution order and
 mirrored metadata. Work-package and milestone numbers remain thematic provenance
@@ -13,9 +15,9 @@ The [scientific review demonstration sequence](SCIENTIFIC_REVIEW_2026_11_05.md#p
 overlays the thematic work packages: trustworthy measurement → useful dynamics →
 rapid retained acquisition → active disambiguation → later composition/integration.
 
-**2026-11-18 D-R1 begun:** SOAM-086 is done/proceed for the [recurrent-retrieval protocol](STUDY_D_R1_PROTOCOL.md); [SOAM-087](../tickets/SOAM-087-recurrent-retrieval-harness.md) is ready for implementation. Fresh numerical allocation is pending, with no new fit or trial. Historical D and the SOAM-052 stop remain unchanged.
+**Historical November 18 start (now completed):** SOAM-086 is done/proceed for the [recurrent-retrieval protocol](STUDY_D_R1_PROTOCOL.md); [SOAM-087](../tickets/SOAM-087-recurrent-retrieval-harness.md) was ready for implementation. At that stage, fresh numerical allocation was pending and no trial had run. Historical D and the SOAM-052 stop remain unchanged.
 
-**2026-11-17 owner routing update:** [SOAM-086](../tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.
+**Historical November 17 owner routing:** [SOAM-086](../tickets/SOAM-086-recurrent-retrieval-protocol.md) was P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study was then running. This owner selection follows the completed D decision rather than revising it.
 Each demonstrated capability has a proposed numerical criterion and a separate
 scientific decision; implemented components alone do not complete a research milestone.
 See the [complete ticket dispositions](TICKET_REVIEW_2026_11_05.md).
@@ -78,7 +80,7 @@ completed by this planning revision. See [architecture boundaries](ARCHITECTURE.
 | --- | --- | --- |
 | WP-00 | Historical provenance/handover fixtures preserved; platform and E1 engineering fixtures verified | SOAM-000/034/047/048/050 done; [SOAM-061](../tickets/SOAM-061-e1-artifact-feasibility.md) done/proceed with A1 storage correction; application harnesses SOAM-054/057 deferred |
 | WP-01 | Minimal shared-unit benefit/interference pilot; concurrent handover only on the selected SOAM-037 fork; symmetric/disjoint/ordinary recurrence controls | SOAM-001/002/033/034 done; [SOAM-049–052](../tickets/SOAM-049-shared-population-protocol.md) complete with sharing stop; Study A SOAM-062–065 complete, practical update benefit inconclusive and R32 reference recommended; SOAM-035/036 retained comparison; conditional active disambiguation SOAM-053–055 |
-| WP-02 | Early bounded acquisition/retention with state-reset and one-exposure tests; later module-learning extension | SOAM-003 done; SOAM-004/006 historical branch; SOAM-039/044/040/041 backlog pending fresh routing; learning-module SOAM-056–058 deferred |
+| WP-02 | Early bounded acquisition/retention with state-reset and one-exposure tests; later module-learning extension | SOAM-003 done; Study D SOAM-082–085 and D-R1 SOAM-086–089 complete (scoped KV reference, PH768 practical-settling negative and retrieval guards failed); SOAM-004/006 historical branch; SOAM-039/044/040/041 backlog pending fresh routing; learning-module SOAM-056–058 deferred |
 | WP-03 | Cross-function and instance retention/interference, useful transfer, and write/handover effects | SOAM-005; SOAM-039–041 |
 | WP-04 | Conditional heuristic scope comparison, with beneficial sharing rather than isolated allocation alone | SOAM-007/008 |
 | WP-05 | Conditional learned scope at matched acquisition; no prerequisite for initial platform/application studies | SOAM-009/010 |

@@ -1,0 +1,7 @@
+{
+  "fits": 16,
+  "input_parity_groups": 16,
+  "model_evaluations": 130,
+  "paired_cue_masks": 7040,
+  "writer_trials": 114
+}

@@ -1,5 +1,7 @@
 # SOAM — Self-Organizing Attractor Memory
 
+**November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](reports/STUDY_D_R1.md) and [decision](reports/STUDY_D_R1_DECISION.md).
+
 Research repository and planned experiment platform for Hopfield networks and
 related recurrent dynamical systems. The preferred hypothesis uses overlapping
 neurons for features, relationships, and action relations, with separated networks
@@ -28,11 +30,11 @@ Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](repor
 
 ## Current milestone
 
-**2026-11-18 D-R1 begun:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) accepts the [recurrent-retrieval protocol](docs/STUDY_D_R1_PROTOCOL.md) and [v1 manifest](docs/protocols/study_d_r1_v1.json) for implementation. PH768 stores associations in symmetric recurrent connections; a same-weights one-cycle control isolates added settling, and REG-LIFT controls for its fixed encoding. [SOAM-087](tickets/SOAM-087-recurrent-retrieval-harness.md) is the next engineering package. The fresh numerical allocation is pending; no new experiment result is claimed.
+**2026-11-18 D-R1 complete:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) accepted the [frozen protocol](docs/STUDY_D_R1_PROTOCOL.md); [SOAM-087](tickets/SOAM-087-recurrent-retrieval-harness.md) verified the harness; [SOAM-088](tickets/SOAM-088-recurrent-retrieval-study.md) completed the study. [SOAM-089](tickets/SOAM-089-recurrent-retrieval-decision.md) accepts its scoped negative practical-settling result and reliability failures. Stored-code preservation is distinct from correct cue-driven completion. The single next recommendation is a fresh retrieval/decoding diagnostic, not an activated fork. Historical gates remain unchanged.
 
-**2026-11-18 handoff:** [Study D-R1: Recurrent associative retrieval](docs/proposed-studies/STUDY_D_R1_RECURRENT_RETRIEVAL.md) is the execution prompt for the selected follow-up under SOAM-086. It reuses D1/D2-style questions while testing actual nonlinear settling; protocol acceptance and a fresh numerical allocation remain pending.
+**Historical 2026-11-18 handoff:** [Study D-R1: Recurrent associative retrieval](docs/proposed-studies/STUDY_D_R1_RECURRENT_RETRIEVAL.md) is the execution prompt for the selected follow-up under SOAM-086. It reuses D1/D2-style questions while testing actual nonlinear settling; protocol acceptance and a fresh numerical allocation were then pending.
 
-**2026-11-17 owner routing update:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.
+**Historical November 17 owner routing:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) was P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study was then running. This owner selection follows the completed D decision rather than revising it.
 
 **2026-11-17: Study D D0–D2 complete (SOAM-082–085).** Explicit key-value memory passes the post-reset acquisition and retention criteria. All writers learn isolated objects, but regression and the tested rank-one FAST memory exceed the sequential-interference guard; FAST has a precise negative practical-benefit result against both conventional controls. All 16 fits and 88 model evaluations complete, 64 repeat arrays match exactly, and 303 tests pass. The decision retains KV for this scaffolded task only. D3/D4 remain deferred; no next experiment or historical gate change is selected.
 

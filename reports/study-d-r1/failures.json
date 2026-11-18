@@ -1,0 +1,58 @@
+[
+  {
+    "arm": "NOWRITE",
+    "canonical_nmse": 2.896032426451178,
+    "object": 4,
+    "query": 0,
+    "root": 42069,
+    "sequence": 2
+  },
+  {
+    "arm": "KV",
+    "canonical_nmse": 0.0009623039000457704,
+    "object": 5,
+    "query": 0,
+    "root": 42057,
+    "sequence": 1
+  },
+  {
+    "arm": "REG",
+    "canonical_nmse": 2.7238774446487106,
+    "object": 3,
+    "query": 5,
+    "root": 42051,
+    "sequence": 2
+  },
+  {
+    "arm": "FAST",
+    "canonical_nmse": 12.250704728485605,
+    "object": 6,
+    "query": 5,
+    "root": 42051,
+    "sequence": 2
+  },
+  {
+    "arm": "REG-LIFT",
+    "canonical_nmse": 1.2097453854753057,
+    "object": 5,
+    "query": 1,
+    "root": 42063,
+    "sequence": 0
+  },
+  {
+    "arm": "PH-FULL",
+    "canonical_nmse": 2.9809797386104044,
+    "object": 6,
+    "query": 7,
+    "root": 42029,
+    "sequence": 1
+  },
+  {
+    "arm": "PH-1",
+    "canonical_nmse": 2.9776781131022934,
+    "object": 6,
+    "query": 7,
+    "root": 42029,
+    "sequence": 1
+  }
+]

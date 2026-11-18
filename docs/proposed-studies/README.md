@@ -1,5 +1,7 @@
 # SOAM post-C research proposals (2026-11-16)
 
+**November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](../../reports/STUDY_D_R1.md) and [decision](../../reports/STUDY_D_R1_DECISION.md).
+
 **Status: proposed Codex prompts, not approved protocols or completed experiments.** This directory captures the next research directions after completed Studies A, B, B2, and C. Execute only the next explicitly selected bounded study. Do not edit or reinterpret historical gate decisions.
 
 ## November 17 execution update
@@ -8,9 +10,9 @@ The owner selected D0–D2 through SOAM-082–085; the [completed report](../../
 
 The later [November 17 owner routing decision](../requests/recurrent_retrieval_2026_11_17.md) selects a narrow recurrent-retrieval pilot for [SOAM-086 protocol design](../../tickets/SOAM-086-recurrent-retrieval-protocol.md). Its common-substrate motivation is distinct from the original D3 reliability and D4 capacity tests. E0/F and learned organization remain future questions.
 
-**November 18 prompt:** [Study D-R1 — Recurrent associative retrieval](STUDY_D_R1_RECURRENT_RETRIEVAL.md) is the copy-ready handoff for that selected direction. D-R1 avoids reusing D2 (the completed retention stage) or D3 (deferred reliability). SOAM-086 remains ready; writing this prompt does not approve its protocol or numerical budget.
+**Historical November 18 prompt:** [Study D-R1 — Recurrent associative retrieval](STUDY_D_R1_RECURRENT_RETRIEVAL.md) is the copy-ready handoff for that selected direction. D-R1 avoids reusing D2 (the completed retention stage) or D3 (deferred reliability). SOAM-086 was then ready; that prompt alone did not approve its protocol or numerical budget.
 
-**November 18 execution update:** The owner instructed D-R1 to begin. [SOAM-086](../../tickets/SOAM-086-recurrent-retrieval-protocol.md) now accepts the [v1 protocol](../STUDY_D_R1_PROTOCOL.md) for implementation; [SOAM-087](../../tickets/SOAM-087-recurrent-retrieval-harness.md) is ready. The proposed fresh numerical ceiling still awaits owner acceptance; no trial has run.
+**Historical November 18 protocol acceptance:** The owner instructed D-R1 to begin. [SOAM-086](../../tickets/SOAM-086-recurrent-retrieval-protocol.md) accepted the [v1 protocol](../STUDY_D_R1_PROTOCOL.md) for implementation; [SOAM-087](../../tickets/SOAM-087-recurrent-retrieval-harness.md) was ready. The proposed numerical ceiling was then pending; it was subsequently accepted and the study completed.
 
 ## Evidence ledger
 
@@ -28,7 +30,7 @@ Original result publications and frozen evidence:
 | Track | Prompt | Question | Default status |
 | --- | --- | --- | --- |
 | D | [Persistent associative acquisition](STUDY_D_PERSISTENT_MEMORY.md) | Can new object-specific information survive recurrent-state reset without interference? | D0–D2 complete; D3/D4 deferred |
-| D-R1 | [Recurrent associative retrieval](STUDY_D_R1_RECURRENT_RETRIEVAL.md) | Can connection-based associative memory retain new associations, and does nonlinear settling improve partial-cue recall? | SOAM-086 protocol accepted; SOAM-087 implementation ready; fresh numerical allocation pending |
+| D-R1 | [Recurrent associative retrieval](STUDY_D_R1_RECURRENT_RETRIEVAL.md) | Can connection-based associative memory retain new associations, and does nonlinear settling improve partial-cue recall? | SOAM-086–089 complete; small settling effect below practical margin, reliability guards failed; no successor selected |
 | E | [Object-centered sensorimotor navigation](STUDY_E_OBJECT_NAVIGATION.md) | Can a model reuse learned object-relative structure across viewpoints and actions, beyond sequence memorization? | Conditional independent capability study |
 | C2 optional | [Selective updating and modes](OPTIONAL_C2_SELECTIVE_PROCESSING.md) | Are primed/tracking/attended scheduling policies useful when two valid components coexist? | Deferred until a diagnosed compute/continuity bottleneck |
 | F planning | [Population topology search](STUDY_F_POPULATION_TOPOLOGY.md) | What favors monolithic, hierarchical, horizontal, or dynamically coupled organizations? | Planning only; no architecture sweep yet |

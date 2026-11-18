@@ -1,5 +1,7 @@
 # Conditional research paths
 
+**November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](../reports/STUDY_D_R1.md) and [decision](../reports/STUDY_D_R1_DECISION.md).
+
 Adopted refinement: 2026-11-05, following the owner's request to replace an apparent
 linear implementation programme with result-dependent experimental forks. This
 refines [v0.3](RESEARCH_SPEC_V0_3.md). No experimental result or branch was selected
@@ -24,9 +26,9 @@ selection cannot authorize E3, attention or a later experiment.
 
 ## Small common starting point
 
-**2026-11-18 D-R1 begun:** SOAM-086 is done/proceed for the [recurrent-retrieval protocol](STUDY_D_R1_PROTOCOL.md); [SOAM-087](../tickets/SOAM-087-recurrent-retrieval-harness.md) is ready for implementation. Fresh numerical allocation is pending, with no new fit or trial. Historical D and the SOAM-052 stop remain unchanged.
+**Historical November 18 start (now completed):** SOAM-086 is done/proceed for the [recurrent-retrieval protocol](STUDY_D_R1_PROTOCOL.md); [SOAM-087](../tickets/SOAM-087-recurrent-retrieval-harness.md) was ready for implementation. At that stage, fresh numerical allocation was pending and no trial had run. Historical D and the SOAM-052 stop remain unchanged.
 
-**2026-11-17 owner routing update:** [SOAM-086](../tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.
+**Historical November 17 owner routing:** [SOAM-086](../tickets/SOAM-086-recurrent-retrieval-protocol.md) was P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study was then running. This owner selection follows the completed D decision rather than revising it.
 
 **2026-11-17: Study D D0–D2 complete (SOAM-082–085).** Explicit key-value memory passes the post-reset acquisition and retention criteria. All writers learn isolated objects, but regression and the tested rank-one FAST memory exceed the sequential-interference guard; FAST has a precise negative practical-benefit result against both conventional controls. All 16 fits and 88 model evaluations complete, 64 repeat arrays match exactly, and 303 tests pass. The decision retains KV for this scaffolded task only. D3/D4 remain deferred; no next experiment or historical gate change is selected.
 

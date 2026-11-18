@@ -1,0 +1,52 @@
+{
+  "artifact-review": {
+    "error": null,
+    "status": "complete"
+  },
+  "calibration": {
+    "ended_utc": "2026-11-18T18:06:46.148314+00:00",
+    "error": null,
+    "outcome_type": null,
+    "status": "complete"
+  },
+  "confirmation": {
+    "ended_utc": "2026-11-18T18:13:17.605543+00:00",
+    "error": null,
+    "outcome_type": null,
+    "status": "complete"
+  },
+  "development": {
+    "ended_utc": "2026-11-18T18:05:06.458871+00:00",
+    "error": null,
+    "outcome_type": null,
+    "status": "complete"
+  },
+  "fixture": {
+    "ended_utc": "2026-11-18T18:01:22.477444+00:00",
+    "error": null,
+    "outcome_type": null,
+    "status": "complete"
+  },
+  "freeze": {
+    "ended_utc": "2026-11-18T18:06:59.151876+00:00",
+    "error": null,
+    "outcome_type": null,
+    "status": "complete"
+  },
+  "repeat": {
+    "ended_utc": "2026-11-18T18:14:07.905169+00:00",
+    "error": null,
+    "outcome_type": null,
+    "status": "complete"
+  },
+  "report": {
+    "ended_utc": "2026-11-18T18:14:12.928456+00:00",
+    "error": null,
+    "outcome_type": null,
+    "status": "complete"
+  },
+  "supplement": {
+    "error": null,
+    "status": "complete"
+  }
+}

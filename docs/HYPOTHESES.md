@@ -164,7 +164,23 @@ REG, encoding-matched REG-LIFT and KV. Capability, additional-settling contribut
 and comparative cost are separate claims; none requires a KV loss to be meaningful.
 The protocol/manifest owns exact endpoints, guards, fresh streams and finite budgets.
 
-This is a design decision with numerical allocation pending, not a measured finding.
+The [completed study](../reports/STUDY_D_R1.md) supports isolated post-reset
+acquisition but fails the PH768 reliable sequential-retrieval conjunction. Added
+settling yields +.02143 earlier-object partial-cue accuracy (adjusted interval
+[.00982, .03661]), a small positive effect precisely below the .05 practical margin.
+Earlier-object accuracy (.70312), retention NMSE increase (.04784) and accepted-wrong
+rate (.27232 of all known queries) have established guard failures. Secondary
+intervals favor REG, KV and REG-LIFT, but their widths exceed the frozen .10 cap,
+so those categorical comparisons remain inconclusive. No hypothesis is rescued by
+selecting a weaker comparator.
+
+Full-cue accuracy is .71607. A post hoc audit of the fourth-sequence checkpoints
+at all ten roots preserves the acquired codes in the projector span to numerical
+precision; this limited storage finding does not imply successful retrieval or
+identify the cause of completion/decoding failure. [SOAM-089](../reports/STUDY_D_R1_DECISION.md)
+accepts the scoped evidence and retains KV as the conventional reference. It
+recommends one fresh retrieval/decoding diagnostic without activating a new fork.
+Historical D's results and all prior gates remain unchanged.
 Fixed encodings, clamped cues, hand-assigned memory/core roles and a supplied reversible
 action basis remain scaffolding. Stored-pattern algebra, convergence or low energy
 alone cannot establish useful recovery, learned organization, shared-neuron benefits,
@@ -238,5 +254,5 @@ To make the scaling hope testable in a future protocol:
 
 The [topology proposal](proposed-studies/STUDY_F_POPULATION_TOPOLOGY.md) and
 [coupling proposal](proposed-studies/STUDY_F_GATED_INTERMINGLING.md) retain this
-broader direction for later selection. The narrow retrieval pilot is selected for
-protocol design only; D3/D4 remain deferred and historical decisions stand.
+broader direction for later selection. The narrow D-R1 pilot is complete with the
+scoped negative result above; D3/D4 remain deferred and historical decisions stand.

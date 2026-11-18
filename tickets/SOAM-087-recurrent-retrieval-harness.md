@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-087"
 title: "Implement and verify the bounded D-R1 retrieval harness"
 type: "engineering"
-status: "in_progress"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M2"
@@ -42,17 +42,17 @@ One candidate only; no general framework or unselected scientific branch.
 
 ## Acceptance criteria
 
-- [ ] Run the existing nonempty suite before code changes; preserve historical D source/results.
-- [ ] Verify projector writes, repeated/dependent patterns, symmetry, zero effective diagonal,
+- [x] Run the existing nonempty suite before code changes; preserve historical D source/results.
+- [x] Verify projector writes, repeated/dependent patterns, symmetry, zero effective diagonal,
   energy descent, mask handling, fixed decoder, exact first-cycle identity and finite stopping.
-- [ ] Cover reset/no-write, core preservation, data separation, forbidden-input poisoning,
+- [x] Cover reset/no-write, core preservation, data separation, forbidden-input poisoning,
   same-observation parity, query-order invariance, deterministic replay and correctly scored failure.
-- [ ] Verify raw REG conjugate-gradient/direct equivalence within protocol tolerances.
-- [ ] Implement the complete frozen trial inventory, allocation gate, provenance, cumulative
+- [x] Verify raw REG conjugate-gradient/direct equivalence within protocol tolerances.
+- [x] Implement the complete frozen trial inventory, allocation gate, provenance, cumulative
   limits, phase receipts, archive protection and independent endpoint reconstruction.
-- [ ] After explicit fresh numerical allocation acceptance, execute only the single-root
+- [x] After explicit fresh numerical allocation acceptance, execute only the single-root
   timing fixture; verify 2x projected resources and reserve before development.
-- [ ] Record exact commands/checks, source/config identity, fixture costs and any invalid,
+- [x] Record exact commands/checks, source/config identity, fixture costs and any invalid,
   infeasible or negative result; do not imply that passing engineering fixtures proves recall.
 
 ## Metrics / evidence
@@ -79,6 +79,33 @@ its development screen may stop before confirmation without requiring success.
 
 ## Completion record
 
-Implementation started November 18 following explicit allocation acceptance.
-The baseline suite passed 303 tests before code changes (SOAM-086); no source changed
-between that check and this start. Numerical phases require frozen committed source.
+Completed November 18 under the [accepted allocation](../docs/requests/study_d_r1_allocation_2026_11_18.json).
+Scientific source `a84736dbbd3fcdf51bd59b868e2ac5557b17d451`, aggregate fingerprint
+`347e5eb9cb539374ea069de2d485f33fdb2070b06a9fbb2c670f207ffe034011`; 110 frozen files.
+The new `soam/retrieval/` package leaves historical acquisition code/evidence intact.
+
+Baseline 303 tests passed before edits. `uv run pytest` passed **318 tests in 17.70s**;
+the final focused `uv run pytest tests/test_retrieval.py` passed **15 tests in 1.06s**.
+Ruff and 88-ticket validation passed. Invariants cover projector/pseudoinverse equivalence,
+three distinct hand-constructed associations, duplicate writes, clamping, per-coordinate
+energy changes, no-write/reset/restore, forbidden values, first-cycle identity,
+perturbation boundaries, CG/direct solve, paired fresh streams and an independently
+rescored known failure. TorchScript emits a deprecation warning; the pinned runtime
+passes these checks and no runtime API change was made during trials.
+
+`uv run python -m soam.retrieval.runner fixture` completed root **40011**, one core
+fit and all **12** writer configurations. PH-1 is an additional derived arm from
+the same acquired PH checkpoint. Numerical use: **52.468888 CPU / 52.538652 wall seconds**, **384794624 bytes
+peak RSS**, **56739357 artifact bytes**. The 2x remaining projection is **1415.634692
+CPU / 1415.900580 wall seconds** and **1082811950 artifact bytes**, passing all limits
+and the reporting reserve. See `runs/study-d-r1-v1/fixture/projection.json`, source
+snapshot, per-configuration receipts and cumulative ledger. No confirmation stream
+was generated and no engineering result is treated as a scientific benefit.
+
+The bounded local-worker harness returned an unnecessary filesystem search instead
+of its requested adapter draft; the primary agent rejected action
+`4305575b8af34bf2bb4d0f99aa2e1939` and implemented/reviewed the adapter directly.
+No worker-controlled action or trial was executed.
+
+[SOAM-088](SOAM-088-recurrent-retrieval-study.md) subsequently completed development,
+the passing competence screen, calibration and confirmation under this handoff. No parameters, thresholds, observations or stopping limits were relaxed.

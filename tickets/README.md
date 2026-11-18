@@ -1,5 +1,7 @@
 # SOAM issue backlog
 
+**November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](../reports/STUDY_D_R1.md) and [decision](../reports/STUDY_D_R1_DECISION.md).
+
 Start with the [priority and milestone table](../PRIORITIES.md) and adopted
 [v0.3 specification](../docs/RESEARCH_SPEC_V0_3.md). SOAM is now planned as a reusable
 Hopfield/recurrent-dynamics experiment platform, with shared neurons across feature,
@@ -81,7 +83,7 @@ SOAM-039/044/040/041 now form an early minimal acquisition branch. SOAM-053–05
 cover frozen-memory active disambiguation. SOAM-056–058 are a later module extension.
 A review target is not a frozen trial criterion until the owning protocol adopts it.
 
-**2026-11-18 D-R1 begun:** SOAM-086 is done/proceed for the [recurrent-retrieval protocol](../docs/STUDY_D_R1_PROTOCOL.md); [SOAM-087](SOAM-087-recurrent-retrieval-harness.md) is ready for implementation. Fresh numerical allocation is pending, with no new fit or trial. Historical D and the SOAM-052 stop remain unchanged.
+**Historical November 18 start (now completed):** SOAM-086 is done/proceed for the [recurrent-retrieval protocol](../docs/STUDY_D_R1_PROTOCOL.md); [SOAM-087](SOAM-087-recurrent-retrieval-harness.md) was ready for implementation. At that stage, fresh numerical allocation was pending and no trial had run. Historical D and the SOAM-052 stop remain unchanged.
 
 **2026-11-17 owner follow-up:** [SOAM-086](SOAM-086-recurrent-retrieval-protocol.md) is ready for a fresh recurrent-retrieval protocol under the [new routing decision](../docs/requests/recurrent_retrieval_2026_11_17.md). This selects protocol design, not D3/D4, E0/F, learned role discovery or numerical execution. Earlier dated selections remain historical records.
 

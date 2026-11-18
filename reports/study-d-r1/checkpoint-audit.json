@@ -1,0 +1,101 @@
+{
+  "classification": "post hoc algebraic diagnostic; not a new confirmatory endpoint",
+  "new_fits": 0,
+  "new_observations": 0,
+  "new_retrieval_trials": 0,
+  "new_writes": 0,
+  "rows": [
+    {
+      "max_observed_code_span_residual": 1.3322676295501878e-15,
+      "max_projector_idempotence_residual": 2.220446049250313e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 29,
+      "root": 42003,
+      "sequence": 3
+    },
+    {
+      "max_observed_code_span_residual": 1.4432899320127035e-15,
+      "max_projector_idempotence_residual": 1.9845236565174673e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 23,
+      "root": 42009,
+      "sequence": 3
+    },
+    {
+      "max_observed_code_span_residual": 1.7763568394002505e-15,
+      "max_projector_idempotence_residual": 2.400857290751901e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 24,
+      "root": 42027,
+      "sequence": 3
+    },
+    {
+      "max_observed_code_span_residual": 1.3322676295501878e-15,
+      "max_projector_idempotence_residual": 1.582067810090848e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 20,
+      "root": 42029,
+      "sequence": 3
+    },
+    {
+      "max_observed_code_span_residual": 1.7763568394002505e-15,
+      "max_projector_idempotence_residual": 4.884981308350689e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 28,
+      "root": 42051,
+      "sequence": 3
+    },
+    {
+      "max_observed_code_span_residual": 1.3322676295501878e-15,
+      "max_projector_idempotence_residual": 1.0755285551056204e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 20,
+      "root": 42057,
+      "sequence": 3
+    },
+    {
+      "max_observed_code_span_residual": 1.3322676295501878e-15,
+      "max_projector_idempotence_residual": 1.5126788710517758e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 21,
+      "root": 42059,
+      "sequence": 3
+    },
+    {
+      "max_observed_code_span_residual": 1.3322676295501878e-15,
+      "max_projector_idempotence_residual": 1.3322676295501878e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 23,
+      "root": 42063,
+      "sequence": 3
+    },
+    {
+      "max_observed_code_span_residual": 1.7763568394002505e-15,
+      "max_projector_idempotence_residual": 1.9012569296705806e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 24,
+      "root": 42069,
+      "sequence": 3
+    },
+    {
+      "max_observed_code_span_residual": 1.7763568394002505e-15,
+      "max_projector_idempotence_residual": 2.6645352591003757e-15,
+      "max_symmetry_residual": 0.0,
+      "observed_codes": 64,
+      "rank": 30,
+      "root": 42077,
+      "sequence": 3
+    }
+  ],
+  "scope": "all ten available final confirmation checkpoints, fourth sequence only",
+  "source_sha256": "31c4e2258ba5c2f5f31c45a71ba490d844383e2db32b91fdaad455cf5bf809e1"
+}

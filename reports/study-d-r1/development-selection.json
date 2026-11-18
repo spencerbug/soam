@@ -1,0 +1,17 @@
+{
+  "competence_pass": true,
+  "core_index": 0,
+  "core_ridge": 1e-06,
+  "core_selection_scores": [
+    2.546102366370807e-16,
+    2.546046006402129e-10
+  ],
+  "settings": {
+    "FAST": 1.0,
+    "KV": 1.0,
+    "NOWRITE": 1.0,
+    "PH-FULL": 1.0,
+    "REG": 0.01,
+    "REG-LIFT": 0.01
+  }
+}

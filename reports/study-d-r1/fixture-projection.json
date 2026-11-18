@@ -1,0 +1,9 @@
+{
+  "fixture_writer_configurations": 12,
+  "pass": true,
+  "planned_fits": 16,
+  "remaining_artifact_bytes_2x": 1082811950,
+  "remaining_cpu_seconds_2x": 1415.634692,
+  "remaining_wall_seconds_2x": 1415.900579755261,
+  "spent_fixture_cpu_seconds": 52.465104
+}
