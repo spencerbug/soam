@@ -8,6 +8,8 @@ The owner selected D0–D2 through SOAM-082–085; the [completed report](../../
 
 The later [November 17 owner routing decision](../requests/recurrent_retrieval_2026_11_17.md) selects a narrow recurrent-retrieval pilot for [SOAM-086 protocol design](../../tickets/SOAM-086-recurrent-retrieval-protocol.md). Its common-substrate motivation is distinct from the original D3 reliability and D4 capacity tests. E0/F and learned organization remain future questions.
 
+**November 18 prompt:** [Study D-R1 — Recurrent associative retrieval](STUDY_D_R1_RECURRENT_RETRIEVAL.md) is the copy-ready handoff for that selected direction. D-R1 avoids reusing D2 (the completed retention stage) or D3 (deferred reliability). SOAM-086 remains ready; writing this prompt does not approve its protocol or numerical budget.
+
 ## Evidence ledger
 
 Original result publications and frozen evidence:
@@ -23,7 +25,8 @@ Original result publications and frozen evidence:
 
 | Track | Prompt | Question | Default status |
 | --- | --- | --- | --- |
-| D | [Persistent associative acquisition](STUDY_D_PERSISTENT_MEMORY.md) | Can new object-specific information survive recurrent-state reset without interference? | Preferred next bounded study (requires explicit routing) |
+| D | [Persistent associative acquisition](STUDY_D_PERSISTENT_MEMORY.md) | Can new object-specific information survive recurrent-state reset without interference? | D0–D2 complete; D3/D4 deferred |
+| D-R1 | [Recurrent associative retrieval](STUDY_D_R1_RECURRENT_RETRIEVAL.md) | Can connection-based associative memory retain new associations, and does nonlinear settling improve partial-cue recall? | Selected for SOAM-086 protocol design; execution and fresh numerical allocation pending |
 | E | [Object-centered sensorimotor navigation](STUDY_E_OBJECT_NAVIGATION.md) | Can a model reuse learned object-relative structure across viewpoints and actions, beyond sequence memorization? | Conditional independent capability study |
 | C2 optional | [Selective updating and modes](OPTIONAL_C2_SELECTIVE_PROCESSING.md) | Are primed/tracking/attended scheduling policies useful when two valid components coexist? | Deferred until a diagnosed compute/continuity bottleneck |
 | F planning | [Population topology search](STUDY_F_POPULATION_TOPOLOGY.md) | What favors monolithic, hierarchical, horizontal, or dynamically coupled organizations? | Planning only; no architecture sweep yet |

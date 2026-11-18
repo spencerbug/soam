@@ -1,6 +1,6 @@
 # Priority and milestone tracker
 
-Updated: 2026-11-17. The owner adopted the [v0.3 shared-population experiment
+Updated: 2026-11-18. The owner adopted the [v0.3 shared-population experiment
 platform scope](docs/RESEARCH_SPEC_V0_3.md). Overlapping neurons for features,
 relationships, and action relations are the preferred architecture hypothesis.
 Separated networks remain controls. The program also supports independent Hopfield
@@ -19,6 +19,8 @@ protocol design; the owner superseded that current selection with Study A. Study
 and the subsequent owner-selected Study B are complete. The owner-selected B2 is complete. The first bounded Study C experiment selected by the owner on November 14 is complete through SOAM-078–081.
 
 ## Current work and readiness
+
+**2026-11-18 prompt prepared:** [Study D-R1](docs/proposed-studies/STUDY_D_R1_RECURRENT_RETRIEVAL.md) names the selected recurrent-retrieval follow-up. SOAM-086 remains P0/ready, xhigh, for protocol design. The prompt proposes acquisition/retention tests and a causal settling comparison; no new numerical allocation or execution is recorded.
 
 **2026-11-17 owner routing update:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.
 

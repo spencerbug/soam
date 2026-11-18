@@ -28,6 +28,8 @@ Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](repor
 
 ## Current milestone
 
+**2026-11-18 handoff:** [Study D-R1: Recurrent associative retrieval](docs/proposed-studies/STUDY_D_R1_RECURRENT_RETRIEVAL.md) is the execution prompt for the selected follow-up under SOAM-086. It reuses D1/D2-style questions while testing actual nonlinear settling; protocol acceptance and a fresh numerical allocation remain pending.
+
 **2026-11-17 owner routing update:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) is P0/ready, xhigh, for a fresh recurrent associative retrieval protocol. The motivation is a common recurrent substrate that could later support learned specialization and adaptive organization; neither is demonstrated. D0–D2 remain complete, D3/D4 and E0/F remain deferred, and no new numerical study is running. This owner selection follows the completed D decision rather than revising it.
 
 **2026-11-17: Study D D0–D2 complete (SOAM-082–085).** Explicit key-value memory passes the post-reset acquisition and retention criteria. All writers learn isolated objects, but regression and the tested rank-one FAST memory exceed the sequential-interference guard; FAST has a precise negative practical-benefit result against both conventional controls. All 16 fits and 88 model evaluations complete, 64 repeat arrays match exactly, and 303 tests pass. The decision retains KV for this scaffolded task only. D3/D4 remain deferred; no next experiment or historical gate change is selected.

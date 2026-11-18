@@ -13,7 +13,7 @@ depends_on: ["SOAM-047", "SOAM-085"]
 labels: ["type:decision", "priority:P0", "milestone:M2"]
 assignees: []
 created: "2026-11-17"
-updated: "2026-11-17"
+updated: "2026-11-18"
 github_issue: null
 decision: null
 ---
@@ -39,6 +39,12 @@ functional specialization and adaptive interaction. This pilot can establish a
 component capability, not that future organizational hypothesis.
 
 ## Scope
+
+The November 18 [Study D-R1 handoff prompt](../docs/proposed-studies/STUDY_D_R1_RECURRENT_RETRIEVAL.md)
+names this first recurrent-retrieval follow-up and specifies the proposed execution
+assignment. Its candidate constraints, primary contrast, margins and budget are
+inputs to this protocol review, not frozen criteria or an allocation. The ticket
+remains ready; producing the prompt does not complete the protocol decision.
 
 - Design one bounded recurrent-retrieval comparison with a fixed action core.
 - Define the persistent write rule, transient settling law, cue treatment, stopping
