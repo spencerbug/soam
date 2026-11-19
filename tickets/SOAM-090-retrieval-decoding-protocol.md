@@ -54,7 +54,7 @@ The November 19 request selects only this diagnostic. SOAM-089 proceed accepts s
 
 ## Completion record
 
-Started November 19. Read current priorities, historical contracts, D-R1 report/decision and relevant source. Pre-change full suite: 318 passed (`uv run pytest`, 17.33 seconds); north-star documentation committed as `4d0d128`. Protocol review is in progress.
+Started November 19. Read current priorities, historical contracts, D-R1 report/decision and relevant source. Pre-change full suite: 318 passed (`uv run pytest`, 17.33 seconds); north-star documentation committed as `4d0d128`. Protocol review completed below.
 
 **Proceed:** primary review accepts the fixed protocol and conservative allocation under the November 19 instruction. Exact codes and true association identity are evaluator-only; all acquired snapshots are scored equally, and no oracle score selects a code or updates the model. This diagnoses the cue-to-output path without isolating basin geometry, clamps or aliasing. The two-quantity adjusted family, width rule, no-tuning schedule, independent roots and resource stop are frozen before fitting.
 

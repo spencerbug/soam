@@ -1,6 +1,6 @@
 # SOAM post-C research proposals (2026-11-16)
 
-**November 19 selected:** [D-R2](../../docs/STUDY_D_R2_PROTOCOL.md) is the owner-selected fixed retrieval-versus-decoding diagnostic, under [SOAM-090](../../tickets/SOAM-090-retrieval-decoding-protocol.md). The protocol and harness are complete; bounded execution is beginning under SOAM-092. Exact acquired codes are evaluator-only, and other branches remain deferred.
+**November 19 D-R2 numerical completion:** Exact acquired-code decoding scored 100% in the sample; ordinary PH768 recall scored 77.63%. The +22.37-point gap has adjusted interval [15.36,29.02], wider than the frozen ten-point precision cap: formal diagnosis **inconclusive**. All 12 fits and exact repeat complete. [Report](../../reports/STUDY_D_R2.md); [scoped decision](../../reports/STUDY_D_R2_DECISION.md). SOAM-093 is closing the review; no successor is selected.
 
 **November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](../../reports/STUDY_D_R1.md) and [decision](../../reports/STUDY_D_R1_DECISION.md).
 
@@ -33,6 +33,7 @@ Original result publications and frozen evidence:
 | --- | --- | --- | --- |
 | D | [Persistent associative acquisition](STUDY_D_PERSISTENT_MEMORY.md) | Can new object-specific information survive recurrent-state reset without interference? | D0–D2 complete; D3/D4 deferred |
 | D-R1 | [Recurrent associative retrieval](STUDY_D_R1_RECURRENT_RETRIEVAL.md) | Can connection-based associative memory retain new associations, and does nonlinear settling improve partial-cue recall? | SOAM-086–089 complete; small settling effect below practical margin, reliability guards failed; no successor selected |
+| D-R2 | [Retrieval versus decoding](../STUDY_D_R2_PROTOCOL.md) | Can the fixed decoder use preserved acquired codes when cue completion is removed? | Numerical study complete; precision-qualified inconclusive; no successor selected |
 | E | [Object-centered sensorimotor navigation](STUDY_E_OBJECT_NAVIGATION.md) | Can a model reuse learned object-relative structure across viewpoints and actions, beyond sequence memorization? | Conditional independent capability study |
 | C2 optional | [Selective updating and modes](OPTIONAL_C2_SELECTIVE_PROCESSING.md) | Are primed/tracking/attended scheduling policies useful when two valid components coexist? | Deferred until a diagnosed compute/continuity bottleneck |
 | F planning | [Population topology search](STUDY_F_POPULATION_TOPOLOGY.md) | What favors monolithic, hierarchical, horizontal, or dynamically coupled organizations? | Planning only; no architecture sweep yet |

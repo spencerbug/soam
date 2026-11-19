@@ -1,0 +1,1362 @@
+[
+  {
+    "core_free8_nmse": 2.822247124051409e-16,
+    "core_hash": "ea87321ed079917cba7cf5fab02e15d1f314cd605d0aa2e7af2c9a2b7b8d8c49",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.07597699999999996,
+    "grounded_one_step_nmse": 1.1067678326621405e-17,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.00015870144391988528,
+      "KV_free1_nmse": 0.00015870143366590925,
+      "KV_free8_nmse": 0.00015870139789254947,
+      "PH-FULL_accuracy": 0.7767857142857143,
+      "PH-FULL_canonical_nmse": 0.0790385955540234,
+      "PH-FULL_free1_nmse": 0.051582565331735365,
+      "PH-FULL_free8_nmse": 0.051582568318102054,
+      "REG-LIFT_accuracy": 0.9776785714285714,
+      "REG-LIFT_canonical_nmse": 0.014646085619727106,
+      "REG-LIFT_free1_nmse": 0.014646085723555658,
+      "REG-LIFT_free8_nmse": 0.014646086083766982,
+      "cycles": 2.294642857142857,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.010429635192764547,
+      "gap": 0.2232142857142857,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.05736432756696429,
+      "same_code_discrepancy": 0.009233747209821428,
+      "wrong_object_closer": 0.0
+    },
+    "normalization": 0.08229168732047773,
+    "projector_audits": [
+      {
+        "idempotence": 1.887379141862766e-15,
+        "preservation": 2.9531932455029164e-14,
+        "rank": 22,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.5543122344752192e-15,
+        "preservation": 2.6201263381153694e-14,
+        "rank": 24,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 2.4147350785597155e-15,
+        "preservation": 2.8310687127941492e-14,
+        "rank": 28,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.887379141862766e-15,
+        "preservation": 3.1530333899354446e-14,
+        "rank": 24,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53003,
+    "stream_root": "soam-study-d-r2-v1:53003",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.0025801665615290403,
+        "write_seconds": 0.012159996666014194
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.3669868307188153,
+        "write_seconds": 0.15228170389309525
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.12125408346764743,
+        "write_seconds": 0.029173212125897408
+      }
+    }
+  },
+  {
+    "core_free8_nmse": 2.1530434651022303e-16,
+    "core_hash": "89391014d841f808a711bc137aa16928aef18cb21bf3aacb01764e658d694b5b",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.07434099999999999,
+    "grounded_one_step_nmse": 8.451580431663802e-18,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.0001621072400609616,
+      "KV_free1_nmse": 0.00016210724642591213,
+      "KV_free8_nmse": 0.00016210726883538173,
+      "PH-FULL_accuracy": 0.7098214285714286,
+      "PH-FULL_canonical_nmse": 0.0876768006124781,
+      "PH-FULL_free1_nmse": 0.06336061835211589,
+      "PH-FULL_free8_nmse": 0.06336062168162311,
+      "REG-LIFT_accuracy": 0.9642857142857143,
+      "REG-LIFT_canonical_nmse": 0.0202855767426679,
+      "REG-LIFT_free1_nmse": 0.020285576914306873,
+      "REG-LIFT_free8_nmse": 0.0202855775227685,
+      "cycles": 2.263392857142857,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.010153876304543572,
+      "gap": 0.2901785714285714,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.05535016741071429,
+      "same_code_discrepancy": 0.00921630859375,
+      "wrong_object_closer": 0.0
+    },
+    "normalization": 0.08339175922100162,
+    "projector_audits": [
+      {
+        "idempotence": 2.1094237467877974e-15,
+        "preservation": 2.1094237467877974e-14,
+        "rank": 25,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.9845236565174673e-15,
+        "preservation": 3.1530333899354446e-14,
+        "rank": 28,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.6653345369377348e-15,
+        "preservation": 2.2426505097428162e-14,
+        "rank": 23,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.8041124150158794e-15,
+        "preservation": 3.674838211509268e-14,
+        "rank": 22,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53009,
+    "stream_root": "soam-study-d-r2-v1:53009",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.0024505029432475567,
+        "write_seconds": 0.012099750572815537
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.2693290829192847,
+        "write_seconds": 0.14968358376063406
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.12121516652405262,
+        "write_seconds": 0.02897966466844082
+      }
+    }
+  },
+  {
+    "core_free8_nmse": 1.651426843312472e-16,
+    "core_hash": "2c1d5f777642a9765461051d6670d017b879979cf15c9341b5fb502c2978dbc1",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.07339099999999998,
+    "grounded_one_step_nmse": 6.4820852395549e-18,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.00012126115257456089,
+      "KV_free1_nmse": 0.00012126114936788905,
+      "KV_free8_nmse": 0.00012126113862507004,
+      "PH-FULL_accuracy": 0.7321428571428571,
+      "PH-FULL_canonical_nmse": 0.0865380075317078,
+      "PH-FULL_free1_nmse": 0.06276437021999624,
+      "PH-FULL_free8_nmse": 0.06276437244269142,
+      "REG-LIFT_accuracy": 0.9910714285714286,
+      "REG-LIFT_canonical_nmse": 0.007868948602904467,
+      "REG-LIFT_free1_nmse": 0.007868948679143586,
+      "REG-LIFT_free8_nmse": 0.00786894894935285,
+      "cycles": 2.2767857142857144,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.010447756955644694,
+      "gap": 0.2678571428571429,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.05878557477678571,
+      "same_code_discrepancy": 0.010698590959821428,
+      "wrong_object_closer": 0.004464285714285714
+    },
+    "normalization": 0.08732240177158168,
+    "projector_audits": [
+      {
+        "idempotence": 1.304512053934559e-15,
+        "preservation": 2.708944180085382e-14,
+        "rank": 26,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.2628786905111156e-15,
+        "preservation": 2.531308496145357e-14,
+        "rank": 25,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 2.220446049250313e-15,
+        "preservation": 3.397282455352979e-14,
+        "rank": 28,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 2.0539125955565396e-15,
+        "preservation": 3.008704396734174e-14,
+        "rank": 25,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53027,
+    "stream_root": "soam-study-d-r2-v1:53027",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.002592500764876604,
+        "write_seconds": 0.012094703735783696
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.3338856680784374,
+        "write_seconds": 0.15928237489424646
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.12151716975495219,
+        "write_seconds": 0.029110000235959888
+      }
+    }
+  },
+  {
+    "core_free8_nmse": 3.703551577309338e-16,
+    "core_hash": "4ca57b9fa82266afb877d11cea015ff92a525a9d0ee1918cd8e733f48bba0bdb",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.07644200000000012,
+    "grounded_one_step_nmse": 1.45155300527347e-17,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.0002198644733188842,
+      "KV_free1_nmse": 0.00021986446427057954,
+      "KV_free8_nmse": 0.00021986443209766487,
+      "PH-FULL_accuracy": 0.7410714285714286,
+      "PH-FULL_canonical_nmse": 0.11482161279288124,
+      "PH-FULL_free1_nmse": 0.08909042696116555,
+      "PH-FULL_free8_nmse": 0.08909042997889209,
+      "REG-LIFT_accuracy": 0.9642857142857143,
+      "REG-LIFT_canonical_nmse": 0.013680492351599493,
+      "REG-LIFT_free1_nmse": 0.013680492497825273,
+      "REG-LIFT_free8_nmse": 0.013680493009487966,
+      "cycles": 2.2723214285714284,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.012644383295571977,
+      "gap": 0.2589285714285714,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.056553431919642856,
+      "same_code_discrepancy": 0.010027204241071428,
+      "wrong_object_closer": 0.004464285714285714
+    },
+    "normalization": 0.07093769893080987,
+    "projector_audits": [
+      {
+        "idempotence": 1.7486012637846216e-15,
+        "preservation": 2.8754776337791554e-14,
+        "rank": 27,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 2.8171909249863347e-15,
+        "preservation": 2.7755575615628914e-14,
+        "rank": 25,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.3183898417423734e-15,
+        "preservation": 2.5979218776228663e-14,
+        "rank": 25,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.9290125052862095e-15,
+        "preservation": 3.297362383136715e-14,
+        "rank": 20,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53029,
+    "stream_root": "soam-study-d-r2-v1:53029",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.002500624395906925,
+        "write_seconds": 0.012442671461030841
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.2802347936667502,
+        "write_seconds": 0.15234641544520855
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.12232541828416288,
+        "write_seconds": 0.02946620830334723
+      }
+    }
+  },
+  {
+    "core_free8_nmse": 3.051235353142333e-16,
+    "core_hash": "d0d09f3e9e103c7c95014174e30363b9fe0562eba786223ab1fa16eb16bcfc34",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.07373300000000071,
+    "grounded_one_step_nmse": 1.197653805447916e-17,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.00015232063152336274,
+      "KV_free1_nmse": 0.0001523206299121296,
+      "KV_free8_nmse": 0.0001523206244218652,
+      "PH-FULL_accuracy": 0.6741071428571429,
+      "PH-FULL_canonical_nmse": 0.08803633189197149,
+      "PH-FULL_free1_nmse": 0.05565184763258019,
+      "PH-FULL_free8_nmse": 0.05565185061929191,
+      "REG-LIFT_accuracy": 0.9508928571428571,
+      "REG-LIFT_canonical_nmse": 0.021960137482169656,
+      "REG-LIFT_free1_nmse": 0.021960137628970842,
+      "REG-LIFT_free8_nmse": 0.02196013813994877,
+      "cycles": 2.263392857142857,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.012159189542737108,
+      "gap": 0.3258928571428571,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.051722935267857144,
+      "same_code_discrepancy": 0.008562360491071428,
+      "wrong_object_closer": 0.0
+    },
+    "normalization": 0.07672411793709669,
+    "projector_audits": [
+      {
+        "idempotence": 2.4841240175987878e-15,
+        "preservation": 2.4424906541753444e-14,
+        "rank": 27,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.609823385706477e-15,
+        "preservation": 2.6867397195928788e-14,
+        "rank": 25,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.582067810090848e-15,
+        "preservation": 2.653433028854124e-14,
+        "rank": 24,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.6237011735142914e-15,
+        "preservation": 2.453592884421596e-14,
+        "rank": 27,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53051,
+    "stream_root": "soam-study-d-r2-v1:53051",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.0024035819806158543,
+        "write_seconds": 0.011969294399023056
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.2206149615813047,
+        "write_seconds": 0.15608820971101522
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.1229380036238581,
+        "write_seconds": 0.028927832143381238
+      }
+    }
+  },
+  {
+    "core_free8_nmse": 2.6331516702203967e-16,
+    "core_hash": "ce2e25a1af73b27c913548f8c6569cc724eb756a9549ce33510ce10ddbe1b51f",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.07305899999999887,
+    "grounded_one_step_nmse": 1.0318453157743624e-17,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.00012769014206516401,
+      "KV_free1_nmse": 0.00012769014905226905,
+      "KV_free8_nmse": 0.00012769017358680917,
+      "PH-FULL_accuracy": 0.9196428571428571,
+      "PH-FULL_canonical_nmse": 0.0637352434402283,
+      "PH-FULL_free1_nmse": 0.04136540192046093,
+      "PH-FULL_free8_nmse": 0.04136540475666774,
+      "REG-LIFT_accuracy": 0.9732142857142857,
+      "REG-LIFT_canonical_nmse": 0.013369261372435251,
+      "REG-LIFT_free1_nmse": 0.013369261489326002,
+      "REG-LIFT_free8_nmse": 0.013369261901786571,
+      "cycles": 2.232142857142857,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.009762523766955782,
+      "gap": 0.0803571428571429,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.0601806640625,
+      "same_code_discrepancy": 0.007455008370535714,
+      "wrong_object_closer": 0.0
+    },
+    "normalization": 0.08223358230979584,
+    "projector_audits": [
+      {
+        "idempotence": 1.6514567491299204e-15,
+        "preservation": 2.5091040356528538e-14,
+        "rank": 20,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.9984014443252818e-15,
+        "preservation": 2.7422508708241367e-14,
+        "rank": 21,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.8735013540549517e-15,
+        "preservation": 3.1530333899354446e-14,
+        "rank": 19,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.4432899320127035e-15,
+        "preservation": 2.398081733190338e-14,
+        "rank": 26,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53057,
+    "stream_root": "soam-study-d-r2-v1:53057",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.002557497238740325,
+        "write_seconds": 0.012210001237690449
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.2954302919097245,
+        "write_seconds": 0.13506066519767046
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.12257133121602237,
+        "write_seconds": 0.029191663954406977
+      }
+    }
+  },
+  {
+    "core_free8_nmse": 2.296344448787583e-16,
+    "core_hash": "6bac1cd2d79581fdc8b82c37bfaf8dc213be5244ba48fe7bf74ab296c7cbc951",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.073067,
+    "grounded_one_step_nmse": 8.99791610945151e-18,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.0001451888645711435,
+      "KV_free1_nmse": 0.0001451888483610854,
+      "KV_free8_nmse": 0.0001451887934579681,
+      "PH-FULL_accuracy": 0.8839285714285714,
+      "PH-FULL_canonical_nmse": 0.0759896570058229,
+      "PH-FULL_free1_nmse": 0.05309644243111944,
+      "PH-FULL_free8_nmse": 0.053096444640420556,
+      "REG-LIFT_accuracy": 0.9107142857142857,
+      "REG-LIFT_canonical_nmse": 0.03236906831421789,
+      "REG-LIFT_free1_nmse": 0.03236906851005319,
+      "REG-LIFT_free8_nmse": 0.032369069194773746,
+      "cycles": 2.392857142857143,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.009999122428820657,
+      "gap": 0.1160714285714286,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.05284772600446429,
+      "same_code_discrepancy": 0.009233747209821428,
+      "wrong_object_closer": 0.008928571428571428
+    },
+    "normalization": 0.08561481845369093,
+    "projector_audits": [
+      {
+        "idempotence": 5.662137425588298e-15,
+        "preservation": 3.397282455352979e-14,
+        "rank": 21,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 2.5396351688300456e-15,
+        "preservation": 3.3084646133829665e-14,
+        "rank": 23,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.762479051592436e-15,
+        "preservation": 3.108624468950438e-14,
+        "rank": 28,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.0547118733938987e-15,
+        "preservation": 2.4868995751603507e-14,
+        "rank": 25,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53059,
+    "stream_root": "soam-study-d-r2-v1:53059",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.0026163782458752394,
+        "write_seconds": 0.012213456677272916
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.3975785858929157,
+        "write_seconds": 0.1493063315283507
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.12301654415205121,
+        "write_seconds": 0.029041665140539408
+      }
+    }
+  },
+  {
+    "core_free8_nmse": 1.3285820859838668e-16,
+    "core_hash": "e3fa000189d1b438017f0fe240808479a1cb690f3151321375455b3caea26b1b",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.07324799999999954,
+    "grounded_one_step_nmse": 5.213343624636733e-18,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.00013157053670802545,
+      "KV_free1_nmse": 0.00013157054338247233,
+      "KV_free8_nmse": 0.00013157056669921177,
+      "PH-FULL_accuracy": 0.7857142857142857,
+      "PH-FULL_canonical_nmse": 0.08582881527709488,
+      "PH-FULL_free1_nmse": 0.058875644641378254,
+      "PH-FULL_free8_nmse": 0.05887564630634595,
+      "REG-LIFT_accuracy": 0.9508928571428571,
+      "REG-LIFT_canonical_nmse": 0.025954685545896687,
+      "REG-LIFT_free1_nmse": 0.025954685592429246,
+      "REG-LIFT_free8_nmse": 0.02595468575723977,
+      "cycles": 2.392857142857143,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.008384856686145569,
+      "gap": 0.2142857142857143,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.05292619977678571,
+      "same_code_discrepancy": 0.0096435546875,
+      "wrong_object_closer": 0.017857142857142856
+    },
+    "normalization": 0.09506945653178718,
+    "projector_audits": [
+      {
+        "idempotence": 2.1788126858268697e-15,
+        "preservation": 2.6423307986078726e-14,
+        "rank": 18,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.8596235662471372e-15,
+        "preservation": 3.26405569239796e-14,
+        "rank": 20,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.304512053934559e-15,
+        "preservation": 2.708944180085382e-14,
+        "rank": 25,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 3.4416913763379853e-15,
+        "preservation": 2.853273173286652e-14,
+        "rank": 26,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53063,
+    "stream_root": "soam-study-d-r2-v1:53063",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.0024402944836765528,
+        "write_seconds": 0.012146168854087591
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.3497732058167458,
+        "write_seconds": 0.1388622489757836
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.12175474921241403,
+        "write_seconds": 0.028971623862162232
+      }
+    }
+  },
+  {
+    "core_free8_nmse": 1.3419651249918415e-16,
+    "core_hash": "2f09821e469748f50603395eb28e687a3fbbd71f4449ba6bb1313ad5656e82d1",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.07264299999999935,
+    "grounded_one_step_nmse": 5.268322347991603e-18,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.00013445402106118082,
+      "KV_free1_nmse": 0.00013445401890877534,
+      "KV_free8_nmse": 0.0001344540117482433,
+      "PH-FULL_accuracy": 0.9196428571428571,
+      "PH-FULL_canonical_nmse": 0.06289889230313284,
+      "PH-FULL_free1_nmse": 0.04121213113055692,
+      "PH-FULL_free8_nmse": 0.04121213308099208,
+      "REG-LIFT_accuracy": 0.9598214285714286,
+      "REG-LIFT_canonical_nmse": 0.014771645103777029,
+      "REG-LIFT_free1_nmse": 0.014771645158946039,
+      "REG-LIFT_free8_nmse": 0.014771645346998085,
+      "cycles": 2.330357142857143,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.008080208202783021,
+      "gap": 0.0803571428571429,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.05487060546875,
+      "same_code_discrepancy": 0.007123674665178571,
+      "wrong_object_closer": 0.004464285714285714
+    },
+    "normalization": 0.09452391385924808,
+    "projector_audits": [
+      {
+        "idempotence": 2.192690473634684e-15,
+        "preservation": 2.886579864025407e-14,
+        "rank": 19,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.790234627208065e-15,
+        "preservation": 3.941291737419306e-14,
+        "rank": 22,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.4155343563970746e-15,
+        "preservation": 2.731148640577885e-14,
+        "rank": 24,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 2.55351295663786e-15,
+        "preservation": 2.3092638912203256e-14,
+        "rank": 19,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53069,
+    "stream_root": "soam-study-d-r2-v1:53069",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.0024440037086606026,
+        "write_seconds": 0.012112207943573594
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.2901602901984006,
+        "write_seconds": 0.13153558131307364
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.12161191483028233,
+        "write_seconds": 0.028934458270668983
+      }
+    }
+  },
+  {
+    "core_free8_nmse": 1.3217138479927137e-16,
+    "core_hash": "c778df247c9ef5d74f1ccc07b054a22eb947b6786b4a20ff15de7a8f7c9985ce",
+    "evaluator_array_bytes": 2226624,
+    "exposure": {
+      "acquisition_snapshots": 256,
+      "earlier_object_query_cues": 224,
+      "independent_unit": "root",
+      "replay": 0,
+      "training_transitions": 2048,
+      "writes_per_arm": 256
+    },
+    "fit_cpu_seconds": 0.07313500000000062,
+    "grounded_one_step_nmse": 5.193737823712595e-18,
+    "metrics": {
+      "KV_accuracy": 1.0,
+      "KV_canonical_nmse": 0.00012286809097393272,
+      "KV_free1_nmse": 0.00012286809957229165,
+      "KV_free8_nmse": 0.00012286812958797302,
+      "PH-FULL_accuracy": 0.6205357142857143,
+      "PH-FULL_canonical_nmse": 0.0893061655289212,
+      "PH-FULL_free1_nmse": 0.06430544685998989,
+      "PH-FULL_free8_nmse": 0.06430544893399977,
+      "REG-LIFT_accuracy": 0.9642857142857143,
+      "REG-LIFT_canonical_nmse": 0.011826874268911217,
+      "REG-LIFT_free1_nmse": 0.011826874336714002,
+      "REG-LIFT_free8_nmse": 0.01182687457228876,
+      "cycles": 2.2857142857142856,
+      "exact_accuracy": 1.0,
+      "exact_nmse": 0.009122219794176187,
+      "gap": 0.3794642857142857,
+      "nonconvergence": 0.0,
+      "nonmonotone": 1.0,
+      "other_code_discrepancy": 0.053187779017857144,
+      "same_code_discrepancy": 0.00994873046875,
+      "wrong_object_closer": 0.004464285714285714
+    },
+    "normalization": 0.09542438329668311,
+    "projector_audits": [
+      {
+        "idempotence": 2.4980018054066022e-15,
+        "preservation": 2.6423307986078726e-14,
+        "rank": 27,
+        "sequence": 0,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 1.7069679003611782e-15,
+        "preservation": 3.2862601528904634e-14,
+        "rank": 23,
+        "sequence": 1,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 2.220446049250313e-15,
+        "preservation": 3.574918139293004e-14,
+        "rank": 22,
+        "sequence": 2,
+        "symmetry": 0.0
+      },
+      {
+        "idempotence": 2.886579864025407e-15,
+        "preservation": 2.5979218776228663e-14,
+        "rank": 27,
+        "sequence": 3,
+        "symmetry": 0.0
+      }
+    ],
+    "resident_models": [
+      "PH-FULL",
+      "KV",
+      "REG-LIFT"
+    ],
+    "resource_note": "All three arms coexist during evaluation; core tensors are shared. RSS includes evaluator arrays and dense workspaces.",
+    "resources": {
+      "KV": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 7448,
+        "settings_bytes": 16,
+        "snapshot_bytes": 6408,
+        "writable_bytes": 6408
+      },
+      "PH-FULL": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 49152,
+        "active_state_bytes_per_query": 6144,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 6144,
+        "materialized_weight_bytes": 4718592,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 4720160,
+        "settings_bytes": 16,
+        "snapshot_bytes": 4718608,
+        "supplied_units": 768,
+        "writable_bytes": 4718608,
+        "write_workspace_bytes_upper": 18874432
+      },
+      "REG-LIFT": {
+        "action_state_bytes_per_query": 64,
+        "active_state_batch_bytes": 1536,
+        "active_state_bytes_per_query": 192,
+        "encoding_bytes": 512,
+        "field_bytes_per_query": 0,
+        "materialized_weight_bytes": 0,
+        "offline_coefficients": 128,
+        "offline_core_bytes": 1024,
+        "persistent_bytes": 2131480,
+        "settings_bytes": 16,
+        "snapshot_bytes": 2129928,
+        "supplied_units": 512,
+        "writable_bytes": 2129928,
+        "write_workspace_bytes_upper": 8519712
+      }
+    },
+    "root": 53077,
+    "stream_root": "soam-study-d-r2-v1:53077",
+    "timing": {
+      "KV": {
+        "recall_seconds": 0.0025846653152257204,
+        "write_seconds": 0.012170370202511549
+      },
+      "PH-FULL": {
+        "recall_seconds": 1.304250210756436,
+        "write_seconds": 0.1517248349264264
+      },
+      "REG-LIFT": {
+        "recall_seconds": 0.12215708242729306,
+        "write_seconds": 0.028966997051611543
+      }
+    }
+  }
+]

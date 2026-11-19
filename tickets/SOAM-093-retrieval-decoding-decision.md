@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-093"
 title: "Review the retrieval-versus-decoding diagnosis"
 type: "decision"
-status: "backlog"
+status: "in_progress"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M2"
@@ -54,4 +54,4 @@ The November 19 request selects only this diagnostic. SOAM-089 proceed accepts s
 
 ## Completion record
 
-Not started. Record actual validation, artifacts, source/configuration/seeds and result limitations before completion.
+Started after SOAM-092 completed. Reviewing the frozen gap/adequacy rules, independent audit, complete raw archive and scoped interpretation in reports/STUDY_D_R2_DECISION.md.

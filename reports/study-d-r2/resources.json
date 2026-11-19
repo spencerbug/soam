@@ -1,0 +1,724 @@
+{
+  "roots": [
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.07597699999999996,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53003,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.0025801665615290403,
+          "write_seconds": 0.012159996666014194
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.3669868307188153,
+          "write_seconds": 0.15228170389309525
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.12125408346764743,
+          "write_seconds": 0.029173212125897408
+        }
+      }
+    },
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.07434099999999999,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53009,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.0024505029432475567,
+          "write_seconds": 0.012099750572815537
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.2693290829192847,
+          "write_seconds": 0.14968358376063406
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.12121516652405262,
+          "write_seconds": 0.02897966466844082
+        }
+      }
+    },
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.07339099999999998,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53027,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.002592500764876604,
+          "write_seconds": 0.012094703735783696
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.3338856680784374,
+          "write_seconds": 0.15928237489424646
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.12151716975495219,
+          "write_seconds": 0.029110000235959888
+        }
+      }
+    },
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.07644200000000012,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53029,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.002500624395906925,
+          "write_seconds": 0.012442671461030841
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.2802347936667502,
+          "write_seconds": 0.15234641544520855
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.12232541828416288,
+          "write_seconds": 0.02946620830334723
+        }
+      }
+    },
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.07373300000000071,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53051,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.0024035819806158543,
+          "write_seconds": 0.011969294399023056
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.2206149615813047,
+          "write_seconds": 0.15608820971101522
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.1229380036238581,
+          "write_seconds": 0.028927832143381238
+        }
+      }
+    },
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.07305899999999887,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53057,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.002557497238740325,
+          "write_seconds": 0.012210001237690449
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.2954302919097245,
+          "write_seconds": 0.13506066519767046
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.12257133121602237,
+          "write_seconds": 0.029191663954406977
+        }
+      }
+    },
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.073067,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53059,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.0026163782458752394,
+          "write_seconds": 0.012213456677272916
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.3975785858929157,
+          "write_seconds": 0.1493063315283507
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.12301654415205121,
+          "write_seconds": 0.029041665140539408
+        }
+      }
+    },
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.07324799999999954,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53063,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.0024402944836765528,
+          "write_seconds": 0.012146168854087591
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.3497732058167458,
+          "write_seconds": 0.1388622489757836
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.12175474921241403,
+          "write_seconds": 0.028971623862162232
+        }
+      }
+    },
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.07264299999999935,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53069,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.0024440037086606026,
+          "write_seconds": 0.012112207943573594
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.2901602901984006,
+          "write_seconds": 0.13153558131307364
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.12161191483028233,
+          "write_seconds": 0.028934458270668983
+        }
+      }
+    },
+    {
+      "evaluator_array_bytes": 2226624,
+      "exposure": {
+        "acquisition_snapshots": 256,
+        "earlier_object_query_cues": 224,
+        "independent_unit": "root",
+        "replay": 0,
+        "training_transitions": 2048,
+        "writes_per_arm": 256
+      },
+      "fit_cpu_seconds": 0.07313500000000062,
+      "resources": {
+        "KV": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 7448,
+          "settings_bytes": 16,
+          "snapshot_bytes": 6408,
+          "writable_bytes": 6408
+        },
+        "PH-FULL": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 49152,
+          "active_state_bytes_per_query": 6144,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 6144,
+          "materialized_weight_bytes": 4718592,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 4720160,
+          "settings_bytes": 16,
+          "snapshot_bytes": 4718608,
+          "supplied_units": 768,
+          "writable_bytes": 4718608,
+          "write_workspace_bytes_upper": 18874432
+        },
+        "REG-LIFT": {
+          "action_state_bytes_per_query": 64,
+          "active_state_batch_bytes": 1536,
+          "active_state_bytes_per_query": 192,
+          "encoding_bytes": 512,
+          "field_bytes_per_query": 0,
+          "materialized_weight_bytes": 0,
+          "offline_coefficients": 128,
+          "offline_core_bytes": 1024,
+          "persistent_bytes": 2131480,
+          "settings_bytes": 16,
+          "snapshot_bytes": 2129928,
+          "supplied_units": 512,
+          "writable_bytes": 2129928,
+          "write_workspace_bytes_upper": 8519712
+        }
+      },
+      "root": 53077,
+      "timing": {
+        "KV": {
+          "recall_seconds": 0.0025846653152257204,
+          "write_seconds": 0.012170370202511549
+        },
+        "PH-FULL": {
+          "recall_seconds": 1.304250210756436,
+          "write_seconds": 0.1517248349264264
+        },
+        "REG-LIFT": {
+          "recall_seconds": 0.12215708242729306,
+          "write_seconds": 0.028966997051611543
+        }
+      }
+    }
+  ]
+}

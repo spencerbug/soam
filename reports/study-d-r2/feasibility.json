@@ -1,0 +1,21 @@
+{
+  "limits": {
+    "artifact_bytes": 1073741824,
+    "cpu_seconds": 900,
+    "max_fit_attempts": 12,
+    "persistent_bytes_per_arm": 8388608,
+    "projection_multiplier": 2.0,
+    "report_bytes_reserve": 16777216,
+    "report_seconds_reserve": 60,
+    "rss_bytes": 2147483648,
+    "stop_new_trials_fraction": 0.9,
+    "wall_seconds": 1800
+  },
+  "pass": true,
+  "projected": {
+    "artifact_bytes": 712292873,
+    "cpu_seconds": 112.40030399999999,
+    "rss_bytes": 669220864,
+    "wall_seconds": 112.47698699869215
+  }
+}
