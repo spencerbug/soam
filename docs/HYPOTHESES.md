@@ -201,6 +201,10 @@ action basis remain scaffolding. Stored-pattern algebra, convergence or low ener
 alone cannot establish useful recovery, learned organization, shared-neuron benefits,
 scaling or biological validity. Historical D's direct-map negative result is preserved.
 
+## Study D-R2 retrieval versus decoding — 2026-11-19
+
+The owner selected the diagnostic recommended by SOAM-089. [SOAM-090 / D-R2 v1](STUDY_D_R2_PROTOCOL.md) freezes a fixed-load comparison of unchanged PH768 cue-only output with evaluator-only decoding of every exact acquired code of the correct object. The primary is the accuracy gap, with an exact-code adequacy guard; KV and REG-LIFT remain descriptive references. This asks whether acquired-code/readout fidelity is sufficient while the cue-to-output path fails. It does not isolate basin geometry from clamping, ambiguity or encoding interactions. SOAM-091 verified the harness; SOAM-092 is beginning fresh bounded execution. No measured outcome yet, no broader H2/H3 pass, and no historical gate changes.
+
 ## Population cooperation and retrieval scaling
 
 Owner hypothesis recorded 2026-11-17: specialized recurrent populations may improve

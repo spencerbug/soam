@@ -1,5 +1,7 @@
 # Work packages and completion criteria
 
+**November 19 selected:** [D-R2](../docs/STUDY_D_R2_PROTOCOL.md) is the owner-selected fixed retrieval-versus-decoding diagnostic, under [SOAM-090](../tickets/SOAM-090-retrieval-decoding-protocol.md). The protocol and harness are complete; bounded execution is beginning under SOAM-092. Exact acquired codes are evaluator-only, and other branches remain deferred.
+
 **November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](../reports/STUDY_D_R1.md) and [decision](../reports/STUDY_D_R1_DECISION.md).
 
 The [v0.3 shared-population experiment scope](RESEARCH_SPEC_V0_3.md) was adopted

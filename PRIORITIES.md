@@ -1,6 +1,6 @@
 # Priority and milestone tracker
 
-Updated: 2026-11-18. The owner adopted the [v0.3 shared-population experiment
+Updated: 2026-11-19. The owner adopted the [v0.3 shared-population experiment
 platform scope](docs/RESEARCH_SPEC_V0_3.md). Overlapping neurons for features,
 relationships, and action relations are the preferred architecture hypothesis.
 Separated networks remain controls. The program also supports independent Hopfield
@@ -19,6 +19,8 @@ protocol design; the owner superseded that current selection with Study A. Study
 and the subsequent owner-selected Study B are complete. The owner-selected B2 is complete. The first bounded Study C experiment selected by the owner on November 14 is complete through SOAM-078–081.
 
 ## Current work and readiness
+
+**2026-11-19 selected: D-R2 retrieval-versus-decoding diagnostic.** [SOAM-090](tickets/SOAM-090-retrieval-decoding-protocol.md) is done/proceed (P0, xhigh) for the [fresh protocol](docs/STUDY_D_R2_PROTOCOL.md); SOAM-091 is done; SOAM-092 is in_progress (P0, high) for the bounded fixture/confirmation; SOAM-093 remains backlog. Fixed PH768, KV and REG-LIFT; exact codes are evaluator-only. The [owner selection](docs/requests/retrieval_diagnostic_2026_11_19.md) records a fresh bounded allocation. Earlier gates and all other branches remain unchanged.
 
 **2026-11-18 D-R1 complete:** SOAM-086/089 are done/proceed for the frozen protocol and scoped evidence/reference decision; SOAM-087/088 are done. D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. [SOAM-089](tickets/SOAM-089-recurrent-retrieval-decision.md) recommends only a fresh retrieval/decoding diagnostic, without activating it. See the [report](reports/STUDY_D_R1.md) and [decision](reports/STUDY_D_R1_DECISION.md).
 
@@ -100,7 +102,7 @@ IDs are thematic provenance groups, not sequential dates or compulsory stages fo
 | --- | --- | --- | --- |
 | M0 | Reusable recurrent experiment infrastructure | Historical harnesses plus the minimal SOAM-047 contract and SOAM-048 runner/invariant fixtures | Minimal runner delivered; exact fixture repeat and 110 passing tests; no scientific gate |
 | M1 | Shared populations and recurrent dynamics | SOAM-049–052 test one sharing benefit with interference guardrails and explicit T32 claim limits; SOAM-059 selects the next fork | E1 harness delivered; v1 storage failure preserved; SOAM-061 A1 proceed; 119 fits/27,820 cells complete; absolute recall failure, exact repeat; SOAM-052 done/stop for tested useful sharing; dependent integration unready; Study A complete/inconclusive practical update benefit; SOAM-065 proceeds with R32 reference recommendation only; Study B complete: v1 tradeoff, magnitude negative practical advantage; SOAM-073 accepts separate-correction interface only; B2 complete with bounded robust-correction benefit and coherent/runtime limits; SOAM-077 recommends references only; Study C complete: supported neural factorization benefit, conventional practical multiplicity negative, unresolved coherent-cause overconfidence; SOAM-081 accepts scoped references only |
-| M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Study D SOAM-082–085 complete: KV passes bounded acquisition/retention; REG/FAST interference, FAST precise negative practical advantage; historical writer/E2 preserved; D3/D4 deferred; D-R1 SOAM-086–089 complete: PH768 precise negative practical-settling benefit and three established reliability failures; scoped KV reference retained; no successor selected |
+| M2 | Grounded acquisition | Early E2 through SOAM-039/044/040/041: few-observation learning with retained generalization; no skill/concurrency/replay-stack prerequisite | Study D SOAM-082–085 complete: KV passes bounded acquisition/retention; REG/FAST interference, FAST precise negative practical advantage; historical writer/E2 preserved; D3/D4 deferred; D-R1 SOAM-086–089 complete: PH768 precise negative practical-settling benefit and three established reliability failures; scoped KV reference retained; D-R2 protocol SOAM-090 selected November 19, no numerical run yet |
 | M3 | Conditional functional scopes | SOAM-007–010; limited interference with beneficial sharing | Deferred comparison branch |
 | M4 | Replay and overlapping organization | SOAM-011/012, SOAM-042/043 at fixed capacity; optional SOAM-013–015 | Planned; learned refinement conditional |
 | M5 | Compositional reuse | SOAM-031, SOAM-016–018; held-out feature/relation/action reuse and identity | Planned after shared-population evidence |
@@ -263,6 +265,11 @@ Order is a preference within the selected path. It never schedules all alternati
 | 88 | [SOAM-088: Execute the frozen D-R1 acquisition and settling study](tickets/SOAM-088-recurrent-retrieval-study.md) | P0 | done | M2 | high | [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md), [SOAM-087](tickets/SOAM-087-recurrent-retrieval-harness.md) |
 
 | 89 | [SOAM-089: Review recurrent retrieval reliability and added settling benefit](tickets/SOAM-089-recurrent-retrieval-decision.md) | P0 | done | M2 | xhigh | [SOAM-088](tickets/SOAM-088-recurrent-retrieval-study.md) |
+
+| 90 | [SOAM-090: Specify and select the fixed retrieval-versus-decoding diagnostic](tickets/SOAM-090-retrieval-decoding-protocol.md) | P0 | done | M2 | xhigh | [SOAM-089](tickets/SOAM-089-recurrent-retrieval-decision.md) |
+| 91 | [SOAM-091: Implement and verify the evaluator-only decoding diagnostic](tickets/SOAM-091-retrieval-decoding-harness.md) | P0 | done | M2 | high | [SOAM-090](tickets/SOAM-090-retrieval-decoding-protocol.md) |
+| 92 | [SOAM-092: Execute the fixed retrieval-versus-decoding diagnostic](tickets/SOAM-092-retrieval-decoding-study.md) | P0 | in_progress | M2 | high | [SOAM-090](tickets/SOAM-090-retrieval-decoding-protocol.md), [SOAM-091](tickets/SOAM-091-retrieval-decoding-harness.md) |
+| 93 | [SOAM-093: Review the retrieval-versus-decoding diagnosis](tickets/SOAM-093-retrieval-decoding-decision.md) | P0 | backlog | M2 | xhigh | [SOAM-092](tickets/SOAM-092-retrieval-decoding-study.md) |
 
 ## Housekeeping check
 

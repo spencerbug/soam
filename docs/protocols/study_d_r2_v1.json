@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "namespace": "soam-study-d-r2-v1",
+  "protocol": "docs/STUDY_D_R2_PROTOCOL.md",
+  "selection": "docs/requests/retrieval_diagnostic_2026_11_19.md",
+  "fixture_root": 50011,
+  "confirmation_roots": [
+    53003,
+    53009,
+    53027,
+    53029,
+    53051,
+    53057,
+    53059,
+    53063,
+    53069,
+    53077
+  ],
+  "repeat_root": 53003,
+  "arms": [
+    "PH-FULL",
+    "KV",
+    "REG-LIFT"
+  ],
+  "core_ridge": 1e-06,
+  "settings": {
+    "PH-FULL": 1.0,
+    "KV": 1.0,
+    "REG-LIFT": 0.01
+  },
+  "task": {
+    "sequences": 4,
+    "objects": 8,
+    "snapshots": 8,
+    "queries": 8,
+    "horizon": 8,
+    "accurate_nmse": 0.1,
+    "normalization_floor": 1e-08,
+    "train_families": 8,
+    "train_objects": 8,
+    "train_pairs": 32,
+    "primary_objects": 7,
+    "core_probes": 64
+  },
+  "inference": {
+    "primary": "exact_code_minus_cue_accuracy",
+    "practical_gap": 0.05,
+    "gap_width_max": 0.1,
+    "exact_code_accuracy_min": 0.95,
+    "bootstrap_draws": 200000,
+    "bootstrap_seed": 54013,
+    "family_size": 2,
+    "alpha": 0.05
+  },
+  "checks": {
+    "projector_atol": 1e-08,
+    "core_nmse_max": 0.02,
+    "repeat_atol": 0
+  },
+  "numerics": {
+    "device": "cpu",
+    "dtype": "float64",
+    "intraop_threads": 1,
+    "interop_threads": 1,
+    "deterministic": true
+  },
+  "limits": {
+    "cpu_seconds": 900,
+    "wall_seconds": 1800,
+    "rss_bytes": 2147483648,
+    "artifact_bytes": 1073741824,
+    "max_fit_attempts": 12,
+    "persistent_bytes_per_arm": 8388608,
+    "projection_multiplier": 2.0,
+    "stop_new_trials_fraction": 0.9,
+    "report_seconds_reserve": 60,
+    "report_bytes_reserve": 16777216
+  }
+}
