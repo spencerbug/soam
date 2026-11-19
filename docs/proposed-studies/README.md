@@ -1,6 +1,6 @@
 # SOAM post-C research proposals (2026-11-16)
 
-**November 19 D-R2 numerical completion:** Exact acquired-code decoding scored 100% in the sample; ordinary PH768 recall scored 77.63%. The +22.37-point gap has adjusted interval [15.36,29.02], wider than the frozen ten-point precision cap: formal diagnosis **inconclusive**. All 12 fits and exact repeat complete. [Report](../../reports/STUDY_D_R2.md); [scoped decision](../../reports/STUDY_D_R2_DECISION.md). SOAM-093 is closing the review; no successor is selected.
+**November 19 D-R2 complete:** Exact acquired-code decoding scored 100% in the sample; ordinary PH768 recall scored 77.63%. The +22.37-point gap has adjusted interval [15.36,29.02], wider than the frozen ten-point precision cap: formal diagnosis **inconclusive**. All 12 fits and exact repeat complete. [Report](../../reports/STUDY_D_R2.md); [scoped decision](../../reports/STUDY_D_R2_DECISION.md). SOAM-090–093 are complete; no successor is selected.
 
 **November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](../../reports/STUDY_D_R1.md) and [decision](../../reports/STUDY_D_R1_DECISION.md).
 

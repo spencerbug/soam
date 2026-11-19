@@ -1,0 +1,29 @@
+{
+  "archive_sha256": "6cbb59f7101be8f486a281ec08c150cbe502850297bccad0066d007f6f9c856e",
+  "archived_files": 397,
+  "closeout_commit": "23135dac71c43db237a711817e07d2e0e183887c",
+  "closeout_script_sha256": "79f2102a2e9d13cde0d6b4b60dd941b091800fc2e04e03c8214d11b558983e6a",
+  "cumulative_use_before_closeout_receipt": {
+    "artifact_bytes": 348556036,
+    "cpu_seconds": 26.880253,
+    "rss_bytes": 366903296,
+    "wall_seconds": 27.08941129082814
+  },
+  "frozen_files_verified": 116,
+  "limits": {
+    "artifact_bytes": 1073741824,
+    "cpu_seconds": 900,
+    "max_fit_attempts": 12,
+    "persistent_bytes_per_arm": 8388608,
+    "projection_multiplier": 2.0,
+    "report_bytes_reserve": 16777216,
+    "report_seconds_reserve": 60,
+    "rss_bytes": 2147483648,
+    "stop_new_trials_fraction": 0.9,
+    "wall_seconds": 1800
+  },
+  "new_fits_or_inference": 0,
+  "scientific_source": "0df3abe0ec7906dea1d1978280709f99f3111b2c06fff066d759559ad3fba577",
+  "source_commit": "924acd8c3f32af9abfbd77ff69f8bab3030b01cb",
+  "status": "complete"
+}
