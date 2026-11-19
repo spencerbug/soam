@@ -7,6 +7,11 @@ related recurrent dynamical systems. The preferred hypothesis uses overlapping
 neurons for features, relationships, and action relations, with separated networks
 as controls. Useful sharing, attraction, and learned organization remain unproven.
 
+The [north star](docs/NORTH_STAR.md), clarified on November 19, 2026, centers the
+long-term goal on self-developed sensorimotor world models, learning through play,
+and continually learned memory organization. Language may follow grounded understanding;
+alignment with human representations is an empirical question.
+
 The adopted [v0.3 research specification](docs/RESEARCH_SPEC_V0_3.md), dated November 5,
 2026, broadens the program to reusable experiments, including NeuroSLAM-inspired
 localization and Monty-style sensorimotor learning modules with recurrent memory.
@@ -21,8 +26,8 @@ measure one benefit of sharing, then select one experimental fork from the resul
 Concurrency/handover and the two application studies are conditional extensions.
 
 The [scientific assessment](docs/SCIENTIFIC_REVIEW_2026_11_05.md) treats SOAM as a
-plausible mechanism research programme, with human-like sensorimotor intelligence
-as a long-term goal rather than a supported claim. The next three questions are
+plausible mechanism research programme. Sensorimotor intelligence remains a long-term
+goal rather than a supported claim. The three questions identified in that review are
 useful shared dynamics, rapid retained acquisition, and active disambiguation.
 See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TICKET_REVIEW_2026_11_05.md).
 

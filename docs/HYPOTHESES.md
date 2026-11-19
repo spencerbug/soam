@@ -1,10 +1,25 @@
 # Hypotheses and operational evidence ledger
 
-Updated 2026-11-17. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
+Updated 2026-11-19. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
 their wording and provenance. The rows below are operational questions, not new
 schema IDs or retroactive changes to those statements. Scientific criteria and
 proposed numerical defaults live in the [review](SCIENTIFIC_REVIEW_2026_11_05.md);
 frozen experiment criteria belong to the corresponding protocol/manifest.
+
+The owner's November 19 [north star](NORTH_STAR.md) clarifies the long-term aim:
+self-developed sensorimotor world models whose memory organization evolves through
+experience, with language potentially following grounded concepts. Partial alignment
+across embodiments and any universal representational geometry are future research
+hypotheses, not measured SOAM capabilities or adopted numerical criteria. This
+clarification leaves the operational questions and historical gates below intact.
+
+The owner also proposes [learning through play](NORTH_STAR.md#generating-a-world-model-through-play):
+an agent generates informative interactions and develops its world model from their
+consequences. An illustrative circuit couples recurrent action-chunk generation with
+observation/acquisition, aligns repeated trajectories and supports reciprocal prediction.
+Chunk discovery, alignment, coupling, activity selection and learning rules remain
+open future-capability questions. This proposal does not establish a two-population
+requirement, a demonstrated mechanism or a selected experimental fork.
 
 SOAM-049 now freezes [E1 v1](SHARED_POPULATION_PROTOCOL.md) and its
 [manifest](protocols/shared_population_v1.json). Its T32 control exposes an
