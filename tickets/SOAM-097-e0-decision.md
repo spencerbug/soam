@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-097"
 title: "Review E0 navigation and local recovery evidence"
 type: "decision"
-status: "backlog"
+status: "done"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M1"
@@ -15,7 +15,7 @@ assignees: []
 created: "2026-11-21"
 updated: "2026-11-21"
 github_issue: null
-decision: null
+decision: "proceed"
 ---
 
 # SOAM-097: Review E0 navigation and local recovery evidence
@@ -36,8 +36,8 @@ Use [E0 v1](../docs/STUDY_E0_PROTOCOL.md) and its [manifest](../docs/protocols/s
 
 ## Acceptance criteria
 
-- [ ] Classify each model using the frozen joint endpoint/precision rules without claiming an exact continuous attractor.
-- [ ] Record a scoped proceed/revise/stop evidence decision in reports/STUDY_E0_DECISION.md; preserve earlier gates and later conditional branches.
+- [x] Classify each model using the frozen joint endpoint/precision rules without claiming an exact continuous attractor.
+- [x] Record a scoped proceed/revise/stop evidence decision in reports/STUDY_E0_DECISION.md; preserve earlier gates and later conditional branches.
 
 ## Metrics / evidence
 
@@ -53,4 +53,29 @@ The November 21 owner selection activates only E0 v1. SOAM-093 proceed accepts i
 
 ## Completion record
 
-Not started.
+Started after SOAM-096 completed with all 58 scientific fits, exact repetition and independent reduction. Reviewing the preserved stationary-drift limitation, control results, finite-geometry claim and one conditional follow-up.
+
+**Proceed with acceptance of valid bounded evidence only.** The [decision](../reports/STUDY_E0_DECISION.md)
+retains NAV32's joint inconclusive outcome: six passing criteria, stationary pose
+error 13.861 degrees [12.119,16.278], interval width 4.159 > frozen 4 degrees.
+The interval is entirely above the 5-degree target; the precision label is not
+positive evidence. No model passes the whole geometry claim. PCA2 remains the
+scoped accuracy/state-size reference; NAV32 remains a candidate with drift.
+
+Reviewed equal training streams, no-write inference, supplied symmetry and baseline
+priors, objective/budget matching limits, finite local-geometry interpretation,
+all adjusted intervals and precision caps, 58/58 scientific fits, exact 108-array /
+29-tensor reproduction, independent 280-metric / 28-interval audit and preserved
+source/archive hashes. The original raw archive remains local and is not claimed
+published. Source/config/seed provenance and resource readings are in SOAM-096
+and the [receipt](../reports/study-e0/receipt.json). All resource ceilings pass.
+
+Recommend at most one next experiment, conditionally: longer zero-action training
+versus the short-horizon condition, with a fresh protocol/streams and action/recovery
+guards. This is a causal hypothesis, not an established diagnosis. No successor
+is selected or activated. RIM coupling, hierarchy and shared reference frames remain
+future capabilities. Historical negative/inconclusive gates and storage references
+remain unchanged. Owner notified of the blog-worthy recovery/prediction/stationary-memory
+distinction; no remote publication, push or issue changes.
+
+Final validation: 339 tests passed in 17.84s; Ruff, whitespace, 98-ticket/two-template validation and 536-link verification pass. The two audit passes remain counted within resources; all 489 raw archive files are fingerprinted.

@@ -1,6 +1,6 @@
 # Work packages and completion criteria
 
-**November 21 E0 selected:** [SOAM-094](../tickets/SOAM-094-e0-protocol.md) is done/proceed for the [bounded single-population protocol](../docs/STUDY_E0_PROTOCOL.md); SOAM-095 is done with passing invariant tests and resource preflight; SOAM-096 is in progress. SOAM-097 remains backlog pending measured evidence. The fixed development/confirmation inventory is starting. Historical results and gates remain unchanged; coupling and hierarchy are unselected.
+**November 21 E0 complete:** [SOAM-094–097](../tickets/SOAM-097-e0-decision.md) complete the bounded single-population pilot. NAV32 passes six of seven criteria, but 128-step stationary pose error is 13.86° [12.12,16.28], above the 5° target; width 4.16° exceeds the frozen 4° cap, so the joint result is **inconclusive**. All 58 scientific fits complete; 108 arrays and 29 tensors repeat exactly. [Report](../reports/STUDY_E0.md); [scoped decision](../reports/STUDY_E0_DECISION.md). No successor is selected; coupling/hierarchy and historical gates remain unchanged.
 
 **November 19 D-R2 complete:** Exact acquired-code decoding scored 100% in the sample; ordinary PH768 recall scored 77.63%. The +22.37-point gap has adjusted interval [15.36,29.02], wider than the frozen ten-point precision cap: formal diagnosis **inconclusive**. All 12 fits and exact repeat complete. [Report](../reports/STUDY_D_R2.md); [scoped decision](../reports/STUDY_D_R2_DECISION.md). SOAM-090–093 are complete; no successor is selected.
 
