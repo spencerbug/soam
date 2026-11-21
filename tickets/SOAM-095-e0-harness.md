@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-095"
 title: "Implement and verify the E0 navigation harness"
 type: "engineering"
-status: "in_progress"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -36,8 +36,8 @@ Use [E0 v1](../docs/STUDY_E0_PROTOCOL.md) and its [manifest](../docs/protocols/s
 
 ## Acceptance criteria
 
-- [ ] Verify no-write inference, separate evidence/targets, fresh streams, exact absent-cue behavior, geometry diagnostics and reproducibility.
-- [ ] Pass the full tests, ticket checks and finite fixture resource projection before scientific fitting.
+- [x] Verify no-write inference, separate evidence/targets, fresh streams, exact absent-cue behavior, geometry diagnostics and reproducibility.
+- [x] Pass the full tests, ticket checks and finite fixture resource projection before scientific fitting.
 
 ## Metrics / evidence
 
@@ -54,3 +54,5 @@ The November 21 owner selection activates only E0 v1. SOAM-093 proceed accepts i
 ## Completion record
 
 Started after SOAM-094 done/proceed. The pre-change suite passed 328 tests. Implementation and resource preflight are pending; no scientific fitting has begun.
+
+Completed with [harness report](../reports/STUDY_E0_HARNESS.md) and [preflight receipt](../reports/study-e0/preflight.json). Source `7168e2e`; full suite 339 passed, E0 suite 11 passed after final archival changes; Ruff and ticket checks pass. All four fixture fits complete, projected CPU 372.47 seconds at 2x margin and 469,379,493 bytes pass the frozen preflight. No scientific fitting preceded this completion.

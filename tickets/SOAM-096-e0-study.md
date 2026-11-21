@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-096"
 title: "Execute the bounded E0 navigation pilot"
 type: "experiment"
-status: "backlog"
+status: "in_progress"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -54,4 +54,4 @@ The November 21 owner selection activates only E0 v1. SOAM-093 proceed accepts i
 
 ## Completion record
 
-Not started.
+Started after SOAM-094 done/proceed and SOAM-095 done with a passing four-model preflight. Numerical source `7168e2e`, source fingerprint `4dd66fc4194336388dc8a96a742d157eab7eceac521112760f385744d5b21622`. The finite runner will execute development before frozen confirmation; no confirmation tuning.

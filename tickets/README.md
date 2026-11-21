@@ -1,6 +1,6 @@
 # SOAM issue backlog
 
-**November 21 E0 selected:** [SOAM-094](../tickets/SOAM-094-e0-protocol.md) is done/proceed for the [bounded single-population protocol](../docs/STUDY_E0_PROTOCOL.md); SOAM-095 is in progress. SOAM-096/097 remain backlog until their prerequisites pass. No scientific fits have begun. Historical results and gates remain unchanged; coupling and hierarchy are unselected.
+**November 21 E0 selected:** [SOAM-094](../tickets/SOAM-094-e0-protocol.md) is done/proceed for the [bounded single-population protocol](../docs/STUDY_E0_PROTOCOL.md); SOAM-095 is done with passing invariant tests and resource preflight; SOAM-096 is in progress. SOAM-097 remains backlog pending measured evidence. The fixed development/confirmation inventory is starting. Historical results and gates remain unchanged; coupling and hierarchy are unselected.
 
 **November 19 D-R2 complete:** Exact acquired-code decoding scored 100% in the sample; ordinary PH768 recall scored 77.63%. The +22.37-point gap has adjusted interval [15.36,29.02], wider than the frozen ten-point precision cap: formal diagnosis **inconclusive**. All 12 fits and exact repeat complete. [Report](../reports/STUDY_D_R2.md); [scoped decision](../reports/STUDY_D_R2_DECISION.md). SOAM-090–093 are complete; no successor is selected.
 
