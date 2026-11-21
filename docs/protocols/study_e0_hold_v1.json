@@ -1,0 +1,138 @@
+{
+  "protocol": "soam-e0-hold",
+  "version": 1,
+  "threads": 1,
+  "models": [
+    "NAV32",
+    "SYM32",
+    "GRU32",
+    "PCA2"
+  ],
+  "development_roots": [],
+  "confirmation_roots": [
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320
+  ],
+  "repeat_root": 301,
+  "fixture_root": 9301,
+  "rates": [
+    0.003
+  ],
+  "ridge": 1e-06,
+  "updates": 600,
+  "batch": 32,
+  "train_horizon": 24,
+  "evaluation_batch": 128,
+  "free_horizon": 64,
+  "grid": 256,
+  "atlas_burnin": 8,
+  "stationary_steps": 128,
+  "perturbation_steps": 16,
+  "perturbation_fraction": 0.1,
+  "tangent_bins": 4,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 32203,
+  "family_size": 13,
+  "endpoints": {
+    "free_nmse": {
+      "min": null,
+      "max": 0.05,
+      "width": 0.04
+    },
+    "grounded_nmse": {
+      "min": null,
+      "max": 0.05,
+      "width": 0.04
+    },
+    "stationary_deg": {
+      "min": null,
+      "max": 5.0,
+      "width": 4.0
+    },
+    "normal_ratio": {
+      "min": null,
+      "max": 0.5,
+      "width": 0.4
+    },
+    "normal_pose_deg": {
+      "min": null,
+      "max": 3.0,
+      "width": 3.0
+    },
+    "tangent_ratio": {
+      "min": 0.8,
+      "max": 1.2,
+      "width": 0.4
+    },
+    "return_nmse": {
+      "min": null,
+      "max": 0.05,
+      "width": 0.04
+    }
+  },
+  "limits": {
+    "cpu_seconds": 7200,
+    "wall_seconds": 14400,
+    "rss_bytes": 2147483648,
+    "artifact_bytes": 2147483648,
+    "scientific_fits": 147,
+    "fixture_fits": 7
+  },
+  "stopping": "fixed inventory; no tuning/restarts/retries; stop on invariant failure or resource ceiling",
+  "rate": 0.003,
+  "long_horizon": 128,
+  "arms": [
+    "SHORT24",
+    "LONG128"
+  ],
+  "gain": {
+    "min": 5.0,
+    "max": null,
+    "width": 4.0
+  },
+  "degradation": {
+    "free_nmse": {
+      "min": null,
+      "max": 0.01,
+      "width": 0.02
+    },
+    "grounded_nmse": {
+      "min": null,
+      "max": 0.01,
+      "width": 0.02
+    },
+    "return_nmse": {
+      "min": null,
+      "max": 0.01,
+      "width": 0.02
+    },
+    "normal_ratio": {
+      "min": null,
+      "max": 0.05,
+      "width": 0.1
+    },
+    "normal_pose_deg": {
+      "min": null,
+      "max": 0.5,
+      "width": 1.0
+    }
+  }
+}
