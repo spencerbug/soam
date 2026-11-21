@@ -1,6 +1,6 @@
 # Conditional research paths
 
-**November 21 E0-HOLD selected:** [SOAM-098](../tickets/SOAM-098-e0-hold-protocol.md) accepts the [longer stationary-training protocol](../docs/STUDY_E0_HOLD_PROTOCOL.md); SOAM-099 is in progress. SOAM-100/101 remain backlog until their prerequisites pass. No scientific fitting has begun. Earlier E0 remains inconclusive; later module work is unselected.
+**November 21 E0-HOLD selected:** [SOAM-098](../tickets/SOAM-098-e0-hold-protocol.md) accepts the [longer stationary-training protocol](../docs/STUDY_E0_HOLD_PROTOCOL.md); SOAM-099 is done with 348 tests and a passing seven-cell preflight. SOAM-100 is in progress; SOAM-101 awaits measured evidence. The frozen paired confirmation inventory is starting. Earlier E0 remains inconclusive; later module work is unselected.
 
 **November 21 E0 complete:** [SOAM-094–097](../tickets/SOAM-097-e0-decision.md) complete the bounded single-population pilot. NAV32 passes six of seven criteria, but 128-step stationary pose error is 13.86° [12.12,16.28], above the 5° target; width 4.16° exceeds the frozen 4° cap, so the joint result is **inconclusive**. All 58 scientific fits complete; 108 arrays and 29 tensors repeat exactly. [Report](../reports/STUDY_E0.md); [scoped decision](../reports/STUDY_E0_DECISION.md). No successor is selected; coupling/hierarchy and historical gates remain unchanged.
 

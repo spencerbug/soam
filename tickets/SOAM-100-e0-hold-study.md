@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-100"
 title: "Execute the frozen longer stationary-training study"
 type: "experiment"
-status: "backlog"
+status: "in_progress"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -54,4 +54,4 @@ The new owner request explicitly selects this one follow-up. SOAM-097 proceed ac
 
 ## Completion record
 
-Not started.
+Started after SOAM-098 done/proceed and SOAM-099 done with a passing seven-cell preflight. Source `6733775`; the frozen 147-fit scientific inventory and exact repeats are beginning. No hyperparameter selection or confirmation tuning is permitted.

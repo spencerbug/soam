@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-099"
 title: "Implement the paired stationary-horizon comparison"
 type: "engineering"
-status: "in_progress"
+status: "done"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -36,8 +36,8 @@ Use [E0-HOLD v1](../docs/STUDY_E0_HOLD_PROTOCOL.md) and its [manifest](../docs/p
 
 ## Acceptance criteria
 
-- [ ] Complete the bounded deliverable with checkable commands, artifacts and source/config/seed provenance.
-- [ ] Preserve negative/inconclusive outcomes, verify applicable invariants/checks and leave later forks unselected.
+- [x] Complete the bounded deliverable with checkable commands, artifacts and source/config/seed provenance.
+- [x] Preserve negative/inconclusive outcomes, verify applicable invariants/checks and leave later forks unselected.
 
 ## Metrics / evidence
 
@@ -54,3 +54,5 @@ The new owner request explicitly selects this one follow-up. SOAM-097 proceed ac
 ## Completion record
 
 Started after SOAM-098 done/proceed; the 339-test pre-change suite passed. Implementation, tests and resource fixture are pending.
+
+Completed in source commit `6733775`. [Harness report](../reports/STUDY_E0_HOLD_HARNESS.md) and [preflight receipt](../reports/study-e0-hold/preflight.json) record 348 passing tests, Ruff, source preservation and seven completed fixture cells. At 2x margin projected CPU 1,773.23 seconds / wall 1,820.38 seconds and artifacts 1,191,661,882 bytes pass every preflight limit. All three neural initializations pair exactly; all seven prefix hashes agree. No scientific fitting preceded this completion.
