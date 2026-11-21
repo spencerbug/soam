@@ -53,6 +53,8 @@ Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](repor
 
 Study D: [report](reports/STUDY_D.md), [decision](reports/STUDY_D_DECISION.md), [protocol](docs/STUDY_D_PROTOCOL.md), [paired results and resources](reports/study-d/tables.md).
 
+Published November 21: [Joint E0/E0-HOLD article](https://spencerbug.github.io/blog/soam-stationary-memory-and-navigation/) and [companion report](https://spencerbug.github.io/research/soam-stationary-memory-and-navigation/), site commit `b89fa0a`. They separate stationary retention, action navigation and local recovery, preserving E0's inconclusive outcome and E0-HOLD's negative joint fix despite substantial drift reduction. See the [publication record](reports/STUDY_E0_PUBLICATION.md).
+
 Published November 19: [Joint D-R1/D-R2 article](https://spencerbug.github.io/blog/soam-retrieval-and-decoding/) and [companion report](https://spencerbug.github.io/research/soam-retrieval-and-decoding/), site commit `3c0b272`. They distinguish code preservation, cue-driven retrieval and decoding, preserving D-R1's negative practical-settling result and D-R2's inconclusive diagnosis. See the [publication record](reports/STUDY_D_RETRIEVAL_PUBLICATION.md).
 
 Published November 17: [Study D article](https://spencerbug.github.io/blog/soam-study-d-acquisition-and-retention/) and [companion report](https://spencerbug.github.io/research/soam-study-d/), site commits `5e8faf2` / `ed749bd`. They explain the measured retention failure and the separately selected recurrent-retrieval direction. Source/data downloads await separate publication authorization; the frozen study and historical decisions remain unchanged. See the [publication record](reports/STUDY_D_PUBLICATION.md).
