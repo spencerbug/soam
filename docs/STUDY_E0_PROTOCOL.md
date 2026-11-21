@@ -104,6 +104,9 @@ The other probes start at the eight-update family and use 16 autonomous updates:
    perpendicular to the endpoint family's tangent, divide by the injected norm,
    and average. This is a **paired transverse contraction proxy**, not a measured
    basin volume or proof of convergence to an invariant manifold.
+   For PCA2, perturb its two represented mean coordinates only; its four covariance
+   entries remain counted resources, not orientation coordinates. The neural
+   populations expose all 32 coordinates to the same probe.
 2. Measure the induced decoded angular displacement from the paired unperturbed
    endpoint. Contraction cannot count as success if it sends the state to another pose.
 3. Use valid neighboring family states four grid bins apart (about .098 radians)

@@ -282,4 +282,3 @@ Order is a preference within the selected path. It never schedules all alternati
 Run `uv run python scripts/check_tickets.py` before finishing ticket changes.
 No remote issues are created by this tracker. Documents and software tests do not
 establish attraction, sharing, learning, composition, or neuroscientific validity.
-
