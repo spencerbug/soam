@@ -1,5 +1,7 @@
 # Conditional research paths
 
+**November 21 E0 selected:** [SOAM-094](../tickets/SOAM-094-e0-protocol.md) is done/proceed for the [bounded single-population protocol](../docs/STUDY_E0_PROTOCOL.md); SOAM-095 is in progress. SOAM-096/097 remain backlog until their prerequisites pass. No scientific fits have begun. Historical results and gates remain unchanged; coupling and hierarchy are unselected.
+
 **November 19 D-R2 complete:** Exact acquired-code decoding scored 100% in the sample; ordinary PH768 recall scored 77.63%. The +22.37-point gap has adjusted interval [15.36,29.02], wider than the frozen ten-point precision cap: formal diagnosis **inconclusive**. All 12 fits and exact repeat complete. [Report](../reports/STUDY_D_R2.md); [scoped decision](../reports/STUDY_D_R2_DECISION.md). SOAM-090–093 are complete; no successor is selected.
 
 **November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](../reports/STUDY_D_R1.md) and [decision](../reports/STUDY_D_R1_DECISION.md).
