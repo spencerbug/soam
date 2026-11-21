@@ -54,7 +54,7 @@ opportunity. Loss/convergence traces remain descriptive, not permission to exten
 training. PCA2 fits its unchanged model to the same prefix targets with ridge 1e-6.
 
 Use twenty independent roots 301–320, paired across conditions. Map each to an E0
-generator root using derived_seed("soam-e0-hold",1,root,"streams"); record both.
+generator root using derived_seed("soam-e0-hold",1,"root-map",root,0,"streams"); record both.
 The existing train/confirmation/fixture split mechanisms then remain isolated.
 Initialization uses the existing model-specific seed at the mapped root and is
 shared between arms. No E0 confirmation stream or fitted checkpoint is reused.
