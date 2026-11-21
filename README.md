@@ -1,6 +1,6 @@
 # SOAM — Self-Organizing Attractor Memory
 
-**November 21 E0-HOLD selected:** [SOAM-098](tickets/SOAM-098-e0-hold-protocol.md) accepts the [longer stationary-training protocol](docs/STUDY_E0_HOLD_PROTOCOL.md); SOAM-099 is done with 348 tests and a passing seven-cell preflight. SOAM-100 is in progress; SOAM-101 awaits measured evidence. The frozen paired confirmation inventory is starting. Earlier E0 remains inconclusive; later module work is unselected.
+**November 21 E0-HOLD complete:** [SOAM-098–101](tickets/SOAM-101-e0-hold-decision.md) complete the paired follow-up. NAV32 stationary error improves 12.33° → 5.70°, but remains precisely above 5°; transverse-recovery noninferiority is unresolved. Formal result: **negative for the declared joint fix** (11/13 criteria pass). All 147 scientific fits complete, with 189 arrays/54 tensors reproduced exactly. [Report](reports/STUDY_E0_HOLD.md); [decision](reports/STUDY_E0_HOLD_DECISION.md). No successor is selected.
 
 **November 21 E0 complete:** [SOAM-094–097](tickets/SOAM-097-e0-decision.md) complete the bounded single-population pilot. NAV32 passes six of seven criteria, but 128-step stationary pose error is 13.86° [12.12,16.28], above the 5° target; width 4.16° exceeds the frozen 4° cap, so the joint result is **inconclusive**. All 58 scientific fits complete; 108 arrays and 29 tensors repeat exactly. [Report](reports/STUDY_E0.md); [scoped decision](reports/STUDY_E0_DECISION.md). No successor is selected; coupling/hierarchy and historical gates remain unchanged.
 
@@ -40,6 +40,8 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](reports/STUDY_B2_FILTER_AUDIT.md), [development](reports/STUDY_B2_DEVELOPMENT.md), [full tables](reports/study-b2/tables.md), [Pareto plot](reports/study-b2/pareto.png), [decision and C handoff](reports/STUDY_B2_DECISION.md).
 
 ## Current milestone
+
+**E0-HOLD (SOAM-098–101) is complete:** longer stationary training reduces NAV32 drift substantially, but the declared joint fix fails on residual error and leaves recovery noninferiority unresolved. The [report](reports/STUDY_E0_HOLD.md) and [decision](reports/STUDY_E0_HOLD_DECISION.md) preserve the result; no successor is selected.
 
 **2026-11-18 D-R1 complete:** [SOAM-086](tickets/SOAM-086-recurrent-retrieval-protocol.md) accepted the [frozen protocol](docs/STUDY_D_R1_PROTOCOL.md); [SOAM-087](tickets/SOAM-087-recurrent-retrieval-harness.md) verified the harness; [SOAM-088](tickets/SOAM-088-recurrent-retrieval-study.md) completed the study. [SOAM-089](tickets/SOAM-089-recurrent-retrieval-decision.md) accepts its scoped negative practical-settling result and reliability failures. Stored-code preservation is distinct from correct cue-driven completion. The single next recommendation is a fresh retrieval/decoding diagnostic, not an activated fork. Historical gates remain unchanged.
 

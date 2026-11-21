@@ -1,0 +1,618 @@
+{
+  "confirmation/301/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:15.607720+00:00"
+  },
+  "confirmation/301/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:05.937275+00:00"
+  },
+  "confirmation/301/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:24:49.937784+00:00"
+  },
+  "confirmation/301/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:24:40.028190+00:00"
+  },
+  "confirmation/301/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:16.230041+00:00"
+  },
+  "confirmation/301/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:02.903574+00:00"
+  },
+  "confirmation/301/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:24:53.018268+00:00"
+  },
+  "confirmation/302/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:54.650339+00:00"
+  },
+  "confirmation/302/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:44.922373+00:00"
+  },
+  "confirmation/302/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:29.104002+00:00"
+  },
+  "confirmation/302/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:19.329239+00:00"
+  },
+  "confirmation/302/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:55.268769+00:00"
+  },
+  "confirmation/302/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:41.886748+00:00"
+  },
+  "confirmation/302/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:32.184952+00:00"
+  },
+  "confirmation/303/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:26:33.798791+00:00"
+  },
+  "confirmation/303/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:26:24.121979+00:00"
+  },
+  "confirmation/303/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:26:08.270965+00:00"
+  },
+  "confirmation/303/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:25:58.388052+00:00"
+  },
+  "confirmation/303/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:26:34.421259+00:00"
+  },
+  "confirmation/303/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:26:21.088132+00:00"
+  },
+  "confirmation/303/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:26:11.340638+00:00"
+  },
+  "confirmation/304/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:12.825466+00:00"
+  },
+  "confirmation/304/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:03.189106+00:00"
+  },
+  "confirmation/304/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:26:47.292861+00:00"
+  },
+  "confirmation/304/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:26:37.508238+00:00"
+  },
+  "confirmation/304/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:13.451838+00:00"
+  },
+  "confirmation/304/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:00.065688+00:00"
+  },
+  "confirmation/304/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:26:50.370814+00:00"
+  },
+  "confirmation/305/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:51.875180+00:00"
+  },
+  "confirmation/305/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:42.195177+00:00"
+  },
+  "confirmation/305/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:26.354633+00:00"
+  },
+  "confirmation/305/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:16.554265+00:00"
+  },
+  "confirmation/305/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:52.506664+00:00"
+  },
+  "confirmation/305/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:39.145752+00:00"
+  },
+  "confirmation/305/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:29.447701+00:00"
+  },
+  "confirmation/306/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:31.179606+00:00"
+  },
+  "confirmation/306/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:21.499466+00:00"
+  },
+  "confirmation/306/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:05.595580+00:00"
+  },
+  "confirmation/306/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:27:55.621869+00:00"
+  },
+  "confirmation/306/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:31.807751+00:00"
+  },
+  "confirmation/306/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:18.471853+00:00"
+  },
+  "confirmation/306/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:08.691471+00:00"
+  },
+  "confirmation/307/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:10.358363+00:00"
+  },
+  "confirmation/307/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:00.592848+00:00"
+  },
+  "confirmation/307/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:44.655593+00:00"
+  },
+  "confirmation/307/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:34.905126+00:00"
+  },
+  "confirmation/307/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:10.992624+00:00"
+  },
+  "confirmation/307/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:57.512845+00:00"
+  },
+  "confirmation/307/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:28:47.763888+00:00"
+  },
+  "confirmation/308/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:49.575436+00:00"
+  },
+  "confirmation/308/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:39.927741+00:00"
+  },
+  "confirmation/308/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:23.958616+00:00"
+  },
+  "confirmation/308/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:14.130331+00:00"
+  },
+  "confirmation/308/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:50.209432+00:00"
+  },
+  "confirmation/308/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:36.882172+00:00"
+  },
+  "confirmation/308/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:27.073021+00:00"
+  },
+  "confirmation/309/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:28.956250+00:00"
+  },
+  "confirmation/309/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:19.228887+00:00"
+  },
+  "confirmation/309/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:03.318894+00:00"
+  },
+  "confirmation/309/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:29:53.321278+00:00"
+  },
+  "confirmation/309/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:29.593546+00:00"
+  },
+  "confirmation/309/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:16.179645+00:00"
+  },
+  "confirmation/309/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:06.413622+00:00"
+  },
+  "confirmation/310/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:08.428649+00:00"
+  },
+  "confirmation/310/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:58.612699+00:00"
+  },
+  "confirmation/310/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:42.522463+00:00"
+  },
+  "confirmation/310/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:32.695041+00:00"
+  },
+  "confirmation/310/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:09.067542+00:00"
+  },
+  "confirmation/310/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:55.546777+00:00"
+  },
+  "confirmation/310/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:30:45.626800+00:00"
+  },
+  "confirmation/311/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:47.551371+00:00"
+  },
+  "confirmation/311/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:37.867729+00:00"
+  },
+  "confirmation/311/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:21.976590+00:00"
+  },
+  "confirmation/311/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:12.168843+00:00"
+  },
+  "confirmation/311/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:48.202955+00:00"
+  },
+  "confirmation/311/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:34.814135+00:00"
+  },
+  "confirmation/311/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:25.095921+00:00"
+  },
+  "confirmation/312/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:26.910547+00:00"
+  },
+  "confirmation/312/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:17.178861+00:00"
+  },
+  "confirmation/312/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:01.237188+00:00"
+  },
+  "confirmation/312/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:31:51.308630+00:00"
+  },
+  "confirmation/312/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:27.563189+00:00"
+  },
+  "confirmation/312/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:14.119596+00:00"
+  },
+  "confirmation/312/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:04.354570+00:00"
+  },
+  "confirmation/313/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:06.112815+00:00"
+  },
+  "confirmation/313/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:56.317704+00:00"
+  },
+  "confirmation/313/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:40.445147+00:00"
+  },
+  "confirmation/313/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:30.681346+00:00"
+  },
+  "confirmation/313/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:06.756384+00:00"
+  },
+  "confirmation/313/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:53.240776+00:00"
+  },
+  "confirmation/313/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:32:43.551744+00:00"
+  },
+  "confirmation/314/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:45.420244+00:00"
+  },
+  "confirmation/314/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:35.713702+00:00"
+  },
+  "confirmation/314/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:19.764569+00:00"
+  },
+  "confirmation/314/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:09.891401+00:00"
+  },
+  "confirmation/314/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:46.068225+00:00"
+  },
+  "confirmation/314/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:32.639821+00:00"
+  },
+  "confirmation/314/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:22.872772+00:00"
+  },
+  "confirmation/315/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:24.731002+00:00"
+  },
+  "confirmation/315/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:15.069174+00:00"
+  },
+  "confirmation/315/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:59.071349+00:00"
+  },
+  "confirmation/315/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:33:49.203485+00:00"
+  },
+  "confirmation/315/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:25.383376+00:00"
+  },
+  "confirmation/315/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:12.008076+00:00"
+  },
+  "confirmation/315/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:02.240312+00:00"
+  },
+  "confirmation/316/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:04.027868+00:00"
+  },
+  "confirmation/316/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:54.185098+00:00"
+  },
+  "confirmation/316/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:38.311900+00:00"
+  },
+  "confirmation/316/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:28.534426+00:00"
+  },
+  "confirmation/316/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:04.685532+00:00"
+  },
+  "confirmation/316/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:51.119884+00:00"
+  },
+  "confirmation/316/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:34:41.428285+00:00"
+  },
+  "confirmation/317/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:43.392206+00:00"
+  },
+  "confirmation/317/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:33.628797+00:00"
+  },
+  "confirmation/317/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:17.694643+00:00"
+  },
+  "confirmation/317/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:07.800655+00:00"
+  },
+  "confirmation/317/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:44.062314+00:00"
+  },
+  "confirmation/317/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:30.562835+00:00"
+  },
+  "confirmation/317/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:20.815431+00:00"
+  },
+  "confirmation/318/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:22.772367+00:00"
+  },
+  "confirmation/318/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:13.035274+00:00"
+  },
+  "confirmation/318/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:57.022907+00:00"
+  },
+  "confirmation/318/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:35:47.189744+00:00"
+  },
+  "confirmation/318/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:23.428527+00:00"
+  },
+  "confirmation/318/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:09.978647+00:00"
+  },
+  "confirmation/318/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:00.150320+00:00"
+  },
+  "confirmation/319/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:02.166718+00:00"
+  },
+  "confirmation/319/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:52.351666+00:00"
+  },
+  "confirmation/319/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:36.443521+00:00"
+  },
+  "confirmation/319/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:26.619659+00:00"
+  },
+  "confirmation/319/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:02.828674+00:00"
+  },
+  "confirmation/319/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:49.284343+00:00"
+  },
+  "confirmation/319/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:36:39.566290+00:00"
+  },
+  "confirmation/320/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:41.481871+00:00"
+  },
+  "confirmation/320/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:31.807712+00:00"
+  },
+  "confirmation/320/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:15.800005+00:00"
+  },
+  "confirmation/320/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:05.971563+00:00"
+  },
+  "confirmation/320/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:42.151083+00:00"
+  },
+  "confirmation/320/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:28.723013+00:00"
+  },
+  "confirmation/320/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:18.939127+00:00"
+  },
+  "fixture/9301/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:23:29.261358+00:00"
+  },
+  "fixture/9301/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:23:28.960714+00:00"
+  },
+  "fixture/9301/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:23:28.214642+00:00"
+  },
+  "fixture/9301/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:23:27.876148+00:00"
+  },
+  "fixture/9301/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:23:29.399972+00:00"
+  },
+  "fixture/9301/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:23:28.760401+00:00"
+  },
+  "fixture/9301/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:23:28.442555+00:00"
+  },
+  "repeat/301/GRU32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:38:21.121703+00:00"
+  },
+  "repeat/301/GRU32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:38:11.346502+00:00"
+  },
+  "repeat/301/NAV32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:55.150440+00:00"
+  },
+  "repeat/301/NAV32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:45.295920+00:00"
+  },
+  "repeat/301/PCA2/REFERENCE": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:38:21.795009+00:00"
+  },
+  "repeat/301/SYM32/LONG128": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:38:08.266339+00:00"
+  },
+  "repeat/301/SYM32/SHORT24": {
+    "note": "Filesystem timestamp of the completed immutable record, not inferred fit-start time.",
+    "record_file_modified_utc": "2026-11-21T22:37:58.313617+00:00"
+  }
+}

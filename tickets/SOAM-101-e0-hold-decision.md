@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-101"
 title: "Review stationary drift improvement and navigation guardrails"
 type: "decision"
-status: "backlog"
+status: "done"
 priority: "P0"
 recommended_thinking: "xhigh"
 milestone: "M1"
@@ -15,7 +15,7 @@ assignees: []
 created: "2026-11-21"
 updated: "2026-11-21"
 github_issue: null
-decision: null
+decision: "proceed"
 ---
 
 # SOAM-101: Review stationary drift improvement and navigation guardrails
@@ -36,8 +36,8 @@ Use [E0-HOLD v1](../docs/STUDY_E0_HOLD_PROTOCOL.md) and its [manifest](../docs/p
 
 ## Acceptance criteria
 
-- [ ] Complete the bounded deliverable with checkable commands, artifacts and source/config/seed provenance.
-- [ ] Preserve negative/inconclusive outcomes, verify applicable invariants/checks and leave later forks unselected.
+- [x] Complete the bounded deliverable with checkable commands, artifacts and source/config/seed provenance.
+- [x] Preserve negative/inconclusive outcomes, verify applicable invariants/checks and leave later forks unselected.
 
 ## Metrics / evidence
 
@@ -53,4 +53,27 @@ The new owner request explicitly selects this one follow-up. SOAM-097 proceed ac
 
 ## Completion record
 
-Not started.
+Started after SOAM-100 completed all frozen fits/repeats and the independent audit. Reviewing the precise residual-drift failure, unresolved recovery noninferiority, mandatory controls and scoped follow-up recommendation.
+
+**Proceed with acceptance of valid negative evidence for the declared joint fix.**
+The [decision](../reports/STUDY_E0_HOLD_DECISION.md) preserves the 6.63463-degree
+paired improvement and the precise remaining 5.69773-degree error above the five-degree
+target. Eleven of thirteen criteria pass; recovery-ratio noninferiority is unresolved.
+Action prediction passes its declared degradation margin, not a claim of unchanged
+performance in every direction. GRU/SYM/PCA comparisons remain descriptive controls.
+
+Reviewed matching source/initialization/data, equal episode weighting, zero extra
+observations, finite inventory, inference purity, all guard intervals/precision rules,
+20 roots, 147 scientific fits, 189 exact arrays, 54 exact tensors, and the independent
+980-metric/13-interval audit. All resource limits pass; historical E0's 148 source hashes
+remain unchanged. The source/config/software/seed records and 621-file archive hashes
+are linked from SOAM-100 and the report; the full raw archive is local, not published.
+
+The sole conditional recommendation is a fresh fixed optimization-budget comparison
+at the 128-step horizon, replaying the same prefix corpus. Declining late training
+loss motivates that question but does not establish an optimization diagnosis or
+promise a fix. No successor, coupling, hierarchy or other experiment is activated.
+Earlier negative/inconclusive gates remain intact. Owner notified of the blog/report-worthy
+retention-versus-other-dynamics distinction; no publication or remote issue action.
+
+Final closeout checks: Ruff passes for the harness/tests/independent analysis scripts; the validator accepts 102 tickets and two templates; all checked local Markdown links resolve. Archived analysis hashes match the executed sources. Source tests remain 348/348 passing, with no subsequent numerical-source changes. No raw payloads were added to Git.
