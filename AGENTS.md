@@ -1,9 +1,15 @@
 # SOAM research instructions
 
-Read README.md, docs/RESEARCH_SPEC.md, docs/EXPERIMENTS.md, and the reports relevant
-to the selected ticket first; README.md indexes the reports. A newer engineering
-report does not replace an earlier empirical result or gate decision.
-For planned work, also read PRIORITIES.md, tickets/README.md, and the relevant ticket/dependencies.
+At the start of research work, establish context from README.md,
+docs/RESEARCH_SPEC.md, docs/EXPERIMENTS.md, and the reports relevant to the selected
+ticket; README.md indexes the reports. For planned work, also read PRIORITIES.md,
+tickets/README.md, and the relevant ticket/dependencies. Use PRIORITIES.md and the
+owning ticket for current selection/readiness; dated summaries retain their history.
+Reuse verified context within a session and refresh changed or newly relevant
+sources. Routine edits need the affected contracts and evidence, not a fresh read
+of the entire research history. Keep stable rules here, current study details in
+their owning documents, and historical contracts linked rather than duplicated.
+A newer engineering report does not replace an earlier empirical result or gate decision.
 Run `uv run pytest` before modifying existing code. An empty bootstrap suite is not a pass.
 
 The user supplied SOAM v0.1 on 2026-10-25 and adopted the switching-first v0.2 scope
@@ -60,6 +66,66 @@ every stage. Prerequisite decision tickets must be complete with `decision: "pro
 before dependent implementation starts; also honor conditions in the ticket body.
 Planning tickets do not by themselves pass a research gate. Empty future module
 directories are boundaries, not implementations.
+
+## Standing research workflow
+
+Apply this workflow proactively when proposing, designing, implementing, or reviewing
+a study; the owner need not request these checks or manage the agent's process.
+Scale effort to the decision. Put concise findings in the existing owning
+ticket/protocol/report and relevant progress updates; do not create a parallel
+paperwork system or repeat the full checklist for routine edits. Carry authorized
+work through applicable gates without repeated permission requests. Ask only when
+an unresolved scientific intent or a consequential scope/resource choice requires
+the owner's decision beyond existing authorization.
+
+- **Preserve the question.** Before protocol design or a material simplification,
+  state the owner's central question, what the proposed experiment can establish,
+  and what remains unanswered. Distinguish required constraints from candidate
+  mechanisms and illustrative examples. Flag any simplification that removes the
+  phenomenon of interest; a retention proxy cannot silently replace a question
+  about learned organization. Resolve a material intent mismatch before investing
+  in the substitute study.
+- **Choose work for decision value.** Identify the uncertainty whose resolution
+  would most change the next architectural decision. Compare the preferred
+  explanation with two serious alternatives where scientifically distinct
+  alternatives exist, including a competent simpler explanation. Recommend one
+  smallest discriminating experiment within the selected branch, with expected
+  cost and the consequence of each plausible outcome. Comparing alternatives
+  does not activate additional experimental branches.
+- **Use bounded exploration.** Before a full confirmation study, use derivations,
+  counterexamples, learning-rule sanity checks, and failure visualizations to
+  expose likely failure modes. Exploratory fits require a finite development
+  allocation in the owning protocol before execution, within the selected branch,
+  existing authorization, and applicable gates. Record configurations, exposure,
+  failures, resources, and permitted adjustments. Keep development separate from
+  fresh confirmation; exploration cannot silently extend budgets or alter a frozen
+  study. Use lightweight existing documents rather than a new approval layer.
+- **Preflight the decision rules.** Before freezing a new or revised protocol,
+  use analytical calculations or bounded simulations of plausible outcomes to
+  assess expected interval widths, independent-unit counts, and resource needs.
+  Check the primary endpoint and joint guardrails. Explain how each practical
+  margin and precision requirement affects the actual decision, including an
+  interval wholly on one side of a threshold but wider than its precision cap.
+  Declare assumptions and unresolved feasibility; do not promise precision.
+  Preserve already-frozen rules and outcomes. Any change follows the versioning
+  and fresh-data requirements below.
+- **Review adversarially.** Make a distinct review pass identifying the strongest
+  simpler explanation, closest relevant primary-source result, a counterexample
+  to the mechanism argument, and a way the evaluator could report false success.
+  Check evidence and turn the most consequential concerns into controls or tests;
+  record remaining limitations. A separate pass need not spawn another agent.
+  Agreement among AI reviewers is not replication or independent empirical evidence.
+- **Account for sensorimotor learning.** In each study proposal and review, state
+  what the agent learns or does better through observations and executed actions,
+  what structure is supplied, and which capability remains untested. Distinguish
+  offline fitting, transient inference, persistent acquisition, and action selection.
+  Explain how the bounded mechanism question bears on the sensorimotor goal without
+  implying that a supplied policy or action-conditioned prediction demonstrates play.
+- **Measure research usefulness.** In existing completion records, summarize the
+  decision clarified, confounds caught, consequential owner corrections, and time
+  or resources used when recorded. Do not invent missing telemetry. Judge workflow
+  changes by useful evidence and reduced rework; ticket counts, report volume, and
+  passing engineering tests alone do not measure scientific progress.
 
 ## Research decision discipline
 
