@@ -1,10 +1,12 @@
 # SOAM post-C research proposals (2026-11-16)
 
+**November 22 planning update:** [SOAM-103](../../tickets/SOAM-103-assembly-organization-plan.md) selects **[Assembly organization and selective routing (AO-1)](STUDY_ASSEMBLY_ORGANIZATION.md)**. Learned organization is included in the initial question under dense fixed sensory input; hysteresis is optional. SOAM-104 is the next mathematical/protocol design task. The earlier E0-HYS retention design remains preserved, unrun and unselected. No implementation or scientific trial has started for AO-1.
+
 **November 19 D-R2 complete:** Exact acquired-code decoding scored 100% in the sample; ordinary PH768 recall scored 77.63%. The +22.37-point gap has adjusted interval [15.36,29.02], wider than the frozen ten-point precision cap: formal diagnosis **inconclusive**. All 12 fits and exact repeat complete. [Report](../../reports/STUDY_D_R2.md); [scoped decision](../../reports/STUDY_D_R2_DECISION.md). SOAM-090–093 are complete; no successor is selected.
 
 **November 18 completion:** D-R1 is complete: PH768 adds 2.14 percentage points of recall through settling (adjusted interval 0.98–3.66), precisely below the five-point practical margin, and fails sequential-recall, retention and accepted-wrong guards. All 16 fits and ten confirmation roots complete; 5,497 repeated arrays match exactly. KV remains the scoped conventional reference; no next experiment is selected. See the [report](../../reports/STUDY_D_R1.md) and [decision](../../reports/STUDY_D_R1_DECISION.md).
 
-**Status: proposed Codex prompts, not approved protocols or completed experiments.** This directory captures the next research directions after completed Studies A, B, B2, and C. Execute only the next explicitly selected bounded study. Do not edit or reinterpret historical gate decisions.
+**Status of the original post-C catalogue: proposed Codex prompts, not approved protocols or completed experiments.** AO-1 is selected for mathematical/protocol design; its numerical contract is not yet frozen. E0-HYS has a preserved design/manifest but is currently unselected. This directory captures research directions after completed Studies A, B, B2, and C. Execute only the next explicitly selected bounded study. Do not edit or reinterpret historical gate decisions.
 
 ## November 17 execution update
 
@@ -31,6 +33,8 @@ Original result publications and frozen evidence:
 
 | Track | Prompt | Question | Default status |
 | --- | --- | --- | --- |
+| AO-1 | [Assembly organization and selective routing](STUDY_ASSEMBLY_ORGANIZATION.md) | Can learned pathways mediate useful representations while preserving memory and action navigation under dense input? | Selected planning path; SOAM-104 next; SOAM-105–107 conditional; no numerical contract or trials |
+| E0-HYS | [State hysteresis and navigability](STUDY_E0_HYSTERESIS.md) | Can varied resistance to changing state improve retention while preserving actions and recovery? | SOAM-102 design preserved; unrun and unselected; not a prerequisite for AO-1 |
 | D | [Persistent associative acquisition](STUDY_D_PERSISTENT_MEMORY.md) | Can new object-specific information survive recurrent-state reset without interference? | D0–D2 complete; D3/D4 deferred |
 | D-R1 | [Recurrent associative retrieval](STUDY_D_R1_RECURRENT_RETRIEVAL.md) | Can connection-based associative memory retain new associations, and does nonlinear settling improve partial-cue recall? | SOAM-086–089 complete; small settling effect below practical margin, reliability guards failed; no successor selected |
 | D-R2 | [Retrieval versus decoding](../STUDY_D_R2_PROTOCOL.md) | Can the fixed decoder use preserved acquired codes when cue completion is removed? | Numerical study complete; precision-qualified inconclusive; no successor selected |

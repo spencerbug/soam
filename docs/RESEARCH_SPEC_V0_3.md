@@ -12,6 +12,24 @@ The subsequent [scientific review](SCIENTIFIC_REVIEW_2026_11_05.md) sharpens thi
 rapid retained acquisition, and active disambiguation. It defines proposed numerical
 targets and RFC conventions; protocols still freeze actual trials before execution.
 
+## November 22 bounded organization scope amendment
+
+The [owner selection](requests/assembly_organization_2026_11_22.md) and
+[SOAM-103](../tickets/SOAM-103-assembly-organization-plan.md) bring **assembly
+organization and selective routing** into the next independent mechanism-design
+study, AO-1. Its [plan](proposed-studies/STUDY_ASSEMBLY_ORGANIZATION.md) uses dense
+fixed sensory projection, learned internal roles/connections, and no prescribed
+entry subset or tree. Hysteresis is an optional persistence mechanism with fixed
+thresholds if used. Equations and analytical checks precede a frozen bounded pilot;
+Lean is optional for selected theorems. The E0-HYS retention design remains preserved,
+unrun and unselected, rather than a prerequisite.
+
+This supersedes blanket deferral of learned organization only for this offline
+mechanism pilot. SOAM-042/043 remain later integrated organization work with their
+sharing/acquisition prerequisites unchanged. No historical result, empirical gate,
+online structural-learning capability, or numerical allocation changes. SOAM-104
+owns the next protocol; subsequent implementation and trials remain conditional.
+
 ## 1. Revision boundary
 
 SOAM becomes an experimentation platform for Hopfield networks and related recurrent

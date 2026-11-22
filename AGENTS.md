@@ -33,8 +33,15 @@ protocols on common infrastructure, not dependencies on the full integration cha
 Heavy declared scaffolding is permitted. Keep graph/point-cloud memory as labeled
 controls for recurrent-memory candidates; simulator geometry remains task/evaluator
 data. No universal one-population concurrency or symmetric-energy guarantee is assumed.
-The historical writer remains a separate comparison branch. Learned organization
-and unsupervised memory discovery remain later work. Completed Gate 1 and engineering
+The historical writer remains a separate comparison branch. The November 22 owner
+selection in SOAM-103 brings bounded offline assembly organization and selective
+routing into the next mechanism-design study (AO-1, SOAM-104–107). Use dense fixed
+sensory projection without prescribed entry neurons or assembly/tree labels;
+hysteresis is optional and thresholds stay fixed if included. Equations and
+analytical checks precede a frozen bounded pilot; Lean is optional. E0-HYS remains
+an unrun, unselected retention diagnostic, not a prerequisite. This narrow scope
+amendment does not activate SOAM-042/043 integration, online structural learning,
+or open-ended memory discovery. Completed Gate 1 and engineering
 fixtures do not pass the new shared-population or historical handover gates.
 Read docs/SCIENTIFIC_REVIEW_2026_11_05.md and docs/HYPOTHESES.md for current
 operational claims and proposed quantitative criteria. Minimal acquisition now

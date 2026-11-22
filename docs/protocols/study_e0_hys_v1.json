@@ -1,0 +1,627 @@
+{
+  "protocol": "soam-e0-hys",
+  "version": 1,
+  "status": "design_accepted_execution_not_started",
+  "owner_ticket": "SOAM-102",
+  "design_source_commit": "047e2b81496a41dbf96537e11c39b4d17e54c1d4",
+  "execution_authorization": "design only; implementation and trials not started",
+  "models": [
+    "NAV32",
+    "LEAK32",
+    "HLEAK32",
+    "HYS32",
+    "HHYS32",
+    "HSYM32",
+    "GRU32",
+    "PCA2"
+  ],
+  "primary_model": "HHYS32",
+  "families": {
+    "NAV32": {
+      "rates": [
+        0.001,
+        0.003
+      ],
+      "alpha": [
+        0.5
+      ],
+      "core": "skew",
+      "operator": "leak"
+    },
+    "LEAK32": {
+      "rates": [
+        0.001,
+        0.003
+      ],
+      "alpha": [
+        0.1,
+        0.25,
+        0.5
+      ],
+      "core": "skew",
+      "operator": "uniform_leak"
+    },
+    "HLEAK32": {
+      "rates": [
+        0.001,
+        0.003
+      ],
+      "alpha": [
+        0.1,
+        0.25,
+        0.5
+      ],
+      "multipliers": [
+        0.5,
+        1.5
+      ],
+      "counts": [
+        16,
+        16
+      ],
+      "core": "skew",
+      "operator": "heterogeneous_leak"
+    },
+    "HYS32": {
+      "rates": [
+        0.001,
+        0.003
+      ],
+      "rho": [
+        0.0005,
+        0.002,
+        0.008
+      ],
+      "alpha": [
+        0.5
+      ],
+      "core": "skew",
+      "operator": "uniform_play"
+    },
+    "HHYS32": {
+      "rates": [
+        0.001,
+        0.003
+      ],
+      "rho": [
+        0.0005,
+        0.002,
+        0.008
+      ],
+      "multipliers": [
+        0.25,
+        1.75
+      ],
+      "counts": [
+        16,
+        16
+      ],
+      "alpha": [
+        0.5
+      ],
+      "core": "skew",
+      "operator": "heterogeneous_play"
+    },
+    "HSYM32": {
+      "rates": [
+        0.001,
+        0.003
+      ],
+      "rho": [
+        0.0005,
+        0.002,
+        0.008
+      ],
+      "multipliers": [
+        0.25,
+        1.75
+      ],
+      "counts": [
+        16,
+        16
+      ],
+      "alpha": [
+        0.5
+      ],
+      "core": "symmetric",
+      "operator": "heterogeneous_play"
+    },
+    "GRU32": {
+      "rates": [
+        0.001,
+        0.003
+      ],
+      "core": "gru",
+      "operator": "existing"
+    },
+    "PCA2": {
+      "ridge": 1e-06,
+      "rank": 2,
+      "core": "fitted_filter",
+      "operator": "existing"
+    }
+  },
+  "representation": {
+    "neurons": 32,
+    "sensory_features": 12,
+    "mask_indicators": 12,
+    "action_dimensions": 1,
+    "projection_seed": 1729,
+    "new_dynamic_state_floats": 0,
+    "fixed_coefficient_floats": 32
+  },
+  "mechanism": {
+    "play": "max(q-delta,min(q+delta,h))",
+    "q": "(1-alpha)*h+alpha*tanh(S*h+b+(a/0.12)*K*h)",
+    "correction": "unchanged; hysteresis not applied",
+    "equal_boundary_branch": "retained h",
+    "zero_delta_fast_path": "q exactly including gradients",
+    "thresholds_learned": false,
+    "surrogate_gradient": false,
+    "threshold_annealing": false,
+    "coefficient_assignment": "independent seeded unit permutation, common within root",
+    "owner_threshold_choice": "Keep thresholds fixed for the first mechanism test"
+  },
+  "development_roots": [
+    401,
+    402,
+    403
+  ],
+  "confirmation_roots": [
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520
+  ],
+  "repeat_root": 501,
+  "fixture_root": 9501,
+  "streams": {
+    "namespace": "soam-e0-hys",
+    "version": 1,
+    "root_map": "derived_seed(namespace,1,split,root,0,base-stream)",
+    "initialization_components": {
+      "nav_derived": "nav-init",
+      "GRU32": "gru-init"
+    },
+    "coefficient_component": "permutation",
+    "probe_components": [
+      "probe-grid",
+      "stationary-cued/phase",
+      "stationary-cued/mask",
+      "stationary-cued/noise"
+    ],
+    "training": "E0 train at mapped root",
+    "evaluation": "E0 development or confirmation at mapped root",
+    "new_component_seed": "derived_seed(namespace,1,split,root,0,component)"
+  },
+  "training": {
+    "updates": 600,
+    "batch": 32,
+    "prefix_horizon": 24,
+    "stationary_horizon": 128,
+    "optimizer": "Adam",
+    "gradient_clip": 1.0,
+    "decay": "cosine to 1 percent",
+    "loss": "E0-HOLD LONG128 equal episode objective",
+    "action_alphabet": [
+      -0.12,
+      -0.06,
+      0.0,
+      0.06,
+      0.12
+    ],
+    "action_block_steps": 4,
+    "stationary_episode_probability": 0.25,
+    "noise_sd": 0.01,
+    "visible_channels": [
+      6,
+      12
+    ],
+    "full_visibility_probability": 0.5,
+    "extra_observations": 0,
+    "distinct_episodes_per_neural_fit": 19200,
+    "original_sensory_snapshots_per_neural_fit": 480000,
+    "checkpoint": "final only",
+    "pca_passes": 2
+  },
+  "evaluation": {
+    "batch": 128,
+    "free_horizon": 64,
+    "grid": 256,
+    "atlas_burnin": 8,
+    "stationary_steps": 128,
+    "perturbation_steps": 16,
+    "perturbation_fraction": 0.1,
+    "tangent_bins": 4,
+    "retention_checkpoints": [
+      0,
+      1,
+      4,
+      16,
+      24,
+      64,
+      128,
+      256,
+      512
+    ],
+    "small_action": {
+      "magnitudes": [
+        0.001,
+        0.003,
+        0.01,
+        0.03
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "horizon": 64,
+      "checkpoints": [
+        16,
+        64
+      ]
+    },
+    "reversal": {
+      "magnitudes": [
+        0.003,
+        0.03,
+        0.09
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "outward_steps": 32,
+      "return_steps": 32,
+      "checkpoints": [
+        4,
+        16,
+        32
+      ]
+    },
+    "release": {
+      "magnitudes": [
+        0.003,
+        0.03,
+        0.09
+      ],
+      "signs": [
+        -1,
+        1
+      ],
+      "hold_steps": 128,
+      "horizon": 64,
+      "checkpoints": [
+        4,
+        16,
+        64
+      ]
+    },
+    "transport_reduction": "max over magnitude/sign/checkpoint of mean over poses abs((unwrapped_command_displacement-unwrapped_zero_displacement)/(t*a)-1)",
+    "small_perturbation_fraction": 0.01,
+    "small_perturbation_directions": "same as ordinary normal probe",
+    "stationary_cued": {
+      "episodes": 128,
+      "horizon": 128,
+      "visible_channels": [
+        6,
+        12
+      ],
+      "full_probability": 0.5,
+      "noise_sd": 0.01,
+      "score": "prior NMSE averaged over all times, channels and episodes"
+    },
+    "phase_norm_floor": 1e-06,
+    "geometry_validity": "all required H confirmatory evaluations at all roots must be nondegenerate; excludes descriptive >128-step holds and derived diagnostics",
+    "response_diagnostics": {
+      "stalled": "abs(R)<.1",
+      "wrong_direction": "R<0",
+      "percentiles": [
+        5,
+        50,
+        95
+      ]
+    }
+  },
+  "selection": {
+    "rule": "lexicographic max violation, sum violation, mean stationary_deg, mean free_nmse, canonical config id",
+    "guard_scales": {
+      "free_nmse": 0.05,
+      "grounded_nmse": 0.05,
+      "return_nmse": 0.05,
+      "normal_ratio": 0.5,
+      "normal_pose_deg": 3.0,
+      "tangent_ratio": 0.2,
+      "small_action_error": 0.2,
+      "reversal_error": 0.2,
+      "release_error": 0.2,
+      "small_normal_ratio": 0.8,
+      "stationary_cued_nmse": 0.05
+    },
+    "guard_bounds": "corresponding H absolute endpoints below",
+    "comparator_candidates": [
+      "NAV32",
+      "LEAK32",
+      "HLEAK32"
+    ],
+    "comparator_rule": "same lexicographic rule; family name final tie break",
+    "unqualified_comparator": "primary comparative claim inconclusive; report absolute capability separately",
+    "degenerate_violation": "infinity",
+    "confirmatory_tuning": false,
+    "canonical_config_id": "family name then numeric ascending rate then alpha or rho",
+    "undefined_quantities": "sort as positive infinity; no omitted roots"
+  },
+  "statistics": {
+    "unit": "independent paired trained root",
+    "bootstrap_resamples": 50000,
+    "bootstrap_seed": 52203,
+    "alpha": 0.05,
+    "family_size": 19,
+    "interval_method": "two-sided Bonferroni percentile bootstrap, shared root indices, NumPy linear quantiles",
+    "primary_interval_count": 18,
+    "secondary_interval_count": 1,
+    "intervals": [
+      {
+        "key": "hold_absolute",
+        "kind": "H",
+        "metric": "stationary_deg",
+        "min": null,
+        "max": 5.0,
+        "width": 4.0,
+        "scope": "primary"
+      },
+      {
+        "key": "primary_gain",
+        "kind": "reference_minus_H",
+        "metric": "stationary_deg",
+        "min": 1.0,
+        "max": null,
+        "width": 2.0,
+        "scope": "primary",
+        "reference": "C"
+      },
+      {
+        "key": "H_free_nmse",
+        "kind": "H",
+        "metric": "free_nmse",
+        "min": null,
+        "max": 0.05,
+        "width": 0.04,
+        "scope": "primary"
+      },
+      {
+        "key": "H_grounded_nmse",
+        "kind": "H",
+        "metric": "grounded_nmse",
+        "min": null,
+        "max": 0.05,
+        "width": 0.04,
+        "scope": "primary"
+      },
+      {
+        "key": "H_return_nmse",
+        "kind": "H",
+        "metric": "return_nmse",
+        "min": null,
+        "max": 0.05,
+        "width": 0.04,
+        "scope": "primary"
+      },
+      {
+        "key": "H_normal_ratio",
+        "kind": "H",
+        "metric": "normal_ratio",
+        "min": null,
+        "max": 0.5,
+        "width": 0.4,
+        "scope": "primary"
+      },
+      {
+        "key": "H_normal_pose_deg",
+        "kind": "H",
+        "metric": "normal_pose_deg",
+        "min": null,
+        "max": 3.0,
+        "width": 3.0,
+        "scope": "primary"
+      },
+      {
+        "key": "H_tangent_ratio",
+        "kind": "H",
+        "metric": "tangent_ratio",
+        "min": 0.8,
+        "max": 1.2,
+        "width": 0.4,
+        "scope": "primary"
+      },
+      {
+        "key": "degradation_free_nmse",
+        "kind": "H_minus_reference",
+        "metric": "free_nmse",
+        "min": null,
+        "max": 0.01,
+        "width": 0.02,
+        "scope": "primary",
+        "reference": "C"
+      },
+      {
+        "key": "degradation_grounded_nmse",
+        "kind": "H_minus_reference",
+        "metric": "grounded_nmse",
+        "min": null,
+        "max": 0.01,
+        "width": 0.02,
+        "scope": "primary",
+        "reference": "C"
+      },
+      {
+        "key": "degradation_return_nmse",
+        "kind": "H_minus_reference",
+        "metric": "return_nmse",
+        "min": null,
+        "max": 0.01,
+        "width": 0.02,
+        "scope": "primary",
+        "reference": "C"
+      },
+      {
+        "key": "degradation_normal_ratio",
+        "kind": "H_minus_reference",
+        "metric": "normal_ratio",
+        "min": null,
+        "max": 0.05,
+        "width": 0.1,
+        "scope": "primary",
+        "reference": "C"
+      },
+      {
+        "key": "degradation_normal_pose_deg",
+        "kind": "H_minus_reference",
+        "metric": "normal_pose_deg",
+        "min": null,
+        "max": 0.5,
+        "width": 1.0,
+        "scope": "primary",
+        "reference": "C"
+      },
+      {
+        "key": "H_small_action_error",
+        "kind": "H",
+        "metric": "small_action_error",
+        "min": null,
+        "max": 0.2,
+        "width": 0.2,
+        "scope": "primary"
+      },
+      {
+        "key": "H_reversal_error",
+        "kind": "H",
+        "metric": "reversal_error",
+        "min": null,
+        "max": 0.2,
+        "width": 0.2,
+        "scope": "primary"
+      },
+      {
+        "key": "H_release_error",
+        "kind": "H",
+        "metric": "release_error",
+        "min": null,
+        "max": 0.2,
+        "width": 0.2,
+        "scope": "primary"
+      },
+      {
+        "key": "H_small_normal_ratio",
+        "kind": "H",
+        "metric": "small_normal_ratio",
+        "min": null,
+        "max": 0.8,
+        "width": 0.4,
+        "scope": "primary"
+      },
+      {
+        "key": "H_stationary_cued_nmse",
+        "kind": "H",
+        "metric": "stationary_cued_nmse",
+        "min": null,
+        "max": 0.05,
+        "width": 0.04,
+        "scope": "primary"
+      },
+      {
+        "key": "heterogeneity_gain",
+        "kind": "reference_minus_H",
+        "metric": "stationary_deg",
+        "min": 0.5,
+        "max": null,
+        "width": 2.0,
+        "scope": "secondary",
+        "reference": "HYS32"
+      }
+    ],
+    "descriptive_interval_alpha": 0.05,
+    "decision_order": [
+      "invalid/incomplete execution",
+      "all-root geometry failure",
+      "precision-qualified tradeoff",
+      "precision-qualified negative",
+      "all primary criteria and comparator qualification pass",
+      "otherwise inconclusive"
+    ],
+    "secondary_claim": "requires primary support, qualified HYS32 on development and heterogeneity_gain pass",
+    "undefined_comparator_metrics": "unavailable interval; no excluded roots; comparative claim cannot pass; absolute H failures retain priority"
+  },
+  "diagnostics": {
+    "derived_models": [
+      "FREEZE0",
+      "HHYS_remove",
+      "HHYS_swap"
+    ],
+    "roots": "all confirmation roots and repeat",
+    "evaluations": 63,
+    "new_fits": 0,
+    "FREEZE0": "NAV32 identity prediction iff supplied action==0; correction unchanged",
+    "HHYS_remove": "all delta zero; weights frozen",
+    "HHYS_swap": "exchange low/high coefficient assignments; weights frozen",
+    "unit_summaries": [
+      "state variance",
+      "exact hold fraction",
+      "proposed and realized increments",
+      "S K D norms"
+    ],
+    "hierarchy_claim": false
+  },
+  "inventory": {
+    "configurations_per_development_root": 35,
+    "development_fits": 105,
+    "confirmation_fits": 160,
+    "repeat_fits": 8,
+    "scientific_fits": 273,
+    "fixture_fits": 8,
+    "derived_evaluations": 63
+  },
+  "fixtures": {
+    "updates": 8,
+    "batch": 32,
+    "rate": 0.003,
+    "leak_alpha": 0.25,
+    "hysteresis_rho": 0.008,
+    "full_horizons": true,
+    "full_evaluation": true,
+    "for_tuning": false
+  },
+  "numerics": {
+    "device": "cpu",
+    "threads": 1,
+    "deterministic": true,
+    "recurrent_dtype": "float32",
+    "fitted_and_reduction_dtype": "float64"
+  },
+  "limits": {
+    "cpu_seconds": 14400,
+    "wall_seconds": 28800,
+    "rss_bytes": 2147483648,
+    "artifact_bytes": 4294967296,
+    "preflight_multiplier": 2.0,
+    "preflight_time_artifact_ceiling_fraction": 0.8
+  },
+  "stopping": "fixed inventory; stop on invariant failure, nonfinite, failed repeat or resource ceiling; no retries, extra roots or confirmation tuning",
+  "future_hierarchy": "conditional separate protocol and fresh routing decision; not in this inventory"
+}

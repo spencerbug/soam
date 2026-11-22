@@ -1,5 +1,7 @@
 # SOAM — Self-Organizing Attractor Memory
 
+**November 22 planning update:** [SOAM-103](tickets/SOAM-103-assembly-organization-plan.md) selects **Assembly organization and selective routing (AO-1)**. The [experimental plan](docs/proposed-studies/STUDY_ASSEMBLY_ORGANIZATION.md) includes learned organization from the outset, dense fixed sensory input, and causal routing tests with retention/navigation guards. [SOAM-104](tickets/SOAM-104-assembly-organization-protocol.md) is the next mathematical/protocol design task; no implementation or trials have started. The earlier [E0-HYS design](docs/STUDY_E0_HYSTERESIS_PROTOCOL.md) is preserved as an unrun, unselected retention diagnostic. Historical outcomes and integration gates are unchanged.
+
 **November 21 E0-HOLD complete:** [SOAM-098–101](tickets/SOAM-101-e0-hold-decision.md) complete the paired follow-up. NAV32 stationary error improves 12.33° → 5.70°, but remains precisely above 5°; transverse-recovery noninferiority is unresolved. Formal result: **negative for the declared joint fix** (11/13 criteria pass). All 147 scientific fits complete, with 189 arrays/54 tensors reproduced exactly. [Report](reports/STUDY_E0_HOLD.md); [decision](reports/STUDY_E0_HOLD_DECISION.md). No successor is selected.
 
 **November 21 E0 complete:** [SOAM-094–097](tickets/SOAM-097-e0-decision.md) complete the bounded single-population pilot. NAV32 passes six of seven criteria, but 128-step stationary pose error is 13.86° [12.12,16.28], above the 5° target; width 4.16° exceeds the frozen 4° cap, so the joint result is **inconclusive**. All 58 scientific fits complete; 108 arrays and 29 tensors repeat exactly. [Report](reports/STUDY_E0.md); [scoped decision](reports/STUDY_E0_DECISION.md). No successor is selected; coupling/hierarchy and historical gates remain unchanged.
@@ -40,6 +42,8 @@ See the [hypothesis ledger](docs/HYPOTHESES.md) and [ticket change map](docs/TIC
 Study B2 artifacts: [protocol](docs/STUDY_B2_PROTOCOL.md), [FILTER2 audit](reports/STUDY_B2_FILTER_AUDIT.md), [development](reports/STUDY_B2_DEVELOPMENT.md), [full tables](reports/study-b2/tables.md), [Pareto plot](reports/study-b2/pareto.png), [decision and C handoff](reports/STUDY_B2_DECISION.md).
 
 ## Current milestone
+
+**AO-1 planning:** the next question is learned assembly organization and selective routing, with hysteresis as an optional mechanism. [SOAM-103](tickets/SOAM-103-assembly-organization-plan.md) owns the scope choice; [SOAM-104](tickets/SOAM-104-assembly-organization-protocol.md) will specify equations, analytical checks and a frozen bounded pilot before SOAM-105–107 implementation, measurement and review. Lean is optional. E0-HYS is not a prerequisite.
 
 **E0-HOLD (SOAM-098–101) is complete:** longer stationary training reduces NAV32 drift substantially, but the declared joint fix fails on residual error and leaves recovery noninferiority unresolved. The [report](reports/STUDY_E0_HOLD.md) and [decision](reports/STUDY_E0_HOLD_DECISION.md) preserve the result; no successor is selected.
 

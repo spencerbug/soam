@@ -1,5 +1,7 @@
 # Work packages and completion criteria
 
+**November 22 planning update:** [SOAM-103](../tickets/SOAM-103-assembly-organization-plan.md) selects **Assembly organization and selective routing (AO-1)**. The [experimental plan](proposed-studies/STUDY_ASSEMBLY_ORGANIZATION.md) includes learned organization under dense fixed sensory input. SOAM-104 covers equations, analytical checks and protocol freeze; SOAM-105–107 cover the conditional harness, bounded pilot and review. Hysteresis is optional and Lean is not a prerequisite. The [E0-HYS design](STUDY_E0_HYSTERESIS_PROTOCOL.md) is preserved, unrun and unselected. Historical outcomes and integration gates are unchanged.
+
 **November 21 E0-HOLD complete:** [SOAM-098–101](../tickets/SOAM-101-e0-hold-decision.md) complete the paired follow-up. NAV32 stationary error improves 12.33° → 5.70°, but remains precisely above 5°; transverse-recovery noninferiority is unresolved. Formal result: **negative for the declared joint fix** (11/13 criteria pass). All 147 scientific fits complete, with 189 arrays/54 tensors reproduced exactly. [Report](../reports/STUDY_E0_HOLD.md); [decision](../reports/STUDY_E0_HOLD_DECISION.md). No successor is selected.
 
 **November 21 E0 complete:** [SOAM-094–097](../tickets/SOAM-097-e0-decision.md) complete the bounded single-population pilot. NAV32 passes six of seven criteria, but 128-step stationary pose error is 13.86° [12.12,16.28], above the 5° target; width 4.16° exceeds the frozen 4° cap, so the joint result is **inconclusive**. All 58 scientific fits complete; 108 arrays and 29 tensors repeat exactly. [Report](../reports/STUDY_E0.md); [scoped decision](../reports/STUDY_E0_DECISION.md). No successor is selected; coupling/hierarchy and historical gates remain unchanged.
@@ -29,6 +31,8 @@ scientific decision; implemented components alone do not complete a research mil
 See the [complete ticket dispositions](TICKET_REVIEW_2026_11_05.md).
 
 ## Immediate work
+
+**November 22:** [SOAM-103](../tickets/SOAM-103-assembly-organization-plan.md) adopts AO-1 planning. [SOAM-104](../tickets/SOAM-104-assembly-organization-protocol.md) is the next equations, analytical-check and protocol task; SOAM-105–107 remain backlog. SOAM-102's E0-HYS design is preserved, unrun and unselected. No empirical gate passes through this planning update.
 
 **2026-11-17: Study D D0–D2 complete (SOAM-082–085).** Explicit key-value memory passes the post-reset acquisition and retention criteria. All writers learn isolated objects, but regression and the tested rank-one FAST memory exceed the sequential-interference guard; FAST has a precise negative practical-benefit result against both conventional controls. All 16 fits and 88 model evaluations complete, 64 repeat arrays match exactly, and 303 tests pass. The decision retains KV for this scaffolded task only. D3/D4 remain deferred; no next experiment or historical gate change is selected.
 

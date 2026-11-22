@@ -1,6 +1,6 @@
 # Hypotheses and operational evidence ledger
 
-Updated 2026-11-21. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
+Updated 2026-11-22. The historical [v0.1 H1–H8 statements](RESEARCH_SPEC.md) retain
 their wording and provenance. The rows below are operational questions, not new
 schema IDs or retroactive changes to those statements. Scientific criteria and
 proposed numerical defaults live in the [review](SCIENTIFIC_REVIEW_2026_11_05.md);
@@ -48,6 +48,8 @@ remain unmeasured. Neither routing choice changes an E1 result or gate criterion
 | H1 mechanism subquestion: directed attraction | Controlled recurrent recovery and action-dependent transitions should survive removal of irrelevant drive without collapse | E1 small perturbation/cue-removal tests; symmetric-only and restoring-term ablations with identical external forcing | Proposed diagnostic: halve distance to the declared target set within 10 unforced updates with useful motion retained, versus restoring-term ablation; define phase/set distance appropriately and freeze completion/false-capture limits | Prediction may be useful without attraction; reject only the unsupported mechanism claim. E, 049/050/052 |
 | H1/H6 E0: navigable local state geometry | Offline sensorimotor fitting may support distinct stationary poses, action navigation and transverse recovery together | Owner-selected E0 v1: NAV32, symmetric control, GRU and fitted PCA estimator; fixed sensory projection, evaluator-only pose | Joint free-rollout, retention, transverse/tangent and correction criteria are frozen in [E0 v1](STUDY_E0_PROTOCOL.md), not inferred from prediction alone | [E0](../reports/STUDY_E0.md): NAV32 passes six criteria; stationary pose error 13.86 degrees exceeds the 5-degree target and interval width 4.16 exceeds the frozen 4-degree cap; joint inconclusive. PCA2 is strongest prediction reference without transverse recovery. Finite tests cannot prove a continuous invariant manifold. E, 094–097; no successor selected |
 | H1/H6 E0-HOLD: stationary training horizon | Longer stationary credit assignment may reduce drift without practical degradation of navigation/recovery | Paired SHORT24/LONG128 NAV32 with symmetric, GRU and PCA controls; identical prefix evidence and initial parameters | [E0-HOLD v1](STUDY_E0_HOLD_PROTOCOL.md) freezes gain, absolute error and noninferiority criteria before fitting | [E0-HOLD](../reports/STUDY_E0_HOLD.md): paired drift 12.33 to 5.70 degrees; practical gain supported, residual error precisely above 5 degrees and recovery noninferiority unresolved. Negative declared joint fix; extra recurrence cost about 3.32x, no new observations. E, 098–101; no successor selected |
+| H1/H6 E0-HYS: selective state persistence | Heterogeneous local hysteresis may improve continuous-state retention beyond ordinary update dynamics without suppressing actions or recovery | [E0-HYS v1](STUDY_E0_HYSTERESIS_PROTOCOL.md): NAV, uniform/heterogeneous leak, uniform/heterogeneous play, symmetric-action, GRU and PCA controls | One-degree stationary gain and five-degree absolute error with navigation/recovery guards; secondary half-degree gain over uniform hysteresis; nineteen simultaneous intervals | SOAM-102 design preserved, unrun and currently unselected after SOAM-103. Supplied heterogeneity is not learned organization; this diagnostic is not an AO-1 prerequisite. F unless freshly selected |
+| H1/H5/H6 AO-1: assembly organization and selective routing | Learned connectivity may mediate reusable representations under dense fixed sensory drive while preserving useful state and action response | [AO-1 plan](proposed-studies/STUDY_ASSEMBLY_ORGANIZATION.md): no prescribed groups/tree; ordinary, symmetric, separated and conventional controls; optional fixed-threshold hysteresis ablation | Require selective held-out causal mediation with prediction/retention/navigation/recovery guards; exact metric, margins and allocation await SOAM-104 | Selected for equations and protocol design under SOAM-103; no measured evidence. Flat/overlapping graphs and simpler alternatives remain valid outcomes; hierarchy and semantic reuse require separate evidence. E, 103–107; no integrated H5 gate passed |
 | H2: fast grounded acquisition | Few new observations should improve held-out behavior and survive a transient-state reset | E2 changed identifiable dynamics; no-write, delta/RLS, online gradient, bounded retrieval | Proposed 20% acquisition-area gain plus retention bound; separate one-exposure test and update/exposure ledger | Point memorization, contextual calibration, and persistent learning differ; failed recurrent writes motivate a fast-memory/core split or simpler learner. F, 039/044/040/041 |
 | H3: learned scopes limit interference | A learned routing rule should preserve old functions at matched new-task accuracy while allowing positive transfer | Later fixed/random/sensitivity/learned masks with shared and isolated changes; E2 first establishes interference | Proposed at least 20% less protected-task error increase at new-task NMSE within 0.005 of the comparator, plus positive transfer on a related task and no extra exposure; freeze compute and uncertainty rules | If simple masks or unfiltered writes suffice, do not implement learned routing. If all fail, revisit writable representation. F, 007–010; E2 is a guardrail, not H3 confirmation |
 | H4: consolidation improves organization | Refinement should add value beyond replay at equal grounded data and reported compute | Replay versus selected iterative refinement; shadow validation only when needed | Proposed at least 10% lower held-out error than replay at equal evidence and declared compute, positive paired interval, retention guardrail 0.005 NMSE and no extra capacity | Replay sufficiency rejects the complex mechanism's necessity; it does not reject memory learning. F, 011–015/042/043 |
@@ -279,3 +281,65 @@ The [topology proposal](proposed-studies/STUDY_F_POPULATION_TOPOLOGY.md) and
 [coupling proposal](proposed-studies/STUDY_F_GATED_INTERMINGLING.md) retain this
 broader direction for later selection. The narrow D-R1 pilot is complete with the
 scoped negative result above; D3/D4 remain deferred and historical decisions stand.
+
+## State persistence and assembly routing
+
+The owner's earlier [November 22 request](requests/state_hysteresis_2026_11_22.md)
+selected [SOAM-102](../tickets/SOAM-102-state-hysteresis-protocol.md) for experiment
+design. Its retention contract remains preserved, unrun and currently unselected
+under the subsequent AO-1 planning choice below.
+E0-HYS tests a fixed distribution of local state-hysteresis widths within one
+32-unit population. Recurrent weights may learn to use that supplied heterogeneity;
+the distribution and any putative assembly roles are not themselves learned labels.
+The [proposal](proposed-studies/STUDY_E0_HYSTERESIS.md) distinguishes excitability,
+history-dependent persistence, selective routing and movement within a memory.
+
+The primary operational claim is useful retention beyond ordinary update dynamics;
+the secondary claim is an incremental drift benefit from heterogeneous versus
+uniform hysteresis. A single-orientation result cannot demonstrate hierarchy.
+That future claim requires multiple related memories, held-out causal routing
+interventions and competing nonhierarchical explanations. No positive sharing or
+organization gate follows from this design, and SOAM-101's unactivated optimization
+recommendation remains part of the historical record.
+
+The owner's subsequent connectivity clarification distinguishes **who conveys
+signals to whom** from temporal state persistence. Effective influence depends on
+connections and operating gains, not weight magnitude alone. The current symmetric
+zero-action core and dense sensory interfaces do not establish an input-rooted
+hierarchy or a learning pressure for one. The
+[local derivative analysis](proposed-studies/STUDY_E0_HYSTERESIS.md#connectivity-and-the-missing-hierarchy-mechanism)
+shows where hysteresis gates incoming influence and why it cannot supply branching
+on its own. The emergence mechanism remains unspecified; E0-HYS retains its narrower
+retention question and fixed thresholds.
+
+## Assembly organization and selective routing
+
+The [subsequent owner selection](requests/assembly_organization_2026_11_22.md) and
+[SOAM-103](../tickets/SOAM-103-assembly-organization-plan.md) move learned assembly
+organization into the initial mechanism question. The
+[AO-1 plan](proposed-studies/STUDY_ASSEMBLY_ORGANIZATION.md) uses one population
+with dense fixed sensory projection and learned internal connectivity. No hard
+entry mask, root/leaf assignment, assembly membership, or tree is supplied. Input
+expansion distributes information across neurons but does not add independent
+information or automatically protect individual neurons from sensory disturbance.
+
+The organizing hypothesis concerns selective transfer, recurrent support, and
+limited interference. Competition and activity regulation are candidate controls;
+their precise learning/state equations remain SOAM-104's work. The 2014 plasticity
+paper is precedent for regulators, not this proposal's energy rule or a proof of
+tree emergence. Hysteresis is an optional fixed-threshold mechanism rather than
+the name or defining claim of the study.
+
+The primary operational question is useful selective causal mediation on held-out
+episodes, beyond common sensory drive and generic lesion sensitivity. Retention,
+blindfolded action prediction, grounded correction, and perturbation recovery are
+joint functional guards. Useful flat or overlapping routes need not form a tree;
+semantic reuse requires task-relevant held-out generalization and interventions.
+Thresholds, margins, seeds, uncertainty, costs, and a finite inventory await the
+protocol. Ordinary derivations and counterexample checks precede fitting; Lean is
+optional for specific theorems with checked assumptions.
+
+This scope amendment permits a bounded offline organization pilot while preserving
+E0's inconclusive outcome, E0-HOLD's negative joint fix, and SOAM-052 stop. It neither
+activates SOAM-042/043 integration nor establishes online discovery, consolidation,
+biological validity, general semantic understanding, or the historical H5 claim.
