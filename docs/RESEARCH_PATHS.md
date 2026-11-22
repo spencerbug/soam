@@ -1,17 +1,17 @@
 # Conditional research paths
 
-**November 22 planning update:** [SOAM-103](../tickets/SOAM-103-assembly-organization-plan.md) selects **Assembly organization and selective routing (AO-1)** under the [owner's revised scope](requests/assembly_organization_2026_11_22.md). The [plan](proposed-studies/STUDY_ASSEMBLY_ORGANIZATION.md) replaces E0-HYS as the next design path; that retention diagnostic remains preserved and unrun. SOAM-104 mathematical/protocol design precedes SOAM-105 harness, SOAM-106 bounded study and SOAM-107 review. Historical outcomes and integration gates are unchanged.
+**November 22 protocol accepted:** [SOAM-103](../tickets/SOAM-103-assembly-organization-plan.md) selects **Assembly organization and selective routing (AO-1)** under the [owner’s revised scope](requests/assembly_organization_2026_11_22.md). [SOAM-104](../tickets/SOAM-104-assembly-organization-protocol.md) is done/proceed for the [protocol](STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md) and untrained algebra audit. SOAM-105 is ready; SOAM-106/107 remain backlog. No scientific fits have run. E0-HYS remains preserved and unrun; historical outcomes and integration gates are unchanged.
 
 ## Current bounded organization branch
 
 AO-1 includes learned organization from the outset under dense fixed sensory input,
 without supplied entry neurons, assembly memberships, or a tree. Hysteresis is an
-optional fixed-threshold arm. Equations and analytical/counterexample checks precede
-a frozen pilot; Lean is optional for a selected theorem. The plan is a fresh owner
+optional fixed-threshold mechanism in the plan and absent in accepted v1. Equations
+and analytical/counterexample checks are complete; Lean remains optional for a selected theorem. The plan is a fresh owner
 routing choice, not evidence that E0/E0-HOLD's navigable-state limitation is solved.
 
-SOAM-104 is the sole next design task after SOAM-103 proceeds. SOAM-105–107 stay
-backlog until their prerequisites and body conditions pass. No fits may use the
+SOAM-104 is done/proceed. SOAM-105 is the sole next eligible task for implementation
+and resource preflight; SOAM-106/107 stay backlog until prerequisites and body conditions pass. No fits may use the
 unspent E0-HYS allocation or a historical confirmation stream as unseen evidence.
 The narrow offline pilot does not activate SOAM-042/043, which retain their
 integrated acquisition/sharing gates. Later RIM coupling, population trees, online

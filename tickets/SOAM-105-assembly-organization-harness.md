@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-105"
 title: "Implement and verify the assembly organization pilot harness"
 type: "engineering"
-status: "backlog"
+status: "ready"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -27,7 +27,9 @@ decision: null
 ## Problem / hypothesis
 
 The [AO-1 plan](../docs/proposed-studies/STUDY_ASSEMBLY_ORGANIZATION.md) needs a
-small verified implementation of the eventual SOAM-104 contract. Apply the
+small verified implementation of the accepted
+[SOAM-104 protocol](../docs/STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md) and
+[manifest](../docs/protocols/study_ao1_v1.json). Apply the
 [common completion requirements](README.md#completion-requirements).
 
 ## Scope
@@ -59,4 +61,7 @@ mechanism changes. Scientific fits belong to SOAM-106 after readiness review.
 
 ## Completion record
 
-Not started. No implementation or engineering fixture has run for AO-1.
+Ready after SOAM-104 done/proceed on November 22. Not started. No AO-1 model
+implementation or engineering timing fixture has run. The completed untrained
+design audit is not the harness preflight; this ticket must implement and verify
+the full evaluator and project the complete inventory within the frozen margin.

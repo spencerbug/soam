@@ -1,0 +1,520 @@
+{
+  "study": "AO-1",
+  "version": 1,
+  "owner_ticket": "SOAM-104",
+  "status": "design_accepted_execution_not_started",
+  "title": "Assembly organization and selective routing",
+  "namespace": "soam-ao1",
+  "claim": "one reusable selective causal route with functional guards; no tree or general semantic claim",
+  "source_baseline": "c121d69",
+  "framework": "Python/PyTorch CPU, one thread",
+  "state_dtype": "float32",
+  "analysis_dtype": "float64",
+  "hysteresis": "absent in v1; fixed thresholds only if selected in a future version",
+  "task": {
+    "sensory_width": 12,
+    "latent_feature_width": 9,
+    "neural_input_width_with_masks": 24,
+    "actions": 2,
+    "attributes": [
+      -1,
+      1
+    ],
+    "heldout_attribute_tuples": [
+      [
+        -1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "train_object_count": 6,
+    "heldout_object_count": 2,
+    "rotation_gains": [
+      1.0,
+      1.5
+    ],
+    "articulation_gain": "(attribute_1+1)/2",
+    "initial_angles": "independent uniform [-pi,pi)",
+    "features": [
+      "cos(theta)",
+      "sin(theta)",
+      "cos(psi)",
+      "sin(psi)",
+      "attribute_0",
+      "attribute_1",
+      "attribute_2",
+      "attribute_2*cos(theta)",
+      "attribute_2*sin(theta)"
+    ],
+    "sensor": "12x9 thin QR Gaussian, positive diagonal, fixed across all fits; z=Q*v",
+    "sensor_energy_squared": 6.0,
+    "function_groups": {
+      "rotation": [
+        0,
+        1,
+        7,
+        8
+      ],
+      "articulation": [
+        2,
+        3
+      ],
+      "attributes": [
+        4,
+        5,
+        6
+      ]
+    },
+    "group_energy": {
+      "rotation": 2.0,
+      "articulation": 1.0,
+      "attributes": 3.0
+    },
+    "train_actions": [
+      -0.12,
+      -0.06,
+      0,
+      0.06,
+      0.12
+    ],
+    "eval_actions": [
+      -0.09,
+      -0.03,
+      0,
+      0.03,
+      0.09
+    ],
+    "action_block_length": 4,
+    "noise_sd": 0.01,
+    "post_initial_cue_probability": 0.5,
+    "observed_channel_counts": [
+      6,
+      12
+    ],
+    "observed_channel_count_probabilities": [
+      0.5,
+      0.5
+    ],
+    "initial_cue": "all 12 channels",
+    "stationary_episodes_per_batch": 4,
+    "stationary_tail": "no new observation; repeat original final stationary target"
+  },
+  "models": {
+    "ORG96": {
+      "width": 96,
+      "core": "directed leaky tanh",
+      "fit_parameters": 28908,
+      "stored_scalar_count_excluding_input": 28908,
+      "fixed_input_scalars": 2304,
+      "organization_loss": true
+    },
+    "PLAIN96": {
+      "width": 96,
+      "core": "directed leaky tanh",
+      "fit_parameters": 28908,
+      "stored_scalar_count_excluding_input": 28908,
+      "fixed_input_scalars": 2304,
+      "organization_loss": false
+    },
+    "SYM96": {
+      "width": 96,
+      "core": "all three recurrent matrices symmetric",
+      "fit_parameters": 28908,
+      "effective_parameter_dof": 15228,
+      "stored_scalar_count_excluding_input": 28908,
+      "fixed_input_scalars": 2304,
+      "organization_loss": false
+    },
+    "SEP168": {
+      "width": 168,
+      "blocks": [
+        56,
+        56,
+        56
+      ],
+      "core": "three disjoint directed cores, dense common readout",
+      "fit_parameters": 30420,
+      "stored_scalar_count_excluding_input": 30420,
+      "fixed_input_scalars": 4032,
+      "organization_loss": false
+    },
+    "GRU96": {
+      "width": 96,
+      "core": "torch.nn.GRUCell(2,96)",
+      "fit_parameters": 29964,
+      "stored_scalar_count_excluding_input": 29964,
+      "fixed_input_scalars": 2304,
+      "organization_loss": false
+    },
+    "FROZEN96": {
+      "width": 96,
+      "core": "PLAIN96 initial core fixed; readout fitted",
+      "fit_parameters": 1164,
+      "stored_scalar_count_excluding_input": 28908,
+      "fixed_input_scalars": 2304,
+      "organization_loss": false
+    },
+    "POLY12": {
+      "width": 12,
+      "core": "ridge polynomial residual predictor with exact zero-action identity",
+      "fit_parameters": 9828,
+      "stored_scalar_count_excluding_input": 10008,
+      "fixed_input_scalars": 0,
+      "quadratic_observation_terms": 91,
+      "nonconstant_action_terms": 9,
+      "regression_features": 819
+    }
+  },
+  "neural": {
+    "alpha": 0.5,
+    "sensory_beta": 1.0,
+    "correction_gain": 0.5,
+    "input_projection": "N x 24 thin QR fixed Gaussian, no masked entry neurons",
+    "R_max_row_l1": 2.0,
+    "K_max_row_l1": 1.0,
+    "readout_max_row_l1": 16.0,
+    "bias_abs_cap": 1.0,
+    "projection": "multiply entire matrix by min(1,cap/max_row_l1); symmetrize first for SYM96",
+    "R_init": "I + normal(0,.1/sqrt(N)); use block width for SEP168",
+    "K_init_sd_numerator": 0.01,
+    "readout_init_sd_numerator": 1.0,
+    "bias_init": 0.0,
+    "action_scale": 0.12,
+    "connection_cost_coefficient": 0.005,
+    "activity_cost_coefficient": 0.1,
+    "activity_power_target": 0.1,
+    "connection_cost": "sum absolute entries of R,K0,K1 divided by 3*N",
+    "activity_cost": "mean_i (equal-episode/time mean of posterior h_i^2 - .1)^2"
+  },
+  "poly": {
+    "ridge_rates": [
+      1e-06,
+      0.0001,
+      0.01,
+      1.0
+    ],
+    "observation_normalization": "constant unchanged; center/scale other 90 quadratic terms using training snapshots only",
+    "scale_floor": 1e-06,
+    "target": "clean observed successor minus clean observed current",
+    "regularize_all_coefficients": true,
+    "linear_algebra": "float64 streaming normal equations; average Gram and cross product; Cholesky, no adaptive jitter",
+    "nonzero_action_output_clip": "[-sqrt(6),sqrt(6)] per sensory channel",
+    "correction_gain": 0.5
+  },
+  "training": {
+    "updates": 800,
+    "batch_size": 16,
+    "train_horizon": 32,
+    "stationary_horizon": 64,
+    "neural_learning_rates": [
+      0.0005,
+      0.001,
+      0.003,
+      0.01
+    ],
+    "optimizer": "Adam",
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "weight_decay": 0,
+    "gradient_clip": 1.0,
+    "schedule": "cosine from initial rate at update 0 to .01*rate at update 799",
+    "checkpoints": "final only; no restarts",
+    "task_loss": "mean of episode time-mean sensory NMSE prior + .5 time-mean sensory NMSE posterior including initialization",
+    "original_episodes_per_fit": 12800,
+    "original_clean_snapshot_records_per_fit": 422400,
+    "extra_stationary_target_replays_per_fit": 102400
+  },
+  "streams": {
+    "seed_function": "soam.platform.core.derived_seed(namespace,1,split,root,index,component)",
+    "development_roots": [
+      601,
+      602,
+      603
+    ],
+    "confirmation_roots": [
+      701,
+      702,
+      703,
+      704,
+      705,
+      706,
+      707,
+      708,
+      709,
+      710,
+      711,
+      712,
+      713,
+      714,
+      715,
+      716,
+      717,
+      718,
+      719,
+      720
+    ],
+    "repeat_root": 701,
+    "fixture_root": 9601,
+    "fixed_projection_root": 0,
+    "fixed_projection_components": [
+      "sensor-projection",
+      "neural-input-96",
+      "neural-input-168"
+    ],
+    "fit_discovery_stream": "training-only route-discovery component for each fit root, never confirmation evaluation",
+    "rng": "NumPy PCG64; Torch seeds reduced modulo 2**63-1; report every derived seed"
+  },
+  "discovery": {
+    "groups": 8,
+    "group_sizes": {
+      "width96": 12,
+      "width168": 21
+    },
+    "method": "balanced greedy affinity grouping, memberships only for evaluator",
+    "affinity": "(M+M.T)/2, diagonal zero; M=abs(R), or average abs of three GRU recurrent gate matrices",
+    "route_candidates": 4,
+    "route_ranking": "mean M[T,S] descending, ties by group indices",
+    "functions": [
+      "rotation",
+      "articulation",
+      "attributes"
+    ],
+    "pairs_per_function": 48,
+    "group_power_states": "common warmup posterior states from all 144 pairs",
+    "warmup_transitions": 8,
+    "full_cue_steps_after_change": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "evaluation_steps": 16,
+    "scored_steps": [
+      4,
+      8,
+      16
+    ],
+    "angle_changes": [
+      -0.7853981633974483,
+      0.7853981633974483
+    ],
+    "attribute_change": "flip attribute_0 only; all other factors identical",
+    "control_pair_proposals": 256,
+    "matched_controls": 16,
+    "match_log_floor": 1e-08,
+    "match_descriptors": [
+      "forward mean abs recurrent weight",
+      "reverse mean abs recurrent weight",
+      "source activity power",
+      "receiver activity power",
+      "receiver readout column power"
+    ],
+    "selection": "maximize route selectivity minus matched-control mean on discovery; ties by route indices then function order",
+    "counterfactual_state_instances": 3,
+    "reverse_route": "descriptive diagnostic, not primary margin"
+  },
+  "evaluation": {
+    "episodes_per_fold": 192,
+    "folds": [
+      "seen_attribute_tuples",
+      "heldout_attribute_tuples"
+    ],
+    "warmup_transitions": 8,
+    "blindfolded_action_horizon": 64,
+    "stationary_horizon": 128,
+    "cue_return_after_blind_steps": 32,
+    "cue_return_steps": 8,
+    "grounded_horizon": 64,
+    "stationary_cued_horizon": 128,
+    "normal_recovery_steps": 16,
+    "perturbation_radius_fraction": 0.1,
+    "tangent_difference_epsilon": 0.001,
+    "small_actions": [
+      -0.01,
+      -0.003,
+      0.003,
+      0.01
+    ],
+    "small_action_steps": 32,
+    "reversal_actions": [
+      -0.03,
+      0.03
+    ],
+    "reversal_leg_steps": 32,
+    "reversal_score_steps": [
+      4,
+      16,
+      32
+    ],
+    "hold_before_release": 128,
+    "release_actions": [
+      -0.03,
+      0.03
+    ],
+    "release_score_steps": [
+      4,
+      16,
+      32
+    ],
+    "angle_norm_floor": 1e-06,
+    "radius_floor": 1e-06,
+    "routing_primary": "min(seen,heldout) of selected-route score minus matched-control mean; compare ORG96 with PLAIN96 and FROZEN96",
+    "route_score": "excess error in selected function minus mean absolute excess errors in the other two functions; errors normalized by fixed group energy",
+    "functional_aggregation": "maximum across seen/heldout folds and listed feature groups including off-subspace sensory error"
+  },
+  "selection": {
+    "within_family": "lexicographic maximum normalized absolute-guard violation, sum violations, negative routing score, blindfolded action prediction error, numeric hyperparameter",
+    "POLY12": "same but omit routing score",
+    "development_aggregation": "mean independent-root endpoint; no confirmation access",
+    "unavailable": "ineligible; if all configs ineligible comparative result cannot pass"
+  },
+  "inference": {
+    "unit": "independent trained root",
+    "bootstrap_samples": 50000,
+    "bootstrap_seed": 72203,
+    "alpha": 0.05,
+    "simultaneous_primary_intervals": 16,
+    "method": "paired root bootstrap, common resamples, two-sided Bonferroni percentile intervals, linear quantiles; width before directional classification",
+    "control_reporting": "all required controls descriptive 95% root intervals, no superiority claim over untested endpoints"
+  },
+  "inventory": {
+    "fitted_families": 7,
+    "configs_per_family": 4,
+    "development_roots": 3,
+    "development_fits": 84,
+    "confirmation_roots": 20,
+    "confirmation_fits": 140,
+    "exact_repeat_fits": 7,
+    "scientific_fits": 231,
+    "engineering_fixture_fits": 7,
+    "fixture_updates": 8,
+    "fixture_batch": 16,
+    "fit_free_design_audit": "separate finite inventory in docs/analysis/AO1_DESIGN_AUDIT.md"
+  },
+  "resources": {
+    "cpu_seconds": 28800,
+    "wall_seconds": 57600,
+    "peak_rss_gib": 3,
+    "artifact_gib": 8,
+    "device": "cpu",
+    "torch_threads": 1,
+    "preflight_margin": 2.0,
+    "preflight_fraction_of_cap": 0.8,
+    "scope": "fixtures, fits, full evaluations, discovery, repeats and analysis; no silent extensions",
+    "stop": "stop on cumulative cap, invalid execution or failed preflight; no automatic retries or new families"
+  },
+  "design_audit": {
+    "seed": 20261122,
+    "finite_difference_epsilon": 1e-06,
+    "jacobian_tolerance": 1e-08,
+    "projection_tolerance": 1e-12,
+    "bound_samples": 512,
+    "scalar_iterations": 256
+  },
+  "primary_criteria": [
+    {
+      "name": "route_org",
+      "bound": "lower",
+      "threshold": 0.02,
+      "max_interval_width": 0.04
+    },
+    {
+      "name": "route_org_minus_plain",
+      "bound": "lower",
+      "threshold": 0.01,
+      "max_interval_width": 0.03
+    },
+    {
+      "name": "route_org_minus_frozen",
+      "bound": "lower",
+      "threshold": 0.01,
+      "max_interval_width": 0.03
+    },
+    {
+      "name": "blindfolded_action_nmse",
+      "bound": "upper",
+      "threshold": 0.1,
+      "max_interval_width": 0.05
+    },
+    {
+      "name": "grounded_nmse",
+      "bound": "upper",
+      "threshold": 0.05,
+      "max_interval_width": 0.04
+    },
+    {
+      "name": "stationary_angle_deg",
+      "bound": "upper",
+      "threshold": 5.0,
+      "max_interval_width": 4.0
+    },
+    {
+      "name": "stationary_attributes_nmse",
+      "bound": "upper",
+      "threshold": 0.02,
+      "max_interval_width": 0.02
+    },
+    {
+      "name": "stationary_cued_nmse",
+      "bound": "upper",
+      "threshold": 0.05,
+      "max_interval_width": 0.04
+    },
+    {
+      "name": "cue_return_nmse",
+      "bound": "upper",
+      "threshold": 0.05,
+      "max_interval_width": 0.04
+    },
+    {
+      "name": "normal_ratio",
+      "bound": "upper",
+      "threshold": 0.5,
+      "max_interval_width": 0.4
+    },
+    {
+      "name": "perturbation_excess_nmse",
+      "bound": "upper",
+      "threshold": 0.01,
+      "max_interval_width": 0.02
+    },
+    {
+      "name": "action_response_error",
+      "bound": "upper",
+      "threshold": 0.2,
+      "max_interval_width": 0.2
+    },
+    {
+      "name": "inactive_coordinate_deg",
+      "bound": "upper",
+      "threshold": 3.0,
+      "max_interval_width": 3.0
+    },
+    {
+      "name": "org_minus_plain_blindfolded_action_nmse",
+      "bound": "upper",
+      "threshold": 0.01,
+      "max_interval_width": 0.02
+    },
+    {
+      "name": "org_minus_plain_stationary_deg",
+      "bound": "upper",
+      "threshold": 0.5,
+      "max_interval_width": 2.0
+    },
+    {
+      "name": "org_minus_plain_normal_ratio",
+      "bound": "upper",
+      "threshold": 0.05,
+      "max_interval_width": 0.1
+    }
+  ]
+}

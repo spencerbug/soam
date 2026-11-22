@@ -1,0 +1,40 @@
+{
+  "scope": "untrained algebra only; no learned-model result",
+  "seed": 20261122,
+  "source_baseline": "c121d69",
+  "script_sha256": "fef4bb49df4a10542b1f55893370e1a20aec74bbf97592a2855e05dfa0657ddb",
+  "manifest_sha256": "1e0a92f45a16bc0a6573065e14cc8bcb5bbe76c28235158058febb5bebe8f15b",
+  "contract_sha256_excluding_status": "96fd2f54eae9ffa1b761502533b35c6d6c28443b68e9ad935c8888590c1d31c3",
+  "python": "3.12.13",
+  "numpy": "2.5.4",
+  "cpu_seconds": 0.010866,
+  "wall_seconds": 0.012808500090613961,
+  "peak_rss_bytes": 36732928,
+  "results": {
+    "dense_projection": {
+      "rank": 24,
+      "orthonormality_max_error": 8.881784197001252e-16,
+      "norm_error": 0.0,
+      "minimum_row_norm": 0.30388922154278947
+    },
+    "jacobian_max_error": 3.247935254080403e-11,
+    "sampled_bound_max_abs": 0.8952749203382547,
+    "stable_without_routing_counterexample": {
+      "fixed_point": 0.8585596366401103,
+      "residual": 1.1102230246251565e-16,
+      "local_multiplier": 0.6971565127493012,
+      "off_diagonal_connections": 0
+    },
+    "directed_energy_counterexample": {
+      "energy_before": 5.0000833366668455e-05,
+      "energy_after": 6.248755469447064e-05,
+      "energy_increase": 1.2486721327802185e-05,
+      "origin_multiplier_magnitude": 1.118033988749895
+    },
+    "dense_input_route_fixture": {
+      "downstream_difference_after_two_steps": 0.01586243342203214,
+      "common_input_only_difference": 0.0
+    },
+    "manifest_inventory_and_formulas": "pass"
+  }
+}

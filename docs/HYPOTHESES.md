@@ -49,7 +49,7 @@ remain unmeasured. Neither routing choice changes an E1 result or gate criterion
 | H1/H6 E0: navigable local state geometry | Offline sensorimotor fitting may support distinct stationary poses, action navigation and transverse recovery together | Owner-selected E0 v1: NAV32, symmetric control, GRU and fitted PCA estimator; fixed sensory projection, evaluator-only pose | Joint free-rollout, retention, transverse/tangent and correction criteria are frozen in [E0 v1](STUDY_E0_PROTOCOL.md), not inferred from prediction alone | [E0](../reports/STUDY_E0.md): NAV32 passes six criteria; stationary pose error 13.86 degrees exceeds the 5-degree target and interval width 4.16 exceeds the frozen 4-degree cap; joint inconclusive. PCA2 is strongest prediction reference without transverse recovery. Finite tests cannot prove a continuous invariant manifold. E, 094–097; no successor selected |
 | H1/H6 E0-HOLD: stationary training horizon | Longer stationary credit assignment may reduce drift without practical degradation of navigation/recovery | Paired SHORT24/LONG128 NAV32 with symmetric, GRU and PCA controls; identical prefix evidence and initial parameters | [E0-HOLD v1](STUDY_E0_HOLD_PROTOCOL.md) freezes gain, absolute error and noninferiority criteria before fitting | [E0-HOLD](../reports/STUDY_E0_HOLD.md): paired drift 12.33 to 5.70 degrees; practical gain supported, residual error precisely above 5 degrees and recovery noninferiority unresolved. Negative declared joint fix; extra recurrence cost about 3.32x, no new observations. E, 098–101; no successor selected |
 | H1/H6 E0-HYS: selective state persistence | Heterogeneous local hysteresis may improve continuous-state retention beyond ordinary update dynamics without suppressing actions or recovery | [E0-HYS v1](STUDY_E0_HYSTERESIS_PROTOCOL.md): NAV, uniform/heterogeneous leak, uniform/heterogeneous play, symmetric-action, GRU and PCA controls | One-degree stationary gain and five-degree absolute error with navigation/recovery guards; secondary half-degree gain over uniform hysteresis; nineteen simultaneous intervals | SOAM-102 design preserved, unrun and currently unselected after SOAM-103. Supplied heterogeneity is not learned organization; this diagnostic is not an AO-1 prerequisite. F unless freshly selected |
-| H1/H5/H6 AO-1: assembly organization and selective routing | Learned connectivity may mediate reusable representations under dense fixed sensory drive while preserving useful state and action response | [AO-1 plan](proposed-studies/STUDY_ASSEMBLY_ORGANIZATION.md): no prescribed groups/tree; ordinary, symmetric, separated and conventional controls; optional fixed-threshold hysteresis ablation | Require selective held-out causal mediation with prediction/retention/navigation/recovery guards; exact metric, margins and allocation await SOAM-104 | Selected for equations and protocol design under SOAM-103; no measured evidence. Flat/overlapping graphs and simpler alternatives remain valid outcomes; hierarchy and semantic reuse require separate evidence. E, 103–107; no integrated H5 gate passed |
+| H1/H5/H6 AO-1: assembly organization and selective routing | Connection cost plus activity regulation may develop one reusable selective route under dense fixed sensory drive while preserving useful state and action response | [AO-1 protocol](STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md): directed ORG96, ordinary/frozen-core, symmetric, separated, GRU and polynomial controls; no prescribed candidate groups/tree or hysteresis | Held-out causal route score at least .02 and paired gains .01 over PLAIN/FROZEN; prediction/retention/navigation/recovery guards; sixteen simultaneous intervals and frozen precision limits | SOAM-104 done/proceed for design; untrained algebra checks pass; SOAM-105 ready. No learned organization evidence. Detector is limited to selected neuron groups; hierarchy/general semantics and integrated H5 remain unproven. E, 103–107 |
 | H2: fast grounded acquisition | Few new observations should improve held-out behavior and survive a transient-state reset | E2 changed identifiable dynamics; no-write, delta/RLS, online gradient, bounded retrieval | Proposed 20% acquisition-area gain plus retention bound; separate one-exposure test and update/exposure ledger | Point memorization, contextual calibration, and persistent learning differ; failed recurrent writes motivate a fast-memory/core split or simpler learner. F, 039/044/040/041 |
 | H3: learned scopes limit interference | A learned routing rule should preserve old functions at matched new-task accuracy while allowing positive transfer | Later fixed/random/sensitivity/learned masks with shared and isolated changes; E2 first establishes interference | Proposed at least 20% less protected-task error increase at new-task NMSE within 0.005 of the comparator, plus positive transfer on a related task and no extra exposure; freeze compute and uncertainty rules | If simple masks or unfiltered writes suffice, do not implement learned routing. If all fail, revisit writable representation. F, 007–010; E2 is a guardrail, not H3 confirmation |
 | H4: consolidation improves organization | Refinement should add value beyond replay at equal grounded data and reported compute | Replay versus selected iterative refinement; shadow validation only when needed | Proposed at least 10% lower held-out error than replay at equal evidence and declared compute, positive paired interval, retention guardrail 0.005 NMSE and no extra capacity | Replay sufficiency rejects the complex mechanism's necessity; it does not reject memory learning. F, 011–015/042/043 |
@@ -323,21 +323,26 @@ entry mask, root/leaf assignment, assembly membership, or tree is supplied. Inpu
 expansion distributes information across neurons but does not add independent
 information or automatically protect individual neurons from sensory disturbance.
 
-The organizing hypothesis concerns selective transfer, recurrent support, and
-limited interference. Competition and activity regulation are candidate controls;
-their precise learning/state equations remain SOAM-104's work. The 2014 plasticity
-paper is precedent for regulators, not this proposal's energy rule or a proof of
-tree emergence. Hysteresis is an optional fixed-threshold mechanism rather than
-the name or defining claim of the study.
+The [accepted protocol](STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md) selects directed
+leaky recurrence with L1 connection cost and a soft activity-power target as one
+bundled intervention. Its fixed dense input/correction maps have no learned entry
+gate. The 2014 plasticity paper is precedent for regulators, not this learning rule
+or a proof of tree emergence. Hysteresis is absent in v1; a future selected version
+would retain the owner's fixed-threshold preference for an initial mechanism test.
 
 The primary operational question is useful selective causal mediation on held-out
 episodes, beyond common sensory drive and generic lesion sensitivity. Retention,
 blindfolded action prediction, grounded correction, and perturbation recovery are
 joint functional guards. Useful flat or overlapping routes need not form a tree;
 semantic reuse requires task-relevant held-out generalization and interventions.
-Thresholds, margins, seeds, uncertainty, costs, and a finite inventory await the
-protocol. Ordinary derivations and counterexample checks precede fitting; Lean is
-optional for specific theorems with checked assumptions.
+The [manifest](protocols/study_ao1_v1.json) freezes thresholds, margins, seeds,
+uncertainty, costs and 231 scientific fits before any learning. The
+[untrained design audit](analysis/AO1_DESIGN_AUDIT.md) checks the update Jacobian
+and shows stable memory without routing and failure of an inherited symmetric
+energy guarantee. These support claim limits, not learned emergence. The causal
+detector itself supplies disjoint candidate groups and may miss other organization.
+SOAM-105 must implement and verify it and pass resource preflight before fitting.
+Lean remains optional for specific theorems with checked assumptions.
 
 This scope amendment permits a bounded offline organization pilot while preserving
 E0's inconclusive outcome, E0-HOLD's negative joint fix, and SOAM-052 stop. It neither

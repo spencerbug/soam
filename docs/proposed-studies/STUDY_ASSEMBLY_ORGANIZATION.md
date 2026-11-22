@@ -10,10 +10,12 @@ fixed sensory projection. Learned organization is part of the first mechanism
 study. Tree-like structure, semantic reuse, and reduced drift are outcomes to test;
 they are not supplied architecture or assumed consequences of hysteresis.
 
-This is the selected experimental plan, not a frozen numerical protocol.
-[SOAM-104](../../tickets/SOAM-104-assembly-organization-protocol.md) is the next
-design task. No AO-1 implementation, training, numerical allocation, or confirmation
-has started. The earlier [E0-HYS design](../STUDY_E0_HYSTERESIS_PROTOCOL.md) remains
+This document retains the conceptual planning scope. The subsequently accepted
+[SOAM-104 protocol](../STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md) and
+[manifest](../protocols/study_ao1_v1.json) own the exact equations, algorithms and
+numeric contract. SOAM-104 is done/proceed; SOAM-105 is ready for implementation
+and resource preflight. No model implementation or scientific fitting has started.
+The earlier [E0-HYS design](../STUDY_E0_HYSTERESIS_PROTOCOL.md) remains
 an unrun, unselected retention diagnostic; it is not a prerequisite for AO-1.
 
 ## Question and evidence
@@ -22,8 +24,9 @@ Can learned connectivity create reusable, selective causal routes through a sing
 population while preserving task-relevant state and allowing action-driven change?
 The proposed organizing pressure is to incorporate evidence and predict action
 consequences with limited interference, connection resources, and activity.
-Competition and activity regulation are candidate controls on that pressure; their
-exact rules remain to be selected and analyzed.
+SOAM-104 selects L1 connection cost and soft activity-power regulation as one
+bundled learning intervention. The sketches and alternatives below explain the
+planning space; only the accepted protocol defines v1, which omits hysteresis.
 
 [E0](../../reports/STUDY_E0.md) left its joint navigation/retention criterion
 inconclusive. [E0-HOLD](../../reports/STUDY_E0_HOLD.md) reduced stationary error from
@@ -61,7 +64,12 @@ training alone is not evidence of learned organization. Online acquisition,
 structural growth/rewiring, consolidation, and biologically local learning remain
 separate questions. Persistent parameters are frozen during all evaluation.
 
-## Mathematical specification to complete next
+## Mathematical planning scope and accepted specification
+
+SOAM-104 completes this work in the [protocol](../STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md).
+It selects separate fixed sensory correction and directed leaky prediction, rather
+than simultaneous sensory/action settling, to preserve predict-before-evidence
+scoring. The following sketch is retained as planning context, not executable v1.
 
 For an input x in R^d and N recurrent units, start from a dense fixed map P in
 R^(N x d), N greater than d. The linear drive P x has rank at most d. This provides
@@ -202,11 +210,11 @@ similarity to supplied factor labels, and lower drift alone do not establish it.
 
 ## Execution sequence and freezing requirements
 
-| Ticket | Bounded deliverable | Readiness after the planning decision |
+| Ticket | Bounded deliverable | Readiness after SOAM-104 |
 | --- | --- | --- |
-| [SOAM-103](../../tickets/SOAM-103-assembly-organization-plan.md) | Adopt this scope and preserve the earlier design/history | Planning decision only |
-| [SOAM-104](../../tickets/SOAM-104-assembly-organization-protocol.md) | Complete equations and analytical checks; select one candidate/task; freeze a bounded protocol and manifest | Next design task |
-| [SOAM-105](../../tickets/SOAM-105-assembly-organization-harness.md) | Implement exact rules, causal evaluator, counterexample fixtures, invariants, and resource preflight | Backlog until protocol proceed |
+| [SOAM-103](../../tickets/SOAM-103-assembly-organization-plan.md) | Adopt this scope and preserve the earlier design/history | Done/proceed for scope |
+| [SOAM-104](../../tickets/SOAM-104-assembly-organization-protocol.md) | Complete equations and analytical checks; select one candidate/task; freeze a bounded protocol and manifest | Done/proceed for protocol; no fits |
+| [SOAM-105](../../tickets/SOAM-105-assembly-organization-harness.md) | Implement exact rules, causal evaluator, counterexample fixtures, invariants, and resource preflight | Ready; not started |
 | [SOAM-106](../../tickets/SOAM-106-assembly-organization-study.md) | Execute only the frozen development/confirmation inventory and exact repeat | Backlog until protocol and harness complete |
 | [SOAM-107](../../tickets/SOAM-107-assembly-organization-decision.md) | Review organization evidence and retention/navigation trade-offs | Backlog until measured evidence complete |
 
@@ -216,7 +224,7 @@ development data, requires a finite protocol allocation before fitting, and cann
 later be presented as unseen confirmation. If exploratory findings change the
 mechanism or endpoint, version the protocol and reserve fresh confirmation streams.
 
-Before SOAM-104 can proceed, freeze the exact update/learning equations and allowed
+The completed SOAM-104 review freezes the exact update/learning equations and allowed
 adjustments; finite model/configuration inventory; data exposure and held-out factors;
 train/development/test seeds; discovery/intervention procedure; primary endpoint and
 functional guards; practical margins; independent-root uncertainty and precision
