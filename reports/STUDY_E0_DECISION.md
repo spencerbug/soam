@@ -5,7 +5,7 @@ The [E0 report](STUDY_E0.md) completes the [owner-selected](../docs/requests/e0_
 single-population study. The joint navigable-geometry criterion did not pass.
 This decision does not authorize the next experiment or change historical gates.
 
-NAV32 passes free action rollout, grounded prediction, local transverse recovery,
+NAV32 passes blindfolded action prediction, grounded prediction, local transverse recovery,
 perturbation-induced pose preservation, average tangential separation retention and
 returning-cue correction. Its long stationary hold remains the limiting endpoint:
 13.861° mean pose error after 128 steps, adjusted interval [12.119°,16.278°]. The
@@ -27,7 +27,7 @@ validated continuous attractor. The conventional PCA2 filter is the strongest
 prediction/state-size reference for this supplied rank-two task. Its transverse
 ratio of one shows that accurate tracking does not require autonomous attraction.
 GRU32 is a mandatory neural comparator: it also contracts transverse perturbations,
-although this fixed-budget configuration precisely misses the free-64 criterion.
+although this fixed-budget configuration precisely misses the blindfolded action criterion (64 steps).
 SYM32's high action error is imprecise under the frozen cap. Those findings neither
 establish Hopfield superiority nor rule out better trained conventional recurrence.
 

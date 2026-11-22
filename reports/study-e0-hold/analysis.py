@@ -201,8 +201,8 @@ with (out / "root_metrics.csv").open("w") as f:
 plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False})
 fig, axes = plt.subplots(2, 2, figsize=(10.5, 7.3), constrained_layout=True)
 for ax, key, title, label in [
-    (axes[0, 0], "stationary", "Zero action, no new cues", "Absolute pose error (degrees)"),
-    (axes[0, 1], "free", "Free action navigation", "Feature NMSE"),
+    (axes[0, 0], "stationary", "Zero-action drift (no new cues)", "Absolute pose error (degrees)"),
+    (axes[0, 1], "free", "Blindfolded action prediction", "Feature NMSE"),
     (axes[1, 0], "normal", "Local perturbation recovery", "Transverse separation ratio"),
     (
         axes[1, 1],
@@ -223,8 +223,8 @@ for ax, key, title, label in [
         )
 axes[0, 0].legend()
 fig.suptitle("E0-HOLD v1 · NAV32 · means over 20 fresh paired roots", fontsize=13)
-fig.savefig(out / "trajectories.png", dpi=180)
-fig.savefig(out / "trajectories.svg")
+fig.savefig(out / "trajectories-blindfolded.png", dpi=180)
+fig.savefig(out / "trajectories-blindfolded.svg")
 plt.close(fig)
 
 source = ledger["commands"][-1]["provenance"]

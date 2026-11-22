@@ -17,6 +17,14 @@ unavailable geometry measurements or confirmation-driven changes. Repetition mat
 108 arrays and 29 checkpoint tensors exactly. Independent reduction checks 280 root
 metrics and all 28 adjusted intervals.
 
+**Terminology clarified November 22, 2026:** “Blindfolded action prediction” means actions
+are supplied after the initial cue, but no new sensory observations arrive. “Zero-action
+drift” means the action is zero and no new observations arrive. Blindfolded action NMSE (64
+steps) averages sensory prediction error over 64 steps; the zero-action endpoint is absolute
+pose error after 128 steps, in degrees, including initialization error. Archived keys
+`free_nmse`, `free_horizon` and `stationary_deg` remain unchanged. Labels and figure titles
+were clarified; measurements, criteria and decisions are unchanged.
+
 ## What was tested
 
 One orientation, one population, offline learning, frozen evaluation parameters.
@@ -55,21 +63,21 @@ There are 20,000 resamples; all raw root values are in [CSV](study-e0/root_metri
 
 | Endpoint | NAV32 | GRU32 | SYM32 | PCA2 |
 | --- | --- | --- | --- | --- |
-| Free-64 NMSE; upper ≤ .05 | .03336 [.02891, .03869] | .06778 [.06106, .07446] | .29979 [.25114, .35166] | .000568 [.000499, .000651] |
+| Blindfolded action NMSE (64 steps); upper ≤ .05 | .03336 [.02891, .03869] | .06778 [.06106, .07446] | .29979 [.25114, .35166] | .000568 [.000499, .000651] |
 | Grounded one-step NMSE; upper ≤ .05 | .00917 [.00554, .01437] | .00744 [.00622, .00909] | .03219 [.02799, .03676] | .0000479 [.0000384, .0000649] |
-| Zero-action pose error at 128; upper ≤ 5° | 13.861 [12.119, 16.278] | 15.163 [12.241, 18.296] | 18.790 [15.590, 22.650] | .00000162 [.00000149, .00000176] |
+| Zero-action drift at 128 (absolute pose error); upper ≤ 5° | 13.861 [12.119, 16.278] | 15.163 [12.241, 18.296] | 18.790 [15.590, 22.650] | .00000162 [.00000149, .00000176] |
 | Transverse separation ratio at 16; upper ≤ .5 | .1412 [.1083, .1687] | .1201 [.1094, .1342] | .2328 [.2061, .2616] | 1.000 [1.000, 1.000] |
 | Perturbation-induced pose error; upper ≤ 3° | .2183 [.1948, .2433] | .9806 [.8890, 1.0872] | .9412 [.7988, 1.0587] | .00000751 [.00000673, .00000840] |
 | Tangent retention; interval within [.8,1.2] | .9880 [.9790, .9955] | .9995 [.9976, 1.0016] | .9922 [.9832, 1.0020] | 1.000 [1.000, 1.000] |
 | Final returning-cue NMSE; upper ≤ .05 | .003950 [.003552, .004303] | .007333 [.006189, .009157] | .013321 [.011305, .015318] | .0000425 [.0000367, .0000520] |
 
-Precision caps are .04 NMSE, 4° stationary error, .4 transverse/tangent ratio,
+Precision caps are .04 NMSE, 4° zero-action drift, .4 transverse/tangent ratio,
 and 3° perturbation-induced pose error. Applying them without retrospective changes:
 
-- **NAV32: inconclusive.** Six passes; stationary interval width 4.159° exceeds 4°.
-- **GRU32: negative configured-model evidence.** Free-64 NMSE precisely exceeds
-  .05. Stationary error is also unfavorable but imprecise; five other criteria pass.
-- **SYM32: inconclusive.** Free-64 and stationary errors are unfavorable but too
+- **NAV32: inconclusive.** Six passes; zero-action interval width 4.159° exceeds 4°.
+- **GRU32: negative configured-model evidence.** Blindfolded action NMSE (64 steps) precisely exceeds
+  .05. Zero-action drift is also unfavorable but imprecise; five other criteria pass.
+- **SYM32: inconclusive.** Blindfolded action error and zero-action drift are unfavorable but too
   imprecise under their caps; five criteria pass.
 - **PCA2: negative for the joint local-attraction claim.** Transverse ratio is
   exactly one: it preserves a displaced state instead of autonomously recovering.
@@ -83,20 +91,20 @@ fitted model's supplied zero-action identity, not population-wide certainty.
 
 ## Diagnostic trajectories and limits
 
-![E0 mean diagnostic trajectories](study-e0/trajectories.png)
+![E0 mean diagnostic trajectories](study-e0/trajectories-blindfolded.png)
 
 Lines show means across ten roots; they are descriptive, without simultaneous
 confidence bands. The table supplies the inferential intervals. Cue return begins
 at step 33, following 32 missing observations.
 
-NAV32's mean stationary pose error rises from .818° at initialization to 2.743°
+NAV32's mean zero-action pose error rises from .818° at initialization to 2.743°
 at step 24, 8.194° at step 64 and 13.861° at step 128. All ten root means at 128
 are above 11°, with a range of 11.167°–18.903°. Final displacement relative to its
 own initialized decoded pose averages 13.813°. This is accumulated autonomous
 drift, not merely an inaccurate initial cue. The short training horizon (24) is
 a plausible contributor, not an established unique cause.
 
-NAV32's mean free-rollout NMSE is .03301 on the interpolation-only stream and
+NAV32's mean blindfolded action NMSE is .03301 on the interpolation-only stream and
 .03402 on the extrapolation-only stream. Constant positive/negative action streams
 score .03786/.04023. For GRU32, interpolation/extrapolation score .02900/.17373;
 for SYM32, .09602/.72686. These are descriptive fresh-stream diagnostics; they do

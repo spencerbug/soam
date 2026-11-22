@@ -76,3 +76,47 @@ outcomes and the conditional next-step decision remain unchanged.
 - [E0-HOLD report](STUDY_E0_HOLD.md), [full tables](study-e0-hold/tables.md),
   [protocol](../docs/STUDY_E0_HOLD_PROTOCOL.md) and
   [decision](STUDY_E0_HOLD_DECISION.md).
+
+## November 22 terminology clarification
+
+At the owner's request, “free action” is now **blindfolded action prediction**:
+actions are supplied, but sensory observations stop after the initial cue.
+**Zero-action drift** supplies zero action and no further observations. The
+reports explicitly retain the endpoint definitions: mean sensory NMSE over
+64 steps versus absolute pose error after 128 steps, including initialization
+error, in degrees. Displacement from the initial pose remains a separate metric.
+
+Site update: `29d7830b8d1bd9267ebabe563b21fce1ef4a6cc0`. It changes the post and
+joint report and adds two figures with revised labels. Original figure URLs and
+archived PNG/SVG files remain available. Local E0/HOLD reports, decision wording,
+plotting labels and table-generation code use the same terminology.
+[Module documentation](../soam/navigation/README.md) maps the clearer terms to
+the retained `free_nmse`, `free_horizon` and `stationary_deg` identifiers.
+The `free` stream identifier also seeds data, so it is unchanged.
+
+Only reporting labels and documentation changed. Eighty archived NPZ inputs
+were hash-verified; rendering the original and revised plot blocks produces
+exactly identical numerical line coordinates. All table data values are
+unchanged. No fitting, inference, bootstrap estimation or gate decision was
+performed. The earlier publication commit preserves the original reporting
+source versions; the numerical receipts and raw archives are untouched.
+
+Validation: all 348 tests passed before changes; all twenty navigation/HOLD
+tests pass after the final changes. An intermediate docstring edit triggered
+the historical-source hash guard and was reverted; that guard remains intact.
+All 148 E0 and 153 E0-HOLD scientific source hashes still match. Ruff, ticket
+validation (102 tickets/two templates), report links and `git diff --check`
+pass. Jekyll, MathJax lint, all twelve annotation DOM scenarios and all eight
+local desktop/mobile light/dark browser cases pass. The revised figures and
+rendered pages were visually checked.
+
+[Pages deployment](https://github.com/spencerbug/spencerbug.github.io/actions/runs/44993407815)
+and [MathJax validation](https://github.com/spencerbug/spencerbug.github.io/actions/runs/44993408346)
+succeeded. All eight live browser cases pass. Live wording and both revised
+figure hashes match the reviewed files; the four published file hashes match
+the synchronized local site checkout.
+
+The label-rendering script, exact curve checks, file hashes and browser evidence
+are retained locally in `runs/publications/e0-terminology-2026-11-22/`. A bounded
+local-worker read timed out; direct source review was used. No worker output
+was accepted without verification.

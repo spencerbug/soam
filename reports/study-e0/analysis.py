@@ -152,8 +152,8 @@ plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.rig
 fig, axes = plt.subplots(2, 2, figsize=(10.5, 7.2), constrained_layout=True)
 colors = {"NAV32": "#2775b6", "SYM32": "#8a5da8", "GRU32": "#d17b20", "PCA2": "#218660"}
 labels = {
-    "free": ("Free action rollout", "Feature NMSE (log scale)"),
-    "stationary": ("Zero action, no new cues", "Absolute pose error (degrees)"),
+    "free": ("Blindfolded action prediction", "Feature NMSE (log scale)"),
+    "stationary": ("Zero-action drift (no new cues)", "Absolute pose error (degrees)"),
     "normal": ("Transverse perturbation", "Paired transverse separation ratio"),
     "return": ("Evidence returns after step 32", "Posterior NMSE (log scale)"),
 }
@@ -178,8 +178,8 @@ for ax, (key, (title, ylabel)) in zip(axes.flat, labels.items()):
         ax.axvline(32, color="gray", ls=":", lw=1)
 axes[0, 0].legend(ncol=2, fontsize=9)
 fig.suptitle("E0 v1 · ten independently trained roots · mean diagnostic trajectories", fontsize=13)
-fig.savefig(out / "trajectories.png", dpi=180)
-fig.savefig(out / "trajectories.svg")
+fig.savefig(out / "trajectories-blindfolded.png", dpi=180)
+fig.savefig(out / "trajectories-blindfolded.svg")
 plt.close(fig)
 
 source = ledger["commands"][-1]["provenance"]

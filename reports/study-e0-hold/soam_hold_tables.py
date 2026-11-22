@@ -14,6 +14,13 @@ def mean(values):
     return sum(values) / len(values)
 
 
+def display_key(key):
+    """Clarify display labels while retaining archived metric identifiers."""
+    return key.replace("free_nmse", "Blindfolded action NMSE").replace(
+        "stationary_deg", "Zero-action drift (degrees)"
+    )
+
+
 def fmt(ci):
     if ci is None:
         return "unavailable"
@@ -24,6 +31,8 @@ lines = [
     "# E0-HOLD v1: complete numerical tables",
     "",
     f"Formal NAV32 result: **{s['outcome']}**. All intervals use twenty independent paired roots. The primary family uses alpha=.05/13 per interval; control tables are descriptive 95% intervals.",
+    "",
+    "Blindfolded action prediction supplies actions but no sensory cues after initialization; zero-action drift supplies neither movement nor further cues. The latter endpoint is absolute pose error at 128 steps, including initialization error. Archived metric keys remain unchanged.",
     "",
     "## Confirmatory NAV32 family",
     "",
@@ -44,12 +53,12 @@ for k, rule in rules.items():
         + f"; width <= {rule['width']}"
     )
     width = f"{ci['width']:.6g}" if ci else "unavailable"
-    lines.append(f"| {k} | {fmt(ci)} | {width} | {limit} | {s['criteria'][k]} |")
+    lines.append(f"| {display_key(k)} | {fmt(ci)} | {width} | {limit} | {s['criteria'][k]} |")
 lines += [
     "",
     "## All model/arm endpoints (descriptive 95%)",
     "",
-    "| Model/arm | " + " | ".join(c["endpoints"]) + " |",
+    "| Model/arm | " + " | ".join(display_key(k) for k in c["endpoints"]) + " |",
     "| --- | " + " | ".join(["---"] * len(c["endpoints"])) + " |",
 ]
 for name in c["models"]:
@@ -66,7 +75,7 @@ lines += [
     "",
     "## Paired LONG128 minus SHORT24 (descriptive 95%)",
     "",
-    "| Model | " + " | ".join(c["endpoints"]) + " |",
+    "| Model | " + " | ".join(display_key(k) for k in c["endpoints"]) + " |",
     "| --- | " + " | ".join(["---"] * len(c["endpoints"])) + " |",
 ]
 for name in c["models"][:-1]:

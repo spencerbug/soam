@@ -2,19 +2,21 @@
 
 Formal NAV32 result: **negative declared joint fix**. All intervals use twenty independent paired roots. The primary family uses alpha=.05/13 per interval; control tables are descriptive 95% intervals.
 
+Blindfolded action prediction supplies actions but no sensory cues after initialization; zero-action drift supplies neither movement nor further cues. The latter endpoint is absolute pose error at 128 steps, including initialization error. Archived metric keys remain unchanged.
+
 ## Confirmatory NAV32 family
 
 | Quantity | Mean [adjusted interval] | Width | Requirement | Status |
 | --- | --- | --- | --- | --- |
-| absolute/free_nmse | 0.0365065 [0.032524, 0.0404439] | 0.00791993 | upper <= 0.05; width <= 0.04 | pass |
+| absolute/Blindfolded action NMSE | 0.0365065 [0.032524, 0.0404439] | 0.00791993 | upper <= 0.05; width <= 0.04 | pass |
 | absolute/grounded_nmse | 0.00805349 [0.00710608, 0.00927468] | 0.00216861 | upper <= 0.05; width <= 0.04 | pass |
-| absolute/stationary_deg | 5.69773 [5.25935, 6.18261] | 0.923261 | upper <= 5.0; width <= 4.0 | negative |
+| absolute/Zero-action drift (degrees) | 5.69773 [5.25935, 6.18261] | 0.923261 | upper <= 5.0; width <= 4.0 | negative |
 | absolute/normal_ratio | 0.139958 [0.113728, 0.163648] | 0.0499208 | upper <= 0.5; width <= 0.4 | pass |
 | absolute/normal_pose_deg | 0.221384 [0.196532, 0.244105] | 0.0475733 | upper <= 3.0; width <= 3.0 | pass |
 | absolute/tangent_ratio | 0.982743 [0.977872, 0.987488] | 0.00961568 | lower >= 0.8 and upper <= 1.2; width <= 0.4 | pass |
 | absolute/return_nmse | 0.00530636 [0.00490805, 0.00574642] | 0.00083837 | upper <= 0.05; width <= 0.04 | pass |
-| gain/stationary_deg | 6.63463 [5.01706, 8.80467] | 3.78762 | lower >= 5.0; width <= 4.0 | pass |
-| degradation/free_nmse | 0.00360598 [-0.0010272, 0.00673195] | 0.00775915 | upper <= 0.01; width <= 0.02 | pass |
+| gain/Zero-action drift (degrees) | 6.63463 [5.01706, 8.80467] | 3.78762 | lower >= 5.0; width <= 4.0 | pass |
+| degradation/Blindfolded action NMSE | 0.00360598 [-0.0010272, 0.00673195] | 0.00775915 | upper <= 0.01; width <= 0.02 | pass |
 | degradation/grounded_nmse | 0.00115804 [-0.00104343, 0.00267876] | 0.00372218 | upper <= 0.01; width <= 0.02 | pass |
 | degradation/return_nmse | 0.00128296 [0.000913756, 0.00163179] | 0.000718033 | upper <= 0.01; width <= 0.02 | pass |
 | degradation/normal_ratio | 0.0331174 [0.00731248, 0.0621835] | 0.0548711 | upper <= 0.05; width <= 0.1 | unresolved |
@@ -22,7 +24,7 @@ Formal NAV32 result: **negative declared joint fix**. All intervals use twenty i
 
 ## All model/arm endpoints (descriptive 95%)
 
-| Model/arm | free_nmse | grounded_nmse | stationary_deg | normal_ratio | normal_pose_deg | tangent_ratio | return_nmse |
+| Model/arm | Blindfolded action NMSE | grounded_nmse | Zero-action drift (degrees) | normal_ratio | normal_pose_deg | tangent_ratio | return_nmse |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | NAV32/SHORT24 | 0.0329005 [0.0295632, 0.0371969] | 0.00689544 [0.00581089, 0.00826015] | 12.3324 [11.2445, 13.6428] | 0.10684 [0.0945697, 0.119538] | 0.186243 [0.177003, 0.195486] | 0.987359 [0.983262, 0.991063] | 0.00402339 [0.00377164, 0.00429183] |
 | NAV32/LONG128 | 0.0365065 [0.0338843, 0.0392005] | 0.00805349 [0.00735645, 0.00884529] | 5.69773 [5.38681, 6.0163] | 0.139958 [0.122521, 0.156568] | 0.221384 [0.204545, 0.237333] | 0.982743 [0.979427, 0.986044] | 0.00530636 [0.00502794, 0.00560204] |
@@ -34,7 +36,7 @@ Formal NAV32 result: **negative declared joint fix**. All intervals use twenty i
 
 ## Paired LONG128 minus SHORT24 (descriptive 95%)
 
-| Model | free_nmse | grounded_nmse | stationary_deg | normal_ratio | normal_pose_deg | tangent_ratio | return_nmse |
+| Model | Blindfolded action NMSE | grounded_nmse | Zero-action drift (degrees) | normal_ratio | normal_pose_deg | tangent_ratio | return_nmse |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | NAV32 | 0.00360598 [0.00067086, 0.00592524] | 0.00115804 [-0.000208432, 0.00226305] | -6.63463 [-8.05516, -5.4285] | 0.0331174 [0.0155364, 0.0519631] | 0.035141 [0.0186508, 0.0515727] | -0.00461644 [-0.00945553, 8.34246e-05] | 0.00128296 [0.00103356, 0.00153182] |
 | SYM32 | 0.026647 [-0.0015387, 0.0533523] | 0.00547946 [0.00386384, 0.00711058] | -11.6969 [-13.3172, -10.1601] | -0.00423446 [-0.0169767, 0.00777109] | -0.223971 [-0.272848, -0.180757] | -0.00583062 [-0.011708, 0.000534356] | 0.00290854 [0.00181662, 0.0040831] |

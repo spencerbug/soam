@@ -12,6 +12,14 @@ remains unresolved. Formal outcome: **negative for the declared joint fix**.
 This is useful improvement, not a failed execution or a general rejection of the
 mechanism. Historical E0 remains inconclusive under its original experiment.
 
+**Terminology clarified November 22, 2026:** “Blindfolded action prediction” means actions
+are supplied after the initial cue, but no new sensory observations arrive. “Zero-action
+drift” means the action is zero and no new observations arrive. Blindfolded action NMSE (64
+steps) averages sensory prediction error over 64 steps; the zero-action endpoint is absolute
+pose error after 128 steps, in degrees, including initialization error. Archived keys
+`free_nmse`, `free_horizon` and `stationary_deg` remain unchanged. Labels and figure titles
+were clarified; measurements, criteria and decisions are unchanged.
+
 ## Intervention and evidence
 
 Twenty fresh paired roots compare SHORT24 and LONG128 for NAV32, SYM32 and GRU32,
@@ -46,16 +54,16 @@ replicates. All widths and thresholds were frozen before fitting.
 | Quantity | Mean [adjusted interval] | Frozen requirement | Result |
 | --- | --- | --- | --- |
 | Stationary improvement, SHORT minus LONG | 6.635° [5.017, 8.805] | lower ≥ 5°, width ≤ 4° | Pass |
-| LONG stationary error at 128 | 5.698° [5.259, 6.183] | upper ≤ 5°, width ≤ 4° | Precise failure |
-| LONG free-64 NMSE | .03651 [.03252, .04044] | upper ≤ .05 | Pass |
-| Free-64 degradation, LONG minus SHORT | +.003606 [−.001027, .006732] | upper ≤ .01 | Pass |
+| LONG zero-action drift at 128 | 5.698° [5.259, 6.183] | upper ≤ 5°, width ≤ 4° | Precise failure |
+| LONG blindfolded action NMSE (64 steps) | .03651 [.03252, .04044] | upper ≤ .05 | Pass |
+| Blindfolded action degradation (64 steps), LONG minus SHORT | +.003606 [−.001027, .006732] | upper ≤ .01 | Pass |
 | LONG transverse ratio at 16 | .13996 [.11373, .16365] | upper ≤ .5 | Pass |
 | Transverse-ratio degradation | +.03312 [.00731, .06218] | upper ≤ .05 | Unresolved |
 
-Eleven of thirteen criteria pass. The stationary-error interval is only .923° wide,
+Eleven of thirteen criteria pass. The zero-action drift interval is only .923° wide,
 well inside its four-degree precision cap, and wholly above the five-degree target.
 This is adequately precise negative evidence for the declared fix, unlike E0's
-wide stationary interval. The earlier result is not reclassified.
+wide zero-action interval. The earlier result is not reclassified.
 
 Transverse recovery remains useful in absolute terms, but is weaker in the paired
 comparison: the ratio rises from .10684 to .13996 (lower is better). Its adjusted
@@ -71,7 +79,7 @@ margins, not unchanged measurements. The complete thirteen-criterion table,
 interval widths, paired differences and [raw root values](study-e0-hold/root_metrics.csv)
 are retained.
 
-![Mean NAV32 trajectories over twenty paired roots](study-e0-hold/trajectories.png)
+![Mean NAV32 trajectories over twenty paired roots](study-e0-hold/trajectories-blindfolded.png)
 
 These are descriptive mean trajectories, not confidence bands. The mixed-action
 primary average passes its degradation guard, but this does not establish unchanged
@@ -85,7 +93,7 @@ These are descriptive means; their 95% intervals and paired differences are in
 the [full tables](study-e0-hold/tables.md). They do not replace the NAV32 primary
 claim and were not treated as confirmatory discoveries.
 
-| Model | Stationary error SHORT → LONG | Free-64 NMSE SHORT → LONG | Transverse ratio SHORT → LONG |
+| Model | Zero-action drift SHORT → LONG | Blindfolded action NMSE (64 steps) SHORT → LONG | Transverse ratio SHORT → LONG |
 | --- | --- | --- | --- |
 | NAV32 | 12.332° → 5.698° | .03290 → .03651 | .10684 → .13996 |
 | SYM32 | 17.085° → 5.388° | .32763 → .35428 | .22372 → .21948 |
@@ -94,8 +102,8 @@ claim and were not treated as confirmatory discoveries.
 
 The GRU's stronger stationary accuracy accompanies markedly worse action
 prediction in this fixed recipe. Stationary retention alone would have selected
-a misleading result. The symmetric control improves stationary error but retains
-poor free action prediction. PCA2 remains the strongest prediction/state-size
+a misleading result. The symmetric control improves zero-action drift but retains
+poor blindfolded action prediction. PCA2 remains the strongest prediction/state-size
 reference for this scaffold; its supplied zero-action identity provides no
 autonomous transverse restoration. None of these observations establishes a
 universal Hopfield advantage or a necessary stability/navigation tradeoff.

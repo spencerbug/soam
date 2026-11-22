@@ -23,7 +23,7 @@ absolute recovery criterion still passes. Eleven of thirteen joint criteria pass
 the unresolved recovery guard does not erase the precise stationary failure.
 
 The control results reinforce why the joint criteria matter. GRU32's long arm has
-better stationary accuracy (2.631°) but markedly poorer free action prediction
+better stationary accuracy (2.631°) but markedly poorer blindfolded action prediction
 (.07717 → .26582 NMSE). Those are mandatory descriptive control results, not a
 replacement confirmatory claim. SYM32 retains poor action prediction. PCA2 remains
 the compact accuracy reference for this supplied rank-two task, with no autonomous
