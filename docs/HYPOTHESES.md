@@ -49,7 +49,8 @@ remain unmeasured. Neither routing choice changes an E1 result or gate criterion
 | H1/H6 E0: navigable local state geometry | Offline sensorimotor fitting may support distinct stationary poses, action navigation and transverse recovery together | Owner-selected E0 v1: NAV32, symmetric control, GRU and fitted PCA estimator; fixed sensory projection, evaluator-only pose | Joint free-rollout, retention, transverse/tangent and correction criteria are frozen in [E0 v1](STUDY_E0_PROTOCOL.md), not inferred from prediction alone | [E0](../reports/STUDY_E0.md): NAV32 passes six criteria; stationary pose error 13.86 degrees exceeds the 5-degree target and interval width 4.16 exceeds the frozen 4-degree cap; joint inconclusive. PCA2 is strongest prediction reference without transverse recovery. Finite tests cannot prove a continuous invariant manifold. E, 094–097; no successor selected |
 | H1/H6 E0-HOLD: stationary training horizon | Longer stationary credit assignment may reduce drift without practical degradation of navigation/recovery | Paired SHORT24/LONG128 NAV32 with symmetric, GRU and PCA controls; identical prefix evidence and initial parameters | [E0-HOLD v1](STUDY_E0_HOLD_PROTOCOL.md) freezes gain, absolute error and noninferiority criteria before fitting | [E0-HOLD](../reports/STUDY_E0_HOLD.md): paired drift 12.33 to 5.70 degrees; practical gain supported, residual error precisely above 5 degrees and recovery noninferiority unresolved. Negative declared joint fix; extra recurrence cost about 3.32x, no new observations. E, 098–101; no successor selected |
 | H1/H6 E0-HYS: selective state persistence | Heterogeneous local hysteresis may improve continuous-state retention beyond ordinary update dynamics without suppressing actions or recovery | [E0-HYS v1](STUDY_E0_HYSTERESIS_PROTOCOL.md): NAV, uniform/heterogeneous leak, uniform/heterogeneous play, symmetric-action, GRU and PCA controls | One-degree stationary gain and five-degree absolute error with navigation/recovery guards; secondary half-degree gain over uniform hysteresis; nineteen simultaneous intervals | SOAM-102 design preserved, unrun and currently unselected after SOAM-103. Supplied heterogeneity is not learned organization; this diagnostic is not an AO-1 prerequisite. F unless freshly selected |
-| H1/H5/H6 AO-1: assembly organization and selective routing | Connection cost plus activity regulation may develop one reusable selective route under dense fixed sensory drive while preserving useful state and action response | [AO-1 protocol](STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md): directed ORG96, ordinary/frozen-core, symmetric, separated, GRU and polynomial controls; no prescribed candidate groups/tree or hysteresis | Held-out causal route score at least .02 and paired gains .01 over PLAIN/FROZEN; prediction/retention/navigation/recovery guards; sixteen simultaneous intervals and frozen precision limits | SOAM-104 done/proceed for design; untrained algebra checks pass; SOAM-105 ready. No learned organization evidence. Detector is limited to selected neuron groups; hierarchy/general semantics and integrated H5 remain unproven. E, 103–107 |
+| H1/H5/H6 AO-1 v1 (unselected): assembly organization and selective routing | Connection cost plus activity regulation may develop one reusable selective route under dense fixed sensory drive while preserving useful state and action response | [AO-1 protocol](STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md): directed ORG96, ordinary/frozen-core, symmetric, separated, GRU and polynomial controls; no prescribed candidate groups/tree or hysteresis | Held-out causal route score at least .02 and paired gains .01 over PLAIN/FROZEN; prediction/retention/navigation/recovery guards; sixteen simultaneous intervals and frozen precision limits | SOAM-104 remains done/proceed for design; untrained algebra checks pass; SOAM-105–107 are unrun/unselected backlog after SOAM-108. No learned organization evidence. Detector is limited to selected neuron groups; hierarchy/general semantics and integrated H5 remain unproven. E, 103–107 |
+| H1/H5/H6 gated assembly routing | Coupled content/receptiveness dynamics may learn multi-step graph recruitment to dense sensory evidence and selective recurrent exchange while preserving associations | [Initial theory](GATED_ASSEMBLY_ROUTING_THEORY.md), SOAM-108 direction; SOAM-109 must distinguish mediated recruitment from flat/input-driven masks, extra-state recurrence and supplied topology | No empirical thresholds or allocation frozen; joint-energy/isolation derivations and supplied counterexamples only | Selected theory/protocol direction; no learned tree, corrected intrinsic drift or capacity benefit. AO-1 v1 preserved and unselected; integration gates unchanged. E, 108–109 |
 | H2: fast grounded acquisition | Few new observations should improve held-out behavior and survive a transient-state reset | E2 changed identifiable dynamics; no-write, delta/RLS, online gradient, bounded retrieval | Proposed 20% acquisition-area gain plus retention bound; separate one-exposure test and update/exposure ledger | Point memorization, contextual calibration, and persistent learning differ; failed recurrent writes motivate a fast-memory/core split or simpler learner. F, 039/044/040/041 |
 | H3: learned scopes limit interference | A learned routing rule should preserve old functions at matched new-task accuracy while allowing positive transfer | Later fixed/random/sensitivity/learned masks with shared and isolated changes; E2 first establishes interference | Proposed at least 20% less protected-task error increase at new-task NMSE within 0.005 of the comparator, plus positive transfer on a related task and no extra exposure; freeze compute and uncertainty rules | If simple masks or unfiltered writes suffice, do not implement learned routing. If all fail, revisit writable representation. F, 007–010; E2 is a guardrail, not H3 confirmation |
 | H4: consolidation improves organization | Refinement should add value beyond replay at equal grounded data and reported compute | Replay versus selected iterative refinement; shadow validation only when needed | Proposed at least 10% lower held-out error than replay at equal evidence and declared compute, positive paired interval, retention guardrail 0.005 NMSE and no extra capacity | Replay sufficiency rejects the complex mechanism's necessity; it does not reject memory learning. F, 011–015/042/043 |
@@ -348,3 +349,40 @@ This scope amendment permits a bounded offline organization pilot while preservi
 E0's inconclusive outcome, E0-HOLD's negative joint fix, and SOAM-052 stop. It neither
 activates SOAM-042/043 integration nor establishes online discovery, consolidation,
 biological validity, general semantic understanding, or the historical H5 claim.
+
+## Gated assembly routing — November 23 direction freeze
+
+[SOAM-108](../tickets/SOAM-108-gated-assembly-direction-and-theory.md) records the
+owner correction: routing is a chain of conditional receptiveness decisions,
+not necessarily relaying input packets. Broad fixed input is redundant access,
+not extra information. Two state fields represent content and soft access; sensory
+masking alone does not isolate recurrent populations or fix zero-input drift.
+Recurrent gating must preserve supporting loops while reducing unwanted exchange.
+
+The [initial theory](GATED_ASSEMBLY_ROUTING_THEORY.md) derives fixed-point preservation,
+a symmetric joint-energy reference with required reciprocal terms, and conditional
+local stability. Its simple compatibility gate supplies one binary split in the
+limiting case, not a tree; soft masks leak, and cutting support can destroy a memory.
+Ten finite untrained checks pass, establishing no learned organization or empirical
+benefit. [SOAM-109](../tickets/SOAM-109-gated-assembly-protocol.md) must resolve the
+compact graph modulation rule, learning rule and a fresh causal/precision/resource protocol.
+SOAM-105–107 remain unrun/unselected. The earlier v1 criteria/results and all
+historical gate decisions are unchanged. This is essential next design work;
+capacity scaling, online structural learning and full integration remain future.
+
+
+Later November 23 owner clarification: the selected structure is a graph with
+multiple possible entry populations, shared recipients and optional cycles; trees
+are a special case. Content activity and modulation may progressively recruit
+further receptive populations. Sparse default inhibition is a candidate, and
+persistent stored recall must be distinguished from ongoing transient-state
+retention. The [graph/dormancy analysis](GATED_ASSEMBLY_ROUTING_THEORY.md#9-owner-clarification-multiple-entry-graphs-and-possible-dormancy)
+adds an unaudited analytical dormant-state energy variant; it changes no earlier
+numerical result or empirical gate. SOAM-109 owns the complete protocol decision.
+
+The owner also retains associative/dynamic associative modulation as an optional
+question: a cued modulation state may continue settling through learned recurrence
+after cue withdrawal. Autonomous settling can coexist with content-driven recruitment;
+it does not imply absence of earlier content influence. Useful associative recovery
+requires evidence beyond a persistent mask or convergence. This clarification adds
+no mandatory experiment, numerical allocation or learned-memory claim.

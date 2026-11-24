@@ -1,6 +1,8 @@
 # SOAM issue backlog
 
-**November 22 protocol accepted:** [SOAM-104](SOAM-104-assembly-organization-protocol.md) is done/proceed for the [AO-1 protocol](../docs/STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md) and numeric manifest. [SOAM-105](SOAM-105-assembly-organization-harness.md) is ready for implementation and resource preflight; SOAM-106/107 remain backlog. Untrained algebra checks passed; no learned organization result or model fit exists. E0-HYS remains preserved, unrun and unselected.
+**November 23 direction frozen:** [SOAM-108](SOAM-108-gated-assembly-direction-and-theory.md) owns the new [gated assembly theory](../docs/GATED_ASSEMBLY_ROUTING_THEORY.md); [SOAM-109](SOAM-109-gated-assembly-protocol.md) owns its next protocol. SOAM-105–107 are unrun/unselected backlog, with AO-1 v1 preserved. Passing untrained equation checks does not establish learned branching or memory capacity.
+
+**Historical November 22 protocol acceptance (selection superseded above):** [SOAM-104](SOAM-104-assembly-organization-protocol.md) is done/proceed for the [AO-1 protocol](../docs/STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md) and numeric manifest. [SOAM-105](SOAM-105-assembly-organization-harness.md) is ready for implementation and resource preflight; SOAM-106/107 remain backlog. Untrained algebra checks passed; no learned organization result or model fit exists. E0-HYS remains preserved, unrun and unselected.
 
 **November 21 E0-HOLD complete:** [SOAM-098–101](../tickets/SOAM-101-e0-hold-decision.md) complete the paired follow-up. NAV32 stationary error improves 12.33° → 5.70°, but remains precisely above 5°; transverse-recovery noninferiority is unresolved. Formal result: **negative for the declared joint fix** (11/13 criteria pass). All 147 scientific fits complete, with 189 arrays/54 tensors reproduced exactly. [Report](../reports/STUDY_E0_HOLD.md); [decision](../reports/STUDY_E0_HOLD_DECISION.md). No successor is selected.
 

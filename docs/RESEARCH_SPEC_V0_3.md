@@ -12,6 +12,25 @@ The subsequent [scientific review](SCIENTIFIC_REVIEW_2026_11_05.md) sharpens thi
 rapid retained acquisition, and active disambiguation. It defines proposed numerical
 targets and RFC conventions; protocols still freeze actual trials before execution.
 
+## November 23 gated routing direction amendment
+
+The owner's [SOAM-108 selection](../tickets/SOAM-108-gated-assembly-direction-and-theory.md)
+freezes [gated assembly routing](GATED_ASSEMBLY_ROUTING_THEORY.md) as the current
+bounded theory/protocol direction. Two state fields on the same indexed units
+represent content and modulation. Learned graph recruitment controls sensory
+access and selective recurrent exchange while preserving associative support.
+Dense fixed input supplies no root/leaf labels, protected entry subset or tree.
+The later November 23 clarification permits multiple entry populations, merging,
+reuse and cycles; trees are a special case. Mostly-dark activity is a candidate,
+with dormant recall and protected live state distinguished. The causal recruitment
+question cannot be replaced by a flat-mask performance test.
+
+SOAM-109 owns the next complete mechanism and numerical protocol. AO-1 v1 and
+SOAM-103/104 remain preserved; SOAM-105–107 are unrun/unselected backlog. No old
+allocation transfers, and no learned hierarchy, capacity benefit or empirical gate
+is established by the initial energy/isolation derivations. Online structural
+learning and SOAM-042/043 integration remain outside this narrow amendment.
+
 ## November 22 bounded organization scope amendment
 
 The [owner selection](requests/assembly_organization_2026_11_22.md) and

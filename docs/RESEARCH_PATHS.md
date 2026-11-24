@@ -1,21 +1,25 @@
 # Conditional research paths
 
-**November 22 protocol accepted:** [SOAM-103](../tickets/SOAM-103-assembly-organization-plan.md) selects **Assembly organization and selective routing (AO-1)** under the [owner’s revised scope](requests/assembly_organization_2026_11_22.md). [SOAM-104](../tickets/SOAM-104-assembly-organization-protocol.md) is done/proceed for the [protocol](STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md) and untrained algebra audit. SOAM-105 is ready; SOAM-106/107 remain backlog. No scientific fits have run. E0-HYS remains preserved and unrun; historical outcomes and integration gates are unchanged.
+**Current selection — November 23:** [SOAM-108](../tickets/SOAM-108-gated-assembly-direction-and-theory.md) freezes **gated assembly routing** and its [initial theory](GATED_ASSEMBLY_ROUTING_THEORY.md). The next selected task is [SOAM-109](../tickets/SOAM-109-gated-assembly-protocol.md), a complete new mechanism/protocol decision. SOAM-105–107 are unrun/unselected backlog. SOAM-103/104 and the exact AO-1 v1 protocol/manifest/audit remain preserved.
 
 ## Current bounded organization branch
 
-AO-1 includes learned organization from the outset under dense fixed sensory input,
-without supplied entry neurons, assembly memberships, or a tree. Hysteresis is an
-optional fixed-threshold mechanism in the plan and absent in accepted v1. Equations
-and analytical/counterexample checks are complete; Lean remains optional for a selected theorem. The plan is a fresh owner
-routing choice, not evidence that E0/E0-HOLD's navigable-state limitation is solved.
+The owner requires graph-based conditional recruitment controlling which populations admit
+broadly distributed input. Two state fields represent content and modulation;
+selective recurrent gating must preserve useful support while limiting interference.
+Multiple entries, branching, merging, reuse and cycles are allowed; no graph or
+assembly membership is supplied. Mostly-dark activity remains a candidate, with
+dormant recall distinct from live-state retention. A flat input mask alone does
+not establish multi-step mediated recruitment. The joint-energy reference and binary compatibility gate
+in SOAM-108 establish mathematical constraints, not an accepted final mechanism.
 
-SOAM-104 is done/proceed. SOAM-105 is the sole next eligible task for implementation
-and resource preflight; SOAM-106/107 stay backlog until prerequisites and body conditions pass. No fits may use the
-unspent E0-HYS allocation or a historical confirmation stream as unseen evidence.
-The narrow offline pilot does not activate SOAM-042/043, which retain their
-integrated acquisition/sharing gates. Later RIM coupling, population trees, online
-rewiring, and full integration need fresh selection and evidence.
+SOAM-109 must select exact dynamics and learning, causal discrimination from flat
+selection, legitimate change/retention guards, precision rules and a fresh finite
+allocation before implementation or fitting. No unused AO-1 v1 or E0-HYS budget
+transfers. This bounded offline mechanism direction does not activate SOAM-042/043,
+online structural learning, full integration or a capacity-scaling campaign.
+
+**Historical November 22:** SOAM-104 accepted the [AO-1 v1 protocol](STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md), making SOAM-105 ready at that time. The November 23 owner selection replaces its execution priority, not its completed design decision or any measured outcome. E0-HYS remains preserved, unrun and unselected.
 
 **November 21 E0-HOLD complete:** [SOAM-098–101](../tickets/SOAM-101-e0-hold-decision.md) complete the paired follow-up. NAV32 stationary error improves 12.33° → 5.70°, but remains precisely above 5°; transverse-recovery noninferiority is unresolved. Formal result: **negative for the declared joint fix** (11/13 criteria pass). All 147 scientific fits complete, with 189 arrays/54 tensors reproduced exactly. [Report](../reports/STUDY_E0_HOLD.md); [decision](../reports/STUDY_E0_HOLD_DECISION.md). No successor is selected.
 

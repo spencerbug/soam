@@ -1,6 +1,8 @@
 # Work packages and completion criteria
 
-**November 22 protocol accepted:** [SOAM-104](../tickets/SOAM-104-assembly-organization-protocol.md) completes the [AO-1 contract](STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md) and [untrained algebra checks](analysis/AO1_DESIGN_AUDIT.md). SOAM-105 is ready for the exact harness and resource preflight; SOAM-106/107 remain backlog. Learned connection organization is tested under dense fixed input; hysteresis is absent in v1. No AO-1 fits or empirical gate results exist. E0-HYS remains preserved, unrun and unselected; historical outcomes and integration gates are unchanged.
+**November 23 direction frozen:** [SOAM-108](../tickets/SOAM-108-gated-assembly-direction-and-theory.md) selects two-state gated assembly routing and records [initial theory and finite algebra checks](GATED_ASSEMBLY_ROUTING_THEORY.md). [SOAM-109](../tickets/SOAM-109-gated-assembly-protocol.md) is the next protocol-design task. SOAM-105–107 preserve unrun AO-1 v1 and are unselected backlog. No learned hierarchy, capacity improvement or empirical gate is established.
+
+**Historical November 22 protocol acceptance (selection superseded above):** [SOAM-104](../tickets/SOAM-104-assembly-organization-protocol.md) completes the [AO-1 contract](STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md) and [untrained algebra checks](analysis/AO1_DESIGN_AUDIT.md). SOAM-105 is ready for the exact harness and resource preflight; SOAM-106/107 remain backlog. Learned connection organization is tested under dense fixed input; hysteresis is absent in v1. No AO-1 fits or empirical gate results exist. E0-HYS remains preserved, unrun and unselected; historical outcomes and integration gates are unchanged.
 
 **November 21 E0-HOLD complete:** [SOAM-098–101](../tickets/SOAM-101-e0-hold-decision.md) complete the paired follow-up. NAV32 stationary error improves 12.33° → 5.70°, but remains precisely above 5°; transverse-recovery noninferiority is unresolved. Formal result: **negative for the declared joint fix** (11/13 criteria pass). All 147 scientific fits complete, with 189 arrays/54 tensors reproduced exactly. [Report](../reports/STUDY_E0_HOLD.md); [decision](../reports/STUDY_E0_HOLD_DECISION.md). No successor is selected.
 
@@ -32,7 +34,9 @@ See the [complete ticket dispositions](TICKET_REVIEW_2026_11_05.md).
 
 ## Immediate work
 
-**November 22:** SOAM-103/104 are done/proceed for scope and protocol respectively. [SOAM-105](../tickets/SOAM-105-assembly-organization-harness.md), P0/ready, high, is the next engineering task. It must verify the exact equations, causal evaluator, no-write/split invariants and full-inventory resource projection before SOAM-106 scientific fits. SOAM-107 follows measured evidence. This protocol acceptance passes no empirical gate.
+**November 23:** resolve graph modulation dynamics, learning and the causal/precision/resource contract under SOAM-109 after the SOAM-108 direction/theory decision. No harness or scientific fits start from the initial algebra audit.
+
+**Historical November 22 selection:** SOAM-103/104 are done/proceed for scope and protocol respectively. [SOAM-105](../tickets/SOAM-105-assembly-organization-harness.md), P0/ready, high, is the next engineering task. It must verify the exact equations, causal evaluator, no-write/split invariants and full-inventory resource projection before SOAM-106 scientific fits. SOAM-107 follows measured evidence. This protocol acceptance passes no empirical gate.
 
 **2026-11-17: Study D D0–D2 complete (SOAM-082–085).** Explicit key-value memory passes the post-reset acquisition and retention criteria. All writers learn isolated objects, but regression and the tested rank-one FAST memory exceed the sequential-interference guard; FAST has a precise negative practical-benefit result against both conventional controls. All 16 fits and 88 model evaluations complete, 64 repeat arrays match exactly, and 303 tests pass. The decision retains KV for this scaffolded task only. D3/D4 remain deferred; no next experiment or historical gate change is selected.
 

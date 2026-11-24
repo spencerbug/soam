@@ -13,7 +13,7 @@ depends_on: ["SOAM-106"]
 labels: ["type:decision", "priority:P0", "milestone:M1"]
 assignees: []
 created: "2026-11-22"
-updated: "2026-11-22"
+updated: "2026-11-23"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,10 @@ an evidence-based decision after the bounded pilot. Apply the
 [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+**November 23 selection:** this v1 review remains unselected backlog under
+[SOAM-108](SOAM-108-gated-assembly-direction-and-theory.md). No v1 experiment ran;
+the new direction has no empirical result to review and does not inherit v1 gates.
 
 Review validity and the frozen criteria first, then interpret useful prediction,
 selective mediation, retention/navigation trade-offs, and any hierarchy/reuse

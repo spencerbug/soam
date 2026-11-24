@@ -3,7 +3,7 @@ schema_version: 2
 id: "SOAM-105"
 title: "Implement and verify the assembly organization pilot harness"
 type: "engineering"
-status: "ready"
+status: "backlog"
 priority: "P0"
 recommended_thinking: "high"
 milestone: "M1"
@@ -13,7 +13,7 @@ depends_on: ["SOAM-104"]
 labels: ["type:engineering", "priority:P0", "milestone:M1"]
 assignees: []
 created: "2026-11-22"
-updated: "2026-11-22"
+updated: "2026-11-23"
 github_issue: null
 decision: null
 ---
@@ -33,6 +33,12 @@ small verified implementation of the accepted
 [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+**November 23 selection:** unrun AO-1 v1 is preserved but unselected under
+[SOAM-108](SOAM-108-gated-assembly-direction-and-theory.md). This ticket is backlog;
+its completed protocol dependency alone does not reactivate it. A fresh explicit
+selection is required before implementing v1. The gated direction requires its
+own completed protocol and implementation handoff.
 
 Implement only the accepted candidate, controls, task and interventions. Reuse
 existing infrastructure where its contracts fit; preserve archived E0/E0-HOLD code
@@ -61,7 +67,8 @@ mechanism changes. Scientific fits belong to SOAM-106 after readiness review.
 
 ## Completion record
 
-Ready after SOAM-104 done/proceed on November 22. Not started. No AO-1 model
+Historically ready after SOAM-104 done/proceed on November 22; returned to unselected
+backlog by SOAM-108 on November 23. Not started. No AO-1 model
 implementation or engineering timing fixture has run. The completed untrained
 design audit is not the harness preflight; this ticket must implement and verify
 the full evaluator and project the complete inventory within the frozen margin.

@@ -13,7 +13,7 @@ depends_on: ["SOAM-104", "SOAM-105"]
 labels: ["type:experiment", "priority:P0", "milestone:M1"]
 assignees: []
 created: "2026-11-22"
-updated: "2026-11-22"
+updated: "2026-11-23"
 github_issue: null
 decision: null
 ---
@@ -31,6 +31,10 @@ selected mechanism under the eventual SOAM-104 numerical contract. Apply the
 [common completion requirements](README.md#completion-requirements).
 
 ## Scope
+
+**November 23 selection:** this unrun v1 study is unselected backlog under
+[SOAM-108](SOAM-108-gated-assembly-direction-and-theory.md). Its frozen allocation
+cannot transfer to the gated direction, which requires SOAM-109's fresh protocol.
 
 Run only the frozen development, selection, confirmation and repeat inventory.
 Preserve persistent parameters during evaluation. Report all required controls,

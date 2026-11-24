@@ -1,0 +1,639 @@
+{
+  "checks": {
+    "binary_partition_and_soft_leakage": {
+      "compatibility": [
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "outer_closed_internal": 0.0,
+      "passed": true,
+      "receiver_closed_internal": 0.0,
+      "soft_cross": 0.18,
+      "soft_same_group": 0.8200000000000001
+    },
+    "continuous_dissipation_and_bounds": {
+      "maximum_sampled_energy_rate": -0.3236557142092812,
+      "minimum_inward_rate": 0.06863362570593812,
+      "passed": true
+    },
+    "cutting_support_destroys_fixed_point": {
+      "passed": true,
+      "recurrent": [
+        [
+          0.5,
+          0.6552453009332422
+        ],
+        [
+          0.6552453009332422,
+          0.5
+        ]
+      ],
+      "residual_after": [
+        -0.3086873875484091,
+        -0.3086873875484091
+      ],
+      "residual_before": [
+        0.0,
+        0.0
+      ],
+      "state": [
+        0.6,
+        0.6
+      ]
+    },
+    "energy_derivatives": {
+      "max_autograd_error": 3.3306690738754696e-16,
+      "max_finite_difference_error": 4.3822967477069596e-10,
+      "passed": true
+    },
+    "euler_does_not_inherit_descent": {
+      "energy_after": 2.0,
+      "energy_before": 0.5,
+      "passed": true,
+      "step_size": 3.0
+    },
+    "independent_gate_reciprocity_mismatch": {
+      "content_mixed_partial": -0.7,
+      "independent_gate_mixed_partial": 0.0,
+      "mismatch": 0.7,
+      "passed": true
+    },
+    "joint_equilibrium_linearization": {
+      "equilibrium_residual": 2.7755575615628914e-17,
+      "max_error": 1.1102230246251565e-16,
+      "passed": true
+    },
+    "resource_limits": {
+      "cpu_seconds": 0.956371,
+      "passed": true,
+      "peak_rss_bytes": 290455552,
+      "wall_seconds": 1.2549445419572294
+    },
+    "separately_stable_blocks_joint_saddle": {
+      "eigenvalues": [
+        -1.0,
+        3.0
+      ],
+      "gradient_flow_eigenvalues": [
+        1.0,
+        -3.0
+      ],
+      "hessian": [
+        [
+          1.0,
+          -2.0
+        ],
+        [
+          -2.0,
+          1.0
+        ]
+      ],
+      "passed": true
+    },
+    "zero_sensory_drive_is_not_stationarity": {
+      "passed": true,
+      "recurrent": [
+        [
+          1.5,
+          0.2
+        ],
+        [
+          0.2,
+          1.5
+        ]
+      ],
+      "state": [
+        0.4,
+        -0.2
+      ],
+      "velocity": [
+        0.10797743289789619,
+        -0.01651806149302884
+      ]
+    }
+  },
+  "config": {
+    "artifact_bytes": 10485760,
+    "cpu_seconds": 60,
+    "dimension": 4,
+    "dissipation_tolerance": 1e-12,
+    "finite_difference_epsilon": 1e-06,
+    "gradient_tolerance": 1e-08,
+    "rss_bytes": 1073741824,
+    "samples": 64,
+    "seed": 20261123,
+    "tau_content": 1.0,
+    "tau_gate": 2.0,
+    "temperature": 0.7,
+    "version": 1,
+    "wall_seconds": 120
+  },
+  "exposure": {
+    "algebra_samples": 64,
+    "algebra_state_scalars": 8,
+    "confirmation_records": 0,
+    "development_records": 0,
+    "finite_difference_energy_evaluations": 1024,
+    "learned_models": 0,
+    "note": "Counterexamples and constructed equilibrium are supplied algebra.",
+    "optimizer_updates": 0,
+    "supplied_drive_scalars_per_case": 12,
+    "supplied_matrix_scalars_per_case": 32,
+    "training_records": 0
+  },
+  "failures": [],
+  "kind": "untrained_algebra_only",
+  "provenance": {
+    "config_sha256": "7529a8573b9addc566a104ebdf781db0f567bc81c88b5a4efdbc2ffe3b7b73b8",
+    "deterministic": true,
+    "device": "cpu",
+    "draws_sha256": "8809fdc193f37a20f977b30a1a449dca3dd64e1d3efe1ce7370bf2fe86292a49",
+    "dtype": "torch.float64",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.13",
+    "source_commit": "5f8333ba1086d15cef3a6db7ef88a9e3c3a623d3",
+    "source_fingerprint": "a280b34d0d9decfed462e7d02c168f46216db9583bf73f538f01f7b899d426b0",
+    "source_hashes": {
+      "docs/STUDY_ASSEMBLY_ORGANIZATION_PROTOCOL.md": "80cfdcaf1885e4df9e9197e9cf2f7c7fb616f7e489b7bc236259d378052482a7",
+      "docs/protocols/study_ao1_v1.json": "d49332cfeee73d9a85a4b249c605c117b78cd1075c0333a4af6cc939e81e2091",
+      "scripts/check_gated_routing_theory.py": "1b886b6bfe26feb87100224d96377efc464f2d7ba03aee8c96cff6f7e7da1437"
+    },
+    "threads": 1,
+    "timing_scope": "CPU includes imports; wall starts in main before Torch import",
+    "torch": "2.14.1",
+    "working_tree_clean": false
+  },
+  "samples": [
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.444035766530067,
+      "finite_difference_error": 1.5030854338959898e-10,
+      "index": 0,
+      "minimum_inward_rate": 0.21212195078702106
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.145876954112712,
+      "finite_difference_error": 2.3730328813087453e-10,
+      "index": 1,
+      "minimum_inward_rate": 0.18935349488123498
+    },
+    {
+      "autograd_error": 1.6653345369377348e-16,
+      "energy_rate": -1.0046264489007752,
+      "finite_difference_error": 2.151450129161958e-10,
+      "index": 2,
+      "minimum_inward_rate": 0.19000158948396217
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.6543982202562477,
+      "finite_difference_error": 1.0924128268641198e-10,
+      "index": 3,
+      "minimum_inward_rate": 0.15305174340944333
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -1.5864686574254003,
+      "finite_difference_error": 7.294231885168756e-11,
+      "index": 4,
+      "minimum_inward_rate": 0.3093682576804322
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.1983538199470205,
+      "finite_difference_error": 1.5671952624529695e-10,
+      "index": 5,
+      "minimum_inward_rate": 0.11335572766877815
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.0257354840571171,
+      "finite_difference_error": 1.4360357347698027e-10,
+      "index": 6,
+      "minimum_inward_rate": 0.25707446031392106
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.211169978230298,
+      "finite_difference_error": 1.494765422549449e-10,
+      "index": 7,
+      "minimum_inward_rate": 0.14187108799831197
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.143080557249094,
+      "finite_difference_error": 1.421480710916967e-10,
+      "index": 8,
+      "minimum_inward_rate": 0.26895062625451677
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -0.684151710471451,
+      "finite_difference_error": 2.6139390651991334e-10,
+      "index": 9,
+      "minimum_inward_rate": 0.10226173762358326
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -0.4809058782260389,
+      "finite_difference_error": 3.1425090307735104e-10,
+      "index": 10,
+      "minimum_inward_rate": 0.10074647646671782
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -1.7586943066521914,
+      "finite_difference_error": 1.729695831009792e-10,
+      "index": 11,
+      "minimum_inward_rate": 0.23364039742625048
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -1.3584324382471502,
+      "finite_difference_error": 2.506838625571106e-10,
+      "index": 12,
+      "minimum_inward_rate": 0.23230433515036827
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -0.7648187538299354,
+      "finite_difference_error": 1.427362672501431e-10,
+      "index": 13,
+      "minimum_inward_rate": 0.1670973968810772
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.1430338177983708,
+      "finite_difference_error": 2.2590901371799532e-10,
+      "index": 14,
+      "minimum_inward_rate": 0.20035127459231133
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -1.5166276379501937,
+      "finite_difference_error": 1.84990023299747e-10,
+      "index": 15,
+      "minimum_inward_rate": 0.21500140750105776
+    },
+    {
+      "autograd_error": 3.3306690738754696e-16,
+      "energy_rate": -0.6034942595602435,
+      "finite_difference_error": 1.1678924494162857e-10,
+      "index": 16,
+      "minimum_inward_rate": 0.23811999031914752
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -2.7888712989593523,
+      "finite_difference_error": 1.5175016798707475e-10,
+      "index": 17,
+      "minimum_inward_rate": 0.22764050585536874
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.4160264843091475,
+      "finite_difference_error": 9.393213984409954e-11,
+      "index": 18,
+      "minimum_inward_rate": 0.20054299605648102
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.231956136448564,
+      "finite_difference_error": 1.2986922648394739e-10,
+      "index": 19,
+      "minimum_inward_rate": 0.10124772125542002
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.160285938102275,
+      "finite_difference_error": 2.338684801372892e-10,
+      "index": 20,
+      "minimum_inward_rate": 0.17334702135625474
+    },
+    {
+      "autograd_error": 3.3306690738754696e-16,
+      "energy_rate": -1.0137034844843007,
+      "finite_difference_error": 1.2647521918651705e-10,
+      "index": 21,
+      "minimum_inward_rate": 0.2709810467400141
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.7842273554000228,
+      "finite_difference_error": 2.2447288472449145e-10,
+      "index": 22,
+      "minimum_inward_rate": 0.09893335306961043
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.016796134559044,
+      "finite_difference_error": 3.973086304398521e-10,
+      "index": 23,
+      "minimum_inward_rate": 0.1000310161581302
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -0.8746747729499298,
+      "finite_difference_error": 2.1427243312999167e-10,
+      "index": 24,
+      "minimum_inward_rate": 0.155254518218704
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.7419983287228176,
+      "finite_difference_error": 1.5168222233796769e-10,
+      "index": 25,
+      "minimum_inward_rate": 0.1350439269336377
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.1751575875134779,
+      "finite_difference_error": 1.47277801065826e-10,
+      "index": 26,
+      "minimum_inward_rate": 0.09023710415192047
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -3.297117479727998,
+      "finite_difference_error": 2.537605681141031e-10,
+      "index": 27,
+      "minimum_inward_rate": 0.17190190128089072
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -0.9995219195303517,
+      "finite_difference_error": 2.1476365130723707e-10,
+      "index": 28,
+      "minimum_inward_rate": 0.19852543951019747
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.175796152020562,
+      "finite_difference_error": 3.032634143806945e-10,
+      "index": 29,
+      "minimum_inward_rate": 0.27970145191848217
+    },
+    {
+      "autograd_error": 1.6653345369377348e-16,
+      "energy_rate": -1.0590973128332173,
+      "finite_difference_error": 1.6901599564356218e-10,
+      "index": 30,
+      "minimum_inward_rate": 0.15482902393150483
+    },
+    {
+      "autograd_error": 1.6653345369377348e-16,
+      "energy_rate": -1.264671741859675,
+      "finite_difference_error": 2.1779267278532188e-10,
+      "index": 31,
+      "minimum_inward_rate": 0.12381640255408112
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -1.3977345760109887,
+      "finite_difference_error": 2.38134179042504e-10,
+      "index": 32,
+      "minimum_inward_rate": 0.10667176800365775
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.0018892099671097,
+      "finite_difference_error": 4.3822967477069596e-10,
+      "index": 33,
+      "minimum_inward_rate": 0.25371333172468785
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -1.5460510075188318,
+      "finite_difference_error": 7.146883085340505e-11,
+      "index": 34,
+      "minimum_inward_rate": 0.17829941604893157
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.0316520677113894,
+      "finite_difference_error": 1.3994624903368447e-10,
+      "index": 35,
+      "minimum_inward_rate": 0.08490445507251854
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -0.9499939210138197,
+      "finite_difference_error": 1.970841267961987e-10,
+      "index": 36,
+      "minimum_inward_rate": 0.14155624237524053
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -3.939345635670824,
+      "finite_difference_error": 1.6430634630637542e-10,
+      "index": 37,
+      "minimum_inward_rate": 0.06863362570593812
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -1.2587950626452726,
+      "finite_difference_error": 1.6906653854675824e-10,
+      "index": 38,
+      "minimum_inward_rate": 0.1372798481246895
+    },
+    {
+      "autograd_error": 1.6653345369377348e-16,
+      "energy_rate": -1.4780333937826229,
+      "finite_difference_error": 1.741038424540875e-10,
+      "index": 39,
+      "minimum_inward_rate": 0.18499940144504762
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.3718483793339957,
+      "finite_difference_error": 1.177941078012168e-10,
+      "index": 40,
+      "minimum_inward_rate": 0.1594147571463239
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.065377395071008,
+      "finite_difference_error": 2.2559532020238748e-10,
+      "index": 41,
+      "minimum_inward_rate": 0.15033432041642014
+    },
+    {
+      "autograd_error": 3.3306690738754696e-16,
+      "energy_rate": -1.1469811605233895,
+      "finite_difference_error": 2.34387398378999e-10,
+      "index": 42,
+      "minimum_inward_rate": 0.14024149928586632
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.197058604978582,
+      "finite_difference_error": 2.808737686876839e-10,
+      "index": 43,
+      "minimum_inward_rate": 0.23063987405545938
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -0.9143243900723903,
+      "finite_difference_error": 2.323072290089101e-10,
+      "index": 44,
+      "minimum_inward_rate": 0.1638314341398444
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.549894795829008,
+      "finite_difference_error": 1.9873303003237197e-10,
+      "index": 45,
+      "minimum_inward_rate": 0.1479020059506615
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -3.17435640598201,
+      "finite_difference_error": 1.1590772786007619e-10,
+      "index": 46,
+      "minimum_inward_rate": 0.21062629585562848
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -3.9088254036226138,
+      "finite_difference_error": 1.20124465929905e-10,
+      "index": 47,
+      "minimum_inward_rate": 0.20926108957404557
+    },
+    {
+      "autograd_error": 1.1102230246251565e-16,
+      "energy_rate": -0.3236557142092812,
+      "finite_difference_error": 2.847048152787579e-10,
+      "index": 48,
+      "minimum_inward_rate": 0.0952895027598794
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -0.5806337513811837,
+      "finite_difference_error": 1.53056289864395e-10,
+      "index": 49,
+      "minimum_inward_rate": 0.19504194908727737
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.7767142497021826,
+      "finite_difference_error": 1.6185619511333016e-10,
+      "index": 50,
+      "minimum_inward_rate": 0.23149073438402226
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.5971483648651033,
+      "finite_difference_error": 1.7857182399438898e-10,
+      "index": 51,
+      "minimum_inward_rate": 0.11042780077617698
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -0.9004747473224921,
+      "finite_difference_error": 2.084439287841633e-10,
+      "index": 52,
+      "minimum_inward_rate": 0.1437969283485895
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.475884956746461,
+      "finite_difference_error": 3.2108549152809474e-10,
+      "index": 53,
+      "minimum_inward_rate": 0.2571592839436271
+    },
+    {
+      "autograd_error": 1.6653345369377348e-16,
+      "energy_rate": -0.95960825142007,
+      "finite_difference_error": 1.9274781770661775e-10,
+      "index": 54,
+      "minimum_inward_rate": 0.11354630495623404
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -0.6385883248271922,
+      "finite_difference_error": 2.0513002407795966e-10,
+      "index": 55,
+      "minimum_inward_rate": 0.17622286748235103
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.977169151229619,
+      "finite_difference_error": 2.2090762552551269e-10,
+      "index": 56,
+      "minimum_inward_rate": 0.2017159916083584
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.8778828044212357,
+      "finite_difference_error": 1.7275531005722655e-10,
+      "index": 57,
+      "minimum_inward_rate": 0.14913817449162817
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.6594977954477215,
+      "finite_difference_error": 1.8285717384713962e-10,
+      "index": 58,
+      "minimum_inward_rate": 0.07847213831069028
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -0.5149849019324878,
+      "finite_difference_error": 3.2694708052005694e-10,
+      "index": 59,
+      "minimum_inward_rate": 0.3102175252195394
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.5717980352919045,
+      "finite_difference_error": 3.157027972378046e-10,
+      "index": 60,
+      "minimum_inward_rate": 0.1339978386429032
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -2.27909242369394,
+      "finite_difference_error": 2.107990032529372e-10,
+      "index": 61,
+      "minimum_inward_rate": 0.11284121705583727
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.3015600318345995,
+      "finite_difference_error": 2.58846277745306e-10,
+      "index": 62,
+      "minimum_inward_rate": 0.11741990220862629
+    },
+    {
+      "autograd_error": 2.220446049250313e-16,
+      "energy_rate": -1.2225886745616024,
+      "finite_difference_error": 1.9899792924604753e-10,
+      "index": 63,
+      "minimum_inward_rate": 0.21424456229503724
+    }
+  ],
+  "status": "pass"
+}

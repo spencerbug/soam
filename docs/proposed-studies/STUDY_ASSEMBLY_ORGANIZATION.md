@@ -1,5 +1,7 @@
 # Assembly organization and selective routing
 
+**November 23 replacement direction:** [SOAM-108](../../tickets/SOAM-108-gated-assembly-direction-and-theory.md) freezes [gated assembly routing](../GATED_ASSEMBLY_ROUTING_THEORY.md), preserving conditional access and now allowing multiple-entry graphs under the later November 23 clarification. [SOAM-109](../../tickets/SOAM-109-gated-assembly-protocol.md) owns its new protocol. The November 22 planning and accepted AO-1 v1 contract below retain their history; SOAM-105–107 are now unrun/unselected backlog and no v1 allocation transfers.
+
 November 22, 2026 · AO-1 planning scope ·
 [SOAM-103](../../tickets/SOAM-103-assembly-organization-plan.md) ·
 [Owner selection](../requests/assembly_organization_2026_11_22.md)
